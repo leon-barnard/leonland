@@ -1,0 +1,10 @@
+/*
+ The default CSS file.
+
+ You can use @import here to include CSS inside folders
+*/
+/* @import "imports/reset.css"; */
+/* Overrides */.sidebar-about h1{font-weight:400}.hidden{display:none}div.sidebar img.social{display:inline;margin-right:20px}div.sidebar .mepic{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6065 0.3575 0.036 0 0 0.1065 0.8624999999999999 0.036 0 0 0.1065 0.3575 0.536 0 0 0 0 0 1 0" /></filter></svg>#filter');-webkit-filter:saturate(.5);filter:saturate(.5);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";opacity:.7;border-radius:50%;margin:10px auto;display:none}a.source{font-style:italic}a.filter.active{font-weight:700}a.filter{
+	/* background-color: #eee; */}#likes img{
+	/* width:24px; */height:18px;display:inline;vertical-align:text-top;margin-right:4px}.content li{padding-bottom:3px}@media (min-width:48em){div.sidebar .mepic{display:block}}
+/*# sourceMappingURL=styles.css.map */
