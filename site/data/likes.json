@@ -1,0 +1,59 @@
+{
+  "80": {
+    "url": "http://www.kcrw.com/",
+    "name": "KCRW",
+    "description": "My favorite radio station. Great music stream.",
+    "image": "kcrw.png",
+    "weight": "80"
+  },
+  "70": {
+    "url": "http://www.berkeleyside.com",
+    "name": "Berkeleyside",
+    "description": "My source for hyperlocal news.",
+    "image": "berkeleyside-square.png",
+    "weight": "70"
+  },
+  "60": {
+    "url": "http://blog.iso50.com",
+    "name": "ISO50 Blog",
+    "description": "Great source for musical and visual inspiration.",
+    "image": "tycho.jpg",
+    "weight": "60"
+  },
+  "50": {
+    "url": "http://www.packers.com",
+    "name": "The Green Bay Packers",
+    "description": "My favorite NFL team.",
+    "image": "packers-logo.png",
+    "weight": "50"
+  },
+  "40": {
+    "url": "http://www.daringfireball.net",
+    "name": "Daring Fireball",
+    "description": "Insightful Apple and tech news.",
+    "image": "df.png",
+    "weight": "40"
+  },
+  "30": {
+    "url": "http://www.github.com",
+    "name": "GitHub",
+    "description": "Social coding. And great SWAG!",
+    "image": "github.png",
+    "weight": "30"
+  },
+  "20": {
+    "url": "http://whatismarkdown.com/",
+    "name": "Markdown",
+    "description": "A simpler way to write HTML.",
+    "image": "markdown.png",
+    "weight": "20"
+  },
+  "10": {
+    "url": "http://www.balsamiq.com/",
+    "name": "Balsamiq",
+    "description": "Rapid, effective and fun wireframing software.",
+    "image": "smileyface-64px.png",
+    "weight": "10"
+    }
+
+}

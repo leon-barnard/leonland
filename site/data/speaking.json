@@ -1,0 +1,107 @@
+{
+  "130": {
+    "tags": "docs web",
+    "url": "https://github.com/balsamiqLeon/all-things-markdown/blob/master/WhyMarkdown-STC.pdf",
+    "title": "\"Why Markdown?\" Presentation",
+    "datetime": "2018-03-21",
+    "sourceurl": "https://www.meetup.com/stc-sf/events/248526263/",
+    "sourcename": "STC San Francisco Meetup"
+  },
+  "120": {
+    "tags": "docs",
+    "url": "https://www.meetup.com/Write-the-Docs-SF/photos/28561517/468476593/#468478388",
+    "title": "Lightning Talk: \"Markdown-based Presentation Tools\"",
+    "datetime": "2018-02-13",
+    "sourceurl": "https://www.meetup.com/Write-the-Docs-SF/events/247520712/",
+    "sourcename": "Write The Docs East Bay Meetup"
+  },
+  "110": {
+    "tags": "docs web favorite",
+    "url": "https://www.slideshare.net/LeonBarnard/why-markdown-81825529",
+    "title": "Workshop Talk: \"Why Markdown?\"",
+    "datetime": "2017-11-09",
+    "sourceurl": "https://www.meetup.com/Write-the-Docs-SF/events/244259228/",
+    "sourcename": "Write The Docs San Francisco Meetup"
+  },
+  "100": {
+    "tags": "remote favorite",
+    "url": "http://pajamas.io/leon-barnard-balsamic/",
+    "title": "Interview with Pajamas.io about Remote Work",
+    "datetime": "2017-06-06",
+    "sourceurl": "http://pajamas.io/",
+    "sourcename": "Pajamas.io"
+  },
+  "90": {
+    "tags": "remote",
+    "url": "https://www.getsmarter.com/career-advice/industry-advice/benefits-of-remote-working",
+    "title": "9 Workplace Experts on the Benefits of Remote Working",
+    "datetime": "2017-02-17",
+    "sourceurl": "https://www.getsmarter.com/career-advice/",
+    "sourcename": "GetSmarter Career Advice Newsletter"
+  },
+  "80": {
+    "tags": "docs web",
+    "url": "http://www.slideshare.net/LeonBarnard/bending-markdown-to-your-will-with-your-static-site-generator",
+    "title": "Lightning Talk: \"Bending Markdown to Your Will with Your Static Site Generator\"",
+    "datetime": "2017-02-07",
+    "sourceurl": "https://www.meetup.com/Write-the-Docs-SF/events/237025601/",
+    "sourcename": "Write The Docs San Francisco Meetup"
+  },
+  "70": {
+    "tags": "wireframing favorite",
+    "url": "https://www.youtube.com/watch?v=KnZrypOaVCg",
+    "title": "Wireframing for Newbies",
+    "datetime": "2016-12-22",
+    "sourceurl": "https://www.youtube.com/user/Balsamiq",
+    "sourcename": "Balsamiq YouTube Channel"
+  },
+  "60": {
+    "tags": "remote",
+    "url": "https://www.thesurfoffice.com/blog/do-it-like-balsamiq-and-become-a-kickass-remote-first-company/",
+    "title": "Do It Like Balsamiq and Become a Kickass Remote-First Company",
+    "datetime": "2016-11-14",
+    "sourceurl": "https://www.thesurfoffice.com/blog/",
+    "sourcename": "Surf Office Blog"
+  },
+  "50": {
+    "tags": "remote",
+    "url": "http://blog.proven.com/remote-work#leon-barnard",
+    "title": "38 Companies Share Their Secrets to Remote Work Success",
+    "datetime": "2016-07-05",
+    "sourceurl": "http://blog.proven.com/",
+    "sourcename": "Proven Blog"
+  },
+  "40": {
+    "tags": "docs favorite",
+    "url": "https://www.youtube.com/watch?v=Y2TGwUPb8R4",
+    "title": "\"Transforming your Documentation Process\" panel discussion",
+    "datetime": "2016-05-23",
+    "sourceurl": "http://www.writethedocs.org/conf/na/2016/",
+    "sourcename": "Write The Docs North America 2016 Conference"
+  },
+  "30": {
+    "tags": "wireframing favorite",
+    "url": "http://earnworthy.com/balsamiq-leon-barnard/",
+    "title": "Why Marketers Need to Learn Wireframing",
+    "datetime": "2016-02-24",
+    "sourceurl": "http://earnworthy.com/category/podcast/",
+    "sourcename": "Inbound Unboxed Podcast"
+  },
+  "20": {
+    "tags": "ux",
+    "url": "https://www.youtube.com/watch?v=F54V3D3JRrM",
+    "title": "Recent and Future Development of Balsamiq Mockups",
+    "datetime": "2015-08-06",
+    "sourceurl": "http://tools4agileteams.com/display/2015EN/Tools4AgileTeams+2015",
+    "sourcename": "Tools4AgileTeams 2015 Conference"
+  },
+  "10": {
+    "tags": "ux",
+    "url": "http://www.slideshare.net/LeonBarnard/leon-barnard-productcamp-sf",
+    "title": "Bridging the Gap Between PM and Dev with a Hybrid UX/BA Role",
+    "datetime": "2013-10-12",
+    "sourceurl": "https://productcampsanfrancisco2013a.sched.org",
+    "sourcename": "ProductCampSF 2013"
+  }
+
+}

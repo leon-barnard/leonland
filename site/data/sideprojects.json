@@ -1,0 +1,45 @@
+{
+  "60": {
+    "url": "https://github.com/balsamiqLeon/leonland.com",
+    "name": "Leonland",
+    "description": "This site right here, which started as an exercise to help me learn HTML5 and CSS3 and has since led me to learn more about JavaScript and <a href=\"https://www.thenewdynamic.org\">static sites</a>.",
+    "image": "TBD",
+    "weight": "60"
+  },
+  "50": {
+    "url": "http://decidedlydifferentberkeley.tumblr.com/",
+    "name": "Decidedly Different",
+    "description": "Photos of funky stuff I used to see around my old neighborhood in Berkeley, CA.",
+    "image": "TBD",
+    "weight": "50"
+  },
+  "40": {
+    "url": "http://leonbarnard.tumblr.com",
+    "name": "Stuff I'm Into",
+    "description": "A tumblr built using <a href=\"http://www.ifttt.com\" title=\"If This Then That\">IFTTT</a> to automatically post all my favorites from Pinboard, Twitter, and Pocket.",
+    "image": "TBD",
+    "weight": "40"
+  },
+  "30": {
+    "url": "http://berkeley.workfromhomersclub.com/",
+    "name": "Work from Homers Club",
+    "description": "A project to build and curate a list of local work-friendly cafes.",
+    "image": "TBD",
+    "weight": "30"
+  },
+  "20": {
+    "url": "https://github.com/balsamiqLeon/all-things-markdown",
+    "name": "All Things Markdown",
+    "description": "A GitHub repo of resources and files I've used in my presentations about Markdown.",
+    "image": "TBD",
+    "weight": "20"
+  },
+  "10": {
+    "url": "http://dj.leonland.com/",
+    "name": "DJ Leonland",
+    "description": "A site I made to showcase my DJ work and mixtapes hosted on <a href=\"http:\/\/mixcloud.com\/leonbarnard\/\">Mixcloud<\/a>.",
+    "image": "TBD",
+    "weight": "10"
+    }
+
+}

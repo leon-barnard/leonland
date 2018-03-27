@@ -1,0 +1,19 @@
+{
+  "name": "leon.land",
+  "version": "0.1.0",
+  "devDependencies": {
+    "static-scripts": "0.1.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "hugo-bin": "^0.18.0",
+    "npm": "^5.8.0",
+    "static-scripts": "0.1.1"
+  },
+  "scripts": {
+    "start": "static-scripts start",
+    "preview": "static-scripts preview",
+    "build": "static-scripts build",
+    "eject": "static-scripts eject"
+  }
+}

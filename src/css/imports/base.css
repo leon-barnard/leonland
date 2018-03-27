@@ -1,0 +1,51 @@
+/* Overrides */
+
+.sidebar-about h1 {
+	font-weight: normal;
+}
+
+.hidden {
+	display: none;
+}
+
+div.sidebar img.social {
+display: inline;
+margin-right: 20px;
+}
+
+div.sidebar .mepic {
+	filter:saturate(.5);
+	opacity:.7;
+	border-radius:50%;
+	margin:10px auto;
+	display: none;
+}
+
+a.source {
+	font-style: italic;
+}
+
+a.filter.active {
+font-weight: bold;
+}
+
+a.filter {
+	/* background-color: #eee; */
+}
+#likes img {
+	/* width:24px; */
+	height: 18px;
+	display: inline;
+	vertical-align: text-top;
+	margin-right: 4px;
+}
+
+.content li {
+	padding-bottom: 3px;
+}
+
+@media (min-width: 48em) {
+	div.sidebar .mepic {
+display: block;
+}
+}

@@ -1,0 +1,37 @@
+{{ partial "head" . }}
+
+{{/* Add your site or webapp content here */}}
+<section id="me">
+			<img src="images/leon.jpg" title="Photo by @francescafabbri" alt="Me">
+</section>
+		<section id="about">
+  		<h1>About Me</h1>
+<p>{{ .Content }}</p>
+<hr>
+</section>
+
+<section id="writing">
+			<h1 class="filterable">Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
+<ul>
+{{ range .Site.Data.writing }}
+<li class="{{.tags}}">
+<a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{.date}}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
+</li>
+{{ end }}
+</ul>
+
+<hr>
+		</section>
+
+<section id="speaking">
+			<h1 class="filterable">Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
+
+<ul class="filterable">
+{{ range .Site.Data.speaking }}
+<li class="{{.tags}}">
+<a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{.date}}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
+</li>
+{{ end }}
+</ul>
+
+{{ partial "footer" . }}
