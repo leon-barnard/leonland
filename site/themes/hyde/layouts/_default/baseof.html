@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
   <body class="{{ .Site.Params.themeColor }} {{if .Site.Params.layoutReverse}}layout-reverse{{end}}">
   {{ partial "sidebar.html" . }}
-    <div class="content container">
+    <div class="content container" id="top">
     {{ block "main" . -}}{{- end }}
     </div>
 

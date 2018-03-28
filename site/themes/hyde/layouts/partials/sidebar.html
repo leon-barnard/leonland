@@ -2,7 +2,7 @@
   <div class="container sidebar-sticky">
     <div class="sidebar-about">
     <img src="{{ .Site.BaseURL }}/img/leon-sketch.png" class="mepic">
-      <a href="{{ .Site.BaseURL }}"><h1>{{ .Site.Title }}</h1></a>
+      <a href="{{ .Site.BaseURL }}/"><h1>{{ .Site.Title }}</h1></a>
       <p class="lead">
       {{ with .Site.Params.description }} {{.}} {{ else }}{{end}}
       </p>
@@ -10,7 +10,7 @@
 
     <ul class="sidebar-nav">
     {{ $currentPage := . }}
-      <li><a href="{{ .Site.BaseURL }}" class="sidebar-nav-item{{if .IsHome }} active{{end}}">about</a> </li>
+      <li><a href="{{ .Site.BaseURL }}/" class="sidebar-nav-item{{if .IsHome }} active{{end}}">about</a> </li>
       {{ range .Site.Menus.main.ByWeight -}}
         <li><a href="{{.URL}}" class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}"> {{ .Name }} </a></li>
       {{- end }}
