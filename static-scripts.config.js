@@ -14,7 +14,7 @@ module.exports = function(env) {
           "--source",
           resolve("site/"),
           "--destination",
-          resolve("dist/"),
+          resolve(".tmp/"),
         ],
         development: [
           "-b",

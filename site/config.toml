@@ -14,7 +14,7 @@ theme = "hyde"
 # --------------
 
 # Set the destination the same as the Gulpfile for consistency
-destination = "../dist/"
+destination = "../.tmp/"
 
 # Categories and tags disabled for an easier start
 # https://gohugo.io/getting-started/configuration/#toml-configuration

@@ -4,4 +4,6 @@
  You can use @import here to include CSS inside folders
 */
 /* @import "imports/reset.css"; */
+@import "imports/poole.css";
+@import "imports/hyde.css";
 @import "imports/base.css";
