@@ -4,4 +4,4 @@ menu: "main"
 weight: 6
 ---
 
-Contact form coming. For now, feel free to [email me](mailto:leonbarnard+website@gmail.com).
+Want to get in touch with me? Fill out the form below or [email me](mailto:leonbarnard+website@gmail.com).

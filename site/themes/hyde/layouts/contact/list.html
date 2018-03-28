@@ -6,17 +6,17 @@
 {{ .Content }}
 
 <form name="contact" method="POST" netlify>
-  <p>
-    <label>Your Name: <input type="text" name="name"></label>
-  </p>
-  <p>
-    <label>Your Email: <input type="email" name="email"></label>
-  </p>
-  <p>
-    <label>Message: <textarea name="message"></textarea></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
+<fieldset>
+  <div class="form-field">
+  <label for="name">Name:</label>
+  <input id="name" type="text" placeholder="Your name" name="name"></div>
+  <div class="form-field"><label for="email">Email:</label>
+  <span><input id="email" type="email" placeholder="Your email address" name="email"></span>
+  <div class="form-field">
+  <label for="message">Message:</label>
+  <span><textarea id="message" name="message" placeholder="Your message" rows="5"></textarea></span></div>
+  <div class="form-field">
+  <button type="submit" value="Send" id="submit">Send it</button></div>
+</fieldset>
 </form>
 {{- end }}

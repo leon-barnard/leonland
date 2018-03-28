@@ -49,3 +49,52 @@ a.filter {
 display: block;
 }
 }
+
+/* Form styles */
+
+input, select, textarea {
+	font-size: inherit;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset div {
+  padding: 8px 0;
+}
+
+label {
+  float: left;
+  /*font-size: 1em;*/
+  text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: rgba(204,204,204,.2);
+}
+
+button {
+  padding: 8px 12px;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button:disabled {
+  background-color: #777;
+  color: #AAA;
+}
+
+
+input:focus, textarea:focus {
+  background   : rgba(204,204,204,.1);
+  border-radius: 3px;
+  outline      : #ccc;
+}
