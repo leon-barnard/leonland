@@ -1,4 +1,11 @@
 {
+  "90": {
+    "url": "https://gohugo.io/",
+    "name": "Hugo",
+    "description": "The world’s fastest framework for building websites (like this one).",
+    "image": "hugo.png",
+    "weight": "90"
+  },
   "80": {
     "url": "http://www.kcrw.com/",
     "name": "KCRW",
