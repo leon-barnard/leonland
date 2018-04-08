@@ -26,29 +26,23 @@
 <h3>Monthly Mixtapes</h3>
 <p>Samples of my sound and techniques.</p>
 <div class="widgets">
-<iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fsimpler-times-vol-3%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fsimpler-times-vol-2%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fsimpler-times-vol-1%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fdecember%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fdiscovember%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fa-new-leaf%2F" frameborder="0" ></iframe>
-<iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Ffunky-septacular%2F" frameborder="0" ></iframe>
-<iframe  class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fhot-august-night%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fjuly-the-second%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fjune-bloom%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fmay-i-have-this-groove%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fmy-house-in-april%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fmarchy-march-and-the-funky-month%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Ffunky-february%2F" frameborder="0" ></iframe>
-<iframe class="monthly" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fspark-it%2F" frameborder="0" ></iframe>
+{{ range sort .Site.Data.dj ".date" "desc" }}
+{{if eq .type "monthly" }}
+<iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
+{{ end }}
+{{ end }}
 </div>
+
 <h3>Experiments</h3>
 <p>"Other"</p>
 <div class="widgets">
-<iframe  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Ftime-flies%2F" frameborder="0" ></iframe>
-<iframe  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fmorningtonite%2F" frameborder="0" ></iframe>
-<iframe  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2Fmashtapemixup%2F" frameborder="0" ></iframe>
+{{ range sort .Site.Data.dj ".date" "desc" }}
+{{if eq .type "other" }}
+<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
+{{ end }}
+{{ end }}
 </div>
+
 </section>
 <section class="contact">
 <h2><span>Contact</span></h2>

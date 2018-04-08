@@ -1,0 +1,92 @@
+{
+  "1803": {
+    "slug": "simpler-times-vol-3",
+    "type": "monthly",
+    "date": "1803"
+  },
+  "1802": {
+    "slug": "simpler-times-vol-2",
+    "type": "monthly",
+    "date": "1802"
+  },
+  "1801": {
+    "slug": "simpler-times-vol-1",
+    "type": "monthly",
+    "date": "1801"
+  },
+  "1712": {
+    "slug": "december",
+    "type": "monthly",
+    "date": "1712"
+  },
+  "1711": {
+    "slug": "discovember",
+    "type": "monthly",
+    "date": "1711"
+  },
+  "1710": {
+    "slug": "a-new-leaf",
+    "type": "monthly",
+    "date": "1710"
+  },
+  "1709": {
+    "slug": "funky-septacular",
+    "type": "monthly",
+    "date": "1709"
+  },
+  "1708": {
+    "slug": "hot-august-night",
+    "type": "monthly",
+    "date": "1708"
+  },
+  "1707": {
+    "slug": "july-the-second",
+    "type": "monthly",
+    "date": "1707"
+  },
+  "1706": {
+    "slug": "june-bloom",
+    "type": "monthly",
+    "date": "1706"
+  },
+  "1705": {
+    "slug": "may-i-have-this-groove",
+    "type": "monthly",
+    "date": "1705"
+  },
+  "1704": {
+    "slug": "my-house-in-april",
+    "type": "monthly",
+    "date": "1704"
+  },
+  "1703": {
+    "slug": "marchy-march-and-the-funky-month",
+    "type": "monthly",
+    "date": "1703"
+  },
+  "1702": {
+    "slug": "funky-february",
+    "type": "monthly",
+    "date": "1702"
+  },
+  "1701": {
+    "slug": "spark-it",
+    "type": "monthly",
+    "date": "1701"
+  },
+  "other3": {
+    "slug": "time-flies",
+    "type": "other",
+    "date": "other3"
+  },
+  "other2": {
+    "slug": "morningtonite",
+    "type": "other",
+    "date": "other2"
+  },
+  "other1": {
+    "slug": "mashtapemixup",
+    "type": "other",
+    "date": "other1"
+  }
+}
