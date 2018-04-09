@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Marvin Visions';
-  src: url('MarvinVisions-Bold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('MarvinVisions-Bold.woff') format('woff'); /* Pretty Modern Browsers */
+  src: url('/MarvinVisions-Bold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/MarvinVisions-Bold.woff') format('woff'); /* Pretty Modern Browsers */
 }
 
 body {
