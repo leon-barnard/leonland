@@ -24,7 +24,7 @@
 <section class="listen">
 <h2><span>Listen</span></h2>
 <h3>Monthly Mixtapes</h3>
-<p>Samples of my sound and techniques.</p>
+<p>One new mixtape every month since Janurary 2017</p>
 <div class="widgets">
 {{ range sort .Site.Data.dj ".date" "desc" }}
 {{if eq .type "monthly" }}
@@ -34,7 +34,7 @@
 </div>
 
 <h3>Experiments</h3>
-<p>"Other"</p>
+<p>Bonus mixes</p>
 <div class="widgets">
 {{ range sort .Site.Data.dj ".date" "desc" }}
 {{if eq .type "other" }}
