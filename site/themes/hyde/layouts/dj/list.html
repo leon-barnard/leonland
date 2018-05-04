@@ -26,10 +26,10 @@
 <h3>Monthly Mixtapes</h3>
 <p>One new mixtape every month since Janurary 2017</p>
 <div class="widgets">
-{{ range first 3 (sort .Site.Data.dj2.Monthly ".date" "desc") }}
+{{ range first 3 (sort .Site.Data.dj.Monthly ".date" "desc") }}
 <iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
-{{ range after 3 (sort .Site.Data.dj2.Monthly ".date" "desc") }}
+{{ range after 3 (sort .Site.Data.dj.Monthly ".date" "desc") }}
 <iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
 </div>
@@ -37,10 +37,10 @@
 <h3>Experiments</h3>
 <p>Bonus mixes</p>
 <div class="widgets">
-{{ range first 3 (sort .Site.Data.dj2.Other ".date" "desc") }}
+{{ range first 3 (sort .Site.Data.dj.Other ".date" "desc") }}
 <iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
-{{ range after 3 (sort .Site.Data.dj2.Other ".date" "desc") }}
+{{ range after 3 (sort .Site.Data.dj.Other ".date" "desc") }}
 <iframe height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
 </div>
