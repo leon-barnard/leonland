@@ -1,2 +1,8 @@
 # Redirect domain aliases to primary domain
+
 https://www.leonland.com/* https://www.leon.land/:splat 301!
+
+
+# Redirects for DJ site
+
+/1801	https://www.mixcloud.com/leonbarnard/simpler-times-vol-1/
