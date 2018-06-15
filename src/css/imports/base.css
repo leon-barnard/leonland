@@ -44,6 +44,12 @@ a.filter {
 	padding-bottom: 3px;
 }
 
+.content img {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 @media (min-width: 48em) {
 	div.sidebar .mepic {
 display: block;
