@@ -19,9 +19,13 @@
 <img src="{{ .Site.BaseURL }}/img/djleonland-sm.png">
 <h1><span>DJ
 </span>Leonland</h1>
-<p>House, Nu-Disco, Funk / San Francisco Bay Area</p>
+<h2>House, Nu-Disco, Funk </h2>
 </section>
 <section class="listen">
+  <p>Available for parties and events in the San Francisco Bay Area. Booking info below.</p>
+  <a href="//mixcloud.com/leonbarnard/" title="Mixcloud"><img src="{{ .Site.BaseURL }}/img/mixcloud.svg" class="social" width="32" height="32" alt="Mixcloud"></a>
+    <a href="//instagram.com/leonbarnard/" title="Instagram"><img src="{{ .Site.BaseURL }}/img/instagram.svg" class="social" width="32" height="32" alt="Instagram"></a>
+    <a href="https://www.youtube.com/playlist?list=PLCG9THDHTfvayAjkN4i1LHnDX3jP_cEfO" title="YouTube"><img src="{{ .Site.BaseURL }}/img/youtube.svg" class="social" width="32" height="32" alt="YouTube"></a>
 <h2><span>Listen</span></h2>
 <h3>Monthly Mixtapes</h3>
 <p>One new mixtape every month since Janurary 2017</p>
@@ -29,7 +33,7 @@
 {{ range first 3 (sort .Site.Data.dj.Monthly ".date" "desc") }}
 <iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
-{{ range after 3 (sort .Site.Data.dj.Monthly ".date" "desc") }}
+{{ range first 9 (after 3 (sort .Site.Data.dj.Monthly ".date" "desc")) }}
 <iframe class="monthly"  height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
 </div>
@@ -46,7 +50,7 @@
 </div>
 
 </section>
-<section class="contact">
+<section class="contact" id="contact">
 <h2><span>Contact</span></h2>
 <p>Book me for your next event or par-tay!</p>
 <form name="contact" method="POST" netlify>
@@ -64,7 +68,11 @@
 </fieldset>
 </form>
 </section>
-<footer><p>{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}} Leon Barnard. All rights reserved. {{end}}</p></footer>
+<footer><p style="float:left;">{{ with .Site.Params.copyright }}{{.}}{{ else }}&copy; {{ now.Format "2006"}} Leon Barnard. All rights reserved. {{end}}</p>
+<div style="float:right;">  <a href="//mixcloud.com/leonbarnard/" title="Mixcloud"><img src="{{ .Site.BaseURL }}/img/mixcloud.svg" class="social" width="32" height="32" alt="Mixcloud"></a>
+    <a href="//instagram.com/leonbarnard/" title="Instagram"><img src="{{ .Site.BaseURL }}/img/instagram.svg" class="social" width="32" height="32" alt="Instagram"></a>
+    <a href="https://www.youtube.com/playlist?list=PLCG9THDHTfvayAjkN4i1LHnDX3jP_cEfO" title="YouTube"><img src="{{ .Site.BaseURL }}/img/youtube.svg" class="social" width="32" height="32" alt="YouTube"></a></div>
+</footer>
 <!-- <script src="{{ .Site.BaseURL }}/js/djscripts.min.js" type="text/javascript"></script> -->
 </body>
 </html>

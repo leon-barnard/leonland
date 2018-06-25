@@ -54,6 +54,7 @@ margin-top: -30px;
   text-justify: inter-word;
 }
 
+
 section {
   margin-bottom: 5em;
 }
@@ -61,6 +62,10 @@ section {
 section h2 {
   margin-top: 2em;
   font-size: 1.8em;
+}
+
+.header h2 {
+  margin-top: 1em;
 }
 
 section h2 span {
@@ -154,6 +159,9 @@ footer {
   text-align: left;
 }
 
+footer .social, .listen .social {
+  padding-right: 5px;
+}
 .hidden {
   opacity: 0;
 }
