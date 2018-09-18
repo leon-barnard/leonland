@@ -1,6 +1,14 @@
 {
+  "160": {
+    "tags": "remote",
+    "url": "https://www.thesurfoffice.com/blog/running-a-distributed-team-balsamiq/",
+    "title": "Running a Distributed Team of 30 - The Story of Balsamiq",
+    "datetime": "2018-09-16",
+    "sourceurl": "https://www.thesurfoffice.com/blog/",
+    "sourcename": "Surf Office Blog"
+  },
   "150": {
-    "tags": "ux  favorite",
+    "tags": "ux favorite",
     "url": "https://www.slideshare.net/LeonBarnard/ux-design-in-the-real-world",
     "title": "Lightning Talk: \"UX Design in the Real World\"",
     "datetime": "2018-09-08",
