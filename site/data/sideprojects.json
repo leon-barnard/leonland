@@ -40,6 +40,13 @@
     "description": "A site I made to showcase my DJ work and mixtapes hosted on <a href=\"http:\/\/mixcloud.com\/leonbarnard\/\">Mixcloud<\/a>.",
     "image": "TBD",
     "weight": "10"
-    }
+  },
+  "8": {
+    "url": "https://docs.google.com/document/d/1XcxtzEwSK0Bx04Dq4NOjIDD_yAuxZcIkbEH8WmyZuFU/edit?usp=sharing",
+    "name": "Additional Track Details on Hover",
+    "description": "My capstone project for the <a href='https://www.credential.net/7h97vyks'>Codecademy Intensive \"Build Front-End Web Apps from Scratch\" course</a> - an application for DJs to access additional track metadata from Spotify to help them create better playlists.",
+    "image": "TBD",
+    "weight": "8"
+  }
 
 }
