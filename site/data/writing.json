@@ -161,11 +161,11 @@
   },
   "90": {
     "tags": "ux web favorite",
-    "url": "https://blog.balsamiq.com/using-balsamiq-mockups-with-pattern-libraries-and-frameworks/",
-    "title": "Using Balsamiq Mockups with Pattern Libraries and Frameworks",
+    "url": "https://balsamiq.com/learn/resources/articles/designsystems/",
+    "title": "Using Wireframes with Design Systems",
     "datetime": "2014-08-06",
     "sourceurl": "https://blog.balsamiq.com/category/ux/",
-    "sourcename": "Balsamiq UX Blog"
+    "sourcename": "Balsamiq Learn Site"
   },
   "80": {
     "tags": "wireframing",
@@ -225,11 +225,11 @@
   },
   "10": {
     "tags": "ux wireframing favorite",
-    "url": "https://blog.balsamiq.com/using-mockups-in-your-agile-user-stories/",
-    "title": "Using Mockups in your Agile User Stories",
+    "url": "https://balsamiq.com/learn/resources/articles/userstories/",
+    "title": "Using Wireframes with Agile User Stories",
     "datetime": "2013-02-06",
     "sourceurl": "https://blog.balsamiq.com/category/ux/",
-    "sourcename": "Balsamiq UX Blog"
+    "sourcename": "Balsamiq Learn Site"
   }
 
 
