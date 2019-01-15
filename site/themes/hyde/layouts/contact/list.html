@@ -5,8 +5,9 @@
 
 {{ .Content }}
 
-<form name="contact" method="POST" netlify>
+<form name="contact-leonland" method="POST" netlify-honeypot="bot-field" netlify>
 <fieldset>
+  <div class="form-field hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
   <div class="form-field">
   <label for="name">Name:</label>
   <input id="name" type="text" placeholder="Your name" name="name"></div>

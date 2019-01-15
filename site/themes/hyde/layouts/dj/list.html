@@ -53,8 +53,9 @@
 <section class="contact" id="contact">
 <h2><span>Contact</span></h2>
 <p>Book me for your next event or par-tay!</p>
-<form name="contact" method="POST" netlify>
+<form name="contact-dj" method="POST" netlify-honeypot="bot-field" netlify>
 <fieldset>
+  <div class="form-field hidden"><label>Don’t fill this out if you're human: <input name="bot-field" /></label></div>
   <div class="form-field">
   <label for="name">Name:</label>
   <input id="name" type="text" placeholder="Your name" name="name"></div>
