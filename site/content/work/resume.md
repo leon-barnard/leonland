@@ -5,10 +5,9 @@ description: "Resume for Leon Barnard"
 
 
 # Leon Barnard 
-#### leon@balsamiq.com; https://leon.land
+#### leonbarnard@gmail.com; https://leon.land
 
-I am a Writer, Educator, and Designer at Balsamiq. My primary interests include UX, wireframing, front-end web development, and remote working. Most of my work involves helping people and technology get along better. I write periodically for the Balsamiq blog and have been published on the Team Treehouse blog, UX Mastery, and elsewhere. 
-
+The unifying theme throughout my career has been helping people and technology get along better. First as a UX designer for nearly 10 years and now as a hybrid Writer / Educator / Designer at Balsamiq.  I write about my experiences as a UX designer for our education site ([balsamiq.com/learn](https://balsamiq.com/learn/)), which I also design and develop. I am also interested in front-end web development and remote working. 
 
 ## Experience
 
@@ -16,6 +15,7 @@ I am a Writer, Educator, and Designer at Balsamiq. My primary interests include 
 #### Balsamiq, Nov. 2012 - present
 
 * Currently leading our Education team to produce and review user interface instructional content. 
+* Design and develop our education site - [balsamiq.com/learn](https://balsamiq.com/learn/).
 * Previously worked on documentation and tutorials, user experience design, website development, and social media.
 
 
@@ -56,11 +56,11 @@ I am a Writer, Educator, and Designer at Balsamiq. My primary interests include 
 * Designed easy-to-use interfaces and conducted usability studies as the User Experience lead for several key Java development tools in NetBeans IDE.
 * Contributed to higher-level User Experience reforms, such as creating a UI review process, defining a User Experience vision and designing for accessibility.
 
-### Graduate Research Assistant
+<!--### Graduate Research Assistant
 #### Georgia Institute of Technology, Aug. 2002 - Jul. 2004
 
 * Conducted and directed research studies in Human-Computer Interaction, focusing on multimodal feedback, environmental effects, accessibility, and mobile devices. 
-* Published research findings in a number of peer- reviewed HCI journals, including Personal and Ubiquitous Computing and Behaviour & Information Technology.
+* Published research findings in a number of peer- reviewed HCI journals, including Personal and Ubiquitous Computing and Behaviour & Information Technology.-->
 
 ---
 
@@ -76,8 +76,17 @@ I am a Writer, Educator, and Designer at Balsamiq. My primary interests include 
 
 ## Skills
 
-### Development languages
+### Development Languages
 
 * Proficient in HTML and CSS 
-* Dabble in Javascript, Go, R
+* [Certification in JavaScript and React from Codecademy](https://www.credential.net/7h97vyks)
+* Fluent with JSON and Markdown
+* Dabble in Go and R
 
+### Design and Development Tools
+
+* Sketch
+* Balsamiq
+* GitHub
+* Hugo
+* Node.js/NPM
