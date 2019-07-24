@@ -1,10 +1,18 @@
 {
+  "310": {
+    "tags": "ux wireframing",
+    "url": "https://balsamiq.com/learn/resources/articles/how-to-start-a-wireframe/",
+    "title": "How to Start a Wireframe",
+    "datetime": "2019-07-19",
+    "sourceurl": "https://medium.freecodecamp.org/",
+    "sourcename": "freeCodeCamp Blog"
+  },
   "300": {
     "tags": "ux wireframing favorite",
-    "url": "https://medium.freecodecamp.org/how-to-use-wireframes-with-design-systems-46f3040829b6",
+    "url": "https://www.freecodecamp.org/news/how-to-use-wireframes-with-design-systems-46f3040829b6/",
     "title": "How to use wireframes with design systems",
     "datetime": "2018-12-17",
-    "sourceurl": "https://medium.freecodecamp.org/",
+    "sourceurl": "https://www.freecodecamp.org/news/",
     "sourcename": "freeCodeCamp Blog"
   },
   "290": {
@@ -14,6 +22,14 @@
     "datetime": "2018-10-04",
     "sourceurl": "https://www.springboard.com/blog/",
     "sourcename": "Springboard Blog"
+  },
+  "285": {
+    "tags": "ux",
+    "url": "https://balsamiq.com/learn/courses/wireframing/intro/",
+    "title": "What is UI Design?",
+    "datetime": "2018-09-26",
+    "sourceurl": "https://balsamiq.com/learn/",
+    "sourcename": "Balsamiq Learn Site"
   },
   "280": {
     "tags": "remote",
