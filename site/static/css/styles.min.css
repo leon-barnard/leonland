@@ -35,9 +35,9 @@
  * Body resets
  *
  * Update the foundational and global aspects of the page.
- */*{box-sizing:border-box}body,html{margin:0;padding:0}html{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5}@media (min-width:38em){html{font-size:20px}}body{color:#515151;background-color:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
+ */*{box-sizing:border-box}body,html{margin:0;padding:0}html{font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5}@media (min-width:44em){html{font-size:20px}}body{color:#515151;background-color:#fff;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}
 /* No `:visited` state is required by default (browsers will use `a`) */a{color:#268bd2;text-decoration:none}
-/* `:focus` is linked to `:hover` for basic accessibility */a:focus,a:hover{text-decoration:underline}
+/* `:focus` is linked to `:hover` for basic accessibility */a:focus,a:hover{text-decoration:underline}a.active{color:#313131}
 /* Headings */h1,h2,h3,h4,h5,h6{margin-bottom:8px;margin-bottom:.5rem;font-weight:700;line-height:1.25;color:#313131;text-rendering:optimizeLegibility}h1{font-size:32px;font-size:2rem}h2{margin-top:16px;margin-top:1rem;font-size:24px;font-size:1.5rem}h3{margin-top:24px;margin-top:1.5rem;font-size:20px;font-size:1.25rem}h4,h5,h6{margin-top:16px;margin-top:1rem;font-size:16px;font-size:1rem}
 /* Body text */p{margin-top:0;margin-bottom:16px;margin-bottom:1rem}strong{color:#303030}
 /* Lists */dl,ol,ul{margin-top:0;margin-bottom:16px;margin-bottom:1rem}dt{font-weight:700}dd{margin-bottom:8px;margin-bottom:.5rem}
@@ -60,7 +60,7 @@
  * Container
  *
  * Center the page content.
- */.container{max-width:608px;max-width:38rem;padding-left:16px;padding-left:1rem;padding-right:16px;padding-right:1rem;margin-left:auto;margin-right:auto}
+ */.container{max-width:704px;max-width:44rem;padding-left:16px;padding-left:1rem;padding-right:16px;padding-right:1rem;margin-left:auto;margin-right:auto}
 /*
  * Masthead
  *
@@ -83,76 +83,10 @@
  */.pagination{overflow:hidden; /* clearfix */margin-left:-16px;margin-left:-1rem;margin-right:-16px;margin-right:-1rem;font-family:PT Sans,Helvetica,Arial,sans-serif;color:#ccc;text-align:center}
 /* Pagination items can be `span`s or `a`s */.pagination-item{display:block;padding:16px;padding:1rem;border:1px solid #eee}.pagination-item:first-child{margin-bottom:-1px}
 /* Only provide a hover state for linked pagination items */a.pagination-item:hover{background-color:#f5f5f5}@media (min-width:30em){.pagination{margin:3rem 0}.pagination-item{float:left;width:50%}.pagination-item:first-child{margin-bottom:0;border-top-left-radius:4px;border-bottom-left-radius:4px}.pagination-item:last-child{margin-left:-1px;border-top-right-radius:4px;border-bottom-right-radius:4px}}
-/*
- *  __                  __
- * /\ \                /\ \
- * \ \ \___   __  __   \_\ \     __
- *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
- *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
- *    \ \_\ \_\/`____ \ \___,_\ \____\
- *     \/_/\/_/`/___/> \/__,_ /\/____/
- *                /\___/
- *                \/__/
- *
- * Designed, built, and released under MIT license by @mdo. Learn more at
- * https://github.com/poole/hyde.
- */
-/*
- * Contents
- *
- * Global resets
- * Sidebar
- * Container
- * Reverse layout
- * Themes
- */
-/*
- * Global resets
- *
- * Update the foundational and global aspects of the page.
- */html{font-family:PT Sans,Helvetica,Arial,sans-serif}@media (min-width:48em){html{font-size:16px}}@media (min-width:58em){html{font-size:20px}}
-/*
- * Sidebar
- *
- * Flexible banner for housing site name, intro, and "footer" content. Starts
- * out above content in mobile and later moves to the side with wider viewports.
- */.sidebar{text-align:center;padding:32px 16px;padding:2rem 1rem;color:hsla(0,0%,100%,.5);background-color:#202020}@media (min-width:48em){.sidebar{position:fixed;top:0;left:0;bottom:0;width:18rem;text-align:left}}
-/* Sidebar links */.sidebar a{color:#fff}
-/* About section */.sidebar-about h1{color:#fff;margin-top:0;font-family:Abril Fatface,serif;font-size:52px;font-size:3.25rem}
-/* Sidebar nav */.sidebar-nav{padding-left:0;list-style:none}.sidebar-nav-item{display:block}a.sidebar-nav-item:focus,a.sidebar-nav-item:hover{text-decoration:underline}.sidebar-nav-item.active{font-weight:700}
-/* Sticky sidebar
- *
- * Add the `sidebar-sticky` class to the sidebar's container to affix it the
- * contents to the bottom of the sidebar in tablets and up.
- */@media (min-width:48em){.sidebar-sticky{position:absolute;right:1rem;bottom:1rem;left:1rem}}
-/* Container
- *
- * Align the contents of the site above the proper threshold with some margin-fu
- * with a 25%-wide `.sidebar`.
- */.content{padding-top:64px;padding-top:4rem;padding-bottom:64px;padding-bottom:4rem}@media (min-width:48em){.content{max-width:38rem;margin-left:20rem;margin-right:2rem}}@media (min-width:64em){.content{margin-left:22rem;margin-right:4rem}}
-/*
- * Reverse layout
- *
- * Flip the orientation of the page by placing the `.sidebar` on the right.
- */@media (min-width:48em){.layout-reverse .sidebar{left:auto;right:0}.layout-reverse .content{margin-left:2rem;margin-right:20rem}}@media (min-width:64em){.layout-reverse .content{margin-left:4rem;margin-right:22rem}}
-/*
- * Themes
- *
- * As of v1.1, Hyde includes optional themes to color the sidebar and links
- * within blog posts. To use, add the class of your choosing to the `body`.
- */
-/* Base16 (http://chriskempson.github.io/base16/#default) */
-/* Red */.theme-base-08 .sidebar{background-color:#ac4142}.theme-base-08 .content a,.theme-base-08 .highlight,.theme-base-08 .related-posts li a:hover{color:#ac4142}
-/* Orange */.theme-base-09 .sidebar{background-color:#d28445}.theme-base-09 .content a,.theme-base-09 .highlight,.theme-base-09 .related-posts li a:hover{color:#d28445}
-/* Yellow */.theme-base-0a .sidebar{background-color:#f4bf75}.theme-base-0a .content a,.theme-base-0a .highlight,.theme-base-0a .related-posts li a:hover{color:#f4bf75}
-/* Green */.theme-base-0b .sidebar{background-color:#90a959}.theme-base-0b .content a,.theme-base-0b .highlight,.theme-base-0b .related-posts li a:hover{color:#90a959}
-/* Cyan */.theme-base-0c .sidebar{background-color:#75b5aa}.theme-base-0c .content a,.theme-base-0c .highlight,.theme-base-0c .related-posts li a:hover{color:#75b5aa}
-/* Blue */.theme-base-0d .sidebar{background-color:#6a9fb5}.theme-base-0d .content a,.theme-base-0d .highlight,.theme-base-0d .related-posts li a:hover{color:#6a9fb5}
-/* Magenta */.theme-base-0e .sidebar{background-color:#aa759f}.theme-base-0e .content a,.theme-base-0e .highlight,.theme-base-0e .related-posts li a:hover{color:#aa759f}
-/* Brown */.theme-base-0f .sidebar{background-color:#8f5536}.theme-base-0f .content a,.theme-base-0f .highlight,.theme-base-0f .related-posts li a:hover{color:#8f5536}
-/* Overrides */.sidebar-about h1{font-weight:400}.hidden{display:none}div.sidebar img.social{display:inline;margin-right:20px}div.sidebar .mepic{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.6065 0.3575 0.036 0 0 0.1065 0.8624999999999999 0.036 0 0 0.1065 0.3575 0.536 0 0 0 0 0 1 0" /></filter></svg>#filter');-webkit-filter:saturate(.5);filter:saturate(.5);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";opacity:.7;border-radius:50%;margin:10px auto;display:none}a.source{font-style:italic}a.filter.active{font-weight:700}a.filter{
+/* @import "imports/hyde.css"; */
+/* Overrides */h1,h2{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,PT Sans,Helvetica,Arial,sans-serif}h2{margin-bottom:16px;margin-bottom:1rem}.footer img.social{display:inline;margin-right:20px}div.social-icons{float:right}div.copyright{float:left;font-weight:500}.sidebar-about h1{font-weight:400;display:inline-block}.sidebar-about a h1:hover{text-decoration:underline}p.lead{display:inline-block}ul.sidebar-nav{display:block;padding-left:0}ul.sidebar-nav li{display:inline;margin-right:20px;font-weight:700;text-transform:capitalize}.hidden{display:none}div.sidebar .mepic{filter:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feColorMatrix type="matrix" color-interpolation-filters="sRGB" values="0.8426 0.14300000000000002 0.014399999999999996 0 0 0.0426 0.951 0.014399999999999996 0 0 0.0426 0.14300000000000002 0.8144 0 0 0 0 0 1 0" /></filter></svg>#filter');-webkit-filter:saturate(.8);filter:saturate(.8);-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";opacity:.9;margin:10px auto;display:none;float:right;width:115px}a.source{font-style:italic}a.filter.active{font-weight:700}a.filter{
 	/* background-color: #eee; */}#likes img{
-	/* width:24px; */height:18px;display:inline;vertical-align:text-top;margin-right:4px}.content li{padding-bottom:3px}.content img{text-align:center;margin-left:auto;margin-right:auto}@media (min-width:48em){div.sidebar .mepic{display:block}}
+	/* width:24px; */height:18px;display:inline;vertical-align:text-top;margin-right:4px}.content li{padding-bottom:15px}.content img{text-align:center;margin-left:auto;margin-right:auto}@media (min-width:48em){div.sidebar .mepic{display:block}}
 /* Form styles */input,select,textarea{font-size:inherit;box-sizing:border-box}fieldset{border:none}fieldset div{padding:8px 0}label{float:left;
   /*font-size: 1em;*/text-align:left}input,textarea{width:100%;padding:12px 20px;margin:8px 0;box-sizing:border-box;border:1px solid #ccc;border-radius:3px;background:hsla(0,0%,80%,.2)}button{padding:8px 12px;font-family:inherit;font-size:inherit}button:disabled{background-color:#777;color:#aaa}input:focus,textarea:focus{background:hsla(0,0%,80%,.1);border-radius:3px;outline:#ccc}
 /*# sourceMappingURL=styles.css.map */

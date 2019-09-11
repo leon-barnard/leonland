@@ -52,7 +52,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
 }
-@media (min-width: 38em) {
+@media (min-width: 44em) {
   html {
     font-size: 20px;
   }
@@ -74,6 +74,10 @@ a {
 a:hover,
 a:focus {
   text-decoration: underline;
+}
+
+a.active {
+  color: #313131;
 }
 
 /* Headings */
@@ -259,7 +263,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .container {
-  max-width: 38rem;
+  max-width: 44rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;

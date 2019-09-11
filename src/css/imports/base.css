@@ -1,24 +1,63 @@
 /* Overrides */
 
+h1, h2 {
+	font-family: system-ui, "PT Sans", Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	margin-bottom: 1rem;
+}
+
+.footer img.social {
+	display: inline;
+	margin-right: 20px;
+}
+
+div.social-icons {
+	float: right;
+}
+
+div.copyright {
+	float: left;
+	font-weight: 500;
+}
+
 .sidebar-about h1 {
 	font-weight: normal;
+	display: inline-block;
+}
+
+.sidebar-about a h1:hover {
+text-decoration: underline;
+}
+
+p.lead {
+	display: inline-block;
+}
+
+ul.sidebar-nav {
+	display: block;
+	padding-left: 0;
+}
+
+ul.sidebar-nav li {
+	display: inline;
+	margin-right: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
 }
 
 .hidden {
 	display: none;
 }
 
-div.sidebar img.social {
-display: inline;
-margin-right: 20px;
-}
-
 div.sidebar .mepic {
-	filter:saturate(.5);
-	opacity:.7;
-	border-radius:50%;
+	filter:saturate(.8);
+	opacity:.9;
 	margin:10px auto;
 	display: none;
+	float: right;
+	width: 115px;
 }
 
 a.source {
@@ -41,7 +80,7 @@ a.filter {
 }
 
 .content li {
-	padding-bottom: 3px;
+	padding-bottom: 15px;
 }
 
 .content img {

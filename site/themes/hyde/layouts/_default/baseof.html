@@ -3,8 +3,8 @@
   {{ partial "sidebar.html" . }}
     <div class="content container">
     {{ block "main" . -}}{{- end }}
+    {{ partial "footer.html" . }}
     </div>
-
     {{ template "_internal/google_analytics_async.html" . }}
     <!-- JS -->
     {{ if eq .Section "work"}}
