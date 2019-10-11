@@ -1,4 +1,20 @@
 {
+  "210": {
+    "tags": "remote",
+    "url": "https://blog.remotive.io/the-individual-contributor-path-at-remote-startups/",
+    "title": "The Individual Contributor Path at Remote Startups",
+    "datetime": "2019-10-08",
+    "sourceurl": "https://blog.remotive.io/",
+    "sourcename": "Remotive Blog"
+  },
+  "200": {
+    "tags": "remote",
+    "url": "https://www.digitale-leute.de/interview/remote-ready-leon-barnard-balsamiq/",
+    "title": "Remote-Ready: Leon Barnard from Balsamiq about collaborating across different time-zones",
+    "datetime": "2019-10-08",
+    "sourceurl": "https://www.digitale-leute.de/",
+    "sourcename": "Digitale Leute"
+  },
   "190": {
     "tags": "ux",
     "url": "https://summit.productled.com/talks/design-basics-for-non-designers/",
