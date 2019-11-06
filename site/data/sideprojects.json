@@ -47,6 +47,13 @@
     "description": "My capstone project for the <a href='https://www.credential.net/7h97vyks'>Codecademy Intensive \"Build Front-End Web Apps from Scratch\" course</a> - an application for DJs to access additional track metadata from Spotify to help them create better playlists.",
     "image": "TBD",
     "weight": "8"
+  },
+  "6": {
+    "url": "https://djplaylistpreview.com/",
+    "name": "DJ Playlist Preview",
+    "description": "A web application I co-created that allows DJs to see BPM, key, energy level, and other important details for tracks in their playlists in Spotify.",
+    "image": "TBD",
+    "weight": "6"
   }
 
 }
