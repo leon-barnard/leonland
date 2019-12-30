@@ -5,21 +5,22 @@
 Hello!
   </h1>
   {{ .Content }}
-  <hr>
-  <h4>Recent stuff I've written (<a href="/work/#writing">see more</a>)</h4>
+  <div class="stuff">
+  <p><strong>Recent Writing</strong> (<a href="/work/#writing">see all</a>)</p>
   <ul>
   {{ range first 3 (sort .Site.Data.writing ".datetime" "desc")}}
   <li>
-  <a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a></li>
+  <a href="{{.url}}">{{.title}}</a></li>
   {{ end }}
   </ul>
-  <h4>Recent stuff I've talked about (<a href="/work/#speaking">see more</a>)</h4>
+  <p><strong>Recent Speaking</strong> (<a href="/work/#speaking">see all</a>)</p>
   <ul>
   {{ range first 3 (sort .Site.Data.speaking ".datetime" "desc")}}
   <li>
-  <a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a></li>
+  <a href="{{.url}}">{{.title}}</a></li>
   {{ end }}
   </ul>
+  </div>
 </div>
 </div>
 {{- end }}
