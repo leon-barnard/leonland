@@ -10,14 +10,14 @@ Hello!
   <ul>
   {{ range first 3 (sort .Site.Data.writing ".datetime" "desc")}}
   <li>
-  <a href="{{.url}}">{{.title}}</a></li>
+  <a href="{{.url}}">{{.title}}</a> - <em>{{.sourcename}}</em></li>
   {{ end }}
   </ul>
   <p><strong>Recent Speaking</strong> (<a href="/work/#speaking">see all</a>)</p>
   <ul>
   {{ range first 3 (sort .Site.Data.speaking ".datetime" "desc")}}
   <li>
-  <a href="{{.url}}">{{.title}}</a></li>
+  <a href="{{.url}}">{{.title}}</a> - <em>{{.sourcename}}</em></li>
   {{ end }}
   </ul>
   </div>
