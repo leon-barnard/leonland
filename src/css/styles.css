@@ -49,6 +49,11 @@ body {
 a {
   color: #268bd2;
   text-decoration: none;
+  font-weight: 500;
+}
+
+strong a {
+  font-weight: bold;
 }
 
 a:hover,
@@ -95,9 +100,10 @@ p {
   margin-bottom: 1rem;
 }
 
-ul, ol, dl {
+ul, ol {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-left: 20px;
 }
 
 .container {
@@ -146,8 +152,11 @@ ul.sidebar-nav {
 ul.sidebar-nav li {
 	display: inline;
 	margin-right: 20px;
-	font-weight: bold;
 	text-transform: capitalize;
+}
+
+ul.sidebar-nav li a {
+  font-weight: bold;
 }
 
 .hidden {
