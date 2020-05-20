@@ -19,7 +19,17 @@ html {
   font-size: 17px;
   line-height: 1.65;
 }
-@media (min-width: 48em) {
+
+div.sidebar .mepic {
+	filter:saturate(.8);
+	opacity:.9;
+	margin:10px auto;
+	display: none;
+	float: right;
+	width: 115px;
+}
+
+@media (min-width: 44em) {
   html {
     font-size: 19px;
   }
@@ -142,15 +152,6 @@ ul.sidebar-nav li {
 
 .hidden {
 	display: none;
-}
-
-div.sidebar .mepic {
-	filter:saturate(.8);
-	opacity:.9;
-	margin:10px auto;
-	display: none;
-	float: right;
-	width: 115px;
 }
 
 a.source {
