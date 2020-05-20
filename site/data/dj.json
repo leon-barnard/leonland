@@ -1,6 +1,18 @@
 {
   "Monthly": [
   {
+    "slug": "whatever-comes-next",
+    "date": "2005"
+  },
+  {
+    "slug": "virtual-house-party-zoom-show-april-2020",
+    "date": "2004"
+  },
+  {
+    "slug": "housefunkrapdisco",
+    "date": "2003"
+  },
+  {
     "slug": "live-kaleidoscope-coffee-february-2020",
     "date": "2002"
   },
@@ -135,6 +147,10 @@
 ],
 
 "Other": [
+  {
+    "slug": "gen-x-crowd-pleaser",
+    "date": "other6"
+  },
   {
     "slug": "funky-origami",
     "date": "other5"
