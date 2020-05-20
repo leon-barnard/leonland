@@ -1,9 +1,237 @@
-/*
- The default CSS file.
+/* Overrides */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap');
 
- You can use @import here to include CSS inside folders
-*/
-/* @import "imports/reset.css"; */
-@import "imports/poole.css";
-/* @import "imports/hyde.css"; */
-@import "imports/base.css";
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "IBM Plex Serif", system-ui, serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+@media (min-width: 44em) {
+  html {
+    font-size: 19px;
+  }
+  .stuff {
+    font-size: 90%;
+  }
+}
+
+body {
+  color: #515151;
+  background-color: #fff;
+}
+
+a {
+  color: #268bd2;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+a.active {
+  color: #313131;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: .5rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #313131;
+  text-rendering: optimizeLegibility;
+  font-family: "Lora", system-ui, sans-serif;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+strong {
+  color: #313131;
+}
+
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 44rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.footer img.social {
+	display: inline;
+	margin-right: 20px;
+}
+
+div.social-icons {
+	float: right;
+}
+
+div.copyright {
+	float: left;
+	font-weight: 500;
+}
+
+.sidebar-about h1 {
+	font-weight: normal;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.sidebar-about a h1:hover {
+text-decoration: underline;
+}
+
+p.lead {
+	display: inline-block;
+	font-size: 1.25rem;
+  padding-left: 4px;
+}
+
+ul.sidebar-nav {
+	display: block;
+	padding-left: 0;
+}
+
+ul.sidebar-nav li {
+	display: inline;
+	margin-right: 20px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+
+.hidden {
+	display: none;
+}
+
+div.sidebar .mepic {
+	filter:saturate(.8);
+	opacity:.9;
+	margin:10px auto;
+	display: none;
+	float: right;
+	width: 115px;
+}
+
+a.source {
+	font-style: italic;
+}
+
+a.filter.active {
+font-weight: bold;
+}
+
+#likes img {
+	/* width:24px; */
+	height: 18px;
+	display: inline;
+	vertical-align: text-top;
+	margin-right: 4px;
+}
+
+.content li {
+	padding-bottom: 15px;
+}
+
+.content img {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media (min-width: 48em) {
+	div.sidebar .mepic {
+display: block;
+}
+}
+
+/* Form styles */
+
+input, select, textarea {
+	font-size: inherit;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: none;
+}
+
+fieldset div {
+  padding: 8px 0;
+}
+
+label {
+  float: left;
+  /*font-size: 1em;*/
+  text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background: rgba(204,204,204,.2);
+}
+
+button {
+  padding: 8px 12px;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button:disabled {
+  background-color: #777;
+  color: #AAA;
+}
+
+
+input:focus, textarea:focus {
+  background   : rgba(204,204,204,.1);
+  border-radius: 3px;
+  outline      : #ccc;
+}
+
+.stuff {
+	line-height: 1.35;
+	margin-top: 4em;
+}
