@@ -16,7 +16,7 @@ function fetchAndGetPhotos() {
         let photoFarm = photo.farm;
         let photoServerID = photo.server;
         let photoSecret = photo.secret;
-        imgItem.setAttribute("src", `https://farm${photoFarm}.staticflickr.com/${photoServerID}/${photoID}_${photoSecret}_b.jpg`);
+        imgItem.setAttribute("src", `https://farm${photoFarm}.staticflickr.com/${photoServerID}/${photoID}_${photoSecret}_c.jpg`);
         imgItem.setAttribute("alt", photoDesc);
         imgItem.setAttribute("title", photoDesc);
         captionItem.innerHTML = photoDesc;
