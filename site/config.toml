@@ -41,6 +41,9 @@ author = "Leon Barnard"
 
 themeColor = "theme-base-08"
 
+[markup.goldmark.renderer]
+unsafe= true
+
 # Site Menus
 # See the Hugo docs for usage in layouts
 # https://gohugo.io/content-management/menus/

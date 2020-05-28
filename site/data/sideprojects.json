@@ -54,6 +54,12 @@
     "description": "A web application I co-created that allows DJs to see BPM, key, energy level, and other important details for tracks in their playlists in Spotify.",
     "image": "TBD",
     "weight": "6"
+  },
+  "5": {
+    "url": "/fun/photos/",
+    "name": "Photo Favorites",
+    "description": "A project to help me learn about APIs and Javascript. A gallery of my favorite photos built with the Flickr API. ",
+    "image": "TBD",
+    "weight": "5"
   }
-
 }
