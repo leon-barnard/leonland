@@ -1,4 +1,12 @@
 {
+  "350": {
+    "tags": "ux wireframing",
+    "url": "https://balsamiq.com/learn/articles/five-steps-to-great-wireframes/",
+    "title": "Five Steps to Creating Great Wireframes",
+    "datetime": "2020-03-18",
+    "sourceurl": "https://balsamiq.com/learn/",
+    "sourcename": "Balsamiq Wireframing Academy"
+  },
   "340": {
     "tags": "remote",
     "url": "https://mailchi.mp/balsamiq/remote-job-search-resources-from-your-friends-at-balsamiq",
@@ -26,7 +34,7 @@
   "310": {
     "tags": "ux wireframing",
     "url": "https://balsamiq.com/learn/articles/how-to-start-a-wireframe/",
-    "title": "How to Start a Wireframe",
+    "title": "How to Start a Wireframe Project",
     "datetime": "2019-07-19",
     "sourceurl": "https://balsamiq.com/learn/",
     "sourcename": "Balsamiq Wireframing Academy"
