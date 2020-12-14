@@ -1,6 +1,18 @@
 {
   "Monthly": [
   {
+    "slug": "the-wind-down",
+    "date": "2012"
+  },
+  {
+    "slug": "at-home-with-house",
+    "date": "2009"
+  },
+  {
+    "slug": "back-to-the-wheelhouse",
+    "date": "2008"
+  },
+  {
     "slug": "fever-dream",
     "date": "2007"
   },
