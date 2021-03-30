@@ -2,7 +2,7 @@
 title: "Leon Barnard has a website"
 ---
 
-I'm **Leon**, a dad, husband, and User Experience specialist. I work at [Balsamiq](http://balsamiq.com/), maker of the best little wireframing tool around. I help people and technology get along better.
+I'm **Leon**, a dad, husband, mentor, and User Experience specialist. I work at [Balsamiq](http://balsamiq.com/), maker of the best little wireframing tool around. I help people and technology get along better.
 
 Perhaps you'd like to find out **[what I do for work](/work/)**, like [write](/work/#writing) and [speak](/work/#speaking) about UX design, web technologies, remote work, and more.
 

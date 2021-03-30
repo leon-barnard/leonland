@@ -1,6 +1,14 @@
 {
+  "370": {
+    "tags": "ux career",
+    "url": "https://www.linkedin.com/pulse/get-developers-your-side-making-job-easier-leon-barnard/",
+    "title": "Get Developers on Your Side by Making Their Job Easier",
+    "datetime": "2021-03-29",
+    "sourceurl": "https://www.linkedin.com/",
+    "sourcename": "LinkedIn"
+  },
   "360": {
-    "tags": "ux favorite",
+    "tags": "ux favorite career",
     "url": "https://mailchi.mp/balsamiq/balsamiqs-advice-for-starting-a-career-in-ux-525450",
     "title": "Balsamiq's Advice for Starting a Career in UX",
     "datetime": "2020-11-25",
@@ -16,7 +24,7 @@
     "sourcename": "Balsamiq Wireframing Academy"
   },
   "340": {
-    "tags": "remote",
+    "tags": "remote career",
     "url": "https://mailchi.mp/balsamiq/remote-job-search-resources-from-your-friends-at-balsamiq",
     "title": "Remote Job Search Resources From Your Friends at Balsamiq",
     "datetime": "2020-02-26",
@@ -136,7 +144,7 @@
     "sourcename": "Balsamiq UX Blog"
   },
   "200": {
-    "tags": "ux favorite",
+    "tags": "ux favorite career",
     "url": "http://uxmastery.com/ux-real-world/",
     "title": "From the Classroom to the Cubicle: UX in the Real World",
     "datetime": "2016-07-12",
@@ -176,7 +184,7 @@
     "sourcename": "Treehouse Blog"
   },
   "150": {
-    "tags": "ux favorite",
+    "tags": "ux favorite career",
     "url": "http://blog.teamtreehouse.com/soft-skills-ux-designers",
     "title": "Soft Skills for UX Designers",
     "datetime": "2015-12-30",
@@ -264,7 +272,7 @@
     "sourcename": "Balsamiq UX Blog"
   },
   "40": {
-    "tags": "ux favorite",
+    "tags": "ux favorite career",
     "url": "https://medium.com/@leonbarnard/forget-your-dream-job-5d1c4689065a",
     "title": "Forget your Dream Job",
     "datetime": "2014-01-17",
@@ -280,7 +288,7 @@
     "sourcename": "Balsamiq UX Blog"
   },
   "20": {
-    "tags": "ux favorite",
+    "tags": "ux favorite career",
     "url": "https://blog.balsamiq.com/tales-from-a-ux-guerilla/",
     "title": "Tales from a UX Guerrilla",
     "datetime": "2013-06-03",
