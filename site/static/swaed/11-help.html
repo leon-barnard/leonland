@@ -1,0 +1,3513 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>11&nbsp;Contextual&nbsp;Help - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style5 {color: #FF0000}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="11-help.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <span class="currentchapter">11&nbsp;Contextual&nbsp;Help</span>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="toc-level0"><span class="style3"><a href="11-help.html#11">11. Contextual Help</a></span></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.1">11.1 Inline Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.1.1">11.1.1 Deciding Whether to Provide Inline Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.1.2">11.1.2 Positioning Inline Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.1.3">11.1.3 Formatting Inline Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.1.4">11.1.4 Including Links in Inline Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.1.5">11.1.5 Writing Inline Help</a></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.2">11.2 Help-Window Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.2.1">11.2.1 Layout and Behavior of the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.1">11.2.1.1 Anatomy of the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.2">11.2.1.2 Sizing of the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.3">11.2.1.3 Window Title Bar in the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.4">11.2.1.4 Content-Area Title Pane in the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.5">11.2.1.5 Navigation Pane in the Help Window</a></p>
+<p class="toc-level3 style3"><a href="11-help.html#11.2.1.6">11.2.1.6 Topic Pane in the Help Window</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.2.2">11.2.2 Providing Access to Help-Window Help</a></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.3">11.3 Left-Pane Help</a></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.4">11.4 Choosing the Correct Type of Help</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.4.1">11.4.1 Providing Help for Main Windows</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.4.2">11.4.2 Providing Help for Pop-Up Windows</a></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.5">11.5 Tool Tips</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.1">11.5.1 Creating Tool Tips</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.2">11.5.2 Creating Longer Descriptions Using the HTML longdesc Attribute</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.3">11.5.3 Tool Tips for Sun Icons, Glyphs, and Graphics</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.4">11.5.4 A Note on HTML alt and longdesc Attributes for Tree Navigation Objects</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.5">11.5.5 Visual Design Considerations for Tool Tips</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.6">11.5.6 Tool Tips for Disabled Icons</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.7">11.5.7 Tool Tips for Icons With Alarm Badges</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.5.8">11.5.8 Tool Tip Resources</a></p>
+<p class="toc-level1 style3"><a href="11-help.html#11.6">11.6 Pop-Up Bubble</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.6.1">11.6.1 Invoking and Closing Pop-Up Bubbles</a></p>
+<p class="toc-level2 style3"><a href="11-help.html#11.6.2">11.6.2 Pop-Up Bubble Content Details</a></p>
+<br>
+
+<h1 class="style3"><a name="11"></a> 11 Contextual Help</h1>
+
+
+<p class="style3">The best way to help users is to provide a
+well-designed, easily-understood
+ user interface (UI), one in which users can complete most
+ tasks without assistance.  However, even in a well-designed
+ UI, you might need to display supplementary information
+known as "contextual help," commonly called just "help&quot;.
+For example, help displayed in a pop-up window or next to some key fields might assist
+new users in completing a complex page of your application.
+Contextual help assists users immediately, without
+requiring that they leave the context of their work.</p>
+<p class="style3">For additional information about writing online help, see <a href="01-introduction.html#1.4.5">1.4.5 Content Page Titles and Other UI Text</a>.</p>
+<p class="style3">Applications can display help
+ in the following ways:
+                  
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+   <li>Inline with the application's fields and controls</li>
+   <li>In the left pane of a wizard or other pop-up window</li>
+   <li>In a window dedicated to displaying help (often called "online help")</li>
+   <li>In a tool tip</li>   
+</ul>
+
+
+
+
+
+
+
+
+                  
+<p class="style3">This chapter describes these types of help, explains when each is appropriate, 
+and provides guidelines for creating them.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The types of help that are appropriate for a particular window depend on the 
+  window's type and the type of page that the window displays. To learn about 
+  window types and page types, see <a href="03-windows-pages.html">Chapter 3, Windows and 
+  Pages</a>.&nbsp; </p>
+
+
+
+
+
+
+
+                  
+<h2 class="style3"><a style="text-decoration: line-through;" name="11.1">
+</a>11.1 Inline Help</h2>
+
+
+
+
+
+
+
+
+<p class="style3">If users might not understand certain UI elements on a page, 
+you can provide "inline help&quot;. Inline help consists of instructions, explanations, or links that display 
+directly with the page's other elements.  The following example shows inline help 
+on a page.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="help_graphics/helpsamplepage.png" alt="Inline help figure" style="width: 725px; height: 199px;"> 
+</p>
+
+
+
+
+
+
+
+          
+<p class="style3">As shown in the preceding example, inline help can consist of:
+</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+   <li>Page inline help--Brief instructions for completing a page or a section of a page. Also known as "instructional inline help&quot;.</li>
+   <li>Field inline help--A brief explanation of a field, typically an entry field. Also known as "explanatory inline help&quot;.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">Inline help provides brief assistance to users, both where they need it and
+when they need it. Often, inline help is 
+appropriate for windows whose content might confuse most new users or infrequent users.  
+Inline help complements an
+application's other types of user assistance, for example, 
+tool tips, error messages, labels on fields, and help displayed
+in pop-up windows. 
+Inline help works best when the labels of UI elements, such as fields and controls, are 
+descriptive and precise.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">Note that in the previous example there are also links in the inline help, which
+enable the writer to provide additional help. To learn about these links, 
+see <a href="11-help.html#11.1.4">11.1.4 Including Links in Inline Help</a>.
+                   
+</p>
+
+
+
+
+
+
+<h3 class="style3"><a name="11.1.1">
+</a>11.1.1 Deciding Whether to Provide Inline Help</h3>
+
+
+
+
+
+
+
+
+<p class="style3">Before adding inline help to an application, you  
+need to determine which parts of the application, if any, need inline help.
+The following guidelines help you decide whether to provide inline help. 
+They also help you provide inline help correctly.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Before completing your UI design, consult a technical writer, 
+a UI designer, or both, for ideas on where users might need inline help. 
+By finding out early which parts of your design need inline help, you can 
+sometimes eliminate that need by relabeling those parts or redesigning them.
+Before providing inline help in a page, verify that you cannot redesign the page 
+to eliminate the need for inline help.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+For each entry field that requests text, consider providing inline help 
+if users might not know the valid format or values for that text.  
+In the inline help, list the valid formats,  
+ show at least one example value, or do both.  For example, inline help for a password field might be: 
+ "Passwords must be at least 10 characters long&quot;.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> In wizards 
+and other pop-up windows with help 
+in their left pane, add inline help to the right pane only if the left-pane help does not suffice.
+For example, left-pane help usually would not suffice if users need help about one or more input fields.
+Those fields would need inline help.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Test the usability and accessibility of your inline help. 
+If you redesign a page that has inline help, verify that the inline help remains accurate and necessary.<br>
+</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.1.2">
+</a>11.1.2 Positioning Inline Help</h3>
+
+
+
+
+
+
+
+
+<p class="style3">The position of a page's inline help enables users to determine which inline help applies to 
+which UI element.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Place 
+inline help near the UI elements to which it relates.  Follow these guidelines:</p>
+
+
+
+
+
+
+
+
+
+ 
+<table class="info-table" border="1" cellpadding="10" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody><tr>
+    <th class="style3"><b>Scope of the Inline Help</b> </th>
+    <th class="style3"><b>Correct Position</b> </th>
+  </tr>
+<tr>
+<td class="style3">An entire page of an application</td>
+
+<td class="style3">The top of the page, directly below 
+the title.  Place the inline help in that position even if the page has controls for page actions or has  
+jump-to links for navigating to sections of the page. However, inline help is rarely necessary 
+before those elements. If
+the page has no title, place the inline help directly below the page's masthead. 
+      The inline help text can extend all the way from the left to the right margin of the page. <br>
+ 
+</td>
+</tr>
+
+<tr>
+<td class="style3">A page section that is titled or otherwise visually separated</td>
+
+<td class="style3">The top of that section, directly below the title
+or separator.</td>
+</tr>
+
+<tr>
+<td class="style3">A single entry field</td>
+
+<td class="style3">Directly below the field.</td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.1.3">
+</a>11.1.3 Formatting Inline Help</h3>
+
+
+
+
+
+
+
+
+<p class="style3">Among the factors that affect the usability of inline help is its formatting, especially, its
+font face, weight, size, and color. Use the Sun Common UI Component Library (in open source, the Project Woodstock components) to obtain the
+correct font style for inline help (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>).</p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14">
+In inline help, use color only to highlight links. (The components for
+inline help in the Component Library automatically highlight links,
+using color.) For accessibility and other usability concerns, avoid
+using:
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Italic text</li>
+<li>Underlined text that is not a link</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Do not place 
+tables or inline images in inline help.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14">
+Do not explicitly format the line length or font size of inline help.
+If you are using the Component Library to create your inline help, allow the
+components to format the help automatically.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In inline help, avoid unnecessary line breaks and other layout techniques that waste vertical space.</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.1.4">
+</a>11.1.4 Including Links in Inline Help</h3>
+
+
+
+
+
+
+
+
+<p class="style3">One good way to keep inline help brief is to include "inline-help links," which are links within inline help.
+Inline help can consist of:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Just text</li>
+<li>Text and one or more inline-help links</li>
+<li>A single inline-help link</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">However, depending on the type of window and page, 
+inline-help links might not be appropriate.  For example, inline-help links 
+are rarely appropriate in wizards.  
+Before inserting links into your inline help, read the
+sections of this chapter relating to the type of window and page
+that you are working with.</p>
+
+
+
+
+
+
+
+  
+<p class="style3">When providing inline-help links, follow these guidelines:</p>
+
+
+
+
+
+
+
+
+<p class="style3"><a name="More-links"></a><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+  In your application's overview of accessibility (see <a href="D-accessibility.html">Appendix 
+  D, Accessibility</a>), inform users that links in inline help open a new 
+  window. In addition, explain that links to additional help often begin with the word 
+  "More".</p>
+
+
+
+
+
+
+
+
+<p class="style3"><a name="no-bulleted-lists"></a><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In inline help, do not display instructions that consist of
+more than three steps. Instead, link to those instructions.  For example, "To set 
+the properties of this object, <a href="11-help.html#no-bulleted-lists">follow these instructions</a>&quot;.Also, do not use a vertical list for instructions consisting of fewer than three steps -- just give those instructions inline. </p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+For readability and accessibility, ensure that no two inline-help links are touching each other.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14">  
+In inline help, include a link only if that link's target is available whenever your application runs.  For example,
+in inline help for a reusable UI component, such as a file chooser, provide a link to a particular help topic only if 
+the file containing that topic is always accessible from the user's system.  Provide links to the Web only if you can be
+sure that users  have a connection to the Internet at that time. </p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Implementation_Info.jpg" alt="Implementation Information" title="Implementation Information" height="14" width="16"> 
+If you link to a help topic from inline help, insert anchors in that help topic to ensure that the appropriate section 
+is displayed at the top of the Help window's content area.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14">  
+Do not include links in <a href="11-help.html#11.3">left-pane help</a>.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Provide links in inline help
+ only to display information that is too large to display inline. 
+ Ensure that each link's label precisely describes that link's target. For example, do not use the label "Help," 
+ which is too general.  Instead, use a more specific label, such as "More password requirements&quot;.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In inline help, avoid including links to display just one additional line of text.  Instead, try to fit that additional
+text inline.  Alternatively, replace the inline help with a different type of help.  For example, in certain pop-up windows, 
+you might replace inline help with left-pane help.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14">
+If a passage of inline help is too long, create a title for it, and
+then display the title as inline help that links to the relevant help
+topic. For example, if a password field had lengthy requirements, you
+could provide a link labeled "Password requirements" instead of listing
+the requirements inline.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> If 
+your inline help includes links to definitions of terms, provide those definitions
+  in a glossary.  List that glossary as a first-level heading in the table of contents for your application's online help.
+  For an example, see the example Help window in <a href="11-help.html#Help%20window%20example">11.2.1 Layout and Behavior of the Help Window</a>.</p>
+
+
+
+
+
+
+
+  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+  In inline help, when linking from a 
+  term to its definition, ensure that the link 
+  opens that definition at the top of the target window's text area.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+If a pop-up window has both inline help
+and left-pane help, do not include links in the inline help.
+Instead, consider either of the following approaches:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Adding additional information inline or 
+  in the left pane</li>
+  
+<li>Redesigning the window so that it needs 
+  less help</li>
+</ul>
+
+
+
+
+
+
+ 
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+  If a link ends a passage of inline help and provides additional information 
+  about that passage, place a More graphic (<img src="help_graphics/help_link_arrow.gif" alt="" title="" height="10" width="14">) 
+  at the beginning of the link, as shown here: </p>
+
+
+
+
+
+
+
+
+<span class="style3"><a name="More-Link-screen"></a>
+</span>
+<p class="style3"><img src="help_graphics/help-snap.png" alt="Example screen showing More-link graphic" style="width: 674px; height: 228px;"> 
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Do not place a More graphic (<img src="help_graphics/help_link_arrow.gif" alt="Graphic showing link to more help." title="" height="10" width="14">) 
+before links in a phrase that includes nonlinked text.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+When providing a link that begins with a More graphic (<img src="help_graphics/help_link_arrow.gif" alt="Graphic showing link to more help." title="" height="10" width="14">) 
+ensure that the link's label is specific.  Do not use the word "More" alone as a link label.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+For inline-help links, make the link's tool tip as specific as possible.  For example, in 
+<a href="11-help.html#More-Link-screen">the preceding figure</a>, the tool tip for the "More on alarm severities" link
+might be:
+
+</p>
+
+
+
+
+
+
+<blockquote class="style3">Shows more help about alarm severities. (Opens a New Window)</blockquote>
+
+
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.1.5">
+</a>11.1.5 Writing Inline Help</h3>
+
+
+
+
+
+
+
+    
+<p class="style3">When writing inline help, follow these guidelines:</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Ensure 
+that your inline help consists of only text and text links.  Ensure that it does not include buttons or other UI controls.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> In 
+inline help, never use the phrase "click here&quot;.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+To provide help on an entry field, do not make the field's label a link.  Instead, provide inline help below that field, 
+placing links in the inline help if needed.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> In 
+inline help, provide only information that the rest of the UI
+cannot, or does not, provide. State only what is not clearly visible or otherwise 
+obvious.  For example, for labeled fields, 
+provide inline help only to add information that the label cannot convey.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Provide page inline help only if the user's task is not obvious.  Do not provide page inline help  
+for each page of your application merely to achieve consistent appearance.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+  Ensure that mastheads contain no inline help, other than the Help link in main window  
+  mastheads. For more information about main window mastheads, see <a href="04-masthead.html">4.1 Main Window Masthead</a>.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Ensure that 
+your application's inline help is localizable, accessible, and grammatically correct. For accessibility, follow the guidelines in <a href="D-accessibility.html">Appendix D, Accessibility</a>.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Use sentence capitalization for all inline help.  <span style="">For more information, see
+ </span><a href="02-visual.html#2.5" style="">2.5 Text Capitalization</a><span style="">.</span> When referencing 
+objects on the page, button names, for example, match their capitalization.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> When writing 
+instructions, start with what the reader can do, and then describe how to do it.  For example:
+</p>
+
+
+
+
+
+
+<blockquote class="style3">"To stop the print job, click Stop."</blockquote>
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+When punctuating inline help, follow these guidelines:</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Do not precede inline help with an asterisk or other punctuation.  One exception is inline help intended 
+to inform users that, in the UI, required fields are marked with an asterisk-like icon.</li>
+<li>Do not enclose an entire passage of inline help in parentheses, brackets, braces, or quotation marks.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+When providing inline help, 
+limit its length by following these suggestions:</p>
+
+
+
+
+
+
+
+
+<table class="info-table" border="1" cellpadding="10" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody><tr>
+    <th class="style3"><b>Scope of the Inline Help</b> </th>
+    <th class="style3"><b>Recommended Length</b> </th>
+  </tr>
+<tr>
+<td class="style3">An entire page of an application</td>
+
+<td class="style3">One to three short sentences</td>
+</tr>
+
+<tr>
+<td class="style3">A page section that is titled or otherwise visually separated</td>
+
+<td class="style3">One short sentence</td>
+</tr>
+
+<tr>
+<td class="style3">A single entry field</td>
+
+<td bgcolor="#ffffff" class="style3">One short sentence or, preferably, one phrase</td>
+</tr>
+
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In instructions, use the imperative whenever possible.
+
+
+</p>
+
+
+
+
+
+
+<blockquote class="style3"><b>INCORRECT</b>: You can stop the print job by clicking Stop.</blockquote>
+
+
+
+
+
+
+
+
+  
+<blockquote class="style3"><b>CORRECT</b>: To stop the print job, click Stop.</blockquote>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Use 
+precise verbs.  For example, do not use "specify" if "choose," "type," or some other verb is clearer.  In addition, use the verb "select" only where 
+it is not ambiguous.  In UIs, "select" is not an exact synonym for "choose&quot;.  
+"Select" means "to designate one or more UI objects, typically for a subsequent action&quot;. For example, a user might 
+select several files so that they can all be moved as a set. In contrast, a user might choose a command from a menu.
+Choosing a menu command does not designate it for a subsequent action, so "choose" is the correct verb.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+Do not 
+abbreviate "that is" and "for example" as "i.e&quot;. and "e.g."  Spell out those terms, or, better yet, omit them.  
+If a passage of inline help consists solely of examples, listed in a series, then start the passage with the word 
+"Examples," followed by a colon and a space character, as shown here:
+
+</p>
+
+
+
+
+
+
+<blockquote class="style3">Examples: AND, OR, NOT</blockquote>
+
+
+
+
+
+
+
+
+<h2 class="style3"><a name="11.2"></a>
+  11.2 Help-Window Help</h2>
+
+
+
+
+
+
+
+
+<p class="style3">Not all help is brief enough to display on the page where users perform their task.
+To display more help, applications can open the Help window, as described 
+in the following sections.</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.2.1"></a>
+  11.2.1 Layout and Behavior of the Help Window</h3>
+
+
+
+
+
+
+
+  
+<p class="style3">The Help window is a pop-up window that opens and displays help when users click:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+    <li>Links in inline help</li>
+    <li>The Help link in the main window masthead</li>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">Here is an example of the Help window:</p>
+
+
+
+
+
+
+
+
+<span class="style3"><a name="Help window example"></a>
+  
+</span>
+<p class="style3"><img src="help_graphics/help6-flat.png" style="width: 1040px; height: 522px;" alt="Help window example" title=""></p>
+
+
+
+
+
+
+
+
+<p class="style3"><b>Note:</b> In this chapter's examples of the Help window, the help topics are intended only 
+  to show the window's UI elements. The topics are not necessarily from actual Sun products.
+</p>
+
+
+
+
+
+
+<p class="style3">
+
+</p>
+
+
+
+
+
+
+<p class="style3">After the Help window first opens, it stays open until
+a user explicitly closes it.</p>
+
+
+
+
+
+
+  
+<p class="style3">Users can minimize the Help window. If a user minimizes the Help window, 
+the Help window is restored when the user either:</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+    <li>Explicitly restores it</li>
+    <li>Requests online help from any application that uses the Help window</li>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">To understand the Help window better, you might need information on the following topics:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+    <li>Links in inline help, described in <a href="11-help.html#11.1.4">11.1.4 Including Links in Inline Help</a></li>
+    <li>Main windows and pop-up windows, as described in <a href="03-windows-pages.html">Chapter 3, Windows and Pages</a></li>
+    <li>The main window masthead, described in <a href="04-masthead.html#">4.1 Main Window 
+      Masthead</a></li>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">For information on how to provide Help-window help correctly, see <a href="11-help.html#11.2.2">11.2.2 Providing Access to Help-Window Help</a>.</p>
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Ensure that your application displays only one Help window. 
+For example, in a main window, a user might click the masthead's Help link, navigate to another page of the application 
+without closing the Help window, and then click the masthead's Help link again. The help for 
+that new page should be displayed in the existing Help window.</p>
+
+
+
+
+
+
+
+
+<h4 class="style3"><a name="11.2.1.1"></a>
+  11.2.1.1 Anatomy of the Help Window</h4>
+
+
+
+
+
+
+
+
+<p class="style3">The Help window has the following parts, starting from the top:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+    <li>Window title bar</li>
+    
+    <li>Content area, divided into three panes:</li>
+       <ul>
+       <li>The content-area title pane, which spans the two lower panes</li>
+       <li>The navigation pane (the left pane)</li>
+       <li>The topic pane (the right pane), which displays a horizontal toolbar above a text area</li>
+       </ul>
+  
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">As shown in <a href="11-help.html#Help%20window%20example">the preceding example</a>, the Help window's navigation and 
+topic panes are separated by a moveable vertical divider.  
+The divider enables users to widen one pane while narrowing the other, 
+without affecting the window's overall width.<br>
+</p>
+<p class="style3">The X at the top right of the
+window, and the Close button at the bottom right, both provide the same
+function, to close the window.<br>
+</p>
+
+
+
+
+
+
+
+
+
+<h4 class="style3"><a name="11.2.1.2"></a>
+  11.2.1.2 Sizing of the Help Window</h4>
+
+
+
+
+
+
+
+
+<p class="style3">When the Help window is initially displayed, it is 750 pixels wide and 500 pixels tall, but users can resize the window.
+If a user resizes the Help window, the window behaves as follows:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>The individual heights of the window title bar and content-area title pane remain static.  
+However, the width of each of those elements changes, always spanning the entire width of the Help window.<br></li>
+
+<li>The height and combined width of the navigation and topic panes change with that of the 
+entire Help window.  In addition, as the size of the Help window changes, the widths of these two panes 
+stay in the same left-to-right ratio.  By default, that ratio is about 1:2.  In other words,
+the left pane spans about one third of the Help window's width.
+Regardless of size, the navigation and topic panes  are always of equal height.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<h4 class="style3"><a name="11.2.1.3"></a>
+  11.2.1.3 Window Title Bar in the Help Window</h4>
+
+
+
+
+
+
+
+  
+  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+    In the Help window, ensure that the window title bar conforms 
+    to the guidelines for pop-up windows. For more information, see 
+    <a href="03-windows-pages.html">Chapter 3, Windows and Pages</a>.</p>
+
+
+
+
+
+
+
+  
+
+<h4 class="style3"><a name="11.2.1.4"></a>
+  11.2.1.4 Content-Area Title Pane in the Help Window</h4>
+
+
+
+
+
+
+
+  
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+In the Help window, ensure that the content-area title pane contains only the content area's title, which is "Help&quot;.  
+In addition, ensure that the title is text, not a graphic, so that it can be translated.</p>
+
+
+
+
+
+
+
+  
+<h4 class="style3"><a name="11.2.1.5"></a>
+  11.2.1.5 Navigation Pane in the Help Window</h4>
+
+
+
+
+
+
+
+  
+<p class="style3">The navigation pane is a tabbed pane with tabs labeled as follows, in left-to-right order:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+    <li><b>Contents</b> (Required)--Displays the table of contents (TOC) for the application's set of help topics</li>
+    <li><b>Index</b> (Required)--Displays an index of the application's set of help topics</li>
+    <li><b>Search</b> (Required)--Enables users to search for help topics that contain a user-specified string</li>
+    
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3"><b>Note:</b>The tabs of the Help window's navigation pane differ visually from tabs described elsewhere in these Guidelines 
+(see <a href="05-navigation.html#5.2">5.2 Tabbed Panes Details</a> for more information).
+</p>
+
+
+
+
+<span class="style3">
+<!-- NOTE NOTE NOTE:
+
+Making the Index and Search tabs optional did not make it into 2.1 component, so the following paragraph
+
+was commented out, and the (Optional)'s changed to (Required)'s for these tabs in the list above. -->
+<!-- <P>In applications where the Help window provides 
+
+neither an index nor a search feature, the navigation pane is not tabbed.  Instead, information
+
+that would be on the Contents tab is displayed directly in the navigation pane.
+
+</P> -->
+
+
+
+
+
+
+
+</span>
+<p class="style3">If the navigation pane's content extends beyond the pane, 
+horizontal scrollbars, vertical scrollbars, or both are displayed in the pane.
+Text in the navigation pane does not wrap. Therefore, try to name navigational elements to avoid these scrollbars.</p><p class="style3"><b>Contents Tab:</b> <br><br>
+The Contents tab is the far-left tab of the Help window's navigation pane. By default, the Contents tab 
+is the pane's active tab, as shown in <a href="11-help.html#Help%20window%20example">the preceding example</a>.  
+Within the Contents tab, applications display their Table of Contents (TOC) as a collapsible navigation tree. 
+Each node of the tree includes a text link to a help topic.  Users can display that topic
+in the Help window's topic pane by clicking the link.  If a user clicks a link in the TOC, the Help window 
+highlights that link's node in the TOC and displays the link's target (the text of a help topic) in the topic pane (the 
+right pane).</p>
+
+
+
+
+
+
+
+
+<p class="style3">In the TOC, all container nodes are open by default.  (Container nodes in the contents tab contain subtopics.) However,
+users can close each container node individually by clicking that node's navigation control.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">Unlike nodes in typical navigation trees, nodes in a TOC have no graphic.
+Another difference between a TOC and typical navigation trees is that the
+background color of a TOC is white, as shown in <a href="11-help.html#Help%20window%20example">the preceding example</a>.
+For more information about container nodes, see 
+<a href="05-navigation.html#5.1.4">
+5.1.4 Tree</a>.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14">
+Divide help into multiple topics. Include each major topic, with its subtopics, in its own container node.
+</p>
+
+
+
+
+
+
+
+  
+<p class="style3"><b>Index Tab:</b> <br><br>
+
+The Index tab is the middle tab of the Help window's
+navigation pane, as shown in the following example:
+</p>
+
+
+
+
+
+
+
+
+<span class="style3"><a name="index-example-screen"></a>
+</span>
+<p class="style3"><img src="help_graphics/help_IndexTab.png" alt="Help Window With Index Tab" style="width: 844px; height: 523px;">  
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Index tab enables users to:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+ <li>View and navigate an index
+
+ </li><li>Choose an index entry, thereby displaying the corresponding
+     help topic in the the Help window's topic pane (the right pane)
+</li>
+</ul>
+
+
+
+
+
+
+
+
+<p class="style3">Typically, the only help topics indexed are for the application from which the Help window was opened.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Index tab is inactive until a user clicks it, making it the active tab.
+Activating the Index tab or deactivating it does not affect the Help window's topic pane.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Index tab displays an index as a navigation tree. Each node of the tree 
+is either:
+</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+ <li>A container node - An index entry with subentries</li>
+ <li>A leaf node - An index entry without subentries</li>
+</ul>
+
+
+
+
+
+
+
+
+<p class="style3">In indexes, all container nodes are open by default.  However,
+users can close each container node individually by clicking that node's navigation control.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">Unlike nodes in typical navigation trees, nodes in indexes have no graphic.
+Another difference between indexes and typical navigation trees is that the
+background color of indexes is white, as shown in <a href="11-help.html#index-example-screen">the preceding example</a>.
+For more information about container nodes, see 
+<a href="05-navigation.html#5.1.4">
+5.1.4 Tree</a>.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">Indexes have vertical and horizontal scrollbars, but only if the index is longer or wider than the navigation pane.</p>
+<span class="style3">The index entry is highlighted when the user clicks the link, and the associated help topic is 
+displayed.  
+
+
+
+
+
+
+
+
+
+</span>
+<p class="style3">After a user clicks an index entry, thereby displaying the 
+corresponding help text in the topic pane, that text remains displayed 
+until the user either:
+</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+  <li>Clicks a different index entry</li>
+  <li>Displays a different help topic by using the Help window's Contents tab, Search tab, or 
+      a link in the window's topic pane</li>
+</ul>
+
+
+
+
+
+
+
+<p class="style3">
+If a user switches among the tabs, the highlighted selection in the navigation pane is 
+removed, so there is no conflict between what is selected in the tab and what is displayed in 
+the topic pane.  For example, if a user clicks an item in the index (and displays its topic) and then 
+switches to the Table of Contents, the Table of Contents  would have no highlight when initially displayed.
+</p>
+
+
+
+
+
+
+
+<p class="style3">
+Maintaining an appropriate selection (with highlighting) when switching tabs is something that might 
+be addressed in a future release of the guidelines and this component.
+</p>
+
+
+
+
+
+
+
+
+
+<p class="style3"><b>Search Tab:</b> <br><br>
+
+The Search tab is the far-right tab of the Help window's navigation pane, as shown in the following example:
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="help_graphics/help_SearchTab_dflt.png" alt="Help Window With Search Tab" style="width: 844px; height: 523px;">  
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Search tab enables users to type a query and then view 
+the titles of help topics whose full
+text contains matches for that query.  The only topics searched are
+those of the application from which the Help window was
+opened.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">As shown in the preceding example, the UI elements of the Search tab are:</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+ <li>Search input field and Search button</li>
+ <li>Inline help for the input field</li>
+ <li>Results text area</li>
+</ul>
+
+
+
+
+
+
+
+
+<p class="style3">A horizontal rule separates the Results text area from the UI elements above it.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Search tab is inactive until a user clicks it, 
+making it the active tab.
+Activating the Search tab does not affect the Help window's
+topic pane (the right pane).
+However, if a user clicks a link in the Search tab, the corresponding help text
+is displayed in the topic pane, as shown in the following example:
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="help_graphics/help_SearchTabESM.png" alt="Search Tab With Results" style="width: 844px; height: 523px;">  
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The link that the user clicks can be either:</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+ <li>The Search input field's inline help link</li>
+ <li>A link in the list of results returned from the user's search query</li>
+</ul>
+
+
+
+
+
+
+
+
+<p class="style3">  
+On the Search tab, links are the only UI controls that affect the 
+Help window's topic pane.</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Search input field is where users type their query. 
+The Search input field is blank until a user starts typing in it. 
+If a user's query is too long to display in the input field, the
+query scrolls to the left as the user types.  If
+the user moves the cursor back, the query scrolls
+to the right when the cursor reaches the left
+border of the input field.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Search input field has no visible label but does have an HTML title attribute for 
+accessibility.  The value of that title attribute is
+"Search input field&quot;. For more information about the HTML title 
+attribute, see the description of it on the World Wide Web Consortium's 
+web site at:</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+<a href="http://www.w3.org/TR/REC-html40/struct/global.html#adef-title">http://www.w3.org/TR/REC-html40/struct/global.html#adef-title</a>
+</p>
+
+
+
+
+
+
+
+   		  
+<p class="style3">The Search input field's inline help
+consists of a link labeled "Tips on Searching&quot;. Clicking the link 
+opens the corresponding help text in the topic pane, as shown in the following example:</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="help_graphics/help_SearchTab_Tips.png" alt="Help Topic for Search Input Field" style="width: 844px; height: 523px;">  
+</p>
+
+
+
+
+
+
+
+<p class="style3">
+  <img src="Guidelines_Icons/Implementation_Info.jpg" alt="Implementation Information" title="Implementation Information" height="14" width="16"> The inline help link's corresponding help text is
+not a "help topic" in the strict sense.  It is not included in the 
+Help window's table of contents or in the results of queries.
+</p>
+
+
+
+
+
+
+
+<p class="style3">Directly to the right of the Search input field is a
+right-justified command button labeled "Search&quot;.  Clicking the Search button performs the  
+search. Users can also perform a search by pressing Return or Enter while input focus 
+is in the Search input field.</p>
+
+
+
+
+
+
+
+
+<p class="style3">If a user clicks the Search
+button while the Search input field is empty, a message is displayed directly 
+in the Results text area, top justified. That message
+is "The search found no results&quot;.  The same 
+message is displayed if no help topics match the 
+query that a user types, as shown in the following example:</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="help_graphics/help_SearchTab_no_results.png" alt="Search Tab With No Results" style="width: 844px; height: 523px;"> 
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">If one or more help topics match the user's query, 
+ the titles of those
+topics are listed in the Results text area, which occupies the remaining
+portion of the Search tab.</p>
+
+
+
+
+
+
+
+
+
+<p class="style3">Until a user performs a first query, the Results text area is blank.
+If the user performs a query for which there are matches:</p>
+
+
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+
+  <li>The Results text area lists the titles of the help topics
+  that match the user's query.
+  
+  </li><li>The titles are listed in order by their relevance to the user's query, 
+  from the most likely matches to the least likely ones. The only visible sign 
+  of the ranking is the order of titles in the list.</li>
+
+</ul>
+
+
+
+
+
+
+
+
+<p class="style3">Each title in the list is a link.  Clicking a title
+displays the corresponding help topic in the Help window's 
+topic pane.  Except
+for clicking the title of a help topic or clicking a link
+in inline help, user actions performed in the Search tab do
+not affect the Help window's topic pane.</p>
+
+
+
+
+
+
+
+
+<p class="style3">Search results remain displayed 
+until a user performs a subsequent search.  The same is true of messages
+displayed in the Results text area.
+Search results and messages remain displayed even if a user deactivates 
+the Search tab and then reactivates it. To deactivate the 
+Search tab, users activate the Contents tab or the
+Index tab.</p>
+
+
+
+
+
+
+
+
+<p class="style3">The Results text area displays vertical and horizontal scrollbars but
+only when the list of titles is longer or wider than the
+text area.</p>
+
+
+
+
+
+
+
+
+<h4 class="style3"><a name="11.2.1.6"></a>
+  11.2.1.6 Topic Pane in the Help Window</h4>
+
+
+
+
+
+
+
+  
+<p class="style3">The topic pane consists of a horizontal toolbar pane above a text area,
+as shown in <a href="11-help.html#Help%20window%20example">the preceding example</a>.  The toolbar pane 
+never scrolls; it always remains visible in the window.</p>
+
+
+
+
+
+
+
+
+<p class="style3">The toolbar buttons are, from left to right:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Back--Displays the help topic most recently displayed</li>
+<li>Forward--Displays the next topic in a series of topics that the user displayed</li>
+<li>Print--Prints the currently displayed help topic</li>
+
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">These buttons are all icons. <br>
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">The following table shows the tool tip for each button:</p>
+
+
+
+
+
+
+
+
+<table class="info-table" border="1" cellpadding="10" cellspacing="0">
+
+
+
+
+
+
+
+  <tbody><tr>
+    <th width="93" class="style3"><b>Button Name</b> </th>
+    <th width="149" class="style3"><b>Tool Tip</b> </th>
+  </tr>
+<tr>
+<td class="style3">Back</td>
+
+<td class="style3">Go Back </td>
+
+</tr>
+
+<tr>
+<td class="style3">Forward</td>
+
+<td class="style3">Go Forward </td>
+
+</tr>
+
+<tr>
+<td class="style3">Print</td>
+
+<td class="style3">Print</td>
+
+</tr>
+
+</tbody></table>
+<span class="style3"><br>
+</span>
+<p class="style3">If the text pane's content is longer than the text pane, 
+vertical scrollbars are displayed in the text pane as needed.  If the content is wider than the text pane, 
+text wraps to the pane's current width. If graphics  extend 
+beyond the pane, the pane displays horizontal scrollbars as needed. 
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+The topic pane is never blank.  It always displays a user's most recently chosen page until 
+the user requests a different page and that new page is displayed.  When the Help window first opens, 
+the topic pane displays the page associated with the link that opened the Help window.
+</p>
+
+
+
+
+
+
+  
+                                  
+<h3 class="style3"><a name="11.2.2"></a>
+  11.2.2 Providing Access to Help-Window Help</h3>
+
+
+
+
+
+
+
+<p class="style3">
+When providing access to Help-window help, follow these guidelines:<br>
+<br>
+<img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+In main windows, ensure that the masthead's Help link opens 
+the Help window and displays information specific to the main
+window, typically about its content area.  For information about 
+the content area of windows, see <a href="03-windows-pages.html">Chapter 3, Windows and Pages</a>.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+When writing a help topic about a particular page of an application, keep in mind that users might not have
+that page displayed while reading the help topic.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In main windows with tabs or panes, ensure that the masthead's
+Help link is context-sensitive to the user's current tab or pane. 
+If necessary, place anchors in your help file so that you can 
+link directly to sections about each tab or pane.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In indexes, provide no more than three levels of entries.  If possible, provide no more than two levels.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+Keep index entries short, so that users need not resize the navigation pane or scroll it horizontally.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+Do not include page numbers in index entries.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+Use the Help window only to display help topics that get installed with your application.  To display books, 
+external web sites, or other external information, open a window other than the Help window.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Implementation_Info.jpg" alt="Implementation Information" title="Implementation Information" height="14" width="16">
+When you map topic IDs to the URLs of your help set,
+ensure that each topic ID would remain unique even if
+
+your help set were merged with another help set.
+(For information about ID mapping and 
+merged help sets, see the documentation for Sun's 
+JavaHelp<sup><small>TM</small></sup> software.)
+</p>
+
+
+
+
+
+
+
+
+<h2 class="style3"><a name="11.3"></a>
+  11.3 Left-Pane Help</h2>
+
+
+
+
+
+
+
+                  
+<p class="style3">Some applications open pop-up windows used as dialog
+ pages or wizards. Some of these windows are divided into left and right panes, 
+ as shown here:</p>
+
+
+
+
+
+
+
+                  
+<p class="style3"><a name="advanced_sort_figure"></a>
+</p>
+
+
+
+
+
+
+
+                  
+<span class="style3"><left>                          
+    
+</left>
+</span>
+<p class="style3"><img src="help_graphics/16a_help.png" alt="Left Pane Help in Window" style="border: 0px solid ; height: 523px; width: 671px;"> 
+</p>
+
+
+
+
+
+
+
+                
+                  
+<p class="style3">In these pop-up windows, the left pane can display help about the window.  
+Help displayed in this way is called "left-pane help&quot;. 
+By default, the left pane, also known as the "help pane," occupies 35 percent of the 
+entire window's width. Users can resize the entire window, causing the left and right panes to change
+their size while retaining their proportions relative to each other.</p>
+
+
+
+
+
+
+
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Provide left-pane help only in pop-up windows that display either:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>A wizard
+</li><li>A page where inline help alone would not suffice
+</li>
+</ul>
+
+
+
+
+
+
+
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+In wizards where the left pane can display information about each of the steps, display help in the left pane
+by providing a tab labeled "Help," as shown here:</p>
+
+
+
+
+
+
+
+                  
+<span class="style3"><left>                          
+    
+</left>
+</span>
+<p class="style3"><img src="help_graphics/wizard_chapter_help.png" alt="Left Pane Help in Wizard" style="border: 0px solid ; width: 705px; height: 523px;"> 
+</p>
+
+
+
+
+
+
+
+                
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Ensure that, by default, the Steps tab is the active tab.  
+For more information about providing left-pane help in wizards, see <a href="13-wizards.html">Chapter 13, Wizards</a>.            
+</p>
+
+
+
+
+<span class="style3">
+<!-- NOTE NOTE NOTE:
+
+The ability to change left-pane help in response to keyboard focus did not make it into 2.1 or 2.2, so the following paragraph
+
+was commented out. -->
+<!-- <P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+
+For left-pane help, if a user moves the keyboard focus to a particular element, such as a
+
+text field, ensure that help relevant to that element is displayed in the left pane. Optionally, 
+
+pop-up windows can display left-pane help that remains static as a user navigates through the right pane.</P>
+
+ -->
+
+
+
+
+
+ 
+</span>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" style="width: 14px; height: 14px;" alt="Required Guideline" title="Required Guideline">
+If the wizard does not need help on any step, remove both tabs
+from the wizard and show just the Steps in the left pane, as shown here:<br>
+
+</p>
+
+
+
+
+
+
+
+<span class="style3"><left>                          
+    
+</left>
+<a name="11.3-steps"></a>
+</span>
+<p class="style3"><img src="help_graphics/wizard_nohelp.png" alt="Left Pane Without Help in Wizard" style="border: 0px solid ; width: 704px; height: 523px;"> 
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" style="width: 14px; height: 14px;" alt="Required Guideline" title="Required Guideline"> If one or more steps of a wizard need help, the help tab should always be
+available (even if the user might
+never visit the step that needs
+help because the wizard has branched). For individual steps that do not require left-pane help, the
+writer should provide text, to indicate that this is not just blank
+space. Most often this can be useful
+information about the right side pane. In the rare case where there is
+absolutely no information to provide, the text can say something like
+"Click Next to proceed&quot;. or "Complete entries and continue to the next
+step&quot;.<br>
+</p>
+
+
+
+
+
+
+
+
+
+<p class="style3">            
+</p>
+
+
+
+
+<span class="style3">
+<!-- NOTE NOTE NOTE:
+
+The ability to change left-pane help in response to keyboard focus did not make it into 2.1 or 2.2, so the following paragraph
+
+was commented out. -->
+<!-- <P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+
+For left-pane help, if a user moves the keyboard focus to a particular element, such as a
+
+text field, ensure that help relevant to that element is displayed in the left pane. Optionally, 
+
+pop-up windows can display left-pane help that remains static as a user navigates through the right pane.</P>
+
+ -->
+
+
+
+
+
+
+
+
+ 
+</span>
+<h2 class="style3"><a name="11.4"></a>
+  11.4 Choosing the Correct Type of Help</h2>
+
+
+
+
+
+
+
+
+  
+<p class="style3">You can provide help for your application's pages in one or more of the following ways:
+                  
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+   <li>Inline with the page's other UI elements</li>
+   <li>By way of an inline-help link or a Help link in the page's masthead</li>
+   <li>In the page's left pane</li>
+   <li>In a tool tip</li>   
+</ul>
+
+
+
+
+
+
+
+
+
+<p class="style3">This section helps you 
+choose the best way to provide help other than tool tips.  For guidance on providing
+tool tips, see <a href="11-help.html#11.5">11.5 Tool Tips</a>.</p>
+
+
+
+
+
+
+
+
+<p class="style3">The best way to provide help depends on factors such as whether: 
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>The window displaying the page is a main window or a pop-up window</li>
+<li>The help is brief</li>
+<li>Most users need the help to complete their task</li>
+</ul>
+
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.4.1"></a>
+  11.4.1 Providing Help for Main Windows</h3>
+
+
+
+
+
+
+
+
+<p class="style3">All main windows have a Help link in their masthead.
+That link opens the Help window, as described in <a href="11-help.html#11.2">11.2 Help-Window Help</a>.
+Optionally, pages in main windows can include inline help.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> 
+Do not provide left-pane help in main windows.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14">  
+In main windows where users likely need help, provide an inline-help link to display the same page 
+that users can open using the Help link in the masthead. Ensure that the inline-help link's label is descriptive and includes 
+the phrase "about this page" or a more specific phrase.  For example, the link's label might be: "For instructions, 
+read the help topic about this page&quot;.
+</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.4.2"></a>
+  11.4.2 Providing Help for Pop-Up Windows</h3>
+
+
+
+
+
+
+
+
+<p class="style3">Pages in pop-up windows can include inline help, left-pane help, or both.  
+In pop-up windows, no page has a Help link in its masthead.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+In pop-up windows, provide help only if users need it.
+</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+When providing help for a pop-up window:
+
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+<li>Prefer help displayed directly in the UI 
+over help provided by way of a link.</li>
+
+<li>Prefer inline help to left-pane help, except under any of these
+conditions:</li>
+
+   <ul>
+   <li>The page is a wizard.
+   </li><li>The page is long, and new users likely need help on each field.</li>
+   <li>The available space is too small for inline help, and inline-help links
+   are inappropriate.</li>
+   </ul>
+</ul>
+
+
+
+
+
+
+
+
+
+<h2 class="style3"><a name="11.5"></a>
+  11.5 Tool Tips</h2>
+
+
+
+
+
+
+
+                  
+<p class="style3">Tool tips are small rectangles of text that provide a short description
+ of a UI element or area. On the web, tool tips can be applied to  
+elements such as icons, entry fields, and buttons.</p>
+
+
+
+
+
+
+
+                  
+<p class="style3">In HTML, tool tips are created by specifying title text for the HTML title attribute.
+                 
+
+</p>
+
+
+
+
+
+
+<p class="style3">This is how a tool tip, produced with title text,
+ would look when the user
+ mouses over an image:</p>
+
+
+
+
+
+
+
+                  
+<p class="style3">
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;<img alt="Title Attribute Text" style="border: 0px solid ; height: 78px; width: 142px;" src="help_graphics/orange.gif" title=""> 
+</p>
+
+
+
+
+
+
+
+  
+<p class="style3">For more information, see the description of the HTML title attribute on the World Wide Web Consortium's web site at:
+</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+<a href="http://www.w3.org/TR/REC-html40/struct/global.html#adef-title">http://www.w3.org/TR/REC-html40/struct/global.html#adef-title</a></p>
+
+
+
+
+
+
+
+                  
+<span class="style3"><strong>Note:</strong> There is a difference between a tool tip, produced with the HTML title
+attribute, and alternative text, produced with the HTML alt attribute.
+Alt text is required to provide a description of every graphic. It
+is imperative that it be present for visually-impaired users who use screen readers.
+It is also useful where graphics are not rendered, for
+example, when users have image loading turned off. In such situations, Alt
+text enables users to selectively download graphics.  
+
+
+</span>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Use the HTML alt attribute to define Alt text 
+for all images, including
+ decorative images. Use both the HTML alt  attribute and the HTML title  
+ attribute for all interactive graphics 
+and for graphics that users might not understand without a description.  For example, any clickable icon  
+(such as an alarm icon or a pagination arrow) should have 
+both the HTML alt and title attributes set. 
+In contrast, the hierarchy lines of a tree control should use only the alt attribute.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  Write the HTML Alt text so that it concisely
+ states the function of the image. <br>
+</p>
+
+
+
+
+
+
+
+ 
+  
+ <span class="style3">For more information about HTML Alt text, see <a href="D-accessibility.html">Appendix D - Accessibility Requirements</a>.
+   
+
+                  
+ 
+ </span>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  Do not use tool tips as a substitute for other forms of 
+help.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Provide a tool tip for each button or link that opens a new window. Ensure that the tool tip
+ends with this parenthetical phrase: (Opens a New Window). Use headline capitalization for
+the parenthetical phrase, regardless of the tool tip's length.
+
+</p>
+
+
+
+
+
+
+<blockquote class="style3"><b>EXAMPLE:</b> Print the first column of this table. (Opens a New Window)</blockquote>
+
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Provide a tool tip for each icon and graphical button (even those that do not open a new window).</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+In tool tips that begin with a verb, use the imperative form, if possible:
+
+</p>
+
+
+
+
+
+
+<blockquote class="style3"><b>USE</b>: Print Table Row</blockquote>
+
+
+
+
+
+
+
+
+  
+<blockquote class="style3"><b>NOT</b>: Prints Table Row</blockquote>
+
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+A tool tip for a graphical element should describe that element; it should not provide other
+help about an application. The HTML Alt  text for images should reflect that distinction. <br>
+</p>
+
+
+
+
+
+
+
+ 
+<h3 class="style3"><a name="11.5.1"></a>
+  11.5.1 Creating Tool Tips</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">In most browsers, tool tips are displayed for only a few seconds. Sighted users need to read a tool tip 
+within that brief time.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14">
+Keep the length of tool tip text as short as possible. For
+accessibility, ensure that no tool tip is longer than 150 characters
+when displayed in English.</p>
+
+
+
+
+
+
+
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14">
+To avoid confusion, do not use terms such as "Back," "Home," or
+"Forward" in tool tips. An exception is any tool tip for a control that
+behaves exactly the same as the browser's control labeled with that
+term. </p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.5.2"></a>
+  11.5.2 Creating Longer Descriptions Using the HTML longdesc Attribute</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">The HTML longdesc attribute, part of HTML
+ 4.01 and supported by some browsers, is intended for users who use screen readers. For
+elements other than text, you can use the longdesc 
+attribute  to provide a longer description than can otherwise be provided
+with the HTML alt attribute. However, not all
+screen readers recognize the longdesc attribute.
+Unlike Alt text, the Longdesc text is presented only when users using a screen reader explicitly request
+more information.</p>
+
+
+
+
+
+
+
+                  
+<p class="style3">In the following image, the HTML alt attribute is "Disk
+ Partitions&quot;. The HTML longdesc attribute refers
+ to the file "chart.html," which reads as follows:</p>
+
+
+
+
+
+
+
+
+<p class="style3">
+</p>
+
+
+
+
+
+
+<blockquote class="style3">This is a visual indication of the partitioning of a disk. Each 
+slice on the disk appears with a width relative to its space on 
+the disk. Slice 2 occupies the whole disk. There is some free 
+space between slices 1 and 3. Free space appears in white, while 
+used space appears in a pink color.</blockquote>
+
+
+
+
+
+
+
+
+                  
+                  
+<span class="style3"><a name="longdesc-example"></a><img src="help_graphics/chart.gif" title="Graphic of disk partitions" alt="Graphic of disk partitions" style="width: 424px; height: 119px;">
+</span>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  When a short text equivalent does not adequately convey the function 
+or role of an image, provide additional information in a file designated
+by the HTML longdesc attribute. </p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Provide the HTML longdesc attribute for an
+image if the image conveys information 
+that is too long to present by way of  
+the HTML alt attribute or the HTML title attribute.
+</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.5.3"></a>
+  11.5.3 Tool Tips for Sun Icons, Glyphs, and Graphics</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">For information about tool tips for the Sun icons, glyphs, and graphics used within the components see
+the Sun Common UI Component Library (in open source, the Project Woodstock components).</p>
+
+
+
+
+
+
+
+                  
+<h3 class="style3"><a name="11.5.4"></a>
+  11.5.4 A Note on HTML alt and longdesc Attributes for Tree Navigation Objects</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">In tree navigation, turners use HTML Alt text and HTML Title text
+to indicate their expanding and collapsing behavior. Since turners convey much 
+information about the tree state and interaction possibilities, they 
+also use the HTML longdesc attribute to describe
+ to screen reader users how to interact with the turners. They also use the 
+longdesc attribute to describe the state of 
+the tree.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3">Tree hierarchy lines use the 
+ HTML longdesc attribute to indicate their purely visual function. For more information about 
+ tree navigation objects, see 
+ <a href="05-navigation.html#5.4.2">5.4.2 Tree Look and Feel</a>.</p>
+
+
+
+
+
+
+
+                  
+<h3 class="style3"><a name="11.5.5"></a>
+  11.5.5 Visual Design Considerations for Tool Tips</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">Some browsers enable users to increase the font size used to display tool
+ tips, even without requiring users to change the browser's other font-size 
+settings. Long tool tips can become unreadable when displayed in a larger 
+font size.</p>
+
+
+
+
+
+
+
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  When creating text for tool tips, make it as brief as possible.</p>
+
+
+
+
+
+
+
+ 
+<p class="style3"><a name="tool-tip-caps-guideline"></a>
+<img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  Use headline capitalization for short tool tips. Use sentence capitalization
+ for longer tool tips. <span style="">See </span><a href="02-visual.html#2.5" style="">2.5 Text Capitalization</a><span style="">.</span></p>
+
+
+
+
+
+
+
+                  
+<h3 class="style3"><a name="11.5.6"></a>
+  11.5.6 Tool Tips for Disabled Icons</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+  Make tool tips for disabled icons indicate the disabled state. <br>
+</p>
+
+
+
+
+
+
+
+ 
+<p class="style3">Indicating that an icon is currently disabled is helpful to users. For 
+example: "Go to Next Page (Unavailable)&quot;.</p>
+
+
+
+
+
+
+
+                  
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.5.7"></a>
+  11.5.7 Tool Tips for Icons With Alarm Badges</h3>
+
+
+
+
+
+
+
+  
+<p class="style3">Icons are sometimes overlayed with a "badge&quot;. A badge is a small graphic superimposed 
+  over a corner of an icon, typically to indicate an alarm. Badged icons are often 
+  displayed in trees. For more information on badges and alarms, see <a href="05-navigation.html#5.4.2.1">5.4.2.1 
+  Alarms</a>.</p>
+
+
+
+
+
+
+
+
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+   If an icon is badged with an alarm (for example, this icon: <img src="help_graphics/badgedicon.gif" alt="Icon badged with an alarm" title="Icon badged with an alarm" height="14" width="14"> ), make its tool tip 
+  indicate both the icon's meaning and its alarmed state. Use brackets around 
+  the portion of the tool tip that indicates the alarmed state. For example: 
+</p>
+
+
+
+
+
+
+<ul class="style3">
+
+
+
+
+
+
+
+   <li>Tool tip for an icon without a badge: "Resource Groups: apache-r" </li>
+   <li>Tool tip for the same icon when the icon has a critical alarm badge: 
+"[Alarm: Critical] Resource Groups: apache-r"</li>
+ 
+</ul>
+
+
+
+
+
+
+
+ 
+<p class="style3">This is how a tool tip for an icon with a critical alarm badge would appear:</p>
+
+
+
+
+
+
+
+                  
+<p class="style3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="help_graphics/badgedicon_illust.gif" alt="[Alarm: Critical] Resource Groups: apache-r" title="[Alarm: Critical] Resource Groups: apache-r" border="0" height="65" width="237"> 
+</p>
+
+
+
+
+
+
+
+
+<h3 class="style3"><a name="11.5.8"></a>
+  11.5.8 Tool Tip Resources</h3>
+
+
+
+
+
+
+
+                  
+<p class="style3">In addition to <a href="09-tables.html#9.5.2.1">9.5.2.1 Direct Table Sorting</a>, 
+  the following resources discuss tool tips and describe how to use HTML Alt text:</p>
+
+
+
+
+
+
+
+                  
+<ul>
+
+
+
+
+
+
+
+    <li class="style3">The article "Use of ALT texts in IMGs" at <a href="http://www.htmlhelp.com/feature/art3.htm">http://www.htmlhelp.com/feature/art3.htm</a>
+  </li>
+
+    <li class="style3">The article "ALT Tag your important images" at <a href="http://www.jeffglover.com/ss/savvy04.php">http://www.jeffglover.com/ss/savvy04.php</a>
+  </li>
+    <li class="style3">The book Java
+ Look and Feel Design Guidelines, 2nd edition, at <a href="http://java.sun.com/products/jlf/ed2/book/index.html">http://java.sun.com/products/jlf/ed2/book/index.html</a>
+  </li>
+    <li class="style3">The chapter "Behavior" in Java Look and Feel Design Guidelines: Advanced
+Topics at <a href="http://java.sun.com/products/jlf/at/book/Behavior.html#996725">http://java.sun.com/products/jlf/at/book/Behavior.html#996725</a>
+  </li>
+    <li><span class="style3">The Web Accessibility Initiative (WAI) web site at <a href="http://www.w3.org/WAI/">http://www.w3.org/WAI</a>
+    </span><br>
+</li>   
+</ul>
+
+<h2 class="style3"><a name="11.6"></a>11.6 Pop-Up Bubble</h2>
+
+<p>
+The Pop-Up Bubble is a user interface element that allows the end user to see context-sensitive information pertinent to a certain area of the screen. 
+The end user hovers (places the mouse pointer) over an object (for example, a label, 
+image, or link) for some time, and a pop-up bubble appears with 
+additional information that is appropriate to that context. Use the pop-up bubble judiciously, however, so that the pop-up bubbles do not interfere with the user's interaction with the page.
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Avoid a situation where the user is unable to move their mouse without unintentionally opening a bubble. </p>
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+Limit the number of objects  that will generate a bubble to  5 or fewer in a single page.<br>
+<br>
+<img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Display only one pop-up bubble at a time on a given page.</p>
+<!-- SOME TEXT AROUND DRAG -N- DROP, BEFORE I KNEW THIS WAS NOT IMPLEMENTED in 4.1.  MIGHT BE USEFUL SOME DAY?
+<p class="style5">Although a pop-up bubble will not automatically track mouse movement, it can be dragged to a different location using drag and drop.</p>
+
+<p class="style5"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14">  Move the pop-up bubble when the user drags it to a new location using drag and drop. The user can click on any area within the pop-up bubble that is not a control or a link to initiate the drag and drop. </p>
+<p class="style5">After a pop-up bubble is moved, its new location does not affect the position of subsequent pop-up bubble invocations. When a new pop-up bubble is invoked, it is displayed at the appropriate location with respect to the object that the user hovered over. <br>
+  <strong><br>
+  QUESTION:  I was wondering if the mouse had to be on the pop-up bubble title bar to drag the bubble or if it could be anywhere in the bubble, so I figured I'd try it out in the example app. The ones in the example were not draggable. So the question is - is drag &amp; drop of the bubble goint to be supported in 4.1? And if so, my original question, does the mouse have to drag from the title bar as in regular windows? [OK, I found in the spec that the user does not have to use the title bar area for dragging, but we need to make sure the implementation supports this -- if it is/will be implemented for 4.1.]</strong><br>
+  <br> 
+</p>
+-->
+
+<p>A basic pop-up bubble is comprised of the following elements:<br>
+    <br>
+    <img src="help_graphics/bubble-basic-callouts.png" width="417" height="159" alt="basic pop-up bubble with callouts to title bar, Remove control, and body sections"><br>
+    <img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Include a title bar and left-justified title in the pop-up bubble. The title gives the user some context about the information provided in the pop-up bubble<span class="style5">.<br>
+    </span><br>
+    If a title bar is included, the following two guidelines apply:
+<blockquote>
+    <img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> <span class="style3">Include a pop-up bubble title that uses headline capitalization. <span style="">See </span><a href="02-visual.html#2.5" style="">2.5 Text Capitalization</a><span style="">.</span></span>
+    <p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Include a Close button on the right side of the title bar of the pop-up bubble. This control allows the user to close the pop-up bubble when it is clicked. </p>
+</blockquote>
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Strive for consistency within your application regarding whether or not a title bar and close button are included in pop-up bubbles. <span class="style5"></span><br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Place the context-sensitive information in the body of the pop-up bubble. This information must pertain to the object that the user hovered over.<br>
+  <br>
+A pop-up bubble can contain help information, instructions,  descriptions, details, or any other useful information that pertains to the  object that the user hovered over. The information may be displayed in various formats as well. For instance, the information may be displayed as straight text, label/value pairs, may include images and links, and may even include other user interface elements.</p>
+<p class="style3">Because of the different kinds of content that can be contained within a pop-up bubble, this user interface element lends itself to situations where field inline help is not sufficient. Some disadvantages of field inline help are that it is limited to text and links, it should be kept very concise, and it can add clutter to a page. However, field inline help does have some important advantages over the pop-up bubble in that it is always visible and does not require a user action for the user to obtain the information. For these reasons, field inline help should be considered  before deciding to use the pop-up bubble. </p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+Use  field inline help unless the information content cannot be conveyed adequately inline or when using field inline help would clutter the page. In these situations,  the pop-up bubble is a good option for providing the user with context-sensitive information.&nbsp;</p>
+
+
+<h3 class="style3"><a name="11.6.1"></a>11.6.1 Invoking and Closing Pop-Up Bubbles</h3>
+
+To display a pop-up bubble, the user hovers over an object and if a pop-up bubble is available for that object, it will display.
+<p class="style3"> <img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> When additional information is warranted, and field inline help is insufficient, make pop-up bubbles available when the user hovers over text (including labels), links, or images.</p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Display pop-bubbles after the user hovers over an object for 1/2 second.<br>
+  <br>
+<img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Make the size of the pop-up bubble no more than half the size of the main window that it appears over. Typically, however, it will be substantially smaller than that.</p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Do not include scrollbars or allow scrolling in the pop-up bubble.</p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Position the pop-up bubble to the top right of the invoking object. If the bubble will be obscured by the edge of the browser, reposition it to a more suitable location - top left, bottom right or bottom left, as appropriate.</p>
+<p class="style3">Below is an example of a pop-up bubble displayed just above and to the right of a link object.<br>
+  <br>
+<img src="help_graphics/bubble-basic-in-context.png" width="370" height="124"></p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Do not make pop-up bubbles available on components themselves. Make the pop-up bubble available for a component's label instead. For example, make a pop-up bubble available for a text field's label instead of making it available when the user hovers over the text field itself. This way, the availability of a pop-up bubble does not interfere with the interaction of the user with the component. </p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Place a pop-up bubble icon, <img src="help_graphics/bubble-grey.png" width="8" height="7" border="0">, to the top right of labels, links, and other text to indicate that a pop-up bubble is available. When the user hovers over this icon, display the same pop-up bubble that is available for the object.
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> 
+  Images which have bubbles should display the pop-up bubble icon when users would not expect this additional information to be provided (expecting to only find a tool-tip when hovering).</p>
+  <p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> If a pop-up bubble is available for a label that is also marked with a required field indicator (see <a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a>), place the pop-up-bubble icon before the required field indicator. <br>
+    <br>
+    <img src="help_graphics/bubble-icon.jpg" width="391" height="187"></p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Continue to display the pop-up bubble as long as the user keeps the mouse pointer within the pop-up bubble or over the object that invoked the bubble. </p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Dismiss the pop-up bubble when any of the following occur:</p>
+<ul>
+  <li><span class="style3">The user moves the mouse pointer off of the invoking object, or outside of the pop-up bubble. In this situation, the pop-up bubble continues to be displayed for a duration of 2 seconds, and then closes.</span></li>
+  <li>The user clicks the Close button on the right side of the title bar.</li>
+  <li>The user hovers over another object that has an associated pop-up bubble. In this case, the initially displayed pop-up bubble is closed when the new pop-up bubble is displayed.</li>
+  <li>The user presses the Esc key.</li>
+</ul>
+<h3 class="style3"><a name="11.6.2"></a>11.6.2 Pop-Up Bubble Content Details</h3>
+
+
+<span class="style3">A  pop-up bubble is intended to provide context-sensitive information (for example, help, instructions, descriptions, etc.) for the object that the user hovered over. </span>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Do not include large or complex user interface elements such as an add-and-remove element or table within the body of the pop-up bubble. See <a href="08-complex.html">Chapter 8, Complex Elements</a> and <a href="08-complex.html">Chapter 9, Tables</a> for more information about complex elements and tables.</p>
+<p class="style3"><img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Include simple user interface elements within the body of the pop-up bubble when it is appropriate. See <a href="07-simple.html">Chapter 7, Simple Elements</a> for more information about simple user interface elements.<br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> Place a link beginning with &quot;More&quot;  at the end of the pop-up bubble text if the user needs to see more information. When the &quot;More&quot; link is clicked open a new window that presents the additional information. Typically, clicking the &quot;More&quot; link will display  the associated section of the online help.<br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Phrase the link so that it describes the information the user will get when the link is pressed.  For example, use &quot;More server information&quot; versus simply using &quot;More&quot;.<br>
+  <br>
+<img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" title="Required Guideline" height="14" width="14"> Place a More graphic (<img src="help_graphics/help_link_arrow.gif" alt="" title="" height="10" width="14">) at the beginning of the link, as shown here:</p>
+<p class="style3"><img src="help_graphics/bubble-basic-link2.png" width="279" height="125" alt="pop-up bubble with More link">.</p>
+<p class="style3">  <img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Make the &quot;More&quot; link's tool tip as specific as possible. For example, the tool tip for a "More server information " link might be: </p>
+<blockquote class="style3">Shows more information about the server. (Opens a New Window)</blockquote>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" height="14" width="14"> 
+When the &quot;More&quot; link is clicked, dismiss the pop-up bubble unless the material in the new window that is displayed has content that is needed in conjunction with the information in the pop-up bubble, or if is important for the user to be able to return to the original window with the pop-up bubble still displayed.<br>
+  <br>
+Enabling the pop-up bubble to remain displayed when a new window is invoked makes it such that upon return to the pop-up bubble, the user cannot simply move the mouse pointer outside of the bubble to close it. The user must explicitly  click the Close button, click outside of the bubble, or invoke another pop-up bubble to dismiss the pop-up bubble. </p>
+<p class="style3">  <img src="Guidelines_Icons/Recommendation.jpg" alt="Advised Guideline" title="Advised Guideline" height="14" width="14"> Use  caution when deciding to keep a pop-up bubble displayed when a new window is invoked. If all pop-up bubbles within a page or application do not behave the same way, the user may notice the inconsistency and it could be confusing.</p>
+
+  <p class="style3"><img src="Guidelines_Icons/Implementation_Info.jpg" alt="Implementation Information" title="Implementation Information" height="14" width="16"> 
+To enable the pop-up bubble to remain displayed when a new window is invoked, set the &quot;autoClose&quot; attribute to: autoClose="false".<br>
+</p>
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <span class="currentchapter">11&nbsp;Contextual&nbsp;Help</span>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body>
+</html>

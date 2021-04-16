@@ -1,0 +1,71 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Skip Navigation Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt"> Skip Navigation Links</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This page includes sample HTML for the skip navigation tag. This tag is used 
+  to achieve section 508 compliance for 1194.22, Paragraph (o). For more information see <a href="../../01-introduction.html#1.4"> 
+  1.4 Resources for Application Designers</a>. 
+  A Sun technical note on this section 
+  states:</p>
+<blockquote>
+  <p>&quot;Pages that provide five or more navigation links in the header or left 
+    side bar of the page must provide a means of skipping over these links. This 
+    can be done by placing the navigation regions in their own frames or by providing 
+    a skip link method similar to the one used on Sun's home page. (You will need 
+    to view the page source to see the skip links.)&quot;</p>
+</blockquote>
+<p>This requirement applies to the masthead, tabs, and potentially  to breadcrumbs 
+  (though this is debatable).</p>
+<p>The method used here is the same as the one used on the sun.com page, It uses 
+  a hyperlinked single-pixel transparent gif (not visible in the browser page) 
+  with an alt tag that, when read by an accessible technology such as a screen 
+  reader, informs users that the link will allow them to skip over the navigation 
+  section. The hyperlink links to an anchor that is placed after the stuff to 
+  be skipped. The tag should set down both the hyperlinked transparent gif and 
+  the ending anchor, and should allow application developers to specify the anchor 
+  name, the alt text to be placed on the image, and the location of the ending 
+  anchor.</p>
+<p>This tag should come in two forms, one where the hyperlink is specified inside 
+  of an element, such as a table, and one that needs to stand alone on the page 
+  between elements. In the latter case, the &lt;a href&gt; is specified inside 
+  of a &lt;div&gt; and in the former case it is on its own. When the &lt;a href&gt; 
+  is specified inside of a &lt;div&gt; it may need to have a class specified to 
+  ensure that the resulting single pixel that will span the entire width of the 
+  window when this tag is called will have the appropriate background color.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Examples from masthead sample HTML page [ <a href="http://webdev2.sun.com/example/faces/masthead/Masthead.jsp">HTML</a> 
+  ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>The skip navigation tag works on all browsers.</p>
+<p>&nbsp;</p>
+</body>
+</html>

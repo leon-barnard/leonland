@@ -1,0 +1,841 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>Table&nbsp;of&nbsp;Contents - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="exclude">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<script type="text/javascript">
+var chaptArray= new Array("ch0","ch1","ch2","ch3","ch4","ch5","ch6","ch7","ch8","ch9","ch10","ch11","ch12","ch13","ch14","ch15","ch16","ch17","ch18","app");
+//<![CDATA[
+function toggleSection(divId,imgId) {
+ div = document.getElementById(divId)
+ img = document.getElementById(imgId)
+ if (div.style.display == "block") {
+   div.style.display = "none";
+   img.src="Guidelines_Icons/collapsed.gif"
+  } else {
+   div.style.display = "block";
+   img.src="Guidelines_Icons/expanded.gif"
+  }
+}
+
+function expandAll() {
+for(i=0; i<chaptArray.length; i++){
+     document.getElementById(chaptArray[i]).style.display="block";
+	 document.getElementById(chaptArray[i]+"-img").src="Guidelines_Icons/expanded.gif";
+   }
+}
+
+function collapseAll() {
+for(i=0; i<chaptArray.length; i++){
+     document.getElementById(chaptArray[i]).style.display="none";
+	 document.getElementById(chaptArray[i]+"-img").src="Guidelines_Icons/collapsed.gif";
+   }
+}
+
+
+//]]>
+</script>
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="index.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <span class="currentchapter">Table&nbsp;of&nbsp;Contents</span>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a></p>
+<p><br>
+Release Date: 12/10/07 </p>
+<strong>Note:</strong> These guidelines are available externally at <a href="http://developers.sun.com/docs/web-app-guidelines/uispec4_1">http://developers.sun.com/docs/web-app-guidelines/uispec4_1</a>. The guidelines document at <em>this</em> location is intended for a Sun internal audience as it contains pointers to Sun internal  email aliases and web sites. Do not share this version of the guidelines outside of Sun. Instead, direct external readers to the location given above. 
+<hr>
+<h2><br>
+<a name="toc"></a><font color="#FF8000">Table of Contents</font></h2>
+
+<p><a href="javascript:expandAll()">Expand All Sections</a> | <a href="javascript:collapseAll()">Collapse All Sections</a></p><br>
+
+<h1><a name="whatsnew"></a>What's New in 4.1</h1>
+<!-- <span class="toc-level1"><img src="new.gif"><strong>The Guidelines Format</strong></span> -->
+<!-- <p class="toc-level0">
+ <p class="toc-level3"><a href="00-revision.html#0.1.2">0.1.2 Additions and Changes to the Guidelines</a></p> -->
+<p class="toc-level0"><a href="javascript:toggleSection('ch0','ch0-img')" title="Click to Expand Chapter"><img id="ch0-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="00-revision.html"><b>0 Revision History<br>
+ 
+</b></a></p>
+<div id="ch0" class="Chapt-Collapse">
+<P class="toc-level2"><A href="00-revision.html#0.1">0.1 What's New -  Additions and Changes Since Revision 4.0</A></P>
+<P class="toc-level2"><a href="00-revision.html#0.2">0.2 Internal vs. External Guideline Details (reminder from 4.0) </a></P>
+
+</div>
+
+
+
+
+<h1><a name="whatsnew"></a>About the Web Application Guidelines</h1>
+<!-- <span class="toc-level1"><img src="new.gif"><strong>The Guidelines Format</strong></span> -->
+<!--<p class="toc-level0">
+   <p class="toc-level3"><a href="00-revision.html#0.1.2">0.1.2 Additions and Changes to the Guidelines</a></p> 
+</p> -->
+<p class="toc-level0"><a href="javascript:toggleSection('ch1','ch1-img')" title="Click to Expand Chapter"><img id="ch1-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="01-introduction.html"><strong>1 Introduction</strong></a></p>
+
+
+<div id="ch1" class="Chapt-Collapse">
+<!--  <p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p> -->
+<p class="toc-level2"><a href="01-introduction.html#1.1">1.1 Icons Used in These Guidelines</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.2">1.2 Application Structure</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.3">1.3 Resources for Application Developers</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4" class="style3">1.4 Resources for Application Designers </a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.1">1.4.1 Approvals</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.2">1.4.2 Legal</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.3">1.4.3 Branding</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.4">1.4.4 Mastheads</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.5">1.4.5 Content Page Titles and Other UI Text</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.6">1.4.6 Visual Elements and Line Graphs</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.7">1.4.7 Accessibility</a></p>
+<p class="toc-level3"><a href="01-introduction.html#1.4.8">1.4.8 Globalization</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.5">1.5 To Give Feedback</a></p>
+
+
+
+</div>
+
+
+
+<h1>Page Structure and Design </h1>
+<p class="toc-level0"><a href="javascript:toggleSection('ch2','ch2-img')" title="Click to Expand Chapter"><img id="ch2-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="02-visual.html"><strong>2 Visual Design Elements</strong></a></p>
+
+<div id="ch2" class="Chapt-Collapse">
+<!-- <p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p> 
+<p class="toc-level1">TBD</p> 
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p> -->
+<!--<h2 class="toc-level0"><a href="02-visual.html#2"><b> 2 Visual Design Elements</b></a></h2> -->
+<br>
+<p class="toc-level2"><a href="02-visual.html#2.1">2.1 Color Palette</a></p>
+<p class="toc-level2"><a href="02-visual.html#2.2">2.2. Fonts</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.2.1">2.2.1 Font-Family</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.2.2">2.2.2 Font Style and Color</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.2.3">2.2.3 Font Size</a></p>
+<p class="toc-level2"><a href="02-visual.html#2.3">2.3 Logos</a></p>
+<p class="toc-level2"><a href="02-visual.html#2.4">2.4 Icons</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.4.1">2.4.1 Object Icons</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.4.2">2.4.2 Action Icons</a></p>
+<p class="toc-level3"><a href="02-visual.html#2.4.3">2.4.3 Icons, Glyphs, and Graphics Repository</a></p>
+<p class="toc-level2"><a href="02-visual.html#2.5">2.5 Text Capitalization</a></p>
+</div>
+
+<!-- Chapter 3 TOC, Revised Chapter Structure for version 3.0. -->
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch3','ch3-img')" title="Click to Expand Chapter"><img id="ch3-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a></p>
+<div id="ch3" class="Chapt-Collapse">
+
+<!--<p class="toc-level0"><a href="03-windows-pages.html#3"><strong>3 Windows and Content Pages</strong></a></p> -->
+<!--
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="03-windows-pages.html#3.1">3.1 Main Browser Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.2">3.2 Pop-Up Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.3">3.3 JavaScript Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.4">3.4 Pop-up and JavaScript Windows: Advantages and Disadvantages</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.5">3.5 Window Title Bars</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.6">3.6 Masthead and Top-Level Navigation</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.7">3.7 Primary-Content Pages</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.8">3.8 Secondary-Content Pages</a>
+</div>
+<!--  End Chapter 3 TOC, Revised Chapter Structure for version 3.0. -->
+    <!-- Old: Original Chapter Structure:
+<p class="toc-level0"><a href="03-windows-pages.html#3">3 Windows and Pages</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.1">3.1 Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.1.1">3.1.1 Main Browser Window</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.1.2">3.1.2 Pop-Up Browser Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.1.3">3.1.3 Client-Side Modal JavaScript Windows</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.1.4">3.1.4 Titles of Windows</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.2">3.2 Masthead</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.3">3.3 Top-Level Navigation and Content Area</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.4">3.4 Content Pages</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.4.1">3.4.1 Deciding Whether to Make a Page Primary or Secondary</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.4.2">3.4.2 Primary-Content Pages</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.4.3">3.4.3 Secondary-Content Pages</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.5">3.5 Locations of Content Pages </a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.5.1">3.5.1 Opening Secondary-Content Pages From Other Secondary-Content Pages</a></p>
+<p class="toc-level2"><a href="03-windows-pages.html#3.5.2">3.5.2 Pop-Up and JavaScript Window Advantages and Disadvantages</a></p>
+<p class="toc-level1"><a href="03-windows-pages.html#3.6">3.6 Buttons, Breadcrumbs, and Links in Primary- Versus Secondary-Content Pages</a></p>
+-->
+<p class="toc-level0"><a href="javascript:toggleSection('ch4','ch4-img')" title="Click to Expand Chapter"><img id="ch4-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="04-masthead.html"><strong>4 Mastheads</strong></a></p>
+
+<div id="ch4" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+<p class="toc-level1"><span class="style3"><a href="04-masthead.html">4 Mastheads</a></span></p>
+<strong> -->
+<p class="toc-level2"><a href="04-masthead.html#4.1">4.1 Main Window Masthead</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.1">4.1.1 Utility Bar</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.2">4.1.2 User Name, Current Role, and Management Server</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.3">4.1.3 Product Name</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.4">4.1.4 Status Area</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.5">4.1.5 Java Logo</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.1.6">4.1.6 Sun Company Name in Masthead Footer </a></p>
+<p class="toc-level2"><a href="04-masthead.html#4.2">4.2 Pop-Up Window Masthead</a></p>
+<p class="toc-level3"><a href="04-masthead.html#4.2.1">4.2.1 Product Name</a></p>
+<!-- <P class="toc-level2"><a href="04-masthead.html#4.2.2">4.2.2 Corporate Logo</A></P>-->
+</div>
+<h1>Navigation and Content Presentation </h1>
+<p class="toc-level0"><a href="javascript:toggleSection('ch5','ch5-img')" title="Click to Expand Chapter"><img id="ch5-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="05-navigation.html"><strong>5 Top-Level Navigation</strong></a></p>
+
+<div id="ch5" class="Chapt-Collapse">
+<!--
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="05-navigation.html#5.1">5.1 Choosing a Navigation Style</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.1">5.1.1 Drill Down</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.2">5.1.2 Tabbed Panes and Accordion </a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.2.1">5.1.2.1 Accordion</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.3">5.1.3 Left-Right Pane Set</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.4">5.1.4 Tree</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.5">5.1.5 Pop-Up Windows for Objects</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.1.6">5.1.6 Combinations of Navigation Styles</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.6.1">5.1.6.1 Drill Down In Left Pane</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.6.2">5.1.6.2 Tree In Left Pane</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.6.3">5.1.6.3 Tree In Tabbed Pane</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.6.4">5.1.6.4 Tree or Flat List In Left Pane of a Tabbed Pane</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.1.6.5">5.1.6.5 Drill Down In Left Pane of a Tabbed Pane</a></p>
+<p class="toc-level2"><a href="05-navigation.html#5.2">5.2 Tabbed Panes and Accordion Details</a> </p>
+<p class="toc-level3"><a href="05-navigation.html#5.2.1">5.2.1 One-Level Tabbed Panes</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.2.2">5.2.2 Two-Level Tabbed Panes</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.2.3">5.2.3 Three-Level Tabbed Panes</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.2.4">5.2.4 Tabs within a Sun.com Web Site Page</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.2.5">5.2.5 Accordion Details </a></p>
+<p class="toc-level2"><a href="05-navigation.html#5.3">5.3 Left-Right Pane Set Details</a></p>
+<p class="toc-level2"><a href="05-navigation.html#5.4">5.4 Tree Details</a> </p>
+<p class="toc-level3"><a href="05-navigation.html#5.4.1">5.4.1 Tree Contents</a> </p>
+<p class="toc-level4"><a href="05-navigation.html#5.4.1.1">5.4.1.1 Application Actions Versus Application Objects</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.4.1.2">5.4.1.2 Types of Container-Nodes</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.4.2">5.4.2 Tree Look and Feel</a> </p>
+<p class="toc-level4"><a href="05-navigation.html#5.4.2.1">5.4.2.1 Alarm or Status States of Tree Objects</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.4.2.2">5.4.2.2 Tree Behavior</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.4.3">5.4.3 Tree Scalability</a></p>
+<p class="toc-level4"><a href="05-navigation.html#5.4.3.1">5.4.3.1 Scaling Methods for Trees</a></p>
+<p class="toc-level2"><a href="05-navigation.html#5.5">5.5 Common Tasks Page</a></p>
+<p class="toc-level3"><a href="05-navigation_navigation-access.html">5.5.1 Access to the Common Tasks Page</a></p>
+<p class="toc-level3"><a href="05-navigation_navigational-tasks.html">5.5.2 Navigational Tasks</a></p>
+<p class="toc-level4"><a href="05-navigation_navigational-tasks.html#5.5.2.1">5.5.2.1 Navigational Tasks: Flow Diagrams</a></p>
+<p class="toc-level3"><a href="05-navigation_action-based-tasks.html#5.5.3">5.5.3 Action-Based Tasks</a></p>
+<p class="toc-level4"><a href="05-navigation_action-based-tasks.html#5.5.3.1">5.5.3.1 Action-Based Tasks: Flow Diagrams</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.5.4">5.5.4 Hybrid Tasks</a></p>
+<p class="toc-level3"><a href="05-navigation.html#5.5.5">5.5.5 Multiple Session Tasks</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch6','ch6-img')" title="Click to Expand Chapter"><img id="ch6-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="06-content.html"><strong>6 Content Area Structure and Layout</strong></a></p>
+
+<div id="ch6" class="Chapt-Collapse">
+
+<!-- <p class="toc-level1"><img src="new.gif"><strong>Usage Guidelines and Component Specifications</strong></p> -->
+<br>
+<p class="toc-level2"><a href="06-content.html#6.1">6.1 Layout and Alignment of the Content Area</a></p>
+<p class="toc-level3"><a href="06-content.html#6.1.1">6.1.1 Location of Inline Alert Messages</a></p>
+<p class="toc-level3"><a href="06-content.html#6.1.2">6.1.2 Using an Asterisk as a Footnote</a></p>
+<p class="toc-level3"><a href="06-content.html#6.1.3">6.1.3 Marking Required Fields</a></p>
+<p class="toc-level2"><a href="06-content.html#6.2">6.2 Content Page Titles</a></p>
+<p class="toc-level3"><a href="06-content.html#6.2.1">6.2.1 Primary-Content Page Titles</a></p>
+<p class="toc-level3"><a href="06-content.html#6.2.2">6.2.2 Secondary-Content Page Titles</a></p>
+<p class="toc-level3"><a href="06-content.html#6.2.3">6.2.3 General Guidelines for Composing Content Page Titles</a></p>
+<p class="toc-level3"><a href="06-content.html#6.2.4">6.2.4 Content Page Titles in Relation to Table Titles</a></p>
+<p class="toc-level2"><a href="06-content.html#6.3">6.3 Breadcrumbs and Parentage Paths</a></p>
+<p class="toc-level2"><a href="06-content.html#6.4">6.4 Content Area Navigation</a></p>
+<p class="toc-level3"><a href="06-content.html#6.4.1">6.4.1 Using a Drop-Down Menu for Content Area Navigation</a></p>
+<p class="toc-level4"><a href="06-content.html#6.4.1.1">6.4.1.1 Layout, Style, and Usage Guidelines for Content Area Navigation Drop-Down Menus</a></p>
+<p class="toc-level4"><a href="06-content.html#6.4.1.2">6.4.1.2 Usability Tradeoffs of Drop-Down Menus Used for Content Area Navigation</a></p>
+<p class="toc-level3"><a href="06-content.html#6.4.2">6.4.2 Using Tabs for Content Area Navigation</a></p>
+<p class="toc-level4"><a href="06-content.html#6.4.2.1">6.4.2.1 Layout and Style Guidelines for Content Area Navigation Tabs</a></p>
+<p class="toc-level4"><a href="06-content.html#6.4.2.2">6.4.2.2 Usage Guidelines for Content Area Navigation Tabs</a></p>
+<p class="toc-level4"><a href="06-content.html#6.4.2.3">6.4.2.3 Usability Tradeoffs of Tabs Used for Content Area Navigation</a></p>
+<p class="toc-level3"><a href="06-content.html#6.4.3">6.4.3 Content Area Navigation Issues Under Investigation</a></p>
+<p class="toc-level2"><a href="06-content.html#6.5">6.5 Content Area Actions</a></p>
+<p class="toc-level3"><a href="06-content.html#6.5.1">6.5.1 General Guidelines for Content Page Actions</a></p>
+<p class="toc-level3"><a href="06-content.html#6.5.2">6.5.2 Content Page Action Buttons</a></p>
+<p class="toc-level3"><a href="06-content.html#6.5.3">6.5.3 Content Page Actions Drop-Down Menu</a></p>
+<p class="toc-level3"><a href="06-content.html#6.5.4">6.5.4 Using a Combination of Methods for Content Page Actions</a></p>
+<p class="toc-level2"><a href="06-content.html#6.6">6.6 Primary-Content Page Layout and Use</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.6.1">6.6.1 Saving Changes on Primary-Content Pages</a></p>
+<p class="toc-level2"><a href="06-content.html#6.7">6.7 Secondary-Content Page Layout and Use</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.7.1">6.7.1 Saving Changes on Secondary-Content Pages</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.7.2">6.7.2 Using Content Page Sections</a></p>
+<p class="toc-level4"><a href="06-content.html#6.7.2.1">6.7.2.1 Jumping To and From Page Sections</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.7.3">6.7.3 Using Tabs on Secondary-Content Pages</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.7.4">6.7.4 Handling Large Amounts of Data</a></p>
+<p class="toc-level2"><a href="06-content.html#6.8">6.8 Noneditable User Interface Elements and Content Pages</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.8.1">6.8.1 Noneditable User Interface Elements</a></p>
+<p class="toc-level4"><a href="06-content.html#6.8.1.1">6.8.1.1 User Interface Elements That Invoke Secondary-Content Pages</a></p>
+<p class="toc-level3"> <a href="06-content.html#6.8.2">6.8.2 Noneditable Content Pages</a></p>
+<p class="toc-level4"><a href="06-content.html#6.8.2.1">6.8.2.1 Buttons for Noneditable Content Pages</a></p>
+<p class="toc-level4"><a href="06-content.html#6.8.2.2">6.8.2.2 Layout Alternatives for Noneditable Content Pages</a></p>
+<p class="toc-level2"><a href="06-content.html#6.9">6.9 Property Page Example</a></p>
+<P class="toc-level1"><a href="06-content.html#6.10">6.10 Drag and Drop within Content Areas</a></P>
+<P class="toc-level2"> <A href="06-content.html#6.10.1">6.10.1 Terminology</A></P>
+<P class="toc-level2"><a href="06-content.html#6.10.2">6.10.2 Moving Portlets</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.3">6.10.3 Creating Portlets</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.4">6.10.4 Moving List Items</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.5">6.10.5 Selecting Items</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.6">6.10.6 Copying Items</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.7">6.10.7 Moving Tree Items</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.8">6.10.8 Moving Table Rows</a></P>
+<P class="toc-level2"><a href="06-content.html#6.10.9">6.10.9 Applying Table Rows</a><br>
+</div>
+<h1>User Interface Elements</h1>
+<p class="toc-level0"><a href="javascript:toggleSection('ch7','ch7-img')" title="Click to Expand Chapter"><img id="ch7-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="07-simple.html"><strong>7 Simple Elements</strong></a></p>
+<div id="ch7" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="07-simple.html#7.1">7.1 Action Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.2">7.1.2 Disabled Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.3">7.1.3 Default Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.4">7.1.4 Iconic Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.5">7.1.5 Button Coding</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.1.6">7.1.6 Button Labels </a></p>
+<p class="toc-level2"><a href="07-simple.html#7.2">7.2 Elements Used for Choosing Data, Performing Actions, and Navigating</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.1">7.2.1 Elements Used for Choosing One Value</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.1.1">7.2.1.1 Checkbox</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.1.2">7.2.1.2 Set of Radio Buttons</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.1.3">7.2.1.3 Standard Drop-Down Menu</a></p>
+<p class="toc-level5"><a href="07-simple.html#7.2.1.3.1">7.2.1.3.1 General Drop-Down Menu Behavior</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.1.4">7.2.1.4 Scrolling List</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.2">7.2.2 Elements Used for Choosing One or More Values</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.2.1">7.2.2.1 Set of Checkboxes</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.2.2">7.2.2.2 Multiple Selection Scrolling List</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.3">7.2.3 Elements Used for Performing Actions and Navigating</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.3.1">7.2.3.1 Jump Menus</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.3.2">7.2.3.2 Jump Menu Behavior</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.3.3">7.2.3.3 Grouping Menu Items</a></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.3.4">7.2.3.4 Pop-Up Menu</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.3">7.3 Text Elements</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.3.1">7.3.1 Labels</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.3.3">7.3.3 Password Fields</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.3.4">7.3.4 Text Areas</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch8','ch8-img')" title="Click to Expand Chapter"><img id="ch8-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="08-complex.html"><strong>8 Complex Elements</strong></a></p>
+<div id="ch8" class="Chapt-Collapse">
+<br>
+<!-- <p class="toc-level1"><img src="new.gif"><strong>Usage Guidelines and Component UI Speccifications</strong></p> -->
+<!--<p class="toc-level2">  -->
+  <!-- <p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p> -->
+<!-- </p>  -->
+<p class="toc-level2"><a href="08-complex.html#8.1">8.1 Editable Scrolling List</a></p>
+<p class="toc-level2"><a href="08-complex.html#8.2">8.2 Add-and-Remove Idiom</a></p>
+<p class="toc-level2"><a href="08-complex.html#8.3">8.3 Orderable List </a></p>
+<p class="toc-level2"><a href="08-complex.html#8.4">8.4 Date Selection</a></p>
+<p class="toc-level3"><a href="08-complex.html#8.4.1">8.4.1 Pop-Up Calendar</a> </p>
+<p class="toc-level3"><a href="08-complex.html#8.4.2">8.4.2 Scheduler Element</a></p>
+<p class="toc-level2"><a href="08-complex.html#8.5">8.5 File Selection</a></p>
+<p class="toc-level3"><a href="08-complex.html#8.5.1">8.5.1 Client-Side File Upload</a> </p>
+<p class="toc-level3"><a href="08-complex.html#8.5.2">8.5.2 File Chooser Element</a></p>
+<p class="toc-level2"><a href="08-complex.html#8.6">8.6 Line Graph </a><span class="toc-level3"></span></p>
+<p class="toc-level3"><a href="08-complex.html#8.6.1">8.6.1 Color Palette</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.1.1">8.6.1.1 Threshold Line Colors</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.1.2">8.6.1.2 Comparative Attribute Line Colors</a></p>
+<p class="toc-level3"><a href="08-complex.html#8.6.2">8.6.2 Lines and Data Points</a></p>
+<p class="toc-level3"><a href="08-complex.html#8.6.3">8.6.3 Text</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.1">8.6.3.1 Tick Mark Label Text</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.2">8.6.3.2 Axis Text</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.3">8.6.3.3 Graph Title: Default</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.4">8.6.3.4 Graph Title Text: Property Page</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.5">8.6.3.5 Legend Text </a></p>
+<p class="toc-level4"><a href="08-complex.html#8.6.3.6">8.6.3.6 Other Graph Types and Tips </a></p>
+<p class="toc-level2"><a href="08-complex.html#8.7">8.7 Portal Elements </a><span class="toc-level3"></span></p>
+<p class="toc-level3"><a href="08-complex.html#8.7.1">8.7.1 Portlet Definition</a> </p>
+<p class="toc-level4"><a href="08-complex.html#8.7.1.1">8.7.1.1 Title Bar Controls</a> </p>
+<p class="toc-level4"><a href="08-complex.html#8.7.1.2">8.7.1.2 Content Area</a></p>
+<p class="toc-level4"><a href="08-complex.html#8.7.1.3">8.7.1.3  Page Layout</a> </p>
+<p class="toc-level3"><a href="08-complex.html#8.7.2">8.7.2 Portlet Table</a> </p>
+<p class="toc-level3"><a href="08-complex.html#8.7.3">8.7.3 Portlet Mini Tab Group</a> </p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch9','ch9-img')" title="Click to Expand Chapter"><img id="ch9-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="09-tables.html"><strong>9 Tables</strong></a></p>
+<div id="ch9" class="Chapt-Collapse">
+<!-- <p class="toc-level1"><img src="new.gif"><strong>Usage Guidelines and Component Specifications</strong></p> -->
+<br>
+<!--
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<p class="toc-level2"><a href="09-tables.html#9.1">9.1 General Table Guidelines</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.1">9.1.1 Basic Table Anatomy</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.2">9.1.2 Table Characteristics</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.3">9.1.3 Displaying Empty Tables</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.4">9.1.4 Displaying Empty Table Cells </a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.5">9.1.5 Property Table</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.1.6">9.1.6 Table Interactive Example </a></p>
+<p class="toc-level2"><a href="09-tables.html#9.2">9.2 Embedded Table Navigation</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.3">9.3 Selection in Tables</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.3.1">9.3.1 Single Selection in Tables</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.3.2">9.3.2 Multiple Selection in Tables</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.4">9.4 Table Actions</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.4.1">9.4.1 Definition of Table Actions and Related Terms</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.4.2">9.4.2 General Guidelines for Table Actions</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.4.3">9.4.3 Design Options for Table Actions</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.4.3.1">9.4.3.1 Using Only Buttons for Table Actions</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.4.3.2">9.4.3.2 Using a Single Drop-Down Menu for Table Actions</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.4.3.3">9.4.3.3 Using Embedded Table Actions</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.4.3.4">9.4.3.4 Using a Combination of Methods for Table Actions</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.4.4">9.4.4 Dynamic Enabling and Disabling of Table Actions</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.4.5">9.4.5 Maintaining Non-Displayed Selections</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.5">9.5 Changing Table Views</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.1">9.5.1 Table Filtering</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.1.1">9.5.1.1 Basic Table Filtering</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.1.2">9.5.1.2 <span class="style1"></span>Custom Table Filtering</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.2">9.5.2 Table Sorting</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.2.1">9.5.2.1 <span class="style1"></span>Direct Table Sorting </a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.2.2">9.5.2.2 Multiple-Column Sort Panel</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.2.3">9.5.2.3 Natural Sort Order and Clearing Sorts</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.3">9.5.3 Table Preferences</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.4">9.5.4 Vertical Pagination in Tables</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.4.1">9.5.4.1 Vertical Pagination User Interface Elements</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.5">9.5.5 Horizontal Scrolling in Tables</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.6">9.5.6 View-Changing Buttons</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.5.7">9.5.7 Grouped Tables</a></p>
+<p class="toc-level4"><a href="09-tables.html#9.5.7.1">9.5.7.1 Grouped Table Limitations and Future Plans</a></p>
+<p class="toc-level1"><a href="09-tables.html#9.6">9.6 AJAX Table (Next Generation Table) </a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.1">9.6.1 AJAX Table Overview</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.2">9.6.2 General Anatomy</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.3">9.6.3 Basic Interactions </a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.1">9.6.3.1 Object Selection</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.2">9.6.3.2 Selection Column Header</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.3">9.6.3.3 Performing an Action on an Item </a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.4">9.6.3.4 Moving by Keyboard</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.5">9.6.3.5 Resizing of Columns</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.6">9.6.3.6 Sorting of Columns</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.3.7">9.6.3.7 Inline Editing </a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.4">9.6.4 Lazy Data Download and Progress Indication</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.5">9.6.5 Table Controls Drawer </a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.6">9.6.6 Filter</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.7">9.6.7 Custom Filter </a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.7.1">9.6.7.1 Custom Filter Interaction</a></p>
+<p class="toc-level3"><a href="09-tables.html#9.6.7.2">9.6.7.2 Defining a Criterion</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.8">9.6.8 Data Export</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.9">9.6.9 Column Selection</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.10">9.6.10 Multiple Sort</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.11">9.6.11 Spanning Headers</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.12">9.6.12 Table Tips</a></p>
+<p class="toc-level2"><a href="09-tables.html#9.6.13">9.6.13 Grouped Tables</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch10','ch10-img')" title="Click to Expand Chapter"><img id="ch10-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="10-topology.html"><strong>10 Topology</strong></a></p>
+<div id="ch10" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+
+<p class="toc-level2"><a href="10-topology.html#10.1">10.1 Introduction</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.1.1">10.1.1 A Working Definition</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.1.2">10.1.2 Their Role in System Management Applications</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.2">10.2 Challenges in Designing Topologies</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.1">10.2.1 Handling Scale Gracefully</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.2">10.2.2 Managing Complexity</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.3">10.2.3 Achieving a Sun-Wide Common Look-and-Feel</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.4">10.2.4 Dealing with the Limitations of Web Browsers</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.5">10.2.5 Facilitating Positive Transfer across Different Representation Types</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.6">10.2.6 Integrating Into System Management Applications</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.2.7">10.2.7 Supporting Accessibility for Users with Disabilities</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.3">10.3 Choosing a Topology Representation</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.3.1">10.3.1 Attributes of Topologies</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.1.1">10.3.1.1 Primary Attributes (Number of Tiers and Number of Objects per Tier)</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.1.2">10.3.1.2 Secondary Attributes (Connectivity and Multipathed Topologies)</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.2.1">10.3.2.1 Guidelines for One-Tier Topologies</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.2.2">10.3.2.2 Guidelines for Two-Tier Topologies</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.2.3">10.3.2.3 Guidelines for Topologies With Three or More Tiers</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.3.2.4">10.3.2.4 Guidelines for Representing Within-Tier Connections</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.4">10.4 View Elements</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.1">10.4.1 Showing Topology Objects</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.2">10.4.2 Showing Topology Connections</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.3">10.4.3 Showing Alarm States</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.4">10.4.4 Showing Directed Relationships</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.5">10.4.5 Showing Filtered Views</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.6">10.4.6 Showing Aggregate Objects</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.7">10.4.7 Showing Aggregate Connections</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.8">10.4.8 Showing a Timestamp</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.9">10.4.9 Showing an Icon Legend</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.4.10">10.4.10 Showing Sub-Components</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.5">10.5 Layout Guidelines for Topologies</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.5.1">10.5.1 General Layout Guidelines</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.5.2">10.5.2 Layout Guidelines for Small-Scale Topologies</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.5.3">10.5.3 Layout Guidelines for Moderate-Scale Topologies</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.5.4">10.5.4 Display Guidelines for Large-Scale Topologies</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.6">10.6 Interaction Elements</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.1">10.6.1 Mouse-Over Feedback and Tool Tips</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.2">10.6.2 Object Selection Behavior</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.3">10.6.3 Contextual Menus</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.4">10.6.4 Clickable Regions</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.6.4.1">10.6.4.1 Managed Objects</a></p>
+<p class="toc-level4"><a href="10-topology.html#10.6.4.2">10.6.4.2 Connections</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.5">10.6.5 Expanding and Collapsing Aggregates</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.6.6">10.6.6 Saving Topologies</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.7">10.7 Methods for Integration with Primary Navigation</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.7.1">10.7.1 Showing Connectivity for a Selected Object</a></p>
+<p class="toc-level3"><a href="10-topology.html#10.7.2">10.7.2 Showing Paths from a Selected Object</a></p>
+<p class="toc-level2"><a href="10-topology.html#10.8">10.8 Issues for Future Investigation</a></p>
+</div>
+
+
+<h1>User Assistance </h1>
+<p class="toc-level0"><a href="javascript:toggleSection('ch11','ch11-img')" title="Click to Expand Chapter"><img id="ch11-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="11-help.html"><strong>11 Contextual Help</strong></a></p>
+<div id="ch11" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+--><br>
+<p class="toc-level2"><a href="11-help.html#11.1">11.1 Inline Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.1.1">11.1.1 Deciding Whether to Provide Inline Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.1.2">11.1.2 Positioning Inline Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.1.3">11.1.3 Formatting Inline Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.1.4">11.1.4 Including Links in Inline Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.1.5">11.1.5 Writing Inline Help</a></p>
+<p class="toc-level2"><a href="11-help.html#11.2">11.2 Help-Window Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.2.1">11.2.1 Layout and Behavior of the Help Window</a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.1">11.2.1.1 Anatomy of the Help Window</a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.2">11.2.1.2 Sizing of the Help Window</a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.3">11.2.1.3 Window Title Bar in the Help Window</a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.4">11.2.1.4 Content-Area Title Pane in the Help Window </a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.5">11.2.1.5 Navigation Pane in the Help Window </a></p>
+<p class="toc-level4"><a href="11-help.html#11.2.1.6">11.2.1.6 Topic Pane in the Help Window </a></p>
+<p class="toc-level3"><a href="11-help.html#11.2.2">11.2.2 Providing Access to Help-Window Help</a></p>
+<p class="toc-level2"><a href="11-help.html#11.3">11.3 Left-Pane Help</a></p>
+<p class="toc-level2"><a href="11-help.html#11.4">11.4 Choosing the Correct Type of Help</a></p>
+<p class="toc-level3"><a href="11-help.html#11.4.1">11.4.1 Providing Help for Main Windows</a></p>
+<p class="toc-level3"><a href="11-help.html#11.4.1">11.4.2 Providing Help for Pop-up Windows</a></p>
+<p class="toc-level2"><a href="11-help.html#11.5">11.5 Tool Tips</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.1">11.5.1 Creating Tool Tips</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.2">11.5.2 Creating Longer Descriptions Using the HTML longdesc Attribute</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.3">11.5.3 Tool Tips for Sun Icons, Glyphs, and Graphics</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.4">11.5.4 A Note on HTML alt and longdesc Attributes for Tree Navigation Objects</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.5">11.5.5 Visual Design Considerations for Tool Tips</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.6">11.5.6 Tool Tips for Disabled Icons</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.7">11.5.7 Tool Tips for Icons with Alarm Badges</a></p>
+<p class="toc-level3"><a href="11-help.html#11.5.8">11.5.8 Tool Tip Resources</a></p>
+<p class="toc-level2"><a href="11-help.html#11.6">11.6 Pop-Up Bubble</a></p>
+<p class="toc-level3"><a href="11-help.html#11.6.1">11.6.1 Invoking and Closing Pop-Up Bubbles</a></p>
+<p class="toc-level3"><a href="11-help.html#11.6.2">11.6.2 Pop-Up Bubble Content Details</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch12','ch12-img')" title="Click to Expand Chapter"><img id="ch12-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="12-search.html"><strong>12 Search</strong></a></p>
+<div id="ch12" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<!--<p class="toc-level0"><a href="12-search.html#12"><strong>12 Search</strong></a></p> -->
+<p class="toc-level2"><a href="12-search.html#12.1">12.1 Quick Search</a></p>
+<p class="toc-level3"><a href="12-search.html#12.1.1">12.1.1 Global Quick Search</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.1.1">12.1.1.1 Global Quick Search: Predefined Queries</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.1.2">12.1.1.2 Global Quick Search: Application-Wide Text Search</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.1.3">12.1.1.3 Global Quick Search: Scoped Text Search</a></p>
+<p class="toc-level3"><a href="12-search.html#12.1.2">12.1.2 Local Quick Search</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.2.1">12.1.2.1 Local Quick Search: Predefined Queries</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.2.2">12.1.2.2 Local Quick Search: Local Text Search</a></p>
+<p class="toc-level4"><a href="12-search.html#12.1.2.3">12.1.2.3 Local Quick Search: Scoped Text Search</a></p>
+<p class="toc-level2"><a href="12-search.html#12.2">12.2 Advanced Search</a></p>
+<p class="toc-level3"><a href="12-search.html#12.2.1">12.2.1 Global Advanced Search</a></p>
+<p class="toc-level4"><a href="12-search.html#12.2.1.1">12.2.1.1 Global Advanced Search in Main Windows</a></p>
+<p class="toc-level4"><a href="12-search.html#12.2.1.2">12.2.1.2 Global Advanced Search in Pop-Up Windows</a></p>
+<p class="toc-level3"><a href="12-search.html#12.2.2">12.2.2 Adding Scoping to Advanced Search</a></p>
+<p class="toc-level3"><a href="12-search.html#12.2.3">12.2.3 Contextual Advanced Search</a></p>
+<!-- 
+<p class="toc-level4"><a href="12-search.html#12.2.3.1">12.2.3.1 Contextual Advanced Search in Main Windows</a></p>
+<p class="toc-level4"><a href="12-search.html#12.2.3.2">12.2.3.2 Contextual Advanced Search in Pop-Up Windows</a></p>
+-->
+<p class="toc-level2"><a href="12-search.html#12.3">12.3 Search Results</a></p>
+<p class="toc-level3"><a href="12-search.html#12.3.1">12.3.1 Global Quick Search Results</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.1.1">12.3.1.1 Global Quick Search Results in Main Windows</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.1.2">12.3.1.2 Global Quick Search Results in Pop-Up Windows</a></p>
+<p class="toc-level3"><a href="12-search.html#12.3.2">12.3.2 Local Quick Search Results</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.2.1">12.3.2.1 Local Quick Search Results in Main Windows</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.2.2">12.3.2.2 Local Quick Search Results in Pop-Up Windows</a></p>
+<p class="toc-level3"><a href="12-search.html#12.3.3">12.3.3 Advanced Search Results</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.3.1">12.3.3.1 Advanced Search Results in Main Windows</a></p>
+<p class="toc-level4"><a href="12-search.html#12.3.3.2">12.3.3.2 Advanced Search Results in Pop-Up Windows</a></p>
+</div>
+
+<p class=toc-level0><a href="javascript:toggleSection('ch13','ch13-img')" title="Click to Expand Chapter"><img id="ch13-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="13-wizards.html"><strong>13 Wizards</strong></a></p>
+<div id="ch13" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class=toc-level2><a href="13-wizards.html#13.1">13.1 Anatomy</a></p>
+<p class=toc-level3><a href="13-wizards.html#13.1.1">13.1.1 Steps List Anatomy</a></p>
+<p class=toc-level4><a href="13-wizards.html#13.1.1.1">13.1.1.1 Branching Represented as Substeps</a></p>
+<p class=toc-level4><a href="13-wizards.html#13.1.1.2">13.1.1.2 Branching Represented as Placeholder</a></p>
+<!-- <P class=toc-level2><a href="13-wizards.html#13.1.2">13.1.2 Looping</A></P> -->
+<p class=toc-level3><a href="13-wizards.html#13.1.3">13.1.2 Help in the Left Pane </a></p>
+<p class=toc-level3><a href="13-wizards.html#13.1.4">13.1.3 Overview Page </a></p>
+<p class=toc-level3><a href="13-wizards.html#13.1.5">13.1.4 Review Selections Page </a></p>
+<p class=toc-level3><a href="13-wizards.html#13.1.6">13.1.5 View Results Page</a></p>
+<p class=toc-level2><a href="13-wizards.html#13.2">13.2 Behavior</a></p>
+<p class=toc-level3><a href="13-wizards.html#13.2.1">13.2.1 Basics</a></p>
+<p class=toc-level3><a href="13-wizards.html#13.2.2">13.2.2 Backtracking</a></p>
+<p class=toc-level3><a href="13-wizards.html#13.2.3">13.2.3 Finish Button and Results Page</a></p>
+</div>
+<h1><br>
+Feedback, Login, and Version Information </h1>
+<p class="toc-level0"><a href="javascript:toggleSection('ch14','ch14-img')" title="Click to Expand Chapter"><img id="ch14-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="14-alerts.html"><strong>14 Alerts and Messages</strong></a></p>
+<div id="ch14" class="Chapt-Collapse">
+<br>
+<!-- <p class="toc-level1"><img src="new.gif"><strong>Usage Guidelines and Component Specifications</strong></p> -->
+<!-- <p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p> -->
+<p class="toc-level2"><a href="14-alerts.html#14.1">14.1 Inline Alerts</a></p>
+<p class="toc-level3"><a href="14-alerts.html#14.1.1">14.1.1 Example of Information Inline Alert</a></p>
+<p class="toc-level3"><a href="14-alerts.html#14.1.2">14.1.2 Example of Error Inline Alert</a></p>
+<p class="toc-level3"><a href="14-alerts.html#14.1.3">14.1.3 Example of Warning Inline Alert</a></p>
+<p class="toc-level3"><a href="14-alerts.html#14.1.4">14.1.4 Example of Success Inline Alert</a></p>
+<p class="toc-level2"><a href="14-alerts.html#14.2">14.2 JavaScript Alerts</a></p>
+<p class="toc-level2"><a href="14-alerts.html#14.3">14.3 Full-Page Alerts</a></p>
+<p class="toc-level2"><a href="14-alerts.html#14.4">14.4 Alerts Shown in a Pop-Up Window</a></p>
+<p class="toc-level2"><a href="14-alerts.html#14.5">14.5 Validation Error Alerts</a></p>
+<p class="toc-level3"><a href="14-alerts.html#14.5.1">14.5.1 Validation Error Messages</a></p>
+<p class="toc-level2"><a href="14-alerts.html#14.6">14.6 Choosing the Correct Alert Display Type</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch15','ch15-img')" title="Click to Expand Chapter"><img id="ch15-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="15-progress.html"><strong>15 Progress Indicators</strong></a></p>
+<div id="ch15" class="Chapt-Collapse">
+<br>
+<!-- <p class="toc-level1"><img src="new.gif"><strong>Usage Guidelines and Component Specifications</strong></p> -->
+<!-- <p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p> -->
+<p class="toc-level2"><a href="15-progress.html#15.1">15.1 Progress Indicator Types</a></p>
+<p class="toc-level3"><a href="15-progress.html#15.1.1">15.1.1 Determinate Progress Bar </a></p>
+<p class="toc-level3"><a href="15-progress.html#15.1.2">15.1.2 Indeterminate Progress Bar</a></p>
+<p class="toc-level3"><a href="15-progress.html#15.1.3">15.1.3 Busy Indicator</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.2">15.2 Progress Indicator Elements</a></p>
+<p class="toc-level3"><a href="15-progress.html#15.2.1">15.2.1 Button Controls</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a></p>
+<p class="toc-level3"><a href="15-progress.html#15.3.1">15.3.1 Busy Indicator - Inline</a></p>
+<p class="toc-level3"><a href="15-progress.html#15.3.2">15.3.2 </a><a href="15-progress.html#15.3.2">Progress Bar in a Pop-Up Window </a></p>
+<p class="toc-level3"><a href="15-progress.html#15.3.3">15.3.3 </a><a href="15-progress.html#15.3.3">Progress Bar in a Wizard </a></p>
+<p class="toc-level3"><a href="15-progress.html#15.3.4">15.3.4 Progress Bars in a Table</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.4">15.4 Jobs Overview Page</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.5">15.5 Jobs Running Display in a Main Window Masthead</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch16','ch16-img')" title="Click to Expand Chapter"><img id="ch16-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="16-alarms-status.html"><strong>16 Alarms and Status Indicators</strong></a></p>
+<div id="ch16" class="Chapt-Collapse">
+<!--
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="16-alarms-status.html#16.1">16.1 Alarms</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.1">16.1.1 Alarm Creation</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.2">16.1.2 Alarm Severity</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.3">16.1.3 Alarm Status</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.4">16.1.4 Logging Events</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.5">16.1.5 Alarm Views</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.1.5.1">16.1.5.1 Alarms in Trees</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.1.5.2">16.1.5.2 Alarms in Topology Views</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.1.5.3">16.1.5.3 Alarms in Tables</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.1.5.3.1">16.1.5.3.1 Alarm Summary View</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.1.1.3.2">16.1.5.3.2 Alarm Rollup View</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.1.1.3.3">16.1.5.3.3 Alarm Details View</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.6">16.1.6 Alarm Graphics</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.1.7">16.1.7 Inactive Alarm Expiration</a></p>
+<p class="toc-level2"><a href="index.html#16.2">16.2 Status</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.2.1">16.2.1 Status Indicators</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.1.1">16.2.1.1 Object Status</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.2.1.1.1">16.2.1.1.1 Object Status Icons and Values</a></p>
+<!--
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.1.1.2">16.2.1.1.2 Object Status Icons</A></p>
+<p class="toc-level4"> <a href="16-alarms-status.html#16.2.1.1.2.1"> 16.2.1.1.2.1 Status Icons for Objects in Containers</A></p>
+-->
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.1.2">16.2.1.2 Detailed Status</a></p>
+<p class="toc-level3"><a href="16-alarms-status.html#16.2.2">16.2.2 Displaying Status</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.2.1">16.2.2.1 Status in a Table View</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.2.2.1.1">16.2.2.1.1 Object Status in Tables</a></p>
+<p class="toc-level5"><a href="16-alarms-status.html#16.2.2.1.2">16.2.2.1.2 Detailed Status in Tables</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.2.2">16.2.2.2 Status in a Topology View</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.2.3">16.2.2.3 Status in a Tree View</a></p>
+<p class="toc-level4"><a href="16-alarms-status.html#16.2.2.4">16.2.2.4 Object Status Summary</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch17','ch17-img')" title="Click to Expand Chapter"><img id="ch17-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="17-login.html"><strong>17 Login Page</strong></a></p>
+<div id="ch17" class="Chapt-Collapse">
+<!--
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="17-login.html#17.1">17.1 Login Page Elements </a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.1">17.1.1 Utility Bar</a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.2">17.1.2 Branding Image with Sun and Java Logos</a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.3">17.1.3 Branding Image Border</a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.4">17.1.4 Product Name Image</a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.5">17.1.5 Copyright Information for the Sun Java(TM) Web Console</a></p>
+<p class="toc-level3"><a href="17-login.html#17.1.6">17.1.6 Page Background</a></p>
+<p class="toc-level2"><a href="17-login.html#17.2">17.2 Login Page Form Area </a></p>
+<p class="toc-level3"><a href="17-login.html#17.2.1">17.2.1 Type-Specific Form Fields</a></p>
+<p class="toc-level2"><a href="17-login.html#17.3">17.3 Additional Login Pages</a></p>
+<p class="toc-level2"><a href="17-login.html#17.4">17.4 Inline Alerts for Login Pages</a></p>
+</div>
+
+<p class="toc-level0"><a href="javascript:toggleSection('ch18','ch18-img')" title="Click to Expand Chapter"><img id="ch18-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="18-version.html"><strong>18 Version Page</strong></a></p>
+<div id="ch18" class="Chapt-Collapse">
+<!-- 
+<p class="toc-level1"><strong>Web Application Guidelines - Version 4.0 Pages:</strong></p>
+<p class="toc-level1">TBD</p>
+<br>
+<p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p>
+-->
+<br>
+<p class="toc-level2"><a href="18-version.html#18.1">18.1 Version Page Elements</a></p>
+<p class="toc-level3"><a href="18-version.html#18.1.1">18.1.1 Branding Image with Sun Logo</a></p>
+<p class="toc-level3"><a href="18-version.html#18.1.2">18.1.2 Product Name Image</a></p>
+<p class="toc-level3"><a href="18-version.html#18.1.3">18.1.3 Java Logo</a></p>
+<p class="toc-level3"><a href="18-version.html#18.1.4">18.1.4 Application Version Number</a></p>
+<p class="toc-level3"><a href="18-version.html#18.1.5">18.1.5 Legal Notice</a></p>
+</div>
+
+<h1><br>
+Additional Information </h1>
+<h1><a href="javascript:toggleSection('app','app-img')" title="Click to Expand Chapter"><img id="app-img" src="Guidelines_Icons/collapsed.gif" alt="Click to Expand Chapter" width="16" height="22" border="0"></a><a href="appendices.html"><strong>Appendices</strong></a>
+<div id="app" class="Chapt-Collapse">
+<!-- <p class="toc-level1"><strong>Web Application Guidelines - Version 3.0 Sections:</strong></p> -->
+<br>
+<p class="toc-level2"><a href="A-component-library-info.html">Appendix A - Component Library Information </a></p>
+<p class="toc-level2"><a href="sample-code/index.html">Appendix B - Examples and Specifications </a></p>
+<p class="toc-level2"><a href="C-prodname.html">Appendix C - Product Name Images</a></p>
+<p class="toc-level2"><a href="D-accessibility.html">Appendix D - Accessibility Requirements</a></p>
+<p class="toc-level2"><a href="E-pixel-layout.html">Appendix E - Pixel Specifications</a></p>
+<p class="toc-level2"><a href="F-alert_graphics.html">Appendix F - Alert Graphics (sized)</a></p>
+<p class="toc-level2"><a href="G-badging-icons.html">Appendix G - Badging Icons</a></p>
+<p class="toc-level2"><a href="H-globalization.html">Appendix H - Globalization Requirements</a></p>
+</div></h1>
+
+<p>&nbsp;</p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <span class="currentchapter">Table&nbsp;of&nbsp;Contents</span>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

@@ -1,0 +1,506 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>15&nbsp;Progress&nbsp;Indicators - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="15-progress.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <span class="currentchapter">15&nbsp;Progress&nbsp;Indicators</span>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="style5"><a href="15-progress.html#15"><b>15 Progress Indicators</b></a>
+<p class="toc-level1 style5"><a href="15-progress.html#15.1">15.1 Progress Indicator Types</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.1.1">15.1.1 Determinate Progress Bar </a></p>
+<p class="toc-level2"><a href="15-progress.html#15.1.2">15.1.2 Indeterminate Progress Bar</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.1.3">15.1.3 Busy Indicator</a></p>
+<p class="toc-level1 style5"><a href="15-progress.html#15.2">15.2 Progress Indicator Elements</a></p>
+<p class="toc-level2 style5"><a href="15-progress.html#15.2.1">15.2.1 Button Controls</a></p>
+<p class="toc-level1 style5"><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a></p>
+<p class="toc-level2"><a href="15-progress.html#15.3.1">15.3.1 Busy Indicator - Inline</a><br>
+<a href="15-progress.html#15.3.2">15.3.2 </a><a href="15-progress.html#15.3.2">Progress Bar in a Pop-Up Window </a></p>
+<p class="toc-level2"><a href="15-progress.html#15.3.3">15.3.3 </a><a href="15-progress.html#15.3.3">Progress Bar in a Wizard </a><br>
+<a href="15-progress.html#15.3.4">15.3.4 Progress Bars in a Table</a></p>
+<p class="toc-level1"><a href="15-progress.html#15.4">15.4 Jobs Overview Page</a></p>
+<p class="toc-level1 style5"><a href="15-progress.html#15.5">15.5 Jobs Running Display in a Main Window Masthead</a><br>
+</p>
+<h1><a name="15"></a>15 Progress Indicators </h1>
+<p>Progress indicators are useful for communicating that a job is in-process. This feedback, at minimum, reassures the user that something is happening and, ideally, also lets the user know approximately how long the job will take to complete. 
+</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Once the user has started a job, a progress indicator should be presented for that job. </p>
+<h2><a name="15.1" id="15.1"></a>15.1 Progress Indicator Types</h2>
+<p>The 4.0 Progress Indicator component consists of three progress indicator designs: Determinate Progress Bar, Indeterminate Progress Bar and a Busy indicator. </p>
+<p>The Determinate and Indeterminate Progress Bar indicators include graphical bars to demonstrate job progress. The Determinate Progress Bar is used to represent the percentage of a given job that has been completed. The Indeterminate Progress Bar is used when estimates of job completion cannot be provided, yet the job is being performed. Determinate and Indeterminate Progress Bar indicators may also include a textual description of the job, a textual description of the current job status, and any related controls such as Pause, Resume and/or Cancel buttons to halt the associated job. </p>
+<p>The Busy indicator is not a bar-type indicator, but a circular animation. It <span class="style2">is</span> used when space is very constrained, and is suitable for demonstrating progress for events which cannot be synchronized to the backend process.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Use a Determinate or Indeterminate Progress Bar when a job might take longer than six seconds to complete.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> If the context allows, consider presenting a Busy progress Indicator when a job takes less than six seconds to complete and some progress feedback is required.<br>
+</p>
+<h3><a name="15.1.1" id="15.1.1"></a>15.1.1 Determinate Progress Bar </h3>
+<p>The Determinate Progress Bar provides feedback to the user that a job is in-process and indicates approximately how long <s></s>it will take to complete. It should be used for a single measurable job composed of one or more steps. </p>
+<p>Progress is visually represented by a horizontal progress bar which progressively  fills a trough area. The progress bar fills the trough in proportion to the job progress. <span class="style2">Corresponding status text can be presented with the progress bar to offer detailed information about the job status. Status text offers narrative details regarding the percentage of job completion and estimated time remaining. Button controls can be included for actions supported by the application. For details see <a href="15-progress.html#15.2">15.2 Progress Indicator Elements. </a></span></p>
+<p>The Determinate Progress Bar may be presented in a pop-up window, or inline within a component or page. For more information please see <span></span><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a>. </p>
+<p>Example: Determinate Progress Bar<br>
+<img src="progress_graphics/determinate.jpg" width="434" height="90"><br>
+<span class="style11 style2">Basic Interaction:</span></p>
+<ul>
+  <li>State: <strong>In Progress</strong> = Progress bar  fills trough, from left to right, in relationship with the job progress. &quot;Cancel&quot; and &quot;Pause&quot; buttons, if provided, are enabled. If the &quot;Pause&quot; button is provided, the &quot;Resume&quot; button should be as well, and it should be disabled. Associated status text describes progress details. </li>
+  <li>State: <strong>Fail</strong> = Progress bar stops, the progress bar is dismissed and an alert error message is presented with a corresponding alert icon. &quot;Cancel&quot; button, if provided, becomes disabled. </li>
+  <li>State: <strong>Pause</strong> = Job pauses, leaving the system in its current state.The job pauses, the progress bar animation stops at its current last position. The pause button changes to a disabled state. The resume button should remain present and enabled. If textual status if presented it should state that the job has been paused. If it is possible to resume the job the text should indicate that. </li>
+  <li>State: <strong>Resume = </strong>Job resumes the job where it left off. The job resumes and the progress bar animation should resume filling the trough. If textual status if presented it should resume indicating progress details. </li>
+  <li> State: <strong>Cancel =</strong> Stops the progress of the job and reverts the system to the state before the job was started. If the component is presented &quot;inline&quot; in a page, versus a pop-up, the progress bar may dismiss itself at the next refresh interval - similar to the &quot;failed&quot; state behavior. The cancel button is enabled when the job is running, and disabled when the job is not running. If textual status is presented it should state that the job has been canceled. </li>
+  <li>State: <strong>Job Completes</strong> = The progress bar animation fills the trough. If textual status if presented it should state that the job has been completed. The bar may dismiss upon completion depending on context (can dismiss if inline in a property page view, or remain present if in a pop-up). </li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Use the Determinate Progress Bar to represent the percentage of completion for a given job.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The progress indicator component is AJAX-enabled. It will poll the backend every three seconds, dynamically refreshing the component presentation.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Progress indication should be based upon real, measurabl<span class="style2">e progress, when at all possible. Examples of measurable progress include steps completed, data moved/written, specific events, and so on.</span></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> A progress bar should never go backwards and become shorter. If a new calculation determines that the process will take longer than previously estimated, hold the bar at the current percentage until it is exceeded.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> A progress bar should never appear &quot;full&quot; until the job is completely finished. Provide a minimum amount of white space, of at least two pixels, to the right of the bar as long as the job is under 100 percent complete.</p>
+<p><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"></strong> If the job is composed of several steps that fact should be made explicit to the user.</p>
+<p>For an interactive example of a Determinate Progress Bar, see <a href="http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:determinateProgressBar_submittedLink=form1:determinateProgressBar">http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:determinateProgressBar_submittedLink=form1:determinateProgressBar</a>.<br>
+</p>
+<h3><a name="15.1.2" id="15.1.2"></a>15.1.2 Indeterminate Progress Bar </h3>
+<p>The Indeterminate Progress Bar is used to provide feedback to the user that a job is in-process in the absence of measurable progress information. It should be used when there&rsquo;s no way to accurately determine how long it will take a job to complete. </p>
+<p>Progress is visually represented by a progress bar animation, which spins while the job is in progress. <span class="style2">Corresponding status text can be presented with the progress bar to offer any available  information about the job status. Button controls may be included to support job actions. For details see <a href="15-progress.html#15.2">15.2 Progress Indicator Elements. </a></span></p>
+<p>The Indeterminate Progress Bar may be presented in a pop-up window, or inline within a component or page. For more information please see <span></span><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a>. </p>
+<p>Example: Indeterminate Progress Bar<br>
+  <a name="shows-separator"></a><img src="progress_graphics/indeterminate.jpg" alt="Indeterminate Progress Bar Example" width="428" height="129"></p>
+<p><span class="style11  style2">Basic Interaction:</span></p>
+<ul>
+  <li>State: <strong>In Progress</strong> = Progress bar animation loops, creating a barber pole effect. &quot;Cancel&quot; and &quot;Pause&quot; buttons, if provided, are enabled. If the &quot;Pause&quot; button is provided, the &quot;Resume&quot; button should be as well, and it should be disabled. Associated status text describes state details. </li>
+  <li>State: <strong>Fail</strong> = Progress bar stops, the progress bar is dismissed and an alert error message is presented with a corresponding alert icon. &quot;Cancel&quot; button, if provided, becomes disabled. </li>
+  <li>State: <strong>Pause</strong> = Animation stops. &quot;Resume&quot; button should be present and enabled. Associated status text describes state details. </li>
+  <li>State: <strong>Resume</strong> = Animation starts. &quot;Pause&quot; button should be present and enabled. Associated status text describes state details. </li>
+  <li> State: <strong>Cancel</strong> = Animation is dismissed, either inline or via pop-up window controls depending on presentation context. Associated status text describes state details, and may remain depending on usage context. </li>
+  <li>State: <strong>Job Completes</strong> = Animation is dismissed, either inline or via pop-up window controls depending on presentation context. Associated status text describes state details, and may remain depending on usage context. </li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Use the Indeterminate Progress Bar when estimates of job completion cannot be provided, yet the job is being performed.</p>
+<p>For an interactive example of an Indeterminate Progress Bar, see <a class="moz-txt-link-freetext" href="http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:indeterminateProgressBar_submittedLink=form1:indeterminateProgressBar">http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:indeterminateProgressBar_submittedLink=form1:indeterminateProgressBar</a>.<br>
+</p>
+<h3><a name="15.1.3" id="15.1.3"></a>15.1.3 Busy Indicator </h3>
+<p>The Busy Indicator is a simple animated graphic. It is used when no measurable progress can be reported. It is a not a bar, but a circular graphical indicator. Unlike the other progress indicators it can be used in contexts where space is constrained. </p>
+<p>Example: Busy Indicator </p>
+<blockquote>
+  <p><img src="progress_graphics/asynch-1F.gif" alt="Busy Indicator Example" width="30" height="30"></p>
+</blockquote>
+<p>The Busy Indicator may be used as an inline &lsquo;placeholder&rsquo; when  data loading from the server affects the content presentation. For example, if redrawing a chart image causes a delay in repainting the screen, the busy indicator could be presented in the interim. For more information  see <span></span><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a>.</p>
+<p><span class="style11  style2">Basic Interaction: </span></p>
+<ul>
+  <li>State: <strong>In Progress</strong> = Animation rotates. No buttons or associated text. </li>
+  <li>State: <strong>Fail</strong> = Progress animation is dismissed, and an  alert error message with a corresponding alert icon is presented. The error 
+
+
+ message is configurable so it may be hidden or customized.</li>
+  <li>State: <strong>Job Completes</strong> = Animation is dismissed.</li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Do not continue to display busy indicator after a system has failed. Instead, present an error message. If that is not possible or desirable, avoid using the Busy Indicator in association with critical tasks. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The &quot;Busy&quot; indicator should not be used in association with either the Determinate or Indeterminate Progress Bars. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The &quot;Busy&quot; indicator should not be used on a background color other than white, such as in mastheads or title bars.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> he &quot;Busy&quot; indicator requires a 10 pixel margin between it and the surrounding content. The margin is built into the component. </p>
+<p>For an interactive example of a Busy Progress Bar, see <a class="moz-txt-link-freetext" href="http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:busyProgressBar_submittedLink=form1:busyProgressBar">http://webdev2.sun.com/example/faces/progressbar/index.jsp?form1:busyProgressBar_submittedLink=form1:busyProgressBar</a>.<br>
+</p>
+<h2><a name="15.2" id="15.2"></a>15.2 Progress Indicator Elements </h2>
+<p>Many use cases will require presenting all of the available progress indicator elements below. Although in use cases where displaying certain elements is not relevant to the job or context, the component is configurable and will allow for the omission of any element. </p>
+<p><strong>  Determinate and Indeterminate Progress Bars</strong></p>
+<p>Basic anatomy of the Determinate and Indeterminate Progress Bars:<br>
+<strong><img src="progress_graphics/overview-specs.gif" alt="Anatomy of a Progress Bar" width="714" height="276"></strong></p>
+<ul>
+  <li><span class="style13">Job  Title</span><span class="style10"><br>
+  </span> The Job Title Text is a text string that is positioned above the progress bar. It identifies the overall job, for example &quot;Analyzing Hosts&quot;. Use this text string as a title for a single job, which may or may not be composed of one or more steps. <br>
+  <br>
+  If the job consists of one or more steps, they may be included in the Job Title. In this case, add a sub-title for steps after the primary Job Title text. The sub-title would refresh dynamically as the job progresses through the steps, while the primary title for the Job Title would remain constant. For example: &quot;Analyzing Hosts: Analyzing Hard Drives, "Analyzing Hosts: Analyzing CPUs and etc.&quot;. Keep the text string to a minimum so that it does not wrap to more than one line.<span class="style4"><br>
+  <br>
+  </span><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Use headline capitalization for the Job Title text, see <a href="02-visual.html#2.5">2.5 Text Capitalization</a> for details. </li>
+</ul>
+<blockquote>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The Job Title Text, identifying the overall job, must remain constant throughout the job, if presented. </p>
+</blockquote>
+<ul>
+  <li><strong>Progress Bar</strong><br>
+    Display the progress bar after the Job Title text, if present. The bar should indicate progress for the overall job and not for each individual step within the job.</li>
+</ul>
+<ul>
+  <li><strong>Status Text</strong><br>
+    Below the progress bar a text string may be presented to describe details about the job. It may be used to indicate the percentage of job completion, with the estimations for time remaining.
+      The text string can update and refresh dynamically.
+    <blockquote>
+      <p><strong>Time Estimates</strong><br>
+        Time estimates should always be calculated and updated based upon real data. As the progress bar fills, the percentage complete should increase and the time remaining should correspondingly decrease.
+      </p>
+      <p>Some examples of time estimation are: </p>
+      <blockquote>
+        <p> If a job is similar to a file download, use slices of time to calculate your bytes/second download rate, and use that data to calculate the total time. Continue updating the download rate and continuously update the time estimate. </p>
+        <p> If a job involves steps of similar duration, calculate how long it takes for the first step to complete. Then, use that data to produce a time estimate (the estimate may appear only after some data is collected) of how long all of the steps will take to complete as a whole. </p>
+        <p> If a subtask is of uncertain duration, but is repeated multiple times (across hosts perhaps), then use the data from the first instance of the subtask to calculate the first estimate, then continue to update the estimate as further data is collected. Use M multiplied by the number of subtasks remaining, where M is the mean time for a single subtask that is constantly updated. </p>
+      </blockquote>
+      <p>Ideally time estimates for completion should always be supplied, although in some cases doing so might be impossible. For example, if an application needs to &quot;analyze a host&quot; for patching, the number of patches the host needs is unknown and therefore time estimation cannot be done. In this case, consider using text such as &quot;this might take up to X minutes&quot; (where X is a predetermined maximum time) rather than a time estimation.</p>
+      <p>When doing time estimation, keep the user in mind. If the time estimates you are calculating vary widely so as to make them unusable, then do not use a time estimate. Keep in mind that users might still be interested in a rough time estimate, particularly if it indicates a job should take 4-8 minutes, rather than 30-40 minutes.</p>
+      <p><span class="style2"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"></strong></span> Place the time remaining text in parentheses, after the percentage complete text string.</p>
+    </blockquote>
+  </li>
+  <blockquote>
+    <p><strong>Inline Status Text</strong><br>
+      (Determinate Only) The component also allows for Inline Status Text to be overlaid on to the progress bar animation itself. This alternate presentation is useful for tables or portlet presentations where space is constrained and the standard Status Text cannot be included. <br>
+      <br>
+      Example: Progress Bar with Inline Status Text<br>
+      <img src="progress_graphics/inline-progress.jpg" alt="Inline Status Text" width="249" height="67"> </p>
+  </blockquote>
+  <li><strong>Scrolling Text Box</strong><br>
+    The Scrolling Text Box is an optional element, with the intended purpose of displaying job details or a running log. 
+    A running log is useful for monitoring the progress of a job, and for reviewing job details upon completion. The running log may display each step as it occurs. The running log provides a history of the job, which can be useful for diagnosis in the case of errors. 
+      <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> When including a Scrolling Text Box:</p>
+  </li>
+</ul>
+<ul>
+  <ul>
+    <li>Place the text box after the progress bar and before the &quot;Close window upon successful completion&quot; checkbox. <span class="style2">(See <a href="15-progress.html#15.3.2">15.3.2 Progress Bar in a Pop-Up Window</a> for more information about the &quot;Close window upon successful completion&quot; checkbox.)</span></li>
+    <li>Put the text for each step, event or error on a separate line.</li>
+  </ul>
+</ul>
+<ul>
+  <li><strong>Button Areas</strong><br>
+    Buttons are not built in to the indicator component. Instead  areas within the indicator component are allocated for button placement. Two areas are provided, one directly below the component and one to the right of the component.</li>
+</ul>
+<blockquote>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Buttons related to the progress indicator must be placed within these two areas. Buttons may be presented to the right of the component when there is ample horizontal room, or when the vertical space is constrained. Buttons should be positioned directly below the component when horizontal space is constrained, such as in a wizard or pop-up. Up to five buttons may be placed in the button areas. <span class="style7"><br>
+    </span><br>
+  While buttons are not included in the component, <span class="style2">functionality exists to support multiple button controls and associated states. </span> For more information on recommended button presentation and usage see <a href="07-simple.html#7.1">7.1 Action Buttons. </a></p>
+</blockquote>
+<ul>
+  <li><strong>Dynamic </strong><strong>Error Message </strong><br>
+    A Dynamic Error Message may be presented when a job fails. If presented, the progress bar is dismissed and an inline error message takes its place. The error message consists of an error icon and associated error text. The intended use for this feature is for situations where only the progress bar itself is being presented to the user, such as in a table display. In other contexts alternate presentations may be preferable. For more information please see <span></span><a href="15-progress.html#15.3">15.3 Progress Indicators in Context</a>.<br>
+    <br>
+  Example: Dynamic Error Message</li>
+</ul>
+<blockquote>
+  <p><img src="progress_graphics/inline_error.gif" width="149" height="28"></p>
+</blockquote>
+<p><strong>Busy Indicator: </strong></p>
+<ul>
+  <li>The Busy Indicator is an animated gif image with a built-in 10 pixel margin. There is no text nor button control associated with this progress indicator. <br>
+    <br>
+    Example: Busy Indicator, with margins<br> 
+    <img src="progress_graphics/async-spec.gif" alt="Busy Indicator Margins" width="114" height="90"></li>
+</ul>
+<h3><a name="15.2.1" id="15.2.1"></a>15.2.1 Button Controls</h3>
+<p class="style2">Buttons are not built in to the indicators. Instead areas within the indicators are allocated for button placement. For more information see &quot;Button Area&quot; in section <a href="15-progress.html#15.2">15.2 Progress Indicator Elements</a>. </p>
+<p class="style2">When combining buttons within the button area of the progress indicator, multiple configurations are possible. It is critical to avoid confusion that can be caused by using multiple buttons which are similar in meaning. For example, providing both a Cancel and Stop button can cause confusion for the user so it is best to avoid this combination. Likewise, avoid using the Pause/Resume buttons with the Stop button. If using buttons with comparable meaning cannot be avoided, provide instructions to describe how they differ. </p>
+<p class="style7"><span class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Do not present multiple buttons that serve similar functions. </span></p>
+<p><span class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> </span><span class="style2">The Busy Indicator should not present button controls in association with it. </span></p>
+<p><span class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> <span class="style2">Use the following optional controls with the Determinate or Indeterminate Progress Bars if the functionality exists in your application. </span></span></p>
+<p><strong>Pause and Resume Buttons</strong></p>
+<blockquote>
+  <p>Pause Button:</p>
+  <ul>
+    <li>Usage: When the application allows for a job to be stopped and resumed at a later time.</li>
+    <li>Behavior: Allows the user to pause the current job, leaving the system in its current state. </li>
+    <li>Presentation: Secondary button. The Pause Button appears before, and in combination with, the Resume button.</li>
+    <li>State: Enabled when the job is running. Disabled when the job has been &quot;paused.&quot;</li>
+  </ul>
+  <p>Resume Button:                      
+  </p>
+  <ul>
+    <li>Usage: Always include if a Pause button is provided.</li>
+    <li>Behavior: Resumes the job where it left off.</li>
+    <li>Presentation:  Secondary button. Appears after and is paired with the Pause button.</li>
+    <li>State: Disabled when the job is running. Enabled when job has been &quot;paused&quot;.</li>
+  </ul>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Always provide both the Pause and Resume buttons together.</p>
+</blockquote>
+<p><strong>Cancel Button
+    
+  </strong></p>
+<ul>
+  <li>Usage: Use when the application allows the job to be stopped and the system is reverted to its state before the job was started.</li>
+  <li>Behavior: Stops the progress of the job and reverts the system to the state before the job was started.</li>
+  <li>Presentation: Secondary button.  <span class="style2">Follows </span> the Pause and Resume buttons (if they are included).</li>
+  <li>State: Enabled when the job is running. </li>
+</ul>
+<p><strong>Cancel All Button </strong></p>
+<ul>
+  <li>Usage:  Use in table (aggregate) context. Use when the application allows the jobs to be stopped and the system is reverted to its state before the jobs were started.</li>
+  <li>Behavior: Stops the progress of all jobs and reverts the system(s) to the state before the jobs were started.</li>
+  <li>Presentation: Secondary button.   <span class="style2">Follows</span> the Pause and Resume buttons (if they are included). </li>
+  <li>State: Enabled when the jobs are running. </li>
+</ul>
+<p><strong>Refresh Button</strong></p>
+<ul>
+  <li>Usage: Allows the user to refresh the window manually. </li>
+  <li>Behavior: Updates the content of the window when clicked.</li>
+  <li>Presentation: Secondary button. Follows all other buttons (for example: Pause Resume Cancel, then Refresh) and it is separated from any other displayed buttons using a vertical separator bar. (see an example of a vertical separator bar used between the Resume and Cancel buttons in the  <a href="15-progress.html#shows-separator">image in 15.1.2 Indeterminate Progress Bar</a>).</li>
+  <li>State: Enabled at all times.</li>
+</ul>
+<p><strong>Stop Button</strong> (uncommon) </p>
+<ul>
+  <li>Usage: When the application allows a job to be stopped while in progress. Considered an edge case usage scenario. </li>
+  <li>Behavior: Allows the user to stop the current job and leaves the system in its current state. For example, any files that were installed during the job remain installed. Display a warning message to inform the user that the job was not fully completed. </li>
+  <li>Presentation: Secondary button. <span class="style2">Follows the</span> <span class="style2">Pause and Resume buttons (if they are included). </span></li>
+  <li>State: Enabled when the job is running. Disabled if the job has been stopped. </li>
+</ul>
+<blockquote>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> <span class="style2">Display a warning message</span>  in association with this action to inform the user that the job was not fully completed.</p>
+  <p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Use a Cancel button instead.</p>
+</blockquote>
+<p><strong>Stop All Button </strong>(uncommon) </p>
+<ul>
+  <li>Usage: Use in table (aggregate) context, if a user needs to stop all the jobs displayed at once.  Considered an edge case usage scenario. </li>
+  <li>Behavior: Stops all stoppable jobs displayed in the table and leaves the system(s) in the current state. For example, any files that were installed during the jobs remain installed. This button always operates on all objects or jobs displayed in the table. A warning message should also be presented to inform the user that the jobs were not fully completed.</li>
+  <li>Presentation: Secondary button. Follows Stop and/or Pause/Resume.</li>
+  <li>State: Enabled any time one or more stoppable jobs are running. Disabled if all jobs have been stopped. </li>
+</ul>
+<blockquote>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> <span class="style2">Display a warning message</span> in association with this action, to inform the user that the job was not fully completed.</p>
+  <p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Use a Cancel All button instead.</p>
+</blockquote>
+<p>For more information about button use and presentation, see <a href="07-simple.html#7.1">7.1 Action Buttons</a>.</p>
+<h2><a name="15.3" id="15.3"></a>15.3 Progress Indicators in Context</h2>
+<p>The progress indicator is a discrete component that may be used with or within other components. The progress indicator component is AJAX-enabled, supporting asynchronous communication between the browser and the server. Therefore it does not require a full page refresh to update the progress indicator display, it will refresh dynamically within a page. Other components used within an application may not take advantage of such technologies and will require a full page refresh to update. </p>
+<p>There are many contexts where it may be possible to include the Progress Indicator component. The general recommended contexts have been listed below. Three contexts, Pop-Ups, Wizards and Tables, have been described in greater detail. </p>
+<p><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Use Indeterminate and Determinate Progress Bars in: </strong></p>
+<ul>
+  <li>A pop-up window or wizard </li>
+  <li>A table, table cell</li>
+  <li>The content area of a main browser window (for example: in a property sheet component) </li>
+  <li>A modal "window"</li>
+</ul>
+<p><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Use a &quot;Busy&quot; Indicator in: </strong></p>
+<ul>
+  <li>A pop-up window or wizard, when used with other components. </li>
+  <li>The content area of a main browser window (for example: in a property sheet component) </li>
+  <li>A modal "window"</li>
+  <li>Association with simple elements (for example: buttons, checkboxes, radio buttons, drop-down menus, scrolling lists, text fields, text areas) </li>
+  <li>Association with complex elements (for example: editable, orderable lists, add/remove idiom, scheduler, calendar)</li>
+  <li>The Help Window, content pane. </li>
+  <li>Charts or topologies. </li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> When combining the progress indicator with other components, include a refresh mechanism for those components. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Do not display the Busy indicator on a background color other than white, or in any location where it will disrupt the layout: title bars, tree, etc. </p>
+<h3><a name="15.3.1" id="15.3.1"></a>15.3.1 Busy Indicator - Inline </h3>
+<p>The Busy Indicator may used as an inline &lsquo;placeholder&rsquo; when data loading from the server delays content presentation. The example below demonstrates how the Busy Indicator may be used with a Client Side File Upload element. For details about the Client Side File Upload element see <a href="08-complex.html#8.5.1">8.5.1 Client-Side File Upload</a>.</p>
+<p>Example: Busy Indicator, inline, in Client-Side File Upload<br>
+  <img src="progress_graphics/busy_in-context.gif" width="425" height="110"> <br>
+<em>Note: The &quot;Browse&quot; button is using a standard form element styled by the client browser.</em></p>
+<h3><a name="15.3.2" id="15.3.2"></a>15.3.2 Progress Bar in a Pop-Up Window</h3>
+<p>Use the basic Pop-Up Window design when including a Progress Indicator within a pop-up. For Pop-Up Window guidelines, see 
+
+
+<a href="03-windows-pages_Popup_Windows.html">3.2 Pop-Up Windows</a>. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If presenting a Determinate or Indeterminate Progress Bar, allow the progress bar to persist on the screen until the pop-up window is dismissed.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> If a job fails, rather than using the Dynamic Error Message feature (detailed in <a href="15-progress.html#15.2">15.2 Progress Indicator Elements)</a>, stop the progress bar at fail and provide any associated job details. Use an Error Inline Alert within the page, in lieu of using the Dynamic Error Message. For more information regarding Inline Alerts, see <a href="14-alerts.html#14.1">14.1 Inline Alerts</a>. </p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> <span class="style2"> When canceling a job, use a Cancel button next to the progress indicator. Use a page-level Close button on the progress indicator pop-up window to dismiss the window without canceling the job.</span></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14">  Place a checkbox with a label &quot;Close window upon successful completion&quot;, after the progress bar for long-running jobs. The default state of the checkbox should be unselected. Use sentence capitalization for the Automatic Close checkbox text. See <a href="02-visual.html#2.5">2.5 Text Capitalization</a> for details.</p>
+<p>Example: Determinate Progress Bar within a pop-up window<br>
+<img src="progress_graphics/pop-up.jpg" alt="Progress bar in a pop-up" width="535" height="422"></p>
+<p>Example: Determinate Progress Bar, presented with a table, within a pop-up window<br>
+<img src="progress_graphics/file_chooser.jpg" alt="progress indicator and a table within a pop-up" width="535" height="455"></p>
+<h3><a name="15.3.3" id="15.3.3"></a>15.3.3 Progress Bar in a Wizard</h3>
+<p>When it is beneficial to separate a job into meaningful steps, present explicit steps in association with the progress indicator display. One recommended means of presenting steps information is through a wizard. </p>
+<p>When including a Progress Indicator within a wizard, follow the basic wizard guidelines described in <a href="13-wizards.html#13">13 Wizards</a>. In addition, include a Determinate or Indeterminate  progress bar in the right pane of the wizard. If a Scrolling Text Box is needed  to further describe job details, present it with the progress bar in  the right pane. </p>
+<p>Example: Determinate Progress Bar in a wizard<br>
+<img src="progress_graphics/wizard.jpg" alt="Wizard example" width="635" height="474"></p>
+<p><span class="style4"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"></span> The display on one pane should always corresponds to the other pane, although the component does not control this relationship. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> Do not place a progress indicator in the left pane. </p>
+<h3><a name="15.3.4" id="15.3.4"></a>15.3.4 Progress Bars in a Table </h3>
+<p>Grouping objects and progress bars within a table allows the user to visually scan the job progress for multiple objects. When presenting progress bars within a table view, use the same general guidelines for tables while also referring to the specific guidelines in this section. </p>
+<p>Example: Determinate Progress Bars, using Dynamic Error Messages, within a table<span class="style4"><br>
+</span><img src="progress_graphics/table.jpg" alt="Example of Aggregate Progress Indicator Window" width="584" height="299"></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> For aggregate management, use progress bars in a table to display the progress of identical job subtasks performed, in parallel, on a group of objects. In an aggregate presentation, objects are grouped together so that actions may be applied to the group rather than to each object individually. <br>
+  <br>
+  <img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> The height of the table should vary to accommodate up to 25 rows and a details area when present. The width can vary if you need additional space for your columns.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Only use a Determinate or Indeterminate Progress Bar within tables.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Do not mix different types of Progress Indicators within the same table.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> If the tables take a long time to load or refresh, it is advisable to include the browser's built-in page-loading progress indicator at the bottom of the window. Normally, this indicator would not appear in a pop-up window without chrome.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> The Determinate or Indeterminate Progress Bar  should be contained within  a table column. </p>
+<p> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Do not include button controls or other progress indicator elements within the table cell along with a progress bar.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Use the optional inline status text presentation if percentage complete values are not presented in an associated column or table cell. See section <a href="15-progress.html#15.2">15.2 Progress Indicator Elements</a> for an example of inline status text.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Present a dynamic error message at job fail. The error message consists of an error icon and associated error text.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Use column header titles specific to job progress when including progress indicators in a table, such as: Errors, Progress and Percentage complete. In the case of a Jobs Overview Page, job names should be used rather than object names. For information about the Jobs Overview Page, see  <a href="15-progress.html#15.4">15.4 Jobs Overview Page</a>. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When a job has successfully completed, the progress indicator should remain and displayed with full trough so users can track the completed jobs and compare to incomplete jobs. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> If presented within a pop-up window, the table should follow the basic presentation guidelines for Pop-Up windows. See <a href="15-progress.html#15.3.2">15.3.2 Progress Bars in a Pop-Up Window</a>.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If presenting a  Scrolling Text Box with a table, it  should be presented below the table. It should be the same width as the table and the height should be at least 60 pixels. <span class="style2">See the image in <a href="15-progress.html#15.4">15.4 Jobs Overview Page</a> for an example.</span> </p>
+<p><strong>Buttons and Related Actions </strong></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Provide a Cancel All Button (if applicable). For more information, see <a href="15-progress.html#15.2.1">15.2.1 Button Controls</a></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> The progress bar is AJAX-enabled and will dynamically refresh every three seconds, although a refresh button may be needed to update other page elements that are not AJAX-enabled.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> If a Stop button is used, remember that some jobs may be stoppable, while others are not. Only place checkboxes next to jobs that can be stopped. Under the table, include the text string &quot;You can stop only jobs that have checkboxes.&quot; </p>
+<h2><a name="15.4" id="15.4"></a>15.4 Jobs Overview Page </h2>
+<p>In a web application or console a user might need a central place to obtain information about all of the jobs currently running, a Jobs Overview page can serve this purpose. The Jobs Overview page uses a table containing progress bars to demonstrate job progress, as described in <a href="15-progress.html#15.3.4">15.3.4 Progress Bars in a Table</a></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Use a Jobs Overview page in the following situations:</p>
+<ul>
+  <li>If more than one user can start jobs from individual clients</li>
+  <li>If your application or console features long-running jobs</li>
+  <li>To provide a persistent place to acquire progress information across browser sessions (closing and opening your browser)</li>
+  <li>If more than one job is in progress when a user clicks the Jobs Status link from the main window.</li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The Jobs Overview page is always presented in a secondary page and must include a page title describing the nature of the page. </p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> Use &quot;Job&quot; for the jobs column heading in the table element. Job names should be used rather than object names. Include a &quot;Description&quot; column to help identify the nature of the job.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline"> If a Stop button is used, remember that different types of jobs will be accumulated by the Jobs Overview page. Some jobs may be stoppable, while others are not. Only place checkboxes next to jobs that can be stopped. Under the table, include the text string &quot;You can stop only jobs that have checkboxes.&quot; If there are jobs that cannot be stopped, display a JavaScript alert to inform the user that some jobs have not been stopped after the Stop All button has been clicked.</p>
+<p>Example: Jobs Overview Page layout<br>
+<img src="progress_graphics/job-overview.jpg" alt="Jobs Overview Page  Example" width="650" height="499"></p>
+<p><strong>Displaying Job Details </strong></p>
+<p>A Scrolling Text Box may be used to offer details for each job in the table. Provide a hyperlink for each job included in the Jobs column to display object-specific information in the scrolling text box below the table. Only the job title should be a link. When the user clicks the link, the Scrolling Text Box should be cleared and relevant details about the specific job should be displayed. Include the title of the specific job along with the job details. The job details should continue to be updated until a new object's link is clicked. For additional information about presenting a Scrolling Text Box, see <a href="15-progress.html#15.2">15.2 Progress Indicator Elements</a> </p>
+<p>If the Jobs Overview page does not contain a Scrolling Text Box with job details, provide a hyperlink for each job included in the Jobs column. Link individual jobs to a separate pop-up window containing an individual Progress Indicator with specific job details. Reuse the pop-up window for each hyperlinked job, unless there is a requirement to compare individual jobs at a detailed level. For related information see <a href="15-progress.html#15.3.2">15.3.2 Progress Bar in a Pop-Up Window</a>.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If job details are offered through a Scrolling Text Box, do not additionally offer links to pop-up windows containing details for individual jobs. </p>
+<h2><a name="15.5" id="15.5"></a>15.5 Jobs Running Display in the Main Window Masthead</h2>
+<p>When one or more jobs are running this information can be presented in the status area of the masthead, through a Jobs Running display. The Jobs Running display lets the user know that the application supports the running of jobs, and if any jobs are currently in process. The Jobs Running elements are not part of the Progress Indicator component, rather they are an affordance built into the Masthead component.</p>
+<p>The Jobs Running display may provide a link to a secondary page containing a progress indicator with progress details about a specific job or jobs. If the secondary window is closed by the user, job information is still available in the masthead through the Jobs Running display. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"
+title="Required Guideline"> The Jobs Running display consists of the following required elements:</p>
+<ul>
+  <li><strong> Jobs Running Icon <br>
+  </strong>The Jobs Running icon is not displayed, until a job commences. After which it is only displayed when jobs are running. <br>
+  </li>
+  <li><strong>Jobs Running Text/ Link<br>
+  </strong>The Jobs Running text is comprised of the following: A text label called &quot;Jobs Running&quot;; followed by a colon; followed by the number of jobs running. If no jobs are running, display the numeric value of &quot;0&quot; after the &quot;Jobs Running:&quot; label.</li>
+</ul>
+<blockquote>
+  <p>If one or more jobs are running, the Jobs Running text becomes a link. The Jobs Running link should open a <s></s> pop-up window containing a progress indicator related to the running job. If multiple jobs are running the link should be directed to a Jobs Overview page. See <a href="15-progress.html#15.4">15.4 Jobs Overview Page</a>.</p>
+</blockquote>
+<p>The Jobs Running display should be enabled at all times if the application supports displaying this information in the masthead. </p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline"
+title="Advised Guideline">  Refresh the Jobs Running display with updated content whenever possible. If possible refresh the area dynamically. Alternately, update it anytime the user interacts with the page or when the user selects the Refresh link in the utility bar. </p>
+<p>For additional information and examples, see <a href="04-masthead.html#4.1.4">4.1.4 Status Area</a>.<br>
+</p>
+
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <span class="currentchapter">15&nbsp;Progress&nbsp;Indicators</span>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

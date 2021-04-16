@@ -1,0 +1,76 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Label Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+          <td class="Mst2TtlTd" width="99%">
+            <div class="Mst2TtlTxt">Label</div>
+          </td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#sections"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#sections"
+ style="font-size:9pt;">Back to Examples and Specifications Table of Contents</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This page includes sample HTML and styles for the label tag which are discussed in <a href="../../07-simple.html#7.3.1">7.3.1 Labels</a> and <a href="../../14-alerts.html#14.5">14.5 Validation Error Alerts</a>. This tag uses 
+  the &lt;label&gt; HTML tag specified in HTML 4 to create an association between 
+  a form element and the text that is intended to be its label. Without the &lt;label&gt; 
+  tag, accessible technologies, such as screen readers, cannot determine when 
+  such an association exists. The situation is especially problematic when the 
+  intended label for the element is contained in a different table cell than the 
+  element itself, a situation which happens often with complex layouts, such as 
+  those used in our web applications.</p>
+<p>Besides Section 508 compliance (see <a href="../../01-introduction.html#1.4"> 
+  1.4 Resources for Application Designers</a> for more information),
+  another benefit of using the label tag is that for IE and Netscape 
+  6/7/Mozilla, clicking on text that has been associated with a form element
+  via  a label tag will activate the item (e.g., select a radio button) as if
+  the form 
+  element itself had been clicked. This mimics traditional GUI behavior that
+  has  to date not made its way into web UI's.</p>
+<p>The label HTML tag is used by wrapping &lt;label for=&quot;IDofAssociatedFormElement&quot;&gt;&lt;/label&gt; 
+  around the text intended to be the label for the element. The ID for the associated 
+  element must be set and it must be specified in the &quot;for&quot; attribute. 
+  Typically, our labels will also require some context-specific text styling, 
+  so the appropriate style should be called in a &lt;span&gt; that wraps around 
+  the &lt;label&gt; as follows:</p>
+<p>&lt;span class=&quot;LblLev2Txt&quot;&gt;&lt;label for=&quot;AvailableNodes&quot;&gt;Available 
+  Nodes:&lt;/label&gt;&lt;/span&gt;<br />
+  &lt;select ID=&quot;AvailableNodes&quot; size=15 multiple=&quot;true&quot;&gt;<br />
+  &nbsp;&lt;option selected&gt;Node 1&lt;/option&gt;<br />
+  &nbsp;&lt;option&gt;Node 2&lt;/option&gt;<br />
+&lt;/select&gt; </p>
+<p>Form elements are often organized hierarchically into groups and subgroups. 
+  The labels on the individual elements as well as the groups are designed to 
+  visually support this hierarchy in that groups have bolder, heavier labels whereas 
+  individual elements within the groups have lighter labels. In the example below, 
+  Levels 1 and 2 would have a heavier appearance than Level 3. If form elements 
+  are not in a group or subgroup they have a default appearance of Level 2.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Examples showing labels [ <a href="http://webdev2.sun.com/example/faces/label/Label.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>-None - </p>
+</body>
+</html>

@@ -1,0 +1,1431 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>10&nbsp;Topology - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="10-topology.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <span class="currentchapter">10&nbsp;Topology</span>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="toc-level0"><a href="10-topology.html#10"><strong>10 Topology</strong></a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.1">10.1 Introduction</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.1.1">10.1.1 A Working Definition</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.1.2">10.1.2 Their Role in System Management Applications</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.2">10.2 Challenges in Designing Topologies</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.1">10.2.1 Handling Scale Gracefully</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.2">10.2.2 Managing Complexity</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.3">10.2.3 Achieving a Sun-Wide Common Look-and-Feel</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.4">10.2.4 Dealing With the Limitations of Web Browsers</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.5">10.2.5 Facilitating Positive Transfer Across Different Representation Types</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.6">10.2.6 Integrating Into System Management Applications</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.2.7">10.2.7 Supporting Accessibility for Users with Disabilities</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.3">10.3 Choosing a Topology Representation</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.3.1">10.3.1 Attributes of Topologies</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.1.1">10.3.1.1 Primary Attributes (Number of Tiers and Number of Objects per Tier)</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.1.2">10.3.1.2 Secondary Attributes (Connectivity and Multipathed Topologies)</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.2.1">10.3.2.1 Guidelines for One-Tier Topologies</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.2.2">10.3.2.2 Guidelines for Two-Tier Topologies</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.2.3">10.3.2.3 Guidelines for Topologies With Three or More Tiers</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.3.2.4">10.3.2.4 Guidelines for Representing Within-Tier Connections</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.4">10.4 View Elements</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.1">10.4.1 Showing Topology Objects</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.2">10.4.2 Showing Topology Connections</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.3">10.4.3 Showing Alarm States</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.4">10.4.4 Showing Directed Relationships</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.5">10.4.5 Showing Filtered Views</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.6">10.4.6 Showing Aggregate Objects</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.7">10.4.7 Showing Aggregate Connections</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.8">10.4.8 Showing a Timestamp</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.9">10.4.9 Showing an Icon Legend</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.4.10">10.4.10 Showing Sub-Components</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.5">10.5 Layout Guidelines for Topologies</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.5.1">10.5.1 General Layout Guidelines</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.5.2">10.5.2 Layout Guidelines for Small-Scale Topologies</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.5.3">10.5.3 Layout Guidelines for Moderate Scale Topologies</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.5.4">10.5.4 Display Guidelines for Large Scale Topologies</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.6">10.6 Interaction Elements</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.1">10.6.1 Mouse-Over Feedback and Tool Tips</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.2">10.6.2 Object Selection Behavior</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.3">10.6.3 Contextual Menus</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.4">10.6.4 Clickable Regions</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.6.4.1">10.6.4.1 Managed Objects</a></p>
+
+<p class="toc-level3"><a href="10-topology.html#10.6.4.2">10.6.4.2 Connections</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.5">10.6.5 Expanding and Collapsing Aggregates</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.6.6">10.6.6 Saving Topologies</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.7">10.7 Methods for Integration with Primary Navigation</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.7.1">10.7.1 Showing Connectivity for a Selected Object</a></p>
+
+<p class="toc-level2"><a href="10-topology.html#10.7.2">10.7.2 Showing Paths from a Selected Object</a></p>
+
+<p class="toc-level1"><a href="10-topology.html#10.8">10.8 Issues for Future Investigation<br>
+</a></p>
+
+<p class="style1"><strong><font color="#000000">IMPORTANT NOTE :</font></strong><font color="#000000"><span class="style2"><br>
+  </span></font>
+  <span class="style2">Additional design work is planned for topology before a new tag supporting it in the current component set is created. </span>
+  <!-- 
+<p class="style1"><span class="style15">(also per SWAED 7/24/07, remove the following):</span><font color="#000000"><br>
+  <s>The current topology design </s></font><s><span class="style1">(as implemented 
+  in the 2.2 component and presented in this chapter)</span><font color="#000000"> : </font> 
+  </s>
+<ul class="style2">
+  <li><s><font color="#000000">Does not scale well. </font></s></li>
+  <li><s><font color="#000000">Has not performed well in usability tests. </font></s></li>
+  <li><s><font color="#000000">Has performance issues.</font></s></li>
+  <li><s><font color="#000000"> Is inaccessible, so all information must also be 
+    shown in an alternate, accessibile manner. </font></s></li>
+  <li><s><span class="style1"> Lacks support of the System Management User Interface 
+    Review Board (for aforementioned reasons). (?) </span></s></li>
+</ul>
+<p><span class="style15"><strong>Chip: Help! Not sure what to do with the above which references a version of the component library that external users won't have access to, mentions SWAED (which I edited to remove), and also mentions the UIRB (which I edited to removed)... -- but I&quot;m not sure what to do about this reference to the 2.2 component. <br>
+  <br>
+</strong></span> <span class="style18"><strong>Ouch.&nbsp; No good answer for that.&nbsp; Maybe we should discuss at SWAED tomorrow.&nbsp; The only answers I can think of are:<br>
+  1) Remove mention of 2.2 entirely, just saying there is no current component.<br>
+  2) Fork the chapter, and in the external one, do the above.<br>
+3) Keep it as is, but note explicitly that the topology component is part of an older release 2.2, which is not open sourced.</strong><br>
+<br>
+</span><span class="style27">I think I like your option 3 and will go with that for now - though I'll see if I feel a need to tweak any of the text to smooth it out for both internal and external readers.&nbsp; I'll call this out when I send this chapter out for review.&nbsp; (Thanks for brainstorming on this.&nbsp; I was really stuck and it made me feel better that your first response was "Ouch".) <br>
+<br>
+DECISION CHANGE: Discussed in SWAED 7/24/07 where we decided to replace any reference to 2.2 with:<br>
+</span><span class="style25"><strong>&quot;Additional design work is planned for topology before a new tag supporting it in the current component set is created.&quot;</strong></span></p>
+-->
+  <br>
+<h1><a name="10"></a>10 Topology</h1>
+
+<h2><a name="10.1"></a>10.1 Introduction</h2>
+
+<p>This chapter provides guidelines for graphical representations that illustrate relationships between managed objects. These graphical representations are often called <i>topology views</i>. These guidelines cover only a small part of the overall design space. However, Sun system management applications that display topologies most often use this small part.</p>
+
+<h3><a name="10.1.1"></a>10.1.1 A Working Definition</h3>
+
+<p>Here is a working definition for &quot;topology view&quot;:</p>
+
+<ul>
+
+  <li>A &quot;topology&quot; is a set of objects and their relationships.</li>
+
+  <li>These relationships can be either physical or logical.</li>
+
+  <li>A &quot;topology view&quot; is a (possibly interactive) graphical representation of a topology.</li>
+
+</ul>
+
+<p>The following items clarify the meaning of a topology view as it relates to Sun system management applications:</p>
+
+<ul>
+
+  <li>A scattering of icons that does not represent relationships between objects is <i>not </i>a topology view.</li>
+
+  <li>A navigation tree is sufficient for showing objects whose relationships form a strict hierarchy and when showing connections between objects is not important. Navigation trees are discussed in <a href="05-navigation.html">Chapter 5 Top-Level Navigation</a>.</li>
+
+  <li>In system management applications, topologies are used for health and performance monitoring. They are also useful for network design and configuration tasks. Depending on user roles and tasks, some applications can move between network design and monitoring to explore &quot;what-if&quot; scenarios.</li>
+
+  <li>A topology view is typically <i>not </i>the primary or sole means of navigation within Sun system management applications. Additional means of navigation may include tabs or trees. For more details, see <a href="05-navigation.html">Chapter 5 Top-Level Navigation</a>.</li>
+
+</ul>
+
+<h3><a name="10.1.2"></a>10.1.2 Their Role in System Management Applications</h3>
+
+<p>Topology views are unique in their ability to provide system administrators with a graphical representation that helps them understand the relationships between objects. In a scenario in which a specific system fault generates many alarms, an experienced system administrator can see a dozen or so alarms and easily identify the problem. However, a less experienced system administrator might need to see a topology view showing the health of various managed objects. The system administrator might need to examine the interrelationships between healthy and unhealthy objects to isolate the existing problem.</p>
+
+<p><span class="style1"></span>Design efforts to date have focused on two uses for topology views in Sun system management applications:</p>
+
+<ul>
+
+  <li><strong>Viewing alarms:</strong> Used to determine if an alarm is turned on, how many alarms are on, and the pattern of the alarms. Users either have a view of the entire enterprise, or they can easily move between separate physical or logical views of related objects.</li>
+
+</ul>
+
+<ul>
+
+  <li><strong>Understanding relationships or connections:</strong> Used to understand the relationship between a pair of objects and, possibly, a third or fourth object in the path between them. Users can&nbsp;isolate the objects of interest and the path between them.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Generally, topology views should not replace alternative methods of information gathering (for example, alarm logs or asset inventories) or navigation in system management applications.</p>
+
+<p>User data suggests that individual differences exist in how system administrators troubleshoot problems. Differences also exist in the needs of various sizes and types of organizations. Thus, at any given time, a system administrator who is gathering information may choose from several options to collect information: alarms, asset inventory, or topology views.</p>
+
+<h2><a name="10.2"></a>10.2 Challenges in Designing Topologies</h2>
+
+<h3><a name="10.2.1"></a>10.2.1 Handling Scale Gracefully</h3>
+
+<p>One of the greatest challenges is to handle scale gracefully using elegant visualization techniques. Here are two examples of problems to avoid:</p>
+
+<table class="info-table" cellspacing="0" cellpadding="0" border="0">
+
+  <tr>
+
+    <th class="th-center">Spaghetti Ball Effect</th>
+
+    <th class="th-center">Small topology already suffering from scalability issues</th>
+
+  </tr>
+
+  <tr>
+
+    <td align="center">
+
+        <img height="105" alt="Example of ball of yarn with only 120 links" src="topology_graphics/ball-of-yarn-thumb.gif" width="284">
+
+    </td>
+
+    <td align="center">
+
+        <img src="topology_graphics/tombrowser_small-thumb.gif" alt="Example of boxes and lines example with only 8 storage devices" width="276" height="142">
+
+    </td>
+
+  </tr>
+
+</table>
+
+<p>In the first example, detecting a pattern in the&nbsp;yellow and red links is virtually impossible due to the large number of connections and the crossing of links between objects. In the second example, the scale is smaller; however, this visualization method (using boxes and lines) reaches its limit at a rather low scale.</p>
+
+<img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Use these two methods to deal with large-scale topologies:
+
+<ul>
+
+  <li><strong>Aggregation</strong> involves showing only the upper levels of an object hierarchy (or containment relationships) on the screen at one time, and allowing users to select the objects at the upper levels to view the objects at lower levels.</li>
+
+</ul>
+
+<blockquote> In essence, a navigation tree uses this method by allowing users 
+  to control the complexity of the screen by showing and hiding various levels 
+  of the object hierarchy. Likewise, in a topology view, the user is initially 
+  presented with upper levels of the hierarchy and can drill down through the 
+  hierarchy to access the information of interest. Examples and guidelines for 
+  aggregate objects and connections are discussed in <a href="10-topology.html#10.4.6">10.4.6 
+  Showing Aggregate Objects</a> and <a href="10-topology.html#10.4.7">10.4.7 Showing Aggregate 
+  Connections</a>.</blockquote>
+
+<ul>
+
+  <li><strong>Filtering</strong> involves allowing users to show or hide various objects in the topology view based on criteria such as the object type, object status, object name, and so on. Examples and guidelines for filtered views are discussed in <a href="10-topology.html#10.4.5">10.4.5 Showing Filtered Views</a>.</li>
+
+</ul>
+
+<h3><a name="10.2.2"></a>10.2.2 Managing Complexity</h3>
+
+<p>Topology views can be extremely complex. They might include:</p>
+
+<ul>
+
+  <li>Multiple tiers of interconnected objects. For example, a storage area network typically includes hosts, switches, and storage arrays.</li>
+
+  <li>Objects with subcomponents. For example, hosts often contain a variety of adapters. Nearly all physically connected devices contain ports.</li>
+
+  <li>Distinctions between physical and logical views of the same topology.</li>
+
+  <li>Redundant objects with failover relationships (for example, clustered hosts).</li>
+
+</ul>
+
+<p>This complexity presents challenges for all aspects of system management applications. Topology views present their own unique set of challenges that developers must overcome. Any two-dimensional view of a multidimensional space must handle unique problems such as:</p>
+
+<ul>
+
+  <li>Object crowding: How big should objects be? How far apart should they be spaced? How many objects can be contained in a single view without losing their discriminability?</li>
+
+  <li>Spacing of the connection lines: How close can they be placed without exceeding the acuity limits of the human visual system?</li>
+
+  <li>Spurious line crossings: Humans can mistakenly see a connection where none exists.</li>
+
+</ul>
+
+<h3><a name="10.2.3"></a>10.2.3 Achieving a Sun-Wide Common Look-and-Feel</h3>
+
+<p>Sun system management applications manage a wide variety of hardware systems and software applications. Many of these applications require the display of different types of topologies. Any set of guidelines intended to achieve a common look-and-feel must support a range of topologies that incorporate different sets of objects with possibly different kinds of relationships. Perhaps more importantly, these guidelines must also consider that different applications emphasize different user tasks. Because of this wide variety of different needs across Sun, these topology guidelines must help developers choose from a set of acceptable representations.</p>
+<h3><a name="10.2.4"></a>10.2.4 Dealing With the Limitations of Web Browsers</h3>
+
+<p>Web browsers present a unique set of challenges for displaying topology views. Strong conventions exist for navigation and drill-down techniques using hyperlinked elements. However, support for interactivity (for example, contextual menus and multiple selection) is relatively weak.</p>
+
+<p>Of course, performance is another consideration, as it should not take a long time to download and display topology views.</p>
+
+<h3><a name="10.2.5"></a>10.2.5 Facilitating Positive Transfer Across Different Representation Types</h3>
+
+<p>Customer sites are often diverse and changing. At some sites, one user might be required to manage a variety of different systems and applications. For example, this user might manage the storage associated with a very large archival database as well as the file systems for the engineers utilizing that database. In addition, many sites grow over time. So, a user must be able to move seamlessly between views of different systems, and even views of a different scale, without being required to learn an entirely new set of skills.</p>
+
+<h3><a name="10.2.6"></a>10.2.6 Integrating Into System Management Applications</h3>
+
+<p>Topology views should be tightly integrated into system management applications so that they enhance the user's ability to perform a variety of tasks seamlessly and intuitively. These tasks often range from information gathering during troubleshooting to running diagnostics on faulty hardware. Users should be able to navigate to and from the topology view to accomplish these tasks.</p>
+
+<h3><a name="10.2.7"></a>10.2.7 Supporting Accessibility for Users With Disabilities</h3>
+
+<p>Users with a variety of disabilities should have access to all the functionality that the topology view provides. The topology view itself should be keyboard-navigable. In addition, users with vision impairments should have nonvisual access to the information conveyed by the topology view.</p>
+
+<p>The designs proposed in this chapter rely on a layout grid. Thus, keyboard navigation should not be a problem, assuming that the technology itself supports keyboard navigation. For example, without a special accessibility plug-in, Java<sup>TM</sup>applets are not keyboard accessible, but image maps are. For more information, see <a href="D-accessibility.html">Appendix D - Accessibility Requirements</a>.</p>
+
+<h2><a name="10.3"></a>10.3 Choosing a Topology Representation</h2>
+
+<p>A given topology can be represented in many ways. To achieve a common look-and-feel within Sun's system management applications, topologies representing similar types of objects and relationships should look similar. A common look-and-feel is important because it helps users easily interpret and interact with the topology.</p>
+
+<h3><a name="10.3.1"></a>10.3.1 Attributes of Topologies</h3>
+
+<p>No single representation scheme works well for all topologies. Application developers must consider the attributes of the objects and relationships that need to be represented in the topology to decide upon the best scheme. The following sections discuss two primary attributes (number of tiers and number of objects per tier) and two secondary attributes (connectivity and multipathed topologies).</p>
+
+<h4><a name="10.3.1.1"></a>10.3.1.1 Primary Attributes (Number of Tiers and Number of Objects per Tier)</h4>
+
+<strong>Number of Tiers</strong>
+
+<p>A tier is a subgroup of a topology's objects that form a kind of &quot;layer.&quot; For system management and monitoring topologies, a natural subdivision often exists. For example, objects in a storage area network (SAN) topology often divide into host, switch, and storage array tiers. The hosts access the storage through switches, so three tiers exist. Identifying the tiers in a topology allows you to simplify and clarify its representation.</p>
+
+<p>The tiers in your application might be obvious to you: in part, tiers represent an arbitrary division of a topology into conceptually related subgroups. However, the set of tiers is a useful subdivision only if it forms a partially isolated grouping. More specifically, <i>there should be at most one tier that connects directly to all the tiers in the topology</i>.</p>
+
+<p>For purposes of the SAN topology, each host is isolated from the storage arrays <i>and</i> from other hosts. So, the host group is directly connected to only one of the three tiers, the switch tier. Similarly, the storage arrays are isolated from the host tier and from other storage arrays. The switch tier, however, connects to the host tier, to the storage tier, <i>and</i> to itself. (Switches routinely connect directly to other switches.) Because the switch tier is the only tier that connects to all three tiers, the host-switch-storage subdivision is a useful (partially isolated) grouping into tiers. In effect, it is the lack of connectivity between at least <i>some</i> tiers that simplifies the representation.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;If you cannot identify a useful subdivision in a topology that forms a partially isolated grouping, then consider it a one-tier topology.</p>
+
+<p>See <a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a> for examples of one-tier and multi-tier representations.</p>
+
+<p><strong>Number of Objects Per Tier, <i>N</i></strong></p>
+
+<p>Another primary attribute of topologies is the number of objects that can appear in a given tier (denoted as <i>N</i>). Large numbers of objects can force users to scroll horizontally and vertically, making it more difficult for users to find objects of interest.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;To select an appropriate topological representation, consider the bounds on the number of objects that could appear in a given tier, both at the high end and low end. With particularly high or low values of N, you might need to provide several alternative representations for your topology or to use scaling methods discussed in <a href="10-topology.html#10.2.1">10.2.1 Handling Scale Gracefully</a>.</p>
+
+<h4><a name="10.3.1.2"></a>10.3.1.2 Secondary Attributes (Connectivity and Multipathed Topologies)</h4>
+
+<strong>Connectivity </strong>
+
+<p>One of the greatest problems in topology readability is the spaghetti ball effect, in which too many lines connect the objects, making it very difficult to determine which objects are interconnected (see <a href="10-topology.html#10.2">10.2 Challenges in Designing Topologies</a>). Connectivity, which can exist between and within tiers, is expressed as the average percentage of the other objects to which each object connects.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;If the degree of connectivity among objects within or between tiers is high, use a grid of orthogonal connections. As such, each connection is identified by an access point at the right-angle bend. Here is an example:</p>
+
+<p><img height="181" src="topology_graphics/within-tier-connections.gif" width="371" alt="Example of a 3 tier graph showing within-tier connections"></p>
+
+<p>If each tier is laid out along a line, the link access points form a regular pattern (for example, uniformly dispersed within a rectangle), and each access point is guaranteed to appear without colliding with other lines or access points. The result is a usable and clean look, even in the case of full connectivity.</p>
+
+<strong>Multipathed Topologies</strong>
+
+<p>In some applications, there can be many paths between two objects. In such cases, the topology is said to be <i>multipathed. </i>For example, in a SAN topology, imagine tracing two connections that exit a host, with each connection going through a different switch, only to end up at the same storage array. Here is an example:</p>
+
+<p><img src="topology_graphics/paths-shown-cut.gif" width="443" height="124" alt="Topology showing all the paths between the source and target objects"></p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Multipathed topologies are a representational challenge in that it can be difficult for users to find all the paths in a topology view, let alone notice that multiple paths exist. To assist users in identifying and tracing these paths, consider using filtering techniques or the methods described in <a href="10-topology.html#10.7">10.7 Methods for Integration With Primary Navigation</a>. In particular, consider providing functionality enabling users to show all the paths between a single origination point and a single target point in one small display (see <a href="10-topology.html#10.7.2">10.7.2 Showing Paths from a Selected Object</a>).</p>
+
+<h3><a name="10.3.2"></a>10.3.2 Guidelines for Choosing a Topology Representation</h3>
+
+<p>Depending upon the specific attributes of a topology view, any number of graphical representations are available. This section provides guidelines for selecting a topology representation. Examples are included. Guidelines for displaying these representations are described in <a href="10-topology.html#10.4">10.4 View Elements</a>. In particular, many details are provided for aggregation (see <a href="10-topology.html#10.4.6">10.4.6 Showing Aggregate Objects</a> and <a href="10-topology.html#10.4.7">10.4.7 Showing Aggregate Connections</a>)&nbsp;and filtering (see <a href="10-topology.html#10.4.5">10.4.5 Showing Filtered Views</a>).</p>
+
+<p>Note that in this section and those that follow, many examples of topology views are provided. These examples were created to illustrate the accompanying guidelines and <span class="style2">may</span> not realistically represent the status of alarms in managed objects and their connections.</p>
+
+<h4><a name="10.3.2.1"></a>10.3.2.1 Guidelines for One-Tier Topologies</h4>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;When the topology contains a small number of objects all in a single tier, use a <i>mileage map graph</i>.</p>
+
+<p>A mileage map graph is formed when objects line up along a diagonal and a connection shows as a single-bend, right-angled line. Even for low connectivity, a mileage map can make connections in a topology clear for these small-scale uses. See the design examples that follow.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;As the number of objects increases, use aggregation, filtering, or both, to reduce the representations into moderate-sized displays. If aggregation is used, the placement of the aggregation controls requires that the objects in the topology be aligned in a single vertical column rather than along a diagonal.</p>
+
+<p>For definitions of aggregation and filtering, see <a href="10-topology.html#10.2">10.2.1 Handling Scale Gracefully</a>.</p>
+
+<strong>Design Examples</strong>
+
+<p>Small Scale per Tier -- Mileage Map Graph:
+
+  <img height="102" src="topology_graphics/1-tier.gif" width="119" alt="Example of 1 small scale tier mileage map graph"></p>
+
+<p>Moderate Scale per Tier (20&lt;<i>N</i> per Tier&lt;100) -- Mileage Map Graph With Aggregation:</p>
+
+<p><img src="topology_graphics/1-tier-agg.gif" width="221" height="233" border="0" alt="Example of a moderate scale 1 tier mileage map graph"></p>
+
+<p>Large Scale per Tier (100&lt;<i>N per Tier</i>) -- Mileage Map Graph With Nested Aggregation:</p>
+
+<p><img src="topology_graphics/1-tier-nest-agg.gif" width="295" height="346" border="0" alt="Example of a moderate scale large scale 1 tier mileage map graph"></p>
+
+<h4><a name="10.3.2.2"></a>10.3.2.2 Guidelines for Two-Tier Topologies</h4>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;With a two-tier topology, use a <i>rectangular graph</i> with objects in each tier aligned vertically and horizontally to form row and column heads. Right-angled bent lines are then used to show each connection.</p>
+
+<p>See the design examples that follow.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> As the number of objects increases, use aggregation, filtering, or both, to reduce the representations into moderate-sized displays. Large numbers of objects might require the use of nested aggregation to reduce representations to a manageable size.</p>
+
+<p>For definitions of aggregation and filtering, see <a href="10-topology.html#10.2">10.2.1 Handling Scale Gracefully</a>.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> When one or both tiers have connections within themselves, show them using double right-angle bend lines, as illustrated in the example in <a href="10-topology.html#10.3.2.4">10.3.2.4 Guidelines for Representing Within-Tier Connections</a>.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;When the topology contains a large number of within-tier connections, use a series of views that show only the between-tier connections in one view, and the within-tier connections on subsequent views.</p>
+
+<strong>Design Examples</strong>
+
+<p>Small Scale per Tier -- Rectangular Graph:<br/>
+
+  <img height="302" src="topology_graphics/2-tier.gif" width="382" alt="Example of 2 tier rectangular graph at small scale"></p>
+
+<p>Moderate Scale per Tier (20&lt;<i>N</i> per Tier&lt;100) -- Rectangular Graph With Aggregation:</p>
+
+<p><img src="topology_graphics/2-tier-agg.gif" width="713" height="589" alt="Example of 2 tier rectangular graph at moderate scale"></p>
+
+<p>Large Scale per Tier (100&lt;<i>N per Tier</i>) -- Rectangular Graph With Nested Aggregation:</p>
+
+<p><img src="topology_graphics/2-tier-nest-agg.gif" width="683" height="475" alt="Example of 2 tier rectangular graph at large scale"></p>
+
+<h4><strong><a name="10.3.2.3"></a>10.3.2.3 Guidelines for Topologies With Three or More Tiers</strong></h4>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;For a three-tier topology, use a <i>rectangular graph</i> with objects in each tier aligned in orientations that alternate between horizontal and vertical. Right-angled bent lines are then used to show each connection.</p>
+
+<p>See the design examples that follow.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> As the number of objects increases, use aggregation, filtering, or both, to reduce the representations into moderate-sized displays. Large number of objects might require the use of nested aggregation to reduce representations to a manageable size.</p>
+
+<p>For definitions of aggregation and filtering, see <a href="10-topology.html#10.2">10.2.1 Handling Scale Gracefully</a>.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> When one or both tiers have connections within themselves, show them using double right-angle bend lines, as illustrated in the example in <a href="10-topology.html#10.3.2.4">10.3.2.4 Guidelines for Representing Within-Tier Connections</a>.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;When the topology contains a large number of tiers or any within-tier connections, use a series of filtered views, each of which shows only a pair of tiers, or shows the within-tier connections for a single tier.</p>
+
+<strong>Design Examples</strong>
+
+<p>Small Scale per Tier -- Rectangular Graph:<br>
+
+  <img height="393" src="topology_graphics/3-tier.gif" width="234" alt="Example of a 3 tier rectangular graph at small scale"></p>
+
+<p>Moderate Scale per Tier (20&lt;<i>N</i> per Tier&lt;100) -- Rectangular Graph With Aggregation:</p>
+
+<p><img src="topology_graphics/3-tier-agg.gif" width="713" height="780"  alt="Example of a 3 tier rectangular graph at moderate scale"></p>
+
+<p>Large Scale per Tier (100&lt;<i>N per Tier</i>) -- Rectangular Graph With Nested Aggregation:</p>
+
+<p><img src="topology_graphics/3-tier-nest-agg.gif" width="687" height="595"  alt="Example of a 3 tier rectangular graph at large scale"></p>
+
+<h4><strong><a name="10.3.2.4"></a>10.3.2.4 Guidelines for Representing Within-Tier Connections</strong></h4>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;For low connectivity and small-scale topologies, add within-tier connections to the preceding designs as a collection of double right-angle bend lines, as illustrated here for a tier of switches:</p>
+
+<p><img height="181" src="topology_graphics/within-tier-connections.gif" width="371" alt="Example of a 3 tier graph showing within-tier connections"></p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;In large-scale topologies, you might need to present a collection of separate or filtered views to represent within-tier connections.</p>
+
+<p>For example, one view might show only between-tier connections (for example, just hosts and storage arrays abstracted over switches). Another view might only show within-tier connections (for example, either hosts and switches, or switches and storage arrays). This solution might help to alleviate the scalability problem.</p>
+
+<h2><a name="10.4"></a>10.4 View Elements</h2>
+
+<p>Except where noted, the display guidelines in this section pertain to all topologies regardless of scale. Specific guidelines for the small-, moderate-, and large-scale topologies described in <a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a> are listed in <a href="10-topology.html#10.5">10.5 Layout Guidelines for Topologies</a>.<br>
+</p>
+
+<h3><a name="10.4.1"></a>10.4.1 Showing Topology Objects</h3>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw topology objects using an icon and a text label. Here is an example:</p>
+
+<p><img src="topology_graphics/object.gif" alt="" width="93" height="43"></p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;In 
+  the topology view, use standard 24 x 24 pixel or 32 x 32 pixel system management 
+  object icons from the Icon Repository (available from <a href="visual_graphics/graphics.zip">graphics.zip</a>).</p>
+<p>As in other parts of the application interface, the topology view should use 
+  <span class="style2">standard icons</span>. This guideline applies to managed objects such as hosts, storage 
+  arrays, and switches, as well as the standard alarm icons. </p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If 
+  the Icon Repository does not include a standard icon for one or more of the 
+objects managed by your application, then you may create your own. See <a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a> for more information about getting these icons reviewed.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Which icon size to use depends on the number of objects you need to fit on the page at a given time. If the topology contains few objects and page real estate can be spared, then the larger, 32-pixel icons are more appropriate. If page real estate is tight and the topology contains few connections, consider using the smaller, 24-pixel size.</p>
+
+<p>Data from various surveys recently conducted with system administrators indicate that the most common screen resolution is 1024 x 768 pixels. Before settling on a final icon size, display the topology view at this resolution within a typical page in your application. If you are using the large icon size and only about 25 percent of the topology can be viewed at a given time, then use the smaller icon size. If you are already using the smaller icon size and this happens, then consider using either aggregation (see <a href="10-topology.html#10.4.6">10.4.6 Showing Aggregate Objects</a>) or filtering (see <a href="10-topology.html#10.4.5">10.4.5 Showing Filtered Views</a>) to reduce the size of the topology view.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use object icons consistently throughout your application.</p>
+
+<ul>
+
+  <li>Use the same icons in the topology view as you use elsewhere.</li>
+
+  <li>Use the same icon for all objects of the same type (typically all objects in the same tier).</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For text labels:</p>
+
+<ul>
+
+  <li>Use the default font in the color Black. </li>
+
+  <li>Size the text relative to the icon size and the length of the text label. In general, use either a 10- or 12-point size, using the smaller font with smaller icons and longer labels. However, the font size must be consistent within a specific view.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Base the ordering of the objects in the topology view on the relationships between objects and on the tasks users are expected to perform in the topology.</p>
+
+<p>In many cases, an alphabetical ordering is most appropriate. An alphabetical ordering is usually most appropriate because its familiarity and predictability allow users to find objects relatively quickly. Whatever the ordering, display the objects consistently. In other words, when the topology view is refreshed or a new view is displayed, maintain the ordering scheme.</p>
+
+<h3><a name="10.4.2"></a>10.4.2 Showing Topology Connections</h3>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw a connection between two objects (or from an object to itself) to indicate a relationship between objects.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw connections using 1-pixel wide horizontal and vertical line segments connected at right angles.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw unbadged connections in the color Black. Badged connections are drawn using the badge color, as shown in <a href="10-topology.html#10.4.3">10.4.3 Showing Alarm States</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If the user can select a connection, then the connection should have an 8-pixel exaggerated corner icon, called a <i>link access point,</i> where the line bends. If interactivity is not supported, then the connection should have a small 3 x 3 pixel square that appears where the line bends. Connection corners are drawn in the same color as the connection lines.</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th class="th-center"><strong>Non-Selectable Connections</strong></th>
+
+    <th class="th-center"><strong>Selectable Connections</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td align="center"><img height="124" alt="Example of a link access point with no interactivity" src="topology_graphics/blacksquare.gif" width="109"></td>
+
+    <td align="center"><img height="124" alt="Example of a link access point with interactivity" src="topology_graphics/cornerpiece.gif" width="109"></td>
+
+  </tr>
+
+</table>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;When connection lines cross over one another, insert one white pixel on each side of one line at the crossing to indicate that the lines do not connect (see image that follows).</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;For further clarity, connection lines may fade to white before crossing under another connection line.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;A relationship between an object and itself may be drawn as a within-object connection in the topology view. For example, two ports on the same switch are sometimes connected to each other. Draw within-object connections with a single link access point, badge, or corner square at the most northwest connection bend.</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th  class="th-center"><strong>Crossing&nbsp;</strong><strong>Connections Detail</strong></th>
+
+    <th  class="th-center"><strong>Within-tier Connection</strong></th>
+
+    <th class="th-center"><strong>Within-object Connection</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td align="center"><img src="topology_graphics/crossing-lines-detail.gif" alt="" width="67" height="54"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/within-tier.gif" alt="" width="210" height="100"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/within-object.gif" alt="" width="34" height="40"></td>
+
+  </tr>
+
+</table>
+
+<h3><a name="10.4.3"></a>10.4.3 Showing Alarm States</h3>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use the standard alarm badge icons to represent alarm states in the topology view.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;When placing an alarm badge on an object, superimpose the appropriate 10 x 10 pixel alarm icon in the lower right-hand corner of the object icon. Badges should extend 3 pixels to the right and below the object icon. See <a href="16-alarms-status.html#16.1.2">16.1.2 Alarm Severity</a> for more details on allowable alarm badges.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;When badging connections, display the connection line in the color associated with the alarm icon and place the&nbsp;appropriate 10 x 10 pixel alarm icon at the bend in the line. For connections with multiple bends, place the alarm icon at the most northwest bend only.</p>
+
+<p>The standard alarm icons can be found in <a href="16-alarms-status.html#16.1.2">16.1.2 Alarm Severity</a>.  Here is an example of a portion of a topology with objects in three different alarm states:</p>
+
+<p><img height="121" alt="Example of a graph showing alarm states" src="topology_graphics/alarmed-lines.gif" width="147"></p>
+
+<h3><a name="10.4.4"></a>10.4.4 Showing Directed Relationships</h3>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;In cases where the direction of relationships between objects is important (for all or some displayed relationships),&nbsp;place arrowheads at the appropriate ends of the connection lines.</p>
+
+<p>Place a small arrowhead at one end of a connection to indicate that the connection is directed toward the object. If differentiation between undirected, directed, and bidirectional connections is needed, place arrowheads at both ends of a connection to indicate a bidirectional relationship.&nbsp; Draw arrowheads flush with the end of a connection line.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Display 5 x 6 pixel arrowheads in the same color as the connection lines, as shown here:</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th  class="th-center"><strong>Directed Connections</strong></th>
+
+    <th  class="th-center"><strong>Bidirectional Connections</strong></th>
+
+    <th  class="th-center"><strong>Arrowhead Detail</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td align="center"><img height="124" src="topology_graphics/connections-directed.gif" width="140" alt="Example of a graphic displaying directional connections"></td>
+
+    <td align="center"><img height="124" src="topology_graphics/connections-bidirect.gif" width="140" alt="Example of a graphic displaying bi-directional connections"></td>
+
+    <td align="center"><img height="88" src="topology_graphics/connections-directed-detail.gif" width="151" alt="Arrowhead detail for directional connections"></td>
+
+  </tr>
+
+</table>
+
+<h3><a name="10.4.5"></a>10.4.5 Showing Filtered Views</h3>
+
+<p>Filtering allows users to specify and view a desired subset of all the objects that could potentially be displayed in the topology. The use of filtering is one way of dealing with scalability issues.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;If the topology view supports filtering, use one of two ways to present the filtered view to users:</p>
+
+<ul>
+
+  <li><strong>Exclusive filtering:</strong> Omit the excluded objects and their connections from the view. This method is useful if the topology view contains a relatively large number of objects.
+
+&nbsp;</li>
+
+  <li><strong>Filtering in context:</strong> Display the excluded objects and their connections, but gray them out so they are less prominent than the included objects. This method is useful if the entire topology view can fit in a browser window without excessive scrolling.</li>
+
+</ul>
+
+<p>Here are three examples of the same small topology, the first without any filters, the second with exclusive filtering, and the third with filtering in context:</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th class="th-center"><strong>No Filters</strong></th>
+
+    <th class="th-center"><strong>Exclusive Filtering</strong></th>
+
+    <th class="th-center"><strong>Filtering in Context</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td><img height="232" src="topology_graphics/not-filtered.gif" width="302" alt="Example of a graph with no filtering"></td>
+
+    <td><img src="topology_graphics/filtered_exclusive.gif" width="203" height="157" border="0" alt="Example of a graph with exclusive filtering"></td>
+
+    <td><img height="232" src="topology_graphics/filtered.gif" width="302" alt="Example of a graph with filtering in context"></td>
+
+  </tr>
+
+</table>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;When using filtering in context, follow these guidelines:</p>
+
+<ul>
+
+  <li>Dim excluded objects (icons and labels), connections, and badges to 20 percent saturation.</li>
+
+  <li>Do not display link access point indicators on nonbadged, excluded connection lines.</li>
+
+  <li>Ensure that excluded objects and connections are not selectable.</li>
+
+  <li>Draw excluded connections behind included connections.</li>
+
+</ul>
+
+<h3><a name="10.4.6"></a>10.4.6 Showing Aggregate Objects</h3>
+
+<p>Moderate- and large-scale topologies achieve increased scaling through the use of object aggregation. Object aggregation entails combining several related objects (in the same tier) into a single aggregate object, which can be opened and closed by a user.</p>
+
+<p>Depending upon the application, object aggregates can have two meanings:</p>
+
+<ul>
+
+  <li>A nearly random grouping of objects whose sole purpose is to be a placeholder for a collection of other objects</li>
+
+  <li>A meaningful container based on a physical or logical relationship between objects</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw a closed aggregate object with an aggregate icon, a text label, and a closed turner glyph.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw an open aggregate object with a text label, an open turner glyph, and a series of indented, grouped objects displayed with singular-object icons.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw an aggregate icon as a series of three object icons stacked on top of each from upper left to lower right, offset by 4 pixels horizontally and vertically.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In the aggregate object label, include the number of objects represented by the aggregate object in parentheses at the end of the label.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Wherever possible, in the aggregate object label, indicate to the user which objects are represented by the aggregate object.</p>
+
+<p>For objects with similar names, say Bravo 1, Bravo 2, Bravo 3, and so on, the aggregate object label could combine the names together meaningfully, say Bravo 1-6.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw turner glyphs to indicate the state (open or closed) of an aggregate object.</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th class="th-center"><strong>Open Turner </strong></th>
+
+    <th class="th-center"><strong>Closed Turner for Vertical Tier</strong></th>
+
+    <th class="th-center"><strong>Closed Turner for</strong><strong> Horizontal Tier</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" align="center"><img src="topology_graphics/open-turner.gif" alt="" width="16" height="16"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/closed-turner-vertical.gif" alt="" width="16" height="16"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/closed-turner-horizontal.gif" alt="" width="12" height="14"></td>
+
+  </tr>
+
+</table>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw grouping lines around open aggregate objects with a 2-pixel wide by 1-pixel tall light purple line.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Draw a badge on an aggregate icon that shows the most severe badge of the objects represented by the aggregate object.</p>
+
+<p>Here are examples of objects that have been aggregated across both the horizontal and vertical planes:</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th valign="top" align="center">&nbsp;</th>
+
+    <th class="th-center"><strong>Closed Aggregate Objects</strong></th>
+
+    <th class="th-center"><strong>Open Aggregate Objects</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" align="center"><strong>Horizontal
+
+      Tier</strong></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/aggregate-object-closed-horiz.gif" alt="" width="73" height="37"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/aggregate-object-open-horiz.gif" alt="" width="317" height="108"></td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" align="center"><strong>Vertical
+
+      Tier</strong></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/aggregate-object-closed.gif" alt="" width="125" height="41"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/aggregate-object-open.gif" alt="" width="141" height="387"></td>
+
+  </tr>
+
+</table>
+
+<h3><a name="10.4.7"></a>10.4.7 Showing Aggregate Connections</h3>
+
+<p>Moderate- and large-scale topologies achieve increased scaling through the use of object aggregation. Aggregates of multiple objects also result in aggregate connections. These aggregate connections represent one or more connections between objects enclosed in an aggregate object. The following guidelines differentiate aggregate connections from nonaggregate connections.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw aggregate connections using two 1-pixel wide lines spaced 1 pixel apart.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Draw a badge on an aggregate connection that shows the most severe badge of the connections represented by the aggregate connection.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If an aggregate connection represents directed connections, draw directional arrows on the aggregate connection in the direction or directions of the represented connections.</p>
+
+<p>Here is an example of a topology view showing aggregate connections:</p>
+
+<p><img src="topology_graphics/aggregate-example.gif" alt="" width="621" height="433"></p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If an aggregate connection is selectable, place a 9-pixel link access point at the inside bends of connection lines. </p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th class="th-center"><strong>NonSelectable Aggregate Connections</strong></th>
+
+    <th class="th-center"><strong>Selectable Aggregate Connections</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td align="center"><img height="113" alt="" src="topology_graphics/aggregate-connections.gif" width="72"></td>
+
+    <td align="center"><img height="113" alt="" src="topology_graphics/aggregate-connections-selectable.gif" width="72"></td>
+
+  </tr>
+
+</table>
+
+<h3><a name="10.4.8"></a>10.4.8 Showing a Timestamp</h3>
+
+<p>The age of the data shown in a topology can be critically important if the topology shows alarms and is being used for troubleshooting. This information can also be useful if the topology is being printed for archiving or reference purposes.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Show a timestamp if the topology can contain alarm information.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If shown, the timestamp should appear in the status area of the masthead if a main window masthead is used (see <a href="04-masthead.html#4.1">4.1 Main Window Masthead</a> for more information). Otherwise, the timestamp should appear left-aligned and above the topology. Here is an example of a timestamp in the masthead:</p>
+
+<p><img src="topology_graphics/status_area_link.gif" width="370" height="113" border="0" alt="Timestamp shown in masthead"></p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If shown outside of the masthead, the timestamp should appear in a smaller font using the appropriate localized version (see <a href="07-simple.html">Chapter 7 Simple Elements</a>).</p>
+
+<h3><a name="10.4.9"></a>10.4.9 Showing an Icon Legend</h3>
+
+<p>Given the various types of objects and representations that can appear in a topology, consider providing an icon legend that describes what each icon means. Such a legend would help users to more quickly understand what the topology is showing them.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> The icon legend should <s></s>appear in a chromeless secondary-content page that is popped-up when the user clicks a link labeled &quot; <img src="topology_graphics/link_arrow.gif" width="12" height="10" alt="">Show Legend&quot;. This link should be left-aligned beneath the content page title and above the topology view itself.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In the legend show each object and alarm icon used in the topology. Include a brief description to the right of each icon.</p>
+
+<h3><a name="10.4.10"></a>10.4.10 Showing Sub-Components</h3>
+
+<p>Sometimes, the objects in the topology have subcomponents that would be useful to also represent in the topology (for example, network adapters in a server). However, showing these subcomponents in the topology can add significant visual clutter, making it more difficult to understand what is being shown.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;You may show the subcomponents under these conditions:</p>
+
+<ul>
+
+  <li>If the topology is likely to always be simple.</li>
+
+  <li>If the subcomponents being shown are an integral part of the topology (for example, the connection lines shown in the view are connected to the network adapters, which are subcomponents of the servers shown in the topology).</li>
+
+  <li>No more than two subcomponents need to be shown per object.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Show the subcomponents on-demand in a separate view under these conditions:</p>
+
+<ul>
+
+  <li>If the topology will have a relatively large number of objects.</li>
+
+  <li>If aggregation will be used.</li>
+
+  <li>If the subcomponents in question are not integral to the topology.</li>
+
+</ul>
+
+<p>On-demand in a separate view means that clicking on an object will open an exploded view of the object in a secondary-content page or in the same window after a page swap.</p>
+
+<p>Although the design details for showing subcomponents is not finalized, here is an example of one possible design:</p>
+
+<p><img src="topology_graphics/subcomp.gif" width="149" height="47" alt="Example of Subcomponents Shown in Topology"></p>
+
+<h2><a name="10.5"></a>10.5 Layout Guidelines for Topologies</h2>
+
+<h3><a name="10.5.1"></a>10.5.1 General Layout Guidelines</h3>
+
+<p>The guidelines in this section apply to all topologies regardless of scale. Additional guidelines for small-, medium-, and large-scale topologies are provided in separate sections that follow.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use the following spacing guidelines for all topologies:</p>
+
+<ul>
+
+  <li>Separate objects in the topology by 5 pixels.
+
+    <p>The size of an object is determined by its icon, text label, and connections. Thus, object icons may be spaced more than 5 pixels apart if the connection lines or text label are wider (or taller) than the object icon.</p></li>
+
+  <li>Horizontally separate text labels from object icons by 5 pixels.</li>
+
+  <li>Vertically separate text labels from object icons by 3 pixels.</li>
+
+  <li>Separate connection lines from object icons or text labels by 3 pixels.</li>
+
+  <li>Unless one of the following characteristics apply, separate connection lines by 3 pixels. If one of these characteristics do apply, separate connection lines by 6 pixels:
+
+&nbsp;
+
+    <ul>
+
+      <li>Alarm badges are displayed on connections,</li>
+
+      <li>Users can select the connection lines to receive more information about the connection.</li>
+
+      <li>Directed relationships are displayed.</li>
+
+    </ul></li>
+
+</ul>
+
+<p>These layout guidelines are visually depicted in the following example:</p>
+
+<p><img height="186" alt="Callout of the layout rules for a graph" src="topology_graphics/layout-callouts.gif" width="350"></p>
+
+<h3><a name="10.5.2"></a>10.5.2&nbsp; Layout Guidelines for Small-Scale Topologies</h3>
+
+<p>The display guidelines in this section pertain to the small-scale topologies in which the topology view displays relatively few objects. These topologies are described in <a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For one-tier small-scale topologies:</p>
+
+<ul>
+
+  <li>Arrange objects in a diagonal pattern.</li>
+
+  <li>Place text labels to the left of and bottom-aligned with the corresponding object icons.</li>
+
+  <li>Draw connections between objects with two line segments that form a right angle to the right of one object and above the other.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For two-tier small-scale topologies:</p>
+
+<ul>
+
+  <li>Arrange one object type in a single row at the top of the topology and the other object type in a single column at the left of the topology.</li>
+
+  <li>Place text labels for the objects arranged in the column to the left of and vertically centered with&nbsp;the corresponding object icons. Text labels for the objects arranged in the row are above and horizontally centered with the corresponding object icons.</li>
+
+  <li>Draw connections between objects in different tiers with two line segments that form a right angle between the objects.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For three-tier small-scale topologies:</p>
+
+<ul>
+
+  <li>Represent the first-tier and third-tier object types (for example, hosts and storage arrays) in a single column. Represent the middle-tier object type in a single row that divides the first-tier and third-tier objects (see &quot;Three-Tier Layout&quot; example).</li>
+
+  <li>Text labels for the objects arranged in the column are to the left of and vertically centered with&nbsp;the corresponding object icons. Text labels for the objects arranged in the row are below and horizontally centered with the corresponding object icons.</li>
+
+  <li>Draw connections between objects in different tiers with two line segments that form a right angle between the objects.</li>
+
+</ul>
+
+<p>Here are examples of one-, two-, and three-tier topology views following these guidelines:</p>
+
+<table class="info-table" border="1" cellspacing="0" cellpadding="5">
+
+  <tr>
+
+    <th class="th-center"><strong>One-Tier Layout</strong></th>
+
+    <th class="th-center"><strong>Two-Tier Layout</strong></th>
+
+    <th class="th-center"><strong>Three-Tier Layout</strong></th>
+
+  </tr>
+
+  <tr valign="top">
+
+    <td align="center" valign="middle"><img height="98" src="topology_graphics/1-tier-mini.gif" width="127" alt="Example of a single tier layout"></td>
+
+    <td align="center" valign="middle"><img height="128" src="topology_graphics/2-tier-mini.gif" width="188" alt="Example of a two tier layout"></td>
+
+    <td align="center" valign="middle"><img height="209" src="topology_graphics/3-tier-mini.gif" width="176" alt="Example of a three tier layout"></td>
+
+  </tr>
+
+</table>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For two-tier and three-tier small-scale topologies, draw within-tier and within-object connections with three line segments that form right angles to the objects. Draw these connections on the opposite side of the object icon from the text label. For the two segments  perpendicular to the icon use  lines of at least 10 pixels in length.</p>
+
+<table class="info-table" cellspacing="0" cellpadding="5" border="1">
+
+  <tr>
+
+    <th class="th-center"><strong>Within-tier Connections</strong></th>
+
+    <th class="th-center"><strong>Within-object Connections</strong></th>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" align="center"><img src="topology_graphics/within-tier.gif" alt="" width="210" height="100"></td>
+
+    <td valign="top" align="center"><img src="topology_graphics/within-object.gif" alt="" width="34" height="40"></td>
+
+  </tr>
+
+</table>
+
+<h3><a name="10.5.3"></a>10.5.3 Layout Guidelines for Moderate Scale Topologies</h3>
+
+<p>The display guidelines in this section pertain to the moderate-scale topologies in which the topology view displays a moderate number of objects. &nbsp;These topologies are described in <a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For moderate-scale topologies:</p>
+
+<ul>
+
+  <li>Follow the layout guidelines for small-scale topologies except as noted in this section.</li>
+
+  <li>Use aggregate objects to achieve greater scalability.</li>
+
+  <li>For vertical tiers, draw the turner between the object icon and the text label. For horizontal tiers, draw turners for closed aggregate objects to the left of the aggregate icon.</li>
+
+  <li>For vertical tiers, draw the text label to the left of the turner. For horizontal tiers, draw the text label horizontally centered above the turner and the object icon.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For open aggregates:</p>
+
+<ul>
+
+  <li>In vertical tiers, indent represented object icons to the right, by the width of the aggregate icon but by no less than 25 pixels.</li>
+
+  <li>In horizontal tiers, indent represented object icons down, by the height of the aggregate icon but by no less than 25 pixels.</li>
+
+  <li>Align the open end of aggregate grouping boxes with the corresponding turner.</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For one-tier moderate-scale topologies, display objects in a single column with all connections drawn as three segment within-tier connections.</p>
+
+<p>Here is an example of a moderate-scale topology with aggregation:&nbsp;</p>
+
+<p><img src="topology_graphics/3-tier-agg.gif" alt="" width="713" height="780"></p>
+
+<h3><a name="10.5.4"></a>10.5.4 Display Guidelines for Large Scale Topologies</h3>
+
+<p>The display guidelines in this section pertain to the large-scale topologies in which the topology view displays many objects. These topologies are described in <a href="10-topology.html#10.3.2">10.3.2 Guidelines for Choosing a Topology Representation</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;For large-scale topologies, use the layout rules for moderate-scale topologies with nested aggregate objects to obtain increased scalability.<br>
+  <br>
+  <span class="style1 style2">Here is an example of a large-scale topology with nested aggregation. Along the vertical tier for storage arrays, &quot;Bravo  A-L&quot; is open on the top level with four aggregates inside of it. At the next level down, &quot;Bravo A-C&quot; is open with three storage array instances inside of it. Along the horizontal tier for switches, &quot;Bravo 1-6&quot; is open at the top level with two aggregates inside of it. At the next level down, &quot;Bravo 1-6&quot; is  open  with four switch instances inside of it.</span></p>
+
+<p><img src="topology_graphics/3-tier-nest-agg.gif" alt="" width="687" height="595"></p>
+
+<h2><a name="10.6"></a>10.6 Interaction Elements</h2>
+
+<p>The topology design effort thus far has focused on topology views for monitoring the status of, and viewing the relationships among, objects rather than topology views intended for configuring objects and their relationships. As a result, these guidelines do not cover topics such as drag-and-drop style interactivity. The level of interactivity covered here is limited to moving the mouse over objects, selecting objects, viewing contextual menus, and expanding or collapsing aggregates.</p>
+
+<h3><a name="10.6.1"></a>10.6.1 Mouse-Over Feedback and Tool Tips</h3>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the user moves the mouse over an object or active link access points, a tool tip that provides information about the identity, status, or both, of that object should appear.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> The tool tips provided in mouse-over feedback must conform to the guidelines in <a href="11-help.html#11.5">11.5 Tool Tips</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If the application supports users getting information about the connections between objects, the &quot;live&quot; mouse-over zones that cause the tool tip to appear should extend 2 pixels beyond either side of the line itself. Because the line is only 1-pixel wide, the additional &quot;live&quot; area makes the line an easier target to hit.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Consider including the following information in the tool tip:</p>
+
+<ul>
+
+  <li>Object name</li>
+
+  <li>Object type (for example, &quot;Storage Array&quot; or even &quot;Sun 9960&quot;
+
+  )</li>
+
+  <li>IP Address</li>
+
+  <li>A message associated with the health or status of the object</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not include instructions such as &quot;Click to Open&quot; in a tool tip pertaining to an object within the topology. </p>
+
+<h3><a name="10.6.2"></a>10.6.2 Object Selection Behavior</h3>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> An object's behavior when the user selects it depends on the application. In cases where the topology viewer is designed for monitoring or viewing relationships, selecting an object can do one of the following:</p>
+
+<ul>
+
+  <li>Take the user to a page containing more information about that object (for example, a table containing its properties). This option is most likely.</li>
+
+  <li>Open a secondary-content page that contains information about the object.</li>
+
+  <li>Allow the user to drill down through the object hierarchy by revealing more detailed information about the object in the topology view.</li>
+
+  <li>Open a contextual menu providing a short list of actions that can be performed on the object (see <a href="10-topology.html#10.6.3">10.6.3 Contextual Menus</a> for more details).</li>
+
+</ul>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;To meet accessibility requirements, enable users to navigate through and select objects using the keyboard rather than the mouse. For more information, see <a href="D-accessibility.html">Appendix D - Accessibility</a></p>
+
+<p>If this option is not possible using your implementation of the topology viewer, then the application must provide a keyboard-navigable alternative representation of the information contained in the topology view. For example, the information could be presented in a table. Even if keyboard navigation is possible, a table might be a more usable method of interacting with the topology. In addition, the methods described in <a href="10-topology.html#10.7">10.7 Methods for Integration with Primary Navigation</a> might be usable for people with disabilities.</p>
+
+<p>The current implementation only supports single selection. Methods for handling multiple selection <span class="style1 style2">requires more investigation</span>. See <a href="10-topology.html#10.8">10.8 Issues For Future Investigation</a> for more details.</p>
+
+<h3><a name="10.6.3"></a>10.6.3 Contextual Menus</h3>
+
+<p>Being able to act directly on an object displayed in a topology is an important benefit of a graphical user interface (GUI). In the case of a topology view, users might see that a particular object is showing a critical alarm and want to immediately run a diagnostic test on the object to isolate the problem. One way to accomplish this task would be to allow users to click on the object to open up a contextual menu. The menu would display a list of available actions that can be performed on the object. Here is an example of a contextual menu inside of a topology view:</p>
+
+<p><img src="topology_graphics/c-menu-example.gif" width="390" height="278" alt="Example of a contextual menu"></p>
+
+<p>In this example, the user has clicked on &quot;Switch B&quot; to reveal a contextual menu. The menu has four actions, the last action is &quot;Run Diagnostics.&quot;</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Contextual menus must conform to the following design guidelines:</p>
+
+<ul>
+
+  <li>With one exception, their look-and-feel must conform to the guidelines for action menus (see <a href="06-content.html#6.5">6.5&nbsp;Content Area Actions</a> for more details). The exception: Display the menu label (for example, &quot;Storage Actions&quot;) in a bold font. In the menu label, always list the type of managed object.
+
+&nbsp;</li>
+
+  <li>Follow the rules for how to open contextual menus in <a href="10-topology.html#10.6.4">10.6.4 Clickable Regions</a>.
+
+&nbsp;</li>
+
+  <li>Clicking inside one of the clickable regions (either the text label or the object icon) opens the contextual menu. That is, at the x-y coordinates of the cursor.&nbsp;</li>
+
+  <li>Allow users to navigate to the managed object and open the contextual menu using the keyboard (for browsers that fully support keyboard navigation).
+
+&nbsp;</li>
+
+  <li>Only one contextual menu can be open at any given time. Any action opening a new contextual menu causes the existing contextual menu to close.
+
+&nbsp;</li>
+
+  <li>The menu should also close if the user clicks elsewhere in the window.
+
+&nbsp;</li>
+
+  <li>In general, application designers may decide the identity and order of actions in a contextual menu; however, if detailed object properties can be viewed, then &quot;View Properties&quot; should be the first menu item, followed by &quot;View Alarms,&quot; if alarm details can be viewed.
+
+&nbsp;</li>
+
+  <li>As noted in <a href="10-topology.html#10.6.4">10.6.4 Clickable Regions</a>, if only one action  can be performed on an object, no menu should appear. Clicking on the object itself should execute the action.</li>
+
+</ul>
+
+<h3><a name="10.6.4"></a>10.6.4 Clickable Regions</h3>
+
+<p>The several possible clickable regions in a topology view include:</p>
+
+<ul>
+
+  <li>Both the text label and the icon representing the managed object (for either an aggregate object or a singular object)</li>
+
+  <li>The expand and collapse turner for interacting with aggregates</li>
+
+  <li>The connecting line and link access points between objects</li>
+
+</ul>
+
+<h4><a name="10.6.4.1"></a>10.6.4.1 Managed Objects</h4>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;The guidelines for what happens when a user clicks on a managed object depend on a number of factors. Here are the guidelines for <strong>aggregates</strong>. Note that when an aggregate supports user interaction and contains roll-up of information about the objects inside of it, it is called a <i>first-class object</i>. Also note that clicking on the turner always expands or collapses the aggregate.</p>
+
+<ul>
+
+  If the <strong>aggregate</strong> is not a first-class object, then:
+
+  <ul>
+
+    <li>The text label and icon are not clickable.</li>
+
+    <li>The alarm badge is not clickable.</li>
+
+  </ul>
+
+  Otherwise, if the <strong>aggregate</strong> <em>is</em> a first-class object and there are two or more applicable actions, then:
+
+  <ul>
+
+    <li>The text label and icon open a contextual menu.</li>
+
+    <li>The alarm badge would open aggregates (recursively, if needed) to expose all individual objects or connections with a matching badge. (Note that an application may override this default behavior, if desired.)</li>
+
+  </ul>
+
+  Otherwise, if the <strong>aggregate</strong> is a first-class object with only one applicable action, then:
+
+  <ul>
+
+    <li>The text label and icon executes the action.</li>
+
+    <li>The alarm badge would open aggregates (recursively, if needed) to expose all individual objects or connections with a matching badge. (Note that an application may override this default behavior, if desired.)</li>
+
+  </ul>
+
+</ul>
+
+<p>Here are the guidelines for non-aggregates or <strong>singular objects</strong>:</p>
+
+<ul>
+
+  If there are two or more applicable actions, then:
+
+  <ul>
+
+    <li>The text label and icon open a contextual menu.</li>
+
+    <li>The alarm badge would go to alarm details.</li>
+
+  </ul>
+
+  Otherwise, if there is only one applicable action, then:
+
+  <ul>
+
+    <li>The label and icon executes the action.</li>
+
+    <li>The alarm badge would go to alarm details.</li>
+
+  </ul>
+
+</ul>
+
+<h4><a name="10.6.4.2"></a>10.6.4.2 Connections</h4>
+
+<p>Some system management applications may manage connections as first-class objects. In such applications, users can interact with connections to view various properties including health, throughput, and so forth. If the application supports it, the link access points for connections may also contain alarm badges. Here are the guidelines for clickable regions associated with connections:</p>
+
+<ul>
+
+  If the <strong>connection</strong> is not a first-class object, then :
+
+  <ul>
+
+    <li>The link access points and the lines themselves are not clickable.</li>
+
+  </ul>
+
+  Otherwise, if the <strong>connection</strong> <em>is</em> a first-class object and there is no alarm badge, then:
+
+  <ul>
+
+    <li>The link access points and the lines themselves follow the guidelines for contextual menus (which depend on whether there is one or more applicable actions).</li>
+
+  </ul>
+
+  Otherwise, if the <strong>connection</strong> is a first-class object with an alarm badge, then:
+
+  <ul>
+
+    <li>The alarm badge would go to alarm details.</li>
+
+    <li>The lines themselves follow the guidelines for contextual menus (which depend on whether there is one or more applicable actions).</li>
+
+  </ul>
+
+</ul>
+
+<h3><a name="10.6.5"></a>10.6.5 Expanding and Collapsing Aggregates</h3>
+
+<p>The notion of an aggregate has already been discussed several times in this chapter (see sections <a href="10-topology.html#10.2.1">10.2.1</a>, <a href="10-topology.html#10.3.2">10.3.2</a>, <a href="10-topology.html#10.4.6">10.4.6</a>, and <a href="10-topology.html#10.5">10.5</a>). This section discusses the guidelines for expanding and collapsing aggregates.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Clicking on a closed turner (<img src="topology_graphics/closed-turner-vertical.gif" width="16" height="16" border="0" alt="Expand Aggregate Container">) opens an aggregate.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Clicking on an open turner (<img src="topology_graphics/open-turner.gif" width="16" height="16" border="0"  alt="Collapse Aggregate Container">) closes the aggregate.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;The state of a topology view must be remembered within a user session. That is, if a user navigates to another page and then returns to the topology view, the application should remember the state of any expanded aggregates.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;If you want to provide an action to expand the entire topology or just a single tier (for example, for printing on a plotter), provide page actions such as &quot;Show Entire Topology&quot; or &quot;Show All Storage Arrays.&quot; For more information on page actions, see <a href="06-content.html#6.5">6.5 Content Area Actions</a>. Here is an example:</p>
+
+<p><img src="topology_graphics/page-actions.gif" width="375" height="314" border="0" alt="Full page view of a topology with content area actions and navigation"></p>
+
+<h3><a name="10.6.6"></a>10.6.6 Saving Topologies</h3>
+
+<p>Some users might want to take snapshots of a topology at a point in time either for reference or for comparison.</p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;If this functionality is desired, provide a page action, such as &quot;Save As...&quot; as shown in the preceding example. For more information on page actions, see <a href="06-content.html#6.5">6.5 Content Area Actions</a>.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;The saved topology must include a timestamp showing when the topology was generated as well as a legend showing the meaning of all the displayed elements (object icons, alarm badges, link access points, connection types, filtered elements, and so forth).</p>
+
+<h2><a name="10.7"></a>10.7 Methods for Integration with Primary Navigation</h2>
+
+<p>While users may be able to navigate through a topology to find and select managed objects, many applications provide other methods for doing so. These methods include, but are not limited to, asset inventories and alarm logs. To fully support a variety of user tasks, it is often useful to integrate topology views with these other methods of navigation. This section describes two methods of integration. In most cases, these methods assume that the user has already navigated to and selected a specific object and now wishes to view the interrelationships among the selected object and other objects in the overall topology.</p>
+
+<p>Because these methods often presuppose that a user is interested in only viewing a small subsection of the entire topology, they are also helpful in dealing with large-scale deployments. These subsections or <i>subtopologies</i> typically show objects that are directly connected to a selected object or the entire set of paths from one object to another.</p>
+
+<h3><a name="10.7.1"></a>10.7.1 Showing Connectivity for a Selected Object</h3>
+
+<p>A user with access to this method of displaying a topology view would typically perform the following actions:</p>
+
+<ol>
+
+  <li>Navigate through the set of managed objects using an alternative method (for example, typically either a tree, a table with lists of objects, or a direct search).</li>
+
+  <li>Select a single object and choose the Show Connectivity action.</li>
+
+</ol>
+
+<p>Here is an example of a user who has navigated through a table with lists of objects and is about to perform the Show Connectivity action:</p>
+
+<p><img src="topology_graphics/table-with-show-connectivity.gif" width="634" height="194" alt="Selecting an object to show connectivity with other objects"></p>
+
+<p>After the action is performed, the application would return a subtopology showing only the managed objects that are directly connected to the selected object. Here is an example:</p>
+
+<p><img src="topology_graphics/connectivity-shown-cut.gif" width="273" height="149" alt="Topology showing connectivity between the selected object and other objects"></p>
+
+<h3><a name="10.7.2"></a>10.7.2 Showing Paths from a Selected Object</h3>
+
+<p>A user with access to this method of displaying a topology view would typically perform the following actions:</p>
+
+<ol>
+
+  <li>Navigate through the set of managed objects using an alternative method (for example, typically either a tree, a table with lists of objects, or a direct search).</li>
+
+  <li>Select a single object (this object represents the origination point of the path) and open the Show Paths wizard.</li>
+
+  <li>Search for and select the target object (for example, a host).</li>
+
+</ol>
+
+<p>Here is an example of a user who has navigated through a table with lists of objects, selected an object, and is about to open the Show Paths wizard:</p>
+
+<p><img src="topology_graphics/tableNew.gif" width="774" height="226" alt="Selecting an object to show paths with other objects"></p>
+
+<p>The Show Paths wizard provides the user with the means of selecting the target. 
+  Selecting the target may be done in a number of ways, such as a drill down through 
+  a tree or a direct search (see <a href="12-search.html">Chapter 12 Search</a> 
+  for more details). </p>
+
+<p>After the user has selected the target, the application would return a subtopology showing all the paths between the source object and the target object. Here is an example:</p>
+
+<p><img src="topology_graphics/paths-shown-cut.gif" width="457" height="122" alt="Topology showing all the paths between the source and target objects"></p>
+
+<p>Certain applications could provide users with an option to see partial paths between two objects. Doing so allows users to ask questions such as: &quot;What do I need to do to connect Host A to Storage B?&quot; In such cases, a drop-down menu may be used to permit the user to select between partial and full paths. In the above example, the partial paths from the server to the storage include switches bro139, bro141, qlogic25, and qlogic27.</p>
+
+<h2><a name="10.8"></a>10.8 Issues for Future Investigation</h2>
+
+<p class="style2">  The following open issues might be investigated in the future: </p>
+
+<ul>
+
+  <li>Handling large-scale one-tier topologies</li>
+
+  <li>Handling situations in which it is no longer feasible to draw all the lines emanating from the objects in a high connectivity topology</li>
+
+  <li>Enhancing the tool tips associated with objects and connections to provide more information and be more interactive</li>
+
+  <li>Handling multiple selection of managed objects.</li>
+
+  <li>Exploring new functionality for highlighting paths when a user mouses over a connection</li>
+
+  <li>Adding a thick client (using either Flash or Java<sup>TM</sup> technology) to support design and configuration<br>
+  </li>
+
+</ul>
+
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <span class="currentchapter">10&nbsp;Topology</span>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

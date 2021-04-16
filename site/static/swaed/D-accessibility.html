@@ -1,0 +1,970 @@
+
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>Appendix D - Accessibility Requirements - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="D-accessibility.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <span class="currentchapter">Appendices</span>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+
+<br>&nbsp;</p>
+<p><strong><a href="appendices.html">Appendices</a> &gt; </strong>Appendix D</p>
+
+<H1 class="style2">Appendix D - Accessibility Requirements</H1>
+
+
+
+
+<H2 class="style2"><a name="D-1"></a>D-1  Considerations for Users With Disabilities</H2>
+
+
+<P class="style2">Accessible design allows users with disabilities to use your product. In general,
+  people with visual and motor limitations experience significant barriers with
+  graphical user interfaces (GUIs) because they cannot see the content on the
+  screen, or they cannot manipulate the mouse. Products collectively known as <I>assistive
+  technologies</I> provide alternative control or presentation of the information
+  (or both)
+  with which users interact. For example, a screen reader presents
+  the content of the user interface (UI) to blind users through speech synthesis,
+  a refreshable Braille display, or both. </P>
+<P class="style2">Broadly speaking, an application is <I>accessible</I> if its UI allows users
+  to customize fonts and colors, and the UI can be controlled or presented (or
+  both) by assistive technologies and a keyboard. For example, applications written
+  with the Swing UI Toolkit are highly accessible because support for the 
+  Java<sup><font size=-2>TM</font></sup>
+  Accessibility API (<abbr>JAAPI</abbr>) is built into its user interface elements. Swing's
+  UI elements have built-in hooks that allow a screen reader to query them through the JAAPI, 
+  and then "read" each element's attributes to the blind user. For example, the hooks make it possible 
+  for the user to determine what the name and state of the element with focus is. Similarly to 
+  Swing, Web-based applications can utilize HTML's programmatic support for
+  accessibility to enable their content to be accessibly presented through
+  use of the user's
+  browser and assistive technology.</P>
+<P class="style2">Many users, both with and without disabilities, benefit from accessible design
+  even in the absence of assistive technology. For example, applications that
+  can be operated efficiently from the keyboard (using mnemonics, accelerators,
+  and a logical tab sequence) benefit users who cannot manipulate a mouse.
+  However, they also benefit any users who prefer to use the keyboard for speed.
+  Furthermore, "having a disability" versus "not having a disability" is not
+  a clear distinction. Many people have some temporary or permanent disability,
+  such as repetitive stress injuries, suboptimal near vision, color blindness,
+  and hearing deficits. All of these conditions are present in Sun's user population.
+</P>
+<P class="style2">Additional information can be found in <a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a>.</P>
+<H3 class="style2"><a name="D-1.1"></a>D-1.1 Government Requirements for Accessibility</H3>
+
+
+<P class="style2">Section 508 of the Federal Rehabilitation Act mandates that all products used
+  by U.S. government agencies must provide "comparable access" for
+  people with disabilities. Virtually all Sun products are sold to the government,
+  so all Sun products must meet Section 508 requirements to maintain and expand
+  sales to this market. In addition to federal agencies, which are required to
+  comply with Section 508 requirements, many state governments and large educational
+  systems are complying voluntarily. </P>
+<P class="style2">Because Section 508 requirements were designed to allow for progress in technology,
+  the Final Rule listing of the requirements is not an unequivocal functional
+  specification. There is no clear, complete, a priori definition of a GUI that
+  meets the Section 508 standard. In addition to "comparable access," the Final
+  Rule listing includes phrases such as "equivalent facilitation," "fundamental
+  alteration," and "a range of contrast levels," all of which are subject to
+  interpretation. Challenges to particular products, raised by affected individuals,
+  will lead to clarification of the requirements, but only through the lengthy
+  process of addressing such challenges and, potentially, through litigation.</P>
+
+
+<H3 class="style2"><a name="D-1.2"></a>D-1.2 The Three Levels of Product Accessibility</H3>
+
+
+<P class="style2">The level of accessibility provided by a product is determined by its 
+  development team, as long as the final product meets the requirements
+  of Section 508. In most cases, product support for accessibility can be
+  fit into one of three levels.
+</P>
+
+<UL class="style2">
+  <LI> Meet the minimum requirements of Section 508
+  </LI>
+  <P>Obeying the letter of Section 508 is required, but does not
+    necessarily provide a satisfactory experience for the user. For example,
+    an application with an inaccessible GUI can meet the
+    requirements by providing a command-line interface (CLI)
+    with equivalent or
+    greater functionality. While a CLI may meet the letter of
+    the law, it may be more difficult and time-consuming than
+    the GUI. After all, efficiency of the user is the
+    driving force behind graphical interfaces.
+ </P>
+
+  <LI> Design the application's GUI to meet Section 508's requirements.</LI>
+  <P> This effort normally results in a better experience for users
+    with disabilities. The improvement largely comes from all users having
+    a common, sharable learning process
+    and working experience. User Friendlier 508 (URL follows) identifies and discusses 
+    requirements for a web application to achieve this level, along with
+    helpful external references, including coding guidance.
+    While a Section 508-ready GUI is a better level to aim for, it still
+    doesn't guarantee an interface that is truly usable by people with
+    disabilities.
+  </P>
+  <LI> Design the application's GUI to meet Section 508's requirements and this
+    appendix's guidelines.</LI>
+  <P> Whenever feasible, Sun's products should strive to maximize the efficiency
+    of all users. This appendix is a companion piece to User Friendlier 508 and
+    provides additional direction on how to make some common GUI elements delivered
+    by a browser more accessible and usable to the user with a disability.</P>
+
+</UL>
+<H3 class="style2"><a name="D-1.3"></a>D-1.3 How These Guidelines Relate to W3C's Web Accessibility
+  Initiative Guidelines</H3>
+
+
+<P class="style2">The World Wide Web Consortium (W3C) has spent many years devising a set of
+  web content accessibility guidelines (WCAG) as part of its Web Accessibility
+  Initiative (WAI). They are available at <A href="http://www.w3.org/TR/WCAG10/full-checklist.html">http://www.w3.org/TR/WCAG10/full-checklist.html</A>. </P>
+
+<P class="style2">The WCAG provides guidelines that are separated into three different priority
+  levels. For the most part, Section 508 is a subset of WCAG's set of Priority
+  1 accessibility guidelines. The WCAG is generally useful to turn to when the
+  application provides a design challenge that isn't covered by this appendix
+  or the User Friendlier 508 web site. Both the WAI guidelines and the 
+  guidelines presented
+  here are compatible with Section 508 requirements.</P>
+<P class="style2">Here are some accessibility tips provided by the World Wide Web Consortium:
+<ul class="style2">
+  <li>Images and Animations: Use the HTML &quot;ALT&quot; attribute to describe the function of each visual element. </li>
+  <li>Image Maps: use a client-side HTML &lt;MAP&gt; element and text for hot spots. </li>
+  <li>Multimedia: Provide captions and transcripts for audio content and descriptions of video content. </li>
+  <li>Hypertext Links: Use text that makes sense when read out of context. for example, avoid &quot;click here.&quot; </li>
+  <li>Page Organization: Use headings, lists and a consistent structure. Use Cascading Style Sheets for layout and style where possible. </li>
+  <li>Graphs and Charts: Summarize or use the HTML &quot;LONGDESC&quot; attribute. </li>
+  <li>Scripts, Applets and Plug-ins: Provide alternative content in case active features are inaccessible or unsupported. </li>
+  <li>Frames: Use NOFRAMES and meaningful tool tips (using the HTML &quot;TITLE&quot; attribute). </li>
+  <li>Tables: Make line-by-line reading sensible. Summarize.</li>
+  <li>Check Your Work: Validate. Use the tools, checklist and guidelines at <a href="http://www.w3.org/tr/wai-webcontent">www.w3.org/tr/wai-webcontent</a>.<br>
+</li>
+</ul>
+<H2 class="style2"> <A name="D-2"></A>D-2 Page Elements</H2>
+
+<H3 class="style2"> <A name="D-2.1"></A>D-2.1 Use the Most Appropriate HTML Structure</H3>
+<p class="style2">It is important to use the HTML tags that most closely represent the desired
+  structure of the page and that the tag structure be consistently used throughout
+  the application. Assistive technologies use this information to determine how
+  the web page should be presented to users. For example: </p>
+<ul class="style2">
+  <li> Use HTML heading elements (<span class="style6">&lt;H1&gt; - &lt;H5&gt;</span>)
+    to signify the beginning of a new section.  Specifically, content page titles should use &lt;H1&gt;.</li>
+  <p> Screen readers understand the purpose of this markup and know how to present
+    the heading text in a way that notifies the users that a new section has
+    begun. By contrast, section headings could be encoded with the <span class="style6">HTML &lt;FONT&gt;</span> and <span class="style6">&lt;BR&gt;</span> elements
+    to visually represent the start of a new section however, because improper
+    heading markup is used, the screen reader (and user) won't know if the text
+    presented is regular text or heading text.</p>
+
+  <li> Use the <span class="style6">HTML &lt;UL&gt;, &lt;OL&gt;</span>, and <span class="style6">&lt;LI&gt;</span> elements
+    to encode lists.</li>
+
+
+  <p> Screen readers know how to present list content properly when it sees these
+    HTML elements. In contrast, the <span class="style6">HTML &lt;IMG&gt;, &lt;DIV&gt;</span>,
+    and other elements could be used to visually present what looks like a list.
+    However, as with the heading example, the screen reader won't have a programmatically
+    obvious way of knowing when the content being viewed is part of a list.</p>
+</ul>
+<p class="style2">
+These are just two possible examples highlighting the importance of using the
+proper HTML elements when presenting structured content.
+</p>
+<H3 class="style2"> <A name="D-2.2"></A>D-2.2 Provide an Alternate Description for All Nontext Elements</H3>
+
+<P class="style2">Examples of nontext elements include graphics, glyphs, illustrations, and
+  pictures. Regardless of the type of nontext element, always assign an
+  alternate
+  description to it (HTML &quot;ALT&quot; text). Every nontext element needs some sort of 
+  alternate description
+   so that the vision-impaired user is able to tell if the information it conveys
+  is important to understanding. Image elements that don't have an alternative
+  description are particularly problematic for vision-impaired users. Their
+  assistive technology, a screen reader, sees the image but can only announce
+  that an unknown image exists. This does not help the user understand the
+  content of the document.</P>
+<P class="style2">Other guidance to follow for nontext elements is:</P>
+<ul class="style2">
+  <li> Set an empty description 
+    <span class="style6">(HTML ALT="") </span>on nonessential nontext elements.</li>
+  <p> A nonessential nontext element, if removed from the
+    content, has no negative impact on the understandability of the rest of the
+    content. One common example of a nonessential element is a bullet graphic
+    that is used in conjunction with a list constructed using the <span class="style6">HTML &lt;UL&gt;, &lt;OL&gt;</span>,
+    and <span class="style6">&lt;LI&gt; elements.</span></p>
+</ul>
+<UL class="style2">
+  <LI>
+    Provide enough information in the nontext element's 
+    <SPAN class=style6>HTML &quot;ALT&quot;</SPAN> text so that
+  the user knows what it conveys.</LI>
+</UL>
+
+<H3 class="style2"> <A name="D-2.3"></A>D-2.3 Associate Labels With the Page Elements They Name</H3>
+
+
+<P class="style2">When a nonsighted or low vision user encounters a form element, he or 
+she must
+  be able to determine the purpose of the element. Form elements that
+  don't include their own visual label attribute should provide a
+  label by adding an HTML <SPAN class="style6">&lt;LABEL&gt;</SPAN> element.
+  This visually ties the form element to its label but doesn't do the same programmatically.
+  The result is that the sight-impaired user's assistive technology is unable to
+  accurately determine which label is associated with a specific
+element. The following guidelines
+  demonstrate how to programmatically associate a label with a form element. </P>
+<p class="style2">
+<UL class="style2">
+  <LI> Set the HTML &quot;FOR&quot; attribute on the <SPAN class="style6">HTML &lt;LABEL&gt;</span> element
+    so that it ties the label to the form element it names.</LI>
+  <P> More guidance and examples on how to accessibly code HTML form elements can
+    be found at <A href="http://www.access-board.gov/sec508/guide/1194.22.htm#(n)">http://www.access-board.gov/sec508/guide/1194.22.htm#(n). </A>This
+    guidance is compatible with that provided by the W3C.</P>
+</UL>
+
+<p class="style2">
+<UL class="style2">
+  <LI> Place labels on elements in consistent locations across the application's
+    UIs.</LI>
+  <P> A common guideline has been to place labels to the left of
+    or above the element it is labeling. This guideline came about to help older
+    screen magnifiers and screen readers that don't recognize the HTML "FOR" attribute
+    on the HTML <SPAN class="style6">&lt;LABEL&gt;</SPAN> element. This layout helped the older technologies
+    make more intelligent guesses on which label was naming a given form element.
+    If this label orientation guideline doesn't fit with the
+    desired look and feel of the application, ensure that the design requirement
+    for the look and feel always calls for labels on element classes to be placed
+    consistently in all views of the application.</P>
+</UL>
+
+<P class="style2">Content developers frequently group similar page elements together in visual
+  groups. HTML 4.0 provides the elements that allow developers to do so
+  in a programmatically accessible way. Follow these guidelines
+  for grouping these elements together: </P>
+
+
+<ul class="style2">
+  <li> Group page elements together using the HTML <span class="style6">&lt;FIELDSET&gt;</span> element.</li>
+  <p>Note that the default visual presentation of this element
+    is to draw a box around all the elements in the the group. A style sheet
+    can be used to prevent the drawing of the box.</p>
+</ul>
+
+
+<ul class="style2">
+  <li> Label the group of page elements using the <span class="style6">HTML &lt;LEGEND&gt;</span> element.</li>
+  <p> For usage examples for both these elements, go to <a href="http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.10">http://www.w3.org/TR/REC-html40/interact/forms.html#h-17.10</a>.</p>
+</ul>
+
+
+<P class="style2">
+<H3 class="style2">  <A name="D-2.4"></A>D-2.4 How to Encode Data Tables</H3>
+<P class="style2">Tables can perform two functions in an HTML document: presenting data and
+  specifying page layout. Both are encoded using the same HTML tags,
+  but they have different
+  purposes. Data tables (discussed here) define relationships between the elements
+  they contain. In contrast, layout tables are used solely to arrange items on
+  the screen. For information on layout tables, see <A href="D-accessibility.html#D-3.2">D-3.2
+  Make it Easy to Discern Layout Tables From Data Tables</A>. </P>
+
+
+<p class="style2">Follow these guidelines:
+<ul class="style2">
+  <li> Use the HTML &lt;TH&gt; element
+    when the content in a cell is performing a row or column heading function.</li>
+
+
+  <li> Use the HTML &lt;SCOPE&gt; element to enable
+    the association of data cells with their headings.</li>
+
+
+  <li> Use the HTML &lt;CAPTION&gt; element to
+    visually label or caption a data table.</li>
+
+
+  <li> Set the HTML &quot;TITLE&quot; attribute on tables
+       that don't have a &lt;CAPTION&gt; element, to have tool tips</li>
+
+  <li> Set the HTML &quot;SUMMARY&quot; attribute 
+      on tables when the Tool Tip text 
+      and the text surrounding the table don't
+      provide enough information. The summary
+      can be much longer than the caption or Tool Tip.</li>
+
+</ul>
+
+
+
+
+<span class="style2">
+</span>
+<H2 class="style2"><A name="D-3"></A>D-3 Page Layout</H2>
+<span class="style2">
+
+</span>
+<H3 class="style2"><A name="D-3.1"></A>D-3.1 General Layout Requirements</H3>
+
+<P class="style2">The layout in a web application must be as consistent as possible from page
+  to page. All users have a much easier time learning and using an application
+  that has a consistent presentation, regardless of their experience or disability.  </P>
+<P class="style2">
+
+<H3 class="style2"><A name="D-3.2"></A>D-3.2 Make it Easy to Discern Layout Tables From Data Tables</H3>
+
+<P class="style2">For information on the differences between data tables and layout tables,
+  see <A href="D-accessibility.html#D-2.4">D-2.4 How to Encode Data Tables</A>. Follow these
+  guidelines when layout tables are used in an application. </P>
+<ul class="style2">
+  <li> In tables used only for layout purposes, use only the following
+    HTML markup:</li>
+  <ul>
+    <li> <span class="style6">&lt;TABLE&gt;</span> element.</li>
+    <li> <span class="style6">&lt;TR&gt;</span> element.</li>
+    <li> <span class="style6">&lt;TD&gt;</span> element.</li>
+    <li> Set the <span class=style6>HTML &quot;TITLE&quot; </span> attribute to be empty (TITLE <span class=style6>=""</span>).</li>
+  </ul>
+  <li> Minimize the number of table cells in a layout table. </li>
+  <li> Minimize the use of layout tables. </li>
+  <li> Avoid nesting of tables within tables.</li>
+</ul>
+
+<P class="style2">To see the effects of layout tables, set their borders to 10 pixels. This
+  useful test makes the layout tables visible, which simulates how they might
+  appear to users of screen readers.</P>
+
+<span class="style2">  
+</span>
+<H3 class="style2"><A name="D-3.3"></A>D-3.3 Make the Function of a Frame's Content Clear</H3>
+
+<P class="style2">Application views with multiple frames are defined using <SPAN class="style6">&lt;FRAMESET&gt;</SPAN> and
+  related tags. Frames can successfully be used in a manner that meets
+the requirements of Section 508, but some guidelines must be followed:
+</P>
+<UL class="style2">
+  <LI> Set the HTML &quot;TITLE&quot; attribute on <B>all</B> frames, including invisible frames.</LI>
+  <UL>
+    
+    <LI> Provide a meaningful name for frames with visible content.
+    <P>
+    The HTML &quot;TITLE&quot; of a frame should denote its purpose, and good examples of
+    frame HTML &quot;TITLE&quot;s include "Table of Contents," "Main Content," and "Masthead
+    Navigation."
+    </P>
+    </LI>
+
+    <LI> For invisible frames, set the 
+    <SPAN class=style6>HTML &quot;TITLE&quot;</SPAN> attribute to be empty 
+    (<SPAN class=style6>TITLE=""</SPAN>).
+    <P>
+    Invisible frames are used for various reasons, such as polling a server without
+    causing the entire browser to refresh. HTML &quot;TITLE&quot;s on these frames are important
+    because users working with assistive technologies are likely to "see" each
+    and every frame defined in the <SPAN class="style6">&lt;FRAMESET&gt;</SPAN>.
+    </P>
+    </LI>
+  </UL>
+
+  <LI> Enable frame content to be viewed without truncation when users select
+    a large font size.</LI>
+  <P> Generally, this guideline means allowing the scrolling or resizing of 
+    the frame using
+    the <SPAN class=style6>HTML &quot;SCROLLING</SPAN>&quot; attribute, and avoiding 
+    the use of the 
+    <SPAN class=style6>HTML &quot;NORESIZE&quot;</SPAN> attribute.
+    Other issues to address with large text size are discussed in more detail
+    in <A href="D-accessibility.html#D-4.3">D-4.3 Accommodate the Use of Larger Font Sizes</A>.</P>
+</UL>
+<UL class="style2">
+
+  <LI> Framesets are not required to provide a <SPAN class="style6">&lt;NOFRAMES&gt;</SPAN>
+    version.</LI>
+  <P> The <SPAN class="style6">&lt;NOFRAMES&gt;</SPAN> element and approach
+    was originally introduced to ensure users with browsers or assistive
+    technologies that couldn't parse frames still had access to the content of
+    all frames. Sun products don't need to provide the <SPAN class="style6">&lt;NOFRAMES&gt;</SPAN> approach. This is because
+    the user audience for our products has browsers and assistive technologies
+    that can parse frames.</P>
+</UL>
+
+
+<span class="style2">
+</span>
+<H3 class="style2"><A name="D-3.4"></A>D-3.4 How to Use Pop-Up Windows</H3>
+<P class="style2">Pop-up windows contain dialog pages and alert messages that appear in addition to the main
+  browser window. In several places in these guidelines, pop-up windows
+  are specified as part of a correct interface. The most notable example is application
+  help. </P>
+<UL class="style2">
+  <LI> Set the <SPAN class=style6>HTML &quot;TITLE&quot;</SPAN> attribute on the element 
+    that posts the pop-up window so that it informs
+    the user that this action will occur when the element is activated.</LI>
+
+  <P> An example of text that might be entered in the 
+     <SPAN class=style6>HTML &quot;TITLE&quot;</SPAN> attribute is: "Help Viewer (Opens a New Window)." 
+  </P>
+
+  <LI> Set the keyboard focus to the pop-up window when it starts.
+  <P></P>
+  </LI>
+
+  <LI> Return keyboard focus to the main browser window when the pop-up window
+    is dismissed.
+  </LI>
+</UL>
+
+<span class="style2">
+</span>
+<H2 class="style2"><A name="D-4"></A>D-4 Page Appearance</H2>
+
+
+<span class="style2">
+</span>
+<H3 class="style2"><A name="D-4.1"></A>D-4.1 Respect the User's Preference Settings</H3>
+
+
+<P class="style2">All accessibility guidelines, including Section 508, require
+  that web applications respect or inherit the font and color selection that
+  users
+  have set in both their browser and desktop. </P>
+<UL class="style2">
+  <LI> Use style sheets to set the page's colors.</LI>
+  <P> This allows users with color sensitivities to change, in a
+    central location, the application's default page colors to color values they
+    can better discern. </P>
+
+  <LI> Use style sheets to set the page's fonts.</LI>
+
+  <P> This makes it possible for users with limited vision 
+    to choose a larger or different font so that they can use the 
+    product without needing a separate screen magnifier. </P>
+
+  <LI> Test to verify that colors and fonts change when style sheets are turned
+    off <span class="style2">and when </span>the browser's default font and color settings are varied.
+    <P>
+  Choose a representative set of pages from the application on which to 
+  run this test. Adjust all of the font- and color-related options 
+   provided by the browser
+  and desktop. <A name="font-control-panels"></A>Browsers and desktops place the control panel in a variety
+  of locations, and here are examples of where to look: 
+ 
+  </P>
+  </LI>
+
+  <UL>
+    <LI> Desktop Control Panels Internet Options</LI>
+    <LI> Desktop Control Panels Accessibility</LI>
+    <LI> Desktop Control Panels Fonts</LI>
+    <LI> Desktop Control Panels Colors</LI>
+    <LI> Browser Edit menu Preferences</LI>
+    <LI> Browser Tools menu Internet Options</LI>
+  </UL>
+</UL>
+
+<H3 class="style2"><A name="D-4.2"></A>D-4.2 Use Color to Complement Other Ways of Conveying Meaning</H3>
+
+
+<P class="style2">Color is a powerful tool, but it must never be used as the sole indicator
+  of the meaning or status of any element. For example, a red bar indicating
+  an error can be used if it is accompanied by additional information, such as
+  an icon with a unique shape or static text. </P>
+<UL class="style2">
+  <LI>Choose a default color set that consists of contrasting colors 
+      that work for users with the most common forms
+    of color blindness.
+  <P> The following URLs point to helpful information on common types of color
+    blindness and an online color blindness checker. </P>
+  <UL>
+    <LI> Color blindness information: <A href="http://www.tracecenter.org/world/web/#dis_web_use">http://www.tracecenter.org/world/web/#dis_web_use</A></LI>
+    <LI> Online color blindness test tool: <A href="http://www.vischeck.com/vischeck/vischeckURL.php">http://www.vischeck.com/vischeck/vischeckURL.php</A></LI>
+  </UL>
+</UL>
+
+
+
+
+<H3 class="style2"><A name="D-4.3"></A>D-4.3 Accommodate the Use of Larger Font Sizes</H3>
+
+<P class="style2">As web applications become more complex, designing to allow for an enlarged
+  font size becomes more difficult. </P>
+<UL class="style2">
+  <LI> All web applications must work correctly with a font size that is double
+    the platform's standard size.</LI>
+</UL>
+<UL class="style2">
+  <P>Truncation of text and other elements is allowable,
+    provided that the meanings
+    of the elements are maintained and that all functionality is usable. </P>
+  <P>When the browser does not properly manage fonts that are double the standard
+    size, you must make changes that allow larger fonts to work correctly.
+    Many designs are acceptable, as long as this "double standard size" requirement
+    is met. A common problem occurs when the application uses a navigation frame
+    that does not allow scrollbars. The frame could be made resizable, or
+    empty space could be provided in the frame to accommodate the expanded
+    text.
+  </P>
+</UL>
+<UL class="style2">
+
+  <LI> Test the application to ensure that it is usable with double-sized
+    fonts.</LI>
+
+  <P> To determine the standard font size, you must first find all the dialog pages
+    and control panels that affect font specifications. (These panels are the
+    same as those listed in <A href="D-accessibility.html#font-control-panels">D-4.1 Respect the
+    User's Preference Settings</A>.) Then, set all the font size options to
+    standard settings such as "normal," "medium," "12 points," 
+    "12 pixels," or "100%," as
+    appropriate for each option. Once you have set the font size to the standard
+    size, change the document settings by finding the font size options that
+    directly affect the browser, and select a font size that is approximately
+    double the standard size (such as "24" or "Largest").</P>
+</UL>
+<P class="style2">
+
+
+
+<H2 class="style2"><a name="D-5"></a>D-5 Style Sheets</H2>
+
+
+
+<P class="style2">Style sheets provide the developer and user alike with greater flexibility in
+  the visual presentation of the application. When properly utilized in the application,
+  they allow the developer to define the default look of the application.
+  They also provide the user with a method of
+  changing and fine tuning many more property settings than are available in the
+  browser's property page. This allows a user with a visual impairment to
+  set values that make the application usable for him or her. </P>
+<UL class="style2">
+  <LI> Define the format, size, and color of all page elements using a style
+    sheet, wherever possible. 
+  <P></P>
+  </LI>
+
+  <LI> Test Sun web applications with page colors and fonts overridden
+    with user preferences. Verify that the applications
+    are still usable with colors and fonts specified by
+    the user.
+  <P> Complete this test in conjunction with the tests highlighted in <A href="D-accessibility.html#D-4.1">D-4.1
+      Respect the User's Preference Settings</A> and <A href="D-accessibility.html#D-4.3">D-4.3
+      Accommodate the Use of Larger Font Sizes</A>. </P>
+  <P>Style sheets provide many features beyond the specification of fonts and
+    colors. These features are implemented differently in different browsers,
+    and they must be used with caution. The choice of style sheet features used
+    in an application is primarily a choice based on which browsers are supported
+    by that application.</P>
+  </LI>
+</UL>
+<P class="style2">
+
+<H2 class="style2"><a name="D-6"></a>D-6 Dynamic HTML</H2>
+
+<P class="style2"><I>Dynamic HTML</I> (DHTML) is a generic term that encompasses any markup
+  that modifies the contents of a browser without contacting the server. The
+  term is not rigorously defined and, in practice, relates only to scripting
+  and layers. </P>
+
+<P class="style2">Content generated dynamically in the web page versus being generated by the
+  server is a problem because the new content is transparent to screen readers
+  and smart screen magnifiers. No events are sent out to notify the assistive
+  technology that a change in the page's appearance has occurred.
+</P>
+
+
+
+<H3 class="style2"><a name="D-6.1"></a>D-6.1 Using JavaScript More Accessibly</H3>
+
+
+<P class="style2">Web applications are heavily dependent upon scripting, and the only language
+  recommended for use in Sun's products is the 
+  JavaScript<SUP><FONT size=-2>TM</FONT></SUP> language. The W3C suggests that
+  scripting be avoided. However, doing so is impossible when you are developing
+  a web-based application. Given the need for such applications, these guidelines
+  help explain how to utilize the JavaScript language in an accessible manner. </P>
+
+<UL class="style2">
+  <li> JavaScript methods referenced in an 
+    <span class="style6">&lt;A&gt;</span> tag
+    must have a meaningful name.</li>
+  <P> The names of these methods are presented to users in the status bars of
+    some browsers and are read aloud to users of screen readers. Because this
+    name is presented to users, it should be considered a public interface and
+    named accordingly.</P>
+</UL>
+<UL class="style2">
+  <LI> All scripts that utilize mouse-related event handlers must provide a 
+    keyboard-accessible method that allows the user to perform the same action.
+  </LI>
+  <P> There are many ways to provide this functionality, and it is not necessary
+    to make every script accessible. For example, the functionality of pop-up
+    menus that appear on a mouseover can be made available as redundant navigation
+    links at the bottom of the page, or by using an 
+    <SPAN class="style6">onKeyPress()</SPAN> event
+    handler.</P>
+</UL>
+
+<P class="style2">More information on developing accessible scripts is provided by the Access
+  Board, the authors of the Section 508 rule, at <A href="http://www.access-board.gov/sec508/guide/1194.22.htm#(l)">http://www.access-board.gov/sec508/guide/1194.22.htm#(l)</A>.
+</P>
+
+<P class="style2">JavaScript and the Java<SUP><FONT size=-2> TM</FONT></SUP> programming
+  language are completely separate entities. Java applets are not covered by
+  these JavaScript requirements.
+</P>
+<P class="style2">The use of <B>layers in HTML</B> is becoming more common, but very 
+  few accessibility
+  guidelines exist regarding their use.</P>
+<H3 class="style2"><A name="D-6.2"></A> D-6.2 Servlets and JSPs</H3>
+<P class="style2">Technically speaking, servlets and JSPs (Java Server Pages) are not dynamic
+  content. However, they run on the server and send HTML to the browser
+  for display. JSPs and Servlets must be constructed such that the HTML generated by
+  them meets all the requirements specified in Section 508 and this
+  appendix.
+</P>
+
+
+<H2 class="style2"><A name="D-7"></A> D-7 Keyboard Navigation</H2>
+
+<H3 class="style2"><a name="D-7.1"></a> D-7.1 Application Content Must Be Fully Keyboard Navigable</H3>
+
+
+
+<P class="style2">Many users cannot use the mouse, so all web applications must be usable solely
+  by using the keyboard. </P>
+<UL class="style2">
+  <LI>Programmatically set the initial input focus on the most 
+   appropriate form element on the page.</LI>
+  This ensures the focus is not placed in an area that permanently holds the 
+  focus, causing the application to be unusable with the keyboard.
+  Follow these guidelines regarding
+  focus management:
+  <UL>
+    <LI> Place focus on the first form element when the user first visits a page.</LI>
+    <LI> When the user returns to a page, place the focus on the element
+         that had the focus when the user left the page.
+    </LI>
+    <P></P>
+  </UL>
+  <LI> Test the application to verify that all the application's active elements
+    are reachable through use of the keyboard.</LI>
+
+  <P> Utilize the Tab key to perform this test. Verify that the visual indication
+    moves from element to element and is never lost. </P>
+
+  <LI> Set the HTML <SPAN class=style6>&quot;TABINDEX</SPAN>&quot; attribute on all 
+       elements in a page if:</LI>
+  <UL>
+    <LI>The focus traversal order is strange or illogical. The
+      <SPAN class=style6>HTML &quot;TABINDEX</SPAN>&quot; attribute allows
+      the developer to force a reasonable ordering of the input focus.
+      <P></P>
+    </LI>
+
+    <LI>Any elements are missed in the keyboard navigation test 
+      previously mentioned.
+    </LI>
+    <p> The following HTML elements support the 
+      <span class=style6>HTML &quot;TABINDEX</span>&quot; attribute: 
+    <blockquote>
+        <span class="style6">&lt;A&gt;</span>, 
+        <span class="style6">&lt;AREA&gt;</span>, 
+        <span class="style6">&lt;BUTTON&gt;</span>, 
+        <span class="style6">&lt;INPUT&gt;</span>,         
+        <span class="style6">&lt;OBJECT&gt;</span>, 
+        <span class="style6">&lt;SELECT&gt;</span>,
+        and 
+        <span class="style6">&lt;TEXTAREA&gt;</span>.   
+    </blockquote>  
+    <P>This URL provides more guidance on how to use the 
+       <SPAN class=style6>HTML &quot;TABINDEX&quot;</SPAN> attribute: 
+       <BR>
+         
+<A href="http://www.w3.org/TR/REC-html40/interact/forms.html#adef-tabindex">http://www.w3.org/TR/REC-html40/interact/forms.html#adef-tabindex</A>.
+    </P>
+  </UL>
+</UL>
+<P class="style2">Important differences exist in how effectively web browsers support
+  keyboard navigation. For example, some versions of Netscape don't allow navigation
+  of all links in a page, even if the page is defined using proper HTML
+  markup. Other browsers do not support keyboard navigation of frames very well.
+  If the web application works well with the keyboard in at least one browser,
+  then the application is meeting the keyboard navigation requirements.  </P>
+
+
+<H3 class="style2"><a name="D-7.2"></a>D-7.2 Provide a Method for Skipping Repetitive Navigation Links</H3>
+
+
+<P class="style2">Web content frequently includes regions on web pages devoted solely to 
+  site navigation, and these regions are frequently called <I>navigation bars</I>.
+  These regions are typically located at the edges of the main content. The methods
+  typically provided for skipping over these regions are to <B>1)</B> place the
+  navigation links in a separate frame (for example, a table of contents
+  frame) or <B>2)</B> to
+  provide a link at the beginning of the navigation bar that, when activated, moves
+  the input focus to the first element after the navigation region. Either method
+  is acceptable, as long as it meets the following guidelines. </P>
+<UL class="style2">
+
+  <LI> Provide a skipping method if navigation controls are located at the top and/or
+    left side of the main content.
+
+  <P> The application's right and bottom navigation bars don't usually need to
+    provide a skipping method because their content is typically presented by
+    the user's assistive technology after the application's main content has
+    been presented to the user. 
+  </P>
+  </LI>
+
+  <LI> Navigation regions provided in their own frame must meet the guidelines
+    in <A href="D-accessibility.html#D-3.3">D-3.3 Make the Function of a Frame's
+    Content Clear</A>.
+  </LI>
+
+  <P></P>
+
+  <LI> Navigation regions that contain five or more navigation links and are in
+    the same frame as the application's main content must utilize one of the
+    following "skip link" methods.
+  </LI>
+
+  <p> Both methods are invisible to the sighted user, take up no screen real
+    estate, and are visible to the user's assistive technology. </p>
+  <ul>
+    <p></p>
+    <li> Use a transparent image with <span class=style6>HTML &quot;ALT&quot;</span> text:<br>
+        <span class="style6">
+        &lt;a href="#skip"&gt;<br>
+        &lt;img src="1-pixel-transparent.gif" alt="Skip to main content"&gt;<br>
+        &lt;/a&gt;
+        <br><br>
+        &lt;!-- Repetitive navigation links --&gt;
+        <br><br>
+        &lt;a name="skip"&gt;&lt;/a&gt;
+        </span>
+    </li>
+
+    <p></p>
+    <p></p>
+
+    <li> Use an empty link with <span class=style6>HTML &quot;TITLE&quot;</span> text:<br>
+        <span class="style6">
+        &lt;a href="#skip" title="Skip to main content"&gt;&lt;/a&gt;
+        <br>
+        <br>
+        &lt;!-- Repetitive navigation links --&gt;
+        <br><br>
+        &lt;a name="skip"&gt;&lt;/a&gt;
+        </span>
+  </ul>
+  <p></p>
+
+
+  <LI> Applications providing both top and left pane navigation should utilize the
+    following strategy.</LI>
+  <UL>
+    <LI> Provide two skip links before the first link in the top region. 
+     The links should contain
+      the following <SPAN class=style6>HTML &quot;ALT</SPAN>&quot; or 
+      &quot;TITLE&quot; text:
+      <BLOCKQUOTE>
+      "Skip link #1: to navigation tree"<BR>
+      "Skip link #2: to main content"
+    </BLOCKQUOTE>
+    </LI>
+
+    <LI> Provide one skip link before the first link in the side region. 
+     The link should contain
+      the following <SPAN class=style6>HTML &quot;ALT</SPAN>&quot; or &quot;TITLE&quot; text: </LI>
+    <UL>
+      "Skip link: to main content"
+    </UL>
+  </UL>
+</UL>
+<p class="style2">
+In general, always identify the location the skip link will jump to after the colon (for example, 
+"to navigation tree", "to form", "to main content").
+</p>
+
+
+<H2 class="style2"><a name="D-8"></a>D-8 Product Documentation</H2>
+
+
+
+
+<H3 class="style2"><a name="D-8.1"></a>D-8.1 Product Documentation Must Be Accessible</H3>
+
+
+
+<P class="style2">The product might be unusable by users with disabilities if the documentation
+  isn't accessible. If the documentation isn't accessible, then the application
+  as a whole does not meet the Section 508 requirements. </P>
+<H3 class="style2"><a name="D-8.2"></a>D-8.2 Include Accessibility Information in Application Documentation</H3>
+
+
+
+<P class="style2">An application becomes easy to learn for users with disabilities when it includes
+  information such as how to use the application with the keyboard, how to change
+  the colors used by the application, and how to change the font sizes used by
+  the application. Documentation should, at a minimum:
+</P>
+
+<UL class="style2">
+  <LI> Include descriptions of features that directly affect
+      accessibility.
+  </LI>
+  <P> Individual products should fully document their own user interfaces, including
+    keyboard navigation and shortcuts, command-line interfaces, and so on, 
+    in the product's documentation. This information can appear
+    in the user guide, online help, man pages, or in any location where it
+    can be easily found.
+  </P>
+  <P>The documentation must also include any features specifically aimed at supporting
+    users with disabilities. These features must be fully documented and must
+    be located in a separate accessibility chapter or appendix. Examples
+    of this type of information are built-in magnification for 
+    low-vision users and enhancements to the product that improve the
+    behavior of a third-party screen reader.
+  </P>
+  <LI> Identify the application's primary keyboard navigation and shortcut keys
+    in its online help.
+</LI>
+
+  <P> These features must be documented, but it is not necessary to call
+    them out as accessibility features. This is because keyboard commands 
+    are utilized by many people who have no serious disability.
+  </P>
+
+  <LI> Explain how to change or add a style sheet.</LI>
+  <P> See <A href="D-accessibility.html#D-5">D-5 Style Sheets</A> for more information
+    on the usage of style sheets in an application. </P>
+
+  <LI> Provide an entry in the documentation's table of contents that
+    refers to the accessibility section. This is not required when
+    no accessibility section exists.
+  </LI>
+</UL>
+
+
+
+<H2 class="style2"><a name="D-9"></a>D-9 Web Page Accessibility Checkers</H2>
+
+
+<P class="style2">Web page accessibility checkers are designed to test pages from a variety
+  of different accessibility perspectives, such as Section 508, color blindness,
+  and macular degeneration. The checkers of most general usefulness to web 
+  content developers
+  are those that evaluate content against Section 508's web requirements
+and the W3C's accessibility guidelines. <span class="style7"></span></P>
+<P class="style2"><span class="style2">For web page accessibility checking, the tool InFocus is very useful. T</span>his tool was chosen over others because it did a better job of evaluating tables and nontext elements than other similar tools. However, as with all accessibility checkers, it has its weaknesses. For example, analysis of JavaScript code is still rudimentary and a certain amount of human follow-up is often necessary to verify a potential problem. It cannot &quot;certify&quot; that a web application meets Section 508 requirements. These weaknesses exist in all web page accessibility checkers because accessibility, like usability, cannot be verified through a fully automated process.<br>
+<P class="style2">
+<P class="style2">
+
+<p>&nbsp;</p>
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <span class="currentchapter">Appendices</span>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body>
+</html>

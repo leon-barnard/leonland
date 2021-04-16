@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>1&nbsp;Introduction - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="01-introduction.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <span class="currentchapter">1&nbsp;Introduction</span>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+<a name="skipnav"></a>
+
+<p class="toc-level0"><a href="01-introduction.html#1"><b>1 Introduction</b></a></p>
+<p class="toc-level1"><a href="01-introduction.html#1.1">1.1 Icons Used in These Guidelines </a></p>
+<p class="toc-level1"><a href="01-introduction.html#1.2">1.2 Application Structure</a></p>
+<p class="toc-level1"><a href="01-introduction.html#1.3">1.3 Resources for Application Developers</a></p>
+<p class="toc-level1"><a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.1">1.4.1 Approvals</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.2">1.4.2 Legal</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.3">1.4.3 Branding</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.4">1.4.4 Mastheads</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.5">1.4.5 Content Page Titles and Other UI Text</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.6">1.4.6 Visual Elements and Line Graphs</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.7">1.4.7 Accessibility</a></p>
+<p class="toc-level2"><a href="01-introduction.html#1.4.8">1.4.8 Globalization</a></p>
+<p class="toc-level1"><a href="01-introduction.html#1.5">1.5 To Give Feedback<br>
+</a></p>
+
+<h1><a name="1"></a> 1 Introduction </h1>
+
+<p><span class="style1"> </span>
+  The purpose of this style guide is to facilitate consistency in the user interface
+
+(UI) design of <span class="style2">Sun's</span> browser-based<span class="style1"><span class="style2"><em> applications</em>. Note that there also exists a set of guidelines, the Sun.com Web Design Standards (Pacifico) guidelines available at <a href="http://www.sun.com/webdesign/index.html">http://www.sun.com/webdesign/index.html</a>, designed primarily for web <em>sites</em>. Although it is clear that the Sun.com Web Design Standards (Pacifico) are designed primarily for web <em>sites</em>, and the Web Application Guidelines (SWAED) are designed for web-based <em>applications</em>, it can, at times, be difficult to determine which set of guidelines to use. For example, a web site can provide access to complex application functionality. For more information about when to use each set of guidelines, see Sun Design Guidelines - Web Style Guides at <a class="moz-txt-link-freetext" href="http://xdesign.sfbay.sun.com/DecisionTree/choosing-swaed-pacifico.html">http://xdesign.sfbay.sun.com/DecisionTree/choosing-swaed-pacifico.html</a>. </span></span><span class="style2"><br>
+<br>
+The guidelines presented here, in conjunction with the components in the Sun Common UI Component Library (in open source, the Project Woodstock components) using the Sun Theme, enable teams to deliver consistent and recognizable Sun branding for applications bearing the Sun logo. The guidelines and components offer visual designers, usability engineers, and software developers the necessary tools for delivering usable and Sun-branded browser-based applications.<br>
+<br>
+If a company will be putting its own logo on a product we provide them, the user interface should be adjusted to reflect that company's brand. </span><br>
+<br>
+By following the guidelines outlined here, you can obtain a significant level of consistency both within and among  your Sun browser-based applications.<br>
+<br>
+This style guide is intended to be a concise and inclusive set of guidelines for designing browser-based Sun applications. These guidelines are intended for external products, but may be used for internal applications as well.<br>
+<br>
+This style guide cannot: 
+<ul>
+  <li>Answer or solve all your application design questions and problems</li>
+  <li>Substitute for the involvement of Human Computer Interaction (HCI) and visual design specialists in your application design and development efforts</li>
+  <!--  <li class="style2"> Substitute for having a user interface review, such as <s>the required one by</s> <span class="style1">one performed by</span> the System Management UI Review Board <span class="style1">(UIRB)</span>, <a class="moz-txt-link-freetext" href="http://uirb.east.sun.com">http://uirb.east.sun.com</a><s>, if your application is a system management application</s>. <span class="style1">See the UIRB web site to determine if your application is required to be reviewed by the UIRB.</span></li> -->
+  <li class="style2">Substitute for having a user interface review, such as one performed by the User Interface Review Board (UIRB), <a href="mailto:uirb@sun.com">uirb@sun.com</a>. See the UIRB web site, <a class="moz-txt-link-freetext" href="http://uirb.east.sun.com">http://uirb.east.sun.com</a>, to determine if your application is required to be reviewed by the UIRB.</li>
+</ul>
+<p>To leverage off of existing standards, these guidelines were based on the Java Look and Feel Design Guidelines (JLF style), where appropriate. These guidelines address the gaps that remain whenever JLF style is inappropriate or not applicable to browser-based applications. <span class="style2">The Java Look and Feel Design Guidelines (JLF style) were designed specifically for applications providing non-web-based graphical user interfaces. </span>The JLF style guidelines are available at <a href="http://java.sun.com/products/jlf/">http://java.sun.com/products/jlf/</a> . <br>
+    <br>
+    <!--  <span class="style3">From Mike's Comments:<br>
+  </span></p>
+<blockquote class="style3" type="cite">ms-6 "...JLF style is inappropriate or not applicable to browser-based <br>
+  applications..." <br>
+  The implication of this statement is that JLF is not for browser-based <br>
+  apps. Could you indicate that in this statement - "Java Look and Feel <br>
+  Design Guidelines (JLF style), which were designed specifically for <br>
+  [what kinds of?] apps" <br>
+  <br>
+</blockquote>
+<span class="style3">I'll probably put " applications with non-web-based graphical user interfaces".&nbsp; Sound OK? </span>
+-->
+  For writing style, follow the guidelines in the Sun Online Help Writer's Guide available at
+  <!---->
+  <a href="http://docs.sfbay/app/docs/doc/819-3157">http://docs.sfbay/app/docs/doc/819-3157</a> and the Sun Editorial Style Guide available at <a href="http://docs.sfbay/app/docs/doc/817-3684">http://docs.sfbay/app/docs/doc/817-3684</a>. In particular, ensure that your use of the common GUI verbs in the table at <a class="moz-txt-link-freetext" href="http://docs.sfbay/app/docs/doc/817-3684/6mj8t1hcm?a=view">http://docs.sfbay/app/docs/doc/817-3684/6mj8t1hcm?a=view</a> conforms to the definitions provided in that table. (See exceptions in <a href="11-help.html#11.1.5">11.1.5 Writing Inline Help</a>.) Additionally, see the Guidelines for User Interface Text at <a class="moz-txt-link-freetext" href="http://reviewme.sfbay.sun.com:8080/UUI/minutes/UI_Text.html">http://reviewme.sfbay.sun.com:8080/UUI/minutes/UI_Text.html</a>
+which provides guidance specifically for text displayed in the user interface.
+<p>These guidelines have been defined with the following goals in mind:</p>
+<ul>
+  <li>Aesthetic visual design </li>
+  <li>Ease of learning and use </li>
+  <li>Support for Sun branding </li>
+  <li>A fluid design that scales gracefully to user preferences and varying browser window sizes </li>
+  <li>Support for several browsers and platforms </li>
+  <li>Accessibility for users with disabilities </li>
+</ul>
+<p> Note that the designs specified in this style guide target screen resolutions of 1024 x 768 or greater and the web browsers listed here: <a href="https://woodstock.dev.java.net/docs/SupportedBrowers.htm">https://woodstock.dev.java.net/docs/SupportedBrowers.htm"</a>. <br>
+    <br>
+  Although these guidelines work at screen resolutions under 1024 x 768, and might display reasonably when using non-targeted web browsers, the designs are not optimal when used under these conditions.</p>
+<p>Multiple usability evaluations done from March 2001 to the present have informed the designs for navigation, wizards, properties, table manipulation and other user interface elements discussed in these guidelines. Usability testing on the designs to be included in future guidelines will continue, as needed.</p>
+<p><span class="style1"><span class="style2"><strong>Implementing web applications using these guidelines </strong></span></span></p>
+<p><span class="style1"><strong> </strong></span><img title="Implementation Information" height=14 alt="Implementation Information"  src="Guidelines_Icons/Implementation_Info.jpg" width=16 > To produce guidelines-compliant web applications, see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>. </p>
+<p><img title="Implementation Information" height="14" alt="Implementation Information" src="Guidelines_Icons/Implementation_Info.jpg" width="16"> Because the images in the guidelines are for illustration purposes only, do not use them to obtain color values and font specifications. <br>
+    <br>
+    <img title="Implementation Information" height="14" alt="Implementation Information" src="Guidelines_Icons/Implementation_Info.jpg" width="16"> The correct colors, font sizes, and styles are provided by the <span class="style3"></span> <span class="style2">Sun Common UI Component Library (in open source, the Project Woodstock components</span>) and are specified by cascading style sheets appropriate for each browser. <br>
+    <br>
+    <img title="Implementation Information" height="14" alt="Implementation Information" src="Guidelines_Icons/Implementation_Info.jpg" width="16"> For HTML examples and specifications, see <a href="sample-code/index.html">Appendix B, Examples and Specifications</a>. However, <span class="style3"></span>Sun recommends building web applications using the Sun Common UI Component Library. (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>).<span class="style2"><br>
+    <br>
+  Also, note that product names used in the images in these guidelines do not necessarily reflect actual products and should not be interpreted as such. </span><span class="style1"><span class="style2"><span class="style3"><strong><br>
+  </strong></span></span></span><span class="style1"><span class="style2"><strong><br>
+  </strong>For a list of authors and contributors to the Web Application Guidelines, past and present, see <a href="contributors.html">contributors.html</a>. <strong><br>
+  <br>
+  Themes and Images</strong><br>
+  <s><br>
+  </s></span><span class="style2">The components in the Sun Common UI Component Library (in open source, the Project Woodstock components) have been architected such that they can reference style information from an entity called a <em>theme</em>. A theme can be designed to specify such information as colors, text attributes, and component layout information. This information can be used to reflect a company's brand. The Sun Common UI Component Library uses the Sun Theme to convey the Sun brand.<br>
+  <em> <br>
+  </em></span><span class="style2">The images in these guidelines reflect the Sun Theme.</span> </span>
+  <br>
+<h2><a name="1.1"></a> 1.1 Icons Used in These Guidelines</h2>
+
+<p>Throughout this style guide, icons call your attention to the look-and-feel 
+  design guidelines and to tips for implementing them.</p>
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Indicates 
+
+  required guidelines. These guidelines must be followed when you create your 
+
+  application. (Note that 
+ these used to be called <em>requirements</em> (as opposed to 'required guidelines') in earlier releases of this guidelines document.) </p>
+
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Indicates <span class="style2">advised guidelines</span>. These guidelines should be followed, if 
+  possible, in your application. Sometimes, these guidelines explain when following 
+  them is most appropriate or what usability trade-offs exist. (Note that 
+ these used to be called <em>recommendations</em> in earlier releases of this guidelines document.) </p>
+
+<p><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+  Indicates implementation tips for the guidelines. These tips are used by application 
+  developers.</p>
+
+<h2><a name="1.2"></a> 1.2 Application Structure </h2>
+
+<p><span class="style2">No single application structure is clearly superior to the others. Each style has advantages and disadvantages which make it suitable  for particular situations. The trade-offs are numerous and complex.   Due to this, and the need to support a wide variety of project  needs, the guidelines strive to be flexible enough to support a  variety of application structures. </span> </p>
+
+<h2><a name="1.3"></a> 1.3 Resources for Application Developers</h2>
+
+<p>If you are developing an application, you should use the <font color="#000000">Sun Common UI Component Library (in open source, the Project Woodstock components)</font>, which will produce guidelines-compliant HTML. Components have been implemented for <span class="style2">most of</span> the elements covered in these guidelines. See <a href="A-component-library-info.html">Appendix A, Component Library Information</a>.</p>
+
+<p><font color="#000000">These guidelines specify the interface design and behavior 
+  for these components and describe how the elements should be used together to ensure 
+  a consistent and cohesive end product. The appearance of these designs is controlled 
+  through cascading style sheets. These style sheets are, in turn, used by the 
+  components. </font></p>
+
+<p>If your application cannot be built using the <font color="#000000">component library</font>, see <a href="E-pixel-layout.html">Appendix 
+E, Pixel Specifications</a>  to get information about the layout of many of the elements in these guidelines.</p>
+
+<h2><a name="1.4"></a> 1.4 Resources for Application Designers</h2>
+<p> This section includes information and links to internal web sites that can provide useful details that extend beyond the scope of these guidelines.  <br>
+  <br>
+In addition, for designs that may need to be extended beyond the basic usage of the guidelines, approvals may be needed.  This section identifies these situations and provides information about obtaining the necessary approvals. 
+<h3><a name="1.4.1"></a>1.4.1 Approvals</h3>
+  <br>
+There may be times when the guidelines are extended and approvals are required by the UIRB (<span class="style1"><a href="mailto:uirb@sun.com">uirb@sun.com</a></span>). <span class="style2">See the UIRB web site, <a class="moz-txt-link-freetext" href="http://uirb.east.sun.com">http://uirb.east.sun.com</a>, to determine if your application is required to be reviewed by the UIRB.</span><br>
+<br>
+Certain legal notices within an application must be approved by Sun's Legal Department. See the next section for details. <span class="style2"><br>
+<h3><a name="1.4.2"></a>1.4.2 Legal</h3>
+<span class="style5"><br>
+For detailed instructions on how to develop a custom legal notice for a Version page (see <a href="18-version.html#18.1.5">18.1.5 Legal Notice</a>), go to <a href="http://sunlegal.central.sun.com/Legal/Legal_Notices">http://sunlegal.central.sun.com/Legal/Legal_Notices.</a> Each development team is responsible for composing&nbsp;its own text. When complete, the&nbsp;legal notice comes in varied lengths for different purposes. The short or long form of the <font color="#000000">legal notice or proprietary rights notice (PRN)</font> may be used on the Version Page. Select the one that is most appropriate for your application. <strong>Note:</strong> The text for the legal notice must be approved by a Sun legal representative. To obtain contact information for&nbsp;your division's legal department, go to <a href="http://sunlegal.central.sun.com/Legal/Legal_Ops/sunlegalweb/Legal_Directory/legal.dir.html">http://sunlegal.central.sun.com/Legal/Legal_Ops/sunlegalweb/Legal_Directory/legal.dir.html</a>.</span></span><strong><br>
+<h3><a name="1.4.3"></a>1.4.3 Branding</h3>
+</strong><span class="style2"><br>
+General brand guidelines may be obtained through the brand extranet at: <a href="https://brand.sun.com">https://brand.sun.com</a>. For information about Sun logos, see: <a href="http://logos.sun.com/">http://logos.sun.com/</a>.</span><strong><span class="style2"><br>
+</span></strong>
+  <h3><a name="1.4.4"></a>1.4.4 Mastheads</h3>
+  <br>
+  There are a number of ways in which the application masthead may be extended. When extended in these ways, approval from the <span class="style1"><span class="style2">UIRB,</span> <a href="mailto:uirb@sun.com"> uirb@sun.com</a><span class="style2">,</span></span> is required. The next three guidelines discuss possibilities for extending the masthead. <br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In the utility bar of the main window masthead (see <a href="04-masthead.html#4.1.1">4.1.1 Utility Bar</a>), if providing your own custom buttons aside from the required buttons, <span class="style1">
+  <!-- and your product requires a review by the User Interface Review Board (UIRB), -->
+  </span> you must first contact <span class="style1"><span class="style2">the UIRB,</span> <a href="mailto:uirb@sun.com"> uirb@sun.com</a><span class="style2">, for approval</span></span><span class="style2">.</span><br>
+  <br>
+<span class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In the User Name, Current Role, and Management Server Information section of the main window masthead (see <a href="04-masthead.html#4.1.2">4.1.2 User Name, Current Role, and Management Server</a>), before making the user information a link, contact the <s></s> UIRB, <span class="style1"><a href="mailto:uirb@sun.com">uirb@sun.com</a></span>, to confirm that the planned application-specific behavior is acceptable. <br>
+  <br>
+  <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In the Status Area section of the main window masthead (see <a href="04-masthead.html#4.1.4">4.1.4 Status Area</a>), if you need to use the status area for an application-specific purpose, you must first contact the UIRB, <a href="mailto:uirb@sun.com">uirb@sun.com</a>, for approval.  <br>
+  <br>
+  The masthead is designed to display 
+a one-line product name. In the rare situation where a product name needs two lines, follow the guideline below. <br>
+  <br>
+</span><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> <span class="style2">In the Product Name section of the main window masthead (see <a href="04-masthead.html#4.1.3">4.1.3 Product Name</a>),</span> if your product name does not fit onto one line, contact the <span class="style2">Sun Web Application Experience Design (SWAED) core team at <a href="mailto:swaed@sun.com">swaed-core@sun.com</a></span>.  <span class="style2"><span class="style3"><br>
+  <h3><a name="1.4.5"></a>1.4.5 Content Page Titles and Other UI Text</h3> 
+  </span></span>
+<p class="style2"><span class="style3">    </span><span class="style2">For writing style for content page titles, constructing links, and writing other text for the UI, follow the guidelines in the Sun Editorial Style Guide available at <a href="http://docs.sfbay/app/docs/doc/817-3684">http://docs.sfbay/app/docs/doc/817-3684</a>. In particular, ensure that your use of the common GUI verbs in the table at <a class="moz-txt-link-freetext" href="http://docs.sfbay/app/docs/doc/817-3684/6mj8t1hcm?a=view">http://docs.sfbay/app/docs/doc/817-3684/6mj8t1hcm?a=view</a> conforms to the definitions provided in that table. (See exceptions in <a href="11-help.html#11.1.5">11.1.5 Writing Inline Help</a>.)  Additionally, see the Guidelines for User Interface Text at <a href="http://infobot.sfbay/%7Epegs/ui_text_style.txt">http://infobot.sfbay/~pegs/ui_text_style.txt</a> which provides guidance specifically for text displayed in the user interface.<strong> </strong><br>
+    <br>
+    For information about writing online help, see the Sun Online Help Writer's Guide <a class="moz-txt-link-freetext" href="http://docs.sfbay/app/docs/doc/819-3157">http://docs.sfbay/app/docs/doc/819-3157</a>. To ensure that the help provided by your application is accessible, follow the applicable guidelines in <a href="D-accessibility.html">Appendix D, Accessibility</a> and the guidelines in &quot;Designing Accessible Online Help", available at <a href="http://infobot.eng.sun.com/infodev/Teams/accessibility/sun/doc/online_guidelines.pdf"> http://infobot.eng.sun.com/infodev/Teams/accessibility/sun/doc/online_guidelines.pdf</a>. </span></p>
+<span class="style2"><strong>
+<h3><a name="1.4.6"></a>1.4.6 Visual Elements and Line Graphs</h3>
+</strong></span><strong><br>
+  </strong><span class="style3"><span class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> All icons not available from <a href="visual_graphics/graphics.zip">graphics.zip</a> must be reviewed by brand (<a href="https://brand.sun.com">https://brand.sun.com</a>) and the UIRB (<a href="mailto:uirb@sun.com">uirb@sun.com</a>) before they may be used in a system management application.</span></span><br>
+<strong><br>
+<img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> For the color palette of a line graph (see <a href="08-complex.html#8.6.1">8.6.1 Color Palette</a>), if you need to use alternate palette colors, <span class="style2">please inform the Sun Web Application Experience Design (SWAED) core team at <a href="mailto:swaed@sun.com">swaed-core@sun.com</a>.</span><span class="style2"><br>
+  </span>
+  <h3><a name="1.4.7"></a>1.4.7 Accessibility</h3>
+  <br>
+  Besides enabling users with disabilities to use your product, section 508 of the Federal Rehabilitation Act mandates that all products used by U.S. government agencies must provide "comparable access" for people with disabilities. <br>
+  <br>
+The types of disabilities that should be considered include visual, hearing, physical, and cognitive. <br>
+  <br>
+For more information on Section 508 requirements, assistive 
+technologies, and links to technical resources, see this internal Sun 
+site: Sun-wide Accessibility Program Office at 
+<a class="moz-txt-link-freetext" href="http://accessibility.eng.sun.com">http://accessibility.eng.sun.com</a> <br>
+<br>
+To access User Friendlier 508, go to <br>
+<a class="moz-txt-link-freetext" href="http://solaris.eng.sun.com/accessibility/508_friendly/index.html">http://solaris.eng.sun.com/accessibility/508_friendly/index.html</a> <br>
+For Labels/Form element information see: <a href="http://solaris.eng.sun.com/accessibility/508_friendly/preamble.html#1194.22n">http://solaris.eng.sun.com/accessibility/508_friendly/preamble.html#1194.22n</a>.<br>
+For Skip Navigation information see: <a href="http://solaris.eng.sun.com/accessibility/508_friendly/preamble.html#1194.22o">http://solaris.eng.sun.com/accessibility/508_friendly/preamble.html#1194.22o</a>.<br>
+<br>
+<br>
+The following URL provides a pointer to guidance being provided to Sun technical writers for how to construct a useful description of a nontext element. The general guidance it provides is useful because it provides the application developer with enough guidance to extrapolate on the type of information to include in the descriptions for the application's nontext elements. <br>
+More information on writing useful alternate descriptions can be found at <a class="moz-txt-link-freetext" href="http://infobot.eng.sun.com/infodev/Teams/accessibility/sun/doc/merged_508.pdf">http://infobot.eng.sun.com/infodev/Teams/accessibility/sun/doc/merged_508.pdf</a>. <br>
+<br>
+Data tables are a commonly used user interface element for conveying information to users.  For more information on how to use table attributes, go to
+       <a href="http://accessibility.eng.sun.com/site.topics/writer/tableguidelines.html">http://accessibility.eng.sun.com/site.topics/writer/tableguidelines.html</a>.<br>
+<br>
+All Sun products must ship with documentation that meets Sun's 508 Documentation policy.&nbsp; The policy identifies what requirements must be met to ensure the application is providing accessible HTML or accessible PDF documentation. Sun's 508 Documentation policy is at <a class="moz-txt-link-freetext" href="http://accessibility.eng.sun.com/site.topics/section508/sun-policy.html#bigdoc">http://accessibility.eng.sun.com/site.topics/section508/sun-policy.html#bigdoc</a>. <br>
+<br>
+For web page accessibility checking, the tool InFocus is very useful. This is a web-based tool for which the APO has purchased a site license. The tool was deployed in early March 2003 and is available for use by any Sun employee. A pointer to InFocus is provided on the APO's web site at <a class="moz-txt-link-freetext" href="http://accessibility.eng.sun.com">http://accessibility.eng.sun.com</a>. <br>
+<br>
+For more information see <a href="D-accessibility.html">Appendix D, Accessibility Requirements</a>. <br>
+<h3><a name="1.4.8"></a>1.4.8 Globalization</h3>
+  <br>
+  Globalization refers to the combined tasks of making an application internationalized (suitable for the global marketplace) and localized (customized for a particular language or region). <br>
+  <br>
+The goal of globalizing software is to make it so that code changes are not needed in order to localize it. This reduces development costs when creating software for a global market. <br>
+  <br>
+Sun has a Big Rule whose intent is to provide a unifying SMI vision for
+product internationalization and localization. The ultimate goal is to
+enable the delivery of fully localized products to our international
+customers. This rule is considered important enough by the Solaris PAC that exceptions 
+must be approved by the CEO. The full text of the Big Rule (along with the schedule) 
+is available at <a href="http://global.eng/Compliance/i18nl10nbigrules.html">http://global.eng/Compliance/i18nl10nbigrules.html</a>.<br>
+<br>
+Sun's internal globalization site is: <a href="http://global.eng.sun.com/"><font face="monospace">http://global.eng.sun.com</font></a>, and it includes a compliance matrix <a href="http://global.eng.sun.com/compliance/"><font face="monospace">http://global.eng.sun.com/compliance</font></a>.<br>
+<br>
+For more information see <a href="H-globalization.html">Appendix H, Globalization</a>.<br>
+
+<h2><a name="1.5"></a> 1.5 To Give Feedback </h2>
+
+<p>If you would like to give feedback on these guidelines, <span class="style2">click the 'Send Feedback' link in the masthead of any page in these guidelines or send email to the Sun Web Application Experience Design (SWAED) core team at <a href="mailto:swaed@sun.com">swaed-core@sun.com</a>.</span></p>
+
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <span class="currentchapter">1&nbsp;Introduction</span>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

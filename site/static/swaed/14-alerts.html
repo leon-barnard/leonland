@@ -1,0 +1,629 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>14&nbsp;Alerts&nbsp;and&nbsp;Messages - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style7 {color: #CC3300}
+.style8 {color: #006600}
+</style>
+</head>
+<body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="14-alerts.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <span class="currentchapter">14&nbsp;Alerts&nbsp;and&nbsp;Messages</span>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="toc-level0"><a href="14-alerts.html#14"><b>14 Alerts and Messages</b></a></p>
+
+<p class="toc-level1"><a href="14-alerts.html#14.1">14.1 Inline Alerts</a></p>
+
+<p class="toc-level2"><a href="14-alerts.html#14.1.1">14.1.1 Example of Information Inline 
+
+  Alert</a></p>
+
+<p class="toc-level2"><a href="14-alerts.html#14.1.2">14.1.2 Example of Error Inline Alert</a></p>
+
+<p class="toc-level2"><a href="14-alerts.html#14.1.3">14.1.3 Example of Warning Inline Alert</a></p>
+
+<p class="toc-level2"><a href="14-alerts.html#14.1.4">14.1.4 Example of Success Inline Alert</a></p>
+
+<p class="toc-level1"><a href="14-alerts.html#14.2">14.2 JavaScript Alerts</a></p>
+
+<p class="toc-level1"><a href="14-alerts.html#14.3">14.3 Full-Page Alerts</a></p>
+
+<p class="toc-level1"><a href="14-alerts.html#14.4">14.4 Alerts Shown in a Pop-Up Window</a></p>
+
+<p class="toc-level1"><a href="14-alerts.html#14.5">14.5 Validation Error Alerts</a></p>
+
+<p class="toc-level2"><a href="14-alerts.html#14.5.1">14.5.1 Validation Error 
+  Messages</a><a href="14-alerts.html#14.5"><font color="#FFFFFF">play Type</font></a></p>
+<p class="toc-level1"><a href="14-alerts.html#14.6">14.6 Choosing the Correct 
+  Alert Display Type</a></p>
+<p class="toc-level1"> 
+
+  <!-- End Document Title Block -->
+
+</p>
+
+<h1><font color="#000000"><a name="14"></a>14 Alerts and Messages</font></h1>
+<p><font color="#000000">Based on the severity or purpose of the message, the 
+  alerts used in browser-based Sun Applications can be categorized into five types:</font></p>
+<table class="info-table" border="1" cellspacing="0" cellpadding="10" width="75%">
+  <tr> 
+    <th class="style2">Alert Type</th>
+    <th><font color="#000000">&nbsp;Icon</font></th>
+    <th><font color="#000000">Description</font></th>
+  </tr>
+  <tr> 
+    <td><font color="#000000"><strong>Information</strong></font></td>
+    <td><p align=center><font color="#000000"><img 
+
+      src="alerts_graphics/info_medium.gif" alt="" width="17" height="17" ></font></p></td>
+    <td><font color="#000000"> An Information alert presents general information 
+      to users. </font></td>
+  </tr>
+  <tr> 
+    <td><font color="#000000"><strong>Warning</strong></font></td>
+    <td><p align=center><font color="#000000"><img 
+
+      src="alerts_graphics/warning_medium.gif" alt="" width="17" height="17" ></font></p></td>
+    <td> <p><font color="#000000">A Warning alert can be used to </font></p>
+      <ul>
+        <li><font color="#000000">warn users about the possible consequences of 
+          a requested action. In this situation, the warning alert may ask users 
+          to confirm or cancel the action.</font></li>
+        <li><font color="#000000">report on the results of an action, if they 
+          may not be expected (for example, when only three of four selected files 
+          were successfully downloaded)</font></li>
+        <li><font color="#000000">report on other types of unexpected situations 
+          such as system conditions (for example, when disk space is running low).</font></li>
+      </ul></td>
+  </tr>
+  <tr> 
+    <td><font color="#000000"><strong>Error</strong></font></td>
+    <td><p align=center><font color="#000000"><img 
+
+      src="alerts_graphics/error_medium.gif" alt="" width="17" height="17" ></font></p></td>
+    <td><font color="#000000"> An Error alert reports system and application errors 
+      to users.</font></td>
+  </tr>
+  <tr> 
+    <td><font color="#000000"><strong>Question</strong></font></td>
+    <td><p align=center><font color="#000000"><img 
+
+      src="alerts_graphics/help_medium.gif" alt="" width="17" height="17" ></font></p></td>
+    <td><font color="#000000">A Question alert asks the user a question, usually 
+      before being able to carry out a requested action. For example, if the user 
+      requests that an action be carried out on an object </font><span class="style2">and</span><font color="#000000"> identifies that 
+      object by specifying search criteria that returns multiple results, a question 
+      alert can be used to ask the user which object within the search results 
+      is the one to be acted upon.</font> </td>
+  </tr>
+  <tr> 
+    <td><font color="#000000"><strong>Success</strong></font></td>
+    <td><p align=center><font color="#000000"><img 
+
+      src="alerts_graphics/success_medium.gif" alt="" width="17" height="17" ></font></p></td>
+    <td><p class="style1"><font color="#000000">A Success alert indicates that 
+        an action has completed successfully. A likely place to see this is in 
+        an inline alert on a wizard Results page, when the action performed by 
+        the wizard has completed successfully. See <a href="13-wizards.html">Chapter 
+        13, Wizards</a>, for more information on wizards. </font></p></td>
+  </tr>
+</table>
+<p><font color="#000000">For a more detailed description of alerts, including 
+  when they should be used, see Chapter 8 of the Java Look and Feel Design Guidelines 
+  at <a href="http://java.sun.com/products/jlf/ed2/book/HIG.Dialogs5.html">http://java.sun.com/products/jlf/ed2/book/HIG.Dialogs5.html</a>.</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  For each alert, provide an icon that indicates its type (icons available from 
+  <a href="02-visual.html#2.4.3">2.4.3 Icons, Glyphs, and Graphics Repository</a>).</font></p>
+<p><font color="#000000">Based on the way they are displayed, the alerts used 
+  in browser-based Sun Applications can be categorized into five </font><span class="style2">display mechanisms:</span></p>
+<ul>
+  <li><span class="style2">An </span><font color="#000000">inline alert on the current page (see <a href="14-alerts.html#14.1">14.1 
+    Inline Alerts</a>):</font></li>
+  <li><span class="style2">A </span><font color="#000000">JavaScript alert</font></li>
+  <li><font color="#000000"><span class="style2">A </span><font color="#000000"></font>full-page alert that displays on an entire browser 
+    page or frame </font></li>
+  <li><font color="#000000"><span class="style17"><span class="style2">A </span><font color="#000000"></font></span>pop-up window </font></li>
+  <li><font color="#000000"><span class="style17"><span class="style2">A </span><font color="#000000"></font></span>validation error alert</font></li>
+</ul>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an alert in one of five ways: Inline alert, JavaScript alert, full-page 
+  alert, pop-up window, validation alert.</font></p>
+<p><font color="#000000">Together, these five </font><span class="style2">alert types</span><font color="#000000"> and five display mechanisms 
+  give us a matrix of 25 cells. Not all of these cells are valid. For instance, 
+  we cannot use the Inline display mechanism for a Question Alert. The following 
+  table shows all the valid combinations of Alert</font><span class="style2"> Types</span><font color="#000000"> and Alert Display 
+  Mechanisms.</font></p>
+  
+<!-- NOTE: The Gray cells (bgcolor) in the table below used to use a lighter gray, #ECE9D8, but was changed to #CCCCCC 9/21/07 when the 
+'Not Valid' cells' background color became pale red -- seems to work better that way. -->
+  
+<TABLE class="info-table" style="COLOR: rgb(153,0,255)"cellSpacing=0 cellPadding=10 width="100%" border=1>
+  <TR bordercolor="#FFFFFF" class="th-center"> 
+    <TD width="12%" bgcolor="#CCCCCC"><font color="#000000"><strong><FONT class="th-center">Display 
+      Mechanism</FONT></strong></font></TD>
+    <TD width="16%" bgcolor="#CCCCCC"><font color="#000000">Information Alert</font></TD>
+    <TD width="17%" bgcolor="#CCCCCC"><font color="#000000">Error Alert</font></TD>
+    <TD width="16%" bgcolor="#CCCCCC"><font color="#000000">Warning Alert</font></TD>
+    <TD width="17%" bgcolor="#CCCCCC"><font color="#000000">Question Alert</font></TD>
+    <TD width="22%" bgcolor="#CCCCCC"><font color="#000000">Success Alert</font></TD>
+  </TR>
+  <TR bordercolor="#FFFFFF" class="info-table"> 
+    <TD bgcolor="#CCCCCC"><font color="#000000">Inline Alert</font></TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style7">Not Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+  </TR>
+  <TR bordercolor="#FFFFFF" class="info-table"> 
+    <TD bgcolor="#CCCCCC"><font color="#000000">JavaScript Alert</font></TD>
+    <TD bgcolor="#FFFFFF"><P align=left class="style8">Valid (use JS alert type: Alert)</P></TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid (use JS alert type: Alert)</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid (use JS alert type: Alert)</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid (use JS alert type: Confirm)</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid (use JS alert type: Alert)</TD>
+  </TR>
+  <TR bordercolor="#FFFFFF" class="info-table"> 
+    <TD bgcolor="#CCCCCC"><font color="#000000">Full-page Alert</font></TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8"> Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+  </TR>
+  <TR bordercolor="#FFFFFF" class="info-table"> 
+    <TD bgcolor="#CCCCCC"><font color="#000000">Pop-up Window</font></TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+  </TR>
+  <TR bordercolor="#FFFFFF" class="info-table"> 
+    <TD bgcolor="#CCCCCC"><font color="#000000">Validation Alert</font></TD>
+    <TD bgcolor="#FFFFFF"> <P align=left class="style7">Not Valid</P></TD>
+    <TD bgcolor="#FFFFFF" class="style8">Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style7">Not Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style7">Not Valid</TD>
+    <TD bgcolor="#FFFFFF" class="style7">Not Valid</TD>
+  </TR>
+</TABLE>
+<p><font color="#000000"><br>
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When a Warning alert is used to confirm a user's action, follow these guidelines:</font></p>
+<ul>
+  <li><font color="#000000">Get right to the point in the heading portion of the 
+    message (for example, &quot;Delete all files?&quot;) Do not begin the message 
+    with &quot;Are you sure you want to...&quot; People may not take the time 
+    to read beyond this introductory phrase before clicking on a button to confirm.</font></li>
+  <li><font color="#000000">Identify the object being acted upon by name, if it 
+    is known (for example, &quot;Delete server xyz?&quot;) This lets the user 
+    confirm that the action is being carried out on the intended object.</font></li>
+  <li><font color="#000000">Follow the initial confirmation question displayed 
+    in the heading portion of the message (for example, &quot;Delete server xyz?&quot;) 
+    with any consequences that the user should be aware of (for example, that 
+    the action is irreversible, or that items in addition to the explicit selection 
+    will also be acted upon).</font></li>
+</ul>
+<H2><font color="#000000"><A name="14.1"></A> 14.1 Inline Alerts</font></H2>
+<P><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Use inline alerts whenever possible.</font></P>
+<P><font color="#000000">Inline alerts are a familiar web idiom. They permit users 
+  to correct problems or proceed with their work without having to dismiss a window 
+  and navigate to a new location.</font></P>
+<P><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Generally, do not use inline alerts for:</font></P>
+<UL>
+  <LI><font color="#000000">Question alerts, because this type of alert generally 
+    requires custom buttons that give the user options for performing other tasks. 
+    Because of web performance issues, use the full-page alert if you need to 
+    present a question alert. </font></LI>
+</UL>
+<UL>
+  <LI><font color="#000000">Client-side validation error alerts, because inline 
+    alerts require redrawing of the page. Client-side validation error alerts 
+    require the use of a JavaScript alert.</font></LI>
+</UL>
+<UL>
+  <LI><font color="#000000">Most wizards, because the Wizard window is typically 
+    too constrained for displaying inline alerts. Wizards usually use a JavaScript 
+    alert. </font></LI>
+</UL>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display inline alert messages at the top of the page and centered horizontally 
+  within the content area of the page. See <a href="06-content.html#6.1.1">6.1.1 
+  Location of Inline Alert Messages</a> for more specific information about the 
+  placement of inline alert messages. </font></p>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style1">Include an alert icon and summary text at the top of the 
+  inline alert. Follow this with additional text providing details of the alert.</span></font></p>
+<p class="style1"><font color="#000000"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  </font>  <span class="style2">Center the icon/summary and detailed text elements within the inline alert. Size the alert based on the wider element. Wrap the detailed text if necessary, but make this a block of centered text (each wrapped line is not centered independently). </span></p>
+<p class="style1 style3"><font color="#000000"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use the appropriate icon for each inline alert, depending on the type of alert</font><span class="style2"> (see the table in <A href="14-alerts.html#14">14 Alerts and Messages</A> for details)</span><font color="#000000">. </font></p>
+<p class="style1 style3"> <font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style47">Apply headline capitalization (</span></font><span class="style47"><span class="style2">see</span></span><font color="#000000"><span class="style47"> <a href="02-visual.html#2.5">2.5 Text Capitalization</a>)</span> <span class="style47">to the summary text 
+  of each inline alert.</span></font></p>
+<font color="#000000">
+<!-- Removed for 2.2 
+
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+
+  Display inline alert messages in the default font face and size, bold weight, 
+
+  in the color Error Red (for errors), Warning Yellow (for warnings), and Information 
+
+  Blue (for info). Refer to <A href="02-visual.html#2.1">2.1 Color Palette</A> 
+
+  and <A href="02-visual.html#2.2">2.2 Fonts</A> for more details on text display.</P>
+
+ -->
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not use buttons inside inline alert messages.</P>
+<P>You can embed links inside inline alert messages. See the link text &quot;settings 
+  currently in use&quot; in <A href="14-alerts.html#14.1.3">14.1.3 Example of Warning Inline 
+  Alert</A>.</P>
+</font>
+<P><font color="#000000"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  </font>  <span class="style2">When links are present inside inline alert messages, they should appear follow the detailed message. Display the link either to the right of the detailed message text or below it based on the amount of horizontal space available within the inline alert and the width of the link text.</span></P>
+<font color="#000000">
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When links are present inside inline alert messages, they should have HTML Title 
+  attribute text specified for them. If the link will open a new window, the Title 
+  text should specify that a new window is being opened, for example, "Error Log 
+  (Opens a New Window)." If the link does not open a new window, the Title text 
+  should contain some descriptive text.</P>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> When 
+  links are present inside inline alert messages, the window that is opened from 
+  the link should not provide further links. Typically, the only action from these 
+  opened pages should be "Close."</P>
+<h3><a name="14.1.1"></a> 14.1.1 Example of Information Inline Alert<br>
+  <font color="#000000"><br>
+  <img src="alerts_graphics/alert_info.gif" alt="Example of Information Inline Alert" width="508" height="274" border="1"></font></h3>
+</font><font color="#000000">
+<h3><a name="14.1.2"></a> 14.1.2 Example of Error Inline Alert</h3>
+<p><img src="alerts_graphics/alert_error.gif" alt="Example of Error Inline Alert" width="513" height="273" border="1"></p>
+<p>See <a href="14-alerts.html#14.5">14.5 Validation Error Alerts</a> for information 
+  about updating a field's label to indicate that the user has made an error. 
+</p>
+</font>
+<p></p>
+<h3><font color="#000000"><a name="14.1.3"></a> 14.1.3 Example of Warning Inline 
+  Alert<br>
+</font><font color="#000000"><br>
+  <img src="alerts_graphics/alert_warning.gif" alt="Example of Warning Inline Alert" width="525" height="229" border="1"></font></h3>
+<p><font color="#000000">Note that &quot;Settings currently in use&quot; is a 
+  link to a pop-up window that displays the settings that are currently in use.</font></p>
+<h3><font color="#000000"><a name="14.1.4"></a>14.1.4 Example of Success Inline 
+  Alert<br>
+</font><font color="#000000"><br>
+  <img src="alerts_graphics/alert_success.gif" alt="Example of Success Inline Alert" width="705" height="429" border="1"></font></h3>
+<h2><font color="#000000"><a name="14.2"></a> 14.2 JavaScript Alerts</font></h2>
+<p><font color="#000000"><img src="alerts_graphics/popup_alert.gif" height="123" width="317" alt="JavaScript Alert Example" border="0"></font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use a JavaScript alert only when an inline alert is inappropriate, as in client-side 
+  validation errors (for example, data input errors).</font></p>
+<p><font color="#000000">Note that this distinction might seem arbitrary to users. 
+  Therefore, if some errors can be detected only on the server, balance the quick 
+  response of client-side validation errors against the inconsistency that having 
+  both types of errors creates. Alternatively, if most errors can be detected 
+  on the client but a small proportion can be detected only on the server, consider 
+  displaying the server-side errors as JavaScript alerts. As such, the application 
+  can show most errors immediately while maintaining a consistent method for displaying 
+  errors.</font></p>
+<p><font color="#000000">Implementing an alert as a simple JavaScript alert is 
+  often preferable over a pop-up window because a JavaScript alert window is a 
+  modal window. A modal window loads much quicker than a browser window. The three 
+  types of JavaScript alerts are Confirm, Alert, and Prompt. See <a href="03-windows-pages.html#3.3">3.3 
+  JavaScript Windows</a> for more information.<br>
+</font></p>
+<h2><font color="#000000"><a name="14.3"></a> 14.3 Full-Page Alerts</font></h2>
+<p><font color="#000000"><img src="alerts_graphics/full_page_alert.gif" alt="Full-Page Alert Example" width="848" height="248" border="1">&nbsp;<br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use the appropriate icon for each of the following alert types: "Error," "Warning," 
+  &quot;Question,&quot; "Information," or <span class="style1">&quot;Success.&quot;</span></font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  For the page title next to the icon, use a context-specific short name for the 
+  alert, such as &quot;Reboot </font><s></s><font color="#000000">ALOM&quot; in the preceding example.</font></p>
+<p class="style1 style3"> <font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style47">Apply headline capitalization (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>)</span> <span class="style47">to the page title 
+  of each full-page alert. </span></font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Devote a full browser page or frame for a question alert, or to report a system 
+  error or warning (for example, if the system cannot update a database), according 
+  to the following guidelines: </font></p>
+<ul>
+  <li><font color="#000000">Use a frame if portions of the page are slow to redraw, 
+    as in a navigation tree. </font></li>
+</ul>
+<ul>
+  <li><font color="#000000">Use a full browser page if users could become confused 
+    by navigating away from the alert by clicking elsewhere in the UI.</font></li>
+</ul>
+<ul>
+  <li><font color="#000000">If neither situation is true, use either a full browser 
+    page or a frame.</font></li>
+</ul>
+<p><font color="#000000"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  For a full-page alert, use the standard masthead and breadcrumbs. The page title 
+  should be echoed in the breadcrumbs as the current page. However, it can be 
+  shortened if needed.</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If using the breadcrumbs to go back might cause confusion (for example, the 
+  user may wonder if an action on the page will get canceled in the process), 
+  remove the links from the breadcrumb contents, leaving simple text instead.</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  However, if this confusion is possible, reevaluate your design. Users could 
+  still use the browser's controls to navigate elsewhere, so that confusion might 
+  still be a problem.</font></p>
+<p><font color="#000000">A full-page alert can also contain one entry field (one 
+  text field, one text area, one checkbox, one set of radio buttons, one drop-down 
+  menu, or one scrolling list). This feature allows the alert to prompt for one 
+  value, as shown in the following example. Follow the guidelines for full-page 
+  alerts along with the guidelines for the element chosen and its label. <br>
+  </font><font color="#000000"></font></p>
+<p><font color="#000000"><img src="alerts_graphics/full_page_alert_field.gif" alt="Full Page Alert Containing One Entry Field" width="659" height="240" border="1"><br>
+</font></p>
+<h2><font color="#000000"><a name="14.4"></a> 14.4 Alerts Shown in a Pop-Up Window 
+  </font></h2>
+<p><font color="#000000">A full-page alert displayed in a pop-up window is called a pop-up alert. (In contrast, a full page alert that swaps out the page in a main browser window is not a pop up alert. It is a full page alert and should follow the guidelines for a full page alert.) </font></p>
+<p><span class="style2">Displaying a full-page alert in a pop-up window may</span><font color="#000000"> be done in order to have a pop-up alert that has buttons more specific than those buttons available in a JavaScript alert, or to allow the user to input a value for one field without losing the visibility of the original page context and content. (This functionality is more complicated than the simple entry field available in a JavaScript alert). A full-page alert can also show an appropriate icon for each type of alert, rather than the unchangeable warning or question icons shown on JavaScript alerts. </font></p>
+<p><font color="#000000">However, this type of alert is not modal, allowing the user to accidentally bury the alert rather than respond to it. Also, this type of alert loads much </font><span class="style2">more slowly than </span><font color="#000000">a JavaScript alert. The designer must decide if those issues outweigh the benefits of using this pop-up alert over a full-page alert in the main browser window or a JavaScript alert. <br>
+</font><font color="#000000">
+  <br>
+  <img src="alerts_graphics/full_page_alert_popup.gif" alt="Full Page Alert Shown in a Pop-Up Window" width="559" height="232" border="1"><br>
+  <br>
+  
+Note that Cancel is the default button in the image above. This is unusual, but done for particularly irreversible actions such as the one shown in this example (and like those you might use a full page alert for in general).</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  To display a pop-up alert for a main window, open a new pop-up window. To display 
+  a pop-up alert for a pop-up window, use that same pop-up window to 
+  display the alert, replacing the original contents. In either case, follow 
+  the applicable guidelines in <a href="14-alerts.html#14.3">14.3 Full-Page Alerts</a>. 
+  </font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  For pop-up alerts invoked from main browser windows, the pop-up window should 
+  not be chromed and should contain a pop-up window masthead. (Refer to <a href="04-masthead.html#4.2">4.2 
+  Pop-Up Window Masthead</a> for details.) The window size should be appropriate 
+  to the content, but should always be smaller than the window that invoked it. 
+  The window should appear in the golden mean location, as described in <a href="03-windows-pages.html#3.2">3.2 
+  Pop-Up Windows</a>.</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  For pop-up alerts invoked from main browser windows, follow the window title 
+  guidelines as described in <a href="03-windows-pages.html#3.5">3.5 Window Title 
+  Bars</a>. Include the alert page title, then a dash separated by spaces, and 
+  then the application name.</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Similar to JavaScript alerts, use pop-up alerts only when an inline alert is 
+  inappropriate, as in client-side validation errors (for example, data input 
+  errors).</font></p>
+<p><font color="#000000">Note that this distinction might seem arbitrary to users. 
+  Therefore, if some errors can be detected only on the server, consider showing 
+  all errors as inline alerts on the main browser window rather than some there 
+  and some in pop-up windows. Alternatively, if most errors can be detected on 
+  the client but a small proportion can be detected only on the server, consider 
+  displaying the server-side errors as pop-up alerts. As such, the application 
+  can show most errors immediately while maintaining a consistent method for displaying 
+errors.</font></p>
+<h2><font color="#000000"><a name=14.5></a>14.5 Validation Error Alerts</font></h2>
+<p><font color="#000000">Validation error alerts are used to highlight an invalid entry or selection made by a user within the contents of a page. </font></p>
+<p>The presentation of a validation alert includes: an</font> error alert icon to the left of the label for each field where the user has made an error (icon available from <a href="02-visual.html#2.4.3">2.4.3 Icons, Glyphs, and Graphics Repository</a>); the field label's color is changed to highlight the field that is in error; and if  the field level alert is on a text field, the text input field will be highlighted.</p>
+<p><font color="#000000">A validation error alert may also include  an error inline alert at the top of the page (see <a href="14-alerts.html#14.1.2">14.1.2 Example of Error Inline Alert</a>) to indicate that there are validation errors on the page. This error message should also appear in the tool tip of each error alert icon on the page or a validation error message must be shown (see <a href="14-alerts.html#14.5.1">14.5.1 Validation Error Messages</a>). </font>However, if multiple errors exist on the page, a more specific tool tip may be used for each field, as the error inline alert message may not be specific enough to use for each field. </p>
+<p><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> Follow these presentation guidelines for identifying validation errors within a page:</font></p>
+<ul>
+  <li>If appropriate, display an error inline alert at the top of the page to indicate that one or more validation errors were detected. </li>
+  <li> Place the error icon to the left of the field's label.</li>
+  <li><font color="#000000">Change the field label's color to indicate that the user has made an error.</font></li>
+  <li><font color="#000000">Either place the error message (from the error inline alert, if specific enough) in the error icon's tool tip, or display a validation error message (see <a href="14-alerts.html#14.5.1">14.5.1 Validation Error Messages</a>), but do not do both.</font></li>
+  <li><font color="#000000">When the field is </font>also a <font color="#000000">required field, place the Error Icon first, followed by the </font>field's<font color="#000000"> label and then the Required Field Glyph.</font></li>
+  <li>An error on a text input field should include color highlighting in the background of the text input field. </font></li>
+</ul>
+<p><font color="#000000">The following example demonstrates the presentation of field-level error icons, error message, Required Field Glyph and text field highlighting:</font></p>
+<p><font color="#000000"><img src="alerts_graphics/dynamic.png" width="421" height="139"></font></p>
+<p><strong>Client-Side Validation<br>
+</strong>When a field is exited, it should be validated on the client with data being valid in ways the client can detect. For example, a field may be validated on the client-side for requiring numeric input.</p>
+<p><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14"> Use the &quot;onBlur&quot; event, as the user leaves the field by clicking or tabbing elsewhere, for validation, if needed.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When an error is found, the field should be marked in error immediately. However, the user's focus should not be moved or disturbed.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When the user exits a field and there are no validation errors, any previous validation errors marked on that field should be removed. </p>
+<p><strong>AJAX Validation<br>
+</strong>Beyond checking for "obvious" errors on the client side, sometimes further validation could be done on field exit using AJAX validation of the field. </p>
+<p><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14"> Use the &quot;onBlur&quot; event, as the user leaves the field by clicking or tabbing elsewhere, for validation, if needed. This can be done in addition to Client-Side Validation.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When an error is found, the field should be marked in error immediately. However, the user's focus should not be moved or disturbed.</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> When two or more field values are validated in conjunction with each other (such as city and state making a valid pair), that validation should occur only after both fields are entered. <br>
+<br>
+<img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> When fields become required based on entries in other fields, that required field validation should occur on page submit only. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When multiple fields are validated in conjunction with each other, every field involved in the validation should receive an error alert if errors are detected. Likewise when errors are corrected, validation errors should be removed from all involved fields. </p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> When validation errors are corrected, and alerts cleared, any related error inline alert at the top of the page should be cleared as well. </p>
+<h3><a name="14.5.1"></a>14.5.1 Validation Error Messages</font></strong></h3>
+<p class="style1"><font color="#000000"> At times it may be useful to provide 
+  a textual message for a field in which the user has made an error. </font></p>
+<p class="style1"><font color="#000000"><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> 
+  Display a validation error message in addition to using the validation alert 
+  icon and field label updates specified in <a href="14-alerts.html#14.5">14.5 
+  Validation Error Alerts</a>. </font></p>
+<p class="style1"><font color="#000000"><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> 
+  Display validation error messages to explain why a field is in error, and/or 
+  what is needed to fix the error. For example, it might be useful to display 
+  a message if the user entered data in the wrong format, or if the user neglects 
+  to input data or make a selection for a required field. </font></p>
+<p class="style2"><font color="#000000"><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> 
+  Keep validation error messages short by including only detail, not summary, 
+  information. Messages need to be clear and concise so users can easily digest 
+  the content and correct the errors. </font></p>
+<p class="style2"><font color="#000000"><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> 
+  Place validation error messages above the fields to which they pertain, and 
+  include a blank line above the message so that the message and the field it 
+  pertains to are visually related. </font></p>
+<p class="style2"><font color="#000000"><img name="Required_Icon" src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline"> 
+  Display validation error messages using non-bolded, red text.</font><font color="#000000"><br>
+  </font></p>
+<h2><font color="#000000"><a name="14.6"></a>14.6 Choosing the Correct Alert Display Type </font></h2>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  <strong>Use inline alerts or validation alerts whenever possible.</strong> A 
+  validation alert can be considered a special type of an inline error alert which 
+  is used when user data input is incorrect, and is positioned in greater proximity 
+  to the field where the user needs to make a correction (rather than at the top of 
+  the page, where error inline alert messages  are presented).</font></p>
+<p><font color="#000000"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use a JavaScript alert, pop up alert, or full page alert only when an inline 
+  alert is inappropriate, as in client-side validation errors (for example, if 
+  the user selects multiple items in a list, and tries to apply an action that 
+  can only be applied to some of the items in the list , you can use a JavaScript 
+  Alert).</font></p>
+<blockquote> 
+  <p><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">Note 
+    that this distinction might seem arbitrary to users. Therefore, if some errors 
+    can be detected only on the server, balance the quick response of client-side 
+    validation errors against the inconsistency that having both types of errors 
+    creates. Alternatively, if most errors can be detected on the client but a 
+    small proportion can be detected only on the server, consider displaying the 
+    server-side errors as JavaScript alerts. As such, the application can show 
+    most errors immediately while maintaining a consistent method for displaying 
+    errors.</font></p>
+</blockquote>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Generally, <strong>do not use inline alerts</strong> for:</font></p>
+<UL>
+  <LI><font color="#000000">Question alerts, because this type of alert generally 
+    requires custom buttons that give the user options for performing other tasks. 
+    Because of web performance issues, use the JavaScript alert if you need to 
+    present a question alert. </font></LI>
+</UL>
+<UL>
+  <LI><font color="#000000">Client-side validation error alerts, because inline 
+    alerts require redrawing of the page. Client-side validation error alerts 
+  require the use of a JavaScript alert.</font><span class="style15"></span></LI>
+</UL>
+<UL>
+  <LI><font color="#000000">Most wizards, because the Wizard window is typically 
+    too constrained for displaying inline alerts. Wizards usually use a JavaScript 
+    alert.  However, the Success inline alert can be used in the Results step of the wizard (as shown in <a href="14-alerts.html#14.1.4">14.1.4 Example of Success Inline Alert</a>).</font></LI>
+</UL>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Pop 
+  up alerts or full page alerts can be used in place of JavaScript errors if the 
+  JavaScript buttons are not sufficient to create an effective UI or if other 
+  input mechanisms (such as multi-select boxes) are required. </font></p>
+<p><font color="#000000"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Full 
+  page alerts are used when the user's full attention must be brought to the 
+  alert -- the whole window is usurped for the message to ensure that the user 
+  sees the message. </font></p>
+<p><strong>Additional Guidelines</strong><br>
+  A future release of the style guide <span class="style2">may</span> include specifications for linking 
+  the inline validation error message at the top of the page to an anchor point 
+  at the error's location within the page content. 
+  <!-- The error message might or 
+
+  might not be repeated next to this icon (as yet to be decided). -->
+  Guidelines for errors that appear in tables <span class="style2">may</span> also be covered in a future 
+  release.<span class="style23"><br>
+</span></p>
+
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <span class="currentchapter">14&nbsp;Alerts&nbsp;and&nbsp;Messages</span>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body>
+</html>

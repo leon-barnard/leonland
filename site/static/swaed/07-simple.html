@@ -1,0 +1,1797 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>7&nbsp;Simple&nbsp;Elements - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style5 {color: #9900FF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="07-simple.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <span class="currentchapter">7&nbsp;Simple&nbsp;Elements</span>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="toc-level0"><a href="07-simple.html#7"><b>7 Simple Elements</b></a></p>
+<p class="toc-level1"><a href="07-simple.html#7.1">7.1 Action Buttons</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.2">7.1.2 Disabled Buttons</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.3">7.1.3 Default Buttons</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.4">7.1.4 Iconic Buttons</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.5">7.1.5 Button Coding</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.1.6">7.1.6 Button Labels </a></p>
+<p class="toc-level1"><a href="07-simple.html#7.2">7.2 Elements Used for Choosing 
+Data, Performing Actions, and Navigating</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.2.1">7.2.1 Elements Used for Choosing 
+One Value</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.1.1">7.2.1.1 Checkbox</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.1.2">7.2.1.2 Set of Radio Buttons</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.1.3">7.2.1.3 Standard Drop-Down Menu</a><span class="toc-level1"></span></p>
+<p class="toc-level4"><a href="07-simple.html#7.2.1.3.1">7.2.1.3.1 General Drop-Down Menu Behavior</a><span class="toc-level1"></span></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.1.4">7.2.1.4 Scrolling List</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.2.2">7.2.2 Elements Used for Choosing 
+One or More Values</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.2.1">7.2.2.1 Set of Checkboxes</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.2.2">7.2.2.2 Multiple Selection 
+  Scrolling List</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.2.3">7.2.3 Elements Used for Performing Actions and Navigating</a> <font color="#9900ff"></font></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.3.1">7.2.3.1 Jump Menus</a> <font color="#9900ff"></font></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.3.2">7.2.3.2 Jump Menu Behavior</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.3.3">7.2.3.3 Grouping Menu Items</a></p>
+<p class="toc-level3"><a href="07-simple.html#7.2.3.4">7.2.3.4 Pop-Up Menu</a></p>
+<p class="toc-level1"><a href="07-simple.html#7.3">7.3 Text Elements</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.3.1">7.3.1 Labels</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.3.3">7.3.3 Password Fields</a></p>
+<p class="toc-level2"><a href="07-simple.html#7.3.4">7.3.4 Text Areas</a><br> 
+</p>
+<h1><a name="7"></a>7 Simple Elements</h1>
+<p>This chapter addresses the design of simple user interface elements that are 
+  used in similar ways across applications.</p>
+<p>
+When using the user interface elements described in this chapter and elsewhere in these guidelines, 
+remember to use them with cultural considerations in mind.  For example, applications must be able to 
+format and display time, date, and calendar data according to local cultural conventions. 
+</p>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+To ensure that cultural considerations are addressed when using user interface elements,  
+follow the guidelines in <a href="H-globalization.html">Appendix H, Globalization Requirements</a>. 
+<P class="style2">For most elements, there is an enabled (normal state), a noneditable (read-only) state where the value is applicable but the user cannot change it, and a disabled (not applicable) state for when a value  for that field does not apply to the current situation. For fields which do not show a data value, such as buttons and jump menus, the only applicable states are enabled and disabled. The possible appearances are documented for each type of field.
+<P class="style2">For more information on the placement of read-only fields within a page, see <a href="06-content.html#6.8.1">6.8.1 Noneditable User Interface Elements.</a>
+<H2><A name="7.1"></A>7.1 Action Buttons</H2>
+<P>  <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> <span class="style2">Generally, use buttons for actions and use hyperlinks for navigation.<BR>
+  </span><br>
+  There are <!-- six -->
+<span class="style2">three</span> main action button styles: </P>
+<UL>
+  <LI>Primary</LI>
+  <LI>Secondary</LI>
+  <LI>Iconic buttons</LI>
+<!-- <LI>Default buttons</LI> -->
+</UL>
+<P>The appearance of each button type will vary depending on the button's state 
+  and/or its use.<span class="style2"> The following table shows state appearance for Primary and Secondary buttons. See <a href="07-simple.html#7.1.4">7.1.4 Iconic Buttons</a> for more information about iconic buttons.</span></P>
+<P><IMG src="simple_graphics/button3.png" width="515" height="111" alt="Button Appearances for Different Button Types and States" border="0"></P>
+<h3><a name="7.1.1"></a>7.1.1 Primary Buttons</h3>
+<p>The primary button's unique appearance indicates that it is the most commonly 
+  used button <span class="style2">within a page or <em>panel</em>. (A panel is a unit  within the page which the user operates within and closes. See <a href="09-tables.html#9.5.3">9.5.3 Table Preferences</a> for an example of a <em>table panel</em>). The primary button's</span> uniqueness helps to guide users through a 
+  task by helping them find the button most likely to help them accomplish the task.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Only the main button within a page or panel can use the primary button style. The only time a given page might contain more than one primary button is if the main button on the page is a primary button and the page contains a panel that includes a primary button. </p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  If the <span class="style2">main button in the page or panel</span> &quot;group&quot; consists of only one button, that button 
+  is virtually always a primary button. </p>
+<p>  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> <span class="style2">All buttons associated with a particular field or section should be secondary buttons.</span></p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Use caution when making destructive actions, such as Delete, primary buttons. 
+  However, if the user is mostly likely to click this button, <span class="style2">and it is the main button on the page or panel,</span> it can be the primary 
+  button. </p>
+<!--
+<p><s>The primary button sometimes changes dynamically. For example,with an add-and-remove 
+  idiom when the user is on the Available list, the primary control button is 
+  Add and the two Remove buttons are disabled. However, when the user is on the 
+  Selected list, the Remove button is the primary control button, while the Add 
+  buttons are disabled.</s> <span class="style15"><strong>REVIEWERS, PLEASE VERIFY THAT THIS SHOULD BE REMOVED! <br>
+</strong></span></p> -->
+<H3><FONT color="#000000"><A name="7.1.2"></A>7.1.2 Disabled Buttons</FONT></H3>
+<P>A disabled button is a button that users cannot use in the current context, 
+  but the button can be used if the context changes. The implication is that the 
+  user can enable the button by taking some action, such as selecting a row or 
+  an item in a list. </P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not use a disabled button if it will never become enabled. Instead, just do not display the button.<br>
+  <br>
+  For example, if security restricts access to a button, hide it instead of displaying it as disabled. 
+  This guideline does not apply, however, to a series of pages, as in a wizard, where the button might 
+  not apply on the current pane but will apply on other panes. Therefore, the disabled button should 
+  be shown for consistent button layout throughout the series.</P>
+<h3><font color="#000000"><a name="7.1.3"></a>7.1.3 Default Buttons</font></h3>
+<p>Default buttons, buttons that are activated automatically when users press 
+  the Enter key, are not provided in the Sun Common UI Component Library (in open source, the Project Woodstock components).</p>
+<p>If desired, default button behavior can be developed independent of the Sun Common UI Component Library (in open source, the Project Woodstock components).</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If default button behavior is provided, the following guidelines apply:
+<ul>
+  <li>
+    There can be default-style behavior for buttons paired 
+    with a single text field, such as search. Beyond that situation, default button behavior is <span class="style2">typically</span> associated with only <span class="style2">the</span> one <i>primary</i> button on the page or pop-up window.
+  </li>
+  <li>Do not add any visual treatment to the primary button when default button behavior is associated with it.</li>
+  <li>Be consistent in the use of default button behavior throughout the application.</li>
+</ul>
+<p><font color="#FF0000"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+  </font>On a Login page, default button behavior should be developed and associated 
+  with the primary button.</p>
+<p>Other situations where it may be useful to provide default button behavior 
+  for a primary button include: 
+<ul>
+  <li>on a pop-up window with just one or two fields</li>
+  <li>when a button appears next to a search field. In this case, only when focus 
+    is in the search field would pressing Enter activate the button associated 
+    with the field.  </li>
+</ul>
+<h3><a name="7.1.4"></a><span class="style2">7.1.4 Iconic Buttons </span><br>
+  <br>
+  <img src="simple_graphics/icononly_buttons.png" width="405" height="106" Alt="Examples of Enabled and Disabled Iconic Buttons" border="0"></h3>
+<p>Iconic buttons (buttons without any text label) <!-- can be created with colors 
+  Sun Blue, White, and Grey -->
+are created based on the context in which they are used.&nbsp;See <a href="02-visual.html#2.4">2.4 Icons</a> for more information about iconic buttons.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Buttons with <i>icons only</i> for labels must have text associated with them in the HTML attributes Alt and Title.<br>
+  <br>
+  Use the <span class="code-text">HTML Alt</span> and Title attributes to 
+  assign an alternative text description and tool tip. These attributes help users who are unclear about the 
+  meaning of the icon and are critical for users who use screen readers.</p>
+<h3><a name="7.1.5"></a><span class="style2">7.1.5 Button Coding</span></h3>
+<p>The button design supported by these guidelines uses a styled HTML form button. 
+  <!-- Netscape&#153; 4 on Windows&#153; and the Solaris&#153; operating environment 
+  only partially supports this design. So, the buttons have a different appearance 
+  on the Netscape 4 browser. --> 
+</p>
+<p>This implementation allows for localization, unlike using a graphic.</p>
+<p>For detailed information on the layout and use of the various button types 
+  within a content page, see <a href="06-content.html#6.5.2">6.5.2 Content Page 
+  Action Buttons</a>. <br>
+  <br>
+  For detailed information on the layout and use of buttons 
+  in a wizard, see <a href="13-wizards.html#13.1">13.1 Anatomy</a>.</p>
+
+
+<!-- Removed for 2.2
+
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled primary button label in the default font face, bold weight, 
+  and size, in color White. Display the background in color Sun Blue. Refer to 
+  <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled primary button label that's moused over in the default font 
+  face, bold weight, and size, in color Yellow. Display the background in color 
+  Sun Blue. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a disabled primary button label in the default font face, bold weight, 
+  and size, in color Medium Grey 3. Display the background in color Medium Grey 
+  2. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled secondary button label in the default font face, bold weight, 
+  and size, in color Dark Blue. Display the background in color Pale Blue. Refer 
+  to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled secondary button label that's moused over in the default 
+  font face, bold weight, and size, in color Dark Blue. Display the background 
+  in color Rollover Blue. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> 
+  and <a href="02-visual.html#2.2">2.2 Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a disabled secondary button label in the default font face, bold weight, 
+  and size, in color Medium Grey 3. Display the background in color Light Grey 
+  2. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled primary mini-button label in the default font face, weight, 
+  and size, in color White. Display the background in color Sun Blue. Refer to 
+  <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled primary mini-button label that's moused over in the default 
+  font face, weight, and size, in color Yellow. Display the background in color 
+  Sun Blue. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a disabled primary mini-button label in the default font face, weight, 
+  and size, in color Medium Grey 3. Display the background in color Medium Grey 
+  2. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled secondary mini-button label in the default font face, weight, 
+  and size, in color Dark Blue. Display the background in color Pale Blue. Refer 
+  to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display an enabled secondary mini-button label that's moused over in the default 
+  font face, weight, and size, in color Dark Blue. Display the background in color 
+  Rollover Blue. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and 
+  <a href="02-visual.html#2.2">2.2 Fonts</a> for more details on text display.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a disabled secondary mini-button label in the default font face, weight, 
+  and size, in color Medium Grey 3. Display the background in color Light Grey 
+  2. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p> -->
+  
+<h3 class="style2"><a name="7.1.6"></a><span class="style2">7.1.6 Button Labels</span></h3>
+<p><strong>Note:</strong> Although this section discusses labels for actions represented 
+  as buttons, these guidelines also apply to labels of actions represented via other 
+  user interface elements, such as drop-down menu commands or embedded table actions. 
+  See <a href="06-content.html#6.5">6.5 Content Area Actions </a>for information 
+  about representing actions using different user interface elements.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply headline capitalization to all button labels (see <a href="02-visual.html#2.5">2.5 
+  Text Capitalization</a>).<br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use button labels according to the guidelines in the following table.&nbsp;<font color="#ff0000"> 
+  </font><br>
+</p>
+<table class="info-table" border="1" cellspacing="0" cellpadding="10" width="90%">
+  <tbody>
+    <tr bgcolor="#eeeeee"> 
+      <th nowrap><b>Standard Label</b></th>
+      <th nowrap><b>Button Description</b></th>
+      <th nowrap><b>Additional Guidelines</b></th>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="AddButton"></a>Add</td>
+      <td>Adds an existing item or items to a group.</td>
+      <td> <p>Use this button to initiate adding an object, and then the <a href="07-simple.html#OKButton">OK</a> button to complete the action. Do not replace an <a href="07-simple.html#OKButton">OK</a> button with an Add button. It becomes unclear whether that button takes users elsewhere to add the object, or whether that button dismisses the current page. <br>
+        <br>
+        The "Add" button label can be combined with a noun for 
+          clarity, for example, "Add Server." However, generally do not add a noun to Add buttons when in a table 
+          whose title already includes that noun (such as "Add Server" in a table titled "Servers"). Note the distinction from the <a href="07-simple.html#NewButton">New</a> 
+          button. For an example, see <a href="08-complex.html#8.2">8.2 Add-and-Remove 
+          Idiom</a>.</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="BrowseButton"></a>Browse</td>
+      <td>Selects a file from the local file system using a hierarchical display 
+        of the file system.</td>
+      <td>When using the browse idiom to select files from the local file system, 
+        let the browser's platform-specific functionality provide its own button 
+        next to the text field. This technique automatically uses the platform-specific 
+        browse window for choosing the file. &nbsp;<font color="#ff0000">&nbsp; 
+        </font></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="BrowseServerButton"></a>Browse Server</td>
+      <td>Selects a file or folder from the server's file system using a hierarchical 
+        display of the file system.</td>
+      <td> <p>This button invokes a custom browse window that allows the selection 
+          of files or folders on the server. Note that communication with the 
+          server is a potentially heavyweight operation. For an example, see <a href="08-complex.html#8.5.2">8.5.2 
+          File Chooser Element</a>.</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="CancelButton"></a>Cancel&nbsp;</td>
+      <td>Returns to the previous page or state without making any changes, discarding 
+        any user input.</td>
+      <td><p>In some situations, such as where the user might lose a large amount 
+          of input data, present a confirmation alert before allowing a Cancel 
+          action.</p>
+        <p>Also, when the meaning of the action is not clear, additional and/or 
+          different text may be used, such as "Cancel Wizard" and "Return to Wizard."</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="DeleteButton"></a>Delete&nbsp;</td>
+      <td>Deletes the selected item completely so that it no longer appears among 
+        the possible choices.&nbsp;</td>
+      <td><p>Generally, confirm a Delete action with a JavaScript&#153; alert 
+          message if the deletion cannot be easily reversed. Note the distinction 
+          from the <a href="07-simple.html#RemoveButton">Remove</a> button.</p>
+        <p><font color="#000000">Also, if at all possible, do not require users 
+          to delete and then recreate objects in order to rename them. See <a href="07-simple.html#RenameButton">Rename</a> 
+          for more information.</font></p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="EditButton"></a>Edit&nbsp;</td>
+      <td>Modifies the selected item or items.<br> <br> </td>
+      <td>Use this button to initiate editing an object, and then the <a href="07-simple.html#OKButton">OK</a> 
+        button to complete the action. Do not replace an <a href="07-simple.html#OKButton">OK</a> 
+        button with an Edit button. It becomes unclear whether that button takes 
+        users elsewhere to edit the page's content, or whether that button dismisses 
+        the current page. </td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="GoButton"></a>Go&nbsp;</td>
+      <td>Jumps to a specific page of a paginated table.</td>
+      <td>This button is not needed for jump menus because they exhibit jump 
+        menu behavior, in which the action associated with the menu item is performed 
+        when users select that menu item.</td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="NextButton"></a>Next, Previous, Finish&nbsp;</td>
+      <td>In wizards, navigating forward, backward, and to complete the wizard 
+        action, respectively.</td>
+      <td>See <a href="13-wizards.html">Chapter 13, Wizards</a>. </td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="NewButton"></a>New</td>
+      <td>Create a new object.</td>
+      <td>Use this button to initiate creating a new object, and the <a href="07-simple.html#OKButton">OK</a> 
+        button to complete the action. The "New" button label can be combined 
+        with a noun for clarity, for example, "New Server." However, generally do not add a noun to New buttons when in a table 
+whose title already includes that noun (such as "New Filesystem" in a table titled "Filesystems"). Note the distinction 
+        from the <a href="07-simple.html#AddButton">Add</a> button. </td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="OKButton"></a>OK&nbsp;</td>
+      <td>Returns to the previous page or state after completing a particular 
+        action.</td>
+      <td>Use capital letters for "OK" (not "Ok" or "Okay"). If users can perform 
+        only one action, label the window's action button "OK," though a more 
+        specific label is preferable (except for <a href="07-simple.html#AddButton">Add</a> 
+        or <a href="07-simple.html#EditButton">Edit</a> button labels). If more than one button 
+        in a window <span class="style2">performs</span> an action, do not label any of those buttons &quot;OK&quot;. 
+        Each button should have a label that clearly indicates the specific action 
+        that will be initiated when the button is clicked. </td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="RemoveButton"></a>Remove</td>
+      <td>Removes the <i>reference</i> to the selected item from the list.</td>
+      <td>This button does not delete the item from the system, but just removes 
+        a <i>reference</i> to the item so that the list (from which the item is 
+        being removed) no longer includes any reference to the item. Note the 
+        distinction from the Delete button. For an example, see <a href="08-complex.html#8.2">8.2 
+        Add-and-Remove Idiom</a>.</td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="RenameButton"></a>Rename</td>
+      <td><p>Allows users to rename the selected object.</p></td>
+      <td><p>Allow users to rename objects easily. Do not make users explicitly 
+          delete an object and then recreate it in order to change its name or 
+          fix a typographical error.</p>
+        <p>If the system can simply rename the property then it should do that. 
+          If instead the system must delete the property and create a new one, 
+          but the user does not need to know that, then hide that complexity from 
+          the user. If the user must know that deletion and creation are being 
+          done when the user clicks Rename, display a confirmation message that 
+          explains what will happen and allows the user to abandon the action. 
+          An example of this might include when other objects that depend on the 
+          object being deleted will break as soon as this object is deleted, and 
+          creating the new object can't automatically be a seamless substitute. 
+          Another example might be when there are database references to the object 
+          being deleted and all references cannot be programmatically updated. 
+          However in this case, consider using a system-defined unique name for 
+          each object and provide a human-readable alias that users can edit.</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="ResetButton"></a>Reset&nbsp;</td>
+      <td>Resets all values shown on the page to the values shown when the user 
+        first viewed that page. </td>
+      <td><p> <span class="style8"><span class="style2">Use this button when there are many fields on the page, when there are lots of default values that users might want to retrieve, or when the user will be prompted about saving their data when going to another tab (to allow the user a way to remove unintended changes and continue)</span>.</span>  Do not include 
+          a Reset button on trivially small pages containing only one or two fields. 
+          Always confirm the Reset action with a JavaScript alert message before 
+          discarding the current data. Explain that the page is reset to the values 
+          it displayed when it was first loaded. Order the page buttons <a href="07-simple.html#OKButton">OK</a> 
+          (or <a href="07-simple.html#SaveButton">Save</a>), then "Reset," then "Cancel." See <a href="06-content.html#6.6.1">6.6.1 Saving Changes on Primary-Content 
+          Pages</a> and <a href="06-content.html#6.7.1">6.7.1 Saving Changes on 
+        Secondary-Content Pages</a> for more information.</p>
+        <p>Note that this is not the standard HTML/HTTP reset action that you get from the &lt;input type=&quot;reset&quot;&gt; tag and that this tag should not be associated with any Reset button used within an application. </p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="RestoreDefaultsButton"></a>Restore Defaults&nbsp;</td>
+      <td>Resets all values shown on the page to default values. Values are not 
+        saved until the user explicitly saves them (e.g. by clicking an OK or 
+        Save button).</td>
+      <td><p>Use this button when there are many fields on the page, or when there 
+          are default values that users might want to retrieve. Always confirm 
+          the Restore Defaults action with a JavaScript alert message before discarding 
+          the current data. Order the page buttons <a href="07-simple.html#OKButton">OK</a> 
+          (or <a href="07-simple.html#SaveButton">Save</a>), then "Restore Defaults," then "Cancel." 
+          See <a href="06-content.html#6.6.1">6.6.1 Saving Changes on Primary-Content 
+          Pages</a> and <a href="06-content.html#6.7.1">6.7.1 Saving Changes on 
+          Secondary-Content Pages</a> for more information.</p>
+        <p>Note: Using the term &quot;Restore Defaults&quot; should usually be 
+          fine. However, if an application supports restoring specific types of 
+          defaults, qualification can be added to the label. For example, if an 
+          application supports restoring factory defaults, use the label &quot;Restore 
+          Factory Defaults.&quot;</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="SaveButton"></a>Save</td>
+      <td>Commits all changes made on the page during this 'edit session' to the server, but remains on the 
+        current page in the same editing state.</td>
+      <td><p>Alternatively, label the button "Save Changes" when the context is not 
+          clear. However, do not use both buttons on one page because users might 
+        think the buttons have different meanings.&nbsp;</p>
+        <p>Note that actions on the page may cause a reload of the page (for example, sorting or filtering a table), but changes are not actually committed until the Save button is clicked.</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="SearchButton"></a>Search&nbsp;</td>
+      <td>Searches for data in the system (for example, in a database), whether or not the data is already 
+        displayed on the current page.&nbsp;</td>
+      <td>Searching is different than the browser's "Find" function (which looks 
+        for a text string only on the currently displayed page). See <a href="12-search.html#12.1.1.2">12.1.1.2 
+        Global Quick Search: Application-Wide Text Search</a> for more information.</td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="SubmitJobButton"></a>Submit Job&nbsp;</td>
+      <td>Starts a job.&nbsp;</td>
+      <td> <p>Do not use &quot;Submit&quot; alone as users may not understand 
+          that a job will be started. &quot;Submit&quot; could easily be confused 
+          with <a href="07-simple.html#OKButton">OK</a>, whereas &quot;Submit Job&quot; clearly 
+          conveys that a job will be started. (See <a href="07-simple.html#submit-button">Submit</a> 
+          in the table of forbidden button labels below.)</p>
+        <p>For print jobs, use &quot;Print.&quot;<br>
+          For e-mail messages, use &quot;Send.&quot;</p></td>
+    </tr>
+  </tbody>
+</table>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Never use button labels from the following table.</p>
+<table class="info-table" border="1" cellspacing="0" cellpadding="10" width="90%">
+  <tbody>
+    <tr bgcolor="#eeeeee"> 
+      <th><b>Forbidden Button Label</b></th>
+      <th><b>Substitute Button Label</b></th>
+    </tr>
+    <tr valign="top"> 
+      <td>Abort</td>
+      <td>Cancel or Stop (Use &quot;Cancel&quot; if work done already 
+        will be backed out. Otherwise, use &quot;Stop.&quot;)</td>
+    </tr>
+    <tr valign="top"> 
+      <td>Create</td>
+      <td> <p>New. The &quot;New&quot; button label may be combined 
+          with a noun for clarity, such as &quot;New Server.&quot;</p></td>
+    </tr>
+    <tr valign="top"> 
+      <td>Clone</td>
+      <td>Duplicate</td>
+    </tr>
+    <tr valign="top"> 
+      <td>Help</td>
+      <td> <p>Provide help in one or <span class="style2">more</span> of the following ways:</p>
+        <ul>
+          <li class="style2">Inline help (page level and/or field level) </li>
+          <li class="style2">In main browser windows: Help in the Masthead <span class="style2">(this is not an application-specific Help button in a page's content area) </span></li>
+          <li class="style2">In pop-up windows, help in the page's left pane, or create a link to help in the page level inline help text</li>
+        </ul></td>
+    </tr>
+    <tr valign="top"> 
+      <td>Kill</td>
+      <td width="62%"><font color="#000000">Cancel or Stop (Use &quot;Cancel&quot; 
+        if work done already will be backed out. Otherwise, use &quot;Stop.&quot;)</font></td>
+    </tr>
+    <tr valign="top"> 
+      <td>Modify</td>
+      <td> <p>Edit<br>
+        </p></td>
+    </tr>
+    <tr valign="top"> 
+      <td>Quit</td>
+      <td>Exit</td>
+    </tr>
+    <tr valign="top"> 
+      <td><a name="submit-button"></a>Submit 
+        <!-- (other than for the rare cases of actually submitting 
+      computer job requests, such as submitting an online transaction for processing) -->
+      </td>
+      <td> <p>For submitting a job to a batch or back-end processing subsystem, use <a href="07-simple.html#SubmitJobButton">Submit 
+          Job</a><br>
+          For print jobs, use &quot;Print.&quot;<br>
+          For e-mail messages, use &quot;Send.&quot;<br>
+          For filled in forms, use <a href="07-simple.html#OKButton">OK</a>.</td>
+    </tr>
+  </tbody>
+</table>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If a button merely initiates an action that is later completed in a secondary-content page or a pop-up window, notify users by placing 
+  ellipsis points (...) after the button text. An example of a button that would 
+  always use ellipsis points would be the &quot;Browse Server...&quot; button.</p>
+<p>This requirement applies only to text in buttons. Ellipsis points are not used 
+  in iconic buttons.</p>
+<p>For example, after clicking a "Print..." button, users are presented with a 
+  dialog page in which they specify the printer location, how many copies to print, 
+  and so forth. In contrast, a "Print" button that prints one copy to the default 
+  printer without displaying a dialog page should not have ellipsis points.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not use ellipsis points in buttons that fully specify an action, even if that action opens a pop-up window. In this case, opening the pop-up window is the result of the action.</p>
+<p>For example, a "View Properties" button should not have ellipsis points if 
+  the resulting secondary-content page or pop-up window displays the properties 
+  that the user requested. Ellipsis points are inappropriate because the pop-up 
+  window is not used for specifying an action, but  is instead  the result of carrying out the requested action.<br>
+</p>
+<h2><a name="7.2"></a>7.2 Elements Used for Choosing Data, Performing Actions, and Navigating</h2>
+<p>This section discusses several elements that allow users to choose one or more 
+  data values in fields within a page<span class="style2">, elements that allow users to perform actions, and simple elements that allow users to navigate. This section does not cover choosing entire 
+  rows of data, which is a topic covered in <a href="09-tables.html#9.3">9.3 Selection 
+  in Tables</a> or more advanced means of navigation, covered in <a href="05-navigation.html">Chapter 5, Top-Level Navigation</a>.</span></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Use a particular element for choosing data only if the requirements listed for 
+that element are satisfied. Note whether ALL or ANY of the listed values must 
+be satisfied.
+</p> 
+<h3><a name="7.2.1"></a>7.2.1 Elements Used for Choosing One Value</h3>
+<ul>
+  <li>Checkbox </li>
+  <li>Set of radio buttons </li>
+  <li><span class="style2">Standard d</span>rop-down menu</li>
+  <li>Scrolling list </li>
+</ul>
+<p>Subsequent sections provide details about appropriate uses for these elements.</p>
+<h4><a name="7.2.1.1"></a>7.2.1.1 Checkbox</h4>
+<p><img src="simple_graphics/checkbox.png" width="608" height="106" alt="Enabled, Read-Only, and Disabled Checkboxes" border="0"></p>
+<p>A checkbox is the simplest user interface element for choosing data.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Use a checkbox only if ALL of the following are true:</p>
+<ul>
+  <li>Users can choose between True and False, or between one value and no value. </li>
+  <li><i>Checked</i> means definitely True.</li>
+  <li><i>Unchecked</i> means definitely False, and never means <i>null</i>, <i>undefined</i>, <i>varies</i>, etc.</li>
+  <li>The variable being represented is a boolean, with only True or False values possible, never with a third, <i>null</i>, or <i>undefined</i>, or <i>varies</i>, etc, possible value.</li>
+  <li>A user clicking the checkbox twice will return the UI to its previous state, as if the user did nothing.</li>
+</ul>
+
+  <p>Otherwise, use radio buttons or a drop-down menu to explicitly show all the possible values to the user, and to permit the user to select from amongst all the possible acceptable values.</p>
+  <blockquote>
+  <!-- <form name="form2">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr bgcolor="#eeeeee">
+        <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+        <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+        <td>Notes</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right" valign="top"><b>Status:</b></td>
+              <td><input name="radiobutton" type="radio" value="radiobutton">
+                Incomplete<br>
+                <input name="radiobutton" type="radio" value="radiobutton" checked>
+                Pending<br>
+                <input type="radio" name="radiobutton" value="radiobutton">
+                Processed</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top"><b>Status:</b></td>
+              <td><select name="select">
+                  <option>Incomplete</option>
+                  <option selected>Pending</option>
+                  <option>Processed</option>
+              </select></td>
+            </tr>
+        </table></td>
+        <td align="center" valign="top" nowrap><input name="checkbox2222" type="checkbox" value="checkbox" checked>
+          Pending</td>
+        <td>where in this example system, <i>status</i> can have 1 of 3 values</td>
+      </tr>
+      <tr>
+        <td align="center" valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right" valign="top"><b>Availability:</b></td>
+              <td><input name="radiobutton2" type="radio" value="radiobutton2" checked>
+                Not known<br>
+                <input name="radiobutton2" type="radio" value="radiobutton2">
+                Available<br>
+                <input type="radio" name="radiobutton2" value="radiobutton2">
+                Unavailable</td>
+            </tr>
+            <tr>
+              <td align="right" valign="top"><b>Availability:</b></td>
+              <td><select name="select">
+                  <option selected>Not Known</option>
+                  <option>Available</option>
+                  <option>Unavailable</option>
+                </select>
+              </td>
+            </tr>
+        </table></td>
+        <td align="center" valign="top" nowrap><input name="checkbox2222" type="checkbox" value="checkbox">
+          Available</td>
+        <td><p>where in this example system, <i>availability</i> is normally boolean but in some cases is unknown.</p>
+            <p>showing it as false (unchecked checkbox) when it really is unknown is <b>lying</b> to the user</p></td>
+      </tr>
+    </table>
+  </form> -->
+<p><img src="simple_graphics/checkbox_usage_1.png" width="760" height="296" alt="Shows correct use of radio buttons and Drop-down menus vs. incorrect use of a checkbox" border="0"></p>
+</blockquote>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Place a label to the right of the checkbox.</p>
+<blockquote>
+<!--   <form name="form2">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr bgcolor="#eeeeee">
+        <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+        <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+      </tr>
+      <tr valign="top">
+        <td align="center"><input name="checkbox" type="checkbox" value="checkbox" checked>
+          Enable Logging</td>
+        <td align="center">Enable Logging:
+            <input name="checkbox22222" type="checkbox" value="checkbox" checked>
+        </td>
+      </tr>
+      <tr valign="top">
+        <td><font size="-2">In an Aligned, Labelled set of Fields:<br>
+          </font>
+            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+              <tr>
+                <td align="right"><b>Logging:</b></td>
+                <td><input name="checkbox22392" type="checkbox" value="checkbox" checked>
+                Enabled</td>
+              </tr>
+              <tr>
+                <td align="right"><b>Name:</b></td>
+                <td><input name="textfield2" type="text" value="Fred" size="20">
+                </td>
+              </tr>
+          </table></td>
+        <td><br>
+            <table width="100%" border="0" cellpadding="5" cellspacing="0">
+              <tr>
+                <td align="right"><b>Enable Logging:</b></td>
+                <td><input name="checkbox2239" type="checkbox" value="checkbox" checked>
+                </td>
+              </tr>
+              <tr>
+                <td align="right"><b>Name:</b></td>
+                <td><input name="textfield" type="text" value="Fred" size="20"></td>
+              </tr>
+          </table></td>
+      </tr>
+    </table>
+  </form> -->
+<p><img src="simple_graphics/checkbox_usage_2.png" width="504" height="185" alt="Shows correct and incorrect placement of checkbox labels" border="0"></p>
+</blockquote>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Display the checkbox label according to the guidelines specified in <a href="07-simple.html#7.3.1">7.3.1 Labels</a>.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Apply headline capitalization to all checkbox labels (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>). </p>
+<p> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> <span class="style2">Allow users to select a checkbox by clicking on either the box itself or its label.</span></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Do not use Checkboxes to trigger immediate actions (i.e. submitting the page, hyperlinking, or opening a window) unless the action is solely for purposes of redrawing the same page to facilitate interactivity (i.e. showing additional information) on the same apparent page whose edits remain uncommitted and in-progress (from the user's perspective).</p>
+
+<p>Instead, use Buttons to trigger immediate actions.</p>
+  <p>Note that many checkboxes do not trigger actions but set boolean flag variables for an action to be performed later (see 2nd example). These are not triggers of immediate actions at all. This guideline does not apply to such situations.<br>
+</p>
+  <blockquote>
+<!--   <form>
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr bgcolor="#eeeeee">
+        <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+        <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+      </tr>
+      <tr valign="top">
+        <td align="center"><input type="submit" name="Submit" value=" Reboot Now "></td>
+        <td><input name="checkbox22422" type="checkbox" value="checkbox">
+          Reboot Now</td>
+      </tr>
+      <tr valign="top">
+        <td align="center"><table border="1" cellspacing="0" cellpadding="10">
+            <tr>
+              <td bgcolor="#FFFFCC">All Done. What Next?</td>
+            </tr>
+            <tr>
+              <td align="center"><p>
+                  <input name="checkbox2" type="checkbox" value="checkbox" checked>
+                  Reboot</p>
+                  <p>
+                    <input type="submit" name="Submit2" value=" OK ">
+                </p></td>
+            </tr>
+          </table>
+          This is a dialog (popup or secondary window)</td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </form> -->
+<p><img src="simple_graphics/checkbox_usage_3.png" width="385" height="255" alt="Shows correct use of buttons vs. incorrect use of checkboxes to trigger actions" border="0"></p>
+</blockquote>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+When checkboxes are used in an aligned, labeled set of fields (i.e. on a Property Page), each checkbox must have BOTH a normal label on the left and a <i>description of the checked state</i> on the right. Exception: if the checkbox is in a set of related options, use a single normal label on the left to label the whole set (top-align the label to the set).</p>
+<blockquote>
+  <!-- <form name="form2">
+    <table border="1" cellpadding="10" cellspacing="0">
+      <tr bgcolor="#eeeeee">
+        <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+        <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right"><b>Logging:</b></td>
+              <td><input name="checkbox223922" type="checkbox" value="checkbox" checked>
+                Enabled</td>
+            </tr>
+            <tr>
+              <td align="right"><b>Name:</b></td>
+              <td><input name="textfield22" type="text" value="Fred" size="20">
+              </td>
+            </tr>
+        </table></td>
+        <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right"><b> Logging Enabled:</b></td>
+              <td><input name="checkbox22393" type="checkbox" value="checkbox" checked>
+              </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Name:</b></td>
+              <td><input name="textfield3" type="text" value="Fred" size="20">
+              </td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr valign="top">
+        <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr>
+              <td align="right"><b> </b></td>
+              <td><input name="checkbox22393" type="checkbox" value="checkbox" checked>
+                Logging Enabled </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Name:</b></td>
+              <td><input name="textfield3" type="text" value="Fred" size="20">
+              </td>
+            </tr>
+        </table></td>
+      </tr>
+      <tr valign="top">
+        <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr valign="top">
+              <td align="right"><b>Include:</b></td>
+              <td><input name="checkbox2239222" type="checkbox" value="checkbox" checked>
+                Username<br>
+                <input name="checkbox22392222" type="checkbox" value="checkbox" checked>
+                Timestamp<br>
+                <input name="checkbox22392223" type="checkbox" value="checkbox" checked>
+                Detailed Diagnostics </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Name:</b></td>
+              <td><input name="textfield222" type="text" value="Fred" size="20">
+              </td>
+            </tr>
+        </table></td>
+        <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+            <tr valign="top">
+              <td align="right"><b>Include:</b></td>
+              <td><input name="checkbox22392224" type="checkbox" value="checkbox" checked>
+                Username</td>
+            </tr>
+            <tr valign="top">
+              <td align="right"><b>Include:</b></td>
+              <td><input name="checkbox223922222" type="checkbox" value="checkbox" checked>
+                Timestamp</td>
+            </tr>
+            <tr valign="top">
+              <td align="right"><b>Include:</b></td>
+              <td><input name="checkbox223922232" type="checkbox" value="checkbox" checked>
+                Detailed Diagnostics </td>
+            </tr>
+            <tr>
+              <td align="right"><b>Name:</b></td>
+              <td><input name="textfield2222" type="text" value="Fred" size="20">
+              </td>
+            </tr>
+        </table></td>
+      </tr>
+    </table>
+  </form> -->
+<p><img src="simple_graphics/checkbox_usage_4.png" width="513" height="375" alt="Shows correct and incorrect use of normal field labels with checkboxes" border="0"></p>
+</blockquote>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+When checkboxes are used in an aligned, labeled set of fields (i.e. on a Property Page), and when checkboxes are used to indicate <i>enabled</i>, <i>on</i>, <i>active</i>, or similar concepts describing <i>system </i>or<i> object state</i>, then these rules apply:</p>
+<ul>
+  <li>The text on the left of the checkbox (the field label) should be the name of the affected object or subsystem [or a general term such as &quot;mode&quot;]. This is generally a noun [phrase] or infinitive verb in English.<br>
+          <br>
+          <!-- <form name="form2">
+            <table border="1" cellpadding="10" cellspacing="0">
+              <tr bgcolor="#eeeeee">
+                <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+                <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b>Logging:</b></td>
+                      <td><input name="checkbox22392232" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield2232" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+                <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b> Write to Log:</b></td>
+                      <td><input name="checkbox2239322" type="checkbox" value="checkbox" checked>
+                  Enabled </td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield322" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b>Logging:</b></td>
+                      <td><input name="checkbox22392232" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield2232" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+                <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b> Enable:</b></td>
+                      <td><input name="checkbox2239322" type="checkbox" value="checkbox" checked>
+                  Logging</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield322" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+          </form> -->
+		  <img src="simple_graphics/checkbox_usage_5.png" width="487" height="220" alt="Examples of correct and incorrect field labels for checkboxes" border="0"><br>&nbsp;<br>
+  </li>
+  <li> The text on the right of the checkbox should be the <i>description of the checked state</i>. This is generally an adverb (for infinitive verbs on the left), adjective (for noun phrases on the left), or affirmative statement. Avoid <i>Yes</i> and <i>True</i>.<br>
+        <br>
+        <!-- <form name="form2">
+          <table border="1" cellpadding="10" cellspacing="0">
+            <tr bgcolor="#eeeeee">
+              <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+              <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b>Logging:</b></td>
+                    <td><input name="checkbox22392233" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield2233" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+              <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b> Logging:</b></td>
+                    <td><input name="checkbox2239323" type="checkbox" value="checkbox" checked>
+                  True</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield323" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b>Door:</b></td>
+                    <td><input name="checkbox22392233" type="checkbox" value="checkbox" checked>
+                  Open</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield2233" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+              <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b> Door Open:</b></td>
+                    <td><input name="checkbox2239323" type="checkbox" value="checkbox" checked>
+                  True</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield323" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+        </form> -->
+		<img src="simple_graphics/checkbox_usage_6.png" width="478" height="220" alt="Examples of correct and incorrect checkbox labels" border="0"><br>&nbsp;<br>
+  </li>
+  <li> Do not repeat the same words on both sides of the checkbox.<br>
+      <br>
+      <!-- <form name="form2">
+        <table border="1" cellpadding="10" cellspacing="0">
+          <tr bgcolor="#eeeeee">
+            <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+            <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+          </tr>
+          <tr>
+            <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                  <td align="right"><b>Logging:</b></td>
+                  <td><input name="checkbox22392234" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                </tr>
+                <tr>
+                  <td align="right"><b>Name:</b></td>
+                  <td><input name="textfield2234" type="text" value="Fred" size="20">
+                  </td>
+                </tr>
+            </table></td>
+            <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                <tr>
+                  <td align="right"><b> Logging Enabled:</b></td>
+                  <td><input name="checkbox2239324" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                </tr>
+                <tr>
+                  <td align="right"><b>Name:</b></td>
+                  <td><input name="textfield324" type="text" value="Fred" size="20">
+                  </td>
+                </tr>
+            </table></td>
+          </tr>
+        </table>
+      </form> -->
+  <img src="simple_graphics/checkbox_usage_7.png" width="511" height="129" alt="Shows correct (not repeated) and incorrect field and checkbox labels for checkboxes" border="0" ><br>&nbsp;<br>
+  </li>
+  <li>Be consistent within an application with regard to the terminology used (i.e. don't mix &quot;enabled&quot; and &quot;active&quot;) and the format of labeling checkboxes.<br>
+          <br>
+<!--           <form name="form2">
+            <table border="1" cellpadding="10" cellspacing="0">
+              <tr bgcolor="#eeeeee">
+                <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+                <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+              </tr>
+              <tr>
+                <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b>Logging:</b></td>
+                      <td><input name="checkbox22392235" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Backups:</b></td>
+                      <td><input type="checkbox" name="checkbox35" value="checkbox">
+                  Enabled</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield2235" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+                <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                    <tr>
+                      <td align="right"><b> Log:</b></td>
+                      <td><input name="checkbox2239325" type="checkbox" value="checkbox" checked>
+                  Enabled </td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Backups:</b></td>
+                      <td><input type="checkbox" name="checkbox45" value="checkbox">
+                  Active</td>
+                    </tr>
+                    <tr>
+                      <td align="right"><b>Name:</b></td>
+                      <td><input name="textfield325" type="text" value="Fred" size="20">
+                      </td>
+                    </tr>
+                </table></td>
+              </tr>
+            </table>
+          </form> -->
+		  <img src="simple_graphics/checkbox_usage_8.png" width="473" height="161" alt="Shows correct (consistent) and incorrect use of terminology for checkbox labels" border="0"><br>&nbsp;<br>
+  </li>
+  <li>Do not artificially split a multiword concept term into two parts just to comply with the rules above.<br>
+        <br>
+        <!-- <form name="form2">
+          <table border="1" cellpadding="10" cellspacing="0">
+            <tr bgcolor="#eeeeee">
+              <td><div align="center"><b><font color="#006600">Correct</font></b></div></td>
+              <td><div align="center"><b><font color="#993300">Incorrect</font></b></div></td>
+            </tr>
+            <tr>
+              <td><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b> Buffer Overrun Prevention:</b></td>
+                    <td><input name="checkbox2239223" type="checkbox" value="checkbox" checked>
+                  Enabled</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield223" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+              <td valign="top"><table width="100%" border="0" cellpadding="5" cellspacing="0">
+                  <tr>
+                    <td align="right"><b> Buffer Overrun:</b></td>
+                    <td><input name="checkbox223932" type="checkbox" value="checkbox" checked>
+                  Prevented</td>
+                  </tr>
+                  <tr>
+                    <td align="right"><b>Name:</b></td>
+                    <td><input name="textfield32" type="text" value="Fred" size="20">
+                    </td>
+                  </tr>
+              </table></td>
+            </tr>
+          </table>
+        </form> -->
+		<img src="simple_graphics/checkbox_usage_9.png" width="605" height="128" alt="Shows correct and incorrect ways to label checkboxes representing multi-word concepts" border="0">
+  </li>
+</ul>
+<H4><A name="7.2.1.2"></A>7.2.1.2 Set of Radio Buttons</H4>
+<P><IMG src="simple_graphics/radio_buttons.png" width="608" height="106" alt="Example of Enabled, Read-only, and Disabled sets of radio buttons" border="0"><br>
+</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Use a set of radio buttons if ALL of the following are true:</P>
+<UL>
+  <LI>Users can choose from among a maximum of ten options, or if there are icons 
+    associated with the different options, twenty options.  Icons can be used to help users 
+	more easily identify individual options or groups of options from which a selection can be made. 
+    (Icons cannot be placed next to items in drop-down menus. Thus, when icons 
+    need to be associated with the different options, radio buttons are used.)</LI>
+  <LI>Users can select only one option at a time.</LI>
+  <LI>The page has sufficient space to display all the options (without causing unnecessary page scrolling).</LI>
+  <LI>One option must always be selected. See the following guideline if you need to represent that none of the options are selected.</LI>
+</UL>
+<P>When these conditions are met, radio buttons are preferable to drop-down menus 
+  because all the possible options are always visible.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If you need to represent &lt;none selected&gt;,  add an additional radio button for this purpose. For example, a radio button labeled &quot;Unknown&quot; or &quot;None&quot; could be added. </P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Place each radio button label to the right of the radio button.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the radio button labels according to the guidelines specified in <A href="07-simple.html#7.3.1">7.3.1 
+  Labels</A>.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Apply headline capitalization to all radio button labels (see <A href="02-visual.html#2.5">2.5 
+Text Capitalization</A>).</P>
+<P> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> <span class="style3"><span class="style2">Allow users to select a radio button by clicking on either the button itself or its label.
+</span>  <!-- Removed for 2.2
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Place the radio buttons five pixels apart to visually indicate that they 
+  form a distinct set of radio buttons.</P> -->
+    
+</span></P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Follow the guidelines 
+  in <A href="06-content.html#6.7">6.7 Secondary-Content Page Layout and Use</A> to determine how to position a set of radio buttons on a page with other  user interface elements (for example, on a page that allows users to view, edit, and save changes to an object's properties). </P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   When you can clarify the meaning of the radio button set, label the set 
+  on the left and align the label with the topmost radio button. However, never provide a label only to 
+  the left of a radio button or to the left of each radio button in a set.  See the example 
+  at the beginning of this section.</P>
+ 
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Display the radio buttons using a vertical layout if space is available. </P>
+<P>A vertical layout is most commonly used when icons are associated with the radio buttons to help users more easily identify the desired selection. For example:</P>
+<P><img src="simple_graphics/radio_buttons_with_icons.png" width="250" height="82" alt="Vertical set of radio buttons with icons" border="0"></P>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+   When vertical space is limited, use a horizontal layout for the radio 
+  buttons.</P>
+<P>A horizontal layout is usually less visually clear than a vertical layout, 
+  so users have more difficulty scanning the options. If you use a horizontal 
+  layout, include sufficient space between the options to avoid confusion about 
+  which radio button is associated with which text label. However, keep the options 
+  close enough to visually indicate that they form a distinct set of radio 
+  buttons.</P>
+<P>For example:</P>
+<P><IMG src="simple_graphics/radio_horizontal.png" width="393" height="31" alt="Set of radio buttons in a horizontal layout" border="0"></P>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+   Also consider laying out radio buttons in columns (with the order of the 
+  options running down the first column, then down the second column, and so on).</P>
+<H4><A name="7.2.1.3"></A>7.2.1.3 Standard Drop-Down Menu</H4>
+<P>Drop-down menus are also known as:</P>
+<UL>
+  <LI>Drop-down lists</LI>
+  <LI>Noneditable combo boxes <span class="style2">(in Swing Components and thus also in the Java Look 
+    and Feel Design Guidelines)</span></LI>
+  <span class="style17">
+  <!--  <LI>Selection lists</LI>  -->
+  </span>
+  <LI>Pop-up lists</LI>
+  <LI>Pull-down menus (even though they are not similar to pull-down menus, such 
+    as File and Edit at the top of Java&trade; technology-based application windows)</LI>
+</UL>
+<P>There are two types of drop-down menus specified in these guidelines: <EM>standard 
+  menus</EM> and <EM>jump menus</EM>. These menu types exhibit different behavior 
+  and have a different appearance. <span class="style2">The <em>standard</em> menu is described in this section. </span></P>
+<P><span class="style2">Standard menus are  the type of menu used to simply choose a data value. Standard menus are not used to perform actions or allow simple navigation. For this, use a <em>jump</em> menu (see  <a href="07-simple.html#7.2.3.1">7.2.3.1 Jump Menus</a>). The selections in standard drop-down menus should usually be nouns, not verbs. </span><br>
+  <br>
+  <span class="style2">A standard drop-down menu looks like this:
+  <!-- Replaced with a single image for 2.2: 
+
+<TABLE border="1" cellpadding="5" cellspacing="0">
+  <TR> 
+    <TD>
+      <DIV align="center"><B>Standard Menu</B></DIV>
+    </TD>
+    <TD>
+      <DIV align="center"><B>Jump Menu</B></DIV>
+    </TD>
+  </TR>
+  <TR> 
+    <TD valign="top"><IMG src="simple_graphics/dropdown.gif" width="288" height="119"></TD>
+    <TD valign="top"><IMG src="simple_graphics/drop-down-jump.gif" width="288" height="127"></TD>
+  </TR>
+</TABLE> -->
+
+</span></P>
+<P><IMG src="simple_graphics/dropdown2.png" width="608" height="95" alt="Standard menu showing blank option selected." border="0"></P>
+
+<P>Standard menus exhibit typical menu behavior in that when a user selects an 
+item, the menu closes and the selected item is shown. <span class="style2">Note that sometimes when a value is selected, additional information or UI elements may be displayed, or existing elements may be enabled or disabled. This does not mean that a jump menu should be used. A change such as this is considered more of a side-result of choosing a particular value. Only when the selection explicitly performs an action or explicitly navigates to another page or view  would a jump menu be used. </span></P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style2">Use a standard drop-down menu if ALL of the following are true:</span></p>
+<UL>
+  <LI class="style2">Users are attempting to choose a single data value from among a number of possible values.</LI>
+  <LI class="style2">Users can choose among more than two values, or the page has insufficient 
+    space for a set of radio buttons. </LI>
+  <LI class="style2">No more than approximately 75 values are available. 
+ <!--  Removed for 2.2
+  In the Solaris version 
+    of Netscape 4, the drop-down menu is too clumsy to use with more than 75 values. 
+    See <A href="#asterisk">Note</A> at end of section.  --></LI>
+  <LI class="style2">There is no need to associate icons with the options. (If you wish to associate icons, consider using radio buttons. See <a href="07-simple.html#7.2.1.2">7.2.1.2 Set of Radio Buttons</a>.)</LI>
+  <LI class="style2"><span class="style2">The data does not have more than 3 values which begin with the same letter or number, as otherwise the field becomes unwieldy to set without using a mouse.&nbsp; For example, date fields are poor choices for drop-down lists as the user would have to type 1 ten times to finally get the drop-down list to the date value 19 (or press the down arrow up to 18 times instead). <BR>
+  </span></LI>
+</UL>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style2">Place a label to the left of all standard drop-down menus, as is done with  other entry fields, according to the guidelines specified in <A href="07-simple.html#7.3.1">7.3.1 Labels</A>. Do not include the label within the drop-down menu itself. </span></P>
+<P>This placement differs from the jump menus as described in <a href="07-simple.html#7.2.3.1">7.2.3.1 Jump Menus</a>. </P>
+<P> <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply headline capitalization to the labels of standard menus (see <A href="02-visual.html#2.5">2.5 
+  Text Capitalization</A>). <s><span class="style3">
+  <!-- Removed for 2.2 
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the contents of the standard menu in the default font face, weight, and size, 
+  in color Dark Grey 2. Refer to <A href="02-visual.html#2.1">2.1 Color Palette</A> 
+  and <A href="02-visual.html#2.2">2.2 Fonts</A> for more details on text display.</P> -->
+
+  </span></s> </P>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user is not required to make a selection from a standard menu, include a blank option and select it by default if that most accurately reflects the system's current state.  The user may choose something 
+else or may keep the blank option (assuming it is selected).  (If you need to be more specific than using blank, insert some text 
+within parentheses for this option.<span class="style2"> For example, make &quot;(No Color)&quot; a selectable item in a list of color choices.) Below is an example of of a standard menu with a blank option selected:</span></p>
+ <P><img src="simple_graphics/dropdown-blank.png" width="203" height="56" alt="Standard drop-down menu with blank option selected"></p>
+ <P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user must make a selection from a standard menu, choose an appropriate default value from the list of options.  If there 
+is no appropriate default value, include (and select by default, if appropriate) a blank option, but make sure there is an asterisk image associated with this field indicating 
+that it is a required field (see <a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a>).  <span class="style2">(Do not display text in parentheses instead of a blank option as this misleadingly suggests a valid value has been chosen.)</span> If the user does not choose a value from the list and then submits the page, provide an error 
+message indicating that a selection is required  (see <a href="14-alerts.html">Chapter 14 Alerts and Messages</a>).
+</p>
+<P class="style2">For information about grouping the menu items within a standard menu, see <a href="07-simple.html#7.2.3.3">7.2.3.3 Grouping Menu Items</a>.</p>
+<h5><a name="7.2.1.3.1"></a>7.2.1.3.1 General Drop-Down Menu Behavior</h5>
+<P class="style2">The information in this section applies to both standard menus (described in the previous section) and jump menus (see <a href="07-simple.html#7.2.3.1">7.2.3.1 Jump Menus</a>). </p>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Provide users with several ways to select an item in the drop-down menu. 
+  Allow them to:</P>
+<UL>
+  <LI>Click the drop-down menu to open the menu, position the pointer over the 
+    desired item to highlight it, and then click.</LI>
+  <LI>Press the mouse button in the drop-down menu to open the menu, drag through 
+    the menu to the desired item, and then release the mouse button.</LI>
+  <LI>Use the arrow key to move up and down through the items in the menu.</LI>
+  <LI>Type a letter to jump to the first item that begins with that letter (and 
+    possibly arrow or click from there). (In the Macintosh version of Internet 
+    Explorer, multiple letters can be specified if they are typed quickly enough.)</LI>
+  <LI>On Windows platforms, use Alt-Down to open the menu, use arrow keys or hovering mouse to move the 
+    highlight, then use Enter to complete the selection.</LI>
+</UL>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  If all of the items in a menu are temporarily disabled due to system state, 
+  allow the menu to open and display all of the disabled menu items rather than 
+  disabling the entire menu. If all of the menu items are permanently unavailable, 
+  the menu should not be displayed.</P>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+   For items in the drop-down menu (most applicable to <i>standard menus</i>), you can combine two data elements, usually shown as concatenated together with a hyphen.</P>
+<P>This strategy is most often used when an option has both a code and a description. 
+  For example, a severity drop-down menu might contain these items:</P>
+<UL>
+  1 - Corrupts Data<BR>
+  2 - Crashes Program<BR>
+  3 - User Interface Issue 
+</UL>
+<!-- Removed for 2.2
+<P><A name="asterisk">Note: </A> Explanation for limit on number of drop-down 
+  menu values: In Microsoft Windows, drop-down menus are as easy to select from 
+  as scrolling lists when many possible values are available. These drop-down 
+  menus:</P>
+<UL>
+  <LI>Have the same scrollbar as scrolling lists<BR>
+  </LI>
+  <LI>Can open in larger windows than scrolling lists can<BR>
+  </LI>
+  <LI>Allow users to type a letter to jump to the first item starting with that 
+    letter</LI>
+</UL>
+<P>However, the Solaris version of Netscape 4 has a special kind of list with 
+  no scrollbar. Instead, there is a More button at the bottom of the list. Users 
+  click the More button to open another list aside the first list. If the list 
+  has 1000 items, users might have to click the More button 20 times to find the 
+  desired item. In terms of usability, this design is unacceptable.</P> -->
+<H4><A name="7.2.1.4"></A>7.2.1.4 Scrolling List</H4>
+<P><IMG src="simple_graphics/scrolling_list.png" width="608" height="192" alt="Enabled, Read-Only, and Disabled Scrolling Lists" border="0"></P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the scrolling list label according to the guidelines specified in <A href="07-simple.html#7.3.1">7.3.1 
+  Labels</A>.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Align the scrolling list label to the left of the list's top item.</P>
+<!-- Removed for 2.2   
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the contents of the list in the default font face, weight, and size, 
+  in color Dark Grey 2. When the scrolling list is disabled, the appearance depends upon how the 
+  particular browser being used handles the display of disabled scrolling lists. 
+  .  Refer to <A href="02-visual.html#2.1">2.1 Color Palette</A> 
+  and <A href="02-visual.html#2.2">2.2 Fonts</A> for more details on text display.</P> -->
+  
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user is not required to make a selection from the scrolling list, include a blank option and select it by default if that most accurately reflects the system's current state.  The user may choose something else or may keep the blank option (assuming it is selected).  (If you need to be 
+more specific than using blank, insert some text within parentheses for this option. <span class="style2">For example, make &quot;(No Color)&quot; a selectable item in a list of color choices.) This guideline 
+does not apply to editable scrolling lists, the add-and-remove idiom, and orderable lists. 
+See <a href="08-complex.html">Chapter 8, Complex Elements</a> for information on these elements.
+Below is an example of of a scrolling list with a blank option selected:</span></p>
+<P><img src="simple_graphics/scrolling_list-blank.png" width="205" height="155" alt="Scrolling list with blank option selected"></p>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user must make a selection from the scrolling list, choose an appropriate default value from the 
+list of options.  If there is no appropriate default value, start with no selection for the list, but 
+make sure there is an asterisk image associated with this field indicating that it is a required field 
+(see <a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a>).  If the user 
+does not choose one or more of the values from the list and then submits the page, provide an error 
+message indicating that a selection is required  (see <a href="14-alerts.html">Chapter 14 Alerts and Messages</a>).
+</p>
+  
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If you are grouping items in the scrolling list, follow the guidelines specified 
+  in <A href="07-simple.html#7.2.3.3">7.2.3.3 Grouping Menu Items</A>.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Though scrolling lists are not often used for choosing a single value, 
+  use a scrolling list if ALL of the following are true:</P>
+<UL>
+  <LI>Users can choose among approximately 10 or more values.</LI>
+  <LI>The page has sufficient space to show at least 5 list items, and preferably, 
+    at least 10 percent of the number of expected list items. (Otherwise, scrolling 
+    is just as clumsy as using a drop-down menu.)</LI>
+  <LI>There is no need to associate icons with the options.</LI>
+  <LI>Users do not want to type the first letter of the desired option to jump 
+    to it. (This feature does not work in scrolling lists.)</LI>
+</UL>
+
+
+<h3><a name="7.2.2"></a>7.2.2 Elements Used for Choosing One or More Values</h3>
+<ul>
+  <li>Set of checkboxes </li>
+  <li>Multiple selection scrolling list </li>
+  <li>Editable scrolling list</li>
+  <li>Add-and-remove idiom</li>
+</ul>
+<p>Subsequent sections in this chapter provide details about appropriate uses for sets of checkboxes and multiple selection scrolling lists. See <a href="08-complex.html#8.1">8.1 Editable Scrolling List</a> and <a href="08-complex.html#8.2">8.2 Add-and-Remove Idiom</a> for details about these, more complex, elements.</p>
+<h4><a name="7.2.2.1"></a>7.2.2.1 Set of Checkboxes</h4>
+<p><img src="simple_graphics/checkbox_set.png" width="608" height="185" alt="Enabled, Read-Only, and Disabled Sets of Checkboxes" border="0"></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use a set of checkboxes if ALL of the following are true:</p>
+<ul>
+  <li>Users can select or deselect up to ten checkboxes, or if there are icons associated 
+    with them, up to twenty checkboxes.  Icons can sometimes be used to help users more easily understand 
+	the choices being offered.  For example, if choosing colors, seeing a swatch of color in an icon could help users 
+	understand the textual descriptions of the color choices given by the checkbox labels.</li>
+  <li>Users can select any combination of the values.</li>
+  <li>There is no need for users to specify an order for the selected values.</li>
+  <li>The page has sufficient space for a set of checkboxes.</li>
+  <li>It is not required that <span class="style2">the user select </span>any of the  options offered by the checkboxes. </li>
+</ul>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display checkbox labels according to the guidelines specified in <a href="07-simple.html#7.2.1.1">7.2.1.1 Checkbox</a>.</p>
+<!-- Removed for 2.2  
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Place the checkboxes five pixels apart to visually indicate that they 
+  form a distinct set of checkboxes.</p> 
+  
+<p>See <a href="06-content.html#6.7">6.7 Secondary-Content Page Layout and Use</a> 
+  for details.</p> -->
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When you can clarify the meaning of the set of checkboxes, label the set 
+  on the left and align the label with the topmost checkbox. However, never provide a label only to 
+  the left of a checkbox or to the left of each checkbox in a set.</p>
+<p>Where appropriate, this label can be plural (such as "Installed Browsers" rather 
+  than "Installed Browser").</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the checkbox set label according to the guidelines specified in <a href="07-simple.html#7.3.1">7.3.1 
+  Labels</a>.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply headline capitalization to both the checkbox set label and each individual 
+  checkbox label (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>). 
+</p>
+<p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Consider associating icons with the checkboxes to help users more easily 
+  identify the desired options, similar to the strategy of associating icons with 
+  radio buttons.&nbsp;</p>
+<H4><A name="7.2.2.2"></A>7.2.2.2 Multiple Selection Scrolling List</H4>
+<P><IMG src="simple_graphics/multiselect_scrolling_list.png" width="608" height="192" alt="Enabled, Read-Only, and Disabled Multiple Selection Scrolling Lists" border="0"><br>
+</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Use a multiple selection scrolling list if ALL of the following are true:</P>
+<UL>
+  <LI>Users can choose multiple values, and it is inappropriate to use a set of checkboxes. See 
+  <a href="07-simple.html#7.2.2.1">7.2.2.1 Set of Checkboxes</a> for guidelines regarding when to use checkboxes.</LI>
+  <LI>It is not important for users to view all their selected values at once 
+    (as some values will likely be scrolled out of view).</LI>
+</UL>
+<!-- <UL>
+  <LI>There is no need for users to specify an order for the selected values.<BR>
+  </LI>
+</UL> -->
+<P>Multiple selection scrolling lists are also used in the following more complex user interface 
+elements: <A href="08-complex.html#8.1">8.1 Editable Scrolling List</A>, <A href="08-complex.html#8.2">8.2 Add-and-Remove Idiom</A> and 
+<A href="08-complex.html#8.3">8.3 Orderable List</A>.
+</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the label for the multiple selection scrolling list according to the guidelines specified 
+  in <a href="07-simple.html#7.3.1">7.3.1 Labels</a>.</P>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply headline capitalization to the label (see <A href="02-visual.html#2.5">2.5 
+  Text Capitalization</A>). </P>
+ <!-- Removed for 2.2 
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the contents of the list in the default font face, weight, and size, 
+  in color Dark Grey 2. When the multiple selection scrolling list is disabled, the appearance depends upon how the 
+  particular browser being used handles the display of disabled multiple selection scrolling lists.  Refer to <A href="02-visual.html#2.1">2.1 Color Palette</A> 
+  and <A href="02-visual.html#2.2">2.2 Fonts</A> for more details on text display.</P> -->
+  
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Include text just below the multiple selection scrolling list that tells users 
+  they can select multiple values. Make this text platform-specific so that users 
+  know which keys to press.</P>
+<P>This text serves to differentiate the multiple selection scrolling list from 
+  a single selection scrolling list, to which it would otherwise appear identical.</P>
+<P>Make this text smaller than normal. (See information about Field Inline Help in <a href="11-help.html#11.1">11.1 Inline Help</a>.) While considering operating system differences, 
+  a technical writer can choose the text's final wording.</P>
+  
+<!-- Removed for 2.2  
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display this text in the small font face, weight, and size, in color Dark Gray 
+  2. Refer to <A href="02-visual.html#2.1">2.1 Color Palette</A> and <A href="02-visual.html#2.2">2.2 
+  Fonts</A> for more details on text display.<BR>
+</P> -->
+
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Align the multiple selection scrolling list label to the left of the list's top item. 
+  Make the label plural.</P>
+ 
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user is not required to make a selection from the multiple select scrolling list, include a blank option and select it by default if that most accurately reflects the system's current state.  The user may choose one or more other options or may keep the blank option (assuming it is selected).  (If you need to be 
+more specific than using blank, insert some text within parentheses for this option. For example, make &quot;(No Color)&quot; a selectable item in a list of color choices.) If the user selects 
+this option along with other options and submits the page, display an error message indicating that the blank option 
+in their selection is in conflict with the other selections  (see <a href="14-alerts.html">Chapter 14 Alerts and Messages</a>).  The user must choose either the blank option or one or 
+more of the other options. This guideline does not apply to editable scrolling lists, the add-and-remove idiom, and 
+orderable lists. See <a href="08-complex.html">Chapter 8, Complex Elements</a> for information on these elements. Below is an example of of a multiple selection scrolling list with a blank option selected:</p>
+<P><img src="simple_graphics/multiselect_scroll-blank.png" width="204" height="155" alt="Multiple Selection Scrolling List with Blank Option Selected"></p>
+<P><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">  
+If the user must make a selection from the multiple select scrolling list, choose an appropriate default 
+value from the list of options.  If there is no appropriate default value, start with no selection for the list. 
+In either case, make sure there is an asterisk image associated with this field indicating that it is a required field 
+(see <a href="07-simple.html#7.3.2">7.3.2 Editable Text Fields</a>). This is important because users can deselect all 
+items using this user interface element.  If the user does not choose one or more of the values from 
+the list and then submits the page, provide an error message indicating that a selection is required (see <a href="14-alerts.html">Chapter 
+14 Alerts and Messages</a>).
+</p> 
+
+<p>
+If the user needs to be able to order the items in the scrolling list, see section 
+<a href="08-complex.html#8.3">8.3 Orderable List</a>.
+</p>
+ <h3><a name="7.2.3"></a>7.2.3 Elements Used for Performing Actions and Navigating</h3>
+ <p class="style2">A number of elements can be used to allow users to perform actions within an application. Actions are commonly available via buttons which are described above in <a href="07-simple.html#7.1">7.1 Action Buttons</a>.  In tables they can be provided via buttons or via links (see <a href="09-tables.html#9.4.3.3">9.4.3.3 Using Embedded Table Actions)</a>. In addition, actions can be provided in a type of drop-down menu called a <em>jump menu</em> (see the following section). </p>
+ <p class="style2">Navigation is typically provided by more complex elements such as trees and tabs (see <a href="05-navigation.html">Chapter 5, Top-Level Navigation</a>). In tables they can be provided via links (see <a href="09-tables.html#9.2">9.2 Embedded Table Navigation</a>). In addition,   the <em>jump menu</em> can also be used to allow users to navigate among different views of a given page. </p>
+ <p class="style2">Jump menus, as used to perform actions as well as to navigate among views, are described in the following section. </p>
+ <p class="style2"><span class="style3">A related control is the pop-up menu, where menu options are provided in context. Details about the pop-up menu are discussed in <a href="07-simple.html#7.2.3.4">7.2.3.4 Pop-Up Menu</a>.</span></p>
+ <H4><a name="7.2.3.1"></a>7.2.3.1 Jump Menus</H4>
+<p>Drop-down menus are also known as:
+<UL>
+   <LI>Drop-down lists</LI>
+   <LI>Noneditable combo boxes <span class="style15"><span class="style2">(in Swing Components, and thus also in the Java Look and Feel Design Guidelines)</span><strong> </strong></span></LI>
+   <span class="style15"><strong>
+   <!--  <LI>Selection lists</LI>  -->
+   </strong></span>  
+   <LI>Pop-up lists</LI>
+   <LI>Pull-down menus (even though they are not similar to pull-down menus, such as File and Edit at the top of Java&trade; technology-based application windows)</LI>
+</UL>
+ <P>There are two types of drop-down menus specified in these guidelines: <EM>standard menus</EM> and <EM>jump menus</EM>. These menu types exhibit different behavior and have a different appearance. <span class="style2">The <em>jump</em> menu is described in this section. </span></P>
+ <P>Jump menus perform some action, such as opening a window<span class="style2">, or allow simple </span>  navigation to another page <span class="style2">or view</span> when the user selects an item<span class="style2"> in the menu. </span>Jump menus are not used for choosing a data value. For this, use a <em>standard</em> drop-down menu (see <a href="07-simple.html#7.2.1.3">7.2.1.3 Standard Drop-Down Menu</a>). </P>
+ <p class="style2">The distinguishing traits of a jump menu are:
+<ul>
+ <li>The items listed in a jump menu are displayed as links <span class="style3">(use text color as an indicator for a link). See <a href="02-visual.html#2.1">2.1 Color Palette</a> for information about Sun's web application color palette. </span></li>
+ <li>An action or navigation results immediately upon selection of an item in a jump menu </li>
+</ul>
+
+<p class="style2">A jump menu used to allow users to<em> perform an action</em> looks like this:<br>
+  <br>
+  <IMG src="simple_graphics/jumpmenu.png" width="563" height="99" alt="Enabled and Disabled Jump menus when menu is used to allow users to perform an action" border="0"></p>
+<p class="style3"><span class="style2">When used for providing actions, a jump menu does not display a label to the left of it. Instead, it </span><span class="style2">has a title with em-dashes (&mdash;) around it (for example, &mdash; Actions &mdash; ) displayed inside the drop-down menu itself. This label is displayed to let users know what kind of items are contained within the drop-down menu, and this label is re-displayed after a valid selection is made, and its associated action is performed. See <A href="07-simple.html#7.2.3.2">7.2.3.2 Jump Menu Behavior</A> for more information on jump menu behavior. Usually, the entries in an action Jump Menu are verbs, not nouns. </span></p>
+<p class="style2">See <A href="06-content.html#6.5.3">6.5.3 Content Page Actions Drop-Down Menu</A> and <A href="09-tables.html#9.4.3.2">9.4.3.2 Using a Single Drop-Down Menu for Table Actions</A> for example uses of jump menus for performing actions.<br>
+  <br>
+A jump menu used to allow users to <em>navigate</em> looks like this:<br>
+<br>
+<img src="simple_graphics/jumpmenu-nav.png" width="563" height="99" alt="Enabled and Disabled Standard Menu and Jump menus when menu is used to allow users to navigate" border="0"></p>
+<p><span class="style2">When used for navigation, a jump menu <em>does</em> display a label to the left of it, similar to the way a standard menu is displayed (see <a href="07-simple.html#7.2.1.3">7.2.1.3 Standard Drop-Down Menu</a>). Common labels for a jump menu used for navigation are &quot;View:&quot; and &quot;Filter:.&quot; Note that filtering (for example, in a table) is considered to be a form of navigation as the user explicitly requests to see a different (filtered) view of the data. The user isn't choosing the action to &quot;Filter&quot; from the jump menu, but choosing which filtered view (for example, which alarm severity) to display. Alarm severities are not actions.</span></p>
+<p class="style2">When used for navigation, the selected value  is displayed in the menu so that the  currently selected view (or filter) is always visible to the user. </p>
+<p class="style2">See <a href="06-content.html#6.4.1">6.4.1 Using a Drop-Down Menu for Content Area Navigation</a> and 
+<a href="09-tables.html#9.5.1.1">9.5.1.1 Basic Table Filtering</a> for examples of uses of jump menus for navigation.</p>
+<P class="style2"><img src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Give each jump menu a label,  inside of it when used for performing actions, or to the left of it when used for navigation. </P>
+<p><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Use a <span class="style2">jump menu </span> if ALL of the following are true:</p>
+<UL>
+   <LI class="style2">Users are attempting to perform an action or perform simple navigation (for example, navigating among page views) </LI>
+   <LI class="style2">Users can choose among more than two values, or the page has insufficient space for a set of action buttons or navigation links. </LI>
+   <LI><span class="style2">No more than approximately 75 values are available.
+   </span>     <!--  Removed for 2.2
+  In the Solaris version 
+    of Netscape 4, the drop-down menu is too clumsy to use with more than 75 values. 
+    See <A href="#asterisk">Note</A> at end of section.  -->
+   </LI>
+</UL>
+ <p><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Display jump menu labels,  when they appear to the left of the menu (when used for navigation), according to the guidelines specified in <A href="07-simple.html#7.3.1">7.3.1 Labels</A>.</p>
+<p> <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Apply headline capitalization to the labels of jump menus, whether they appear within the menu or to the left of the menu  (see <A href="02-visual.html#2.5">2.5 Text Capitalization</A>). <br>
+</p>
+<H4><a name="7.2.3.2"></a>7.2.3.2 Jump Menu Behavior</H4>
+ <P>Behavior specific to jump menus is described in this section. However, for general drop-down menu behavior, applicable to both jump menus and standard menus, refer to 
+ <a href="07-simple.html#7.2.1.3.1">7.2.1.3.1 General Drop-Down Menu Behavior</a>.</P>
+ <P><IMG src="Guidelines_Icons/Recommendation.jpg" alt="Guidelines_Icons/Recommendation" width="14" height="14" /> To reduce the number of user steps and to reduce clutter, jump menus do not use a Go (submit) button to initiate actions. Instead, these menus exhibit behavior in which the action associated with the menu item is performed as soon as the user selects a menu item. </P>
+ <P>In Netscape 7, users can keyboard navigate within jump menus using the arrow keys. In Internet Explorer, users can keyboard navigate by using the Alt key + down arrow to view the menu contents and the arrow keys to navigate through the menu content. In both cases, pressing the Enter key activates the selected menu item.
+     <!-- Removed for 2.2: Netscape 4 does not allow keyboard navigation through these menus. -->
+ </P>
+ <P><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Require confirmation from the user through means of an alert message (see <A href="14-alerts.html">Chapter 14 Alerts and Messages</A>) before a destructive or long action is actually performed. </P>
+ <P> Confirmation is especially important when a Go button is unavailable because users can inadvertently select an unintended item. </P>
+ <P> <IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> <span class="style2">For jump menus allowing users to perform actions (as opposed to navigation), d</span>esign the drop-down menu such that after a menu item is selected, the menu snaps back to the first item in the menu (that is, the label) before the action is performed. </P>
+ <P>This way, if the user clicks the Back button on the browser, the page loads with the menu label selected in the menu. </P>
+ <P> <IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> <span class="style2">An exception to this snap-back behavior is when a separator is selected from a jump menu used to perform actions. In that case, the separator should remain selected and the page should remain unchanged.</span> <span class="style2">Note that because Netscape 7 supports having disabled menu items in which items such as separators are not actually selectable, this situation would never occur. However, older browsers may not support disabled menu items. So, users could inadvertently select this invalid item. </span></P>
+ <P><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> <span class="style2">For jump menus used to allow users to navigate, the menu remains on the value the user last selected, and does not snap back. This way,  users can see <s></s>the location to which they have chosen to navigate. </span></P>
+ <P><span class="style2">It would be rare to have a separator in a navigation jump menu, but if a separator is selected in a navigation jump menu, display the separator, and leave the page unchanged. Users are more likely to realize that they have inadvertently selected an invalid item if the page does not change, and the separator is displayed as the selected item. Note that this is applicable only on older browsers that don't support disabled, and therefore unselectable, menu items.</span></P>
+ <P class="style2">The following diagram shows jump menu behavior for a menu used for performing actions: <br>
+   <br>
+   <img src="simple_graphics/menu-behavior.png" width="577" height="317" alt="Menu Behavior Diagram" border="0" /><br>
+ </P>
+ <p></p>
+ <H4><a name="7.2.3.3"></a>7.2.3.3 Grouping Menu Items</H4>
+ <P>To help users quickly locate and understand items contained in drop-down menus, consider grouping logically-related items. This is typically used in <i>jump menus</i>. The two methods for accomplishing this goal are <EM>standard grouping</EM> and <EM>optgroup grouping</EM>. </P>
+ <P>In standard grouping, <span class="style2">use separator lines to group items. Indicate each separator line </span>by a <span class="style5"></span>disabled and unselectable menu item containing a series of em-dashes (&quot;&#8212;&quot; or &quot;&amp;#8212;&quot; as in &quot;&mdash;&mdash;&mdash;&mdash;&mdash;&quot;). This method is similar to the menu grouping method commonly used for pull-down menus in nonbrowser-based applications. The series of em-dashes should be as long as the longest item in the menu. <span class="style2">Note that some older browsers may not support disabling menu items. In this case, follow the guidelines in 
+ <a href="07-simple.html#7.2.3.2">7.2.3.2 Jump Menu Behavior</a> for guidelines about what to do if a user selects a separator line. </span></P>
+ <P>In contrast, optgroup grouping relies on an HTML tag called optgroup, which gives grouped items an unselectable label. This label appears above the grouped items, and all of the items contained in the group appear indented below. Note that the optgroup tag is not supported on older browsers such as Internet Explorer 5.5. These browsers degrade gracefully by simply not showing the optgroup label and not indenting any of the menu items. </P>
+ <!-- Replaced with a single image for 2.2: 
+<TABLE border="1" cellpadding="5" cellspacing="0">
+  <TR> 
+    <TD>
+      <DIV align="center"><B>Standard Grouping</B></DIV>
+    </TD>
+    <TD>
+      <DIV align="center"><B>Optgroup Grouping </B></DIV>
+    </TD>
+  </TR>
+  <TR> 
+    <TD valign="top"><IMG height="122" src="simple_graphics/tableactionsmenu.gif" width="205" alt="Example of a drop-down action menu" /></TD>
+    <TD valign="top"><IMG height="224" src="simple_graphics/structuredmenus.gif" width="125" alt="Example of a structured drop-down action menu" /></TD>
+  </TR>
+</TABLE> -->
+<img src="simple_graphics/tableactionsmenu.png" width="635" height="296" alt="Two Jump menus, one showing Standard Grouping, one showing Optgroup Grouping" border="0">
+ <P><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Place separators before optgroups so that older browsers, which do not show the optgroup labels, still appear to group items using the standard grouping. The exception: when the optgroup appears at the beginning of the menu, omit the separator.</P>
+ <P><img src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Group items that are logically related. Do not group items based solely on frequency of use.</P>
+ <P><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> If the relationships among items in the menu groups are relatively clear, then use standard grouping. If the relationships among items are not clear, then consider using optgroup grouping.</P>
+ <P>For example, say a menu contains a list of storage devices and the items in the menu are the names of the devices. In this case, grouping the storage devices by model might be useful. It's unlikely that the names of the devices themselves convey the device model. Therefore, it is unlikely that, if standard grouping were used, users would realize how the items are grouped. However, optgroup grouping could be used to clarify the grouping scheme so that users can more easily understand the contents of the menu and more easily locate items. </P>
+ <P>On the other hand, if a menu contained a list of actions to be performed on storage devices and the actions were grouped into administrative actions and configuration actions, optgroup labels would be superfluous, merely adding visual clutter to the menu.</P>
+ <P><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> When using the optgroup method, use a concise, descriptive noun for the grouping label. Also, create parallel, consistent labels.</P>
+ <P><IMG src="Guidelines_Icons/Recommendation.jpg" alt="Guidelines_Icons/Recommendation" width="14" height="14" /> When using the optgroup method, avoid creating single-item optgroups.</P>
+ <P><IMG src="Guidelines_Icons/Recommendation.jpg" alt="Guidelines_Icons/Recommendation" width="14" height="14" /> Likewise, a menu should not contain only a single optgroup. In this case, the label for the group should be reflected in the menu's label.</P>
+ <P><IMG src="Guidelines_Icons/Recommendation.jpg" alt="Guidelines_Icons/Recommendation" width="14" height="14" /> Strive to use the standard and optgroup grouping methods consistently within your application. Do not arbitrarily use both types across menus. </P>
+ <p>
+       
+<H4><a name="7.2.3.4"></a>7.2.3.4 Pop-Up Menu</H4>
+
+       
+ <span class="style2"><span class="style3">At times it is necessary to provide menu options while users are working within the context of another user interface element. For example, when working with a table, a user may want to quickly select or deselect all rows. Clicking on an element of the table, such as an iconic button, could pop up a menu to provide these and possibly other applicable options. In this way, the options are available right from the table where the user's attention is focused. This functionality is provided by the  pop-up menu. </span></span><br>
+ <br>
+ Here is an example of a pop-up menu:<br> 
+<br>
+<img src="tables_graphics/selectAll.png" width="655" height="261"> <br>
+<IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Open a pop-up menu when the user clicks on  an icon, button, or hyperlinked text value that has a pop-up menu associated with it. Note that simply hovering over one of these objects does not open the pop-up menu.
+<p><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Because a pop-up menu is provided within the context of another user interface element, do not display a separate label for the menu, either outside of it or within it.<br>
+  <br>
+When a pop-up menu is invoked it is displayed over the contents of the page from which it is invoked. The menu is not transparent, so the page contents beneath the pop-up menu are not visible when the menu is displayed. <br>
+<br>
+<IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Because some of the page contents will be hidden by the pop-up menu, it should only be as large as it needs to be. Keep the wording of the menu items as brief as possible while still being clear.</p>
+<p><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Display the pop-up menu with a dropshadow on the bottom and right to make it appear as if it is floating above the page.</p>
+ <p><img src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> As in jump menus, pop-up menu items are displayed as links and take effect immediately when clicked. <span class="style3">See <a href="02-visual.html#2.1">2.1 Color Palette</a> for information about Sun's web application color palette. </span> </p>
+ <p><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Apply grouping mechanisms, as appropriate, to help users locate the desired menu item. See <a href="07-simple.html#7.2.3.3">7.2.3.3 Grouping Menu Items</a> for more information.</p>
+ <p>   <IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> Automatically close a pop-up menu once a menu item link is clicked or if the user clicks outside of the menu. </p>
+ <p>The default position for a pop-up menu is with the top left edge of the pop-up menu opening right under the bottom left edge of the control which invoked it.&nbsp; However, there might be cases where the menu will need to  be adjusted horizontally when the menu would not be visible on the screen when it is placed in the default location. In this situation, move the pop-up menu to the left, with the top right edge of the pop-up menu placed just below the bottom right edge of the control invoking it.</p>
+ <p>Similar space issues may arise vertically when the menu would not be visible on the page if placed below the invoking control. In this situation, position the pop-up menu <em>above</em> the invoking control.</p>
+ <p>Also, in some circumstances it is just more appropriate to position the pop-up menu in a location other than the default position. This may be dependent on the location of the control that invokes the pop-up menu. For example, in the accordion control (see <a href="05-navigation#5.1.2.1">5.1.2.1 Accordion</a>), it makes sense to position the pop-up menu such that its right edge aligns with the right edge of the invoking control.</p>
+ <p><IMG src="Guidelines_Icons/Requirement.jpg" alt="Guidelines_Icons/Requirement" width="14" height="14" /> If possible, position the pop-up menu in the default location (below and left-aligned with the invoking control). However, adjust horizontally and/or vertically, as described above, if the pop-up menu would not be completely visible, would cover  information that should be visible while the user is viewing the menu, or if it is otherwise more appropriate to position it in a non-default location.<br>
+   <br>
+   Below is an example of a pop-up menu that has been moved to the left, aligning its right edge with the right edge of the control that invoked it.<img src="simple_graphics/right-aligned-pop-up-menu.png" width="654" height="261"> <br>
+ </p>
+ <h2><a name="7.3"></a>7.3 Text Elements</h2>
+<p>Text elements allow users to view and edit text in applications. The several 
+  types of text elements include:<br>
+</p>
+<ul>
+  <li> Labels</li>
+  <li>Editable text fields (which may be disabled or displayed as noneditable/read-only)</li>
+  <li>Password fields (a special version of the editable text field)</li>
+  <li>Text areas</li>
+</ul>
+<p>The following example shows a page with an example of each type of text element:<br>
+  <br>
+  <img src="simple_graphics/text_components.png" width="678" height="275" alt="Page with an example of each type of text element" birder="0"></p>
+<p>&nbsp;</p>
+<h3><a name="7.3.1"></a>7.3.1 Labels</h3>
+
+<p class="style15"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  <span class="style2">Use text labels to identify controls and data values. Labels should be left-aligned 
+and appear to be associated with the item being labeled.</span></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use 
+  headline capitalization on all labels (see <a href="02-visual.html#2.5">2.5 
+  Text Capitalization</a>).</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"><span class="style2"> If a field requires that units-of-measure be specified, place this information to the right of the field itself (not as part of the field's label). Do not place this information within parentheses. Use headline capitalization (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>) for units-of-measure information.</span></p>
+<p><span class="style15"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> <span class="style2">For accessibility reasons, enclose the field and units-of-measure information in a span or div tag to tie them together.</span></span></p>
+<p>Form elements are often organized hierarchically into groups and subgroups. 
+  The labels on the individual elements as well as on the groups are designed 
+  to visually support this hierarchy. In this scheme, groups have bolder, heavier 
+  labels whereas individual elements within the groups have lighter labels. In 
+  the following example, Level 1 labels have a heavier appearance than Level 2 
+  labels, which, in turn have a heavier appearance than Level 3 labels.<br>
+  <br>
+  <img src="simple_graphics/label-snap.png" alt="Example of Label Hierarchy (excluding level 2.5 which is used only to display read-only sets of checkboxes)" width="521" height="241" border="0"><br>
+  <br>
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Level 1 labels are visually much heavier than the text appearance <span class="style2">for field labels</span> as specified 
+  in these guidelines. Therefore, use them sparingly. In these guidelines, use 
+  of Level 1 labels is reserved for elements such as section headings.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Level 2 labels are the labels to use by default. <span class="style2">They are used for most field labels.</span> These labels appear left-aligned 
+  with each other and to the left of the element or elements they are labeling. 
+  <!-- Removed for 2.2: Level 2 labels use the default font face and size, bold weight, and are Dark 
+  Grey 1 in color. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> 
+  and <a href="02-visual.html#2.2">2.2 Fonts</a> for more details on text display. --></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use Level 3 labels for items appearing within a group that is labeled with a 
+  Level 2 label. These labels should be left-aligned with each other and generally, 
+  though not always, appear to the right of the element that they are labeling <span class="style2">(for example, checkbox and radio button labels)</span>. 
+  If an item with a Level 3 label contains a group of items (as in the preceding 
+  example), then the items within the group should also have a Level 3 label. 
+  <!-- Removed for 2.2: Level 3 labels use the default font face and size, normal weight, and are Dark 
+  Grey 2 in color. Refer to <a href="02-visual.html#2.1">2.1 Color Palette</a> 
+  and <a href="02-visual.html#2.2">2.2 Fonts</a> for more details on text display. --></p>
+  
+<p>When a mix of checkboxes, radio buttons and other form elements appear in a 
+  group, as shown in the following example, each item at the top level (that 
+  is, not items that are in subgroups) should have a Level 2 label to its left. 
+  In <span class="style2">the Incorrect example on the right</span>, the checkbox labeled &quot;Automatically Mount Home 
+  Directory&quot; is logically at the same level as the other items (Path, Server 
+  and Permissions). Therefore, the checkbox arguably could appear left-aligned 
+  with the labels for these items with the Level 2 label. However, this arrangement diminishes readability and makes it more difficult 
+  for the user to understand the relationships among the items. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  The method for handling these mixed-element situations, <span class="style2">shown in the Correct example on the left</span>, is to give each item a Level 2 label on the left and to align the radio 
+  button or checkbox (and its right-hand label) with the other form elements in 
+  the group. It can be awkward to have an item with two labels if the labels are 
+  essentially identical. So, one approach to writing the labels is to use a short 
+  descriptive noun as the Level 2 label on the left and a more descriptive phrase 
+  for the Level 3 label on the right. </p>
+<p><img src="simple_graphics/label-layout-snap.png" alt="Example of Label Layout in a Mix of Different Form Elements" width="658" height="211" border="0"></p>
+<p><span class="style3"><a name="level2.5"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> </span>When displaying a set of checkboxes  in its noneditable (read-only) appearance (see <a href="07-simple.html#7.2.2.1">7.2.2.1 Set of Checkboxes</a>), use a level 2 label  for the label of the <em>set</em>, as is done when labeling a set of enabled or disabled form elements. <span class="style2">Use label level 2 to identify each individual checkbox in its noneditable (read-only) appearance as well,</span> but indent these labels  by 10 pixels with respect to the label for the entire set.</p>
+<p>For example, in the following image showing different appearances for a set of checkboxes, the noneditable (read-only) appearance for the set of checkboxes shows the label for the whole set, &quot;Options:&quot; using label level 2. The labels &quot;Connect on Carrier:&quot; and &quot;Bidirectional:&quot; <span class="style2">also</span> use label level <span class="style2">2,</span> <span class="style2">but</span> are indented 10 pixels to the right.</p>
+<p class="style3"><img src="simple_graphics/label-level2.5.png" width="714" height="176" alt="Example of using label level 2.5 for read-only display of individual checkbox values for a labeled set of checkboxes"></p>
+<p class="style3"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"><span class="style2"> Labels for individual elements should use the HTML &lt;label&gt; tag to associate 
+  the labels with form elements. Aside from being an accessibility requirement, 
+  use of this tag also enables users to click on the label text in order to activate 
+  or put focus on the form element. Without the HTML &lt;label&gt; tag, users have 
+  to click on the element itself.
+  <!-- Removed for 2.2: Note that this behavior is not supported in 
+  Netscape 4. --> 
+See <a href="D-accessibility.html">Appendix D, Accessibility Requirements</a> for more information on the HTML &lt;label&gt; tag. </span></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Labels for groups of elements should use the HTML &lt;fieldset&gt; and HTML &lt;legend&gt; 
+  tags to identify the elements as a group to assistive technologies. See <a href="D-accessibility.html">Appendix 
+  D, Accessibility Requirements</a> for more information on use of the HTML &lt;fieldset&gt; 
+  tag. Note that, by default, the HTML &lt;fieldset&gt; tag places a rectangle around 
+  the group of items. This rectangle can and should be suppressed using CSS styles. 
+  <!-- Removed for 2.2: Also note that the &lt;fieldset&gt; tag is not supported by Netscape 4. --> </p>
+  
+<h3><a name="7.3.2"></a>7.3.2 Editable Text Fields</h3>
+<p>Text fields display a single line of editable text. </p>
+<p><img src="simple_graphics/textfields.png" width="608" height="106" alt="Enabled, Read-Only, and Disabled Text Fields" border="0"></p>
+<!-- Removed for 2.2: 
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the label in the default font face and size, bold weight, in color Dark 
+  Grey 1. Refer to sections <a href="02-visual.html#2.1">2.1 Color Palette</a> and <a href="02-visual.html#2.2">2.2 
+  Fonts</a> for more details on text display.</p> 
+  
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the contents of the text field in the default font face, weight, and small 
+  size, in color Dark Gray 2.</p>
+  
+<p> The disabled appearance for text fields depends on individual browser settings for this disabled 
+    element.  Because of this, there are differences among browsers in the the way disabled text 
+	fields are displayed.  This is shown in the examples above.</p> -->
+  
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Use fixed fonts for text field contents only in rare situations when it is necessary to render a 
+text field where the length of the data can be no longer than what is allowed by the size of the 
+field.
+</p>
+<p>
+For example, this might be necessary if the user needs to see the exact length of the value relative to 
+other text field values on the page (where all the text fields would be lined up).  Another situation 
+might be when users must see all of the characters in the text field even if they type a lot of wide 
+characters such as capital Ws.  These situations tend to be rare, however.
+</p>
+  
+ <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Appropriately size the visible width of a text field to accommodate the length of the intended text strings.&nbsp;This is particularly important for fields intended to hold potentially lengthy data such as file paths. </p>
+ <p><span class="style8"> <img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> </span>If the text field can accept long entries (for example, 60 characters or more), but making the text field's visible width accommodate the whole entry creates page layout and alignment concerns, 
+consider using a text area (see  <a href="07-simple.html#7.3.4">7.3.4 Text Areas</a>) with a 
+height large enough to accommodate a horizontal scrollbar. The width can be sized for visual design aesthetics within the page, but should generally be made as large as possible.</p>
+ <p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Avoid setting the text field to a shorter visible  width and letting the leftmost characters then scroll out of the text box, as needed, when new characters are typed. When doing so there is no indication that any text is out of view, and when manually scrolling, there are no scrollbars to provide information about how much data there is and which part of it is currently in view.   </p>
+ <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  To denote required fields, place the graphic named Required Field, <img src="simple_graphics/Asterisk7x20.gif" width="7" height="20" alt="Asterisk-like icon" border="0">, to 
+  the <span class="style2">right</span> of the field's label and set its tool tip to &quot;Required Field&quot;. Then, include <font color="#000000">the legend: &quot;<img src="simple_graphics/Asterisk7x20.gif" width="7" height="20" alt="Asterisk-like icon" border="0"> 
+  <font color="#cc66cc"><font color="#000000"><font color="#cc66cc"><font color="#000000"><font color="#cc66cc"><font color="#333333" size="2">Indicates 
+  required field</font></font></font></font></font></font></font>&quot; at the top right 
+  of the content area, as shown in the previous example at the beginning of <a href="07-simple.html#7.3">7.3 
+ Text Elements</a>. <span class="style2">Do this for all required fields, even if all fields on the page are required. </span></p>
+ <p><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+If an extremely large number of possible values exist for a given field (for example, thousands of possible values), 
+  the best option might simply be to provide an editable text field for users to type in 
+  a value.  Other user interface elements (for example, drop-down menus, scrolling lists, 
+  sets of checkboxes or radio buttons, add-and-remove idioms) are not designed to handle extremely large numbers of possible 
+  values.</p>
+<p>However, if appropriate, the text field can be linked to a pop-up window of values 
+  where users can search for a value that they do not remember (not shown in preceding 
+  picture). The details of this pop-up search window entry field have not yet 
+  been determined.</p>  
+
+
+<h3><a name="7.3.3"></a>7.3.3 Password Fields</h3>
+<p>Password fields are editable text fields that display an asterisk ("*") in 
+  place of every character typed by the user. The password field serves to mask 
+  what the user types.<font color="#ff0000"> </font></p>
+  
+<H3><A name="7.3.4"></A>7.3.4 Text Areas</H3>
+<P>A text area is a rectangular space where users can type multiple lines of text.</P>
+
+<p><img src="simple_graphics/textarea.png" width="564" height="135" alt="Enabled and Disabled Text Areas" border="0"></p>
+
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Display the text in the text area in a single font size and font type<!-- Removed for 2.2: , using the color Dark Grey 2 -->.  
+Read only text areas appear just as editable text areas do.  The text is just not editable.</p>
+<!-- Removed for 2.2: 
+<p>The disabled appearance for text areas depends on individual browser settings for this disabled 
+element.  Because of this, there are differences among browsers in the the way disabled text areas 
+are displayed.  This is shown in the examples above.</P> -->
+
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Wrap the text, when advisable to do so. For example, wrap text when descriptive information is held 
+in a text area.  This activates the text area's vertical scrollbar if the text exceeds the height of 
+the text area.
+</p>
+<P><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+When text wrapping is not advisable, such as when the user types code or a path name that must appear 
+on one line, turn off wrapping.<br>
+</P>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <span class="currentchapter">7&nbsp;Simple&nbsp;Elements</span>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,1605 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="16-alarms-status.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <span class="currentchapter">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</span>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<P class="style8">  <A href="16-alarms-status.html#16"><b>16 Alarms and Status Indicators </b></A></P>
+
+<p class="toc-level1 style8"><A href="16-alarms-status.html#16.1">16.1 Alarms</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.1">16.1.1 Alarm Creation</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.2">16.1.2 Alarm Severity</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.3">16.1.3 Alarm Status</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.4">16.1.4 Logging Events</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.5">16.1.5 Alarm Views</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.1.5.1">16.1.5.1 Alarms in Trees</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.1.5.2">16.1.5.2 Alarms in Topology Views</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.1.5.3">16.1.5.3 Alarms in Tables</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.1.5.3.1">16.1.5.3.1 Alarm Summary View</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.1.5.3.2">16.1.5.3.2 Alarm Rollup View</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.1.5.3.3">16.1.5.3.3 Alarm Details View</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.6">16.1.6 Alarm Graphics</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.1.7">16.1.7 Inactive Alarm Expiration</A></p>
+
+<p class="toc-level1 style8"><A href="16-alarms-status.html#16.2"> 16.2 Status</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.2.1">16.2.1 Status Indicators</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.2.1.1">16.2.1.1 Object Status</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.2.1.1.1">16.2.1.1.1 Object Status Icons and Values</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.2.1.2">16.2.1.2 Detailed Status</A></p>
+
+<p class="toc-level2 style8"><A href="16-alarms-status.html#16.2.2">16.2.2 Displaying Status</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.2.2.1">16.2.2.1 Status in a Table View</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.2.2.1.1">16.2.2.1.1 Object Status in Tables</A></p>
+
+<p class="toc-level4 style8"><A href="16-alarms-status.html#16.2.2.1.2">16.2.2.1.2 Detailed Status in Tables</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.2.2.2">16.2.2.2 Status in a Topology View</A></p>
+
+<p class="toc-level3 style8"><A href="16-alarms-status.html#16.2.2.3">16.2.2.3 Status in a Tree View</A></p>
+
+<P class="toc-level3 style8"><A href="16-alarms-status.html#16.2.2.4">16.2.2.4 Object Status 
+
+Summary</A></P>
+
+  <br>
+  <h1 class="style8"><a name="16"></a>16 Alarms and Status Indicators</h1>
+
+
+
+  <p class="style8">This chapter addresses Alarms and Status Indicators.&nbsp; Alarms&nbsp;indicate that a particular event has occurred, while Status shows the health of an object.&nbsp; Objects will always have a Status (within a range), while Alarms are triggered by specific events.&nbsp; Alerts (covered in <A href="14-alerts.html">Chapter 14&nbsp;Alerts&nbsp;and&nbsp;Messages</A>.) are different from alarms or status indicators: </p>
+  <ul class="style8">
+    <li> Alerts are used when presenting the user information about a system that they are currently interacting with while alarms are used to tell the user about system events that occured as the system operated. </li>
+    <li>Alerts can be seen as part of the dialog between the system and the user as the user interacts with the system, while alarms are messages that the system records about certain system events for the user to see either at that time or at some later time. &nbsp; </li>
+  </ul>
+<h2 class="style8"><A name="16.1"></A>16.1 Alarms</h2>
+
+<p class="style8">Applications that monitor entities, such as devices, must keep users informed of events involving those entities. Alarms indicate that a particular type of&nbsp;event has occurred.</p>
+
+<p class="style8">Alarms vary in their severity, which can range from minor to critical, and in their status, which can progress from open to fixed. Application designers (or, in some cases, end users) define what type of events cause alarms and the corresponding severity of each alarm. Each severity has a corresponding icon or badge.&nbsp; </p>
+
+<p class="style8"> Applications that generate alarms must be able to:</p>
+
+<P class="style8"><IMG height=14  
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Display alarm views (representations of one or more alarms)</P>
+
+<P class="style8"><IMG height=14  
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Manipulate alarm views (for example, by sorting them at a user's request) </P>
+
+<P class="style8"><IMG height=14  
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Record each alarm event in a log and inform users when a new alarm event occurs </P>
+
+<P class="style8"> This section provides guidelines for designing your application's alarm displays.</P>
+
+<h3 class="style8"><A name="16.1.1"></A>16.1.1 Alarm Creation </h3>
+
+<P class="style8">To determine when an application should create alarm events, the application's designer or users define alarm conditions which, when true, cause the application to create alarm events. Applications constantly monitor to determine whether any of the defined alarm conditions are true for any of the monitored entities. </P>
+
+<P class="style8">Each alarm condition defines either: </P>
+
+<UL class="style8">
+
+  <LI>A threshold on a monitored entity
+
+  <LI>Thresholds on a set of monitored entities </LI>
+
+</UL>
+
+<P class="style8">A threshold is a value beyond which the alarm condition is true, or can be true, if the alarm condition depends on more than one threshold. </P>
+
+<P class="style8">When true, an alarm condition constitutes an alarm on each monitored entity that the condition affects. A monitored entity for which an alarm condition is true is called an <EM>alarmed entity</EM>.</P>
+
+<h3 class="style8"><A name="16.1.2"></A>16.1.2 Alarm Severity </h3>
+
+<P class="style8">Each alarm event has a level of severity, known as the alarm's <EM>severity</EM>. Levels of severity can help an application's users prioritize their work, especially if the application can display many alarms at the same time. Each level of severity has a corresponding alarm graphic that you can use to help users identify alarmed entities.&nbsp; For more information on graphics see <A href="16-alarms-status.html#16.1.6">16.1.6 Alarm Graphics</A>.&nbsp; The following table lists the standard levels of severity for alarms, in order from most to least severe.&nbsp;</P>
+
+<table class="info-table" border="1" cellspacing="0" cellpadding="10" width="75%">
+
+  <TR>
+
+    <th class="style8">Severity</th>
+
+    <th class="style8">&nbsp;Icon</th>
+
+    <th class="style8">Severity Description</th>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Down</STRONG></TD>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/down_medium.gif" ></P></TD>
+
+    <TD class="style8">There is no response from the monitored entity (or from the device on which it resides). </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Critical</STRONG></TD>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/critical_medium.gif" ></P></TD>
+
+    <TD class="style8"> An alarm condition occurred that seriously impairs service and requires immediate correction.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Major</STRONG></TD>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/major_medium.gif" ></P></TD>
+
+    <TD class="style8"> An alarm condition occurred, impairing service but not seriously.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Minor</STRONG></TD>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/minor_medium.gif" ></P></TD>
+
+    <TD class="style8">An alarm condition occurred that does not currently impair service, but the condition needs to be corrected before it becomes more severe.</TD>
+
+  </TR>
+
+</table>
+
+<P class="style8"><IMG height=14 
+
+alt="" src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Provide only the levels of severity described above.&nbsp;  </P>
+
+<P class="style8"><IMG height=14 
+
+alt="" src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Always 
+
+order alarms from most to least severe.&nbsp; <!-- TipJLF -->
+
+</P>
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> All alarms that are displayed must have an associated severity level. </P>
+
+<P class="style8">Some applications can generate many alarms at the same time. To avoid overwhelming users, application designers may decide to allow users to&nbsp;control: </P>
+
+<UL class="style8">
+
+  <LI>Which events trigger alarms
+
+  <LI>Which severity is assigned to alarms </LI>
+
+</UL>
+
+<P class="style8">These capabilities help users eliminate irrelevant alarms and notice important alarms. </P>
+
+<P class="style8">Some applications may not allow end-users to set the severity of alarms.&nbsp; For example, an application's designer may want to ensure that a device overheating event triggers a Critical alarm. </P>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" 
+
+width=14 border=0>&nbsp;When there are no alarms of a given 
+
+severity in the masthead, use the dimmed version of the alarm severity icon 
+
+instead of the brightly colored icon.&nbsp; This will enable users to quickly 
+
+visually determine if there are any alarms of a certain severity.</P>
+
+<h3 class="style8"><A name="16.1.3"></A>16.1.3 Alarm Status</h3>
+
+<P class="style8">Each alarm event has an alarm&nbsp;status that determines what information is displayed&nbsp;about that alarm. </P>
+
+<P class="style8">The table below describes the possible values for an alarm's status.</P>
+
+<table class="info-table" border="1" cellspacing="0" cellpadding="10">
+
+  <tr>
+
+    <th class="th-left style8">Alarm Status</th>
+
+    <th class="th-left style8"> <P align=left>Value</P></th>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" class="style8"><strong>Open</strong>&nbsp; </td>
+
+    <td align="left" class="style8">This alarm event is neither closed nor fixed, and is not being handled by another user.</td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" class="style8"><strong>Acknowledged</strong></td>
+
+    <td align="left" class="style8">This alarm event is neither closed nor fixed and is being handled by the user who set the event's status to acknowledged.</td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" class="style8"><strong>Closed</strong></td>
+
+    <td align="left" class="style8">Either the alarm condition associated with this alarm event is no longer true, or a user did something that canceled the alarm. (An alarm event's status can be closed even if nothing has corrected the problem that caused the event.)</td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" class="style8"><strong>Fixed</strong></td>
+
+    <td align="left" class="style8">The problem that caused this alarm event has been corrected.</td>
+
+  </tr>
+
+</table>
+
+<P class="style8">An alarm whose status is open or acknowledged is called an <EM>active alarm</EM>.&nbsp; An alarm whose status is closed or fixed is called an <EM>inactive alarm</EM>. Note that neither "active" nor "inactive" is an alarm status.</P>
+
+<P class="style8">It is not necessary to use all the alarm status values.&nbsp; Certain projects may only require the use of Open (in which case, there would be no need to indicate alarm status), or may require only Open and Acknowledged.&nbsp; </P>
+
+<h3 class="style8"><A name="16.1.4"></A>16.1.4 Logging Events</h3>
+
+<P class="style8">To enable users to examine a record of events, your application can display an event log--a complete or partial record of events. An application can have one event log or several. For example, an application might have a log for each monitored entity. </P>
+
+<P class="style8">Make sure that users can easily find your application's event logs and manipulate their contents. (For example, with an operating system's utility program for sorting plain text.) </P>
+
+<P class="style8"><IMG height=14 
+
+alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> If users might need event-related information after your application no longer displays it, store that information in a persistent event log--for example, a text file. 
+
+<h3 class="style8"><A name="16.1.5"></A>16.1.5 Alarm Views</h3>
+
+<P class="style8">An alarm view is a window or pane that displays representations of alarms. For example, an alarm view might represent alarms in one of the following forms: </P>
+
+<UL class="style8">
+
+  <LI>Badges on icons (such as in a tree or topology view)
+
+  <LI>Badges on nodes in a tree
+
+  <LI>Rows in a table </LI>
+
+</UL>
+
+<p class="style8"> Alarm data may be presented in tables, trees, or topology views.&nbsp;If alarm data&nbsp;is displayed on tree or topology views, the alarm information can be considered an augmentation of the data that the tree or topology view displays primarily.&nbsp; In other words, the tree and topology views are not primarily alarm display views.&nbsp; Deciding which&nbsp;views to use depends on the predominant design of the application.&nbsp; For example, in a fault monitoring application a table view would be most appropriate, and if there will be a topology view in the application alarm data would be displayed there also.</p>
+
+<p class="style8">Alarm data can be displayed in more than one view within an application.&nbsp; Alarm data displayed in a topology or tree view, however, will be linked to the main alarm view, which should be displayed in a table.&nbsp;Alarm data cannot be only displayed in a topology or a tree view.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Alarm data must not be lost when the user switches between one type of view and another.&nbsp; In other words, alarm data must be displayed in a topology or tree view if it is displayed in the other views (Summary, Rollup or Details Views).</p>
+
+<P class="style8">
+
+<table class="info-table" border="1" cellspacing="0" cellpadding="10">
+
+  <TR>
+
+    <th class="style8">View</th>
+
+    <th class="style8">When to Use</th>
+
+    <th class="style8">Benefits</th>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Table View&nbsp;Summary View</STRONG> </TD>
+
+    <TD class="style8">To display all alarms within the application.&nbsp; This is the highest-level table view.</TD>
+
+    <TD class="style8">Ability to display Closed and Fixed alarms.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Table View Rollup View</STRONG> </TD>
+
+    <TD class="style8">To display all alarms on a specific device.</TD>
+
+    <TD class="style8"><P>Stand-alone representation of alarms on a single device.&nbsp; <BR>
+
+        Ability to display Closed and Fixed alarms.</P></TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Details View</STRONG> </TD>
+
+    <TD class="style8"> To display detailed information on a single alarm event.</TD>
+
+    <TD class="style8">Displays all information on an alarm event, including that which may not be included in other views.<BR>
+
+            Ability to display details for Closed and Fixed alarms.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Topology View</STRONG> </TD>
+
+    <TD class="style8">To display complex relationships between devices.&nbsp; </TD>
+
+    <TD class="style8"><P>Helps visualize complex systems.<BR>
+
+        Overlaid alarm icons are clickable, directing the user to a Rollup or Details View. <BR>
+
+              A secondary view that displays Alarms as supplemental information to the Topology View's primary purpose.</P></TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><STRONG>Tree View</STRONG> </TD>
+
+    <TD class="style8"> To display multiple parent-child relationships, or sets of objects in containers.</TD>
+
+    <TD class="style8">Helps understand hierarchy of large or complex systems.&nbsp;<BR>
+
+            A secondary view that displays Alarms as supplemental information to the Tree View's primary purpose.</TD>
+
+  </TR>
+
+</table>
+
+<h4 class="style8"><A name="16.1.5.1"></A>16.1.5.1 Alarms in Trees</h4>
+
+<p class="style8"> Alarms can be displayed in tree views by adding the appropriate alarm badge to the icon representing the monitored entity. See <A href="G-badging-icons.html">Appendix G, Badging Icons</A> for details on creating these images.</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When a tree view is collapsed, the container or parent will show the highest-level severity badge of any alarm event within the container.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When a tree view is expanded, the alarm badge must display on the device and also display at the container or parent level.&nbsp; If there is more than one alarm within a container, the container must display the badge of the highest severity alarm.</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Only active alarms are displayed in a tree view (open and acknowledged).</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> While alarm badges may be overlaid on device images in the Tree View, clicking anywhere on the image directs the user to the Device Details page, and <EM>not</EM> an alarm page.&nbsp;Tree behaviour does not change because of the addition of an alarm&nbsp;badge.&nbsp; Note that this is different than the behaviour of alarm badges in topology views.&nbsp;</p>
+
+<h4 class="style8"><A name="16.1.5.2"></A>16.1.5.2 Alarms in Topology Views</h4>
+
+<p class="style8">Alarms can be displayed in topology views by adding the appropriate alarm badge to the icon representing the monitored entity.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Clicking on the alarm badge portion of the icon on a topology view takes you to an alarm page.&nbsp; Note that this is different than the behaviour of alarm badges in tree views.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Only active alarms are displayed in a topology view (open and acknowledged).</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Alarm icons can be overlaid on device icons, representing an alarm or set of alarms on that device.&nbsp; Clicking on the alarm badge portion of the image directs the user to the Rollup or Details View.&nbsp;</p>
+
+<h4 class="style8"><a name="16.1.5.3"></a>16.1.5.3 Alarms in Tables </h4>
+
+<p class="style8"> There will&nbsp;generally be two&nbsp;main alarm&nbsp;pages: an Alarm Summary page and an&nbsp;Alarm&nbsp;Rollup page.&nbsp;&nbsp;If you have alarms displayed in a topology view the badges on those pages will link to these pages, or, in the case of a single alarm, directly to the Alarm Details page.&nbsp;</p>
+
+<h5 class="style8"><A name="16.1.5.3.1"></A>16.1.5.3.1 Alarm Summary View</h5>
+
+<p class="style8"> An Alarm Summary view will contain a list of all alarms within an application with one line for each device.&nbsp;&nbsp;If there is more than one alarm for a device, the row for that device displays the highest alarm severity level for that device.&nbsp; Clicking on the contents of the&nbsp;Total Alarms on Device column links to the Alarm Rollup View.&nbsp;&nbsp;If there is only one alarm for a device on the Alarm Summary page, then clicking on the&nbsp;Total Alarms on Device column links to the Alarm Details for that alarm.&nbsp;</p>
+
+<p class="style8"> The following is an example of an Alarm Summary 
+
+View.&nbsp;  </p>
+
+<p class="style8"><IMG src="alarms-status_graphics/AlarmSummary.png" alt="" width="800" height="439" 
+
+> </p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Alarm Summary and Alarm Rollup pages must display the list of alarms in decreasing order of severity: down, critical, major, minor.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> This view must contain the following columns at a minimum:&nbsp; </p>
+
+<OL class="style8"><LI><div> Checkbox or Radio-button column (unless no actions may be performed upon the Alarms)</div>
+
+  <LI>
+
+    <div> Alarm Severity (icon for the highest alarm severity level on that device)<BR>
+
+        Note that the text for the alarm severity may be included in the cell with the icon.&nbsp;The text must follow the icon.<BR>
+
+        For example: <IMG height=13 alt   
+
+  ="Red critical alarm graphic" src="alarms-status_graphics/critical_medium.gif" width=13 > Critical<BR>
+
+        This column should be the default sort for the table, from most to least severe.</div>
+
+  <LI> Device Name (links to Device Details page)
+
+  <LI>
+
+      <div> Total Alarms on Device (links to Alarm Rollup View)</div>
+
+  </LI>
+
+</OL>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> The left-most column is the checkbox or radio-button column (unless no actions may be performed upon the Alarms).&nbsp; The following column is always Alarm Severity.</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Summary and Rollup View pages&nbsp;will display data in columns in the same order.&nbsp;&nbsp;The left-most column is the checkbox or radio-button column (unless no actions may be performed upon the Alarms).&nbsp; The following column is always Alarm Severity.</p>
+
+<p class="style8"> The following additional information may also be included:</p>
+
+<UL class="style8">
+
+  <LI>
+
+    <div> Time Generated</div>
+
+  </LI>
+
+</UL>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Recommendation.jpg" width=14> Enable users to manipulate the displayed alarms. For example, enable users to:</p>
+
+<UL class="style8">
+
+  <LI>Sort alarms
+
+  <LI>Filter alarms
+
+  <LI>Delete closed or fixed alarms 
+
+  <LI>Undo the deletion of an alarm
+
+  <LI>Change an alarm's status, for example, by acknowledging or closing the alarm</LI>
+
+</UL>
+
+<h5 class="style8"><A name="16.1.5.3.2"></A><A 
+
+name="16.1.5.3.2 "></A>16.1.5.3.2 Alarm Rollup View</h5>
+
+<p class="style8">An Alarm Rollup View&nbsp;will contain a list of all Alarms on a specific device.&nbsp; If a device has three major, one minor and one critical alarm they will all be displayed here in different line items (this is different than the Summary page, in which each line item represents the highest alarm severity level for a given device).&nbsp; Each line item will link to a Details page from the "Alarm ID" column.&nbsp;</p>
+
+<p class="style8"> The following image shows an Alarm Rollup View that 
+
+contains only one alarm.&nbsp; If there were many alarms on this device, there 
+
+would be multiple rows in the table.&nbsp;</p>
+
+<p class="style8"><IMG src="alarms-status_graphics/AlarmRollup.png" alt="" width="800" height="439" 
+
+> </p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Summary and Rollup View pages must display the list of alarms in decreasing order of severity: down, critical, major, minor.&nbsp;</p>
+
+<p class="style8"><IMG height=14 
+
+alt='Requirement"' src="Guidelines_Icons/Requirement.jpg" width=14 border=0> This view should contain the following columns at a minimum:&nbsp;</p>
+
+<OL class="style8"><LI><div> Checkbox or Radio-button column (unless no actions may be performed upon the Alarms)</div>
+
+  <LI>
+
+    <div> Alarm Severity (icon for the highest alarm severity level on that device) <BR>
+
+        Note that the text for the alarm severity may be included in the cell with the icon.&nbsp;The text must follow the icon.<BR>
+
+        For example: <IMG alt="" 
+
+  src="alarms-status_graphics/critical_medium.gif" > Critical<BR>
+
+        This column should be the default sort for the table, from most to least severe.</div>
+
+  <LI>
+
+    <div>
+
+      <div> Alarm ID (links to Alarm Details page)&nbsp; <BR>
+
+        If there is no Alarm ID, the Alarm Details page must be linked from a Details column.</div>
+
+    </div>
+
+  <LI> Alarm Status&nbsp;
+
+  <LI>
+
+    <div> Alarm Description</div>
+
+    <DIV></DIV>
+
+  </LI>
+
+</OL>
+
+<p class="style8"> The following additional information may also be included:</p>
+
+<UL class="style8">
+
+  <LI>
+
+    <div> Time Generated</div>
+
+  </LI>
+
+</UL>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> The default table sort should be by Alarm Severity, from most to least severe.</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> Summary and Rollup View pages&nbsp;will display data in columns in the same order.&nbsp;&nbsp;The left-most column is the checkbox or radio-button column (unless no actions may be performed upon the Alarms).&nbsp;&nbsp; The following column is always Alarm Severity.</p>
+
+<p class="style8"><IMG height=14 
+
+alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Enable users to manipulate the displayed alarms. For example, enable users to:</p>
+
+<UL class="style8">
+
+  <LI>Sort alarms
+
+  <LI>Filter alarms
+
+  <LI>Delete closed or fixed alarms 
+
+  <LI>Undo the deletion of an alarm
+
+  <LI>Change an alarm's status, for example, by acknowledging or closing the alarm</LI>
+
+</UL>
+
+<h5 class="style8"><A name="16.1.5.3.3"></A>16.1.5.3.3 Alarm Details View</h5>
+
+<p class="style8">A details page shows all the information on a specific, single alarm on a single device.&nbsp; It is displayed as a property page.</p>
+
+<p class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> This view should contain the following fields at a minimum:</p>
+
+<UL class="style8">
+
+  <LI>
+
+    <div> Alarm Severity (left-most column after the checkbox or radio-button column)</div>
+
+  <LI>
+
+    <div> Device Name</div>
+
+  <LI>
+
+    <div> Alarm Status</div>
+
+  <LI>
+
+    <div> Alarm Description</div>
+
+  <LI>
+
+    <div> Time of Alarm</div>
+
+  <LI>
+
+    <div> Condition that caused the alarm (for example, a threshold was met or exceeded)</div>
+
+  </LI>
+
+</UL>
+
+<p class="style8"> The following additional information may also be included:</p>
+
+<UL class="style8">
+
+  <LI>
+
+    <div> Recommended Action</div>
+
+  <LI>
+
+    <div> Notes</div>
+
+  </LI>
+
+</UL>
+
+<p class="style8"><IMG height=14 
+
+alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> On Alarm Details pages, enable users to:</p>
+
+<UL class="style8">
+
+  <LI>
+
+    <div> Create and update Notes</div>
+
+  <LI>
+
+    <div> Change the Alarm Status</div>
+
+  </LI>
+
+</UL>
+
+<h4 class="style8"><A name="16.1.5.4"></A>16.1.5.4 Alarms in the Masthead</h4>
+
+<p class="style8"> Applications may display current alarms in the status area of the application masthead.&nbsp; Displaying alarms in this area allows users to monitor alarms while they are on any page in the application. For more information see <A href="04-masthead.html#4.1.4">4.1.4 Status Area</A>.<br>
+
+  <br>
+  <IMG 
+
+src="alarms-status_graphics/masthead.png" alt="" width="825" height="109" ></p>
+
+<P class="style8"> The number displayed next to the severity symbol represents the total number of alarms of that severity level that were active in the application at the time the screen was last refreshed. </P>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 > If alarm reporting is displayed in the status area, only report on and display information about the alarm severities that the application actually uses. Do not show all alarm severities if some of them will always be "0".</P>
+
+<P class="style8"><IMG height=14 alt=Requirement 
+
+src="Guidelines_Icons/Requirement.jpg" width=14> Order the display of alarms by severity from most to least severe. </P>
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When alarms are displayed in 
+
+the masthead with <strong>numbers</strong> <strong>greater than zero</strong>, they  must be <strong>links shown with white text.</strong> The link would go to an Alarm Summary View pre-filtered by severity.&nbsp;</P>
+
+<p class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 > When an alarm count is zero, display a dimmed version of the alarm severity symbol and make the number "0" displayed next to the severity symbol grayed-out, non-linked text. <br>
+
+      <br>
+
+  The following example shows an 
+
+alarm count of zero for the Down alarm.<strong>
+
+               <br>
+
+  <br>
+  </strong><IMG 
+
+src="alarms-status_graphics/alarm-is-zero.png" alt="" width="825" height="29" ></p>
+
+<P class="style8"><IMG height=14 alt=Requirement 
+
+src="Guidelines_Icons/Requirement.jpg" width=14> If the application shows current alarms in the status area and allows the user to view all alarms on one page, label the alarm information with a clickable label called "Current Alarms" in white. This link should lead the user to an Alarm&nbsp;Summary View. When there are no current alarms do not make the label a link.</P>
+
+<p class="style8"> </p>
+
+<h3 class="style8"><A name="16.1.6"></A>16.1.6 Alarm Graphics</h3>
+
+<P class="style8">An alarm graphic is an application graphic that indicates an alarm's existence and severity. Alarm graphics help users notice alarms and respond to them in the appropriate order. </P>
+
+<P class="style8">You can use each alarm graphic as either: </P>
+
+<UL class="style8">
+
+  <LI>An alarm badge (a badge overlaid on an icon in a tree or topology)
+
+  <LI>An alarm symbol (an alarm graphic displayed alone, for example in a table) </LI>
+
+</UL>
+
+<P class="style8">The following image shows the difference between an alarm badge and an alarm symbol.</P>
+
+<P class="style8"><IMG alt="" src="alarms-status_graphics/symbolbadge.gif" 
+
+></P>
+
+<P class="style8">The following table shows&nbsp;the&nbsp;approved set of alarm graphics and the level of severity that each graphic represents.</P>
+
+<table width="75%" border="1" cellpadding="10" cellspacing="0" bordercolor="#FFFFFF" class="info-table">
+
+  <TR>
+
+    <th class="style8">Graphic</th>
+
+    <th class="style8">Severity</th>
+
+    <th class="style8">Where to Use</th>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/critical_medium.gif" ></P></TD>
+
+    <TD class="style8">  Critical</TD>
+
+    <TD class="style8">Version for inclusion in tables. For details of 
+
+      use see <SPAN class=style35><A 
+
+      href="09-tables.html">Chapter 
+
+      9, Tables</A>.</SPAN>            </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/critical_small.gif" ></P></TD>
+
+    <TD class="style8">Critical - Small</TD>
+
+    <TD class="style8"><!--StartFragment -->Version 
+
+      used in topologies and for badging tree icons. See <A 
+
+      href="10-topology.html#10.4.3">10.4.3 
+
+      Showing Alarm States</A> (for topologies) and <A 
+
+      href="05-navigation.html#5.4.2.1">5.4.2.1 
+
+      Alarm or Status States of Tree Objects</A> (for trees) for details of 
+
+      use.       </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/major_medium.gif" ></P></TD>
+
+    <TD class="style8">  Major</TD>
+
+    <TD class="style8"><!--StartFragment -->Version for inclusion in 
+
+      tables. For details of use see <SPAN class=style35><A 
+
+      href="09-tables.html">Chapter 
+
+      9, Tables</A>.</SPAN>            </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/major_small.gif" ></P></TD>
+
+    <TD class="style8">Major - Small</TD>
+
+    <TD class="style8"><!--StartFragment -->Version 
+
+      used in topologies and for badging tree icons. See <A 
+
+      href="10-topology.html#10.4.3">10.4.3 
+
+      Showing Alarm States</A> (for topologies) and <A 
+
+      href="05-navigation.html#5.4.2.1">5.4.2.1 
+
+      Alarm or Status States of Tree Objects</A> (for trees) for details of 
+
+      use.       </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/minor_medium.gif" ></P></TD>
+
+    <TD class="style8">  Minor</TD>
+
+    <TD class="style8">Version for inclusion in tables. For details of 
+
+      use see <SPAN class=style35><A 
+
+      href="09-tables.html">Chapter 
+
+      9, Tables</A>.</SPAN>            </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/minor_small.gif" ></P></TD>
+
+    <TD class="style8">Minor - Small</TD>
+
+    <TD class="style8"><!--StartFragment -->Version 
+
+      used in topologies and for badging tree icons. See <A 
+
+      href="10-topology.html#10.4.3">10.4.3 
+
+      Showing Alarm States</A> (for topologies) and <A 
+
+      href="05-navigation.html#5.4.2.1">5.4.2.1 
+
+      Alarm or Status States of Tree Objects</A> (for trees) for details of 
+
+      use.       </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/down_medium.gif" ></P></TD>
+
+    <TD class="style8">  Down</TD>
+
+    <TD class="style8">Version for inclusion in tables. For details of 
+
+      use see <SPAN class=style35><A 
+
+      href="09-tables.html">Chapter 
+
+      9, Tables</A>.</SPAN>            </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/down_small.gif" ></P></TD>
+
+    <TD class="style8">Down - Small</TD>
+
+    <TD class="style8"><!--StartFragment -->Version 
+
+      used in topologies and for badging tree icons. See <A 
+
+      href="10-topology.html#10.4.3">10.4.3 
+
+      Showing Alarm States</A> (for topologies) and <A 
+
+      href="05-navigation.html#5.4.2.1">5.4.2.1 
+
+      Alarm or Status States of Tree Objects</A> (for trees) for details of 
+
+      use.       </TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_critical.gif" ></P></TD>
+
+    <TD class="style8">Critical - Masthead</TD>
+
+    <TD class="style8"><!--StartFragment -->Version for inclusion in the 
+
+      masthead. For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_major.gif" ></P></TD>
+
+    <TD class="style8">Major - Masthead</TD>
+
+    <TD class="style8"><!--StartFragment -->      Version for inclusion in the 
+
+      masthead. For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_minor.gif" ></P></TD>
+
+    <TD class="style8">Minor - Masthead</TD>
+
+    <TD class="style8"><!--StartFragment -->      Version for inclusion in the 
+
+      masthead. For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>
+
+  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_down.gif" ></P></TD>
+
+    <TD class="style8">Down - Masthead</TD>
+
+    <TD class="style8"><!--StartFragment -->      Version for inclusion in the 
+
+      masthead. For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>
+
+    <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_critical_dimmed.gif" ></P></TD>
+
+    <TD class="style8">Critical - Dimmed</TD>
+
+    <TD class="style8"><!--StartFragment -->      Version for inclusion in the 
+
+      masthead when there 
+
+      are zero alarms of this severity.&nbsp;For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_major_dimmed.gif" ></P></TD>
+
+    <TD class="style8">Major - Dimmed</TD>
+
+    <TD class="style8"><!--StartFragment -->Version for inclusion in the masthead when there 
+
+      are zero alarms of this severity.&nbsp;For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR>  <TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_minor_dimmed.gif" ></P></TD>
+
+    <TD class="style8">Minor&nbsp;- Dimmed</TD>
+
+    <TD class="style8"><!--StartFragment -->Version for inclusion in the masthead when there 
+
+      are zero alarms of this severity.&nbsp;For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.</TD>
+
+  </TR><TR>
+
+    <TD class="style8"><P align=center><IMG alt="" 
+
+      src="alarms-status_graphics/masthead_down_dimmed.gif" ></P></TD>
+
+    <TD class="style8">Down&nbsp;- Dimmed</TD>
+
+    <TD class="style8">Version for inclusion in the masthead when there are zero alarms of 
+
+      this severity.&nbsp;For details of use, see <a href="16-alarms-status.html#16.1.5.4">16.1.5.4 Alarms in the Masthead</a>.      <!--StartFragment --></TD>
+
+  </TR>
+
+</table>
+
+
+
+<P class="style8">See <A href="02-visual.html#2.4">2.4 Icons</A>, for more information on icons.&nbsp; </P>
+
+<P class="style8">In alarm views, display an alarm graphic on each representation of an alarmed entity or of that entity's alarm events. </P>
+
+<P class="style8">For example, display an alarm graphic: </P>
+
+<UL class="style8">
+
+  <LI>On the icon for each alarmed entity
+
+  <LI>In each table row that describes an alarm event
+
+  <LI>On the icon for each container that contains an alarmed entity </LI>
+
+</UL>
+
+<P class="style8"> If the alarm view is in a table, place an alarm graphic in each row of a column dedicated to alarm graphics. </P>
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> In alarm views, place an alarm graphic on each representation of an alarmed entity for which there are active alarms. 
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When displaying alarm graphics, use only the approved alarm graphics in the manner described in this section. Never display any other information in those locations. If an entity is not alarmed, indicate that fact by displaying nothing in the standard locations for alarm graphics. </P>
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When placing an alarm graphic on icons (such as in a tree or topology view), ensure that the alarm graphic covers no more than 25% of the icon.
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When representing a monitored entity where more than one alarm exists, display an alarm graphic only for the entity's most severe alarm.
+
+<P class="style8"><IMG height=14 
+
+alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> When representing a container that contains alarmed entities, display only the graphic for the most severe alarm among those for the container's contents. If the container contains other containers, consider the contents of the entire hierarchy when determining which graphic to display.</P>
+
+<h3 class="style8"><A name="16.1.7"></A>16.1.7 Inactive Alarm Expiration</h3>
+
+<p class="style8"><IMG height=14 
+
+alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Application designers can decide how long to include inactive alarms (closed and fixed) in&nbsp;Summary and Rollup&nbsp;views, although 24 hours is recommended.&nbsp; Application designers may decide to allow users to modify this using the preferences settings.&nbsp;</p>
+
+<p class="style8">When deciding how long to display inactive alarms, consider the volume of alarms generated by the application.&nbsp;</p>
+
+<h2 class="style8"><a name="16.2" id="16.2"></a>16.2 Status</h2>
+
+<p class="style8">This section describes the various status indicators 
+
+definitively and visually, and&nbsp;
+<!--StartFragment --> 
+discusses the various ways in which they may be 
+
+displayed in the UI.  </p>
+
+<h3 class="style8"><a name="16.2.1" id="16.2.1"></a>16.2.1 Status Indicators </h3>
+
+<P class="style8">There are 
+
+two types of status available: Object Status and Detailed Status.&nbsp;</P>
+
+<H4 class="style8"><a name="16.2.1.1" id="16.2.1.1"></a>16.2.1.1 Object Status</H4>
+
+<P class="style8">A managed object may have many states (or 
+
+statuses), as appropriate to the application, and these may be reflected to the 
+
+user in various ways that are not the subject of these guidelines. However, to 
+
+show a high-level view of "system status&quot;, an object has only one Object Status 
+
+at any given time. (Refer to standards documents for detailed definitions of <EM>other</EM> flavors of status, which may be relevant to your 
+
+application.) To direct the user's attention to an object, a visual indicator 
+
+(icon) of its Object Status may be 
+
+displayed.&nbsp; In other words, there should be only one status for any given 
+
+object.&nbsp; </P>
+
+<h5 class="style8">16.2.1.1.1 Object Status Icons and Values</h5>
+
+<P class="style8">Object status and their corresponding values are as follows, from most to least severe:</P>
+
+
+
+<TABLE class="info-table" style="COLOR: rgb(153,0,255)"cellSpacing=0 cellPadding=10 width="100%" border=1>
+
+  
+
+  <TR bordercolor="#FFFFFF" bgcolor="#ECE9D8" class="th-center">
+
+    <TD class="style8"><strong><FONT class="th-center">Status </FONT></strong></TD>
+
+    <TD class="style8">
+
+    <P align=left><strong>Icon</strong></P></TD>
+
+    <TD class="style8">
+
+      <P align=left><strong>Status 
+
+  Description</strong></P></TD></TR>
+
+  <TR bordercolor="#FFFFFF" class="info-table">
+
+    <TD class="style8">Fatal </TD>
+
+    <TD class="style8">
+
+      <P align=center><IMG alt="" src="alarms-status_graphics/fatal_medium.gif" 
+
+      ></P></TD>
+
+    <TD class="style8">The object is not in working 
+
+      order. The user's immediate attention is strongly recommended. If a 
+
+      product's functionality is impaired, either Fatal or Warning (see next 
+
+      item) is the appropriate Object Status, depending on the severity of the 
+
+  problem.</TD></TR>
+
+  <TR bordercolor="#FFFFFF" class="info-table">
+
+    <TD class="style8">Warning </TD>
+
+    <TD class="style8">
+
+      <P align=center><IMG alt="" src="alarms-status_graphics/warning_medium.gif" 
+
+      ></P></TD>
+
+    <TD class="style8">The object is in working order 
+
+      and all functionality is currently provided; however, the object is not 
+
+      working within normal operational parameters. The user's attention is 
+
+  recommended. </TD></TR>
+
+  <TR bordercolor="#FFFFFF" class="info-table">
+
+    <TD class="style8">OK </TD>
+
+    <TD class="style8">
+
+      <P align=center><IMG alt="" src="alarms-status_graphics/ok_medium.gif" 
+
+      ></P></TD>
+
+    <TD class="style8">The object is operating within 
+
+      normal operational parameters and without error. (It may be intentionally 
+
+  stopped.) No attention is needed.  </TD></TR>
+
+  <TR bordercolor="#FFFFFF" class="info-table">
+
+    <TD class="style8">Unknown</TD>
+
+    <TD class="style8">
+
+      <P align=center><IMG alt="" src="alarms-status_graphics/unknown_medium.gif" 
+
+      ></P></TD>
+
+    <TD class="style8">
+
+      <P>The implementation cannot report on status at this 
+
+time. <BR>
+</P></TD></TR></TABLE>
+
+
+
+<P class="style8">Application designers are 
+
+responsible for determining the value of an object's status based on the above 
+
+descriptions based on the condition of the object and its attributes.&nbsp; Because an application may allow users to define the thresholds that trigger 
+
+Alarms, it may be possible for an object's Object Status and Alarm severity to 
+
+be inconsistent.    
+
+             
+
+           
+
+      
+
+      
+
+           
+
+</P>
+
+<P class="style8">It may be appropriate to trigger an Alarm based on the value of an object's attribute, in which case the Alarm must be  managed as described in <A href="16-alarms-status.html#16.1">16.1 Alarms</A>.  
+
+        
+
+           
+
+      
+
+      
+
+           
+
+</P>
+
+
+
+<P class="style8"><IMG height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14 border=0> &nbsp;In most cases, Alarms 
+
+and Status should not be displayed in the same table, unless there is a 
+
+compelling reason to do so, as&nbsp;visual clutter is likely to result from the 
+
+display of both indicators. If both columns&nbsp;must be included, sort first by 
+
+Alarms and then by Status.&nbsp;  </P>
+
+<P class="style8">If a 
+
+container object has its own object status, its Object Status may be shown with 
+
+the container. If the container has no status of its own, the Object Status to 
+
+be (optionally) shown is the highest severity value (most severe) of any of the 
+
+contained objects. </P>
+
+
+
+<P class="style8">If Object Status is shown in any view 
+
+and/or at any level of a hierarchy, the application must provide a mechanism by 
+
+which the user can see the details of the object's status and/or the values of 
+
+its attributes. (For example, a tooltip may show more information, details may 
+
+be linked to the object, the user may be referred to a log file, etc.) </P> 
+
+<H4 class="style8"><a name="16.2.1.2" id="16.2.1.2"></a>16.2.1.2 Detailed Status</H4>
+
+<P class="style8">     Detailed Status shows more information on a particular 
+
+object (more than the singular "Object Status"), such as Availability or 
+
+Readiness Status.</P>
+
+<P class="style8">When Detailed Status is shown, its descriptive 
+
+label must be provided (e.g. "availability state", not simply "state"). The 
+
+state or status descriptive label and the associated values should follow 
+
+existing industry standards to ensure consistency across products and to assist 
+
+with common logging. Products should not create a new state or status unless an 
+
+acceptable industry standard does not currently exist.&nbsp;
+<!--StartFragment -->
+ For a 
+
+partial summary of industry standards for state and status, download the StarOffice spreadsheet file <a href="State_Status_Standards.html">State_Status_Standards.html</a>. </P>
+
+<P class="style8">An application may make extensive use 
+
+of these status values, and may use the Object Status icons to draw the user's 
+
+attention to Detailed Status information as described in the following section.</P>
+
+<h3 class="style8"><a name="16.2.2" id="16.2.2"></a>16.2.2 Displaying Status</h3>
+
+<P class="style8"><IMG height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14 border=0>&nbsp;If a product provides 
+
+  Object Status information in the user interface, the product should also display 
+
+  an Object Status count, reflecting the number of objects in the system with each 
+
+Object Status. </P>
+
+<P class="style8">
+
+  <IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;If Alarms are used in the 
+
+  product, do not show the Object Status count in the same area as the Alarm 
+
+count.&nbsp; </P>
+
+<P class="style8">The Object Status 
+
+  count should reflect the level of the system currently viewed by the user, and 
+
+  should be shown in a location that is visually associated with the objects at 
+
+  that level.&nbsp;
+  <!--StartFragment -->
+  The following sections discuss showing status 
+
+in tables, topologies, and trees.&nbsp; </P>
+
+<h4 class="style8"><A name=16.2.2.1></A>16.2.2.1 Status in a Table View
+
+</h4>
+
+<P class="style8">Both Object Status and Detailed Status 
+
+may be displayed in Tables, as seen in the image below:</P>
+
+<P class="style8"><IMG src="alarms-status_graphics/statustable.png" alt="" width="1004" height="580" 
+
+></P>
+
+<h5 class="style8"><A name=16.2.2.1.1></A>16.2.2.1.1 Object Status in Tables</h5>
+
+<P class="style8">Object Status information may appear 
+
+in a table.&nbsp;</P>
+
+<P class="style8">
+
+  <IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0> &nbsp;If Object Status is 
+
+shown, it must&nbsp;be in a separate column.</P>
+
+<P class="style8"><IMG height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14 border=0> &nbsp;If the table includes 
+
+  an Object Status column, the default sort order for the table&nbsp;must 
+
+  be&nbsp;on the values in that column in this order: Fatal, Warning, OK, and 
+
+Unknown.&nbsp;</P>
+
+<P class="style8"><IMG height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14 border=0>&nbsp;&nbsp;If other tables 
+
+  within an application will be used primarily to view status, the default sort 
+
+order should be on status values, from most to least severe.</P>
+
+<P class="style8"><IMG height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14 border=0> If an Object Status column 
+
+  is shown, the display of both icons and text values&nbsp;is recommended. If 
+
+  screen space is constrained then&nbsp;the text may be omitted from the column. 
+
+  This means that you may show both the icon and the text, or the icon 
+
+  only.&nbsp;&nbsp; &nbsp; <BR>
+  <BR>
+
+  <IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;If displaying only the icon, then&nbsp;the status 
+
+  value must be included in the icon's alt tag. <BR>
+
+  <BR>
+  <IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;Icons may not 
+
+  be&nbsp;omitted from an Object Status column. (This means, for example, that 
+
+  a&nbsp;table full of properly-working objects will show a column full 
+
+of&nbsp;green "OK" icons.)</P>
+
+<h5 class="style8"><A name=16.2.2.1.2></A>16.2.2.1.2 Detailed Status in Tables</h5>
+
+<P class="style8"><!--StartFragment -->A column for 
+
+  Detailed Status may be included in a table. If the table does 
+
+  <STRONG>not</STRONG> also include 
+
+an Object Status column, it is acceptable to show the Object Status icons 
+
+appropriately mapped to the Detailed Status values, with the exception of the "OK" icon.&nbsp; (Icons in the Detailed Status column should be used to draw the 
+
+  user's attention to information that is more specific than the high-level Object 
+
+  Status, and excluding the "OK" icon increases the visibility of the other 
+
+  icons.)<BR>
+  <BR>
+  If there is no Object Status column, and icons (excluding "OK") 
+
+  are shown in the Detailed Status column, it is acceptable to display icons 
+
+  selectively in that column in order to draw attention to particular Detailed 
+
+  Status information.&nbsp; For example, it may be appropriate for an application 
+
+  to display only "Fatal" icons, or only "Unknown" icons, depending on the purpose 
+
+  of the table.<BR>
+  <BR>
+  <IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;If 
+
+  both an Object Status and a Detailed Status column are shown, icons should 
+
+  appear only in the Object Status column. The "OK" icon should never be displayed 
+
+in the Detailed Status column. </P>
+
+<h4 class="style8"><A name=16.2.2.2></A>16.2.2.2 Status in a Topology View</h4>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;Object Status icons may 
+
+  appear in a topology view, but Alarm icons and Object Status icons must not be 
+
+displayed in the same topology view.</P>
+
+<P class="style8"><IMG alt="" 
+
+src="alarms-status_graphics/statustop.gif" > </P>
+
+<H4 class="style8"><A name=16.2.2.3></A>16.2.2.3 Status in a Tree View</H4>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;Object Status icons 
+
+  (badges) may be shown in a tree view, but Alarms and Object Status must not be 
+
+displayed in the same tree view. </P>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>&nbsp;If Object Status badges 
+
+are shown in the tree, the "OK" icon should be omitted to avoid unnecessary clutter. Use of the "Unknown" icon is optional.</P>
+
+<P class="style8"><IMG 
+
+src="alarms-status_graphics/statustree.png" alt="" width="229" height="308" > </P>
+
+<h4 class="style8"><A name=16.2.2.4></A>16.2.2.4 Object Status Summary</h4>
+
+<P class="style8">When a high-level summary of all Object Status is required, it must be displayed at the top of the table.&nbsp; 
+
+</P>
+
+<P class="style8"><IMG height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14 border=0>     
+
+         &nbsp;When there is an object count of "0", use the dimmed version of the 
+
+icon.</P>
+
+<p class="style8">
+
+      
+
+</p>
+
+<p>
+
+  <span class="style8"><img src="alarms-status_graphics/statussummary.png" 
+
+alt="" width="1023" height="259" hspace=0 
+
+border=0 usemap=""></span>
+
+</p>
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <span class="currentchapter">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</span>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

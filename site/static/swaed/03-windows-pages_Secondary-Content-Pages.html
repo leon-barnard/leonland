@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>3&nbsp;Windows&nbsp;and&nbsp;Pages - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="03-windows-pages_Secondary-Content-Pages.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.8 Secondary-Content Pages </p>
+
+<h2><a name="3.8" id="3.8"></a>3.8 Secondary-Content Pages </h2>
+
+<p>Secondary-content pages support interaction between a primary page
+or another secondary-content page. Context depends upon the parent page
+opened (could be a primary content page or a secondary-content page).
+They are usually dismissed by users quickly, after using for a specific
+purpose. There are several types of secondary-content pages. Major
+types include dialog and wizard pages as shown in the following table: </p>
+
+<table width="531" border="1" cellspacing="0" cellpadding="4">
+
+  <tbody><tr>
+  </tr><tr bgcolor="#eeeeee">
+    <th nowrap="nowrap"><b>Type </b></th>
+    <th nowrap="nowrap"><b>Description</b></th>
+    <th nowrap="nowrap"><b>Examples</b></th>
+  </tr>
+  <tr>
+    <td valign="top" class="style1">Transaction</td>
+    <td valign="top" class="style1">Allow users to complete or control operations they initiate. </td>
+    <td><p class="style1">Sort (Advanced) </p>
+        <p class="style1">Search (Advanced)</p>
+        <p class="style1">Chooser (for example, File Chooser used for opening or saving a file)</p>
+        <p class="style1">New &lt;Object&gt;</p></td>
+  </tr>
+  <tr valign="top">
+    <td class="style1">Settings, parallel information, or supplemental information</td>
+    <td class="style1">Allow users to view or set properties of objects.</td>
+    <td><p class="style1">Property sheet</p>
+        <p class="style1">Font settings </p>
+        <p class="style1">Table representation of a chart</p></td>
+  </tr>
+  <tr valign="top">
+    <td class="style1">Message or alert</td>
+    <td class="style1">Brief presentations of information or requests for users to make choices. </td>
+    <td><p class="style1">Error </p>
+        <p class="style1">Warning </p>
+        <p class="style1">Information </p>
+        <p class="style1">Question </p>
+        <p class="style1">Progress indicator (could be a subtype of a message/alert dialog page)</p></td>
+  </tr>
+  <tr valign="top">
+    <td class="style1">Information displays <br>
+      (also known as "tear-offs")</td>
+    <td class="style1">&nbsp;</td>
+    <td class="style1">Topology</td>
+  </tr>
+  <tr valign="top">
+    <td class="style1">Wizard</td>
+    <td class="style1">&nbsp;</td>
+    <td class="style1">Multi-step style of any type of dialog page</td>
+  </tr>
+</tbody>
+</table>
+
+<h3>Required</h3>
+
+<ul class="Requirements">
+
+  <li><strong><a name="3.8R1" id="3.8R1"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R1 </strong>Secondary-content pages can appear in the main browser window, pop-up windows, or JavaScript windows. </li>
+  <br>
+   <li><strong><a name="3.8R2" id="3.8R2"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R2 </strong>For buttons and breadcrumbs on secondary-content pages:
+      <ul>
+        <li>Provide a Cancel, Close, or "Back to Xxx" button to return the user to the originating page:
+            <blockquote>
+              <p>Pop-up window: Provide a Cancel or Close button. A Close button is appropriate if there is no pending action to be cancelled. 
+          </p></blockquote>
+        </li>
+        <blockquote>
+          <p>Main
+browser window: Provide a Cancel or "Back to Xxx" button, where "Xxx"
+is the title (possibly abbreviated) of the originating page. A "Back to
+Xxx" button is appropriate when there is no pending action to be
+canceled, or if there is no data to save or lose.</p>
+        </blockquote>
+        <li>Use breadcrumbs if the secondary-content page appears in the main browser window.</li>
+        <li>If
+the secondary-content page in the main browser window replaced other
+navigational elements (for example, tabs), then include them in the
+breadcrumb (for example, the active tab name). Provide additional
+contextual cues in the page if they would be useful. <br>
+            <br>
+        </li>
+      </ul>
+  </li><li><strong><a name="3.8R3" id="3.8R3"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R3 </strong><span class="style29">Titles</span>
+should always be meaningful. They should provide consistent, direct,
+contextual information to ensure that users know which page, object, or
+action the page is supporting. </li>
+</ul>
+
+<h3>Advised</h3>
+
+<ul class="Recommendations">
+
+  <li> <strong><a name="3.8A1" id="3.8A1"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A1 </strong>Use
+buttons for secondary-content page actions (versus menus). Buttons are
+a way to distinguish secondary from primary content pages (where
+controls can include menus). Menus should not be necessary because
+secondary-content pages have a specific purpose.<br>
+      <br>
+  </li>
+  <li><strong><a name="3.8A2" id="3.8A2"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A2 </strong>When a secondary-content page appears in a pop-up window, consider making windows single-use instead of multi-use:
+      <ul>
+        <li>Include action buttons such as OK that close the window after the action is invoked.</li>
+        <li>Avoid Apply buttons (or equivalents) that leave the window open.</li>
+        <li>Make the page multi-use (with Apply buttons or equivalents) if users would clearly benefit.</li>
+      </ul>
+  </li>
+  <blockquote>
+    <p><strong> </strong><strong>Note:</strong>
+This guideline differs from guidelines for the non-browser world. The
+non-browser world manages windows so that users can leave secondary
+windows open if they want to use them again. With Web browsers, pop-up
+windows can get lost or become orphaned. This guideline does not
+prohibit multi-use windows. It merely suggests that you judge whether
+users will value pop-up windows remaining open.</p>
+  </blockquote>
+  <li><strong><a name="3.8A3" id="3.8A3"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A3 </strong>Do
+not open a secondary-content page from another secondary-content page
+by swapping the parent secondary-content page. Instead do one of the
+following: <ul>
+        <li> Open the additional secondary-content page into a pop-up window.</li>
+        <li> Redesign so that the additional secondary-content page is unnecessary.</li>
+        <li> Use a wizard to contain all the steps. <br>
+            <br>
+        </li>
+      </ul>
+  </li>
+  <li><strong><a name="3.8A4" id="3.8A4"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A4 </strong>Do
+not swap an entire window for a secondary-content page. This can be an
+effective way to grab the user's attention, but the context of the page
+that led to that secondary-content page can be lost. It is better to
+swap a portion of the window, such as the right pane. Another option is
+to open a pop-up window instead of swapping any portion of the original
+window.</li>
+</ul>
+
+<p><strong><a href="03-windows-pages_Secondary-Content-Pages.html#3.8"><img src="windows-pages_graphics/BackToTop.gif" width="16" height="16" border="0">Back to top</a></strong></p>
+
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.8 Secondary-Content Pages  </p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

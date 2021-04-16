@@ -1,0 +1,138 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Table Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+          <td class="Mst2TtlTd" width="99%">
+            <div class="Mst2TtlTxt">Table</div>
+          </td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is the sample HTML for the action table component described in <a href="../../09-tables.html">Chapter 9, Tables</a>. The guidelines
+  chapter for tables is the definitive source for details on the
+  appearance
+  and
+  behavior
+  
+  of tables and will not be repeated in this document. The release notes at the
+  end of this document contain HTML &amp; css implementation issues and details. </p>
+<p>There are two variations on the table's appearance, a standard look and a &quot;lite&quot; look intended for use in e.g., portal pages, where the standard appearance is too visually heavy. This is implemented using contextual selectors, so to view a table in its lightweight mode one only needs to add &quot;TblLt&quot; to the class specification on the table tag, i.e., class=&quot;Tbl TblLt&quot;. Examples of both variations can be seen in the examples section below.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Full Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/table.jsp">HTML</a> ]</li>
+	<li>Basic Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/basicTable.jsp">HTML</a> ]</li>
+	<li>Actions Example: [ <a href="http://webdev2.sun.com/example/faces/table/actions.jsp">HTML</a> ]</li>
+	<li>Alarms Example: [ <a href="http://webdev2.sun.com/example/faces/table/alarms.jsp">HTML</a> ]</li>
+	<li>Custom Title Example: [ <a href="http://webdev2.sun.com/example/faces/table/customTitle.jsp">HTML</a> ]</li>
+	<li>Example with dynamic groups [ <a href="http://webdev2.sun.com/example/faces/table/dynamicGroupTable.jsp">HTML</a> ]</li>
+	<li>Dynamic Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/dynamicTable.jsp">HTML</a> ]</li>
+	<li>Embedded Actions Example: [ <a href="http://webdev2.sun.com/example/faces/table/embeddedActions.jsp">HTML</a> ]</li>
+	<li>Empty Cells Example: [ <a href="http://webdev2.sun.com/example/faces/table/emptyCells.jsp">HTML</a> ]</li>
+	<li>Filter Example: [ <a href="http://webdev2.sun.com/example/faces/table/filter.jsp">HTML</a> ]</li>
+	<li>Group Example: [ <a href="http://webdev2.sun.com/example/faces/table/groupTable.jsp">HTML</a> ]</li>
+	<li>Hidden Selected Rows Example: [ <a href="http://webdev2.sun.com/example/faces/table/hiddenSelectedRows.jsp">HTML</a> ]</li>
+	<li>Lightweight Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/liteTable.jsp">HTML</a> ]</li>
+	<li>Multiple Header and Footer Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/multipleHeadersFooters.jsp">HTML</a> ]</li>
+	<li>Paginated Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/paginatedTable.jsp">HTML</a> ]</li>
+	<li>Select Multiple Rows Example: [ <a href="http://webdev2.sun.com/example/faces/table/selectMultipleRows.jsp">HTML</a> ]</li>
+	<li>Select Single Row Example: [ <a href="http://webdev2.sun.com/example/faces/table/selectSingleRow.jsp">HTML</a> ]</li>
+	<li>Spacer Column Example: [ <a href="http://webdev2.sun.com/example/faces/table/spacerColumn.jsp">HTML</a> ]</li>
+	<li>Sortable Table Example: [ <a href="http://webdev2.sun.com/example/faces/table/sortableTable.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>The fact that tables are specified to take 100% of the width of the window,
+     less 10px margins on either side, forces a platform solution. It  turns out that if the 10px margin is
+    specified 
+    in a &lt;div class=&quot;TblMgn&quot;&gt; IE will actually add the 10px margins
+     to the left and right of the table after it has stretched the table to 100%,
+    
+    which forces horizontal scrolling. To get around this, the style sheet specifies
+     10px left and right white borders on the table, instead of margins. In the
+    
+NS6 style sheet, these are margins. </p>
+<p><strong>Column Spacing</strong></p>
+<p>The fact that the tables need to be 100% of the width of the window means that 
+  application developers will need some way of controlling the relative widths 
+  of, and be able to specify &lt;nowrap&gt; on, specific columns to ensure that 
+  the tables end up with an attractive appearance. In the case of tables with 
+  only two data columns, a spacer column is placed to the right of the two data 
+  columns in order to take up the extra space, thus allowing the contents of two 
+  data columns to be close together. This column uses the styles TblTdSpc and 
+  TblTdSpcLst. </p>
+<p><strong>Column Alignment and Wrapping of Headers</strong></p>
+<p>Columns should be left, center, or right aligned according the the rules specified 
+  in the guidelines. There can be no mixed alignment within a column. Testing 
+  revealed that the most reliable cross-platform way of getting left or center 
+  alignment to work was via the use of the align attribute in the td tag. By default, cell contents 
+  for td's are left-aligned, so there is no need to do anything for these cells. th's, on the other hand are center-aligned by default, so it will be necessary to include a align=&quot;left&quot; for those cells.</p>
+<p>To support attractive wrapping, column headers with sort icons are placed inside of table with the column header text and the sort icon placed in separate cells. In this scheme the text can wrap to two lines and the sort icon will stay bottom aligned and to the right </p>
+<p><strong>Dynamic Behavior</strong></p>
+<p>The table is a place where the dynamic enabling and disabling of buttons and 
+  menus (and their menu items) is likely to be used quite a bit. Typically, this 
+  dynamic behavior would be in response to the user checking the checkboxes or 
+  radio buttons in the first column of the table, if present. In some cases, certain 
+  buttons and menu items should be disabled when the user enters the page (i.e., 
+  because nothing has been selected). Because the dynamic enabling and disabling of individual menu items 
+  does not work in Internet Explorer, selecting an item that is &quot;disabled&quot; 
+  should launch a pop-up window containing a message about why the control has 
+  been disabled. There are several default messages described in the Tables chapter 
+  of the guidelines, but there may be a need for application developers to specify 
+  a custom message. </p>
+<p><strong>Accessibility</strong></p>
+<p>There are several accessibility features built into the table. The first is
+  that the table title is implemented using the &lt;caption&gt; tag. The caption
+  has a style defined that gives it the appropriate appearance for all browsers.</p>
+<p>The table also specifies the use of the &quot;scope&quot; attribute to indicate
+  row and column headers. Tables will always have column headers specified via
+  inclusion
+  of scope=&quot;col&quot; in the &lt;th&gt; tags for the table. The exceptions
+  to this are the columns containing checkboxes or radio buttons and the spacer
+  columns used
+  for two column tables. Row headers will exist in most, but  not all
+  tables via the inclusion of scope=&quot;row&quot; in all of the cells in a
+  column that are identified to contain header information. These row headers
+  also need to be specified with a &lt;th&gt; rather than a &lt;td&gt; tag. For example,
+  if a table has a column containing user names and to the left is a
+  column of checkboxes and
+  to the right are columns containing attributes of those users, then the contents
+  of the cells in the user name column are acting as row headers and would therefore
+  be specified via a th with  a scope=&quot;row&quot; contained within. On the
+  other hand, if a table contains a system log with time stamp and log entry
+  columns,
+  then
+  neither
+  column should
+  have scope=&quot;row&quot; specified in the rows because neither is acting
+  as a row header in this case -- this table would still, however have scope=&quot;col&quot;
+  specified in the column headers. </p>
+<p><strong>Alarm Cells</strong></p>
+<p>When there is an alarm in a table cell, the cell  gets a yellow background. 
+  Depending on where the cell is in the table (i.e., in a sort column, in the 
+  first column, in the last row, etc.), the style for the alarm cell varies somewhat. 
+</p>
+<p>&nbsp;</p>
+</body>
+</html>

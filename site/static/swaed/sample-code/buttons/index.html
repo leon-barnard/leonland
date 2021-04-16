@@ -1,0 +1,92 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Button Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt"> Button</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This page corresponds to <a href="../../07-simple.html#7.1">7.1 Action Buttons</a>. There are currently 2 different types of buttons in the  branding: Primary and Secondary. Each of these buttons has a disabled appearance.</p>
+<p>The implementation specified in the examples below uses form buttons that have been styled via css. The buttons are also specified to have a distinct appearance when they have keyboard focus or when the mouse is over them. This is done by swapping out the button styles on the onFocus, onMouseover, onBlur, and onMouseout events.</p>
+<p>There is a requirement to be able to dynamically enable and disable the buttons. When a button is dynamically disabled in IE and NS6+, it is necessary to both declare the button as disabled (which takes the button out of the keyboard navigation tab order and prevents keypress and mouseclick events from being triggered) and change the style (to get the  desired disabled appearance, rather than the browser's default). More details on dynamic enabling and disabling can be found in the release notes below.</p>
+<p>There is also a requirement to align buttons in a column with all buttons of equal width. This requirement is driven by the design of the add-remove idiom (see the example below). For NS6+ and IE, this only required a change to the style sheets to set the width of the buttons to 100% when they are in a table of class &quot;BtnAryTbl&quot;. </p>
+<p>See the source in the examples below for more details on how all of this works.</p>
+<p>The gory details can be found in the release notes section below. </p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>General examples: [ <a href="http://webdev2.sun.com/example/faces/button/Button.jsp">HTML</a> ]</li>
+	<li>Table example with tooltips and dynamic form buttons: [<a href="http://webdev2.sun.com/example/faces/table/actions.jsp">HTML</a> ]</li>
+	<li>Add-remove idiom example with dynamic form buttons: [ <a href="http://webdev2.sun.com/example/faces/addremove/AddRemove.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<p>Using &lt;input&gt;'s for buttons prevents us from putting images in the button label, but we do have background images for buttons, which create the gradient effect. </p>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<ul>
+  <li>One of the alternative implementations that was considered was the use of styled hyperlinks for the buttons. The main problems with this approach were that
+    <ul>
+      <li>On all versions of Netscape 4, padding and margins around the label would not render and, if specified in the style, would cause the buttons to wrap when there were multiple buttons per row</li>
+      <li>There was no way to truly disable the hyperlink buttons</li>
+    </ul>
+  </li>
+  <li>There are browser differences in support for styling form buttons
+    <ul>
+      <li>On IE and Netscape 6+ styling form buttons works fine, although to get the proper hover and disabled behavior, it is necessary to call a bit of javascript within the &lt;input&gt; tag -- for the record I tried defining the style with hover built in to avoid having to use the javascript (i.e., .Btn1:hover {spec}) which worked in NS6, but not in IE, so we're stuck with the javascript for now. Bummer.</li>
+    </ul>
+  </li>
+  <li>Sizing issues in button arrays:
+    <ul>
+      <li>For NS6+ and IE, we can specify a 100% width for the buttons when they are in a table of class &quot;BtnAryTbl&quot; -- this will work for both vertical and horizontal arrays of buttons. </li>
+    </ul>
+  </li>
+  <li>Dynamic enabling and disabling of buttons
+    <ul>
+      <li>Because buttons cannot actually be disabled (or appear to be disabled) on NS4, users won't necessarily know when or why a particular button is not applicable. In this case,  the &quot;disabled&quot; button, when clicked, should launch a javascript alert indicating why the button's functionality is not available (see the add-remove and table actions examples above in NS4 for en example). It's still possible to use the same HTML for the buttons in all browsers, however, because on NS6+ and IE, the buttons will actually be disabled, so the onClick would not be generated (and therefore the message would not get shown). </li>
+      <li>On IE, to help the user understand why a button is disabled, HCI-Admin has specified that when the button is disabled, the tooltip (that is, the contents of the title inside the &lt;input&gt;) should be changed to show the same text that would be shown in the javascript alert in NS4 if the button had been clicked. This does not work on NS6+ -- tooltips are not shown on disabled items. </li>
+      <li>So when a button is dynamically enabled, the following should happen:
+        <ol>
+          <li>The button's state should be made enabled (button.disabled = false;)</li>
+          <li>Its style should be changed (button.className = &quot;Btn1&quot;; )</li>
+          <li>Its tooltip should be updated (button.title = &quot;Delete One or More Users&quot;;)</li>
+        </ol>
+      </li>
+      <li>When a button is disabled:
+        <ol>
+          <li>The button's state should be made disabled (button.disabled = true;)</li>
+          <li>Its style should be changed (button.className = &quot;Btn1Dis&quot;; )</li>
+          <li>Its tooltip should be updated (button.title = &quot;You Must First Select One or More Users to Delete&quot;;)</li>
+        </ol>
+      </li>
+      <li>Given their typical purpose in the user interface, icon buttons do not need to be dynamically enabled and disabled. These buttons may take on a disabled appearance (e.g., the &quot;First&quot; and &quot;Previous&quot; icons in pagination are disabled when the user is on the first page), but there is no need to enable them client-side, because there is no client-side user action that would cause this to happen -- a trip to the server is required anyway. </li>
+      <li>Examples of the above behavior can be found in the <a href="http://www.jaimeguerrero.com/portfolio/ProductWork/H-Sun/SWAED/SWAED_4_1/sample-code/table/example-int.html">dynamic table example</a> and example javascript is contained in the <a href="../js/dynamic.js">dynamic.js</a> file</li>
+      <li>Note that although it is possible to specify a newline &quot;\n&quot; to create a line break inside of a tooltip in IE, this is not supported in NS6+ -- what happens in NS6+ is that the \n will actually appear in the tooltip text. Therefore, no tooltips should contain line breaks.</li>
+      <li>Also note that the tooltip behavior for buttons would not apply to items &lt;option&gt;'s inside of action menus, which has items that will need to be dynamically enabled and disabled -- neither NS6+, nor IE support showing tooltips on individual menu items. See the discussion of dynamic behavior on the <a href="../forms/index.html">form elements</a> page for more information. </li>
+    </ul>
+  </li>
+	<li>In prior releases there was an additional button type for both primary and secondary buttons - the mini button. For release 4.0 all of the buttons were reduced in size. For backward compatibitlity, the button component still supports mini buttons. So, they are still shown in the example app. However, they are now the same reduced size as the regular primary and secondary buttons.</li>
+</ul>
+<p>&nbsp;</p>
+</body>
+</html>

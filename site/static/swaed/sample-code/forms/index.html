@@ -1,0 +1,55 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Form Elements Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt"> Form Elements</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This page corresponds to <a href="../../07-simple.html#7.2">7.2 Elements Used for Choosing Data</a> and <a href="../../07-simple.html#7.3">7.3 Text Elements</a> and includes sample HTML and styles for the following tags:</p>
+<ul>
+  <li>Selectable List Tag</li>
+  <li>Radio Button Tag</li>
+  <li>Drop Down Menu Tag</li>
+  <li>Text Area, Text Field, Password Tags</li>
+  <li>Checkbox Tag </li>
+</ul>
+<p>All of these tags need styles assigned to them, primarily in order to control their appearance when they are disabled. All of these elements have to be dynamically enabled and disabled. When they are disabled, not only do the tags need to have disabled=&quot;disabled&quot; added as an attribute, but their style must also be changed to its disabled version (e.g., TxtFld =&gt; TxtFldDis for text fields). See the examples below for details </p>
+<p>The form elements will almost always need to be used in conjunction with the <a href="../label/index.html">label tag</a>.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Checkbox and Radio Button examples [ <a href="http://webdev2.sun.com/example/faces/cbrb/checkboxRadiobutton.jsp">HTML</a> ]</li>
+	<li>Jump Menu, Standard Menu and List Box examples [ <a href="http://webdev2.sun.com/example/faces/menu/MenuList.jsp">HTML</a> ]</li>
+	<li>Text Field, Password and Text Area examples [ <a href="http://webdev2.sun.com/example/faces/field/TextInput.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="images" id="images"></a>Images</h3>
+There are no images corresponding to these elements.
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p> IE6 on Windows does not support disabling the individual &lt;option&gt;'s within a &lt;select&gt;. It simply ignores the specification to disable it. Same goes for NS6.2.2, although NS7 and recent Mozilla builds support disabling menu items. </p>
+<p>&nbsp;</p>
+</body>
+</html>

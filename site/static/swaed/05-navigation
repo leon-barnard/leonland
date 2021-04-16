@@ -1,0 +1,1459 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>5&nbsp;Top-Level&nbsp;Navigation - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style6 {color: #0033FF}
+.style8 {font-weight: bold}
+.style13 {color: #9900FF}
+</style></head>
+<body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="05-navigation#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <span class="currentchapter">5&nbsp;Top-Level&nbsp;Navigation</span>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="style7"><a href="05-navigation.html#5">5 Top-Level Navigation</a></p>
+<p class="toc-level1 style7"><a href="05-navigation.html#5.1">5.1 Choosing a Navigation 
+  Style</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.1">5.1.1 Drill Down</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.2">5.1.2 Tabbed Panes and Accordion </a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.2.1">5.1.2.1 Accordion</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.3">5.1.3 Left-Right Pane 
+  Set</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.4">5.1.4 Tree</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.5">5.1.5 Pop-Up Windows 
+  for Objects</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.1.6">5.1.6 Combinations of 
+  Navigation Styles</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.6.1">5.1.6.1 Drill Down 
+  in Left Pane</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.6.2">5.1.6.2 Tree in Left 
+  Pane</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.6.3">5.1.6.3 Tree in Tabbed 
+  Pane</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.6.4">5.1.6.4 Tree or Flat 
+  List in Left Pane of a Tabbed Pane</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.1.6.5">5.1.6.5 Drill Down 
+  in Left Pane of a Tabbed Pane</a></p>
+<p class="toc-level1 style7"><a href="05-navigation.html#5.2">5.2 Tabbed Panes and Accordion Details</a> </p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.2.1">5.2.1 One-Level Tabbed Panes</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.2.2">5.2.2 Two-Level Tabbed Panes</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.2.3">5.2.3 Three-Level Tabbed Panes</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.2.4">5.2.4 Tabs within a Sun.com Web Site Page</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.2.5">5.2.5 Accordion Details </a></p>
+<p class="toc-level1 style7"><a href="05-navigation.html#5.3">5.3 Left-Right Pane Set Details</a></p>
+<p class="toc-level1 style7"><a href="05-navigation.html#5.4">5.4 Tree Details</a> </p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.4.1">5.4.1 Tree Contents</a> </p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.4.1.1">5.4.1.1 Application Actions Versus Application Objects</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.4.1.2">5.4.1.2 Types of Container-Nodes</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.4.2">5.4.2 Tree Look and Feel</a> </p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.4.2.1">5.4.2.1 Alarm or Status States 
+  of Tree Objects</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.4.2.2">5.4.2.2 Tree Behavior</a></p>
+<p class="toc-level2 style7"><a href="05-navigation.html#5.4.3">5.4.3 Tree Scalability</a></p>
+<p class="toc-level3 style7"><a href="05-navigation.html#5.4.3.1">5.4.3.1 Scaling Methods for Trees</a></p>
+<p class="toc-level1 style7"><a href="05-navigation.html#5.5">5.5 Common Tasks Page</a></p>
+<p class="toc-level2 style7"><a href="05-navigation_navigation-access.html">5.5.1 Access to the Common Tasks Page</a></p>
+<p class="toc-level2 style7"><a href="05-navigation_navigational-tasks.html">5.5.2 Navigational Tasks</a></p>
+<p class="toc-level3 style7"><a href="05-navigation_navigational-tasks.html#5.5.2.1">5.5.2.1 Navigational Tasks: Flow Diagrams</a></p>
+<p class="toc-level2 style7"><a href="05-navigation_action-based-tasks.html#5.5.3">5.5.3 Action-Based Tasks</a></p>
+<p class="toc-level3 style7"><a href="05-navigation_action-based-tasks.html#5.5.3.1">5.5.3.1 Action-Based Tasks: Flow Diagrams</a></p>
+<p class="toc-level2 style7"><a href="05-navigation#5.5.4">5.5.4 Hybrid Tasks</a></p>
+<p class="toc-level2 style7"><a href="05-navigation#5.5.5">5.5.5 Multiple Session Tasks</a><br>
+</p>
+<h1 class="style7"><a name="5"></a>5 Top-Level Navigation</h1>
+<p class="style7"><a href="03-windows-pages.html">Chapter 3, Windows and Content Pages</a>, describes
+   the highest, broadest view of Web Application UIs. Those topics nest top-level
+  navigation 
+  within them, so you should read Chapter 3 before reading this chapter. Top-level
+   navigation nests lower-level navigation within it, so you should read this
+  chapter 
+  before <a href="06-content.html">Chapter 6, Content Area Structure and Layout</a>.</p>
+<p class="style7">Top level navigation is the &quot;main thoroughfare&quot; that takes the user from the opening of an application to the content 
+  area where the user works. Methods of top level navigation 
+  are typically trees, tabs, or a drill-down method that 
+  uses textual or graphical links on each page, and which may leave 
+breadcrumbs for the user as a return path.</p>
+<p class="style7">Once users navigate to the area where they want to work, they 
+  may encounter content area navigation, consisting of links, buttons,
+  and dropdown menus. Tabs can also be used for content area 
+  navigation (for example, when a tree is used for 
+  top-level navigation, the content page associated with the selected 
+tree node may display a set of tabs).</p>
+<p class="style7">This chapter is not an exhaustive list
+    of 
+    all the top-level navigation styles that might be allowed. Instead, this chapter lists the styles
+that have been defined so far. More styles may be defined in future updates of these guidelines.</p>
+<p class="style7">&quot;Summary representation&quot; and &quot;detailed representation&quot; are terms 
+  used throughout this chapter. Summary representations of objects are relatively 
+  small summary representations such as rows in a tree, list, or table, or icons 
+  in a topology view. Being small, summary representations are convenient for showing 
+  a lot of objects at once. However, the small size of summary representations 
+  makes it hard  to design a summary representation to show all of an object's 
+  attributes, and especially hard to show controls for editing the attributes.</p>
+<p class="style7">Detailed representations exist to overcome those disadvantages. Examples of detailed 
+  representations include:</p>
+<ul class="style7">
+  <li> An entire window being swapped to show the attributes of an object</li>
+  <li>A tabbed pane devoted to the attributes of an object</li>
+  <li>The right pane of a left-right pane set being swapped to show the attributes 
+    of an object</li>
+  <li> A pop-up browser window being opened to show the attributes of an object</li>
+  <li>    A section of an object's page showing or supporting editing of the complete
+  details of a sub-object</li>
+</ul>
+<p class="style7">The manner in which detailed representations are made to appear differs depending 
+  on the particular representation and the navigation style, as follows. </p>
+<ul class="style7">
+  <li>In the drill-down style, the summary representation is the link-appearing 
+    name or icon of an object. Clicking the link causes that object to open by 
+    swapping that window's contents. </li>
+  <li>In the tabbed panes style, the summary representation is the tab. Selecting 
+    the tab causes that object to open by bringing that tabbed pane to the foreground.</li>
+  <li>In the left-right pane set style, the summary representation is the row in 
+    the left pane (for example, the row in a tree, the row in a flat list). Selecting 
+    the row causes that object to open by having its attributes displayed in the 
+    right pane.</li>
+  <li>In the pop-up window style, the summary representation is the link-appearing 
+    name or icon of an object. Clicking the link or icon causes that object to 
+    open by having its attributes displayed in a pop-up window.</li>
+</ul>
+<p class="style7">The concepts of &quot;summary&quot; and &quot;detailed&quot; representations are 
+  clarified in the remaining sections of this chapter, which describe several 
+  top-level navigation styles.</p>
+<p class="style7">&quot;Wormholing&quot; is a navigational mechanism that is orthogonal to all
+   the other navigational mechanisms described in the remainder of this chapter.
+  
+  Wormholing is the selecting of a link that leads directly to a drastically
+  different  place in the UI, skipping the normal steps for navigating to that
+  place. Wormholing 
+  is offered as a convenience to users, to save them the trouble of laboriously
+   navigating through the formal structure of the UI, to get to some named object
+  
+  or place.</p>
+<p class="style7">As an  example of a wormhole, suppose a product has tabbed panes as its top-most 
+  navigational structure. Within each tabbed pane there is a left-right pane set, 
+  and within the left pane is a tree. The user has made her way to one of the 
+  tabbed panes. She laboriously expands nodes of the tree, and finally focus-selects 
+  an object to see its properties in the right pane. Suppose that in that right 
+  pane is the name of a related object that exists in a different tabbed pane, 
+  which is far down that tabbed pane's own tree structure. To get there using 
+  the normal steps for navigating to that object, the user would  need to write 
+  down the exact location of that object, then laboriously work down that other 
+  tabbed pane's tree to the correct node. That laborious navigation method must 
+  be available, because it is part of the fundamental structure of the product. 
+  However, as a convenience to the user, the designer may also make that related 
+  object's name a link. Clicking that link instantly switches to that other tabbed 
+  pane, expands that tree to the correct node, and then focus-selects that object. 
+  That linked object name is a &quot;wormhole.&quot;</p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When the user takes a wormhole (clicks on a wormhole link), change the display 
+  to the same appearance it would have had if the user had reached that destination 
+  using normal (usually more laborious) steps for navigating to the resulting 
+  place. Make the appropriate tabs active, expand trees to the appropriate nodes, 
+  focus-select the appropriate nodes, and display breadcrumbs and parentage paths 
+  as if the user had manually drilled down to that destination.</p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Independent
+  of Navigation Style, sometimes it is better to show many objects in full detail on one page
+  than to force the user to see each of their details only after drilling down to individual pages. It is
+appropriate to show multiple objects' detailed representations simultaneously on a
+  single page when <b>all
+of
+these
+conditions
+are
+met</b>:</p>
+<ul class="style7">
+  <li>when there are less than 10  objects to show on the one page,</li>
+  <li>and  the size of the resulting one page requires less than 3    screens of vertical scrolling, on a 1024x768 display. </li>
+  <li>and, most importantly, it is <i>beneficial</i> to the user
+    to see all the objects at once (for comparison purposes, or for copy-and-paste
+    purposes, for example) despite the
+    additional
+    scrolling
+    that might be required</li>
+</ul>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Generally, when multiple detailed representations of objects are shown on a single
+  page, each object should be shown in its own section, or otherwise clearly
+  labeled and
+  distinguished
+  from
+  the
+  other
+  objects.</p>
+<h2 class="style7"><a name="5.1"></a>5.1 Choosing a Navigation Style</h2>
+<p class="style7">No single top-level navigation style is clearly superior to the others. Each 
+  style has advantages and disadvantages making it suitable for particular situations. 
+  The trade-offs are too complex to capture in a simple table or flow chart to 
+  prescribe your choice of a style. Future releases of the style guide may provide
+  lists of advantages and disadvantages in the sections that follow. </p>
+<p class="style7">This table is merely an introductory overview that shows a small subset of 
+  the reasons for choosing each style. For detailed descriptions of the styles, 
+  click their linked names in the left column of this table.</p>
+<table class="info-table" border="1" cellpadding="10" cellspacing="0">
+  <tbody> 
+  <tr> 
+    <th class="style7">Top-Level Navigation Style </th>
+    <th class="style7">Highlights of Appropriate Usage</th>
+  </tr>
+  <tr> 
+    <td class="style7" > 
+      <p><a href="05-navigation#5.1.1">Drill down</a>. Content area shows attributes of one 
+        item at a time, with a parentage path or breadcrumb at the top.</p>
+    </td>
+    <td class="style7">One item at a time is open. Switching among items quickly is unimportant. Tall and wide content area.</td>
+  </tr>
+  <tr>
+    <td valign="top" class="style7" ><a href="05-navigation#5.1.2">Tabbed panes</a>. One to three levels of tabbed panes, each tabbed pane representing one category or item.</td>
+    <td valign="top" class="style7">Six or fewer tabs within each level of tabs, one to three levels of tabs. Content area more complex than navigation area. Wide content area.</td>
+  </tr>
+  <tr> 
+    <td valign="top" class="style7" ><p><a href="05-navigation#5.2.5" target="_self">Accordion</a></p>      </td>
+    <td valign="top" class="style7"><p>To allow quick access to an applications' top level objects while maintaining page context. Offers a vertically-oriented, collapsible top-level navigation panel. The contents of an accordion container are mostly views or categories of objects rather than objects themselves. </p>      </td>
+  </tr>
+  <tr> 
+    <td class="style7" ><a href="05-navigation#5.1.3">Left-right pane set</a>. Focus-selecting 
+      an item in the left pane shows its attributes in the right pane.</td>
+    <td class="style7">Navigation area more complex than content area. Tall content 
+      area. Switching among items quickly is important.</td>
+  </tr>
+  <tr> 
+    <td class="style7" ><a href="05-navigation#5.1.4">Tree</a>. Vertical list that is indented 
+      for each level in a hierarchy.</td>
+    <td class="style7">Seven or more categories. Multiple, similar levels in one 
+      hierarchy.</td>
+  </tr>
+  <tr> 
+    <td class="style7" ><a href="05-navigation#5.1.5">Pop-up windows</a>. Main window shows names 
+      of objects. Attributes of an opened object are shown in a pop-up browser 
+      window.</td>
+    <td class="style7">Multiple items open at once. Tall and wide content area.</td>
+  </tr>
+  <tr> 
+    <td class="style7" ><a href="05-navigation#5.1.6">Combinations</a> of the above styles, such 
+      as tree in the left pane of a left-right pane set.</td>
+    <td class="style7">Varies with the particular combination. Examples: Substantively 
+      different categories at top level than at bottom level. Too many items or 
+      levels for tabbed panes alone or for a tree alone.</td>
+  </tr>
+  </tbody> 
+</table>
+<p class="style7">To help you choose a navigation style, the following sections summarize these 
+  styles. Details of some styles come later in this chapter.</p>
+<h3 class="style7"><a name="5.1.1"></a>5.1.1 Drill Down</h3>
+<p class="style7">In the drill-down style, the content area shows the attributes of one item 
+  at a time, starting with the root &quot;item&quot; that contains the top-level 
+  list of items. The lower-level items are shown as links. The attributes of those 
+  lower-level items are revealed by clicking their links, which swaps the entire 
+  content area. </p>
+<p class="style7">Parentage path and breadcrumbs (see <a href="06-content.html#6.3">6.3 Breadcrumbs 
+  and Parentage Paths</a>) are always present, both to show the context of the 
+  current page and to provide navigation besides the browser's simple Back action. 
+</p>
+<p class="style7">Drill-down style can handle an unlimited number of levels. However, in practice 
+  it is best suited to a small number. Here is an example of one level:</p>
+<p class="style7"><img src="navigation_graphics/full_page_1_level.gif" width="597" height="358"></p>
+<p class="style7"> Here is an example of drilling into two levels:</p>
+<p class="style7"><img src="navigation_graphics/full_page_2_levels.gif" width="709" height="463"></p>
+<p class="style7"> Regarding proper titles on pages when breadcrumbs are used, follow 
+  the guidelines in <a href="06-content.html#6.3">6.3 Breadcrumbs and Parentage
+   Paths</a>.</p>
+<p class="style7">The items listed as links within the pages of the examples above are shown
+  in flat lists. However, items can be displayed in a variety of other ways,
+  such as a tree,
+  
+  a topology, or a collection of icons, as described in <a href="05-navigation#5.1.6">5.1.6
+   Combinations of Navigation Styles</a>.</p>
+<h3 class="style7"><a name="5.1.2"></a>5.1.2 Tabbed Panes and Accordion </h3>
+<p class="style7">Up to three levels of tabbed panes are permitted. Here are schematic examples 
+  of one, two, and three levels.</p>
+<p class="style7"><img src="navigation_graphics/tabs.gif" width="374" height="253"></p>
+<p class="style7"><img src="navigation_graphics/tabs_2_levels.gif" width="374" height="253"></p>
+<p class="style7"><img src="navigation_graphics/tabs_3_levels.gif" width="374" height="253"></p>
+<p class="style7">The style within each tabbed pane may be different, to suit each tabbed pane's 
+  contents. For example, one tabbed pane might contain a simple set of properties 
+  as fields, whereas another tabbed pane in the same set might contain a drill-down 
+  navigation style in a left-right pane set.</p>
+<p class="style7">For details, see <a href="05-navigation#5.2">5.2 Tabbed Panes Details</a>.</p>
+<p>One of the disadvantages of the tab-centric approach is that it sometimes requires quite a few clicks and drilling to get to particular parts of the UI. Though the tab-swapping method works from a usability standpoint, when it comes to managing deep and wide navigation hierarchies, it is beneficial to reduce the number of clicks and increase the stability of the visible navigation elements. The accordion allows users quick access to an application's top level objects and may offer a viable alternative solution. For details see 5.1.2.1 Accordion, below.</p>
+<h4><a name="5.1.2.1"></a>5.1.2.1 Accordion </h4>
+<p>The Accordion component is a compact interface element, similar to a tabbed pane except that it is vertically oriented. As with clicking a tab, clicking on an accordion header (similar to a tab) reveals associated content. </p>
+<p>The accordion allows users quick access to an application's top level objects. It provides an always-available, vertically-oriented, collapsible top-level navigation panel that would allow users to return to a "home base" in a single click no matter where they happened to be in the UI at the time. The accordion  is comprised of containers which  are mostly views or categories of objects rather than objects themselves. These containers help organize objects for easy access. The number of objects which can be represented is essentially unbounded, while it is possible to limit the number of categories. If navigation is over loaded with too many objects it will take a long time to load and a long time to read, thus reducing its value. </p>
+<p>For details, see <a href="05-navigation#5.2.5">5.2.5 Accordion Details.</a> </p>
+<h3 class="style7"><a name="5.1.3"></a>5.1.3 Left-Right Pane Set</h3>
+<p class="style7">In this navigation style, the left pane contains a list, tree, or other 
+  summary representation of items. The right pane shows the attributes of the single 
+  item that is currently focus-selected. Here is an example with a flat list in 
+  the left pane.</p>
+<p class="style7"><img src="navigation_graphics/flat_list_left_pane.gif" width="374" height="252"></p>
+<p class="style7">You can think of a flat list in the left pane as a set of tabbed panes turned 
+  on its side. Tabs run horizontally along the top of the page, whereas a left-pane 
+  list runs vertically along the side of the page. </p>
+<p class="style7">Details are in section <a href="05-navigation#5.3">5.3 Left-Right Pane Set Details</a>.</p>
+<h3 class="style7"><a name="5.1.4"></a>5.1.4 Tree</h3>
+<p class="style7">Trees can show any number of levels. A tree with one level is just a flat list. 
+  Trees can be expandable and collapsible, but they can also be static. Trees 
+  often are presented in the left pane of a left-right pane set, but they need 
+  not be.</p>
+<p class="style7"><img src="navigation_graphics/tree_2_levels.gif" width="374" height="252"></p>
+<p class="style7">Details are in section <a href="05-navigation#5.4">5.4 Tree Details</a>.</p>
+<h3 class="style7"><a name="5.1.5"></a>5.1.5 Pop-Up Windows for Objects</h3>
+<p class="style7">Pop-up windows can be used as the detailed representations of objects whose summary 
+  representations are shown in the main browser window.</p>
+<p class="style7">Clicking an object's summary representation (often a link) causes that object's 
+  attributes to appear in a pop-up window instead of by swapping all or part of 
+  the main window or a portion of the original window. (See the descriptions of 
+  other styles that use swapping, such as <a href="05-navigation#5.1.1">5.1.1 Drill Down</a>, 
+  <a href="05-navigation#5.1.2">5.1.2 Tabbed Panes</a>, <a href="05-navigation#5.1.3">5.1.3 Left-Right Pane 
+  Set</a>, and <a href="05-navigation#5.1.6">5.1.6 Combinations of Navigation Styles</a>.)</p>
+<p class="style7">The pop-up window might be yet another window opened, 
+  in addition to any existing pop-up windows. This approach is useful for comparing 
+  objects, and for using one object as a source for changing another object. This 
+  approach also supports the user's mental model of each object being a concrete 
+  thing, because each object is shown in its own, concrete, physical window.</p>
+<p class="style7">An example of using pop-up windows for top-level navigation is a single main 
+  window that shows only summary representations of all objects. A &quot;summary 
+  representation&quot; is a row in a table, or an icon, or some other minimal, 
+  summary representation of the object. That main window might use drill-down 
+  through container objects, or tabbed panes, or a tree, or some combination of 
+  them. It might even use a left-right pane set, but restrict the right pane to 
+  showing a read-only summary view of the focus-selected object. That main window 
+  is a stable, predictable, listing of the objects and a platform for operating 
+  on summarized objects. If that main window has a left-right pane set, it is also 
+  a convenient previewer of object properties. Sufficient space is available, 
+  because the innards of the objects appear in other windows. Also, that main 
+  window is stable, because opening objects does not disrupt it. Opening objects--seeing 
+  and editing all of their attributes--is done by selecting a summary representation's 
+  link name or icon. Then the object's attributes appear in a pop-up window, leaving 
+  the main window undisturbed.</p>
+<p class="style7">If window management is a big problem in your UI, then you might not want
+  to open yet another window for each object being opened. In that case, you
+  might
+  consider a compromise between opening a new window and drilling down: Devote
+  a single pop-up window to all objects opened from the main window. Swap that
+  one additional window's contents to show the most recently opened object. </p>
+<p class="style7">Disadvantages of that compromise approach are the inability to compare objects, 
+  and only weak support for the mental model of objects as concrete things. A 
+  compromise a bit more toward the approach of all pop-up windows, is to devote 
+  one pop-up window to each <i>type</i> of  object, instead of just one pop-up 
+  window for all object instances. </p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When opening objects into pop-up windows, make those pop-up windows contain
+    secondary-content pages, not primary-content pages. </p>
+<p class="style7">Primary and secondary-content pages are defined in <a href="03-windows-pages_Primary-Content-Pages.html">3.7 Primary-Content Pages</a> and 
+<a href="03-windows-pages_Secondary-Content-Pages.html">3.8 Secondary-Content Pages</a>, respectively.</p>
+<h3 class="style7"><a name="5.1.6"></a>5.1.6 Combinations of Navigation Styles</h3>
+<p class="style7">There are many possible combinations of the drill down, tabbed panes, left-right 
+  pane set, tree, and pop-up windows styles. This section of the style guide describes 
+  just some of them.</p>
+<p class="style7">Here are some guidelines for deciding how to combine those styles.</p>
+<p class="style7"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Use different styles for qualitatively different information.</p>
+<p class="style7"> For example, use tabbed panes for gross categories of objects. Then, within 
+  each tabbed pane, use a tree for the hierarchy of objects within that category.</p>
+<p class="style7"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Use tabbed panes for different representations of information. </p>
+<p class="style7">For example, in one tabbed pane, put a tree. In another tabbed pane, put a 
+  flat list. In another tabbed pane, put a left-right pane set. </p>
+<h4 class="style7"><a name="5.1.6.1"></a>5.1.6.1 Drill Down in Left Pane</h4>
+<p class="style7">Note that this is an unusual style not commonly employed or strongly suggested for web-based applications.</p>
+<p class="style16">Drill down in the left pane swaps the left pane with each drill down. A 
+flat list (not a tree) appears below the left pane's parentage path. </p>
+<p class="style16">Different UI elements are used in the left pane for drilling down versus
+  for focus-selecting (to show properties in right pane). Those methods still
+  require
+  design work and will be fleshed out in more detail in a future version of this
+  style guide.</p>
+<p class="style16"><img src="navigation_graphics/drill_down_in_left_pane.gif" width="523" height="252"></p>
+<p class="style16">This style provides the advantages of a left-right pane set when there are 
+  too many items or too many levels to use a tree in the left pane (<a href="05-navigation#5.1.6.2">5.1.6.2 
+  Tree In Left Pane</a>). A tree can handle fewer levels when it is crammed into 
+  a left pane than when it has the full width of the window.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Drill down in the left pane is often more appropriate than a tree in the left 
+  pane, only when there are many levels in the hierarchy being shown in the left 
+  pane, or many items within levels in that hierarchy.</p>
+<p class="style16">The existence of many levels in a tree causes the higher level labels to scroll 
+  out of sight to the left, when lower level labels are brought into sight. That's 
+  because the lower level labels are indented. Drill-down style reduces that problem 
+  by not indenting the higher level labels. Also, the higher level labels scroll 
+  out of sight to the top, because every level label consumes a row of vertical 
+  space. Drill-down style reduces that problem by concatenating all the higher 
+  level labels into breadcrumbs, consuming a single row. Even if the breadcrumbs 
+  wrap onto multiple rows, fewer rows are consumed than if each level label consumed 
+  an additional row.</p>
+<p class="style16">The existence of many items within a level of a tree causes the higher level 
+  labels to scroll out of sight to the top, when items low on the list are brought 
+  into sight. That's because every level label consumes a row of vertical space. 
+  Drill-down style reduces that problem by concatenating all the higher level 
+  labels into breadcrumbs, consuming a single row. Even if the breadcrumbs wrap 
+  onto multiple rows, fewer rows are consumed than if each level label consumed 
+  an additional row. Fewer rows consumed by the level labels, leaves more rows 
+  to show the items, making items lower on the list visible without scrolling.</p>
+<p class="style16">One product that uses this drill-down style is the StarOffice&#153; management 
+  user interface as of Spring 2003. That product's core design was derived by 
+  modifying Sun Identity Server 6.0's style (<a href="05-navigation#5.1.6.5">5.1.6.5 Drill 
+  Down In Left Pane of a Tabbed Pane</a>). Unlike Identity Server, StarOffice 
+  management didn't need multiple high-level categories of information and so 
+  didn't need tabbed panes at the top level.</p>
+<h4 class="style16"><a name="5.1.6.2"></a>5.1.6.2 Tree in Left Pane</h4>
+<p class="style16"><img src="navigation_graphics/tree_2_levels_left_pane.gif" width="374" height="252"></p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  If a tree won't fit in the left pane, then drill-down style can be used (section 
+  <a href="05-navigation#5.1.6.1">5.1.6.1 Drill Down in Left Pane</a>). </p>
+<p class="style16">A tree can handle fewer levels when it is crammed into a left pane than when 
+  it has the full width of the window. </p>
+<h4 class="style16"><a name="5.1.6.3"></a>5.1.6.3 Tree in Tabbed Pane</h4>
+<p class="style16">Here is a schematic of a tree in a one-level tabbed pane. However, it also 
+  can be used in two-level and three-level tabbed pane sets.</p>
+<p class="style16"><img src="navigation_graphics/tree_in_tab.gif" width="374" height="253"></p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  One good balance between tabbed panes and a tree, is to represent high-level
+     categories of items as the tabbed panes, and, for each high-level item,
+    the next-level set of items as a
+  tree within the corresponding tabbed pane. In this case, in contrast to <a href="05-navigation#5.1.6.4">5.1.6.4
+    Tree or Flat List in Left Pane of a Tabbed Pane</a>, the tree is all by itself,
+    it is not a left-pane navigational device controlling
+    a
+    right-pane;
+    further
+    navigation
+    from the tree here would have to follow a drill-down navigation style.</p>
+<p class="style16">For example, Identity Server 6.0 has several highest-level categories of items, 
+  each category drastically different from the others. One category contains items 
+  that are in a three-level tree that when fully expanded has at most 50 rows. 
+  So that category is represented as a tabbed pane containing a static tree. However, 
+  other categories are tabbed panes with other representations of their items--a 
+  left-pane drill-down style in one tabbed pane, a flat-list table in another.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  If a tree won't vertically fit into a tabbed pane, then a drill-down style can 
+  be used instead of a tree (within the tabbed pane). </p>
+<p class="style16">A tree can handle fewer items and levels when it is crammed into a vertically 
+  short area. A tabbed pane's content area is short because the tabs consume vertical 
+  space, especially when two or three levels of tabs exist. So a tree is less 
+  likely to fit vertically within a tabbed pane, than within a whole window not 
+  having tabbed panes.</p>
+<h4 class="style16"><a name="5.1.6.4"></a>5.1.6.4 Tree or Flat List in Left Pane of a Tabbed Pane</h4>
+<p class="style16">This is the same as the regular tree in the left pane (<a href="05-navigation#5.1.6.2">5.1.6.2 
+  Tree in Left Pane</a>), but the whole thing is nested in a tabbed pane. </p>
+<p class="style16">Here is a tabbed pane containing a one-level tree (a flat list) in its left 
+  pane.</p>
+<p class="style16"><img src="navigation_graphics/flat_list_in_left_pane_of_tab.gif" width="374" height="252"></p>
+<p class="style16">Here is a tabbed pane containing a tree in its left pane.</p>
+<p class="style16"><img src="navigation_graphics/tree_in_left_pane_of_tab.gif" width="374" height="252"></p>
+<p class="style16">You might think of the left-right pane set as the last addition to the design. 
+  You could decide first to use tabbed panes, and second to use a tree. Then, 
+  when deciding how to show those tree items open, you might decide to use a left-right 
+  pane set because users need to switch quickly among items, 
+  spending little time on each item and moving quickly between items.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  One good balance between tabbed panes and a tree, is to represent high-level
+  categories of items as the tabbed panes, and, for each high-level item,
+    the next-level set of items as a
+  tree within the corresponding tabbed pane. In this case, in contrast to <a href="05-navigation#5.1.6.3">5.1.6.3
+    Tree in Tabbed Pane</a>, the tree is in the left-pane
+    of a left-right frameset and as such, serves as the navigational device controlling
+    what page gets loaded into the
+  right-pane.</p>
+<p class="style16">For example, Identity Server 6.0 has several highest-level categories of items, 
+  each category drastically different from the others. One category contains items 
+  that are in a three-level tree that when fully expanded has at most 50 rows. 
+  So that category is represented as a tabbed pane containing a left-right pane 
+  set, within the left pane there is a static tree. However, other categories 
+  are tabbed panes with other representations of their items--a left-pane drill-down 
+  style in one tabbed pane, a flat-list table in another.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  If a tree won't fit into a left pane of a tabbed pane (vertically or horizontally), 
+  then a drill-down style can be used instead of a tree (within the tabbed pane). 
+  See <a href="05-navigation#5.1.6.5">5.1.6.5 Drill Down in Left Pane of a Tabbed Pane</a>. 
+</p>
+<p class="style16">A tree can handle fewer items and levels when it is crammed into a vertically 
+  short area. A tabbed pane's content area is short because the tabs consume vertical 
+  space, especially when two or three levels of tabs exist. A tree also can handle 
+  fewer levels when it is crammed into a left pane than when it has the full width 
+  of the window. A left pane in a tabbed pane imposes both those limitations--vertical 
+  and horizontal. (See detailed reasons in <a href="05-navigation#5.1.4">5.1.4 Tree</a>). So 
+  a tree is less likely to fit vertically and horizontally within the left pane 
+  in a tabbed pane, than within a whole window not having tabbed panes, or within 
+  a left pane that is not crammed into a tabbed pane.</p>
+<p class="style16"></p>
+<h4 class="style16"><a name="5.1.6.5"></a>5.1.6.5 Drill Down in Left Pane of a Tabbed Pane</h4>
+<p class="style7">Note that this is an unusual style not commonly employed or strongly suggested for web-based applications, like drill down in  left pane in general.</p>
+<p class="style16">This style combination is a fallback if you cannot use a tree in the left pane 
+  of a tabbed pane (see reasons in <a href="05-navigation#5.1.6.4">5.1.6.4 Tree or Flat List 
+  in Left Pane of a Tabbed Pane</a>). </p>
+<p class="style16">This style is similar to drill down in the left pane (<a href="05-navigation#5.1.6.1">5.1.6.1 
+  Drill Down in Left Pane</a>), but that whole combination of drill down in left 
+  pane is nested in a tabbed pane.</p>
+<p class="style16"><img src="navigation_graphics/drilldown_in_left_pane_of_tab.gif" width="374" height="252"></p>
+<p class="style16">An example of a product that uses this style is Identity Server 6.0. That
+  product  has several highest-level categories of items. Each category is drastically
+  
+  different in the types of items it contains and in the representations that
+   are appropriate. So each category is given its own tabbed pane. One category,
+  
+  represented by one of the tabbed panes, contains items that reside in a single,
+   coherent hierarchy. A tree would be ideal to show that hierarchy within that
+  
+  tabbed pane, except that the hierarchy can have hundreds of levels and tens
+   of thousands of items within each level, and the levels are heterogeneous
+  in 
+  depth. That makes the tree too large, both vertically and horizontally, to
+  fit  into the left pane. None of the tree could be relegated to the right pane,
+  because 
+  the right pane was reserved for the properties of the left pane's focus-selected
+   item. So drill down was used instead of a tree.</p>
+<p class="style16">5.1.7 Accordion </p>
+<H2 class="style16"><A name="5.2"></A>5.2 Tabbed Panes and Accordion Details</H2>
+<P class="style16">Tabbed panes navigation can be used when an application has a complex content 
+  area that requires a wide horizontal space. It might also be used when there 
+  is a small, fixed number of constant items or categories, which would not benefit 
+  from a tree and would suffer from a tree's complexities.</P>
+<P class="style16"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Use tabbed panes navigation for applications whose primary navigation categories 
+  can fit below the masthead without requiring horizontal scrolling. Take into 
+  account:</P>
+<UL class="style16">
+  <LI> The extra space needed for translation to another language. Allow at least
+    40 additional pixels of horizontal space, or a minimum of
+    10 typical English letters, to accommodate the typical word-length growth
+    that occurs when translating between
+    English and other languages.</LI>
+  <LI>The minimum supported screen size is 1024 x 768 pixels.</LI>
+  <LI>The support of a 24-point font size to meet accessibility requirements. 
+    Increasing the size that way might make horizontal scrolling necessary, regardless 
+    of whether tabbed panes or some other navigation element is used. However, 
+    if tabs become very unusable at that font size, tabs should not be used. For 
+    example, if only one tab shows without scrolling, then perhaps tabs should 
+    not be used.</LI>
+</UL>
+<P class="style16">Here is an example of deciding between tabbed panes and a left-pane tree: Suppose 
+  the user is running the standard font size on a 1024 x 768 screen. 
+  A table can fit horizontally when it can consume an entire tabbed pane's width. 
+  However, the table would not fit if it had to be crammed into the right pane 
+  of a left-right pane set that had a tree in the left pane. In that case, tabbed 
+  panes might be the better approach. Otherwise, the page would have to scroll 
+  horizontally. </P>
+<P class="style16">Another reason to use tabs is if the highest level of navigation represents 
+  a conceptually different dimension than the lower-level navigation does. For 
+  example, the lower-level navigation might be a hierarchy shown as a tree. A 
+  tree should not be embedded in another tree, so the higher-level navigation 
+  would be best represented as tabbed panes.</P>
+<P class="style16">A situation where tabs should not be used  is when considering this component for something other than navigation. Tabs are designed to be used only for navigation. </P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not use the selection of any one tab as a way to drive application logic by interpreting the tab selection as equivalent to the selection in a conventional data-entry element such as a set of radio buttons. Tabs are to be used for navigation (view-switching) only.<br>
+  <br>
+  For example, if your application offers the user two alternative styles for performing some action, tabs should not be used to switch between the two UIs where the details are entered.
+Instead, have the user manipulate a conventional data-entry element (for example, a radio button set) to establish which of the two alternatives the user wants to pursue, and then proceed to the page where the details are entered.</P>
+<P class="style16">Typically, only two to six tabs can fit within each level of tabbed panes. 
+  However, that number might be larger or smaller, depending on the length and 
+simplicity of the tab labels.</P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Do not use tabs if there is only one tab to show.</P>
+<p class="style16">
+Showing a single tab is misleading since the tab element is designed to present multiple options to the 
+user.  Using the tab element for a single tab also uses screen real estate unnecessarily.  Instead of 
+showing a single tab, place the user interface elements that would be on the tab directly on the page.   
+</p>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not make the active tab a link.</P>
+<P class="style16">The only effect of clicking a tab is to bring its attached pane to the foreground, 
+  but the active tab's pane is already in the foreground. Hovering over the active 
+  tab should not switch it to link appearance. Clicking on the active tab should 
+  not even reload the same page. Clicking on the active tab does absolutely nothing.</P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Make the leftmost tab the tab that users are most likely to access first, among 
+  all the tabs. Apply that guideline within each of the levels of tabs.</P>
+<P class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not use disabled tabs except in the following situations: 
+  <!-- Disabled tabs are discouraged, but allowed if --> 
+</P>
+<ul class="style16">
+  <li>There is a setting in the interface for the user to enable the tab.&nbsp;For example, the user might specify that an object can be backed up, in which case a tab for backup settings might become enabled.</li>
+</ul>
+<blockquote class="style16">
+  <p> OR&nbsp;</p>
+</blockquote>
+<ul class="style16">
+  <li>For consistent presentation a group of tabs should be shown, but a tab can be disabled if it is not applicable for a certain object. For example, there could be a list of servers in a tree on the left and a set of tabs for setting their properties or behaviors on the right. When a given server doesn't support a certain feature, the associated tab would be disabled. </li>
+</ul>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not 
+  let tabs wrap to a second line. However, if a tab has a multi-word label and 
+  the width of the window is resized to a smaller size, the text of this multi-word 
+  label can wrap within the tab after the window resizing, if necessary.</P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Make the 
+  tab labels as short, yet as clear, as possible so that they do not wrap to multiple 
+  lines unnecessarily.</P>
+<P class="style16">These tabs were not designed to be used with content area navigation tabs (see 
+  <A href="06-content.html#6.4.2">6.4.2 Using Tabs for Content Area Navigation</A>), 
+  because nonbrowser-based user interfaces typically avoid the use of nested tabs. 
+  However, this design possibility, along with others, is still being investigated 
+  for cases in which full screen width is important for an application's data, 
+  and a need exists for both top-level navigation through tabs and content area 
+  navigation when a drop-down menu is unsuitable.</P>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Use headline capitalization (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>) for all tab labels, both active and inactive.</p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Display a border beneath the inactive tabs, and along the sides and top of the active tab, such that the active tab appears to be part of the white page (or the background behind the next level of tabs) below it. </p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not have any border (line) below the active tab, or this visual association will be lost. If a line below the tab is unavoidable, such as when there is a frame break below it, leave a gap below the tab so that line sits below the whole control, and not near the line below the inactive tabs. </p>
+<span class="style16">
+<!--
+
+these guidelines rendered obsolete (or too detailed) by the version 2.2 rebranding
+
+	<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  For the first-level set of tabs, display the <i>inactive</i> tabs using the color Medium Grey 2 as the 
+  background. Make their labels be the default font face and size, bold weight, and the color Dark Blue. 
+  </p>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a border beneath the first-level inactive tabs, and along the sides and top of the first-level 
+  active tab, using the color Medium Grey 3.
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+For the first-level <i>active</i> tab, and the second-level <i>inactive</i> tabs, display the background 
+of the tabs using the color Light Grey 4. 
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+For the first-level <i>active</i> tab, make its label be the default font face and size, bold weight, 
+and the color Dark Grey 2.
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+For the second-level <i>inactive</i> tabs, make their labels be the default font face and size, default 
+weight, and the color Dark Blue.  Include separator bars between inactive tab labels, using the color 
+Dark Grey 2.
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display a border beneath the second-level inactive tabs, and along the sides and top of the 
+  second-level active tab, using the color Medium Grey 2.
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">
+For the second-level <i>active</i> tab, display its background as White.  Make its label be the default 
+font face and size, bold weight, and the color Dark Grey 2.
+</p>
+
+-->
+<!-- <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Follow all the guidelines in <a href="#5.2.1"> 5.2.1 One-Level Tabbed Panes</a> 
+  for the first-level tabs of the two-level tab control.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the <i>active</i> second-level tab using the color White as the background. 
+  Make its label be the default font face and size, bold weight, and the color 
+  Black. </p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Display the <i>inactive</i> second-level tabs using the color White as the background. 
+  Make their labels be the default font face, size, and weight, and the color 
+  Dark Blue. </p> -->
+<!-- <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Separate the inactive second-level tabs from each other with the navigation 
+  separator for White Backgrounds graphic from <a href="02-visual.html#2.4.2"> 
+  2.4.2 Icons, Glyphs, and Graphics</a>:&nbsp;<font color="#FF0000"> <img src="navigation_graphics/Separator_white.gif" width="1" height="12"></font> 
+</p> -->
+<!-- <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do one of the following, depending on whether the entire set of tabbed panes 
+  has no more than two levels within any of its tabbed panes, or instead has at 
+  least one tabbed pane containing three levels of tabs:</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If all the tabbed panes in the tabbed pane set have only one or two levels (no 
+  three-level tabbed panes), then do the following to every tabbed pane's second-level 
+  tabs: Separate the active second-level tab from the inactive ones with the same 
+  graphic that separates the inactive tabs from each other. Use the navigation 
+  separator for White Backgrounds graphic from <a href="02-visual.html#2.4.2"> 
+  2.4.2 Icons, Glyphs, and Graphics</a>:&nbsp;<font color="#FF0000"> <img src="navigation_graphics/Separator_white.gif" width="1" height="12"></font> 
+  . Here is an example:<br>
+  <br>
+  <img src="navigation_graphics/2level_tabs_in_2level_set.jpg" width="454" height="66"><br>
+</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If instead the tabbed pane set has at least one three-level tabbed pane, then 
+  do the following to every tabbed pane in this set, even the tabbed panes that 
+  have only two levels: Give every second-level active tab a tab appearance by 
+  adding a thin colored line running below the <i>inactive</i> second-level tabs 
+  and rising to enclose the active tab. The left and right borders of that enclosing 
+  box around the active tab replace the separator bars. Use the appropriate graphics 
+  from <a href="02-visual.html#2.4.2"> 2.4.2 Icons, Glyphs, and Graphics</a>. 
+  Here is an example:<br>
+  <br>
+  <img src="navigation_graphics/2level_tabs_in_3level_set.jpg" width="454" height="91"><br> -->
+<!-- 
+	
+	not applicable to version 2.2
+	
+  <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Left-align the text label of the leftmost second-level tab with the text label of the leftmost first-level tab.
+	-->
+<!-- Do not use the text label of the first-level 
+  tab as the alignment point. Instead, use the background color border of the 
+  first-level tab that as the marker for aligning the text label of the second-level 
+  tab. -->
+</span>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not let a row of tabs &quot;wrap&quot; to a second line.&nbsp;That is, there must never be some tabs of a level above others of that same level. However, the individual tabs can have their <i>labels</i> wrap to multiple lines <i>within</i> their &quot;boxes&quot;, especially if the user resizes the window smaller. </p>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Make all 
+  tabs, except the currently selected tab at each level, navigable by keyboard.</P>
+<P class="style16">Keyboard navigation through all levels of tabs must be supported by allowing 
+  users to tab through the choices. The tab order is such that continuously pressing 
+  the Tab key moves the focus through the first-level row of tabs. Then, once 
+  a particular tab is selected, the Tab key moves the focus through the lower-level 
+  tabs within the selected tab. Tabbing to a first-level tab and pressing 
+  Enter shows the second-level tabs for that particular first-level tab. Tabbing 
+  to a second-level tab and pressing Enter shows the third-level tabs for that 
+  particular second-level tab.</P>
+<P class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> In
+  the same application, do not combine Tabs used for top-level navigation
+  and&nbsp;Tabs used for content-area navigation. 
+  See <a href="06-content.html#6.4.2">6.4.2
+Using Tabs for Content Area Navigation</a> for further details.</P>
+<P class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Except when tabs are used on a page with a Sun.com web site header (see <a href="05-navigation.html#5.2.4">5.2.4 Tabs within a Sun.com Web Site Page</a> and the <a href="http://www.sun.com/webdesign/index.html">Sun Web Site Design Standards</a>),</span> always have a gray background behind the row(s) of tabs, and continue it above them all the way up to the masthead, as shown below. </P>
+<P class="style16"><img src="navigation_graphics/primary-info-actions.png" width="783" height="616"></P>
+<P class="style16"><IMG src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+  The HTML Title  attribute of each tab, should consist of the tab label followed by the
+    text " (Tab)". 
+</P>
+<P class="style16">For example, a tab whose visible label is "People," would have the 
+  HTML Title  attribute "People (Tab)".</P>
+<P class="style16">The word "Tab" is needed so that someone relying on the HTML Title attribute's 
+  text to be read by a text-to-speech reader or by a text-to-Braille reader will
+   know what type of control ("Tab") has that label ("People").</P>
+<P class="style16">For an interactive example of a Tab Control, see <a href="http://webdev2.sun.com/example/faces/tabset/navtab.jsp">http://webdev2.sun.com/example/faces/tabset/navtab.jsp</a></P>
+<P class="style16">A page can have one, two, or three levels of tabbed panes. The preceding guidelines 
+  apply to them all, but the guidelines in the next three sections are specific 
+  to those three levels.</P>
+<h3 class="style16"><a name="5.2.1"></a>5.2.1 One-Level Tabbed Panes</h3>
+<p class="style16">This section's guidelines are sufficient for an individual tabbed pane that 
+  has only one level of tabs, when that tabbed pane exists within a set of tabbed 
+  panes all of whom also have only one level of tabs. Additional guidelines apply 
+  even to this one-level tabbed pane, when any other tabbed panes in its set have 
+  two or three levels. See <a href="05-navigation#5.2.2">5.2.2 Two-Level Tabbed Panes</a> and 
+  <a href="05-navigation#5.2.3">5.2.3 Three-Level Tabbed Panes</a>.</p>
+<p class="style16">Here is an example of a one-level tabbed pane (the active tab, labeled &quot;Jets&quot;)
+   within a set of tabbed panes:</p>
+<p class="style16"><img src="navigation_graphics/1level_tabs.gif" alt="one-level tabbed pane" width="629" height="41"> </p>
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+    Put controls that affect an entire first-level set of tabbed panes, flush 
+left above the tabs.</p>
+<p class="style16">An example of this is a filtering control that affects the contents 
+    of all the tabbed panes in that set.</p>
+
+  <h3 class="style16"><a name="5.2.2"></a>5.2.2 Two-Level Tabbed Panes</h3>
+<p class="style16">This section's guidelines are sufficient for a tabbed pane set that contains tabs with 
+  one or two levels of tabs. Additional guidelines apply if any of the tabs in that set have 
+  three levels. See <a href="05-navigation#5.2.3">5.2.3 Three-Level Tabbed Panes</a>.</p>
+<span class="style16">
+<!-- <p>The following are examples of the two appearances of a two-level tabbed pane. 
+  Decide which appearance is appropriate for your case, by following the guidelines 
+  in this section.</p> -->
+
+<!-- <p>When all the tabbed panes in a set have at most two levels, a two-level tabbed 
+  pane (the active first-level tab, &quot;RMC Configuration&quot;) appears as 
+  follows:</p>
+<div align="left">
+  <p><img src="navigation_graphics/2level_tabs_in_2level_set.jpg" width="454" height="66"></p>
+  <p>However, when any of the other tabbed panes in this set has three levels, 
+    a two-level tabbed pane appears as follows:</p> -->
+</span>
+<p class="style16">
+   The following is an example of a two-level tabbed pane.
+The active first-level tab is &quot;AFC&quot;, and within it, the active
+     second-level tab is &quot;Jets&quot;.</p>
+<p class="style16"><img src="navigation_graphics/2level_tabs.gif" alt="two-level tabbed pane" width="629" height="73"></p>
+<p class="style7"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  When the user selects a first-level tab that has second-level tabs, there are 
+  two possibilities for which second-level tab is the default active tab. The 
+  default tab is either the leftmost tab or the most-recently-active tab. Which 
+tab behavior occurs depends on which of three actions the user took:</p>
+<ul class="style16">
+  <li>If this is the first time the user has visited this tab in this session 
+    of use: The leftmost second-level tab is the active tab.</li>
+  <li>If the user has visited this first-level tab before, and left it only to 
+    visit other tabs in this same tabbed pane set: The most-recently-active second-level 
+    tab is still active when the user returns. The computer remembers which second-level 
+    tabs are active, as the user visits among the first-level tabs. Selecting 
+    different first-level tabs does not affect the active status of the second-level 
+    tabs. </li>
+  <li>If the user abandoned this entire tabbed pane set to display something else 
+    in its place: The leftmost second-level tab is the active tab. The computer 
+    forgets which second-level tabs were active in the last visit.</li>
+</ul>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If implementing the second-level tab selection behavior described in the preceding 
+  guideline is too onerous for your application, at least make the leftmost second-level 
+  tab the active tab whenever a first-level tab is clicked. However, you should 
+  resort to this fallback behavior only if absolutely necessary. The excuse that 
+  this implementation is &quot;too onerous&quot; is hard to justify.</p>
+<p class="style16">The tab common component supports both the recommended behaviors (the prior guideline), 
+  and this fallback behavior.</p>
+<h3 class="style16"><a name="5.2.3"></a>5.2.3 Three-Level Tabbed Panes</h3>
+<p class="style16">Here is an example of a three-level tabbed pane. The active first-level
+  tab is &quot;Football&quot;, within it, the active second-level tab is &quot;AFC&quot;,
+  within it, the active third-level tab is &quot;Jets&quot;.</p>
+<p class="style16"><img src="navigation_graphics/3level_tabs.gif" alt="three-level tabbed pane" width="630" height="108"></p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">  Use three levels of tabs only when there is no other option. Three-level 
+  tabs have known usability problems, are visually complex, and consume a lot of vertical space. The disadvantages of using them typically outweighs the benefits, in most cases. </p>
+  
+<p class="style7"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply the same guidelines as described in <a href="05-navigation#5.2.2">5.2.2 Two-Level
+  Tabbed Panes</a> for determining 
+  the third-level default active tab.</p>
+<span class="style16">
+<!-- <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Follow the guidelines in <a href="#5.2.1"> 5.2.1 One-Level Tab Navigation</a> 
+  for the first-level tabs of the three-level tab control.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Follow the guidelines in <a href="#5.2.2"> 5.2.2 Two-Level Tab Navigation</a> 
+  for the second-level tabs within the three-level tab control.</p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Design the third-level tabs by generalizing the second-level tab guidelines 
+  in <a href="#5.2.2"> 5.2.2 Two-Level Tab Navigation</a>. The third-level active 
+  tab does not have the surrounding tab-appearing line, instead it is separated 
+  from the inactive tabs merely by the vertical separator line segments.</p> -->
+
+  
+</span>
+<h3 class="style16"><a name="5.2.4" id="5.2.4"></a>5.2.4 Tabs within a <span class="style20">Sun.com Web Site</span> Page </h3>
+<p class="style16">When tabs are used on a page with a Sun.com web site header (see the <a href="http://www.sun.com/webdesign/index.html">Sun Web Site  Design Standards</a>), the gray background behind (visually above) the tabs should not be included, and a significant blank vertical gap should be left between the masthead and tabs, to look like this:</p>
+<p class="style16"><img src="navigation_graphics/Tabs-in-Pacifico.jpg" width="411" height="163"></p>
+<h3 class="style16"><a name="5.2.5"></a>5.2.5 Accordion Details </h3>
+The Accordion component is a compact interface element similar to a tabbed pane. As with a tabset, clicking on the accordion reveals its content in an associated container. Views related to objects within the accordion are usually displayed in an adjacent right pane.<br>
+<img src="navigation_graphics/accordion_structure__02.png" width="632" height="350"></p>
+<br>
+The accordion component is comprised of accordion containers and an optional Global Actions Header . The global header contains action buttons that apply to the entire accordion. Action buttons in the global header may include a Refresh button, to refresh contents within accordion containers, and Open All / Close All action buttons, to open or close all accordion containers.</p>
+<p>An accordion may be made of two or more accordion containers. Each container is comprised of an accordion Header and an accordion Body. The accordion header contains a label that distinctly identifies the contents of the accordion container and an optional turner icon. The text within the accordion header should be concise. If the text within the accordion header becomes too long to fit within the available space, it should wrap and the turner icon should align to the top. The accordion body contains the contents of the accordion container. The contents of the accordion body may include a table, a tree, a tab-set, etc.</p>
+<p>The container header has three states: </p>
+<ol>
+  <li>Closed: The accordion container is closed. </li>
+  <li> Hover:  The user hovers over the header. The hover state is active on the accordion header irrespective of whether the accordion is closed or open. </li>
+  <li>Selected: The accordion container is open. Accordion header turners provide further indication of an accordion headers' selected / open state </li>
+</ol>
+<p>Accordion containers may be opened or closed by clicking on the accordion headers. Clicking the accordion header of a closed accordion container opens the corresponding accordion body. Clicking the accordion header of an open accordion container closes the corresponding accordion body. </p>
+<p>Based on how accordion containers are opened, there may be two versions of the accordion: the Single-Open Accordion and the Multiple-Open Accordion. If the user will need to refer to the contents of more than one accordion container at once, create a Multiple-Open Accordion.&nbsp; If not, use a single-open accordion, as it will be easier for the user to interact with. </p>
+<blockquote>
+  <p><strong> Single-Open Accordion <a name="singleopen" id="singleopen"></a></strong></p>
+  <p>The Single-Open Accordion will have only one accordion container open at a time, unless all containers are closed. When an accordion container is opened, any previously open container will automatically close. A container may be open by default when the application is launched, if desired, to support frequently performed tasks. The default open container may also be a preference setting that is user controlled. The following states are applicable to a Single-Open Accordion:</p>
+  <ol>
+    <li>The accordion may be fully closed - all accordion containers in the closed state</li>
+    <li>Only one accordion container is open. </li>
+  </ol>
+  <p><strong>Multiple-Open Accordion </strong></p>
+  <p>In a Multiple-Open Accordion, accordion containers may be opened or closed independent of each other. Opening an accordion container does not close any other open containers. If the length of the entire accordion exceeds the available height within the browser, a scrollbar will be provided to scroll down to content below the browser fold. The following states are applicable to a Multiple-Open Accordion: </p>
+  <ol>
+    <li>All accordion containers are closed </li>
+    <li>All accordion containers are open </li>
+    <li>One or more accordion containers are open, while the rest are closed. </li>
+  </ol>
+</blockquote>
+<p>Data within the accordion containers can either be preloaded when the application is launched or fetched as the user clicks on an accordion header. The accordion containers may also periodically fetch updated content asynchronously or users may explicitly refresh the containers using a refresh action. The refresh action may be a global action to refresh data within the entire accordion or one that allows users to refresh data individually for each accordion container. While content is refreshed within the accordion containers, a busy progress indicator indicates application activity. For information about busy indicators see <a href="15-progress.html#15.1.3">15.1.3 Busy Indicator</a>. All actions available within the global header and the container header are disabled while the accordion container is in its busy state. </p>
+<p> The accordion dimensions are absolute when dimensions are  fixed (pixel units, ems), and liquid when they are a percentage of the parent container. The dimensions of the accordion may be either absolute or liquid in width, and separately may be either absolute or liquid in height. If the the dimensions of the accordion are absolute, then they will not change due to external factors like resizing of the browser window. If the accordion dimensions are liquid, the dimensions of the accordion should resize when either the browser window is resized or when users resize the left pane that contains the accordion. <br>
+</p>
+<p><strong>Accordion Height </strong></p>
+<p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If the height of the accordion is liquid, scrolling is done inside individual containers. The overall accordion does not scroll. </p>
+<p>  <img src="navigation_graphics/vertical_resizing.png" width="526" height="592" /></p>
+<img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If the height of the accordion is absolute, scrolling is done for the entire accordion, and no scrolling is done on individual containers. 
+  <p><strong><img src="navigation_graphics/vertical_resizing_multipleo.png" width="540" height="620" /></strong></p>
+  <p><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Since Multiple-Open Accordions by nature will become quite tall, they should always be set to have absolute height. </p>
+  <p>Single-Open Accordions may be liquid or absolute in height.  If the amount of content to be shown is large relative to the amount of available and visible height on the page, or at the opposite extreme if the accordion cannot ever become more than a minority percentage of the height of the page, using absolute height may make sense.  Otherwise, having the height be liquid to fill the available and visible space on the page may make the most sense.<br>
+  </p>
+  <p><strong>Accordion Width </strong></p>
+  <p>The width of the accordion will initially be set to the percentage of the browser width or specified width. If the width of the accordion is liquid, horizontal resizing of the browser page will resize the accordion width accordingly. If the width of the accordion is absolute, however, the remainder of the page will change width while the accordion width remains unchanged. </p>
+  <p><img src="navigation_graphics/horizontal_resizing.png" width="409" height="650" /></p>
+  <p><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> Choose whether the accordion should have a liquid or absolute width based on whether the user may need to expand the page to see the full width of the content of the accordion. If the content width will almost always be short -- so need not be widened beyond the initially set size -- it is better to allow the extra browser space for the remainder of the page.<br>
+  </p>
+  <h2 class="style16"><a name="5.3"></a>5.3 Left-Right Pane Set Details</h2>
+<p class="style16">Left-right pane sets often use a tree in the left pane, but they can use any 
+  summary representations of objects. See <a href="05-navigation#5.1.6">5.1.6 Combinations of 
+  Navigation Styles</a>.</p>
+<div align="left" class="style16">
+  <p><img src="navigation_graphics/left-right-panes.gif" width="374" height="252"></p>
+</div>
+<p class="style16">Often, the left and right panes are different frames, with a third frame for
+   the masthead. However, a frameset is used only if the left pane is allowed
+  
+  to vertically scroll independently.</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If scrolling the left pane is allowed, then allow scrolling in the right pane 
+  as well. Note that:</p>
+<ul class="style16">
+  <li> The outer frame set specifies the default height of the masthead row as
+     a certain number of pixels. Also,
+    the masthead frame allows the frame to be resized, but not 
+    scrolled.</li>
+</ul>
+<blockquote class="style16">This layout creates an optimal out-of-the-box appearance, while allowing 
+  users who want to use large fonts to resize the frame accordingly.</blockquote>
+<ul class="style16">
+  <li>The inner frame set allocates a certain width of pixels to the left
+    frame, and allows the left and right frames to be resized by the user. </li>
+</ul>
+<p class="style16">Frame scrollbars and frame borders must not be suppressed- See <a href="03-windows-pages-main-browser-windows.html">3.1
+  Main Browser Windows</a>  for detailed guidelines.</p>
+<p class="style16"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+  Achieve the default border appearances by not specifying any FRAMEBORDER or
+     BORDER parameters within the FRAMESET and FRAME tags. </p>
+<h2 class="style16"><a name="5.4"></a>5.4 Tree Details</h2>
+<p class="style16">Many applications use a tree structure as the central organizing 
+  theme of their UI. This <i>navigation tree</i> is a complex UI control composed 
+  of numerous elements (application objects, labels, graphical elements, and links). 
+  Despite its complexity, you should think of the tree as a single control that 
+  has its own behavior, interaction requirements, and style.</p>
+<p class="style16">Often, a tree is used in the left pane of a left-right pane set (see <a href="05-navigation#5.1.6">5.1.6 
+  Combinations of Navigation Styles</a>). However, a tree can be used elsewhere.</p>
+<h3 class="style16"><a name="5.4.1"></a>5.4.1 Tree Contents</h3>
+<p class="style16">The navigation tree enables users to view and navigate through a hierarchical 
+  arrangement of an application's objects. The tree component uses a number of elements to allow navigation through the hierarchy. They include:</p>
+<ul class="style16">
+  <li>Leaf-nodes</li>
+  <li>Container-nodes</li>
+  <li>Navigation controls</li>
+  <li>Hierarchy lines</li>
+</ul>
+<p class="style16">Container-nodes can be further subdivided into:</p>
+<ul class="style16"><li>Folder-container-nodes</li>
+  <li>Object-container-nodes</li>
+  <li>The root node, which is the parent container-node at the top of the tree</li>
+</ul>
+<p class="style16">The following example shows the various elements contained in a navigation tree:<br>
+</p>
+<p align="left" class="style16"><img src="navigation_graphics/tree-callouts.gif" alt="navigation tree components identified" width="452" height="275"></p>
+<p class="style16">Tree navigation is popular because it can be used to represent strict hierarchical 
+  relationships among objects, such as documents and folders. A strict hierarchy 
+  is relatively simple to represent with a tree because an instance of a particular 
+  object exists in one, and only one, place in the tree.</p>
+<p class="style16">The complexity increases when trees are used for representing relationships 
+  among objects in more complicated applications such as certain system management applications. The strict, yet simple, "container/contained" 
+  hierarchical relationship that exists for documents and folders might not apply. 
+  Sometimes, these objects are members of multiple groups, which means that they 
+  could logically be contained in multiple container-nodes in the tree. However, 
+  the use of multiple&nbsp;representations of a particular object is potentially 
+  confusing to users, increasing the difficulty of learning the interface.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  To the greatest extent possible, avoid using multiple representations of the 
+  same object in a tree.</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If your 
+  application allows users to create their own groupings of nodes in the tree, 
+  do not prevent them from placing&nbsp;representations of an object in multiple 
+  places.</p>
+<p class="style16">In this latter case, <i>users</i> are configuring their environment and might 
+  find it handy to have objects appear in multiple places in the tree.</p>
+<p class="style16">For an interactive example of a Tree Control, see <a href="http://webdev2.sun.com/example/faces/tree/navTree.jsp">http://webdev2.sun.com/example/faces/tree/navTree.jsp</a><br>
+</p>
+<h4 class="style16"><a name="5.4.1.1"></a>5.4.1.1 Application Actions Versus Application Objects</h4>
+<p class="style16">In most applications that use tree navigation, the leaf-nodes represent application 
+  <i>objects</i> (such as servers or users) instead of application 
+  <i>actions</i> (such as Add User or Delete User).</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Whenever possible, represent application objects instead of application actions 
+  in the tree.</p>
+<p class="style16">This design: </p>
+
+<ul class="style16">
+  <li>Allows users to quickly view the application's major objects.</li>
+  <li>More closely matches the design used in graphical user interfaces (GUIs). 
+    For example, consider the design of file explorers and system management GUIs. 
+  </li>
+</ul>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Never 
+  place application objects and actions in the same tree.</p>
+<p class="style16">To present a clean, well-organized interface to users, navigation trees must 
+  contain only objects or only actions. Objects and actions must not be combined 
+  in the same tree.</p>
+<h4 class="style16"><a name="5.4.1.2"></a>5.4.1.2 Types of Container-Nodes</h4>
+<p class="style16">A navigation tree can contain three types of container-nodes:</p>
+<ul class="style16">
+  <li>The root node, which by definition has no peers</li>
+  <li>Folder-container-nodes</li>
+  <li>Object-container-nodes</li>
+</ul>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Include 
+  the root node in the tree only if users can select it (that is, when a user 
+  clicks on the root node, a page associated with the root node loads in the content 
+  area).</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not 
+  include a navigation control for the root node. Instead, left-align its icon 
+  with the navigation controls for the nodes at the next level in the hierarchy.</p>
+<p class="style16">This design saves horizontal real estate.</p>
+<p class="style16">The distinction between folder-container-nodes and object-container-nodes is 
+  based on the <i>function</i> that the container-node performs in the application. 
+  The key question is whether the container-node represents a meaningful object 
+  in the context of the application itself, or if the container-node is only acting 
+  as a container. Thus:</p>
+<ul class="style16">
+  <li>The container-node is acting as a folder-container-node if its sole purpose 
+    is to organize the nodes in the tree.</li>
+  <li>If the container-node has application-specific properties and, for example, 
+    can be monitored, managed, or launched, then the container-node is an object-container-node.</li>
+</ul>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> For object-container-nodes 
+  in the tree, choose icons that represent their meaning or function.</p>
+<p class="style16">The two types of container-nodes are visually distinguished by different icon 
+  styles, as follows:</p>
+<ul class="style16">
+  <li>Folder-container-nodes are assigned a generic,  
+    folder icon (available from <a href="02-visual.html#2.4.3">2.4.3 Icons, Glyphs, and Graphics Repository</a>)</li>
+  <li>Object-container-nodes are assigned an object-specific icon that represents 
+    the purpose or meaning of the object in the context of the application.</li>
+</ul>
+<p class="style16">A&nbsp;visual distinction is made between the two types of container-nodes 
+  because:</p>
+<ul class="style16">
+  <li>The use of the plain blue folder for folder-container-nodes reduces the 
+    overall visual complexity of the tree.</li>
+  <li>The use of object-specific icons makes the objects critical to the application 
+    more salient.</li>
+</ul>
+<p class="style16"><B><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> </B>Show navigation controls (the iconic buttons used to expand and collapse the levels in a tree), only for container-nodes which have nodes at the next level of the hierarchy. Never include navigation controls if, upon clicking, no additional nodes are revealed.</p>
+<p class="style16"><B><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> </B>Never show navigation controls for leaf nodes (nodes at the lowest level of a hierarchy).</p>
+<H3 class="style16"><A name="5.4.2"></A>5.4.2 Tree Look and Feel</H3>
+<P class="style16">This section of guidelines does not give a lot of details about the tree's appearance, 
+  because your tree will have the correct appearance as long as you use that common 
+component (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>).</P>
+<P class="style16">Different subtleties in the appearance of the tree depend on its context of 
+  use. When used in the left pane of a left-right pane set, the tree has one of 
+these four appearances:</P>
+<P class="style16">Root node in the top shaded bar:</P>
+<P class="style16"><IMG src="navigation_graphics/tree-root.gif" alt="tree with root node" width="206" height="274" border="0"></P>
+<P class="style16"><br>
+Tree title in the top shaded bar:</P>
+<P class="style16"><IMG src="navigation_graphics/tree-title.gif" alt="tree with title" width="185" height="278" border="0"></P>
+<P class="style16"><br>
+  Actions drop-down menu in the top shaded bar:</P>
+<P class="style16"><IMG src="navigation_graphics/tree-actions.gif" alt="tree with actions drop-down" width="185" height="285" border="0"></P>
+<P class="style16"><br>
+  When a tree appears in the Help window, it has a white background and no object  icons (just 
+navigation control icons - the iconic buttons used to expand and collapse the levels in a tree):</P>
+<P class="style16"><IMG src="navigation_graphics/tree-help.gif" alt="tree in Help window" width="232" height="216" border="1"></P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  A horizontal shaded bar must be at the top of a
+    left pane that contains a tree, except when the tree appears in the Help
+    window.
+    That
+    top shaded bar must never be 
+  empty. Its contents must be one of the following:</P>
+<UL class="style16">
+  <LI>If the top of the pane contains a tree actions menu, put that menu in the
+     top shaded bar.</LI>
+  <LI>If the top of the pane contains the root node, put the root node in the
+    top shaded bar.</LI>
+  <LI>If the top of the pane contains neither a tree actions menu nor a root
+    node,  put a title for the tree in the top shaded bar.</LI>
+</UL>
+<P class="style16"><IMG src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+The Sun Common UI Component Library (in open source, the Project Woodstock components) (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>) directly supports
+  the tree appearance  when the root node is displayed in the top shaded bar,
+  as well as when the tree appears with a white 
+  background (for use in the Help window).  To achieve the situations where a
+  tree title or an  action drop-down menu is displayed in the top shaded bar,
+you must add code to the existing component.</p>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> To indicate the currently selected node,  bold the text of the node and shade the line that the node is on using a blue background color as shown. </P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Use bold for the most immediate visible ancestor of the selected node if the selected node is not visible because one of its ancestors is collapsed. Do not bold any ancestor of the selected node if the selected node is visible.  </P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Use an icon for each node in the navigation tree except when a tree appears in the Help window. In the help window the only icons that are shown in the tree are navigation controls (the iconic buttons used to expand and collapse the levels in a tree).</P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use a folder icon only for items that are pure containers, which serve only
+     the function of containing objects.</P>
+<P class="style16"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  When considering tree icons, use the appropriate tree icons as provided with the 
+The Sun Common UI Component Library (in open source, the Project Woodstock components) (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>).</P>
+<P class="style16">The use of icons in the navigation tree is required (except in Help) because:</P>
+<UL class="style16">
+  <LI>Icons help users learn about the various object types in the application.</LI>
+  <LI>Icons help users distinguish folder-container-nodes from application-specific 
+    (and presumably more important) object-container-nodes.</LI>
+  <LI>Icons are necessary if the application supports showing the  alarm 
+    or status states in the tree. </LI>
+</UL>
+<h4 class="style16"><a name="5.4.2.1"></A>5.4.2.1 Alarm or Status States of Tree Objects</h4>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Indicate <i>alarm</i> states (or <i>status</i> states, but not both together) of tree objects  with small "badges" that
+  are superimposed over the lower right-hand corner of the object's icon.
+  Propagate the  states up the levels of the tree from the badged object's node, so that
+   each parent node gets the highest-level badge of any of its children.</p>
+<p class="style16">The following example shows a tree with badges superimposed on some of its
+   icons. The Paducah and Building 1 objects are assigned the critical 
+  alarm badge because one of their descendants has that alarm badge. Likewise,
+   Building 4 gets a warning alarm badge because
+one of its descendants has one.</p>
+<p class="style16"><img src="navigation_graphics/tree-actions.gif" alt="tree with alarm badging" width="185" height="285" border="0"></p>
+<p class="style16">For more information about the various alarm states, see <a href="16-alarms-status.html#16.1">16.1 Alarms</a> and <a href="http://java.sun.com/products/jlf/at/book/">Java
+    Look and Feel Design Guidelines: Advanced Topics</a>, specifically, chapter <a href="http://java.sun.com/products/jlf/at/book/Alarms.html#1018995">8
+Events and Alarms</a>. </p>
+<p class="style16">For more information about the various status indicators, 
+see <a href="16-alarms-status.html#16.2">16.2 Status</a>.  </p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use the alarm and status icons provided in the Sun Common UI Component Library (in open source, the Project Woodstock components) (see <a href="A-component-library-info.html">Appendix A, Component Library Information</a>).  Follow the guidelines for creating badged alarm icons in <a href="G-badging-icons.html">Appendix 
+  G, Badging Icons</a>.</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Give a folder icon a badge only to reflect that its contained objects 
+  have badges. A folder icon cannot be alarmed just because the folder is 
+  empty or has an incorrect number of contained items, or contains an 
+  incorrect number of a particular type of item. Container items that do have 
+  such conditions must be represented by an icon other than a folder.</p>
+<h4 class="style16"><a name="5.4.2.2"></A>5.4.2.2 Tree Behavior</h4>
+<p class="style16">Tree nodes in the left pane of left-right pane style applications are <em> 
+  yoked </em> to links in the right pane.<i> Yoking</i> refers to behavior in 
+  which the left and right panes work as a single unit. Changing the selection 
+  in the tree changes which item's contents are displayed in the right pane. Likewise, 
+  changing which item is displayed in the right pane changes the selection in 
+  the navigation tree, regardless of how the change in the right pane occurred.&nbsp; 
+
+  This behavior closely matches the behavior of Java-technology based navigation 
+  trees. </p>
+<p class="style16">In browser-based applications, yoking most likely results from clicking on 
+  a breadcrumb link or an object link in a table in the right pane. This yoking 
+  behavior uses a single-selection model, that is, only one item in the tree can 
+  be highlighted at a time.</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Tree behavior must follow all the behaviors described in the following table. All
+described behaviors also apply to the help tree.</p>
+<table class="info-table" border="1" cellpadding="10" cellspacing="0">
+  <tbody> 
+  <tr> 
+    <th class="style16">Tree Object </th>
+    <th class="style16">Behavior of Tree Object When Clicked </th>
+  </tr>
+  <tr> 
+    <td class="style16">Turner next to a collapsed container-node </td>
+    <td class="style16"><p>Container-node should be expanded, but neither the current selection nor 
+        the content area should change.&nbsp;If the expansion reveals the (previously non-visible) selected node, bolding is removed from the selected node's most immediate visible ancestor and the selected node is given the selection highlight (bold text on blue background). If expansion reveals a more immediate 
+        ancestor of a non-visible selected node then the bolding moves to that ancestor. The content area does not change and is not refreshed. </p>
+      </td>
+  </tr>
+  <tr> 
+    <td height="33" class="style16">Turner next to an expanded container-node </td>
+    <td height="33" class="style16"><p> Container-node should be collapsed, but the content area should 
+        not change. If the selected node becomes invisible when its parent or an ancestor is collapsed, bold the most immediate visible ancestor of the selected node. If the parent of the current selection becomes invisible because 
+        one of its ancestors is the node that collapsed, then the most immediate 
+        ancestor that is not hidden by collapsed nodes should be bolded. The content area does not change and is not refreshed. </p>
+       <!-- <p class="style1">Double Click: Tree turners are not double-click sensitive elements. A double click 
+will be equivalent to two single clicks - the first will collapse the branch, 
+the second will expand it.</p> --></td>
+  </tr>
+  <tr> 
+    <td class="style16">Icon or text of a node that is not already focus-selected</td>
+    <td class="style16"><p>This node becomes the selected node and is given the selection highlight (bold text on blue background). The content area to the right is updated 
+        to show that node's view. If the node is a collapsed container node, the node is expanded. If the node is an already expanded container node, the node remains expanded. (The user must use the turners to collapse expanded nodes.)</p>
+      </td>
+  </tr>
+  <tr>
+    <td class="style16">Icon or text of the node that is already focus-selected</td>
+    <td class="style16"><p>The selected node does not change. The content area does not change and is not refreshed. If the node is a collapsed container node, the node is expanded. If the node is an already expanded container node, the node remains expanded. (The user must use the turners to collapse expanded nodes.)</p>
+      <!-- <p><span class="style1">Double Click: Double-clicking expands container-nodes that are currently collapsed, or collapses container nodes that are currently expanded. Focus-selection does not change. The content area does not change and is not refreshed. </span></p> --> </td>
+  </tr>
+  <tr> 
+    <td class="style16">Link in content area (for example, breadcrumb link or link in table) </td>
+    <td class="style16"><p>If the link is associated with a node in the tree, then that node should 
+        be made visible and given selection highlighting. If the node is located in one or more containers that are currently collapsed, then the containers should be expanded to reveal the node. If necessary, the tree should be scrolled to bring that 
+            node into view. If the previously selected node was not visible, the bolding of its most immediate ancestor should be removed, since the selected node will now be visible.</p>
+      <!-- <p class="style1">Double Click: A double-click acts like a single click. </p> --></td>
+  </tr>
+  </tbody> 
+</table>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> The tree 
+  should be able to maintain its state (which object is selected, and which containers 
+  are expanded or collapsed) during refreshes, browser reloads, and updates to 
+  the tree.</p>
+<p class="style16">This behavior is important because it helps maintain tree context. Users can 
+  become disoriented when their tree context is lost.</p>
+<h3 class="style16"><a name="5.4.3"></A>5.4.3 Tree Scalability</h3>
+<p class="style16">Scalability is one of the most challenging issues with applications containing lots of objects  such as many system management applications. 
+  A system management application can contain large numbers of objects, so the 
+  UI needs to scale to maintain a consistent level of usability. Navigation trees 
+  enhance scalability because they enable users to quickly drill down and focus 
+  on the object, or set of objects, pertinent to the current task. Similarly, 
+  trees enable the hiding of objects that are not of current interest, thus reducing 
+  screen clutter.</p>
+<p class="style16">However, the scalability of navigation trees has its limits, especially in 
+  a thin client, browser environment. As the number of nodes increases, trees 
+  can suffer from both horizontal and vertical scaling problems.</p>
+<p class="style16">As the number of levels of depth in the tree increases, so does:</p>
+<ul class="style16"><li> The number of clicks required to drill down to the desired object</li>
+  <li>The visual complexity of the tree</li>
+  <li>The horizontal screen real-estate required to display the tree</li>
+</ul>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  To maintain usability, design your application so that its navigation tree is 
+  no more than five levels deep.</p>
+<p class="style16">If your application requires more levels of depth, consider some of the scaling 
+  methods described in <a href="05-navigation#5.4.3.1">5.4.3.1 Scaling Methods for Trees</a>. 
+</p>
+<p class="style16">Vertical scaling, which concerns the length of the tree, is also important 
+  to consider. As the number of objects in the tree increases, so does:</p>
+<ul class="style16"><li> The time required to load the tree</li>
+  <li>The amount of scrolling required to move among the tree's objects</li>
+  <li>The time required to locate the object of interest</li>
+</ul>
+<p class="style16">A vertical scaling problem can lead to both usability and performance problems. 
+  The performance decline varies,&nbsp;depending upon the particular implementation 
+  of the tree. Therefore, it is difficult to&nbsp;cite a recommended upper limit 
+  for the number of tree objects.</p>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  Design the tree so that the total number of potential objects does not unacceptably 
+  hinder load time or performance. If the tree takes a significantly long time 
+  to load, then you should consider whether the wait time is worth the benefit 
+  of using that particular design of the tree.</p>
+<p class="style16">If your application needs to represent a large number of tree objects and encounters 
+  performance problems, see the following section.</p>
+<h4 class="style16"><a name="5.4.3.1"></A>5.4.3.1 Scaling Methods for Trees</h4>
+<p class="style16"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> 
+  If your application needs to represent a large number of objects in the tree, 
+  consider using one of the scaling methods described in this section.</p>
+<p class="style16">Most of these scaling methods still need to be fleshed out and require additional design work. More detail may be provided in a future version of this style guide. For now, this section 
+  provides an overview of some available methods.</p>
+<p class="style16"> Note that these suggested solutions only apply to the Left-Right Pane Set class of navigation, where the left pane uses a tree. Other scenarios needing scalable trees are not covered by these suggestions. </p>
+<p class="style16">One method that addresses both horizontal and vertical scaling involves presenting 
+  the lowest level of the object hierarchy in the content area instead of in the 
+  navigation tree. For example, instead of showing a node in the tree for each 
+  object representing a user, you could show a single node in the tree for "Users." 
+  Then, when the user clicks on it, you could display a table in the content area 
+  that contains all the User objects. These User objects could be links that enable 
+  users to drill down further&nbsp;in order to perform an action, such as viewing 
+  or editing User properties. This method is particularly useful when the number 
+  of objects is potentially very large, because it not only eliminates one&nbsp;level 
+  of depth in the tree, but can also significantly reduce the total number of 
+  tree objects.</p>
+<p class="style16">If using the method described above does not solve your horizontal or vertical scrolling issues, there is another option that can be considered. This option is to display more than just the lowest level of the tree in the content area. 
+Only a subset of the levels are shown in the tree; the remaining levels
+are shown in the right-hand side content area in a table. The objects below the lowest level shown in the tree are shown in a table, and the user navigates to lower levels by using drilldown and breadcrumbs/back buttons.</p>
+<p class="style16"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Only use the  scalability strategies described above 
+to the extent necessary for the data in your tree.</p>
+<p class="style16"> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If a scalability strategy is needed, use the method whereby only the lowest level of the object hierarchy is moved out of the tree and into the content area, if this will suffice. Only use the method whereby multiple tree levels are moved out of the tree and into the content area if it is absolutely necessary for your data and scalability needs.<br>
+  <br>
+When multiple levels of the tree are moved into the content area, users can become lost because the tree seems to be abruptly, and perhaps arbitrarily, abandoned. In addition, the whole  means of navigating through the data is changed, and the user must adjust to a second, rather different, navigation style  without necessarily knowing why. Also, identification of the user's current location within the hierarchy requires looking at both the selection in the tree and looking at the breadcrumbs in the right pane.</p>
+<p class="style16"> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If multiple levels of the tree are moved into the content area, choose a logical level to end tree navigation and to move to using the content area, if there is a logical breaking point available. <br>
+  <br>
+  <img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> If a scalability strategy is needed, use one method consistently within your application.<br>
+</p>
+<p class="style16">Other scaling methods allow users to:</p>
+<ul class="style16">
+  <li>Represent the highest-level categories as <i>tabbed panes</i> instead of 
+    as tree items (<a href="05-navigation#5.1.6.3">5.1.6.3 Tree in Tabbed Pane</a>).</li>
+  <li>Use <i>drill down</i> instead of a tree (<a href="05-navigation#5.1.1">5.1.1 Drill Down</a> 
+    and <a href="05-navigation#5.1.6.5">5.1.6.5 Drill Down In Left Pane of a Tabbed Pane</a>).</li>
+  <li><i>Search</i> the tree for particular nodes (<a href="12-search.html">12
+  Search</a>).</li>
+  <li><i>Filter</i> the tree to show objects that meet only certain criteria.
+     (Generalize the filtering guidelines from tables--<a href="09-tables.html#9.5.1">9.5.1
+      Table Filtering</a>--to trees. Also, see the top of <a href="12-search.html">    12
+      Search</a>, for the distinctions among filter, view, and find.)</li>
+  <li><i>Switch</i> between multiple <i>views</i> of the tree (<a href="06-content.html#6.4.1">6.4.1 
+    Using a Drop-Down Menu for Content Area Navigation</a>).</li>
+</ul>
+
+<hr>
+<p class="style16"><strong>New Format for the remainder of this chapter<br>
+  <br>
+</strong>The format for the content comprising the remainder of this chapter has been done in the new format also shown in chapter 3. The new organization is a proposal for a standard way to present future chapters in the Web Application Guidelines. Some of the changes include:</p>
+<ul class="style16">
+  <li>"Required" and "Advised" guidelines are separated into their own sections.</li>
+  <li> Icons followed by a numbering scheme are used to distinguish and track Required and Advised guidelines:</li>
+</ul>
+<blockquote class="style16">
+  <p><img src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> <strong>R1, R2 ... <br>
+  </strong><img src="Guidelines_Icons/Recommendation.jpg" height="14" width="14"> <strong>A1, A2 ... </strong></p>
+  <p>You can use Search in the masthead above to find a specific guideline in this chapter, e.g., 3.1R1.</p>
+</blockquote>
+<ul class="style16">
+  <li>Implementation Tips are also marked with an icon <strong><img src="Guidelines_Icons/Implementation_Info.jpg" height="14" width="16"></strong> and follow related Required and Advised guidelines.</li>
+  <li>Subsections are arranged in separate pages which contain links that go back to the main chapter page.</li>
+</ul>
+<h2 class="style16"><a name="5.5"></a>5.5 Common Tasks Page</h2>
+<p class="style16">Many Sun applications, as they exist today, are object-oriented (OO). This approach requires that users choose one or more objects and then 
+apply an action to them.&nbsp; Another approach is to design the user interface to be task-oriented.&nbsp; In a task-oriented interface, users choose the task they want to perform.&nbsp; Then, in the context of performing that task, they choose the object(s) to which to apply the task.</p>
+<p class="style16"> <img src="navigation_graphics/TaskFlowDiagram.gif" width="485" height="311"><br>
+  <br>
+To make existing OO applications into real task-oriented products would take a rebuild from the ground up, based on data from a thorough task analysis of prospective users. However, until products can be rebuilt, a good way to help the user of existing products is to provide a list of tasks and a set of wizards or other means to help perform those tasks. The list of the most common tasks is presented in what is called the Common Tasks page.</p>
+<p class="style16">The design for the Common Tasks page should be different from other pages in the application (for visual uniqueness and identifiability). The goal is to provide users with quick access to tasks that are supported by key product features. When there are more than a few tasks, the page is divided into sections where functional groups of tasks are separated from each other. For example, functional groups might include configuration and troubleshooting.</p>
+<p class="style16">These guidelines define four types of tasks: </p>
+<ul class="style16">
+  <li>Action-based (allows user to perform action within the application from a pop-up dialog or wizard)</li>
+  <li>Navigational (directs the user to a specific place in the user interface; button labels should always begin with a context-setting action such as "Go To" or "Find") </li>
+  <li>Hybrid (includes a combination of action-based and navigational tasks)</li>
+  <li>Multiple session (requires a series of steps across multiple login sessions, regardless of machines used) </li>
+</ul>
+<p class="style16">Note: Only action-based and navigational tasks are currently specified.</p>
+<p class="style16"><img src="navigation_graphics/CTPage3.png" width="996" height="627"></p>
+<p class="style16">If one task on the page is the task to view an overview of the product, mark that task with the Overview Marker, as shown in the picture above. This Overview Marker should not be used for any other purposes, and should appear at most once in any common tasks page. </p>
+<p class="style16">In applications where a domain must be chosen and then tasks performed within that domain, separate those tasks into their own group, then have the selection control to choose the domain at the top of that group. The user can then select the domain and then do a set of tasks within that domain, or do global tasks from elsewhere on the page. This sort of selection is only appropriate for choosing a domain or logical subset of the data to act upon, however. Never have selection of a specific object within the common tasks page -- that selection should be done within the process of performing a task (or using actions upon a selected object within the standard object-oriented presentation).</p>
+<p class="style16"><img src="navigation_graphics/Domain-CTP.png" width="721" height="412"></p>
+<p class="style16">For an interactive example of a Common Tasks Page, see <font face="Arial"><a href="http://xdesign.sfbay.sun.com:8080/example/faces/commontask/commonTasks.jsp">http://webdev2.sun.com/example/faces/commontask/commonTasks.jsp</a></font><a href="http://tinyurl.com/ybykg3"><br>
+</a></p>
+<h3 class="style8">User Preferences</h3>
+<p class="style16">From a Preferences page, users can choose if they want the Common Tasks page to appear first when the application is started. This preference is optional, as well as the number of pages that appear in the list. Users can also choose which tasks to include on the Common Tasks page by selecting or deselecting checkboxes next to the tasks they want to see on the page. If a user does not have privileges to perform a certain task, the task should not appear on the Preferences page. (This also applies to disabled tasks.) </p>
+<p class="style16">Use of the Preferences page can be extended beyond the scope of the Common Tasks page. If the Preferences page will be used across an application, the tasks included in the other sections of the preferences user
+interface should be global to the
+application (not specific to one page or task)</p>
+<p class="style16">The layout of the Preferences page is similar to the Common Tasks page itself, with tasks grouped by function, as shown in this example:</p>
+<p class="style16">The preferences page should be displayed as a pop-up window.</p>
+<p class="style16"><img src="navigation_graphics/Preferences-page.jpg" width="815" height="603"></p>
+<h3 class="style16">Layout Variations</h3>
+<p class="style16"><strong>One Group of Common Tasks </strong><br>
+If there is only one group of common tasks, that group should appear on the left side. If there is one group of tasks plus Preferences, the tasks  remain on the left side of the page, with preferences at the bottom.</p>
+<p class="style16"><img src="navigation_graphics/CTvar1.jpeg" width="535" height="433"></p>
+<p class="style16"><strong>Two Groups of Common Tasks</strong> <br>
+When there are at least two groups of tasks, the second group should be placed on the right. Unless there is a logical order to the groups, the tasks should be ordered to balance the two columns as much as possible. If Preferences exist, they always appear at the bottom of the right column (once there are two columns):</p>
+<span class="style16"><img src="navigation_graphics/CTvar2.jpeg" width="596" height="423">
+</span>
+<p class="style16"><strong>Common Tasks That Don't Group Well <br>
+</strong>If there are any task groups on the page (other than Common Task Page Administration), all tasks must be inside groups. If necessary, put some of the the items in an "Other Tasks" group. This avoids confusion regarding whether tasks are in the group above them but just after a gap or etc.</p>
+<p class="style16">However, if there are no task groups on the page (other than Common Task Page Administration), the tasks can be either placed in one group if a good name for that group exists, or placed outside any grouping. The latter can be done even if there is a group for Common Task Page Administration, as it will appear at the bottom and therefore can cause no confusion of items beneath it being within its group.</p>
+<p class="style16"><img src="navigation_graphics/CTvar3.jpeg" width="534" height="418"></p>
+<h3 class="style16">Required </h3>
+<ul class="Requirements style16">
+  <li><strong><a name="5.5R1" id="5.5R1"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R1 </strong>Tasks are displayed on special task buttons on the Common Tasks page (labels in verb form). Task names are displayed without additional text; however, tasks can be described in pop-up panels in the same window (this is optional, and if more information is needed). Users can click the "i" icons to open the popup panels.<br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R2" id="5.5R2"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R2</strong> There should be no fewer than 3 and no more than 20 common tasks.<br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R3" id="5.5R3"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R3 </strong>Tasks should not appear "below the fold" on a  1024 x 768 screen using the standard text font size. <font face="Verdana, Helvetica, Arial"><br>
+          <br>
+  </font></li>
+  <li><strong><a name="5.5R4" class="Requirements" id="5.5R4"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R4</strong> The Common Tasks page is reserved exclusively for initiating tasks. Subtasks, such as selecting objects, should not go on this page. Product diagrams and other introductions are not included on this page. Other content, such as a product overview, or selecting important objects, are typically tasks (or sub-tasks) that should not be done directly on this page. An alternative is to provide a task that links to a product tutorial or concept diagram with explanatory information.<br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R5" id="5.5R5"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R5 </strong>An application can have only <strong>one </strong>Common Tasks page. <br>
+          <br>
+  </li>
+  <li><strong><a name="5.5R6" id="5.5R6"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R6</strong> In a role-based system, roles determine which common tasks to present on the Common Tasks page. Common tasks must be omitted from the page when they are unavailable to users without authority to use them.<br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R7" id="5.5R7"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R7</strong> Common tasks must never directly execute actions which affect data (for example, "Delete All Files"). These actions must open another page or window where a confirmation or similar message is offered (requiring at least one more click from the user). However, ellipses indicating further action will not be shown. For more information about action-based tasks see <a href="05-navigation_action-based-tasks.html">5.5.3 Action-Based Tasks</a> . <br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R8" id="5.5R8"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R8</strong> Do not offer <em>only </em>navigational task buttons on a Common Tasks page. Action-based tasks should also be provided. Usability tests reveal that only providing navigation tasks can impede learning the OO UI. Temporary exceptions to this guideline are allowed for products that are transitioning to task orientation.<br>
+      <br>
+  </li>
+  <li><strong><a name="5.5R9" id="5.5R9"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R9</strong> The Preferences page should appear in a popup window, independent of the Common Tasks page.<br>
+    <br>
+  <li><strong> <a name="5.5R10" id="5.5R10"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R10</strong> To ensure a consistent and predictable user experience, cookies should not be used to store settings selected on the Preferences page. The application developer must decide where to store these settings (either in a backend database or another form of permanent storage). <br>
+    <br>
+  <li><a name="5.5R11" id="5.5R11"></a><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R11</strong> When users click the OK button on the Preferences page, the settings should be reflected immediately and remain in effect in the next session. This behavior should occur even when a login session times out or when the user logs out of the application.<br>
+    <br>
+  <li><a name="5.5R11" id="5.5R11"></a><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R12</strong> Never have selection of a specific object within the common tasks page -- a domain at most should be selected there, as discussed above. 
+</ul>
+<p class="style16"></p>
+<h3 class="style16">Advised</h3>
+<ul class="Recommendations style16">
+  <li> <strong><a name="5.5A1" id="5.5A1"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised" title="Advised"> A<span id="5.5A1" name="5.5A1">1</span></strong><span id="5.5A1" name="5.5A1"> It is strongly recommended that system management applications have a Common Tasks page.</span> A Common Tasks page is also recommended for most applications; however, there are some applications for which a Common Tasks page will not apply. <br>
+  </li>
+</ul>
+<p class="style16"><a name="5.5.1" id="5.5.1"></a><a href="05-navigation_navigation-access.html" class="style15">5.5.1 Access to the Common Tasks Page </a><br>
+  Use guidelines  in this section to provide users with easy access to the common tasks 
+page.</p>
+<p class="style16"><a name="5.5.2" id="5.5.2"></a><a href="05-navigation_navigational-tasks.html" class="style15">5.5.2 Navigational Tasks</a><br>
+  Use guidelines  in this section to enable the user to jump 
+  directly from the common tasks page to where the task can be performed 
+in the application.</p>
+<p class="style16"><a name="5.5.3" id="5.5.3"></a><a href="05-navigation_action-based-tasks.html" class="style15">5.5.3 Action-Based Tasks </a><br>
+  Use guidelines  in this section to enable the user to alter the 
+  state of the system by linking from a common task to either a 
+pop-up window or an inline wizard.<br>
+</p>
+<h3 class="style16"> <span class="style15"><a name="5.5.4" id="5.5.4"></a>5.5.4 Hybrid Tasks </span></h3>
+<p class="style16">Hybrid tasks are currently FORBIDDEN because they are not compatible with one another. Hybrid tasks combine action and navigational tasks in a single task. The common task button label combines a verb and noun followed by the word <em>and.</em> A workaround is provided in the exception following <a href="05-navigation_action-based-tasks.html#5.5.3R2">5.5.3 R2</a><i>.</i> <br>
+    <br>
+  For example, start a server and show me its details -- FORBIDDEN<br>
+</p>
+<h3 class="style8"><a name="5.5.5" id="5.5.5"></a><span class="style15">5.5.5 Multiple Session Tasks </span></h3>
+<p class="style16"> Multiple session tasks are not designed yet. They require interactions with steps that occur over extended periods of time: many hours or days and across sessions. Multiple session tasks are similar to action-based tasks, except the current wizard design does not apply. Future guideline releases may document these interactions.<br>
+</p>
+<p class="style16"><img src="navigation_graphics/BackToTop.gif" width="16" height="16"><a href="05-navigation#skipnav"><strong>Back to Top </strong></a></p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <span class="currentchapter">5&nbsp;Top-Level&nbsp;Navigation</span>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body>
+</html>
+

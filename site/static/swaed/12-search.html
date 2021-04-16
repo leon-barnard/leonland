@@ -1,0 +1,957 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>12&nbsp;Search - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="12-search.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <span class="currentchapter">12&nbsp;Search</span>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+<p class="toc-level0 style2"><span class="style2"><A href="12-search.html#12">12 Search</a></span></p>
+<p class="toc-level1 style2"><A href="12-search.html#12.1">12.1 Quick Search</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.1.1">12.1.1 Global Quick Search</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.1.1">12.1.1.1 Global Quick Search: Predefined
+    Queries</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.1.2">12.1.1.2 Global Quick Search: Application-Wide
+    Text Search</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.1.3">12.1.1.3 Global Quick Search: Scoped
+    Text Search</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.1.2">12.1.2 Local Quick Search</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.2.1">12.1.2.1 Local Quick Search: Predefined
+    Queries</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.2.2">12.1.2.2 Local Quick Search: Local
+    Text Search</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.1.2.3">12.1.2.3 Local Quick Search: Scoped
+    Text Search</a></p>
+<p class="toc-level1 style2"><A href="12-search.html#12.2">12.2 Advanced Search</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.2.1">12.2.1 Global Advanced Search</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.2.1.1">12.2.1.1 Global Advanced Search in Main Windows</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.2.1.2">12.2.1.2 Global Advanced Search in Pop-Up Windows</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.2.2">12.2.2 Adding Scoping to Advanced Search </a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.2.3">12.2.3 Contextual Advanced Search</a></p>
+<p class="toc-level1 style2"><A href="12-search.html#12.3">12.3 Search Results</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.3.1">12.3.1 Global Quick Search Results</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.1.1">12.3.1.1 Global Quick Search Results in Main Windows</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.1.2">12.3.1.2 Global Quick Search Results in Pop-Up Windows</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.3.2">12.3.2 Local Quick Search Results</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.2.1">12.3.2.1 Local Quick Search Results in Main Windows</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.2.2">12.3.2.2 Local Quick Search Results in Pop-Up Windows</a></p>
+<p class="toc-level2 style2"><A href="12-search.html#12.3.3">12.3.3 Advanced Search Results</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.3.1">12.3.3.1 Advanced Search Results in Main Windows</a></p>
+<p class="toc-level3 style2"><A href="12-search.html#12.3.3.2">12.3.3.2 Advanced Search Results in Pop-Up Windows</a><br>
+</p>
+<h1 class="style2"><a name="12" id="12"></a>12 Search</h1>
+<p class="style2">Search is a tool that can help a user locate a physical or logical object or
+objects in an application's object hierarchy. Search can be particularly useful when 
+  it is the only way to easily create a list of objects that exist across an application's 
+  structural or navigational groupings (such as tabs or tree nodes). </p>
+<p class="style2">The following are different types of search:</p>
+<ul class="style2">
+  <li><i>Quick Search</i> does not 
+  require a user to open a secondary-content page to enter a query and may be 
+  global or local in scope. 
+  <li><i>Advanced Search</i> requires a user to open a secondary-content page to enter a query 
+    and may offer complex scope. Scope is the area or areas of the application searched. Complex scope is described in <A href="12-search.html#12.2.2">12.2.2 
+    Adding Scoping to Advanced Search</a>.</li>
+</ul>
+<p class="style2">All types of search yield zero or more <i>search results </i>(and zero results can itself be important information)<em>. </em>The search results table is never drawn until one or more search results are created (an empty table does not appear ahead). </p>
+<p class="style2">Search should not be confused with other tools that have related or similar
+  functionality, such as <i>filter</i>, <i>view</i>, and <i>find</i>.</p>
+<ul class="style2">
+  <li><i>Filter</i> is a tool used to draw out a subset from an existing 
+    group of objects based on inclusive criteria, and does not substantially change 
+    the format of the original object presentation. See <A href="12-search.html#12.1.2">12.1.2 
+    Local Quick Search</a> and <A href="09-tables.html#9.5.1">9.5.1 Table Filtering</a> for more 
+  details. 
+  <li><i>View</i> is a tool used to specify a substantially 
+  different presentation of an object set (such as in a tree, topological view,
+    or list view). 
+    <!--Ideally, tabbed panes, page sections, or a filter should be used to define which subset of objects is visible in a given view.  -->
+    For more information, see <A href="06-content.html#6.4">6.4 Content Area
+    Navigation</a>. 
+  <li><i>Find</i> is a tool offered by browsers to locate an instance of 
+    a word or words only in the contents of a browser window that is currently
+  open and  active.<!--These other tools may be used apart from or together with search for the purposes of locating an object. For detailed guidelines on these other tools, please reference the local actions section in the Navigation chapter (?)*.
+ -->
+  </li>
+</ul> 
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> In all search variants, when something is defaulted into the search text field, whether the word Search, an asterix, or the previous search, enable the text field to select the field contents upon taking user focus, and enable typing to replace the existing text.  </p>
+<h2 class="style2"><a name="12.1"></a>12.1 Quick Search</h2>
+<p class="style2">There are two types of quick search:</p>
+<ul class="style2">
+  <li><i>Global</i>, a search that can search the entire 
+  application. 
+  <li><i>Local</i>, a search that is confined to a specific area of the application,
+    such as a tab.</li>
+</ul>
+<p class="style2"><img src="search_graphics/12.1a_12.1.1a.png" width="899" height="134"></p>
+<p class="style2"><IMG src="search_graphics/12.1b.png" alt="Global Quick Search identified" width=900 height=159></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> 
+Provide
+  quick search in all applications that require a user to find a logical
+  or physical object or objects in the application's object hierarchy without opening a
+    secondary-content page.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> 
+ Provide only one type of quick search in an application.</p>
+<p class="style2">Two or more quick search tools should not appear in one 
+page view. Such a design would confuse the user because the respective scope and 
+function of these identical-looking search tools would be ambiguous. This 
+ambiguity could also undermine the important relationship that the location the 
+search tool has with its scope. <!--In other words, a product should not offer local quick search in the content area if there is a global quick search in the masthead.  -->
+  In other words, a product should not offer local quick search in the content 
+  area (see <A href="12-search.html#12.1.2">12.1.2 Local Quick Search</a>) if there is a global 
+  quick search in the masthead (see <A href="12-search.html#12.1.1">12.1.1 Global Quick Search</a>). 
+</p>
+<p class="style2">If a product needs to offer quick search with both global 
+and local scopes, provide one search tool in the masthead that accommodates 
+those various scoping needs by using the global quick search variation that includes
+  a drop-down list box for scope
+  <!--with menu items representing object groupings already provided in the application --> 
+  (see <A href="12-search.html#12.1.1.3">12.1.1.3
+  Global Quick Search: Scoped Text Search</a>). </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> 
+  Show all quick search tools with a Search button, but the button's appearance will vary based on whether it is in the masthead or not, as detailed below.  </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> 
+  Make the Search button the right-most item among the quick search elements.</p>
+<h3 class="style2"><a name="12.1.1"></a>12.1.1 Global Quick Search</h3>
+<p class="style2">Global quick search is a tool whose scope is the application's entire object
+  space. If a user searches using this tool, the entire object space can
+  be searched.</p>
+<p class="style2"><IMG src="search_graphics/12.1a_12.1.1a.png" alt="Global Quick Search identified" width=899 height=134></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide global quick search in the main window masthead of applications that
+     require a user to find something in the application's entire object space.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Place global quick search in a main window masthead directly to the left of 
+  the right-aligned global links in the utility bar.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Depending on the application, offer one of these global quick search variations:</p>
+    <blockquote class="style2">
+<table class="info-table" border="1" cellspacing="0" cellpadding="5">
+  <tr>
+    <th>Global Quick Search Variation</th>
+    <th>See</th>
+    <th>Contents</th>
+  </tr>
+  <tr>
+    <td>Predefined Queries</td>
+    <td><a href="12-search.html#12.1.1.1">12.1.1.1</a></td>
+    <td><ul><li> drop-down list box</li>
+        <li>Search button</li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td>Application-Wide Text Search</td>
+    <td><a href="12-search.html#12.1.1.2">12.1.1.2</a></td>
+    <td><ul>
+      <li> text field</li>
+      <li>Search button</li>
+    </ul>
+      </td>
+  </tr>
+  <tr>
+    <td>Scoped Text Search</td>
+    <td><a href="12-search.html#12.1.1.3">12.1.1.3</a></td>
+    <td><ul>
+      <li> drop-down list box</li>
+      <li>text field</li>
+      <li>Search button</li>
+    </ul></td>
+  </tr>
+</table>
+    </blockquote>
+    <p class="style2">The Global Quick Search: Scoped Text Search variation is shown here:</p>
+    <p class="style2"><IMG src="search_graphics/12.1.1b.png" alt="Scoped Global Quick Search - components identified" width=899 height=127> </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Separate all global quick search fields from the right-aligned global links with a utility separator.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> See 
+  <A href="12-search.html#12.3.1">12.3.1 Global Quick Search Results</a> for information on 
+  how to display the results from a global quick search.</p>
+<h4 class="style2"><a name="12.1.1.1"></a>12.1.1.1 Global Quick Search: Predefined Queries</h4>
+<p class="style2">This variation includes just a dropdown list, with no text field. The guidelines in this section only apply to that variation. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Use this variation when
+you want to restrict the user to obtaining only general, predefined search results.</p>
+<p class="style2"><img src="search_graphics/12.1.1.1.png" alt="Global Quick Search: Predefined Queries" width=852 height=134></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ In the drop-down list box, provide predefined queries or information buckets
+   or object categories that
+might not be 
+  explicitly provided by the application's navigation structure. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  In this Predefined Queries option, make the default state (the 
+first item) in the drop-down list box be just the label "- Search -."
+<!--Make the default state (the first item) in the drop-down 
+  list box "&#8211; Search &#8211;"-->
+Provide &quot;Search All&quot; only when there is a small set of possible values, and never default the list to &quot;Search All&quot;, as that could lead to accidently doing a very slow query of all possible items, potentially across multiple data sets.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If a user clicks the Search button with the default value "- Search -" in the drop-down list box, show the following error 
+  alert message in a JavaScript pop-up window: "Select your search query." </p>
+<p class="style2"><i>Global Quick Search: Predefined Queries</i> is conceptually and functionally
+  similar to <a href="09-tables.html#9.5.1.1">9.5.1.1
+Basic Table Filtering</a> in that it features predefined criteria. However
+<i>Global Quick Search: Predefined Queries</i> is usable across the application
+(not limited to a single table on a
+single
+page)
+and presents its results  on a new, dedicated results page (instead of just limiting
+what is shown on
+an
+otherwise
+unchanged page, as happens with Filters).</p>
+<h4 class="style2"><a name="12.1.1.2"></a>12.1.1.2 Global Quick Search: Application-Wide Text
+  Search</h4>
+<p class="style2">This variation includes just a text field, with no dropdown list. The guidelines in this section only apply to that variation.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Use this variation if a user 
+  might need to look for an object anywhere in the application's object space
+    using a text query.</p>
+<p class="style2"><img src="search_graphics/12.1.1.2.png" alt="Global Quick Search: Application-Wide Text Search" width=899 height=133></p>
+<p class="style2"><img title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> To save space in the masthead, default the word "Search" in the search text field to provide the labeling instead of having a button with the label "Search", and use the special masthead iconic button  as shown in the example above. This loses the ability for the user to see whether wildcards are allowed or not ahead, but is needed to provide some sort of search labelling in this one version which has no label or dropdown to do so otherwise. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If
+  a user clicks the Search button with the text field either empty or containing
+  the default value &quot;Search&quot;, show the following error alert message in a JavaScript pop-up 
+window: "Enter your search query."</p>
+<p class="style2"><img title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Provide wildcard functionality in the text field, if needed. Avoid implementing implicit wildcard functionality because this functionality prevents the user from entering exact queries.</p>
+<h4 class="style2"><a name="12.1.1.3" id="12.1.1.3"></a>12.1.1.3 Global Quick Search: Scoped
+  Text Search</h4>
+<p class="style2">This variation includes both a text field and a dropdown list. The guidelines in this section only apply to that variation.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Use this variation if a user might need to look for an object  using
+  a text query, where the scope of objects to be searched can optionally be restricted
+    to a subset of the application's object space, <i>or</i> when both local
+    and global quick-searching is offered.</p>
+<p class="style2"><img src="search_graphics/12.1.1.3a.png" alt="Global Quick Search: Scoped Text Search" width=899 height=133></p>
+<p class="style2"><img src="search_graphics/12.1.1.3b.png" alt="Global Quick Search: Scoped Text Search (drop-down shown open)" width=899 height=133></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  In the drop-down list, provide predefined information buckets or object categories
+    that might not be explicitly provided by the application's navigation structure.</p>
+<p class="style2">If
+      this feature is being used to accommodate for local and global quick-searching,
+      provide options to accommodate both local and global scopes.</p>
+<p class="style2"> <img title=Requirement height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14> In a quick search tool that provides both global and local scopes, the drop-down list box menu items should represent existing object groupings offered by the application.</p>
+<p class="style2"><img title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Make the default state (the first item) in the drop-down list box be "Search All", if it is supported. Otherwise, make the default state be just the label "- Search -".</p>
+<p class="style2"><img title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> As there is a dropdown next to the text field which already says "Search All" or "&ndash; Search &ndash;", there is no need to put Search by default into the text field. </p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Provide wildcard functionality, if needed. Make it explicit by showing an asterisk in the text field by default. Avoid implementing implicit wildcard functionality because this functionality prevents the user from entering exact queries.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If implicit or no wildcard functionality is provided, leave the text field blank by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If a user clicks the Search button with the default value "- Search -" in the
+  drop-down list box or with the text field  empty, show one of the following
+  error alerts, in a JavaScript pop-up window, depending 
+  on what was not specified:</p>
+<ul class="style2">
+  <li>"Enter your search query in the text field"</li>
+  <li>"Select an item in the drop-down list 
+    box" or</li>
+  <li>"Enter your search query in the text field and select an item in the drop-down list box" </li>
+</ul>
+<p class="style2">(In this case, * is allowed as the value in the search field, as the dropdown will already constrain the search.)</p>
+<h3 class="style2"><a name="12.1.2" id="12.1.2"></a>12.1.2 Local Quick Search</h3>
+<p class="style2">Local quick search limits its scope to a portion of the application's
+  object space corresponding to the place in which it appears. It never appears in a masthead. </p>
+<p class="style2">For example, in applications with a hierarchical
+    object presentation, when Local Quick Search appears on a
+    page corresponding to
+    a branch of the hierarchy, local searches on those pages are always limited
+    to that branch
+    and
+    possibly below.</p>
+<p class="style2"><IMG src="search_graphics/12.1.2a.png" alt="Local Quick Search - components identified" width=899 height=217></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  Provide
+  local quick search in <!--the local actions bar of content pages -->
+  the content area if a user might want to search only that area and when global
+  quick search is not offered.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> When search is provided in the content area (outside the masthead) of a page, label the button with the text "Search" (see <A href="07-simple.html#7.1.6">7.1.6 Button Labels</a>
+  <!--a href="
+02-visual.html#2.2"> 2.2 Font</a> and <a href="
+02-visual.html#2.1">2.1 
+  Color Palette</a-->
+), and make the search button a secondary button (see <A href="07-simple.html#7.1.2">7.1.2 Secondary Buttons</a>) </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Use local quick search instead of filtering if the collection of objects resulting 
+  from the search is so diverse that it does not make sense to display them in 
+  an existing table.</p>
+<p class="style2">Basic filtering should be used when the collection of objects to be filtered 
+  can be displayed inside an existing table. This would typically be the case 
+  when the table already contained all the objects under consideration but was 
+  too large to comfortably view a specific subset. See <A href="09-tables.html#9.5.1">9.5.1 
+  Table Filtering</a> for more details. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  In  applications with a hierarchical
+    object presentation, local quick search should not search upward in the
+object hierarchy.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+ Place local quick search directly to the right of left-aligned page actions, 
+  if any. If there are no left-aligned page actions, make local quick search the
+left most element in the local actions bar.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide at least 15 pixels of white space to the right of the local quick Search
+button, to separate it from other content in that same line.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Depending
+on the application, offer one of these local quick search variations:</p>
+<blockquote class="style2">
+  <table class="info-table" border="1" cellspacing="0" cellpadding="5">
+    <tr>
+      <th>Local Quick Search Variation</th>
+      <th>See</th>
+      <th>Contents</th>
+    </tr>
+    <tr>
+      <td>Predefined Queries</td>
+      <td><a href="12-search.html#12.1.2.1">12.1.2.1</a></td>
+      <td><ul>
+        <li> drop-down list box</li>
+        <li>Search button</li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Local Text Search</td>
+      <td><a href="12-search.html#12.1.2.2">12.1.2.2</a></td>
+      <td><ul>
+        <li> text field</li>
+        <li>Search button</li>
+      </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>Scoped Text Search</td>
+      <td><a href="12-search.html#12.1.2.3">12.1.2.3</a></td>
+      <td><ul>
+        <li> drop-down list box</li>
+        <li>text field</li>
+        <li>Search button</li>
+      </ul>
+      </td>
+    </tr>
+  </table>
+</blockquote>
+<p class="style2">The Local Quick Search: Scoped Text Search variation is shown here:</p>
+<p class="style2"><IMG src="search_graphics/12.1.2b.png" alt="Local Quick Search: Scoped Text Search - components identified" width=899 height=172></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> See 
+  <A href="12-search.html#12.3.2">12.3.2 Local Quick Search Results</a> for information on how to display
+  results from a local quick search.</p>
+<h4 class="style2"><a name="12.1.2.1" id="12.1.2.1"></a>12.1.2.1 Local Quick Search: Predefined
+  Queries</h4>
+<p class="style2">This variation includes just a dropdown list, with no text field. The guidelines in this section only apply to that variation.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Use this variation when you want to restrict the user to obtaining
+  only general, predefined search results.</p>
+<p class="style2"><img src="search_graphics/12.1.2.1.png" alt="Local Quick Search: Predefined Queries" width=899 height=149></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  In the drop-down list box, provide predefined information buckets or object categories that might not be 
+  explicitly provided by the application's navigation structure. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  In  applications with a hierarchical
+    object presentation, only provide buckets or categories in the drop-down
+    list box that apply to the local object type and its descendants' types.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  In this Predefined Queries option, make the default state (the first item) in the drop-down list box be just the label "&ndash; Search &ndash;."
+  <!--Make the default state (the first item) in the drop-down 
+  list box "&#8211; Search &#8211;"-->
+Provide &quot;Search All&quot; only when there is a small set of possible values, and never default the list to &quot;Search All&quot;, as that could lead to accidently doing a very slow query of all possible items. Search All would typically just duplicate what is already on the page anyway, unless the full set of values is not shown except by such request  (such as possibly in a log viewer). </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If a user clicks the Search button with the default value "- Search -" in the drop-down list box, show the following error 
+  alert message in a JavaScript pop-up window: "Select your search query."</p>
+<p class="style2"><i>Local Quick Search: Predefined Queries</i> is conceptually 
+  similar to <a href="09-tables.html#9.5.1.1">9.5.1.1
+Basic Table Filtering</a> in that it offers predefined criteria. However
+<i>Local Quick Search: Predefined Queries</i> is usable in any Local scope
+(not limited to a single table on a single page) and presents its results on
+a new, dedicated results page (instead of just limiting what is shown on an otherwise
+unchanged page, as happens with Filters).</p>
+<h4 class="style2"><a name="12.1.2.2" id="12.1.2.2"></a>12.1.2.2 Local Quick Search: Local Text
+  Search</h4>
+<p class="style2">This variation includes just a text field, with no dropdown list. The guidelines in this section only apply to that variation.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Use this variation if a user might need 
+    to look for an object or objects using a text query.</p>
+<p class="style2"><img src="search_graphics/12.1.2.2.png" alt="Local Quick Search: Local Text Search" width=899 height=149></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  Provide wildcard functionality, if needed. Make it explicit by showing an 
+  asterisk in the text field by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If implicit or no wildcard functionality is provided, leave the text field blank by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If a user clicks the Search button with the text field either empty or containing the 
+  default value "*", show the following error alert message in a JavaScript pop-up 
+  window: "Enter your search query."</p>
+<h4 class="style2"><a name="12.1.2.3" id="12.1.2.3"></a>12.1.2.3 Local Quick Search: Scoped
+  Text Search</h4>
+<p class="style2">This variation includes both a text field and a dropdown list. The guidelines in this section only apply to that variation.<br>
+  <br>
+<IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Use this variation if a user might need to look for an object using a text
+  query, where the scope of objects to be searched can optionally be restricted
+to a subset of the local object space.</p>
+<p class="style2"><img src="search_graphics/12.1.2.3.png" alt="Local Quick Search: Scoped Text Search" width=899 height=149></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ In the drop-down list box, provide predefined information buckets or object
+   categories that may not be explicitly provided by the application's local
+   navigation structure. </p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  Provide wildcard functionality in the text field, if needed. Make it explicit 
+  by showing an asterisk in the text field by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If implicit or no wildcard functionality is provided in the text field, show 
+  nothing in the text field by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If a user clicks the Search button with the default value "&ndash; Search &ndash;" in the drop-down list box or with the text field empty, show one of the following error alerts, in a JavaScript pop-up window, depending on what was not specified:</p>
+<ul class="style2">
+  <li>"Enter your search query in the text field"</li>
+  <li>"Select an item in the drop-down list box" or</li>
+  <li>"Enter your search query in the text field and select an item in the drop-down list box" </li>
+</ul>
+<p class="style2">(In this case, * is allowed as the value in the search field, as the dropdown will already constrain the search.)</p>
+<h2 class="style2"><a name="12.2" id="12.2"></a>12.2 Advanced Search</h2>
+<p class="style2">Advanced search is a superset of simple search. While the user gives up the
+   convenience of quick search (advanced search requires a user to open a
+secondary-content page), advanced search offers the user a way to enter a detailed
+  query for  more accurate search results. The user may also be offered more
+  guidance on how 
+  to use search effectively. For example, help about query syntax.</p>
+<p class="style2"><IMG src="search_graphics/12.2a.png" alt="Advanced Search - Global Advanced Search button identified" width=899 height=133></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide advanced search in all applications where the user might need to locate
+    objects  by entering complex queries that require more than just a drop-down
+    list box 
+  and/or a text field.</p>
+<p class="style2">Here are the three types of advanced search:</p>
+<ul class="style2">
+  <li>Global 
+  <li>Global with scoping 
+  <li>Contextual</li>
+</ul>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide only one type of advanced search in an application.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Make advanced search a button in the masthead utility bar, labeled:</p>
+<ul class="style2">
+  <li>&quot;Advanced Search...&quot; if the application
+    also offers global quick search or local quick search on <i>any </i>of the
+    application's pages.</li>
+  <li> &quot;Search...&quot; if there is no global quick search, <i>and none </i>of
+    the application's pages offers local quick search.</li>
+</ul>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Place the Advanced Search button in the main window masthead and make its default
+scope global.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Place the Advanced Search button in the right-hand-side cluster of masthead
+    utility bar buttons, to the left of
+    all other
+    buttons, per these rules:
+<ul class="style2">
+  <li><b>If</b>  Global Quick Search is also available in the masthead, render
+    the button as
+    a separate button, separated from the global quick search with a second utility separator:<br>
+  <IMG src="search_graphics/12.2b.png" alt="Advanced Search as separate button" width=898 height=133></li>
+  <li><b>If</b> no Global
+    Quick Search is offered in the application, render the button as the leftmost
+    button within the utility bar button cluster:<br>
+    <br>
+  <img src="search_graphics/12.2b-b.png" alt="Advanced Search as part of utility bar button cluster" width="780" height="33"></li>
+</ul>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When the Advanced Search button is clicked, open an Advanced Search dialog
+  page in either of the following:</p>
+<ul class="style2">
+  <li>Replacing the main window (page swap)
+  <li>Opening a pop-up window</li>
+</ul>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Offer one behavior consistently throughout the application when the Advanced
+  Search button is clicked.</p>
+<p class="style2">For example, advanced search may not open in the main window in one area of the application and then open in a pop-up window in another. One behavior must 
+  be used throughout the application.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If an Advanced Search pop-up window is already open, but the user clicks again
+    on the Advanced Search button in the main window, then surface and reuse
+    the Advanced Search
+window that is already open. </p>
+<p class="style2">Do not open an additional window or swap the main window. Merely surface the Advanced Search
+window that is already open, leaving its contents intact. Do 
+  not reset any values that remain from previous use.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If advanced search appears by default in the main window, then all object hierarchy 
+  context must disappear from the content area (for example, the tabs) to clarify that the 
+  user is in a dialog page.</p>
+<span class="style2"><IMG title=Requirement height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14> 
+  Advanced Searchs must follow the guidelines for secondary-content pages (see 
+  <A href="03-windows-pages_Secondary-Content-Pages.html">3.8 Secondary-Content Pages</a>).
+</span>
+<p class="style2">Here is an example of a global Advanced Search in a pop-up window. Note the use of generic search elements (fields not specific to any one search context, but useful to any search).<strong><br>
+</strong><IMG src="search_graphics/12.2c.png" alt="Advanced Search dialog page in a pop-up window - required and generic elements identified" width=824 height=494></p>
+<p class="style2"> <IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Make the title of all Advanced Search secondary-content pages clearly show the scope 
+  of the search by following the secondary-content page titling convention: "Main 
+  Focus of the Page - Object Name."</p>
+<p class="style2">For example, the content page title of global advanced search in SunPlex Manager(TM) should 
+  be "Advanced Search - Business Cluster" where Business Cluster 
+  happens to be the highest level of the object hierarchy in SunPlex Manager.</p>
+      
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Make the first elements in an Advanced Search a Search For label, a text field, and a drop-down list box. Make those elements required.</p>
+<p class="style2">All other search elements that may be offered in an Advanced Search 
+  completely depend on the needs of the application. Therefore, the 
+  generic and contextual search elements shown in the following figures are not 
+  required for inclusion and should be considered as examples only. </p>
+<p class="style2">Generic search elements such as the following may be offered:</p>
+<ul class="style2">
+  <li>Elements to specify Boolean logic (standard Boolean notation should not be used) 
+  <li>Preferences, such as number of results to view at a time</li>
+</ul>
+<span class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Provide a </span>primary<span class="style2"> button labeled "Search," and secondary buttons labeled "Reset" a</span><span class="style2">nd "Cancel&quot;.</span>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Provide wildcard functionality in the text fields, if needed. Make it explicit by showing an asterisk in the text field by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If implicit or no wildcard functionality is provided in any of the text fields, show nothing in those text field by default.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If a user clicks the Search button either with the default value "&ndash; Search &ndash;" in the first drop-down list box or with the first text field empty, reload Advanced Search with one of the following error alert messages above the required search elements, depending on what was not specified: "Select an item in the first drop-down list box," or "Enter a search query in the first text field."</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If there is only one search criteria on the page, mark the field as required by using the "required" icon <img src="simple_graphics/Asterisk7x20.gif" width="7" height="20" alt="Asterisk-like icon" border="0">. Place the required icon on the Search For field, as described above. Make sure to include the required field legend when using the "required" icon. See <A href="07-simple.html#7.3">7.3 Text Elements</A> for guidelines on indicating required fields. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If there is only one search criteria on the page, and a user clicks the Search button with the default value "&ndash; Search &ndash;" in the drop-down list box or with the text field empty, show one of the following error alerts, in a JavaScript pop-up window, depending on what was not specified:</p>
+<ul class="style2">
+  <li>"Enter your search query in the text field"</li>
+  <li>"Select an item in the drop-down list box" or</li>
+  <li>"Enter your search query in the text field and select an item in the drop-down list box" </li>
+</ul>
+<p class="style2"> <IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If there are multiple search criteria on the page, do not make any of the individual fields required. Simply require that one or more search fields are filled when Search is clicked, showing the following error alert, in a JavaScript pop-up window</p>
+<ul class="style2">
+  <li>"Enter at least one of the search fields"</li>
+</ul>
+<p class="style2">Here is another example of a global Advanced Search in a pop-up
+window. Note the use of Any/All user-specified generic search elements, replacing the Search For field.</p>
+<p class="style2"><IMG src="search_graphics/12.2d.png" alt="Advanced Search dialog page in a pop-up window - generic elements idenfified" width=881 height=496></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  In the advanced search window, be sure to include elements such as 
+drop-down list boxes or checkboxes that enable scoping if local search 
+functionaity is needed or if local quick search is offered on any page 
+within the application.</p>
+<p class="style2">Here is one more example of a global Advanced Search in a pop-up
+window. This example shows the use of generic search elements in addition to a
+drop-down list box used for scoping.<img src="search_graphics/12.2e.png" alt="Advanced Search dialog page in a pop-up window - with scoping" width=1000 height=523></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If context-specific local search is necessary, provide contextual advanced 
+  search with search elements that vary depending on where the user is in the 
+  object hierarchy.</p>
+<p class="style2">Which context-specific search elements are offered in a contextual Advanced Search
+dialog page depends on the application and the local 
+  context. For example, if an application offers contextual advanced search, the
+Advanced Search that opens from a tab labeled "Alarms" may offer 
+  elements that allow the user to search on alarm severity levels. Conversely, an Advanced 
+  search dialog page in the same application that opens from a tab labeled "Jobs" could contain elements that allow the user to search on job priority. </p>
+<p class="style2">Here is an example of a local Advanced Search in a pop-up window. Note the use of contextual search elements.</p>
+<p class="style2"><IMG src="search_graphics/12.2f.png" alt="Advanced Search dialog page in a pop-up window - with contextual elements" width=920 height=494></p>
+<p class="style2">This design may be required, for example, when a product team wants to provide 
+  precontextualized Advanced Searchs. Otherwise, the pages would be too complex by requiring the user to 
+  contextualize the search elements from within the dialog page.</p>
+<p class="style2">If contextual advanced search is provided, global advanced search cannot be 
+  offered with the current design constraints. In most cases, if implementation 
+  of contextual advanced search is warranted, the application's object groupings 
+  should be heterogeneous enough so that the need to do a global advanced search
+is minimal. </p>
+<p class="style2">Contextual advanced search should be used only when the user benefits
+significantly from having context-specific elements rather than generic elements 
+  in advanced search. </p>
+<p class="style2">Design issues regarding global advanced search and contextual advanced search 
+  are still being explored.</p>
+<p class="style2">Maintain the state of the advanced search elements while displaying the alert
+messages.</p>
+<p class="style2">See <A href="12-search.html#12.3.3">12.3.3 Advanced Search Results</a> for information on 
+  how to display the results from an advanced search.</p>
+<p class="style2">Advanced Search is conceptually similar to <a href="09-tables.html#9.5.1.2">9.5.1.2
+    Custom Table Filtering</a> in that it supports multiple search criteria.
+    However Advanced Search is usable
+    across the whole application, or within a designated scope (not
+    limited to a single table on a single page) and presents its results  on
+    a new, dedicated results page (instead of just limiting what is shown on
+    an otherwise
+unchanged page, as happens with Filters).</p>
+<h3 class="style2"><a name="12.2.1" id="12.2.1"></a>12.2.1 Global Advanced Search</h3>
+<p class="style2"><!--Provide global Advanced Search buttons in the main window mastheads of Sun system management applications. -->
+  Here is an example of a Global Advanced Search button shown in conjunction with
+    a variation of global quick search:</p>
+<p class="style2"><IMG src="search_graphics/12.2.1a.png" alt="Global Advanced Search button in masthead with Quick Search" width=857 height=133><br>
+  Use a Global Advanced Search button by itself when global quick
+  search is not offered, but local quick search is offered elsewhere in the application.
+  Note the inclusion of the Global Advanced Search button in the masthead utility
+bar button cluster instead of separately in this case:</p>
+<p class="style2"><IMG src="search_graphics/12.2.1b.png" alt="Global Advanced Search button in masthead alone" width=857 height=132><br>
+  Here is a global Advanced Search button in an application not offering global or local
+  quick search anywhere. Note the use of the term &quot;Search&quot; instead of &quot;Advanced
+  Search&quot;, and the inclusion of the button in the masthead
+  utility bar button cluster instead of separately
+  in
+this case:</p>
+<p class="style2"><IMG src="search_graphics/12.2.1c.png" alt="Global Advanced Search button in masthead when no Quick Search" width=857 height=132></p>
+<p class="style2">The above are the only three permitted variations for Global Advanced Search
+  buttons.</p>
+<h4 class="style2"><a name="12.2.1.1" id="12.2.1.1"></a>12.2.1.1 Global Advanced Search in Main 
+  Windows</h4>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ In applications with Global Advanced Search where window management might be a
+problem, make Advanced Searchs open in the main window.</p>
+<p class="style2">There are advantages and disadvantages to making Advanced Searchs
+open 
+  in main windows as opposed to in pop-up windows. The product team must make the appropriate decision regarding which model will best fit
+user needs. 
+  In the design using main windows, the user's current page is replaced with 
+  an Advanced Search. The advantages here: that the desktop 
+  will not be cluttered with more windows (lessening the likelihood of orphaned 
+  windows) and online help on advanced search can be offered conventionally 
+  through the Help link in the masthead.</p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ In applications with global 
+  advanced search where users are likely to use the search results in tasks that 
+  are primary rather than secondary in nature, make Advanced Searchs open in
+the main window.&nbsp;</p>
+<p class="style2">Search is usually considered an ancillary task. However, some applications may use 
+  search results in complex ways that relate more to primary tasks. For instance, 
+  users usually do a search in a secondary-content page, get results, examine some 
+  of those results, and go back to what they were doing before they began the 
+  search. However, sometimes users use search results in complex ways that 
+  tie closely into what they were doing before initiating the search, such as 
+  defining nontransient groups out of objects found in the search results. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When Advanced Search opens in a main window, reiterate the default scope 
+  of the advanced search, if any scope limitations exist, in the page inline help.</p>
+  
+<span class="style2">
+<!--  Chip's original text
+<p><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> <span class="style1">Include as the first element a drop-down list of the values &quot;Search All&quot; and specific objects the user could search through (Employee Last Names, Employee First Names, Servers, Networks, etc.) followed by a text field. This text field should default to &quot;*&quot;. </span></p>
+<p><span class="style1"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> If there is only one search criteria on the page, mark the field as required with the required field icon (to the left of the drop-down list for the drop-down search field described above), and include the required field legend. If there are multiple search criteria on the page, do not make any of the individual fields required, but simply require that one or more fields have been entered when Search is clicked. </span></p>
+-->
+
+<!-- Liz's suggestions -->
+</span>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Provide wildcard functionality in the text field, if needed. Make it explicit by showing an asterisk in the text field by default.
+  <!-- ----------------- -->
+</p>
+<p class="style2">Here is an example of a minimal global Advanced Search in a main window. </p>
+<p class="style2"><img src="search_graphics/12.2.1.1a.png" alt="Global Advanced Search in main window" width="807" height="382" border=1></p>
+<p class="style2">Here is another example of a global Advanced Search in a main window. Note the use of generic search elements.</p>
+<p class="style2"><img src="search_graphics/12.2.1.1.png" alt="Global Advanced Search in main window with additional fields" width=807 height=382 border="1"></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14>&nbsp;Where applicable, it may make sense to have total results to gather in addition to results displayed per page. </p>
+<h4 class="style2"><a name="12.2.1.2" id="12.2.1.2"></a>12.2.1.2 Global Advanced Search in Pop-Up 
+  Windows</h4>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14>&nbsp;In
+  applications with global advanced search where modality and context take priority
+  over window management issues, make Advanced Search dialog
+   pages open in a pop-up window.</p>
+<p class="style2">There are advantages and disadvantages to making Advanced Searchs appear 
+  in pop-up windows as opposed to in main windows. The product team must make 
+  the appropriate decision regarding which model will best fit user needs. 
+  If the dialog page opens in a pop-up window, the advantages are that the user 
+  does not lose her primary task's context while doing the search, a left pane 
+  dedicated to contextual help can be made available, and the dialog page is modeless.</p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ In applications with Global Advanced Search where users are likely to use
+search as a secondary task make Advanced Searchs open in a pop-up
+window.</p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+ If Advanced Search opens in a pop-up window, provide left-pane help.</p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  If left-pane help is not provided, consider providing inline help on the page
+    instead, possibly including a link to online help (opening the Help window)
+    where detailed help is provided.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When Advanced Search opens in a pop-up window, reiterate the default 
+  scope of the advanced search in the left-pane help, or if left-pane help is 
+  not offered, in the page inline help.</p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> Provide wildcard functionality in the text field, if needed. Make it explicit by showing an asterisk in the text field by default. </p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  In the help provided, try to clarify the uses of syntax equivalents in search 
+  elements.</p>
+<p class="style2">Here is an example of global advanced search in a pop-up window. Note the use of generic search elements.</p>
+<p class="style2"><IMG src="search_graphics/12.2.1.2.png" alt="Global Advanced Search in Pop-Up Window" width=612 height=451></p>
+<h3 class="style2"><a name="12.2.2" id="12.2.2"></a>12.2.2 Adding Scoping to Advanced Search</h3>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide scoping in the global Advanced Searchs of all applications where 
+  users might need to exclude some area or areas of the application from the search.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  To provide simple scoping, use a drop-down list box. Make the first (default)
+     item "All" to represent global scope. Make the rest of 
+  the items represent local scopes.</p>
+<p class="style2">Here is an example of a global Advanced Search with a drop-down list box for simple scoping:</p>
+<p class="style2"><IMG src="search_graphics/12.2.2a.png" alt="Global Advanced Search With Scoping" width=833 height=449></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  To provide complex scoping, use checkboxes representing local areas of the application. By default,
+   have all the checkboxes checked to represent global scope.</p>
+<p class="style2">Here is an example of a global Advanced Search with checkboxes for complex scoping:</p>
+<p class="style2"><IMG src="search_graphics/12.2.2b.png" alt="Global Advanced Search With Complex Scoping" width=833 height=449></p>
+<p class="style2">Complex scoping allows users to have more control over excluding areas of the 
+  application from the search. For example, users can do the search in three out 
+  of six local areas of the application rather than just pick one or all areas.</p>
+<h3 class="style2"><a name="12.2.3" id="12.2.3"></a>12.2.3 Contextual Advanced Search </h3>
+<p class="style2">Contextual advanced search is a special type of advanced search in that it is purely local in scope. In addition, contextual 
+  advanced search offers very context-specific elements in addition to generic 
+  search elements. An example of a context-specific element is a drop-down 
+  list box that allows the user to specify a particular alarm severity level. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide contextual advanced search in applications where the need for context-specific 
+  searching outweighs the need for global advanced search.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> Do
+  not use contextual advanced search where the context is limited to a single
+  table on a single page, and where results are best shown in that same
+  table on that same page. For such cases, use   <a href="09-tables.html#9.5.1.2">9.5.1.2
+  Custom Table Filtering</a> instead.</p>
+<p class="style2">The current design does not allow for the use of contextual advanced search and global advanced
+  search in the same 
+    application.</p>
+<p class="style2">Design issues regarding global advanced search and contextual advanced search 
+  are still being explored.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When Advanced Search opens in a main window, reiterate the default scope 
+  of the advanced search, if any scope limitations exist, in the page inline help.</p>
+<p class="style2">Here is an example of a local Advanced Search in a main window. Note the use of contextual search elements.</p>
+<p class="style2"><IMG src="search_graphics/12.2.3.1.png" alt="Contextual Advanced Search in Main Windows" width=807 height=382 border="1"></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When Advanced Search opens in a pop-up window, reiterate the default 
+  scope of the advanced search in the left-pane help, or if left-pane help is 
+  not offered, in the page inline help.</p>
+<p class="style2">Here is an example of a local Advanced Search in a pop-up window. Note the use of contextual search elements.<IMG src="search_graphics/12.2.3.2.png" alt="Contextual Advanced Search in Pop-Up Windows" width=920 height=494></p>
+<h2 class="style2"><a name="12.3" id="12.3"></a>12.3 Search Results</h2>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  Show
+  the results of a quick search in a main window or in a pop-up window.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  Show
+  the results of an advanced search in the same window in which the search query
+  was entered.</p>
+<p class="style2">For instance, the results of an advanced search in a pop-up window must reload 
+  that Advanced Search with search results in the same pop-up window.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> When the user clicks on one of the search results, change to that object being displayed in the main browser window and bring that window to the front. However, the search  popup remains open in the background for further use until closed. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If search results are displayed in a pop-up window, but the user clicks on a Search 
+  button again in a main window, surface and reuse the pop-up window that 
+  is already open. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Search results pages must follow the guidelines for secondary-content pages (see <A href="03-windows-pages_Secondary-Content-Pages.html">3.8 
+  Secondary-Content Pages</a>).</p>
+<p class="style2">Here is an example of a global quick Search Results page in a main window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.1.1.png" alt="Global Quick Search Results in Main Windows" width=633 height=448 border="1"></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Make the final scope of the search clear in the content page title of the search results 
+  secondary-content page. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Label the full search query "For Search Criteria:"</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Display the full query of the search using the syntax of the application's particular 
+  search engine. Separate each query item with a comma and a space. </p>
+<p class="style2">In a Search Query, here are some commonly used syntactic rules, taken from Google:
+<ul class="style2">
+	<li>Quotation marks are commonly used to denote exact phrase matches.</li>
+	<li>Plus signs are used to denote required search terms.</li>
+	<li>Vertical bars are used to denote the logical OR.
+	<li>Minus signs are used to denote matches to omit.</li>
+</ul>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide search results in a sortable table, and follow the guidelines for tables 
+(see <A href="09-tables.html#9.5.2">9.5.2 Table Sorting</a> and <A href="09-tables.html#9.1">9.1 General Table Guidelines</a>).</p>
+<p class="style2"> <IMG title=Requirement height=14 alt=Requirement src="Guidelines_Icons/Requirement.jpg" width=14> If
+  no results are produced from the user's search, provide the following text in the empty
+  table: "The search found no results. Try again by modifying your 
+search." See <A href="09-tables.html#9.1.3">9.1.3 Displaying Empty Tables</a>.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  Follow
+  table guidelines regarding pagination, titles, etc.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14"> For
+  searches yielding objects in an object-oriented design, label the first column
+  of the results table "Name." In
+  this column, include links to the matching objects' detail pages.</p>
+<h3 class="style2"><a name="12.3.1" id="12.3.1"></a>12.3.1 Global Quick Search Results</h3>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When the user does a global quick search, show the search results as illustrated 
+  in this section.</p>
+<p class="style2">Here is an example of a global quick Search Results page in a main window:</p>
+<p class="style2"><IMG src="search_graphics/12.3_12.3.1.png" alt="Global Quick Search Results with components identified" width=838 height=450></p>
+<h4 class="style2"><a name="12.3.1.1" id="12.3.1.1"></a>12.3.1.1 Global Quick Search Results 
+  in Main Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Restore the user's 
+    query within  the masthead's global quick search elements when re-rendering
+    the page.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a main window, provide a primary button labeled 
+  "Back to &lt;Short Page Name&gt;", where &lt;Short Page Name&gt; is a short name for the page the user was previously 
+  viewing before executing the search (see <A href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a><!--a href="02-visual.html#2.2"> 2.2 Font</a> and <a href="02-visual.html#2.1">2.1 
+  Color Palette</a-->). Since the number of search results will vary, and the buttons are on the same frame, typically a duplicate set of buttons will need to be provided at the top since the ones below may be off the screen. </p>
+<p class="style2">Here is an example of a global quick Search Results page in a main window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.1.1.png" alt="Global Quick Search Results in Main Windows" width=633 height=448 border="1"> <!--If there are no results from the user's search, show a pop-up alert with the following error: "Search found no results."
+
+Quick searches displaying results in a main window will display pop-up errors only, so that their entire primary task's context does not annoyingly get replaced with just an empty results table. (Reloading the page with an empty table isn't as harmful when showing advanced search results because advanced search requires that the user already be in a secondary window. Likewise, quick search results in a pop-up window does not disturb the user's primary tasks' context in a main window.) -->
+</p>
+<h4 class="style2"><a name="12.3.1.2" id="12.3.1.2"></a>12.3.1.2 Global Quick Search Results 
+  in Pop-Up Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Restore the user's
+   query within the global quick search components when re-rendering
+    the page. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a pop-up window, provide a primary button
+    labeled 
+  "Close" (see <A href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a>).</p>
+<p class="style2">Here is an example of a global quick Search Results page in a pop-up window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.1.2_12.3.2.2.png" alt="Global Quick Search Results in Pop-Up Windows" width=658 height=488></p>
+<h4 class="style2"><a name="12.3.2" id="12.3.2"></a>12.3.2 Local Quick Search Results</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When the user does a local quick search, show the search results as illustrated 
+  in this section.</p>
+<p class="style2">Here is an example of a local Quick Search Results page in a pop-up window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.2.png" alt="Local Quick Search Results with components identified" width=856 height=488></p>
+<h4 class="style2"><a name="12.3.2.1" id="12.3.2.1"></a>12.3.2.1 Local Quick Search Results in 
+  Main Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a main window, provide a primary button
+    labeled 
+  "Back to &lt;Short Page Name&gt;", where &lt;Short Page Name&gt; is a short
+  name for the page the user was previously  viewing before executing the search
+  (see <A href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a>). Since the number of search results will vary, and the button will be on the same frame, typically a duplicate button will need to be provided at the top since the one below may be off the screen. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Restore the user's query within 
+  the local quick search elements when re-rendering the page.</p>
+<p class="style2">Here is an example of a local quick Search Results page in a main window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.2.1.png" alt="Local Quick Search Results in Main Windows" width=650 height=485 border="0"></p>
+<h4 class="style2"><a name="12.3.2.2" id="12.3.2.2"></a>12.3.2.2 Local Quick Search Results in 
+  Pop-Up Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a pop-up window, provide a primary button
+    labeled 
+  "Close" (see <A href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a>).</p>
+<p class="style2">Here is an example of a local quick Search Results page in a pop-up window:</p>
+<p class="style2"><IMG src="search_graphics/12.3.1.2_12.3.2.2.png" alt="Local Quick Search Results in Pop-Up Windows" width=658 height=488></p>
+<h4 class="style2"><a name="12.3.3" id="12.3.3"></a>12.3.3 Advanced Search Results</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  When the user does an advanced search, show the search results as illustrated 
+  in this section.</p>
+<p class="style2"><IMG src="search_graphics/12.3.3.png" alt="Advanced Search Results with components identified" width=640 height=523></p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Restore the user's query within the advanced search elements  when re-rendering
+    the page. </p>
+<p class="style2">The search elements do not technically constitute a section in the advanced
+Search Results secondary-content page. The search elements are offered as a convenience 
+  for the user, and do not carry the same weight as the search results table. 
+  The search elements may be used if the user would like to do another search 
+  or to modify the current search without going to another window. 
+</p>
+<p class="style2">The search elements are also clearly separated from the search results table 
+  with a marked anchor &quot;Back to Top&quot; so that the user can easily jump to the search results should she want 
+  to reuse them.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide jump-to links to the search components directly under the page inline
+  help, left-align it, and label it "Modify Search."</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide page inline help if useful for the advanced search elements; use this
+    help to clarify that the user may modify the current search.</p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Provide "Search", "Reset", and either &quot;Close&quot; or &quot;Back to &lt;Short Page Name&gt;&quot; buttons at the bottom of the page. </p>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  Make the Search button a primary button. Make the Reset button and the Close or Back to &lt;Short Page Name&gt; button secondary buttons (see <A href="07-simple.html#7.1">7.1 Action Buttons</a>). Note that this is different from non-advanced search windows, where the only button at the bottom is Back or Close, and therefore Back or Close is the primary button. </p>
+<h4 class="style2"><a name="12.3.3.1" id="12.3.3.1"></a>12.3.3.1 Advanced Search Results in Main 
+  Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a main window, so the buttons at the bottom may not be visible, also provide a primary button
+     at the top labeled "Back to &lt;Short Page Name&gt;", where &lt;Short Page Name&gt; is
+     a short name for the page the user was previously  viewing before executing
+     the search (see <A href="07-simple.html#7.1.1">7.1.1 Primary Buttons</a>).</p>
+<p class="style2">Here is an example of an advanced Search Results page in a main window: </p>
+<p class="style2"><IMG src="search_graphics/12.3.3.1.png" alt="Advanced Search Results in Main Windows" width=650 height=756 border="1"></p>
+<h4 class="style2"><a name="12.3.3.2" id="12.3.3.2"></a>12.3.3.2 Advanced Search Results in Pop-Up 
+  Windows</h4>
+<p class="style2"><IMG title="Required Guideline" height="14" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" width="14">  
+  If the search results are displayed in a pop-up window, provide a primary button
+  labeled "Close".</p>
+<p class="style2">Here is an example of an advanced search results in a pop-up window. The window does not contain left-pane help.</p>
+<p class="style2"><IMG src="search_graphics/12.3.3.2a.png" alt="Advanced Search Results in Pop-Up Windows" width=658 height=735></p>
+<p class="style2"><IMG title="Advised Guideline" height=14 alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" width=14> 
+  If providing advanced search results in a pop-up window, consider providing left-pane help, as shown in the following example.</p>
+<p class="style2"><span class="style2"><IMG src="search_graphics/12.3.3.2b.png" alt="Advanced Search Results in Pop-Up Windows with left-pane help" width=710 height=736><br>
+</span></p>
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <span class="currentchapter">12&nbsp;Search</span>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

@@ -1,0 +1,903 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>13&nbsp;Wizards - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="13-wizards.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <span class="currentchapter">13&nbsp;Wizards</span>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="toc-level0"><a href="13-wizards.html#13">13 Wizards</a></p>
+
+<p class="toc-level1"><a href="13-wizards.html#13.1">13.1 Anatomy</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.1.1">13.1.1 Steps List 
+Anatomy</a></p>
+
+<p class="toc-level3"><a href="13-wizards.html#13.1.1.1">13.1.1.1 
+Branching Represented as Substeps</a></p>
+
+<p class="toc-level3"><a href="13-wizards.html#13.1.1.2">13.1.1.2 
+Branching Represented as Placeholder</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.1.2">13.1.2 Help in the 
+Left Pane </a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.1.3">13.1.3 Overview 
+Page </a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.1.4">13.1.4 Review Selections Page 
+</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.1.5">13.1.5 View Results 
+Page</a></p>
+
+<p class="toc-level1"><a href="13-wizards.html#13.2">13.2 Behavior</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.2.1">13.2.1 
+Basics</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.2.2">13.2.2 
+Backtracking</a></p>
+
+<p class="toc-level2"><a href="13-wizards.html#13.2.3">13.2.3 Finish Button 
+and View Results Page<br>
+</a></p>
+
+<p class="toc-level1"></p>
+
+<h1><a name="13"></a>13 Wizards</h1>
+<p>This chapter has separate sections for anatomy (<a href="13-wizards.html#13.1">13.1</a>) and 
+behavior (<a href="13-wizards.html#13.2">13.2</a>).</p>
+<p> A wizard is a series of two or more secondary-content 
+pages, each of which corresponds to a step or portion of a step in a user task. 
+A wizard leads the user through a task one step at a time, requesting a series 
+of responses and finally executing the task based on those responses. Except for 
+user responses, a wizard provides all the information needed to do the task. A 
+wizard's power comes from its dynamic nature: its ability to present different 
+information depending on what is entered by the user in the preceding step. 
+Wizards also expedite complex tasks by grouping steps into a single place.<!--StartFragment -->              
+</p>
+
+<p>
+<font face="Verdana, Arial, Helvetica, sans-serif" size="3">
+<img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"></font> 
+For sequences of two or more user input steps, 
+use a wizard designed according to the guidelines in this chapter. (The Review Selections 
+and View Results steps do not count as "user input" steps.)</p>
+<p>Note: The&nbsp;guidelines in this chapter are for 
+popup wizards only.&nbsp; Guidelines for inline wizards are currently being 
+developed and will be available in a later release.&nbsp; If you believe your 
+project requires an inline wizard, it must conform to the following three 
+guidelines which will be included in an upcoming version.&nbsp;</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p>
+<img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"><font color="#000000">&nbsp;</font>Inline wizards may only be used for one or two 
+  steps.&nbsp; Anything requiring more than two steps should use the regular 
+  popup wizard.&nbsp; </p>
+  <p>
+<img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"><font color="#000000">&nbsp;</font>Buttons on the first page must be Next and Cancel, 
+  while buttons on the second page must be Previous, 
+  Finish and Cancel.&nbsp; </p>
+  <p>
+<img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"><font color="#000000">&nbsp;</font>Subtitles should read "My Step Title (Step 1 of 2)" 
+  or "My Step Title (Step&nbsp;2 of 2)." </p>
+</blockquote>
+  
+<h2><a name="13.1"></a>13.1 Anatomy</h2>
+<p>All wizards have the same basic anatomy. Here is an example picture:</p>
+<p align="left"><img style="border: 0px solid ; height: 531px; width: 775px;" alt="Wizard with pointers to the different parts of the Wizard anatomy." src="wizards_graphics/panes_callouts.png" usemap="" title="" hspace="0"></p>
+<p align="left"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> Spanning the top of the 
+  wizard is the wizard title.<br>
+  <br><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;The left 
+pane contains Help and Steps tabs.&nbsp; <span style="color: purple;"><span style="color: rgb(153, 0, 255);"><font color="black">The Steps 
+tab must be the active (front, foreground) tab by default.&nbsp;&nbsp; 
+</font>            </span></span> </p>
+<p align="left">   
+<span style="color: purple;"><span style="color: rgb(153, 0, 255);"><font color="black">
+  <img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> If 
+there is no Help tab then display the Steps in a non-tabbed format.&nbsp; (Do 
+not display a single Steps tab.)&nbsp; See </font>            
+ <a href="11-help.html#11.3">11.3 Left-Pane Help</a><font color="black"> for information on the look and feel of a single pane window.&nbsp;</font></span></span>  </p>
+<p align="left">   
+      <span style="color: purple;"><span style="color: rgb(153, 0, 255);"><font color="black">   
+      <span style="color: purple;"><span style="color: rgb(153, 0, 255);">
+  <img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;</span></span>Steps must always be displayed in 
+the Steps/Help Pane, regardless of the number of steps in the 
+wizard.&nbsp;&nbsp; <br>
+      </font><br>   
+         
+           
+               
+               
+            
+            
+ </span></span>
+  <img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">     
+              
+              
+    The current step's contents appear in the right pane, which 
+  is referred to as the <em>content pane</em>.&nbsp; The topmost element in the 
+content pane is a subtitle uniquely identifying the step and its purpose.&nbsp; 
+The contents of the current wizard step appears below the wizard subtitle.</p>
+<p align="left"> <span style="color: purple;"><span style="color: rgb(153, 0, 255);"><font color="black"><span style="color: purple;"><span style="color: rgb(153, 0, 255);"><font color="black"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"></font></span></span>
+Format the content pane's subtitle as follows: "Step &lt;step
+number&gt;: &lt;current step's text as shown in the steps tab&gt;". For
+example, if the step is shown as "1.1 Specify QFS Type", the content
+pane's subtitle would be: "Step 1.1: Specify QFS Type". Although the
+format changes slightly, the step number and step text remain exactly
+the same between the steps tab and the content pane. See the image
+above for an illustration of this specific example. </font></span></span></p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14"> 
+ Provide step instructions under the wizard subtitle to give a simple direction for completing the 
+current  step. Note that detailed help information is to be placed on the help tab in the left pane.
+</p>
+
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> 
+      In the example picture above, the Previous button&nbsp;is 
+  disabled because <span style="color: #000000;">the current step is</span> the first step in the wizard.&nbsp;&nbsp;Likewise,&nbsp;the 
+  last step has a Finish button instead of a Next button.&nbsp; Middle steps 
+  of any&nbsp;wizard display Previous, Next, and Cancel buttons.&nbsp; Follow the guidelines 
+  for those buttons, in <a href="07-simple.html#7.1">7.1 Action Buttons</a>.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> &nbsp;The content area within 
+the wizard should be scrollable, if necessary. The height and width of both 
+the&nbsp;left and right panes are set to a percentage of the entire window's 
+height and width. If the content of either pane does not fit in the allotted 
+space, horizontal&nbsp;and/or&nbsp;vertical scrollbars&nbsp;should appear. The 
+scrollbars should appear in the left and/or right panes&nbsp;as needed.&nbsp; 
+<font color="black">Scroll bars should not appear if the content displays within 
+the default size of the pane.<br>
+<br>
+</font><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;<font color="black">The following list desc<span style="color: rgb(51, 102, 255);">r</span>ibes the sizing of the wizard window:</font> </p>
+<ul>
+  <li>The default wizard pop-up window size is 400 pixels tall by 600 pixels wide, but can be larger if needed. If you do resize the window, do so proportionately. For example, if you make the wizard 25% taller, you must also make it 25% wider. </li>
+  <li>A wizard pop-up window is resizable. If the wizard window is resized, the left pane (help/steps) and the right pane (content area) resize to maintain their original width ratio<s>s</s> of 30 to 70, respectively. </li>
+  <li>The wizard window must be smaller than the application's&nbsp;main browser window. </li>
+  <li><font color="black">The wizard window&nbsp;should open offset slightly to the right from the center of the screen.</font></li>
+</ul>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;On wizard steps containing 
+multiple entry fields, consider providing a Restore Defaults button. Do not 
+provide a Restore Defaults button on pages with only one or two entry fields. 
+The button must appear in the content area, above the Previous, Next, Finish, 
+and Cancel buttons, not horizontally in line with them. Follow the guidelines 
+for those buttons, in <a href="07-simple.html#7.1">7.1 Action 
+Buttons</a>.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Do not provide Reset 
+buttons in a wizard. This is just one particular case of the general prohibition 
+of Reset buttons everywhere, in wizards and non-wizards, secondary content pages and 
+primary content pages. </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;<!--StartFragment -->Allow 
+users to perform actions on the data presented in the wizard as long as those 
+actions do not take the user out of the wizard.&nbsp;</p>
+<p> An&nbsp;example of a type of&nbsp;permissible action is&nbsp;allowing 
+users to perform inline actions on objects in tables. The actual action is 
+performed by clicking the Next or Finish button (not by making&nbsp;the inline selection). 
+Another example of a permissible action is allowing the user to either select 
+one of a number of existing objects or to create a new object by entering the 
+name of that new object in the wizard. </p>
+<p>An example of&nbsp;an impermissible action in a wizard is a "New ..." 
+button&nbsp;on a table of objects that would take the user out of the context of 
+the task they are currently performing and into the context of creating a new 
+object. &nbsp;</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Any buttons in addition to 
+Previous, Next, Finish, and Cancel, must appear above those buttons in the 
+content area, not horizontally aligned with the Previous, Next, Finish, or 
+Cancel buttons. An example is the optional Restore Defaults button.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;<font color="black">Use 
+headline capitalization for step titles on both the left and right panes.&nbsp; 
+Use sentence capitalization for&nbsp;contextual help text, and step 
+instructions.</font>   
+             
+See <a href="02-visual.html#2.5">2.5 Text Capitalization</a>.&nbsp;&nbsp;&nbsp; </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Step titles should be 
+brief and to the point.&nbsp; Examples include "Select LUNs," "Confirm Volume 
+Mapping," and "Review Selections."</p>
+<h3><a name="13.1.1"></a>13.1.1 Steps List Anatomy</h3>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;When providing a steps 
+list in&nbsp;a wizard, you must use the design described in this section.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Put the steps list and contextual help each 
+in its own tabbed pane in the left pane. Label the steps list tab "Steps," 
+and make it the active (foreground) tab by default as shown below: </p>
+<div align="left">
+<p><img style="height: 474px; width: 635px;" alt="Example of a Wizard with left pane with steps only" src="wizards_graphics/wizard_chapter_stepsonly.png" title=""></p>
+</div>
+<p><font color="#ff0000"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"></font> Display the current step's 
+name in the steps list in a bold font. Prefix the step number with the arrow 
+glyph (<img alt="Arrow GIF" src="wizards_graphics/arrow.gif" height="11" width="13">) 
+available from <a href="02-visual.html#2.4.3">2.4.3, Icons, Glyphs 
+and Graphics Repository</a>.<br></p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> Make links of the visited steps' names in 
+the steps list<span style="text-decoration: line-through;"></span>, if possible.<br></p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> &nbsp;If the user   goes to a previous step, the 
+names of all the steps after that one cease to be links. This is true regardless 
+of how the user gets to that previous step (by clicking Previous button 
+in the right pane or by clicking that previous step's name in the steps 
+list).</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14"> Display <i>all</i>  the 
+steps' names in the steps list--previous, current, and future--unless any steps 
+branch. "Branch" means that the user's input in a step determines which of&nbsp;several 
+sequences of steps will be presented next. "Major step" means a step that has no 
+parent step; a major step is any step that is not a substep as defined by <a href="13-wizards.html#13.1.1.1">13.1.1.1 
+Branching Represented as Substeps</a>. Follow this decision tree to find out how 
+to display branching steps and their subsequent steps:<br></p>
+<ol>
+  <li><b>For a steps list that does not branch:</b> Display this step's name in the steps list. Do not display any 
+  steps as indented substeps of this step. Do not use a placeholder for the next 
+  step.<br>
+  </li><li><b>For a list of steps that does branch:</b><br><br>
+  <ol>
+    <li><b>If this is a <i>major</i> step </b>(not a substep), 
+    then:<br><b><br></b>
+    <ol>
+      <li><b>If any branch of this major step has its own branching step (in 
+      other words, a sub-substep),</b> then you must represent this <i>major</i> 
+      step's branching with the design in <a href="13-wizards.html#13.1.1.2">13.1.1.2 
+      Branching Represented as Placeholder</a>. This rule prevents sub-substep representations from 
+      occurring. The placeholder design represents the major step's branches as 
+      a placeholder for the undetermined steps. The placeholder is replaced by 
+      the actual steps after the branch fork is passed--after the branch path is 
+      chosen.&nbsp; (You are now done following this decision tree.)<br>
+      </li><li><b>If instead no branches of this major step have their own branching 
+      steps,</b> then:<br><br>
+      <ol>
+        <li><b>If all branches of this major step converge on the next major 
+        step</b>: In other words, the branching occurs only in the details 
+        <i>within</i> this step. Then you must use the design in <a href="13-wizards.html#13.1.1.1">13.1.1.1 
+        Branching Represented as Substeps</a>. This design represents each branch as a 
+        hidden set of substeps that appears indented in the list only after the 
+        branch is determined by the user's input to the major step. This design 
+        is preferable to the Placeholder design (see next bullet in this 
+        decision tree), and should be sufficient for most branching wizards. 
+        (You are now done following this decision tree.)<br>
+        </li><li><b>If instead the branches of this major step diverge at their 
+        ends</b>, and the paths have no steps in common after the branch, then 
+        you must use the design in <a href="13-wizards.html#13.1.1.2">13.1.1.2 
+        Branching Represented as Placeholder</a>. This design represents the 
+        branches as a placeholder for the undetermined steps. The placeholder is 
+        replaced by the actual steps after the branch fork is passed--after the 
+        branch path is chosen. This design may be used only if the substeps 
+        design (see previous bullets in this decision tree) cannot be used, 
+        because that substep design gives the user more information. (You are 
+        now done following this decision tree.)<br></li></ol></li></ol>
+    </li><li><b>If instead this branching step is already represented as an indented 
+    substep</b> as is defined by <a href="13-wizards.html#13.1.1.1">13.1.1.1 
+    Branching Represented as Substeps</a> (that is, it is not a major step): 
+    Then you must abandon the substep design for the parent, major step of this 
+    branching substep. You must instead represent that parent, major step with a 
+    placeholder as described in <a href="13-wizards.html#13.1.1.2">13.1.1.2 
+    Branching Represented as Placeholder</a>. 
+    Doing so will prevent this substep from being represented as an indented 
+    substep. (You are now done following this decision tree.)</li></ol></li></ol>
+<h4><a name="13.1.1.1"></a>13.1.1.1 Branching Represented as Substeps</h4>
+<p>This design represents each branch of a wizard's major step as a hidden set 
+of substeps that appears in the list only after the branch is determined by the 
+user's input to the major step. </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Use this substeps design for 
+a major step in the steps list, in these conditions:</p>
+<ul>
+  <li>A <i>major</i> step branches.&nbsp; 
+  </li><li>All branches of this step converge on the next step--the peer of this step 
+  that branches. In other words, the branching occurs only in the details 
+  <i>within</i> this step. (This design may not be used if the branches diverge; 
+  the placeholder design must be used instead. See <a href="13-wizards.html#13.1.1.2">13.1.1.2 
+  Branching Represented as Placeholder</a>.) </li></ul>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;This design is preferable to 
+the placeholder design (<a href="13-wizards.html#13.1.1.2">13.1.1.2 
+Branching Represented as Placeholder</a>), and should be sufficient for most 
+branching wizards. </p>
+<p>    In most cases where a major step branches, you can 
+contain the variable steps as substeps of one major step. Substeps appear only 
+as needed to accommodate selections made in a previous, branching, major 
+step. Grouping these substeps under a&nbsp;parent step allows the user to more easily get an 
+overview of the wizard, by displaying only the major steps when the wizard 
+is initially displayed. The substeps appear in the steps list only when the user 
+passes&nbsp;the branching point. The wizard has a corresponding page in the right pane for 
+both major steps and substeps.</p>
+<p>     The following 
+example sequence of three pictures illustrates the design of the substeps approach 
+to handling branching. In the first image, the user selects either the QFS&nbsp;or SAM-FS&nbsp;file system type. 
+If the user selects QFS, he must then specify which type of QFS. If the user 
+selects SAM-FS, he does not need to specify another filesystem parameter and thus 
+no substeps would appear. Therefore, the total number of steps that would appear in 
+the left pane cannot be known until the user makes this choice. Using 
+substeps allows the wizard to list all of the major steps (the flush left steps, 
+numbered 1-7) and still allow for this unknown factor.</p>
+<p><img style="width: 635px; height: 475px;" alt="First step in a sequence of three; this one illustrates the beginning of a branch." src="wizards_graphics/wizard_chapter_SubStep1.png" title=""> </p>
+
+<p>In the following picture, the user has selected QFS and has proceeded to 
+substep 1.1. In the steps list, that first substep is bold and preceded by the 
+arrow glyph.</p>
+
+<p><img style="height: 474px; width: 635px;" alt="Second step in a series of three steps; this one illustrates sub-steps." src="wizards_graphics/Step11_SubSteps2.png" title=""> </p>
+<p><font color="#000000">In the</font> following picture, 
+because the user has selected "Dual-Allocation," he must then specify which 
+percentages to allocate to each disk. Notice that in the list of steps, the 
+second substep is now bold and is prefixed with the arrow glyph.</p>
+
+<p><img style="height: 475px; width: 636px;" alt="Third step in a series of three steps; this one illustrates the second of two sub-steps." src="wizards_graphics/Step12_SubStep.png" title=""> </p>
+
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Follow these guidelines for 
+the substeps used to handle a branching major step.</p>
+<ul>
+  <li>For the major steps, follow the guidelines in <a href="13-wizards.html#13.1.1">13.1.1 Steps List 
+  Anatomy</a>.
+  </li><li>   Substeps are dynamic. They appear in 
+  the list of steps only if the user makes a selection that results in a&nbsp;substep.
+  </li><li><i>All</i>    of 
+  the substeps that correspond to a major step appear in the list of steps below 
+  the parent step when the user clicks the Next button&nbsp;from&nbsp;that major step. 
+  </li><li> Display the substeps in the list of steps beneath 
+  the parent step, bold and left-aligned with the first letter of the parent step. 
+  </li><li>Prefix each substep with the arrow glyph as you do the major steps: (<img alt="Arrow GIF" src="wizards_graphics/arrow.gif" height="11" width="13">).
+  </li><li>With regard to linking, follow the same guidelines 
+  for substeps as for major steps. 
+  </li><li>Users can click the Previous button in the content 
+  pane (the right pane) and step back through the substeps, just as they can 
+  major steps.</li></ul>
+<h4><a name="13.1.1.2"></a>13.1.1.2 Branching Represented as Placeholder</h4>
+<p>This design represents each branch in the steps list as a placeholder for the 
+undetermined steps before the branch is chosen. The placeholder is replaced by 
+the actual steps after the branch path is chosen. </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">   &nbsp;Use 
+the placeholder design&nbsp;only if all of these conditions are true:</p>
+<ul>
+  <li>A major step branches. 
+  </li><li>The substeps design cannot be used (<a href="13-wizards.html#13.1.1.1">13.1.1.1 
+  Branching Represented as Substeps</a>), because the branches diverge even at 
+  their ends, or because a substep would itself branch. </li></ul>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;This placeholder design is 
+less desirable than the substeps design (<a href="13-wizards.html#13.1.1.1">13.1.1.1 
+Branching Represented as Substeps</a>   ), because this 
+placeholder design provides the user with less information. The placeholder design is only a 
+fallback for use when the substeps design cannot be used.</p>
+<p>If a wizard's branch results in two sets of steps that are too divergent to 
+be handled by substeps as described in <a href="13-wizards.html#13.1.1.1">13.1.1.1 
+Branching Represented as Substeps</a>        
+  , display only the current and past steps in the left pane.&nbsp;Display 
+a placeholder&nbsp;after the last known step in the list to let the user know that 
+additional steps will appear once the fork is passed.</p>
+<p>In the following example sequence of two pictures, the Steps tab is displayed 
+by default in the left pane. As the user proceeds through the steps, previous and current steps are displayed, followed by 
+a placeholder. This placeholder indicates to the user that additional steps will 
+appear based on their choice or choices in the preceding step.</p>
+<div align="left"><font color="#000000"><a name="Placeholder"><img style="height: 475px; width: 636px;" alt="Displaying a placeholder for steps in a wizard." src="wizards_graphics/wizard_chapter_Overview.png" title=""></a> </font></div>
+<p>As the user proceeds to Step 3 and clicks the Next button, the placeholder disappears, 
+and the remaining steps are displayed in their entirety, as shown in this 
+resulting picture:</p>
+<div align="left">
+<p><font color="#000000"><a name="Placeholder"><img style="height: 475px; width: 636px;" alt="Once selection is made, the placeholder disappears and the remaining steps are displayed." src="wizards_graphics/wizard_chapter_bracket2.png" title=""></a></font></p>
+<p>
+</p><p><font color="#000000"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;When displaying a placeholder 
+in the left pane</font>, follow these guidelines:<br>
+</p>
+</div>
+<ul>
+  <li>In the list of steps, for the known steps, follow the guidelines in <a href="13-wizards.html#13.1.1">13.1.1 Steps List 
+  Anatomy</a> and <a href="13-wizards.html#13.1.1.1">13.1.1.1 
+  Branching Represented as Substeps</a>.
+  </li><li>In the list of steps, after the last known step, 
+  display a placeholder to indicate that additional steps will appear based on 
+  the user's choices in the preceding step. The placeholder must read "[Steps 
+  determined by choice(s) in the preceding step.]," but without the quote marks.
+  </li><li>  Once the user passes the branch, the placeholder disappears 
+  and the remaining steps are displayed in their entirety, as shown in 
+  the example pictures above. </li></ul>
+<h3><a name="13.1.2"></a>13.1.2 Help in the Left Pane</h3>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;When the user clicks the Help 
+tab in the left pane, contextual help for the current step is displayed by the 
+Help tabbed pane becoming active (coming to the foreground). If the user clicks 
+the Next button while the Help tab is selected, the Help tabbed pane displays 
+the help text for that next step (rather than the left pane reverting to the 
+Steps tab being active). </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Under no circumstances should 
+a wizard's left pane help contain links to destinations outside of that help 
+pane.&nbsp;</p>
+<p>See <a href="11-help.html#11.3">11.3 Left-Pane 
+Help</a>,&nbsp;for more information&nbsp;about left pane help in wizards specifically. In wizards 
+and other pop-up windows with help in their left pane, add inline help to the 
+right pane only if the left pane help does not suffice. See <a href="11-help.html#11.1.1">11.1.1 Deciding 
+Whether to Provide Inline Help</a>.</p>
+<p>In this example, the Help tab is active and contains help pertinent to the 
+current step:</p>
+<center>
+<p align="left"><font color="#000000"><img style="height: 475px; width: 636px;" alt="Wizard with help pane active." src="wizards_graphics/wizard_chapter_help.png" title=""></font></p></center>
+<h3><a name="13.1.3"></a>13.1.3 Overview Page</h3><font color="#000000">
+<p>    An Overview page provides a brief introduction to the 
+wizard and its steps.&nbsp;The Overview page is typically needed only in very complex wizards 
+or in wizards that don't immediately display a complete list of steps, but use 
+the steps placeholder. Overview pages can help users determine whether a wizard 
+meets their needs. In addition, an Overview page can inform users about the 
+effects of using the wizard.</p>
+<p><font color="#000000"><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14"></font>&nbsp;Use an Overview 
+page&nbsp;under any of these circumstances: </p>
+</font>
+<ul>
+  <li><font color="#000000">The wizard's left pane does not immediately display a complete list of 
+  steps, but uses the steps placeholder. 
+  </font></li>
+  <li><span class="style19"></span><font color="#000000">The wizard takes actions that might affect a user's system in 
+  unexpected ways. 
+  </font></li>
+  <li><font color="#000000">The wizard is very complex and providing an overview of that complexity 
+  might help the user perform their task more easily. 
+  </font></li><li><font color="#000000">The user may need to have certain pieces of information available to input 
+  into the wizard in order to perform this task. The overview page&nbsp;may act 
+  as a checklist of what to have prepared before the user begins their work. </font></li>
+</ul>
+<font color="#000000">
+<p>Here is an example of an Overview page:</p>
+</font>
+<div align="left"><font color="#000000"><img style="height: 475px; width: 636px;" alt="Example of a Wizard Overview page." src="wizards_graphics/wizard_chapter_Overview.png" title=""> </font></div><font color="#000000">
+<p></p></font>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Do not supply an Overview 
+page for simple wizards. In such cases, they only serve 
+as an unnecessary burden to the user. </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;The Overview step must be the first step in 
+a wizard (if you do provide an Overview step).</p>
+<p><font color="#000000"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Make the title of the step 
+"Overview." </font></p>
+<p><font color="#000000"><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">  Include these buttons in&nbsp;the 
+Overview</font> step: Previous, Next, and Cancel. (Disable the Previous button, 
+because the Overview step is the first step.)</p>
+<h3><a name="13.1.4"></a>13.1.4 Review Selections Page</h3>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;For wizards with three or more 
+user input steps, the Review Selections page is required.</p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;For wizards with only two user 
+input steps, adding a third step for a Review Selections page is optional. If one or 
+both of the steps are complex with a large amount of user input, the user might 
+benefit from a review of the information they have provided. Conversely, the 
+steps might be simple enough that a Review Selections page only adds an unnecessary step.</p>
+<p>Here is an example of a Review Selections page on a wizard that contained four user input steps:</p><font color="#000000">
+<p align="left"><img alt="Wizard with the Review step displayed." src="wizards_graphics/wizard_chapter_Review.png" style="width: 640px; height: 478px;"> </p></font>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;Where it makes sense and 
+adds value for the user, display empty values (those for which the user has input 
+no data) next to their corresponding labels for user inputs/selections. Do that 
+instead of omitting the label of inputs/selections that have been left blank, 
+from the display in the right pane of the Review Selections page. Seeing an empty 
+value may help 
+the user realize they had unintentionally left a field blank.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Make the title of the step "Review 
+Selections."</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Include these buttons in the Review 
+step: Previous, Finish, and Cancel. When the user clicks the Finish button 
+the task begins and the wizard closes or displays the View Results page if a 
+View Results&nbsp;step is provided.</p>
+<h3><a name="13.1.5"></a>13.1.5 View Results Page</h3>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;The View Results page is an optional 
+page that summarizes the work the wizard has performed and lists any actions 
+users should take after closing the wizard. For example, the View Results 
+page can display an error or warning message, a list of the objects that have 
+been updated, or a confirmation that the task has been accomplished.<br></p>
+<p>Here is an example of a View Results page for a successfully run wizard: <br></p>
+<p><img style="height: 475px; width: 636px;" alt="Wizard with the Results step displayed." src="wizards_graphics/wizard_chapter_Results.png" title=""> </p>
+
+<p>Here is an example of a View Results page for a failed wizard that contains an 
+inline error alert informing the user of the failure<span class="style22">, the cause of the failure, and steps to take to correct the error. </span><br>
+<span style="color: red;"></span><br>
+<img style="height: 475px; width: 636px;" alt="Wizard with Results step displayed and Wizard failure inline error alert." src="wizards_graphics/wizard_chapter_Results_Error.png" title=""> </p>
+<p>Here is an example of a View Results page for a partially failed wizard that 
+contains an inline warning alert informing the user of the partial failure, the 
+cause of the failure, details about what failed and what was 
+successful<span class="style22">, and steps to take to correct the error</span>:<br>
+</p>
+<p><img style="height: 474px; width: 635px;" alt="Wizard with Results step displayed and inline warning alert." src="wizards_graphics/wizard_chapter_Results_Warning.png" title=""> </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Make the title of the step "View 
+Results."</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;For a failed wizard include an 
+error message on the View Results page that informs the user of the cause of the 
+failure and<span class="style22">, if possible, steps the user can take to correct the error.</span><br>
+&nbsp;<br>
+<img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;For a partially failed wizard 
+include a warning message on the View Results page that informs the user of 
+the cause of the partial failure and includes details about what failed and what was 
+successful. <span class="style22">If possible, also include steps the user can take to correct the error.</span></p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Include only a primary Close button 
+on the View Results page. Do not provide a Previous button.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Unlink the step names in the steps 
+list as soon as the View Results page appears.</p>
+<center>
+<div align="left">
+<h2><a name="13.2"></a>13.2 Behavior</h2>
+<p>This section of guidelines describes wizard behavior in these basic 
+circumstances:</p>
+<ul>
+  <li><font color="black">Multiple instances of a 
+  wizard</font> 
+  </li><li>First pass through wizard
+  </li><li>User did not backtrack to previous steps with the Previous button
+  </li><li>Use of the Cancel button</li>          
+</ul>
+<center>
+<div align="left">
+<p>  More complex circumstances are addressed in the following 
+sections:</p></div></center>
+<ul>
+  <li>
+  <a href="13-wizards.html#13.2.2">13.2.2 Backtracking</a>
+  </li><li><a href="13-wizards.html#13.2.3">13.2.3 Finish Button and View Results Page</a></li>
+</ul>
+<p>In this section, the term "validation error" means an error on a user input control on one particular 
+step. For example, a wizard for creating an object might have a field 
+in which the user must enter a name for the new object, and the user might enter 
+a name containing illegal characters.&nbsp;This would cause a validation error.&nbsp; </p>
+<p>  The "validation errors"  referenced in these guidelines include malformed individual entries, 
+illegal combinations of entries in the same step, and values that 
+are illegal based on the value of a previous step. Most required 
+input controls require a non-blank, non-null value before they qualify as 
+having a valid setting. Some required input controls accept blank or null values 
+as valid, but in those cases the blank or null value is one of the choices that 
+the user must explicitly make or enter, to distinguish them from the absence of 
+user preference for a value. </p>
+<p>              
+ Optional input controls need not have any value to qualify as valid.&nbsp; If an 
+optional control does have a value, that value must be legitimate.&nbsp; The user can 
+eliminate a validation error state in an optional control either by removing 
+that value and leaving no value, or by changing the value to a legitimate 
+one.<br></p>
+<h3><a name="13.2.1"></a>13.2.1 Basics</h3>
+<center>
+<div align="left">
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;<font color="black">Multiple instances of the same wizard should not be 
+allowed.&nbsp; If a user tries to launch a wizard that is already in 
+progress,&nbsp;switch&nbsp;focus to that&nbsp;existing wizard.&nbsp; If a wizard 
+is running, do not disable the button that would launch the wizard but rather 
+bring focus to the existing wizard.&nbsp;&nbsp;<!--StartFragment --> Disabling the button may 
+cause problems as it  <font face="'PrimaSans BT,Verdana,sans-serif'"><span style="text-decoration: line-through;"></span>often&nbsp;becomes difficult to determine when the button should be re-enabled 
+and can get "stuck" in a</font></font>  disabled state.<font color="darkorchid"> </font>      
+             
+             
+    </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Entries made in any step 
+may only affect a wizard's future steps, never previous steps. That is, allow 
+previous steps to influence later steps, but do not allow later steps to 
+influence previous steps. In particular:</p>
+<ul>
+  <li>Do not change the identities or contents of previous steps because the 
+  user enters something in a later step. 
+  </li><li>Determine
+the validity of a user's entry in a step only on the basis of the
+entries in that and previous steps. Entries in later steps must not
+cause heretofore valid entries in previous steps to become invalid. If
+the user makes an entry in the current step, and that entry clashes
+with an entry in a previous step, mark only the current step's entry as
+invalid. In some cases this may indicate a flaw in the design of the
+wizard and the step sequence should be revisited. </li></ul>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;Check the validity of 
+each input control as soon as the input focus leaves that control, if checking 
+at that time makes sense.&nbsp;When it does 
+not make sense, defer validity checking until the user clicks that step's Next 
+or Finish button. Shifting the input focus away from a control is not a 
+foolproof sign that the user thinks that control's value is final. Clicking the 
+Next or Finish button is the only foolproof sign. </p>
+<ul>
+  <li>Check when focus changes, only if that control's value can be validated in 
+  isolation from the values of all other controls in that step. That's because 
+  the current values in the other controls might not yet be what the user 
+  intends. 
+  </li><li>Defer checking if the user might want to leave that control's setting 
+  partially complete while setting other controls in this or previous steps. 
+  Often users take advantage of their random access to all the controls in this 
+  and previous steps, to make their settings non-sequentially. 
+  </li><li>Defer checking if you are uncertain whether the user thinks they are done 
+  making a setting when they shift the focus. </li></ul>
+<p>When a wizard has a Review Selections&nbsp;step (which by definition
+contains the Finish button), all the user input is known before the
+Review Selections&nbsp;step is displayed so all validations and
+confirmations should be done before the Review Selections&nbsp;step is
+displayed.&nbsp; However, simple two-step wizards&nbsp;may not always
+have a Review Selections&nbsp;step. Consequently, they have input
+controls on the same page as the Finish button so clicking the Finish
+button may be the system's first signal that it is time to validate or
+confirm the input.</p>
+<p>In some cases the wizard cannot accurately predict 
+validity of the input until the wizard's actions actually execute upon the 
+Finish button's click. One cause is that the system conditions have changed in 
+the time lag between the preliminary validation and the click of the Finish 
+button. Another cause is that validation depends on responses from system 
+components that cannot respond to hypothetical actions.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">      
+     &nbsp;When the user clicks the Next or Finish button 
+on a step's page:</p>
+<ul>
+  <li>Immediately check the validity of that step's input, 
+  if possible.
+  </li><li>If the current step's input controls have validation errors, keep that page displayed 
+  while showing the usual validation error messages. Do not proceed to 
+  the next page, do not jump to the View Results page, and do not close the 
+  wizard. In other words, treat each step page as you would a non-wizard page, 
+  following the guidelines in <a href="14-alerts.html#14.2">14.2 JavaScript 
+  Alerts</a>, regardless of whether a step page has a Next button or a Finish 
+  button. 
+  </li>
+  <li>If there are no validation errors on that step then either display the next step 
+  if the Next button was clicked, or follow the guidelines in <a href="13-wizards.html#13.2.3">13.2.3 Finish Button 
+  and View Results Page</a> if the Finish 
+  button was clicked.</li></ul>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;When the Next button is 
+clicked, do not validation check the next step's page before 
+displaying it.</p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;When the user clicks the&nbsp;Finish button, optionally display an alert to inform them that they are about to 
+commit an action that is irreversible, for example, the deletion or 
+reconfiguration of an object or objects. Use such an alert with care. 
+Understandably, users might be irritated if constantly asked to confirm the same 
+actions. In some cases, inline text that informs the user of the impending 
+action is sufficient, but usually a JavaScript alert window is more appropriate. 
+Follow the guidelines in <a href="14-alerts.html">14 Alerts and 
+Messages</a>.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;If the application session 
+times out, the wizard window remains open. However, the entire window's contents 
+are replaced with a full-page alert telling the user that the session has timed 
+out. The full-page alert contains a Close button on the bottom right. This 
+guideline for wizards is just one particular case of the more general guideline 
+for all pop-up windows. See <a href="03-windows-pages_Popup_Windows.html">3.2 Pop-Up 
+Windows</a>.<br>
+<br><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;When displaying error 
+messages, give users error messages that offer fixes.&nbsp; For example, provide 
+an error message with a button for each of the several possible ways for fixing 
+the error.&nbsp; If that is not possible, then at least tell users how to fix 
+the problems, by offering concrete, specific action advice in error and warning 
+messages.&nbsp; For example, tell users exactly which step had the problem, and 
+offer suggestions for fixing it. One example of such an error message might 
+read, "In step 2, the value you have entered for Capacity is too high to be 
+supported by the virtual disks you have selected in step 3. To fix this problem, 
+either enter a lower Capacity value in step 2 or select additional virtual disks 
+in step 3". 
+</p>
+<p> 
+           
+              
+              
+             
+            
+              
+               
+                
+              
+    <font color="#ff0000"><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14"><font color="#000000">&nbsp;When a user selects the Cancel button, display a pop-up 
+confirmation only if the wizard is complex enough to warrant concern that data 
+might be lost.&nbsp; If the wizard is simple, a pop-up confirmation is not 
+necessary.&nbsp; In either case (complex or simple wizards), do not display a 
+confirmation if the wizard is closed during the first step.&nbsp; </font></font><br> 
+</p>
+<h3><a name="13.2.2"></a>13.2.2 Backtracking</h3>
+<p>This section supplements <a href="13-wizards.html#13.2.1">13.2.1 Basics</a>, 
+to cover what happens when the user backtracks to previous steps by clicking the 
+Previous button, and moves forward again with the Next button.</p>
+<div align="left">
+<p>Additional and more complex circumstances are addressed by the later section 
+<a href="13-wizards.html#13.2.3">13.2.3 Finish Button 
+and View Results Page</a>.</p></div></div></center>
+<center>
+<div align="left">
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;If the user clicks the 
+Previous button, display the previous step even if the current step has 
+validation error indicators or undetected validation errors. Clicking the 
+Previous button does not cause a validation check of the current 
+step.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">  &nbsp;Visiting previous 
+steps shows those steps with all their values intact from the last visit in this 
+session of wizard use, regardless of whether any changes have been made in 
+subsequent steps. </p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;User entries are saved from 
+page to page. If the user enters information on a wizard's page and clicks Next, 
+Previous, or a visited step, then that information on the page being left is 
+saved implicitly. <br></p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Changing a previous step's 
+values and clicking that step's Next button requires the same wizard 
+branching decisions that must be made if this were the first pass through the 
+wizard. Consequently, the sequence of the subsequent steps might change. The 
+following two guidelines apply to two circumstances:<b><br></b></p>
+<ol>
+  <li><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;If the previous step's 
+  change does <i>not</i> cause the sequence of subsequent 
+  steps to change, then the subsequent steps must retain the values they had 
+  when last visited, even if those values are now invalid.&nbsp;          
+               
+        
+  <ul>
+    <li>Invalid values will be flagged as erroneous as soon 
+    as each subsequent step appears (see guideline farther below).<br></li></ul>
+  </li><li><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;If instead the previous 
+  step's change causes the sequence of subsequent steps to change, consider 
+  replacing all the values in those subsequent steps with default values, making 
+  this re-traversal unfold as if the user had never before been to these steps. 
+  The reversion to default values happens even if the user's previously entered 
+  values would still be valid. The reversion begins with the first step whose 
+  identity differs from the step that was in that sequence spot before the 
+  change. Once a step reverts to its default values, all steps after that one 
+  also revert to default values. 
+  <ul>
+    <li>This recommendation is strongest if the new sequence of steps qualifies 
+    as a drastically new context for the user deciding on the values. 
+    <ul>
+      <li>That can be true even if the component steps of that sequence happen 
+      to be the same as before, and so merely are in a different order. The 
+      inconvenience of reentering some of the same values is outweighed by 
+      reducing the risk of the user blithely accepting prior values that are no 
+      longer appropriate. Values might be inappropriate from the user's point of 
+      view even if they are valid from the system's point of view. So the 
+      system's validity checking is not sufficient to warn the user about what 
+      values should be reconsidered. </li></ul>
+    </li><li>This recommendation is weakest if the change in sequence makes no 
+    difference in the desirability of the prior values. 
+    <ul>
+      <li>For example, suppose the only change in a sequence 
+      is elimination or injection of one step, and that that step's values have 
+      no consequence for the desirability of the values in the remaining steps. 
+      If the user had spent a lot of time entering those subsequent steps' 
+      values in the prior traversal, the user would be inconvenienced at having 
+      to reenter them.</li></ul></li></ul></li></ol>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;Clicking a<i> previous</i> 
+step name that is a link in the steps list, is equivalent to clicking the 
+sequence of Previous buttons in the right pane to get to that step. The same 
+guidelines apply.</p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;When a previous step is 
+displayed, all the subsequent step names in the steps list become unavailable 
+for clicking and do not have the link appearance. This happens regardless of how 
+the user gets to a&nbsp;previous step, either by clicking its name in the 
+steps list or by clicking the Previous button.</p>
+<h3><a name="13.2.3"></a>13.2.3 Finish Button and View Results Page</h3>
+<p>This section supplements <a href="13-wizards.html#13.2.1">13.2.1 Basics</a> 
+and <a href="13-wizards.html#13.2.2">13.2.2 
+Backtracking</a>, to cover what happens when the Finish button is 
+clicked.</p></div></center>
+<center>
+<div align="left">
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">  &nbsp;If the Finish 
+button's page also has other user input controls, then when the Finish button 
+is clicked first follow the guidelines above for validation checking and 
+error displaying when a Next or Finish button is clicked. Only then should the wizard 
+execute.&nbsp; Be sure to&nbsp;follow the guidelines below regarding the Finish 
+button.</p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;When the user clicks the Finish button, 
+optionally display an alert to inform them that they are about to commit an 
+action that is irreversible; for example, the deletion or reconfiguration of 
+an object or objects. This alert should be displayed&nbsp;immediately after the Finish 
+button is clicked but before the wizard's action is initiated. Use such an alert 
+with care as&nbsp;users might become irritated if repeatedly asked to confirm 
+the same actions. In some cases, inline text that informs the user of the 
+impending action is sufficient but usually a JavaScript alert window is more 
+appropriate. Follow the guidelines in <a href="14-alerts.html">14 Alerts and Messages</a>.</p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;If a request for 
+confirmation of the wizard's action is displayed after the Finish button is 
+clicked, display the confirmation message in a self-contained secondary-content 
+page, not as part of the wizard. For a wizard that is in a pop-up window the 
+message should appear in a JavaScript window.</p>
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;After the Finish 
+button is clicked, if a progress indicator is justified display it in the 
+Results page of the wizard.</p>
+<ul>
+  <li>This is for "synchronous" actions, for which it makes sense to leave the 
+  wizard displayed while the action is being executed by the system. 
+  </li><li>If instead an action will take so long that the user will be bothered by 
+  the wizard remaining displayed, that is an "asynchronous" action. Asynchronous 
+  actions are finished as far as the wizard is concerned, as soon as those 
+  actions are successfully begun, such as jobs submitted. Subsequent progress of 
+  asynchronous actions such as jobs must not be shown in the wizard, but instead 
+  in a separate progress indicator. </li></ul>
+<p> Non-wizards need other places to display progress indicators.&nbsp; 
+But wizards have a ready-made place for progress indicators, so you should 
+consider using it instead of creating another place.<br></p>
+<p><img title="Required Guideline" alt="Required Guideline" src="Guidelines_Icons/Requirement.jpg" height="14" width="14">&nbsp;If the wizard did not 
+perfectly execute after the Finish button was clicked, then display the error 
+messages in the View Results page. But:</p>
+<ul>
+  <li>This is for "synchronous" actions, for which it makes sense to leave the wizard 
+  displayed while the action is being executed by the system, so that failure 
+  messages can be displayed in the View Results page. 
+  </li><li>If instead an action will take so long that the user will be bothered by 
+  the wizard remaining displayed, that is an "asynchronous" action. Asynchronous 
+  actions succeed as far as the wizard is concerned, as long as those actions 
+  are successfully begun, such as jobs successfully submitted. Subsequent 
+  failure of asynchronous actions must not be shown in the wizard, but elsewhere 
+  such as a separate progress indicator. </li></ul>
+  
+<p><img title="Advised Guideline" alt="Advised Guideline" src="Guidelines_Icons/Recommendation.jpg" height="14" width="14">&nbsp;A given wizard within a given product should either always have a View Results 
+page or never have a View Results page, regardless of that wizard's success or failure.<p></p>
+ 
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <span class="currentchapter">13&nbsp;Wizards</span>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

@@ -1,0 +1,77 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Add and Remove Idiom Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt"> Add and Remove Idiom</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is sample HTML and javascript for the horizontal and vertical versions of the add-remove idiom specified in <a href="../../08-complex.html#8.2">8.2 Add-and-Remove Idiom</a>. The behavior specified in the javascript mostly conforms to the behavior set forth in the guidelines, but differs in a few key ways. See the release notes below for the details. The same HTML and javascript is used for all browsers, although there are some minor differences in the styles defined in the style sheets.</p>
+<p>The Add and Remove idiom can appear in two orientations, horizontal and vertical. Within these orientations, there are other variations depending on the buttons to be included (see table below for required vs. optional buttons) and an option to include a meta-label (shown in the horizontal orientation image below). The buttons are grouped by function such that buttons with similar functions are close together and those with dissimilar functions are separated by additional white space. Basically, there are 3 possible groups: Add functions, Remove functions and Move functions.</p>
+<table class="info-table" border="1" cellpadding="5" cellspacing="0" title="">
+  <tr>
+    <th><strong>Button</strong></th>
+    <th><strong>Status</strong></th>
+    <th><strong>Grouping</strong></th>
+  </tr>
+  <tr>
+    <td>Add</td>
+    <td>Required</td>
+    <td>By itself or with Add All</td>
+  </tr>
+  <tr>
+    <td>Add All</td>
+    <td>Optional, required if Remove All included</td>
+    <td>With Add</td>
+  </tr>
+  <tr>
+    <td>Remove</td>
+    <td>Required</td>
+    <td>By itself or with Remove All</td>
+  </tr>
+  <tr>
+    <td>Remove All</td>
+    <td>Optional</td>
+    <td>With Remove</td>
+  </tr>
+  <tr>
+    <td>Move Up</td>
+    <td>Optional, required if Move Down included</td>
+    <td>With Move up </td>
+  </tr>
+  <tr>
+    <td>Move Down</td>
+    <td>Optional, required if Move Up included</td>
+    <td>With Move Down</td>
+  </tr>
+</table>
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Add Remove examples: [ <a href="http://webdev2.sun.com/example/faces/addremove/AddRemove.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>The text labels on the list boxes also use the &lt;label&gt; tag to support accessibility. To use this feature the id for each of the list boxes must be set, and this id must be referenced by the label. See the label tag for more details on the use of this tag.</p>
+</body>
+</html>

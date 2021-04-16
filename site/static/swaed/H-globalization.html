@@ -1,0 +1,824 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>Appendix H - Globalization Requirements - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="H-globalization.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <span class="currentchapter">Appendices</span>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+
+<br>&nbsp;</p>
+<p><strong><a href="appendices.html">Appendices</a> &gt; </strong>Appendix H</p>
+
+<h1 class="style2">Appendix H - Globalization Requirements </h1>
+
+<h2 class="style2"><a name="H-1" id="H-1"></a>H-1 Introduction</h2>
+
+<p class="style2">In software development, <i>internationalization</i> is the process of writing 
+  an application that is suitable for the global marketplace, taking into account 
+  variations in regions, languages, and cultures. Internationalization usually 
+  requires the separation of component text from code to ease the process of translation. 
+  <!-- These collections of separated text components are often referred to as resource bundles. More specifically, resource bundles refer to the place where an application retrieves its locale-specific data. -->
+  A related term, <i>localization</i>, refers to the process of customizing an 
+  application for a particular language or region. Localization usually involves 
+  translation and often requires changes to colors, fonts, keyboard usage, number 
+  formats, and date and time formats. In this appendix, the term <i>globalization</i> 
+  refers to the combined tasks of internationalization (that is, i18n) and localization 
+  (that is, l10n).</p>
+
+<span class="style2">
+<!--
+
+		<p>A general comment about universal design: Making one product with the same interface for the entire world will mean some sacrifices in usability for specific localities and cultures. This is a known trade-off. The alternative is to have many customized interfaces and task flows designed for various markets around the world. For most products, this is fiscally unrealistic. In some cases, companies prefer to maintain a standard look regardless of where the product is sold. If your company plans to localize the product, including images, for every market the product is sold into, then you don't need to consider universal design for the visual aspects of the user interface. But the architectural considerations will still be the same, since the goal is to create a single code base for easy maintenance.</p>
+
+-->
+
+</span>
+<p class="style2">An application that has not been effectively globalized is not only harder for international users to use, but might also be perceived as insensitive to their needs. In recognition of the importance of globalization, Sun mandates product internationalization and localization on its products. Key elements of this are:</p>
+
+<ul class="style2">
+  <li>All Sun-developed products must be fully internationalized as a prerequisite 
+    for shipment. Internationalization is budgeted as part of the product planning 
+    process. </li>
+  <li>All third party products shipped by Sun must be fully internationalized 
+    as a prerequisite for shipment. </li>
+  <li>Products must be categorized for localization commensurate with user demands 
+    and the broadest possible market coverage. </li>
+</ul>
+
+<p class="style2">Offering a comprehensive set of requirements for dealing with global differences 
+  is impossible. Therefore, the goal of this appendix is to provide a set of guidelines 
+  for application developers to help them become more aware of potential trouble 
+  areas. These guidelines cover layout and orientation, localized elements, and 
+  data formats. Also included is a section concerning testing and verification.</p>
+<p class="style2 style3">Additional information can be found in <a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a></p>
+<h2 class="style2"><a name="H-2" id="H-2"></a>H-2 Layout and Orientation</h2>
+
+<p class="style2">When laying out your application, keep in mind that the application will be affected by localization. You must consider a number of factors so that the appearance and functionality of your application can adapt properly to the end user's locale. Factors include reading order, word order, sort order, font considerations and data entry fields.</p>
+
+<h3 class="style2"><a name="H-2.2" id="H-2.2"></a>H-2.1 Word Order</h3>
+
+<p class="style2"><s><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"></s> 
+  Use a label and UI element pair to construct the User 
+  Interface. Avoid using UI control elements in the middle of complete sentences. 
+</p>
+<p class="style2">Keep in mind that word order varies among languages, as shown in the following 
+  example. A drop-down menu that appears in the middle of an English sentence 
+  does not translate properly in French, where the adjective should come after 
+  the noun. (The correct French sentence is &quot;Utilisez une Fl&egrave;che Rouge.&quot;)</p>
+
+<p class="style2"><img src="globalization_graphics/issues-order-badNEW.gif" width="417" height="46"></p>
+
+<p class="style2">The following example corrects the problem by using a label before the drop-down menu. This format works well in both English and French.</p>
+
+<p class="style2"><img src="globalization_graphics/issues-order-goodNEW.gif" alt="Image of good, language-neutral GUI" width="431" height="76"></p>
+
+<p class="style2">More details are provided in <a href="http://global.eng/Compliance/i18nl10nbigrules.html">H-4.2 
+  Data Presentation</a>.</p>
+
+<h3 class="style2"><a name="H-2.3" id="H-2.3"></a>H-2.2 Sort Order</h3>
+
+<p class="style2">Sorting of objects is locale sensitive. For example, in many European languages, sorting is commonly based on alphabetical order (which also varies from one language to another). In other languages, sorting might be based on phonetics, character radicals, the number of character strokes, and so on.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;You must use the collation tools provided by your toolkit to ensure that sorting is performed properly for the locale in which your application will operate.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14">&nbsp;You 
+  can use the collator classes provided in the Java&trade; 2 SDK to enable the sorting of strings by locale. The Collator class 
+  in the java.text package enables locale-sensitive string sorting.</p>
+
+<h3 class="style2"><a name="H-2.4" id="H-2.4"></a>H-2.3 Font Considerations</h3>
+
+<p class="style2">Fonts are closely coupled with the locale in which the application operates. Although there are fonts that support many languages, often, the font must be localized for proper appearance of the application in different locales.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;You should always ensure that any fonts that you specify in your application can be localized.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Be sure to provide user control over font size in your application.</p>
+
+<p class="style2">The guidelines above allow the application to be easily tested with a much 
+  larger font, which can be a measure of how well it will adapt to different locales. 
+  Many languages, such as Japanese, German, and Dutch often require substantially 
+  more space (in the same font size) to express the same idea as in English. Other 
+  languages, such as Chinese, might require substantially less space than English 
+  to express the same idea. The size of fonts is also an important consideration 
+  for users with visual limitations.</p>
+<p class="style2">Languages across the globe use many different alphabets. 
+  Some alphabets require more horizontal space, more vertical space, or both, 
+  than others. Languages using an alphabet such as Latin, Cyrillic, Hebrew and 
+  German, tend to expand horizontally. For instance, the word &quot;Cancel&quot; 
+  is written as &quot;Abbrechen&quot;' in German. The German word is one and a 
+  half times the length of the English word, and the length can sometimes double. 
+  Many Asian languages tend to expand vertically. The characters used in these 
+  languages are often simply taller than the letters of the English alphabet and 
+  may require a much larger point size for legibility than the characters of the 
+  English alphabet. The characters used in these languages are represented by 
+  different <i>charsets</i>, or character encoding schemes. Applications must 
+  be aware of the charset that is in use, and be able to display text and accept 
+  user entries using any of the supported charsets. Since the height and length 
+  of text varies across the globe, these differences must be accounted for when 
+  internationalizing your application.</p>
+<p class="style2">The best way to handle font changes is to specify them 
+  in cascading style sheets. This way, localizers can change the fonts in one 
+  place to affect the entire application.</p>
+<p class="style2">Keep in mind that as text expands, page layout can be 
+  affected. Try to design your page such that text expansion does not completely 
+  alter the page layout. (See <a href="H-globalization.html#H-2">H-2 Layout and Orientation</a> for 
+  more information.)</p>
+
+<p class="style2">When considering how to handle text for internationalization, 
+  one of the most important tasks is to isolate the text so that it can be easily 
+  identified and localized. To do this, place text in resource bundles. Graphics 
+  files can also be placed in resource bundles (see section <a href="H-globalization.html#H-3.2.1">H-3.2.1 
+  Icons and Images</a>).</p>
+
+<h3 class="style2"><a name="H-2.5" id="H-2.5"></a>H-2.4 Data Entry Fields</h3>
+
+<p class="style2">Data entry fields in your application should anticipate locale-specific entries. 
+  Expressing a certain idea can require a greater or lesser number of characters 
+  based on the end user's language. In addition, fields for data such as zip code, 
+  social security number, and so on will require different sizes and formats in 
+  different locales and cultures. Be sure to leave enough space to accommodate 
+  locale-specific entries. Consult with the localization teams about any data 
+  entry fields that you think might be culturally or linguistically sensitive. 
+  For more details, see <a href="H-globalization.html#H-4">H-4 Data Formats</a>.</p>
+
+<h2 class="style2"><a name="H-3" id="H-3"></a>H-3 Localized Elements</h2>
+
+<p class="style2">Elements that need to be localized include:</p>
+
+<ul class="style2">
+
+  <li>Text </li>
+
+  <li>Icons, images, and color </li>
+
+  <li>Sound </li>
+
+</ul>
+
+<p class="style2">These elements are discussed in the following sections.</p>
+
+<h3 class="style2"><a name="H-3.1" id="H-3.1"></a>H-3.1 Text</h3>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use 
+  resource bundles to make your text easier to localize.</p>
+
+<p class="style2">The following list identifies the kinds of text in your interface that must be localizable:</p>
+
+<ul class="style2">
+
+  <li>Alert messages </li>
+
+  <li>Breadcrumbs </li>
+
+  <li>Button labels</li>
+
+  <li>Checkbox labels </li>
+
+  <li>Content page titles </li>
+
+  <li>Drop-down list labels and items </li>
+
+  <li>Field labels </li>
+
+  <li>Field separators </li>
+
+  <li>Help text </li>
+
+  <li>Links </li>
+
+  <li>Radio button labels </li>
+
+  <li>Scrolling list label and items </li>
+
+  <li>Table titles and table data </li>
+
+  <li>Tabs </li>
+
+  <li>Tree nodes </li>
+
+</ul>
+
+<p class="style2">User interface elements, themselves, must also account for internationalization. 
+  This topic is covered in more detail in <a href="H-globalization.html#H-4.1">H-4.1 Variable Elements 
+  and Entry Fields</a>.</p>
+
+<p class="style2">Note that a product name displayed in the masthead is not a textual element. It is an image displaying text and it is <i>not</i> translated (for more details, see <a href="04-masthead.html">Chapter 4, Mastheads</a>).</p>
+
+<h4 class="style2"><a name="H-3.1.2" id="H-3.1.2"></a>H-3.1.2 Guidelines for Composing Internationalized 
+  Text</h4>
+
+<p class="style2">You can negatively or positively affect the internationalization of the text in your interface by the choice of words and phrases used in your interface. Following are some guidelines to help you create text that is appropriate for localizing.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use standard typographical conventions for titles and sentences within your application. When the text is localized, the translators can adopt the standards to use in each target locale.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Do not use words or phrases that have culturally-defined meanings. Most jargon, slang, marketing terms, and humor do not translate well.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Check with translators before using acronyms and abbreviations in the user interface. These items are often not translated and must, therefore, be internationally acceptable or replaced with more appropriate terms.</p>
+
+<h3 class="style2"><a name="H-3.2" id="H-3.2"></a>H-3.2 Graphics: Icons, Images, and Color</h3>
+
+<h4 class="style2"><a name="H-3.2.1" id="H-3.2.1"></a>H-3.2.1 Icons and Images</h4>
+
+<p class="style2">Icons and images must be considered carefully. Images that make sense in one locale might not carry the same meaning, or might even be offensive, in another locale. For example, since the shape and size of a mailbox varies across locales, it would be difficult to arrive at a single image that represents a mailbox for users in different locales. Although the concept of &quot;mailbox&quot; might make sense to represent an email application, getting this meaning across graphically might not be easy.</p>
+
+<p class="style2">It is particularly difficult to depict everyday objects, holidays, and seasons in a universally understood graphic image.</p>
+
+<p class="style2">Creating multiple versions of localized graphics is costly. An example of an 
+  image that works well globally is an image of airplane that is used to represent 
+  an airplane. This image works because the concept of an airplane is shared across 
+  locales. Additionally, the image in this case is being used to represent its 
+  literal meaning, not a culturally-defined meaning.</p>
+
+<p class="style2">When this strategy is not possible, try to get input from international sources when creating your graphics. If an image that works across your target locales cannot be found, plan to define locale-specific graphics.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use globally understood graphics, whenever possible.</p>
+
+<p class="style2">Images with text almost always have to be localized. When text is used in graphics, 
+  considerations for text expansion and font-size changes should be made in the 
+  image. However, this could potentially detract from the image. Additionally, 
+  localizers should receive a version of the graphic separated from the text. 
+  Users of Adobe&#8482; Photoshop may accommodate this recommendation through 
+  the use of layers, which takes more time and effort, and increases cost.</p>
+
+<p class="style2">Only text that does not need to be translated, such as the product name displayed in the masthead, should be included in an image.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Do not include text within graphic images or icons.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Avoid using graphics that might be offensive in some locales, including:</p>
+
+<ul class="style2">
+
+  <li>Images that contain numbers. Different connotations are associated with numbers in different locales. For example, in the United States, the number 13 has an unlucky connotation; in both Japan and Hong Kong, the number 4 connotes death. </li>
+
+  <li>Images of human figures and body parts. Stick figures with no clothes, no hands with fingers, and no hair are the only acceptable form for a human figure. Clothing and hair styles vary greatly across cultures.</li>
+
+  <li>Images of faces. Depictions of certain facial expressions, nontraditional gender dynamics, and uncovered skin can be offensive to users in some locales. </li>
+
+  <li>Images containing hand gestures. A gesture that is appropriate or meaningful in one locale can be offensive or meaningless in another locale. </li>
+
+  <li>Images that represent a play on words. Puns and rhyme don't translate well. </li>
+
+  <li>Images of animals. Just as the image of a dog to represent food would be unsettling to most people in the United States, the image of a cow in the same context can offend people in India. </li>
+
+</ul>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Put graphics in resource bundles so that translators can find and change them easily, if necessary.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Make sure that the meaning you associate with an icon is as literal as possible. Avoid culturally-defined meanings.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Do not use a single icon to represent multiple meanings within your application.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Show 
+  proposed icons and images to sales people and users in target locales to get 
+  feedback from them.</p>
+<p class="style2">Note that a product name displayed in the masthead is 
+  not a textual element. It is an image displaying text and it is <i>not</i> translated 
+  (for more details, see <a href="04-masthead.html">Chapter 4, Mastheads</a>).</p>
+
+<h4 class="style2"><a name="H-3.2.2" id="H-3.2.2"></a>H-3.2.2 Color</h4>
+
+<p class="style2">Color has different meanings in different cultures. For example, red is considered a celebratory color in some countries, while in others it is associated with death. As another example, in some cultures, white is associated with death. In the United States, it is associated with purity. Because of these differences, user interface colors should be chosen carefully and, preferably, by visual designers who have been educated in the meaning of colors in various cultures.</p>
+
+<p class="style2">It is also important to define and adhere to a consistent color palette within an application, set of applications, or entire product line. Doing so enables users to grow accustomed to the way color is used within an application or set of applications, and attribute the appropriate meaning to the use of the color. For example, if red is defined to mean error, it should be used as such consistently throughout the application or set of applications.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use the color palette defined in <a href="02-visual.html#2.1">2.1 Color Palette</a> for your primary color palette.</p>
+
+<h3 class="style2"><a name="H-3.3" id="H-3.3"></a>H-3.3 Sound</h3>
+
+<p class="style2">A sound can be meaningful in some countries, but not in others. For example, a game show buzzer sound for an incorrect answer is well known to people in the United States, but it can simply be a noise with no meaning to people in other countries.</p>
+
+<p class="style2">Additionally, sounds that are generated when a mistake is made can be embarrassing if other people are nearby.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If sounds are included in your user interface, provide a variety of options for the sound, allowing users to select the desired sound or to turn sound off altogether.</p>
+
+<h2 class="style2"><a name="H-4" id="H-4"></a>H-4 Data Formats</h2>
+
+<p class="style2">When localizing an application, present the information to the user in a format that is meaningful to them. In the case of certain data formats such as dates and monetary currency, the application developer has to plan for these differences.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Applications must:</p>
+
+<ul class="style2">
+
+  <li>Provide a flexible layout for varying numeric format. </li>
+
+  <li>Supply a user interface with localized proper numeric formatting. </li>
+
+  <li>Keep graphic representations of units to a minimum. </li>
+
+</ul>
+
+<h3 class="style2"><a name="H-4.1" id="H-4.1"></a>H-4.1 Variable Elements and Entry Fields</h3>
+
+<p class="style2">Fixed elements are not the only portions of the user interface that change order or expand with use in other languages. User entry areas also need more space for the data they receive. Making the elements flexible for localization is not enough. English products are often sold all over the world, and the user interface included with an English product must accommodate entry data from all over the world. In other words, the user interface can be in English, but the fields need to be locale-specific in format and order. In addition, application developers must consider the implications of a universal data entry field structure. For example, if a product allows the user to enter a date in a short format, how should the entry area appear?</p>
+
+<p class="style2">The problem with forcing a date format is that it is not universal. Even calendars are not universal. As a shortcut, it is not uncommon for some applications to limit their capacity to the Gregorian calendar. But the mm/dd/yy format so common in the United States is not used anywhere else, and is very confusing.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Allow a user in a known locale to enter a date format commonly used in that locale. </p>
+
+<p class="style2">If there is no way to know the locale, then the only acceptable universal date format is yyyy-mm-dd. The separator may be changed to a dot (.), or possibly a slash (/), but the rest of the fields must be in the specified order.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Another possible solution to the format issue is to provide users with a choice of formats, for example, in a preferences area. This way, you can display the chosen format next to the field, and know exactly how to parse the date format entered by the user.</p>
+
+<h3 class="style2"><a name="H-4.2" id="H-4.2"></a>H-4.2 Data Presentation</h3>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Determine data field lengths by function, whenever possible, rather than hard-coding a single, assumed value.</p>
+
+<p class="style2">Strings and currency values expand when localized, and data in other languages 
+  may require more space. Imagine the price of something 
+  expressed in Turkish Lira (the Turkish currency till 2005) which was over TRL 
+  1,500,000/USD 1.00. </p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Use and store messages in entire phrases; do not build them from pieces.</p>
+
+<p class="style2">This guideline includes user interface phrases formed by drop-down menu choices or numeric values in combination with fixed text. Word order and grammar change drastically from language to language. You may use placeholders for information that comes from the system (for example, file names, available disk space) as long as they can be reordered. If you do so, add comments in the resource file as to what the placeholders represent.</p>
+
+<p class="style2">In addition, sentence order changes with different languages. Not only does the order change, but the phrase breaks change as well. So, simply allowing reordering might not be enough for a translation to look correct. For example, it is tempting to construct a calendar entry edit screen as follows:</p>
+
+<p class="style2"><img src="globalization_graphics/wordorderi18NEW.png" alt="Schedule (drop down list) Appointment on (drop down list) Monday at (drop down list) 8 (drop down list) am" width="395" height="35" border="1"></p>
+
+<p class="style2">However, most languages would have to rearrange the fields, and some (in this 
+  case, the am/pm) are superfluous and need to be removed. An additional example 
+  is provided in <a href="H-globalization.html#H-2.1">H-2.1 Word Order</a>.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Do not include a particular sentence order as part of the design.</p>
+
+<h3 class="style2"><a name="H-4.3" id="H-4.3"></a>H-4.3 Numbers</h3>
+
+<p class="style2">Numbers are commonly displayed using the Arabic numeral system; that is, digits 0-9. However, the convention to group the digits of a number varies from one culture to another. For example, in the U.S., a comma is used to separate digits into groups of three, for example, 10,000,000, whereas in France, the separator is a dot. In Japan, digits are separated into groups of four.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline">&nbsp;Make sure that your user interface allows numbers to be grouped as appropriate when localized.</p>
+
+<h3 class="style2"><a name="H-4.4" id="H-4.4"></a>H-4.4 Currency</h3>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Make sure entry areas are large enough to handle longer text entries.</p>
+
+<p class="style2">The convention for displaying monetary value varies from one country to another; 
+  that is, the currency symbol and the position of the currency symbol. For example, 
+  to represent 5 U.S. dollars and 45 cents, you place the dollar symbol before 
+  the value--$5.45. In some locales, the currency symbol can appear after the 
+  value or even between the integral and fractional designations; for example, 
+  Portuguese 5$45 represents 5 escudo and 45 centavos.</p>
+
+<h3 class="style2"><a name="H-4.5" id="H-4.5"></a>H-4.5 Units of Measure</h3>
+
+<p class="style2">Units of measurement can also vary from one locale to another. Standard metric units for length, volume, and weight include meters, liters, and grams. Standard imperial units include feet, ounces, and pounds. However, other region-specific measurements exist.</p>
+
+<p class="style2">Clothing sizes change from region to region. For example, a U.S. ladies' dress size 10 is a U. K. size 14, and a U.S. ladies' shoe size 8 is a European size 39. Paper sizes change, packaged quantities change, temperature scales change. Anytime a measurement unit is involved, it is likely to vary in different locales.</p>
+
+<h3 class="style2"><a name="H-4.6" id="H-4.6"></a>H-4.6 Address Forms</h3>
+
+<p class="style2">Other field types that should be considered very carefully are names, addresses, and telephone numbers. Data formats are usually locale-specific, culture-specific, or both. Once again, English products are sold all over the world, so just making the arrangement localizable is not enough.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;If the interface must be customized for the product to function properly, then create several locale profiles that can be loaded based on the user's locale. Or, less optimally, make it easily user customizable, and inform the customer that they are expected to customize the product for the locale.</p>
+
+<p class="style2">A user registration form usually contains space for a name, address, and telephone number. Each country has different conventions for presenting this information.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;To make user registration work internationally, you have to provide as generic a form as possible. Leave space that localizers can use for country-specific customizations.</p>
+
+<p class="style2">If you use HTML forms for these entry fields, localizers can easily customize them by editing the HTML source. If you use Java applets for these entry fields, you need to provide the localizer with a way to customize them.</p>
+
+<h4 class="style2"><a name="H-4.6.1" id="H-4.6.1"></a>H-4.6.1 Names</h4>
+
+<p class="style2">The number of given names, 
+  the order of the given name (usually the same as the first 
+  name) and the surname (mostly the same as the last name), and the terms by which 
+  these names are refered to may differ from 
+  country to country. </p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Most 
+  people have at least one given name (first name) and one surname (last name), 
+  provide two entry fields, one for a given (first) 
+  name and one for a surname (last name). (In 
+  some countires, the given name is not the same as the first name. )</p>
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">If 
+  you need to know a middle name, use an optional field. </p>
+<h4 class="style2"><a name="H-4.6.3" id="H-4.6.3"></a>H-4.6.2 Address Fields</h4>
+
+<p class="style2">The content and order of addresses differs from country to country. </p>
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Provide address1, address2, city or town, state or province, country, and postal/zip 
+  code to account for the variances in address formats across the globe. </p>
+
+<blockquote class="style2">
+
+<table border="1" cellpadding="4" cellspacing="0">
+
+  <tr>
+
+    <td>Address1</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Address2</td>
+
+  </tr>
+
+  <tr>
+
+    <td>City/Town</td>
+
+  </tr>
+
+  <tr>
+
+    <td>State/Province</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Country</td>
+
+  </tr>
+
+  <tr>
+
+    <td>Postal Code</td>
+
+  </tr>
+
+</table>
+
+</blockquote>
+
+<p class="style2">&nbsp;</p>
+
+<p class="style2">Addresses can vary from one culture to another. The following table provides examples of different address formats.</p>
+
+<table border="1" cellpadding="5" cellspacing="0">
+
+  <tr>
+
+    <td valign="top" class="style2"><strong>Country</strong></td>
+
+    <td valign="top" class="style2"><strong>Format</strong></td>
+
+    <td valign="top" class="style2"><strong>Notes</strong></td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" class="style2">China</td>
+
+    <td valign="top" class="style2">[&lt;Country&gt;]<br>
+
+&lt;Province&gt; &lt;City&gt;<br>
+
+&lt;Address1&gt;<br>
+
+&lt;LastName&gt; &lt;FirstName&gt;<br>
+
+&lt;Honorific&gt;</td>
+
+    <td valign="top" class="style2">
+
+      <p>&lt;Province&gt;, which is represented by two uppercase letters in parentheses, is used only if the city is not a province capital. The line with &lt;Country&gt; should use a negative indent.</p>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" class="style2">Italy</td>
+
+    <td valign="top" class="style2">&lt;Title&gt; &lt;FirstName&gt; &lt;LastName&gt;<br>
+
+      [&lt;CompanyName&gt;]<br>
+
+      &lt;Address&gt;      <br>
+
+      [blank line]<br>
+
+      [&lt;Country&gt;]</td>
+
+    <td valign="top" class="style2">
+
+      <p>Numbers, for example, house numbers, are always at the end of &lt;Address&gt; for example, via Palmanova 12.</p>
+
+      <p>An optional blank line between &lt;Address&gt; and &lt;Country&gt; makes the address easier to read.</p>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" class="style2">Russia</td>
+
+    <td valign="top" class="style2">[&lt;Country&gt;]<br>
+
+&lt;PostalCode&gt;<br>
+
+      [&lt;State or Republic&gt;] [&lt;Region&gt;] &lt;City&gt;<br>
+
+&lt;Address1&gt;<br>
+
+&lt;Address2&gt;<br>
+
+      [&lt;CompanyName&gt;]<br>
+
+&lt;LastName&gt;<br>
+
+&lt;FirstName&gt; &lt;SecondName&gt;</td>
+
+    <td valign="top" class="style2">
+
+      <p>The &lt;State or Republic&gt; and &lt;Region&gt; fields are only used in the following cases:</p>
+
+      <ul>
+
+        <li>Letter is sent to another state </li>
+
+        <li>City is not the capital of the region, for example, Moscow Region, Zvenigorod </li>
+
+        <li>Letter is sent from another state to a city that is not a regional capital, in which case both the name of the state and the name of the region are indicated, for example, Russia, Moscow Region, Zvenigorod </li>
+
+      </ul>
+
+      <p>If &lt;FirstName&gt; and &lt;SecondName&gt; contain only initials followed by periods, it is more appropriate to include these fields on the same line with &lt;LastName&gt;, for example, LastName A. B.</p>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" class="style2">Denmark</td>
+
+    <td valign="top" class="style2">[&lt;Honorific&gt; &lt;Title&gt;]<br>
+
+&lt;FirstName&gt; [&lt;SecondName&gt;]<br>
+
+&lt;LastName&gt;<br>
+
+      [&lt;CompanyName&gt;]<br>
+
+&lt;Address1&gt;<br>
+
+&lt;Address2&gt;<br>
+
+      [&lt;CountryCode&gt;]<br>
+
+&lt;PostalCode&gt;&lt;City&gt;<br>
+
+      [&lt;Country&gt;</td>
+
+    <td valign="top" class="style2">
+
+      <p>Some countries have very special requirements if sending mail outside the country; Denmark is an example of this.</p>
+
+      <p>The first and second lines can appear in reverse order, that is, &lt;CompanyName&gt; on the first line and &lt;Honorific&gt; to &lt;LastName&gt; on the second.</p>
+
+      <p>There are two spaces between &lt;PostalCode&gt; and &lt;City&gt;. The postal code is four digits, without a separator.</p>
+
+      <p>If mail is sent from abroad to Denmark, the prefix &quot;DK-&quot; (&lt;CountryCode&gt; plus one hyphen) is added to &lt;PostalCode&gt;.</p>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td valign="top" class="style2">Finland</td>
+
+    <td valign="top" class="style2">[&lt;Title&gt;] &lt;FirstName&gt; [&lt;SecondName&gt;] &lt;LastName&gt;<br>
+
+      [&lt;CompanyName&gt;]<br>
+
+&lt;Address1&gt;<br>
+
+&lt;Address2&gt;<br>
+
+&lt;PostalCode&gt; &lt;City&gt;<br>
+
+      [&lt;Country&gt;]</td>
+
+    <td valign="top" class="style2">
+
+      <p>Some countries have special requirements, depending on the mail recipient; Finland is an example of this.</p>
+
+      <p>The personal name appears first if the letter is of a personal nature, but the company name appears first in a business letter.</p>
+
+    </td>
+
+  </tr>
+
+</table>
+
+<span class="style2" style="font-size: 9pt;">From: <i>Rhind, Graham, Global Sourcebook of Address Data Management: A Guide to Address Formats and Data in 194 Countries, Gower, 1999.</i></span>
+
+<h4 class="style2"><a name="H-4.6.4" id="H-4.6.4"></a>H-4.6.3 Telephone</h4>
+
+<p class="style2">The format and number of digits in a telephone number vary from country to country, and even from city to city in some countries. Provide one long entry field, and allow localizers to customize the label name and length.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not hard code the expected length or format of phone 
+  numbers. Allow for the user to be able to </p>
+<ul class="style2">
+  <li>use different formats</li>
+  <li>use alphabets and numbers</li>
+  <li>use various forms of punctuation </li>
+</ul>
+<p class="style2">while providing the phone number. </p>
+<p class="style2">The input field should be flexible enough to accept all 
+  of these, and an underlying process should be able to filter out punctuation 
+  etc. as appropriate. </p>
+<h3 class="style2"><a name="H-4.7" id="H-4.7"></a>H-4.7 Dates and Times</h3>
+
+<p class="style2">Each culture has its own format, structure and ordering in date and time formats. For instance, in Asian locales, AM/PM string will usually appear before hour and minute digits and century number will appear as the first component of a date/time string. On the other hand, in Western European countries, time is either in 24-hour format or the AM/PM string usually appears after the hour and minute digits and the century number usually appears last. For more detail on standards for representing dates, see ISO 8601.</p>
+
+<p class="style2">Due to such differences, if multiple date/time formatting conversion specifications are used to create a single date/time string, such as &quot;%a %b %e %T %Z %Y&quot;, and cannot be localized, in many cases, the formatted date/time string would not be acceptable or correct for certain cultures. For instance, the above format string will give the following output for American English, Japanese, Simplified Chinese and French locales, respectively:</p>
+
+<p class="style2"><img src="globalization_graphics/date1.gif" width="218" height="69"></p>
+
+<p class="style2">While the first one would be acceptable for American English locale users, for other locales, more culturally correct and acceptable ones would be:</p>
+
+<p class="style2"><img src="globalization_graphics/date2.gif" width="294" height="70"></p>
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;Application 
+  software must be able to format and display the time and date data according 
+  to local cultural conventions. </p>
+
+<h4 class="style2"><a name="H-4.7.1" id="H-4.7.1"></a>H-4.7.1 Calendar Presentation</h4>
+
+<p class="style2">The conventions to express time, date, and calendar data 
+  tend to vary by country and language. For example, the date November 22, 1999 
+  is displayed in the mm/dd/yyyy format in the United States as 11/22/1999, but 
+  in the United Kingdom, it is displayed in dd/mm/yyyy format as 22/11/1999. The 
+  ISO 8601 standard describes time formats. This standard has been widely adopted 
+  in Europe.</p>
+<p class="style2">The conventions for expressing time also differ, with varying formatting schemes 
+  using AM/PM, 24-hour clock, and designations for Daylight Saving Time.</p>
+<p class="style2">Even though most of the locales support the Gregorian 
+  calendar by default, many locales support additional calendars. For example, 
+  the Japanese locale supports the Emperor Era calendar as well as the Gregorian 
+  calendar.</p>
+<p class="style2">Even conventions such as the first working day of the 
+  week can vary between countries. While most Western countries consider Monday 
+  as the first working day, in the Middle East, Sunday is considered to be the 
+  first working day. This can be important when displaying calendar appointment 
+  data.</p>
+<p class="style2"><s><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"></s>&nbsp;Application 
+  software must be able to format and display calendar data according to local 
+  cultural conventions. </p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;The assumptions about these formats must not be embedded in the application software.</p>
+
+<p class="style2">Software that provides interfaces for formatting these data according to cultural conventions or for modifying these cultural conventions is considered a provider. Software that takes advantage of the provider functions is a consumer.</p>
+
+<p class="style2">Time and date information is commonly passed in protocols. Many transactions passed through protocols require a date and time stamp; for example, financial transactions, email messages, and status messages. In most cases, the information is passed using the coordinated universal time (UTC), sometimes referred to as Greenwich Mean Time (GMT). Local time zone information is then managed at the client level for display and input. The time is converted to UTC before using the protocol. In some situations, the protocol takes the time zone information as either part of the time format, as an offset to UTC, for example, or as a separate parameter.</p>
+
+<h3 class="style2"><a name="H-4.8" id="H-4.8"></a>H-4.8 URLs</h3>
+
+<p class="style2">&quot;There are restrictions about which characters are valid in a URL. For 
+  a fuller discussion, see the World Wide Web Consortium (W3C) site <a href="http://www.w3.org/"><font face="monospace">http://www.w3.org/</font></a></p>
+
+<h3 class="style2"><a name="H-4.9" id="H-4.9"></a>H-4.9 HTML tags</h3>
+
+<p class="style2">Generally, HTML tags are enclosed in angle brackets, &quot;&lt;&quot; and &quot;&gt;&quot;, and are not translatable.</p>
+
+<p class="style2"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">&nbsp;The following attributes might need to be localized:</p>
+
+<blockquote class="style2"> Hyperlinks<br>
+
+  Internet Link: &lt;a href=&quot;/&quot;&gt; ... &lt;/a&gt;<br>
+
+  Mail Link: &lt;a href=&quot;mailto:XXX@sun.com&quot;&gt; ... &lt;/a&gt; </blockquote>
+
+<p class="style2">You cannot translate Internet URL and email addresses, but you can localize them by replacing them with the appropriate local contacts. This is a matter of product policy rather than translation.</p>
+
+<h2 class="style2"><a name="H-5" id="H-5"></a>H-5 Testing and Verification</h2>
+
+<p class="style2">For resources on globalization, including source material, sample code, testing tools, and useful links, see <a href="http://www.sun.com/developers/gadc/i18ntesting/checklists/index.html"><font face="monospace">http://www.sun.com/developers/gadc/i18ntesting/checklists/index.html</font></a></p>
+
+<span class="style2">
+<!--
+
+		<h2><a name="I-6"></a>I-6 Current Infrastructure</h2>
+
+-->
+
+</span>
+<h2 class="style2"><a name="H-6" id="H-6"></a>H-6 Additional Resources</h2>
+
+<ul>
+
+  <li class="style2"><font color="#9900CC"><a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a></font></li>
+
+  <li class="style2">Sun's Global Application Developers Corner: http://www.sun.com/globalization/</li>
+  <li class="style2">W3C Internationalization Activity: <a href="http://www.w3.org/International/"><font face="monospace">http://www.w3.org/International</font></a></li>
+  <li class="style2">An annotated bibliography at World Ready:  <a href="http://www.world-ready.com/biblio.htm"><font face="monospace">http://www.world-ready.com/biblio.htm</font></a></li>
+
+</ul>
+
+<p>&nbsp;</p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <span class="currentchapter">Appendices</span>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>
+

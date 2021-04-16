@@ -1,0 +1,57 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spacer Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+          <td class="Mst2TtlTd" width="99%">
+            <div class="Mst2TtlTxt"> Spacer</div>
+          </td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is sample HTML for a very simple utility tag that simply creates a specified amount of vertical and horizontal &quot;white space&quot;. The idea is that the tag will allow developers to specify three things:</p>
+<ul>
+  <li>Vertical Space - in pixels (defaults to 1 pixel)</li>
+  <li>Horizontal Space - in pixels (defaults to 1 pixel) </li>
+  <li>Whether the tag should force a line break and occupy its own line - (default is no)</li>
+</ul>
+<p>This tag simply stretches a 1px x 1px transparent gif to the specified size. If the tag is specified to force a line break, the image is placed inside a &lt;div&gt; tag. Because the gif is transparent, the image will pick up the background color of whatever its parent container is (e.g., the page, a table cell, etc.). To ensure that screen readers ignore the image, its alt attribute must always be set as follows: alt=&quot;&quot;</p>
+<p>So if the developer specifies 20px of vertical and a line break, the tag would set down something like this:</p>
+<blockquote>
+  <p> &lt;div&gt;&lt;img src=&quot;../suntheme/images/other/dot.gif&quot; width=&quot;1&quot; height=&quot;20&quot; alt=&quot;&quot;&gt;&lt;/div&gt;</p>
+</blockquote>
+<p>If 10 pix of horizontal were specified, the tag would lay down something like this: </p>
+<blockquote>
+  <p>&lt;img src=&quot;../suntheme/images/other/dot.gif&quot; width=&quot;10&quot; height=&quot;1&quot; alt=&quot;&quot;&gt;</p>
+</blockquote>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>Several implementation alternatives were evaluated in prior releases before deciding upon the spacer gif approach. These included the following:</p>
+<ul>
+  <li>Tables -- these create a lot of extra HTML, particularly for screen readers and will always force a line break</li>
+  <li>Empty div or span tags both with associated styles to handle the spacing increments (e.g., a 5px style and so on) and with inline style declarations (e.g., style=&quot;padding:5px 0px 0px 5px&quot;) -- but validators have a fit when they see empty tags</li>
+  <li>Use of div or span tags with contents such as non-breaking spaces -- even if the font for the non-breaking space is set to something very small, it was impossible to get much in the way of precision, it was dang near impossible to specify sizes under 5px, and required lots of extra style specification.</li>
+</ul>
+<p>It proved impractical to remove them from the current release and so they remain.</p>
+</body>
+</html>

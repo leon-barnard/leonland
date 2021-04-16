@@ -1,0 +1,43 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Navigation Tree Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt">Navigation Tree</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is the example HTML for navigation trees, which are discussed in <a href="../../05-navigation.html#5.4">5.4 Tree Details</a>. 
+<p>Tooltips are specified on alarmed objects in compliance with the guidelines specified in <a href="../../11-help.html#11.5.7">11.5.7 Tool Tips for Icons with Alarm Badges</a>. The basic form is [Alarm: &lt;level&gt; ] &lt;object type&gt;: &lt;object name&gt;, where level can be Down, Critical, Major, or Minor. For example: &quot;[Alarm:Critical] Server: Crocker&quot;. This is specified via the alt and title attributes in the &lt;img&gt; tag and the title attribute of any &lt;a href's&gt; associated with that object (such as on the gif and on the link text itself). </p>
+<p>Alts and titles are set in the same way on non-alarmed object graphics in the tree using the form &lt;object type&gt;: &lt;object name&gt;. For example: &quot;Server: Crocker&quot;.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul>
+  <li>Dynamic Example [ <a href="http://webdev2.sun.com/example/faces/tree/dynamicTree.jsp">HTML</a> ] </li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>The icons for images must be 19x19 pixels. </p>
+</body>
+</html>

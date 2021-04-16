@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>3&nbsp;Windows&nbsp;and&nbsp;Pages - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="03-windows-pages_Primary-Content-Pages.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+ 
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.7 Primary-Content Pages </p>
+<h2><a name="3.7" id="3.7"></a>3.7 Primary-Content Pages</h2>
+<p class="style1">Primary-content pages contain information that is
+essential, important, or occurs first in a sequence. Independent of
+other pages with a context of their own, they are contained in main
+browser windows where users interact with their data and initiate
+tasks. Primary-content pages can remain open for longer periods of
+time. They support a general purpose, such as letting users view and
+generally maintain an object or set of objects.</p>
+<p class="style1">Appearance and behavior of primary-content pages
+support the user performing multiple actions. For example, content page
+buttons such as "Save" allow the user to act on the page while leaving
+the page visible. Also, when an object is selected in the
+left pane, the object's properties are displayed in the right pane. For
+more detailed information refer to <a href="06-content.html#6">Chapter 6, Content Area Structure and Layout.</a></p>
+<h3>Required</h3>
+<ul class="Requirements">
+  <li> <strong><a name="3.7R1" id="3.7R1"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R1 </strong>Every product must have at least one primary-content page to fill the main browser window. </li>
+  <br>
+  <li><strong><a name="3.7R2" id="3.7R2"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R2 </strong><span style="color: #000000;">P</span>rimary-content pages always appear in the main browser window, not in pop-up browser windows or JavaScript windows. </li>
+  <br>
+  <li><strong><a name="3.7R3" id="3.7R3"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R3</strong> Display primary-content pages in the main browser window only.<br>
+  </li>
+  <li><strong><a name="3.7R4" id="3.7R4"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R4</strong> Provide a window status bar with all windows that contain a primary-content page.
+      <p>   
+  
+  </p></li><li><strong><a name="3.7R6" id="3.7R6"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R5 </strong>Within
+a left-right pane set: Any object that is selected in the left pane
+must be represented in the right pane as a primary-content page. This
+is regardless of whether the object is a data object, container object,
+or anything else. </li>
+  <br>
+  <li><strong><a name="3.7R7" id="3.7R7"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R6 </strong>For buttons and breadcrumbs on primary-content pages:<br>
+      <ul>
+        <li>
+Use a Save button in a primary-content page with contents that can be
+edited and manually saved. (This button is not needed if the page
+autosaves after changes.) Do not label the Save button "OK." Do not use
+a Save button if the page contents cannot be edited. The button saves
+the values currently on the page and leaves the page displayed. </li>
+      </ul>
+      <ul>
+        <li>Do
+not provide Cancel, Close, or "Back to Xxx" buttons. Optionally, you
+may provide a Reset button to abandon unsaved changes. Reset returns
+the page's values to when that page was opened or saved, but leaves the
+page displayed.</li>
+      </ul>
+      <blockquote>
+        <p>For more information on buttons and breadcrumbs refer to <a href="07-simple.html#7.1">7.1 Action Buttons</a> and <a href="06-content.html#6.3">6.3 Breadcrumbs and Parentage Paths.</a></p>
+      </blockquote>
+  </li>
+</ul>
+<h3>Advised</h3>
+<ul class="Recommendations">
+  <li><strong><a name="3.7A1" id="3.7A1"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A1 </strong>A
+content page that shows a single object's attributes (properties, child
+objects) is usually a primary-content page. Users spend most of their
+time there, performing a range of subsequent actions. </li><br>
+  <li> <strong><a name="3.7A2" id="3.7A2"></a><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A2 </strong>  <span class="style16"><font color="#000000">Limit
+the number of steps to open another primary-content page. Use
+navigation methods in a drill-down style set of links that contain the
+object's name (instead of specific action buttons such as View or
+Properties). The action should be complete as soon as the content page
+appears, and not require further input from the user through another
+page</font></span><font color="#000000">.</font></li>
+</ul>
+<p><strong><a href="03-windows-pages_Primary-Content-Pages.html#3.7"><img src="windows-pages_graphics/BackToTop.gif" width="16" height="16" border="0">Back to top</a></strong></p>
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.7 Primary-Content Pages</p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

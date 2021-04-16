@@ -1,0 +1,1114 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>8&nbsp;Complex&nbsp;Elements - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="08-complex.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <span class="currentchapter">8&nbsp;Complex&nbsp;Element</span><a class="greybar_link" href="08-complex.html">s</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p class="style8"><a href="08-complex.html#8"><b>8 Complex Elements</b></a>
+<p class="toc-level1 style8"><a href="08-complex.html#8.1">8.1 Editable Scrolling List</a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.2">8.2 Add-and-Remove Idiom</a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.3">8.3 Orderable List </a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.4">8.4 Date Selection</a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.4.1">8.4.1 Pop-Up Calendar</a> </p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.4.2">8.4.2 Scheduler Element</a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.5">8.5 File Selection</a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.5.1">8.5.1 Client-Side File Upload</a> </p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.5.2">8.5.2 File Chooser Element</a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.6">8.6 Line Graph </a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.6.1">8.6.1 Color Palette</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.1.1">8.6.1.1 Threshold Line Colors</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.1.2">8.6.1.2 Comparative Attribute Line Colors</a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.6.2">8.6.2 Lines and Data Points</a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.6.3">8.6.3 Text</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.1">8.6.3.1 Tick Mark Label Text</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.2">8.6.3.2 Axis Text</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.3">8.6.3.3 Graph Title: Default</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.4">8.6.3.4 Graph Title Text: Property Page</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.5">8.6.3.5 Legend Text </a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.6.3.6">8.6.3.6 Other Graph Types and Tips</a></p>
+<p class="toc-level1 style8"><a href="08-complex.html#8.7">8.7 Portal Elements </a></p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.7.1">8.7.1 Portlet Definition </a> </p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.7.1.1">8.7.1.1 Title Bar Controls</a> </p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.7.1.2">8.7.1.2 Content Area</a></p>
+<p class="toc-level3 style8"><a href="08-complex.html#8.7.1.3">8.7.1.3  Page Layout</a> </p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.7.2">8.7.2 Portlet Table</a> </p>
+<p class="toc-level2 style8"><a href="08-complex.html#8.7.3">8.7.3 Portlet Mini Tab Group</a> <br>
+</p>
+<h1 class="style2"><a name="8"></a> 8. Complex Elements </h1>
+<p class="style2">This chapter addresses the design of complex user interface elements that are 
+  used in similar ways across applications. These elements are usually groups 
+  of simple elements that together perform a more complex common interaction. 
+  In the <a href="http://webmirror.sfbay/products/jlf/ed2/guidelines.html">Java Look and Feel Guidelines</a>, they are called<i> idioms</i>. <span class="style3"></span></p>
+<p class="style14 style2">When using the user interface elements described in this chapter and elsewhere in these guidelines, remember to use them with cultural considerations in mind. For example, applications must be able to format and display time, date, and calendar data according to local cultural conventions. </p>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> To ensure that cultural considerations are addressed when using user interface controls, follow the guidelines in <a href="H-globalization.html">Appendix H, Globalization Requirements</a>. 
+<P class="style19"><span class="style14"><img src="Guidelines_Icons/Requirement.jpg" alt="Required Guideline" width="14" height="14" class="style12" title="Required Guideline"></span> For most elements there are these states:
+
+<ul class="style19">
+  <li>Enabled (normal) state when a value for a field is enabled </li>
+  <li>Noneditable (read-only) state where a value for a field is applicable but the user cannot change it</li>
+  <li>Disabled (not applicable) state when a value for a field does not apply to the current situation</li>
+</ul>
+<p>For fields which do not show a data value, such as the file chooser and client-side file upload, the only applicable states are enabled and disabled. The possible appearances are documented for each type of field. </p>
+<P>For more information on the placement of read-only fields within a page, see <a href="06-content.html#6.8.1">6.8.1 Noneditable User Interface Elements.</a>
+<P>All buttons on components should be secondary buttons.<br>
+
+<H2 class="style19"><A name="8.1"></A> 8.1 Editable Scrolling List  </H2>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Use an editable scrolling list to manage a list of single-line text strings. 
+Allow users to view the list of text strings, add new text strings, or <span class="style2">remove </span>existing text strings.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> The editable scrolling list is not intended for strings which are so long as to cause horizontal scrolling on the page.</P>
+<P class="style19">Here is an example with the editable scrolling list with the list below the text field (the 
+  "list-on-bottom" version):</P>
+<P class="style19"><IMG src="complex_graphics/editable_list_below.gif" width="570" height="175" alt="An example with the editable scrolling list below the text field (the &quot;list-on-bottom&quot; version)"></P>
+<P class="style19">Here is an example of an  editable scrolling list with the list above the text field (the "list-on-top" version), with Move to Top and Move to Bottom buttons included: </P>
+<P class="style19"><IMG src="complex_graphics/editable_list_above.gif" width="570" height="174" alt="An example with the editable scrolling list above the text field (the &quot;list-on-top&quot; version)"></P>
+<P class="style14 style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the editable scrolling list is noneditable (read-only), the lists and buttons should be replaced with a simple list of text strings (regardless of whether the entry field was above or below when it was editable), separated by commas, some other separator character, or line breaks like this:</P>
+<P class="style19"><img src="complex_graphics/editable_list_display_only.gif" alt="noneditable scrolling list examples"width="390" height="168"> </P>
+<P class="style14 style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the editable scrolling list is disabled (does not apply in the current situation), its buttons, text field, and list should be disabled, like this:</P>
+<P class="style19"><img src="complex_graphics/editable_list_disabled.gif" alt="disabled scrolling list example" width="584" height="179"> </P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">  The editable scrolling list has the following basic behavior (see the table below for more detailed button descriptions):</P>
+<UL class="style19">
+  <LI>To add a text string, the user types the string in the text field (or searches 
+    for the string by clicking the Search... button) and then clicks the Add button.    Alternatively, when the user types the string in the text field, pressing Enter places the text into the list (as if the user had clicked the Add button).<br>
+    <br>
+    Note that the search capability (and the display of the Search... button) 
+    is optional. If provided, it is up to the application designer to determine 
+    what should be displayed to help users identify an appropriate value to be 
+  passed back and displayed in the text field. </LI>
+</UL>
+<UL class="style19">
+  <LI>To remove a text string, the user selects the string and then clicks 
+    the Remove button.</LI>
+</UL>
+<P class="style19">The editable scrolling list differs from the <A href="08-complex.html#8.2">8.2 
+  Add-and-Remove Idiom</A>. The add-and-remove idiom is used to select any number 
+  of items from a list so that those items can be used for some other purpose. 
+  In contrast, the editable scrolling list simply enables users to add and remove 
+  items from a list of text strings.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Use the list-on-top version or the list-on-bottom version of the editable 
+  scrolling list, depending on the problem at hand.</P>
+<ul class="style19">
+  <li>When the user's most likely purpose is to remove list items, the list-on-top 
+    version might be most appropriate.<br>
+  </li>
+  <li>When the user's most likely purpose is to add list items (for instance, 
+  the list is empty), the list-on-bottom version might be most appropriate.</li>
+</ul>
+<p class="style14 style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When using the list-on-top 
+version, place validation error alerts (see <a href="14-alerts.html#14.5">14.5 Validation Error Alerts</a>) for the text field *below* the editable scrolling list so it is next to the text field to which it applies. Otherwise, it will be above the list even though it applies to the text field below. </p>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> At the bottom of the list, include a line longer than the longest possible value, or a line a bit longer than the average/most common value, as makes sense for the expected values for the list. This line, which consists of a string of underscores (_), is programmatically kept below all the entries as items are added and removed. This strategy maintains a fixed line width for the list or minimizes the expansion/contraction when entries are added/removed, which keeps the geometry of the entire idiom stable. Otherwise, the buttons and list could move substantially based on the width of the remaining list items.</P>
+<P class="style14 style19"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> Compute the number of underscores based on both the text box's width and 
+the font size of the underscores.</P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If the user selects the string of underscores (either by itself or with other 
+  entries) and clicks any button, nothing should happen. </P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Both fields must have labels for accessibility reasons. However, the labels 
+  can be either left of the fields or above them. These labels should be normal font.</P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> A label for the entire editable scrolling list is optional. If such a label is provided, place it above the editable scrolling list, left justified. This label should be bold and in larger text, like this:</P>
+<P class="style19"><img src="complex_graphics/editable_list_title.gif" alt="example showing label for the entir editable scrolling list component" width="568" height="202"></P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When having at least one value in the list is required, mark the list -- not the entire component or the entry field --to indicate that, like this:</P>
+<P class="style19"><img src="complex_graphics/editable_list_required.gif" alt="example showing editable scrolling list as a required element" width="576" height="174"> </P>
+<p class="style19"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A maximum length can be set for values, and the entry field will not allow more than that number of characters to be entered. Within that maximum, the list will grow horizontally as larger values are entered. This maximum should be chosen to include all reasonable values for the situation at hand, but is helpful in keeping the buttons from scrolling off the right side of the page otherwise. </p>
+<p class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Provide Add and Remove buttons for the editable scrolling list.</p>
+<P class="style19"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Provide Move Up, Move Down, and optionally Move to Top and Move to Bottom buttons if it makes sense for the application. </P>
+<P class="style19"><span class="style14 ">For more information on button types, see <a href="07-simple.html#7.1">7.1 Action Buttons</a>.</span></P>
+<p class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Follow these guidelines for all buttons used in the editable scrolling list. These guidelines do not apply to buttons not used in the editable scrolling list.</p>
+<TABLE border="1" cellpadding="5" cellspacing="0" class="info-table">
+  <TR>
+    <th class="style19"><B>Button</B></th>
+    <th nowrap class="style19"><B>Description</B></th>
+    <th nowrap class="style19"><B>Additional Guidelines </B></th>
+  </TR>
+  <tbody>
+    <TR>
+      <TD valign="top" class="style19">Add</TD>
+      <TD valign="top" class="style19">Adds the entered item to the  list. </TD>
+      <TD valign="top" class="style19"><P>See  discussion below for a comparison of validated and unvalidated additions. </P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19">Remove<BR>      </TD>
+      <TD valign="top" class="style19">Removes the selected items from the  list. <BR>      </TD>
+      <TD valign="top" class="style19"><P>The Remove button is available only while one or more items are selected in the list. Optionally, display a JavaScript alert to confirm removal of the items.</P>
+      </TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19">Search<BR>      </TD>
+      <TD valign="top" class="style19">Enables users to search to find an item to add to the editable scrolling list<span class="style12">.</span><BR>      </TD>
+      <TD valign="top" class="style19"><p>To help users identify an appropriate value to add to the list, provide the Search button if  the value exist<span class="style12">s</span> in some other area of the application. Use the following interaction design: </p>
+        <UL>
+          <LI>The user clicks on the Search... button. </LI>
+          <LI>The Choose From List pop-up window is displayed to search in. The Choose From List dialog page contents and appearance are likely specific to each situation, and guidelines for that dialog will be defined once we have good examples.</LI>
+          <LI>The user performs a search within the Choose From List pop-up window.</LI>
+          <LI>The user selects an item from the results list and clicks a Choose button. The Choose From List pop-up window closes.</LI>
+          <LI>The result item is added in the appropriate place in the list, not necessarily the top or bottom. For example, if the items already in the list are ordered alphabetically, the added item appears at its proper alphabetic position in the list. </LI>
+          <LI>The added item is highlighted as feedback for the user. The list is scrolled to show that new item.</LI>
+          <LI>The text box is left blank.</LI>
+      </UL>        </TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19">Move Up<BR>      </TD>
+      <TD valign="top" class="style19">Moves the selected items one row up in the current list. <BR>      </TD>
+      <TD valign="top" class="style19"><P>Provide the Move Up button if the order of the choices is relevant. If Move Up is provided, also provide Move Down. If a user applies the Move Up button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them up another step. If the user continues to click Move Up after the top item goes to the top of the list, continue to move up all selected items that are below unselected items until they are together at the top. When all selected items are already at the top, the Move Up button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19">Move Down<BR>      </TD>
+      <TD valign="top" class="style19">Moves the selected items one row down in the current list.<BR>      </TD>
+      <TD valign="top" class="style19"><P> Provide the Move Down button if the order of the choices is relevant. If Move Down is provided, also provide Move Up. If a user applies the Move Down button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them down another step. If the user continues to click Move Down after the bottom item goes to the bottom of the list, continue to move down all selected items that are above unselected items until they are together at the bottom. When all selected items are already at the bottom, the Move Down button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19"><p>Move to Top </p>
+        <p class="style12"><BR>
+        </p>
+      </TD>
+      <TD valign="top" class="style19">Moves the selected items to the top of the current list.<BR>      </TD>
+      <TD valign="top" class="style19"><P>Provide the Move to Top button if the order of the choices is relevant and many items are expected to be in the list. If Move to Top is provided, also provide Move to Bottom. If a user applies the Move to Top button to a selection containing nonadjacent items, move  all selected items to the top, keeping them in their original order relative to one another. When all selected items are already at the top of the list, the Move to Top button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style19"><p>Move to Bottom </p>
+        <p><BR>
+        </p>
+      </TD>
+      <TD valign="top" class="style19">Moves the selected items to the bottom of the current list.<BR>      </TD>
+      <TD valign="top" class="style19"><P> Provide the Move to Bottom button if the order of the choices is relevant  and many items are expected to be in the list. If Move to Bottom is provided, also provide Move to Top. If a user applies the Move to Bottom button to a selection containing nonadjacent items, move down all selected items to the  bottom, keeping them in their original order relative to one another. When all selected items are already at the bottom of the list, the Move to Bottom button should be disabled.</P></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p class="style14 style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> To enable users to add an item to the editable scrolling list without verifying that the item is valid, use the following design:</p>
+<UL class="style19">
+  <LI>The user types text into the text box. <BR>
+  </LI>
+  <LI>The user clicks the Add button. <BR>
+  </LI>
+  <LI>Text typed in the text box is added to the list. <BR>
+  </LI>
+  <LI>The item is added in the appropriate place in the list, not necessarily the top or bottom. For example, if the items already in the list are ordered alphabetically, the added item appears at its proper alphabetic position in the list. <BR>
+  </LI>
+  <LI>The added item is highlighted as feedback for the user. The list is scrolled to show that new item.<BR>
+  </LI>
+  <LI>The text box is reset to blank. </LI>
+</UL>
+<span class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> To enable users to add an item to the editable scrolling list only if the item is valid or found in a database lookup operation (or both), use the following design:
+</span>
+<UL class="style19">
+  <LI>The user types text into the text box. <BR>
+  </LI>
+  <LI>The user clicks the Add button. <BR>
+  </LI>
+  <LI>Text typed by the user is validated to make sure it is a valid item (for example, the item might have to be unique). The page is submitted to the server, so the remaining steps are side effects of server-side processing and the resulting redrawn page. <BR>
+  </LI>
+  <LI>If a validation error is detected, display an alert error message. Present that alert in a JavaScript alert, if possible. If the user needs more information or controls than can be implemented in a JavaScript alert, then use another option described in <A href="14-alerts.html">Chapter 14, Alerts and Messages</A>.<BR>
+  </LI>
+  <LI>If the Add action performs a database lookup, the following three situations may exist:
+      <UL>
+        <LI>An exact match is found: Add the database entry (for example, a name) to the list. The text box is reset to blank.</LI>
+        <LI>Multiple near/possible matches are found: Display a Pop-Up Browser Window a list that allows the user to select a single match from the lookup. If the user selects a match, append the selected match to the list, and reset the text box to blank. If the user closes the dialog page without selecting a match, do not modify the list contents, and do not reset the text box. The text last typed by the user should remain in the text box. </LI>
+        <LI>No match is found: Display an error alert "No match found." The text box is not reset, and the text last entered by the user remains in the text box. </LI>
+      </UL>
+  </LI>
+  <LI>Once the text is validated or a match is selected by the user, the text is added to the list, and the text box is reset to blank.<BR>
+  </LI>
+  <LI>The item is added in the appropriate place in the list, not necessarily the top or bottom. For example, if the items already in the list are ordered alphabetically, the added item appears at its proper alphabetic position in the list. <BR>
+  </LI>
+  <LI>The added item is highlighted as feedback for the user. The list is scrolled to show that new item.</LI>
+</UL>
+<P class="style19">For an interactive example of an Editable List, see 
+  <a href="http://webdev2.sun.com/example/faces/editablelist/editableList.jsp">http://webdev2.sun.com/example/faces/editablelist/editableList.jsp</a><br>
+</P>
+<H2 class="style19"><A name="8.2"></A> 8.2 Add-and-Remove Idiom </H2>
+<P><IMG src="complex_graphics/add-remove.gif" width="465" height="227" alt="Add-and-Remove Idiom Example"></P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Use an add-and-remove idiom when users are likely to choose more than two values from an existing list and it is likely they want to see selected values together to  verify them, or the order of the selected values is significant, or both. </P>
+<P class="style19"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> The add-and-remove idiom  is not intended for strings which are so long as to cause horizontal scrolling on the page.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Design the Available and Selected lists so that 10 to 15 values can be shown 
+  at once in each list. The Available list is comprised of items that are eligible 
+  for selection. The Selected list is comprised of items that have been added 
+  from the Available list. Items in the Selected list are the items that will 
+  have future actions applied to them.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Do not use any grouping methods for the items in the lists. See <A href="07-simple.html#7.2.1.3.1">7.2.1.3.1 
+  Grouping Menu Items</A> for examples of grouping methods.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Enable the same multiple selection techniques used in <a href="07-simple.html#7.2.2.2">7.2.2.2 
+  Multiple Selection Scrolling List</a>; however, do not note them on the page 
+  as their use is completely optional.</P>
+<P class="style19">Multiple selection techniques provide shortcuts for users who would otherwise 
+  have to perform the add action repeatedly to select multiple list items. Experienced 
+  users expect all add-and-remove idioms to provide these shortcuts.</P>
+<P class="style19"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> 
+  Place a label for the entire add-and-remove idiom above the Available and Selected 
+  list labels. Make the label plural, as shown in the example above.</P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Both lists must also have labels for accessibility reasons. </P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  Apply headline capitalization to all of these labels (see <a href="02-visual.html#2.5">2.5 Text Capitalization</a>). </P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If the two lists are too wide to fit side-by-side on the page, orient the lists 
+  vertically, as shown here:</P>
+<P class="style19"><img src="complex_graphics/add-remove-vert.gif" width="424" height="447" alt="Vertically-Oriented Add-and-Remove Idiom"></P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the add-and-remove idiom is noneditable (read-only), the lists and 
+buttons should be replaced with a simple list of text strings separated 
+by commas or some other separator character, or separated by line 
+breaks, like this:</P>
+<P class="style19"><img src="complex_graphics/editable_list_display_only.gif" alt="noneditable add-and-remove itiom" width="390" height="168"> </P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the add-and-remove idiom is disabled (does not apply in the current situation), it should have the buttons and lists disabled, like this:</P>
+<P class="style19"><img src="complex_graphics/add-remove_disabled.gif" alt="disabled add-and-remove idiom" width="458" height="210"></P>
+<P class="style14 style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Allow double-clicking on an item in the Available list to immediately add that 
+    item to the Selected list. Allow double-clicking on an item in the Selected 
+list to immediately remove that item from the Selected list.</P>
+<P class="style19"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  At the bottom of the Available and Selected lists, include a line longer than 
+  the longest possible value. This line, which consists of a string of underscores 
+  (_), is programmatically kept below all the entries as items are added and removed. 
+  This strategy maintains a fixed line width for both lists, which keeps the geometry 
+  of the entire add-and-remove idiom stable. Otherwise, the buttons and lists 
+  would move based on the width of the remaining list items.</P>
+<P class="style19"><img src="Guidelines_Icons/Implementation_Info.jpg" width="16" height="14" alt="Implementation Information" title="Implementation Information"> 
+  Compute the number of underscores based on the desired width of the text box and 
+  the font size of the underscores.</P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If the user selects the string of underscores (either by itself or with other 
+  entries) and clicks any button, nothing should happen. </P>
+<P class="style19"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When one or more selections is required, mark the selected list -- not the entire component -- to indicate that, like this: </P>
+<P class="style19"><img src="complex_graphics/add-remove-required.gif" alt="example showing add-and-remove idiom as a required element" width="522" height="202"></P>
+<P class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> A label for the entire add-and-remove idiom is optional. If such a label is provided, use a standard field label and place it either </P>
+<ul class="style20">
+  <li>to the  left of the Add-and-Remove Idiom as shown in the example above or </li>
+  <li>above the add-and-remove idiom, left justified, as shown in the example below. </li>
+</ul>
+<P class="style20"><IMG src="complex_graphics/add-remove.gif" width="465" height="227" alt="Add-and-Remove Idiom Example"></P>
+<P class="style14 style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Provide Add and Remove buttons when using the Add-and-Remove idiom. Only one will be enabled at once, however, based on which list the user is on. Remove is disabled when the user is on the Available list, and Add is disabled when the user is on the Selected list.  If the user is not on either list, neither will be enabled. </P>
+<P class="style20"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Provide Add All and Remove All buttons if it makes sense for the application. </P>
+<P class="style20"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Provide Move Up and Move Down buttons if it makes sense for the application. These buttons apply exclusively to the Selected list.</P>
+<P class="style20"><span class="style14 "> For more information on button types, see <a href="07-simple.html#7.1">7.1 Action Buttons</a>.</span></P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline">  Follow these guidelines for all buttons used in the add-and-remove idiom. 
+  These guidelines do not apply to buttons not used in the add-and-remove idiom.</P>
+<TABLE border="1" cellpadding="5" cellspacing="0" class="info-table">
+  <tbody> 
+  <TR> 
+    <th class="style20"><B>Button</B></th>
+    <th nowrap class="style20"><B>Description</B></th>
+    <th nowrap class="style20"><B>Additional Guidelines </B></th>
+  </TR>
+  <TR> 
+    <TD valign="top" class="style20">Add</TD>
+    <TD valign="top" class="style20">Adds items to the Selected list. </TD>
+    <TD valign="top" class="style20"> 
+      <P>More precisely, the Add button copies all selected items from the Available 
+        list and adds them to the Selected list at the end or, if the Selected 
+        list is sorted, in the correct order. The Add button then deletes the 
+        items from the Available list -- unless they can be added to the selected 
+        list multiple times in different contexts so remain there for reuse. Finally, 
+        the Add button selects the copied items in the Selected list and deselects 
+        any previously selected items in the Available list. The Add button is 
+        available only while one or more items are selected in the Available list.</P>
+    </TD>
+  </TR>
+  <TR> 
+    <TD valign="top" class="style20">Add All<BR>
+    </TD>
+    <TD valign="top" class="style20">Moves or copies all items from the Available list to the 
+      Selected list and then selects them in the Selected list.<BR>
+    </TD>
+    <TD valign="top" class="style20"> 
+      <P>Provide the Add All button if users will want to select all the items 
+        even occasionally. If Add All is provided, also provide Remove All. The 
+        Add All button is available only while the Available list is not empty.        </P>
+      </TD>
+  </TR>
+  <TR> 
+    <TD valign="top" class="style20">Remove<BR>
+    </TD>
+    <TD valign="top" class="style20">Removes items from the Selected list. <BR>
+    </TD>
+    <TD valign="top" class="style20"> 
+      <P>More precisely, the Remove button removes the selected items from the 
+        Selected list, adds them to the Available list (at the end or, preferably, 
+        at their previous positions) and, finally, selects the items in the Available 
+        list, deselecting the Selected list. Removing an item from the Selected 
+        list has no effect on the Available list if that item is already in the 
+        Available list. The Remove button is available only while one or more 
+        items are selected in the Selected list.</P>
+      </TD>
+  </TR>
+  <TR> 
+    <TD valign="top" class="style20">Remove All<BR>
+    </TD>
+    <TD valign="top" class="style20">Moves all items from the Selected list to the Available list.<BR>
+    </TD>
+    <TD valign="top" class="style20"> 
+      <P>Provide the Remove All button if users will want to clear the list of 
+        selected items even occasionally (for example, to start a whole new selection). 
+        Remove All may be provided without Add All. The Remove All button is available 
+        only while the Selected list is not empty. </P>
+    </TD>
+  </TR>
+  <TR>
+    <TD valign="top" class="style20">Move Up<BR>
+    </TD>
+    <TD valign="top" class="style20">Moves the selected items one row up in the selected items list. Applies to the Selected list only. <BR>
+    </TD>
+    <TD valign="top" class="style20"><P>Provide the Move Up button if the order of the choices is relevant. If Move Up is provided, also provide Move Down. If a user applies the Move Up button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them up another step. If the user continues to click Move Up after the top item has hit the top of the list, continue to move up all selected items which are below unselected items, until they are together at the top. When all selected items are already at the top of the list, the Move Up button should be disabled.</P></TD>
+  </TR>
+  <TR>
+    <TD valign="top" class="style20">Move Down<BR>
+    </TD>
+    <TD valign="top" class="style20">Moves the selected items one row down in the selected items list. Applies to the Selected list only. <BR>
+    </TD>
+    <TD valign="top" class="style20"><P> Provide the Move Down button if the order of the choices is relevant. If Move Down is provided, also provide Move Up. If a user applies the Move Down button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them down another step. If the user continues to click Move Down after the bottom item goes to the bottom of the list, continue to move down all selected items which are above unselected items, until bthey are together at the bottom. When all selected items are already at the bottom of the list, the Move Down button should be disabled.</P></TD>
+  </TR>
+  </tbody> 
+</TABLE>
+<p><span class="style19">For an interactive example of an Add-and-Remove Idiom, see </span><a href="http://webdev2.sun.com/example/faces/addremove/AddRemove.jsp">http://webdev2.sun.com/example/faces/addremove/AddRemove.jsp</a><br>
+  <span class="style3"></span></p>
+<H2 class="style20"><A name="8.3" id="8.3"></A> 8.3 Orderable List </H2>
+<p class="style20">The orderable list allows users to manually order the items in single selection and multiple selection scrolling lists. This may be useful if users have to arrange items in order of preference or by some other criteria. The list may be either single-selection or multiple-selection.</p>
+<p class="style20"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> The orderable list  is not intended for strings which are so long as to cause horizontal scrolling on the page. </p>
+<p class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not use the orderable list if any automatic sorting of the list is being provided. </p>
+<P class="style20"><IMG src="complex_graphics/orderable-list.gif" width="299" height="203" alt="Orderable List  Example"></P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the orderable list is noneditable (read-only), the list and 
+buttons should be replaced with a simple list of text strings separated 
+by commas or some other separator character, or separated by line 
+breaks, like this:</P>
+<P class="style20"><img src="complex_graphics/editable_list_display_only.gif" alt="noneditable orderable list" width="390" height="168"> </P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the orderable list is disabled (does not apply in the current situation), it should have the buttons and list disabled, like this:</P>
+<P class="style20"><img src="complex_graphics/orderable_list_disabled.gif" alt="disabled orderable list" width="296" height="180"></P>
+<P class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> The list must have a label for accessibility reasons. 
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Provide Move Up and Move Down buttons. 
+<P class="style20"><IMG src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> Provide Move to Top and Move to Bottom buttons if it makes sense for the application. 
+<p class="style20"><span class="style14 ">For more information on button types, see <a href="07-simple.html#7.1">7.1 Action Buttons</a>.</span></p>
+<p class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Follow these guidelines for all buttons used in the orderable list. These guidelines do not apply to buttons not used in the orderable list.</p>
+<TABLE border="1" cellpadding="5" cellspacing="0" class="info-table">
+  <TR>
+    <th class="style20"><B>Button</B></th>
+    <th nowrap class="style20"><B>Description</B></th>
+    <th nowrap class="style20"><B>Additional Guidelines </B></th>
+  </TR>
+  <tbody>
+    <TR>
+      <TD valign="top" class="style20">Move Up<BR>
+      </TD>
+      <TD valign="top" class="style20">Moves the selected items one row up in the current list. <BR>
+      </TD>
+      <TD valign="top" class="style20"><P>If a user applies the Move Up button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them up another step. If the user continues to click Move Up after the top item goes to the top of the list, continue to move up all selected items which are below unselected items, until they are together at the top. When all selected items are already at the top of the list, the Move Up button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style20">Move Down<BR>
+      </TD>
+      <TD valign="top" class="style20">Moves the selected items one row down in the current list.<BR>
+      </TD>
+      <TD valign="top" class="style20"><P> If a user applies the Move Down button to a selection containing nonadjacent items, the button works as if the user performed it on each item separately. As a result, the selected items retain their positions relative to one another. The moved items remain highlighted, and the user may move them down another step. If the user continues to click Move Down after the bottom item goes to the bottom of the list, continue to move down all selected items which are above unselected items, until they are together at the bottom. When all selected items are already at the bottom of the list, the Move Down button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style20"><p>Move to Top<BR>
+      </p></TD>
+      <TD valign="top" class="style20">Moves the selected items to the top of the current list.<BR>
+      </TD>
+      <TD valign="top" class="style20"><P>Provide the Move to Top button if many items are expected to be in the list. If Move to Top is provided, also provide Move to Bottom. If a user applies the Move to Top button to a selection containing nonadjacent items, move all selected items to the top, keeping them in their original order relative to one another. When all selected items are already at the top of the list, the Move to Top button should be disabled.</P></TD>
+    </TR>
+    <TR>
+      <TD valign="top" class="style20">Move to Bottom <BR>
+      </TD>
+      <TD valign="top" class="style20">Moves the selected items to the bottom of the current list.<BR>
+      </TD>
+      <TD valign="top" class="style20"><P> Provide the Move to Bottom button if many items are expected to be in the list. If Move to Bottom is provided, also provide Move to Top. If a user applies the Move to Bottom button to a selection containing nonadjacent items, move down all selected items to the bottom, keeping them in their original order relative to one another. When all selected items are already at the bottom of the list, the Move to Bottom button should be disabled.</P></TD>
+    </TR>
+  </tbody>
+</TABLE>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Do not use special &quot;separator&quot; choices as a distinguisher between &quot;above the line&quot; choices and &quot;leftover&quot; choices -- for that situation, the Add-and-Remove Idiom is the appropriate element to use instead (see <a href="08-complex.html#8.2">8.2 Add-and-Remove Idiom</a>).</p>
+<p class="style20"><span class="style19">For an interactive example of an Orderable List, see </span><a href="http://xdesign.sfbay.sun.com:8080/example/faces/orderablelist/OrderableList.jsp">http://xdesign.sfbay.sun.com:8080/example/faces/orderablelist/OrderableList.jsp</a></p>
+<h2 class="style20"></h2>
+<H2 class="style20"><A name="8.4" id="8.4"></A> 8.4 Date Selection</H2>
+<p class="style20">There are two forms of date and time selection. A simple pop-up calendar for entering dates graphically from a date text field, and a full scheduler panel for more complicated needs that include time, repeat intervals, or other details. </p>
+<H3 class="style20"><a name="8.4.1" id="8.4.1"></a> 8.4.1 Pop-Up Calendar</H3>
+<p class="style20">If your task requires the input of a single date into a text field, the pop-up calendar can be used to allow the user to select a date and insert it into the field. In some cases it may be appropriate to display a set of text fields where users can specify, for example, starting and ending dates. Each text field would include its own calendar. </p>
+<p class="style14 style20">The following two images show how this looks before and after the pop-up calendar is displayed. </p>
+<P class="style14 style20">Pop-up calendar, before the pop-up calendar is opened: <br>
+    <br>
+    <img src="complex_graphics/pop-up-cal-closed.gif" alt="pop-up calendar before it is opened" width="249" height="422"> <br>
+  <strong> <br>
+  </strong> Editable version, after the pop-up calendar is opened:<br>
+    <br>
+    <img src="complex_graphics/pop-up-calendar.gif" alt="pop-up calendar after it is opened" width="401" height="260"><br>
+    <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Allow users to display the pop-up calendar by clicking the iconic Calendar button, <img src="complex_graphics/showcalendar.gif" width="20" height="20" alt="Calendar Button">, located to the right of the text field.</p>
+<p class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the calendar is popped up, display it below the iconic Calendar button.
+<p class="style20">The popped up calendar displays the current month and year by default. The current date is bolded in the calendar, and displayed in text at the top of the calendar. The drop-down menus at the top of the calendar can be used to change the current month and year. To step through the months one at a time, users can click the arrow buttons to the left and right of the month drop-down menu. <br>
+    <br>
+    <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If there is a date in the text field when the calendar is invoked, display this date as the default selection in the calendar when it is displayed. Selected dates are bold with a highlighted background. If the text field is empty when the calendar is invoked, show no default selection in the calendar when it is displayed.<br>
+  <br>
+  <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> Allow users to close the calendar in the following ways:
+    
+<ul class="style20">
+  <li>Clicking the iconic Calendar button that was used to display the pop-up calendar</li>
+  <li>Clicking the Close button, located in the upper right corner of the calendar pop-up </li>
+  <li>Selecting a date in the pop-up calendar </li>
+</ul>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the user selects a date, close the calendar and insert the selected date into the text field. </P>
+<P class="style20"> Editable version, after the date is selected from the pop-up calendar:  <br>
+    <br>
+<img src="complex_graphics/pop-up-cal-date.gif" alt="editable pop-up calendar element after the date is selected" width="158" height="57"> </P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If the user closes the calendar by a means other than selecting a date, do not update the text field. If a date had been entered into the text field before the calendar was invoked, do not change it. If the text field was blank when the calendar was invoked, leave it blank.<br>
+</P>
+<H3 class="style20"><A name="8.4.2" id="8.4.2"></A> 8.4.2 Scheduler Element</H3>
+<P class="style20">The Scheduler element is used for setting schedules within an application. 
+  This element is made up of several simple elements (labels, text fields, buttons, and 
+  lists) and a calendar element. It was formerly known as the Date/Time Element. Here is an example:</P>
+<P class="style20"><IMG src="complex_graphics/datetime_complex.gif" width="528" height="260" alt="Example Scheduler Element"></P>
+<p class="style14 style20">The example above shows the Scheduler element as it would appear within the 
+  context of a larger page. Also shown here is the legend that describes the red 
+  asterisk image associated with the  Date field. This asterisk image identifies a required field, and a legend must appear in the appropriate place on the page to inform users that the field is required (see <a href="07-simple.html#7.3.2">7.3.2 
+  Editable Text Fields</a> for more information). The asterisk image should appear to the right of the field labels as shown above. <br>
+  <br>
+Note that  Date is generally a required field. However when the Scheduler element is used on a page with other elements, there may be times when, given the context of the application, it  does not make sense to make the  Date  a required field. In this situation, the  Date  field can be made optional. This is only allowable for the inline Scheduler element. </p>
+<p class="style20">An example of a situation where it would not make sense to make the  Date required might be when the user has to specify when a report gets run and it is valid to specify a particular date, or just a time that the report will be run every day.</p>
+<p class="style20">In the above picture, the user can specify the date either by clicking on it 
+  in the calendar or entering it into the Date field. The Preview in Calendar 
+  button is available if the user enters the date into the Date field and then 
+  wants to see it reflected in the calendar before clicking the OK button. The user can also use Preview in Calendar to update the calendar to 
+reflect the values entered into the other applicable fields. Note that 
+time information is not reflected in the calendar.</p>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   When designing the monthly calendar for the Scheduler element, follow 
+  these guidelines:</P>
+<UL class="style20">
+  <LI>Include a set of numerical links for each day value within a given month. 
+    Selecting one of the numerical hyperlinks:
+    <ul>
+     <li>sets the value in the  Date field to the date selected in the calendar</li>	
+	  <li>refreshes the calendar to highlight the new  date and uses the information 
+        in the fields adjacent to the calendar (e.g. Repeat Interval, and Repeat 
+        Limit fields) to also highlight the new dates associated with the repeat 
+      interval.<br>
+      <br>
+      </li>
+    </ul> 
+ 
+
+  <LI>Enable users to optionally enter a date directly in the  Date text 
+  field.</LI>
+</UL>
+<UL class="style20">
+  <LI>Provide navigation to other months and years by allowing users to change 
+    the selected values in the month and year drop-down menus at the top of the 
+    calendar. Navigation by month is also accomplished by clicking the Forward 
+    and Back arrow buttons on either side of the month name.</LI>
+</UL>
+<UL class="style20">
+  <LI>Adjust the layout of the calendar for other locales whose weeks start on 
+    Monday, on Saturday, etc. Also, adjust the inline help text below the Start 
+    Date field to indicate the proper date format for a specific locale (for example, 
+    dd/mm/yyyy for the French locale).</LI>
+</UL>
+<UL class="style20">
+  <LI>Years must be displayed and specified as four digits for Y2K requirements. 
+    The user, however, should be able to enter only two digits. The application 
+    should convert it to specify a four-digit year internally and on the next 
+    redisplay. </LI>
+</UL>
+<UL class="style20">
+  <LI>To facilitate accessibility, the numerical links within the calendar must 
+    be text, not images. Each numerical link must also have the HTML Title attribute specified 
+    as "[mm/dd/yyyy] (Click to Set Date)," for example, 09/28/2003 (Click to Set Date).</LI>
+</UL>
+<UL class="style20">
+  <LI>Enable users to select start and end times through the use of separate drop-down 
+    menus for hours and minutes. The hour lists start at "00" and end at "23." 
+    The minute lists start at "00" and end at "55," using five-minute increments. 
+    Five-minute increments are used to keep the lists at a manageable size. Initial 
+    values for both hours and minutes may be set to blank in situations where 
+    the user must enter a specific time.</LI>
+</UL>
+<UL class="style20">
+  <LI>When the Scheduler element first displays, the minutes and hours drop-down 
+    menus should be set to blank. This value indicates that the user must set 
+    an initial time. The minutes portion of the various times should always change 
+    from blank to "00" as soon as an hour is set. The minutes should not change 
+    if they are already set to something other than blank.<br>
+  </LI>
+  <LI>When today's date is not the selected date, show it bolded without any highlighting.</LI>
+</UL>
+<p class="style14 style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> If an existing schedule is reflected in the Scheduler element,  the scheduled dates are displayed in bold with a highlighted background, just as when the user first selects them. </p>
+<P class="style20">The example at the beginning of this section shows how a defined 
+  schedule would display when it is opened for viewing or editing. All fields 
+  are set to their defined values, and the calendar element displays 
+  the scheduled dates.</P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Follow these guidelines for the content of the Repeat Interval list, which 
+  is programmable:
+<UL class="style20">
+  <LI>Include selections such as One Time, Hourly, Daily, Weekly, Monthly, or 
+    predefined weekly day sets such as &quot;Mon,Wed,Fri&quot; or &quot;Tue,Thu.&quot;</LI>
+</UL>
+<UL class="style20">
+  <LI>Make the first selection in this list &quot;One Time.&quot;</LI>
+</UL>
+<UL class="style20">
+  <LI>When the selection in this list changes, adjust the drop-down list in the Repeat Limit  
+  field to contain valid choices for the selected repeat interval. For example, a Repeat Interval of 
+  &quot;Daily&quot; would imply that Repeat Limits be specified in units of Days.  When updating the 
+  Repeat Limit drop-down list, however, do not update the calendar display.</LI>
+</UL>
+<p class="style20"> <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+ Follow these guidelines for the Repeat Limit field, which sets a limit on 
+the number of repetitions:
+<UL class="style20">
+  <LI>Make the list to the right of this field adjust to the setting of the interval 
+    defined above it. For example, a Repeat Interval of &quot;Daily&quot; would imply a 
+    Repeat Limit of &quot;n Days.&quot;</LI>
+</UL>
+<UL class="style20">
+  <LI>Enable users to choose another unit. However, only units equal to or greater 
+    than the Repeat Interval should be allowed. For example, a Repeat Interval 
+    of &quot;Weekly&quot; cannot have a Repeat Limit of &quot;n Hours.&quot; Instead, it should allow 
+    a Repeat Limit of &quot;n Weeks&quot; or &quot;n Months.&quot;</LI>
+</UL>
+<UL class="style20">
+  <LI> In the case of &quot;One Time,&quot; clear and disable both the Repeat 
+    Limit field and the drop-down list to the right of it. </LI>
+</UL>
+<p class="style20"> <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Provide a Preview in Calendar button (see <a href="07-simple.html#7.1">7.1 Action Buttons</a>)  
+to allow users to update the calendar to reflect the data entered in the fields.  Changes in these fields are not reflected in the calendar until the Preview in Calendar 
+button is clicked. Note, however, that when a new date is selected in the calendar, the selection is 
+treated as the new Date and the values in these fields are used to update the calendar to 
+reflect the new starting date.
+</p>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Include simple elements (which are programmable) within the Scheduler 
+  element as required for your application.</P>
+<P class="style20">Various applications might only need a subset of the functionality provided 
+  in the preceding example. For example, there might be a need for repeat intervals 
+  but not repeat limits. Or, there might only be a need for a Start Time without 
+  an End Time. To provide this flexibility, the API to this element should allow 
+  for the display of a subset of simple elements. Simpler versions might include 
+  the monthly calendar and Date field only for date selection or a pair 
+  of drop-down menus for time selection.</P>
+<P class="style20">The labels used for the time fields, Start Time and End Time, 
+  should be programmable based on the application needs. The Start and End labels 
+  were used as generic examples. The application developer may choose whatever 
+  labels are most appropriate. </P>
+<P class="style20">If a Repeat Interval is shown, the label for  date 
+  might be changed to Start Date or something more specific for the date being 
+  chosen.</P>
+<P class="style20">The following example mimics the scheduling fields in a Solaris crontab(1) 
+  file (with the exception that the crontab file does not use a year field). Such 
+  files do not specify an End Time or a Repeat Limit. Users who might require 
+  additional functionality unique to the cron utility would typically use the 
+  actual command in a terminal window.</P>
+<P class="style20"><IMG src="complex_graphics/datetime_simple.png" alt="Scheduler Element Example with only Start Date, Start Time, and Repeat Interval fields" width="537" height="273" border="1"></P>
+<P class="style20">The Scheduler element can be embedded within a page, but can also be invoked in a pop-up window.<s><br>
+  </s><br>
+As with the Scheduler element embedded within a page, the fields displayed in the Scheduler element in a pop-up window can be displayed in full or adjusted to the needs of the application.<br>
+    <br>
+For example, the following picture shows a Scheduler pop-up window that could be used when the user clicks the calendar icon next to a set of fields asking for Scheduler information on a main browser page. The only fields needed are the Date and  Time fields. The user specifies the date and time and then clicks OK. </p>
+<P class="style20"><IMG src="complex_graphics/DateTime-PopUp.png" width="501" height="379" alt="A Scheduler pop-up window example that could be used when the user cilcks the calendar icon next to a date field on a main browser page"></P>
+<P class="style20">General guidelines for displaying a noneditable version of the Scheduler Element are to show the fields as text only. See <a href="07-simple.html#7.3.2">7.3.2 Editable Text Elements</a> for details. The calendar could appear and perhaps allow browsing months and years, but should not allow clicking on new dates. A future version of the guidelines may provide more details for this design.</P>
+<H2 class="style20"><A name="8.5" id="8.5"></A> 8.5 File Selection</H2>
+<p class="style20">There are two forms of file selection. Client-Side File Upload is used for selecting files on the client, while File Chooser (and Folder Chooser) are used for selecting files (or folders) on the server. Choose the appropriate one based on the location (client or 
+server) from which the user will be selecting files.</p>
+<H3 class="style20"><a name="8.5.1" id="8.5.1"></a> 8.5.1 Client-Side File Upload </H3>
+<p class="style20"> When it is necessary to upload a file from the client to the server, the client-side file upload element can be used. The client-side file upload element is not used to browse files on the server. For this, use the file chooser element (see <a href="08-complex.html#8.5.2">8.5.2 File Chooser Element</a>). </p>
+<p class="style20"> The client-side file upload element consists of a labeled text field with an associated Browse... button as shown below. The text field and label should behave like any other text field. See <a href="07-simple.html#7.3">7.3 Text Elements</a> for guidelines.<br>
+    <br>
+    <img src="complex_graphics/file-upload-field-button.gif" alt="Client-side File Upload Element" width="421" height="42"></p>
+<p class="style20">There is no design for the client-side file selection window itself, as it is provided by the operating system, and is platform-specific.<br>
+    <br>
+When the Browse... button is clicked, the browser-specific client-side file chooser window is displayed. In this window, the user chooses the file to be uploaded to the server. When the user has completed making a selection in this window, the fully qualified name of the selected file is displayed in the text field of the client-side file upload element.<br>
+<br>
+  <img src="complex_graphics/file-upload-filled.gif" alt="A populated Client-side File Upload element" width="421" height="42"><br>
+  <br>
+When the page is submitted, the specified file is uploaded to the server and handled by the application. For example, the file may be opened and displayed, or it might be saved. </p>
+<p class="style20">Note that the Browse... button used in this element is a standard form element. Therefore, the style of the button cannot be made to match the style of the buttons shown in other images in these guidelines. </p>
+<p class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> When the client-side file upload is disabled (does not apply in the current situation), it should have the button and field disabled, like this:</p>
+<p class="style20"><img src="complex_graphics/file-upload-disabled.gif" alt="Disabled Client-side File Upload element" width="421" height="42"></p>
+<p class="style20">(There is no noneditable client-side file upload, as having a read-only version of an action would not apply.)</p>
+<p class="style20">For an interactive example of Client-Side File Upload, see <a href="http://webdev2.sun.com/example/faces/chooseruploader/fileUploader.jsp">http://webdev2.sun.com/example/faces/chooseruploader/fileUploader.jsp</a></p>
+<H3 class="style20"><A name="8.5.2" id="8.5.2"></A> 8.5.2 File Chooser Element</H3>
+<P class="style20">The file chooser element is used to browse files on the server.  The file chooser element  is based on standard file choosers from Java and Windows 
+    applications. </P>
+<P class="style20">Web browsers, by default, bring up a platform-specific file selection 
+      dialog that is used to browse files available to the client the browser is running 
+      on. The file chooser element is not used to browse files on the client. To browse files on the client, and then upload a selected file from the client to the server, use the client-side file upload element (see <a href="08-complex.html#8.5.1">8.5.1 Client-Side File Upload  Element</a>). </P>
+<P class="style14 style20">The file chooser is used to navigate through the server's file system by searching for a specific file. The list shows all folders and files within the currently selected folder.</P>
+<P class="style20">The file chooser can be displayed in a pop-up window or inline on a secondary content page in the main browser window. When on a main browser page, it can appear by itself or with other user interface elements that are not specific to the file chooser, but are relevant to the page on which the file chooser is displayed.</P>
+<P class="style20">Here is an example file chooser shown in a pop-up window:<br>
+  <br>
+<IMG src="complex_graphics/file_chooser.png" width="535" height="422" alt="File Chooser Element Example"></P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+When the file chooser element appears on a main browser page:
+<ul class="style20">
+  <li>Right align the buttons that allows users to accept or reject their input, 
+    and place them 5 pixels below the horizontal rule marking the bottom of the 
+    content (see <a href="06-content.html#6.7">6.7 Secondary-Content Page Layout 
+    and Use</a>).<br>
+  </li>
+  <li>The button allowing users to accept their input is typically labeled Choose 
+    File, but it may be more generic if the page does other things besides file 
+    choosing.</li>
+</ul>
+<p class="style19"><img src="complex_graphics/file_chooser_inline.gif" width="548" height="394" alt="Inline File Chooser Element"></p>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Place the server name at the top of the dialog page.<BR>
+  <BR>
+  <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   Include a Look In text field and apply the following guidelines:</P>
+<UL class="style20">
+  <LI> 
+    <P>Use the Look In text field to show the hierarchical path to the currently 
+      displayed list.</P>
+  </LI>
+  <LI> Use the following order of preference for determining which folder to start 
+    the file chooser in (Look In text field and list): 
+    <UL>
+      <LI> Go to a logical starting point for the specific situation the file 
+        chooser is being used for.</LI>
+      <LI>Start in the folder that was last-visited by the user. The last-visited 
+        location is specific to each application and session.</LI>
+      <LI>Go to the root directory on a Unix/Linux server, or to the root directory 
+        of the boot drive on a PC.<br>
+      </LI>
+    </UL>
+  </LI>
+  <li>Allow users to type a path and press Enter to navigate to a new folder.</li>
+</UL>
+<UL class="style20">
+  <LI>Update the list to reflect the path specified in the Look In text field 
+    and vice-versa.</LI>
+</UL>
+<UL class="style20">
+  <LI> 
+    <P>If the folder name specified does not exist, present an inline error message including 
+      the value entered in the Look In field (See <a href="14-alerts.html#14.1">14.1 
+      Inline Alert Messages</a> for more details), and reset the Look In field 
+      and other fields to the previous valid folder. This avoids losing the location 
+      the user had been on, which would have often forced canceling and starting 
+      over in order for the user to continue.</P>
+  </LI>
+</UL>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+   For the list, which shows all folders and files within the currently selected 
+folder, follow these guidelines:</P>
+<UL class="style20">
+  <LI>Enable users to filter the list using the File Filter field. This field 
+    allows the files in the list to be filtered based on the expression entered. 
+    Once the expression is entered, the filtering action takes place after the 
+    Enter key is pressed. Wildcard characters are indicated through the use of 
+  the asterisk &quot;*&quot; character.<BR>
+  </LI>
+  <LI>By default, display * in the File Filter field, to let the user see how 
+    to enter wildcards. If the File Filter field is blanked out, treat the value 
+  as '*'. </LI>
+</UL>
+<UL class="style20">
+  <LI>By default, alphabetically sort the list of folders and files, with all 
+    folders first, followed by all files. Use a case-insensitive sort, so that 
+    "filename" and "Filename" would be next to one another. Otherwise, those users 
+    not accustomed to case sensitive searches may not find the files which begin 
+    with a lower case letter, not knowing to look down below 'Z' to find 'a').  </LI>
+</UL>
+<UL class="style20">
+  <LI>Enable users to sort the list based on the following: 
+    <UL>
+      <LI>Name (A-Z) - always apply this as a secondary sort if it is not the 
+        primary sort</LI>
+      <LI>Name (Z-A)</LI>
+      <LI>Date (Oldest First)</LI>
+      <LI>Date (Newest First)</LI>
+      <LI>Size (Smallest First)</LI>
+      <LI>Size (Largest First)<br>
+      </LI>
+    </UL>
+  </LI>
+  <LI>When the list is sorted by something other than the Name, use the Name column 
+    as a secondary sort, and sort it in ascending order. For example, if the list 
+    is sorted by Size but ten of the files have the same size, these ten files 
+    would be listed alphabetically in ascending (A-Z) order based on their file 
+    names. </LI>
+</UL>
+<p class="style20"><img src="complex_graphics/file_chooser_list.gif" width="548" height="394" alt="File Chooser Element with sort list open showing the contents as specified in the text above"></p>
+<UL class="style20">
+  <LI>Each row in the list indicates the folder or file name, its size, and its 
+    last modification date and time (hours and minutes). Be sure to internationalize 
+    and localize the date.<br>
+  </LI>
+  <LI> Enable users to open a folder and display its contents by one of three 
+    different methods: 
+    <UL>
+      <LI>Enter a path directly in the Look In field and press Enter.</LI>
+      <LI>Select a folder in the list and click the Open Folder iconic button <img src="complex_graphics/OpenFolderIcon.gif" width="20" height="20">. </LI>
+      <LI>Double-click a folder selection in the list. </LI>
+    </UL>
+    <P>(Each newly opened folder updates the path in the Look In text field). 
+    </P>
+  </LI>
+  <LI> 
+    <P>The Back Up One Level iconic button <img src="complex_graphics/BackUpOneLevelIcon.gif" width="20" height="20"> navigates up one level in the file system hierarchy 
+      and displays the files and folders at the new level in the list.  </P>
+  </LI>
+  <LI> 
+    <P> If a file selection is made, clicking the Choose File button returns the 
+      full path of the file to the application and invokes the proper window behavior: 
+      pop-up windows close and return the file name to the application while inline 
+      file choosers return the file name, clear the Selected File text field, 
+      and either close, or wait for additional user input at the application designer's 
+      discretion. </P>
+  </LI>
+  <li> If a file selection is made, but then the user chooses a different folder, 
+    clear the selected file from the Selected File field.    <br>
+  </li>
+  <LI>Allow double-clicking on a file to select the file and invoke the proper 
+      window behavior: pop-up windows close and return the file name to the application 
+      while inline file choosers return the file name and either close, or wait 
+  for additional user input at the application designer's discretion.<br>
+  </LI>
+  <LI>Disable the Open Folder iconic button when a file is selected.<br>
+  </LI>
+  <LI>If you have a Choose File button, disable it  until a valid filename is selected from the 
+  list or typed into the Selected File text field.</LI>
+</UL>
+<P class="style20">  <br>
+  <IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+Include a Selected File text field and apply the following guidelines:</P>
+<UL class="style20">
+  <LI> 
+    <P>If a file is selected in the list, display the name of the file in the 
+      Selected File text field. If multiple files are selected, display all of 
+      the files names separated by commas. Do not display folder names in the 
+      Selected File text field (see later discussion about the Select<span class="style2">ed</span> Folder text 
+      field).</P>
+  </LI>
+  <LI> 
+    <P>Allow the user to specify a new path in the Selected File text field. After 
+      the user enters the new path and hits enter, update the list and the Look 
+      In text field to reflect the new path. If a user types a path that begins 
+      with '/' or '\', take that as the full path name. Otherwise, append what 
+      the user types to the path in the Look In text field.</P>
+  </LI>
+  <li> 
+    <p>Clear selected file text if the user selects a different folder in the 
+      list. Replace existing text in the Selected File text field only when the 
+      user selects a new file name from the list or types a new file name. No 
+      other action should replace existing text in the Selected File text field.</p>
+  </li>
+  <LI> 
+    <P>Allow the user to specify a file name in the Selected File text field by 
+      typing a full path, or without a path if the file is contained in the current 
+      Look In folder. Once the user types in a valid file name and presses the 
+      Enter key, the window should react appropriately: pop-up windows should 
+      close and return the file name to the application while inline file choosers 
+      should return the file name, clear the Selected file text field, and either 
+      close or await additional user input at the application designer's discretion.</P>
+  </LI>
+  <LI>If the file chooser is in a pop-up window, set the keyboard focus inside 
+    the Selected File text field when the pop-up window initially comes up.</LI>
+</UL>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If the user makes an error when typing a file or folder name in the Selected File or Selected Folder fields, display an inline alert message (See <a href="14-alerts.html#14.1">14.1 Inline Alerts</a> for more 
+  details), but leave the value entered in the field for the user to edit it. 
+  Note this is slightly different behavior than when the user puts an incorrect 
+  folder name in the Look In field, as in this case leaving the incorrect values 
+  does not lose the location the user had been on. </P>
+<P class="style20"><b>  
+  Multiple selection</b>: Most file chooser elements should support multiple selection 
+    unless the application designer has a compelling reason not to (such as that 
+    only one file selection makes sense for the situation). See the following example 
+of a file chooser element that supports multiple selection. </P>
+<p class="style20"><img src="complex_graphics/file_chooser_multsel.gif" alt="A multiple-selection File Chooser Element" width="553" height="429"></p>
+<p class="style20">Multiple selection is allowed through standard use of the Shift (contiguous 
+  selection) and Ctrl (disjoint selection) keys. In this case, clicking the Choose 
+Files button returns a list of all selected file path names.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  If multiple files can be selected:</p>
+<ul class="style20">
+  <li>Include the inline text "To select multiple items use Shift-click or Control-click."    beneath the list in the file chooser element.<br>
+  </li>
+  <li>Change the button label &quot;Choose File&quot; to &quot;Choose Files&quot; 
+    and the field label &quot;Selected File&quot; to &quot;Selected Files.&quot;</li>
+</ul>
+<P class="style20">  <b><br>
+  Folder Chooser Variant</b>: Some applications might require browsing the 
+  server's file structure to locate a folder (rather than a file). This version 
+  of the chooser is called a folder chooser and is slightly different, as shown 
+  below.</P>
+<P><IMG src="complex_graphics/folder_chooser.gif" width="564" height="395" alt="Folder Chooser Variant Example"></P>
+<P class="style20">Although files can be selected, no action can be performed on them. The lighter 
+  gray color is used to indicate that files cannot be acted upon in the folder 
+  selection version of the file chooser. Files are included in the list as an 
+  informational aid only, allowing the user to see the entire contents of a given 
+  folder.</P>
+<P class="style20"><IMG src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> 
+  The requirements listed for the file chooser element apply to the folder chooser, 
+  with the following exceptions:</P>
+<UL class="style20">
+  <LI> 
+    <P>Replace the &quot;Choose File&quot; button with a &quot;Choose Folder&quot; 
+      button, or the &quot;Choose Files&quot; button with a &quot;Choose Folders&quot; 
+      button if multiple selection is allowed. </P>
+  </LI>
+  <LI> 
+    <P> The &quot;Selected File&quot; field label is changed to "Selected Folder," 
+      or the &quot;Selected Files&quot; field label is changed to "Selected Folders" 
+      if multiple selection is allowed. </P>
+  </LI>
+  <LI> 
+    <P>Display the folder name(s) in the Selected Folder(s) text field. Do not 
+      display file names there.</P>
+  </LI>
+  <LI> 
+    <P>Double-clicking a file does not perform any action. (Double clicking a 
+      folder opens it as in the file chooser. It does not select that folder.)</P>
+  </LI>
+  <LI> 
+    <P>(On a future release, the File Filter field may be 
+    changed to be a Folder Filter in the folder chooser.) </P>
+  </LI>
+</UL>
+<p class="style14 style20">(There is no noneditable File Chooser or Folder Chooser, as having a read-only version of an action would not apply.)</p>
+<P class="style20">For an interactive example of a File Chooser, see <a href="http://webdev2.sun.com/example/faces/chooseruploader/fileChooser.jsp">http://webdev2.sun.com/example/faces/chooseruploader/fileChooser.jsp</a></P>
+<P class="style20">For an interactive example of a Folder Chooser, see <a href="http://webdev2.sun.com/example/faces/chooseruploader/folderChooser.jsp">http://webdev2.sun.com/example/faces/chooseruploader/folderChooser.jsp</a><br> 
+</P>
+<H2 class="style20"><A name="8.6" id="8.6"></A> 8.6 Line Graph </H2>
+<p class="style20">The line graph guidelines provide basic visual design specifications. The design elements covered here are primarily limited to font treatments, line weights, color palette, and basic layout guidelines. These designs were developed for implementation with JFreeChart, a Java class library for generating charts, although the designs should be generic enough to use with other packages.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> Line graphs should be displayed on a white background.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Graphs should not take on the appearance of a three-dimensional display. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> Offer a graph title. The title should provide a general, yet concise, description of the graph. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> </strong> Provide detailed title information in a subtitle placed directly below the graph title. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> A legend should be provided with the graph. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If presenting a duel-axis graph (two y-axis), use separate legends to describe each. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> If possible, include the title &quot;Legend:&quot; above the legend information. If including a title is not possible, provide inline help text with the legend to describe it. For guidelines on providing inline help see <a href="11-help.html#11.1">11.1 Inline Help</a>. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> The visual presentation of the legend may vary based on implementation constraints, but the final design should never visually compete with the graph itself.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> If the user has selected a specific scale (Daily, Weekly, Monthly), scale the graph accordingly.</p>
+<p class="style20"> <strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> Space out the tick mark intervals to suit the size of the graph.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> Use a minimum of 10 pixels distance between the tick labels on an axis. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> If possible, provide tool tips for data points. The tool tips could contain more detailed information about the data points. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"></strong> When using time values in charts, follow the localization guidelines for time located in <a href="H-globalization.html">Appendix H - Globalization Requirements</a>.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> When displaying 24-hour time, add &quot;24-hour time&quot; to the axis label. </p>
+<p class="style20"><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> </strong>To support accessibility, give the user the choice of a graph or table representation of the data. The table display could be offered via the longdesc HTML attribute in the image tag that links to a page that shows the data, or via a configuration option during the setup process for the graph. </p>
+<p class="style20">Basic Graph<br>
+    <img src="complex_graphics/basic_chart_specs.gif" alt="Basic graph" width="870" height="394"></p>
+<p align="left" class="style20">Graph Tick Line Variations: Solid Gray or Dotted Gray Tick Lines<br>
+    <img src="complex_graphics/Line_options.gif" alt="Tick line variations" width="485" height="173"></p>
+<h3 class="style20"><a name="8.6.1" id="8.6.1"></a>8.6.1 Color Palette </h3>
+<p class="style20">The following palette colors are recommended for use within line charts. The palette colors have been evaluated for accessibility using Vischeck, an online tool that can emulate how a page or graphic will appear to colorblind users. The line graph colors selected mitigate the display differences. See <a href="http://vischeck.com/">http://vischeck.com/</a> for more information. Product teams can use alternate colors, as long as the colors are tested for accessibility.</p>
+<p class="style20">There are two recommended color palettes, a comparative color palette and a threshold palette, which when combined provide a single palette of six colors. Using only six colors (maximum) in any given graph limits the cognitive burden of interpreting a large number of color-coded associations. It also makes distinguishing between multiple attributes and threshold lines easier for the user. </p>
+<p class="style20"> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> For users to distinguish between attributes, each attribute charted should use a unique line color. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> The maximum number of attributes that can be presented on a graph at any one time is six.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> If you need to use alternate palette colors, <span class="style4"><span class="style1 style2">see <a href="01-introduction.html#1.4">1.4 Resources for Application Designers</a> to determine the approvals required for doing this. </span></span></p>
+<h4 class="style20"><a name="8.6.1.1" id="8.6.1.1"></a>8.6.1.1 Threshold Line Colors</h4>
+<p class="style20">Threshold lines can be provided on graphs to indicate alarm, status, or other thresholds. There are three colors in the threshold palette which can be used for threshold lines. See <a href="08-complex.html#8.6.2">8.6.2 Lines and Data Points</a> for more information. The three colors in the threshold palette indicate severity levels: critical (red), major (yellow/orange) and <span class="style6">minor (blue)</span>.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> Use the colors in the palette shown below for the threshold lines. </p>
+<p class="style20">Threshold Palette <br>
+    <img src="complex_graphics/palette_threshold.gif" alt="Threshold palette" width="227" height="79"></p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If a peak threshold needs to be represented in the graph, use any remaining color in the threshold or comparative palettes.</p>
+<p class="style20"> <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If thresholds need to be presented, only use one attribute per graph and black for the attribute line color as shown in the example below. </p>
+<p class="style20">Single Attribute with Data Points, Threshold Lines, and Peak Threshold Line<img src="complex_graphics/thresholds.gif" alt="Peak and threshold lines" width="846" height="380"></p>
+<h4 class="style20"><a name="8.6.1.2" id="8.6.1.2"></a>8.6.1.2 Comparative Attribute Line Colors </h4>
+<p class="style20">The comparative palette colors are primarily used in graphs that present multiple attribute lines. When graphs present multiple attributes, unique colors for each attribute line helps the user distinguish between them.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Graphs with multiple attributes should not include threshold lines. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When threshold lines are not included in the graph, the comparative palette can be extended with colors from the &quot;threshold&quot; palette. </p>
+<p class="style20"> <strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> Use the colors in the following palette for charting attributes in multiple attribute graphs.</p>
+<p class="style20">Comparative Palette (*plus threshold colors)<br>
+    <img src="complex_graphics/palette_compare.gif" alt="Comparative palette" width="223" height="80"></p>
+<p class="style20">Graph with Multiple Attributes and Duel Axis<br>
+    <img src="complex_graphics/multi_pts.gif" alt="Graph with multiple attributes" width="800" height="475"></p>
+<h3 class="style20"><a name="8.6.2" id="8.6.2"></a>8.6.2 Lines and Data Points </h3>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Graphs do not need a border around them. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Graphs must have axis lines which are 1 pixel wide, color #999999.</p>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Tick mark grid lines should be less than 1 pixel wide, if possible. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Tick mark lines should be solid and a light gray color, such as #CCCCCC or lighter. A dotted or dashed gray line is also acceptable. </p>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Threshold lines should be dotted (or very short dashes). The dots should be 2 pixels wide and 2 pixels high. </p>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> A peak threshold line should be a solid line, in a lighter line weight than the attribute line. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> <span class="Mst1LgoTd">Data points are represented as small, 4 x 4 pixel squares which match the colors of the associated lines.</span></p>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Use long dashes to indicate predicted data as shown in the example below.The dashed, predictive, segment of the attribute line uses the same color and line weight characteristics as the non-predictive segment.</p>
+<p class="style20">Predictive Graph With Dashed Lines </p>
+<p class="style20"><img src="complex_graphics/predict.gif" alt="Predictive graph" width="693" height="380"></p>
+<h3 class="style20"><a name="8.6.3" id="8.6.3"></a>8.6.3 Text</h3>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> All text should use &quot;Arial,&quot; or the system's default sans serif font. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> The default type style is: plain, 12px/pt, black, unless specified otherwise. </p>
+<h4 class="style20"><a name="8.6.3.1" id="8.6.3.1"></a>8.6.3.1 Tick Mark Label Text</h4>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Tick mark labels align to the graph. If tick mark labels are on the left of the table, the text aligns right. If tick mark labels are on the right of the table, the text aligns left. If the tick mark labels are above or below the table, the label center aligns to the tick line that it refers to. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Tick mark label text is "Arial," 10 px/pt.</p>
+<p class="style20"><strong><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"></strong> To conserve horizontal space, tick mark labels should be forced to wrap onto two lines (i.e. Oct 17 on top line and 10:00 AM on the 2nd line). </p>
+<h4 class="style20"><a name="8.6.3.2" id="8.6.3.2"></a>8.6.3.2 Axis Text</h4>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Axis titles should be separated 10 pixels from the tick mark labels. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Vertical axis labels are rotated 90 degrees to read vertically beside the axis. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Text for the axis labels is "Arial," Bold, 12 pt, #666666. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If the axis label is above or below the table, the label is center-aligned to the graph.</p>
+<h4 class="style20"><a name="8.6.3.3" id="8.6.3.3"></a>8.6.3.3 Graph Title Text: Default </h4>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Text for graph title is "Arial", Bold, 16 pt.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Text for the subtitle for the graph is: &quot;default.&quot;</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Graph title and subtitle text should be center-aligned to the graph, and positioned 10 pixels above it. </p>
+<h4 class="style20"><a name="8.6.3.4" id="8.6.3.4"></a>8.6.3.4 Graph Title Text: Property Page </h4>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Text for property page title is: "Arial", Bold, 12 pt, #666666. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Text for the property page subtitle is: &quot;default.&quot;</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Property page title and subtitle text should be center-aligned to the graph, and positioned 10 pixels above it. </p>
+<p class="style20"><img src="complex_graphics/property_pg.gif" alt="Property page graph" width="641" height="593"></p>
+<h4 class="style20"><a name="8.6.3.5" id="8.6.3.5"></a>8.6.3.5 Legend Text </h4>
+<p class="style20"> <img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Text for the legend data is: &quot;default.&quot;</p>
+<p class="style20"> <img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Text for the legend title, if presented, is: "Arial", Bold, 12 pt, #666666. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If a description of the legend is provided, it should follow the style guidelines for &quot;Inline Help&quot;, see <a href="11-help.html#11.1">11.1 Inline Help.</a></p>
+<h4 class="style20"><a name="8.6.3.6" id="8.6.3.6"></a>8.6.3.6 Other Graph Types and Tips </h4>
+<p class="style20">While only line graphs are detailed above, there are many other graph types which will be appropriate to different situations. Limited information for other graph types is provided below, and detailed guidelines for other graph types may be provided in a later release. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When creating pie charts, do not use 3D representations as they distort the data.</p>
+<p class="style20">Additional tips for creating graphs can be found at this external resource: <a href="http://lilt.ilstu.edu/gmklass/pos138/datadisplay/sections/goodcharts.htm#Times%20Series%20Charts">http://lilt.ilstu.edu/gmklass/pos138/datadisplay/sections/goodcharts.htm#Times%20Series%20Charts</a></p>
+<p class="style20">This external reference is provided for your supplementary information. It is not part of the Web Application Guidelines. If there are any conflicts between this document and the Web Application Guidelines, use the web application guidelines for building your application. Also, some of the tips included in that document may not be possible in JFreeChart. </p>
+<p class="style20"></p>
+<h2 class="style20"><a name="8.7" id="8.7"></a>8.7 Portal Elements </h2>
+<p class="style20">This section provides design specifications for user interface elements that are used within <span class="style2">Sun-branded portal pages</span>.<span class="style2"> A  definition of a portlet is given, and the portlet table and portlet tab components are discussed.</span> Basic page layout suggestions for presentation of a portlet within a Web page are also presented. Navigation or technical considerations of portal site design are not discussed. </p>
+<p class="style20">The <span class="style2">portlet table and portlet tab </span> elements described here are based on the <span class="style2">components in the Sun Common UI Component Library (in open source, the Project Woodstock components)</span>, but <span class="style9"><span class="style2">shown with a visual treatment</span></span> specifically for use in the portlet environment.</p>
+<h3 class="style20"><a name="8.7.1" id="8.7.1"></a>8.7.1 Portlet Definition </h3>
+<p class="style20">Portlets are Java-based Web constructs, managed by a portlet container, which offer aggregated, customized, and dynamic content. They are presented on a Web portal page containing one or many portlets. For more information refer to the <span class="style17"><font face="verdana, arial, helvetica"><a href="http://www.javaworld.com/javaworld/jw-08-2003/jw-0801-portlet.html">JSR (Java Specification Request) 168 Portlet Specification</a>.</font></span> </p>
+<p class="style20">This portlet user interface design is comprised of the portlet content area and a title bar. The title bar contains the portlet title and the portlet controls.</p>
+<p class="style20"><img src="complex_graphics/portlet.png" alt="Basic portlet" width="888" height="506"></p>
+<h4 class="style20"><a name="8.7.1.1" id="8.7.1.1"></a>8.7.1.1 Title Bar Controls </h4>
+<p class="style20">A close button is provided in the far right corner to close that portlet.</p>
+<p class="style20">Portlets also offer action controls which act on the level of the portlet. The controls are initiated through an Edit drop-down menu. This menu is placed at the top right, left only of the close control.</p>
+<p class="style20">The drop-down menu generally contains items that allow users to modify the portlet's view and content. Some examples include collapsing or hiding the portlet container, changing its position on a page, or setting preferences for what is to be shown in the portlet. </p>
+<p class="style20">An additional drop-down menu item may launch a &quot;Help&quot; window page as a secondary window. For guidelines regarding secondary windows, refer to section <a href="03-windows-pages.html#3.8">3.8 Secondary Content Pages</a>. Development teams may also want to include application-specific buttons. </p>
+<p class="style20"><img src="complex_graphics/drop_down.png" alt="Portlet drop down" width="792" height="444"><br>
+    <br>
+    <img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> The Edit drop-down menu remains open until the user makes a menu selection or clicks the drop-down toggle button to dismiss the menu.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Edit Drop-down menu selections should be visually indicated by highlighting the selected item, or by using a checkmark icon. Use the same highlight color chosen for other areas within the application. The highlight selection color should be consistent throughout the user interface.</p>
+<p class="style20">Regardless of functionality, both controls use the same visual characteristics to indicate three different action states: default (not pressed), hover, and pressed. See the examples below: </p>
+<p class="style20"><img src="complex_graphics/button_states.png" alt="Portlet title bar controls in default, hover, and default states. Also shows top alignment even when title bar height increases." width="500" height="349"></p>
+<h4 class="style20"><a name="8.7.1.2" id="8.7.1.2"></a>8.7.1.2 Content Area </h4>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Portlet content area should have a white background color, unless a portlet is used for login. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> The border for the content area should be a 1-pixel gray line. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> 
+If a portlet is used for user login, use <span class="style2">a  background gradient as shown in the following section, </span> to emphasize and distinguish it from other portlets on the page.</p>
+<p class="style20">&nbsp;</p>
+<h4 class="style20"><a name="8.7.1.3" id="8.7.1.3"></a>8.7.1.3 Page Layout </h4>
+<p class="style20">As an initial configuration, portlets are typically combined within a Web portal page. Users can most often tailor portlet configuration and content from this presentation. Consistent spacing between portlets will help to maintain a usable page design, despite changes to the portlet configurations. The recommended spacing between portlets is illustrated below. </p>
+<p class="style20"><img src="complex_graphics/portal_layout.png" alt="Page layout example" width="867" height="765"></p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Portlets should be spaced 20 pixels apart from one another, and other components, when combined on a Web portal page together. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Like other page elements, portlets should also maintain the 10-pixel margin for the page edge.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> If a specific portlet needs to be emphasized on the page, place it in the upper left-hand corner of the content area. </p>
+<h3 class="style20"><a name="8.7.2" id="8.7.2"></a>8.7.2 Portlet Table </h3>
+<p class="style20">The portlet table is used within the content area of a portlet. The table design for a portlet is a modified version of the Sun <span class="style2"> Common UI</span> Component Library <span class="style2"> (in open source, the Project Woodstock components)</span> table design. It offers all of the same functionality as the <s></s>Sun <span class="style2">Common UI </span> Component Library, yet has a different visual treatment for presentation within a portlet window. </p>
+<p class="style20">The portlet table is distinguished from the standard table by its visually diminished table title and title bar background, no table background element, and different visual treatment for the table action bar and column headers. These combined&nbsp; differences allow the portlet table to exist within the portlet without visually overwhelming it and distracting the user from the data inside.</p>
+<p class="style20">While the portlet table offers the same functionality as the standard Sun <span class="style2">Common UI </span> Component Library <span class="style2">(in open source, the Project Woodstock components)</span> table, you should avoid employing full table functionality in a portlet environment. Full table functionality, with its visual affordances, can easily overwhelm the condensed portlet display and make it difficult for users to find information. </p>
+<p class="style20">The ideal presentation of the portlet table is a property table or a table with only a few actions. If the tabular data needs more robust table functionality, you should redirect users to another Web page containing a standard table display. </p>
+<p class="style18"><img src="complex_graphics/table_lite_prop.png" alt="Portlet table (property page view)" width="649" height="208"></p>
+<p class="style18"><img src="complex_graphics/table_lite_action.png" alt="Portlet table (with action bar)" width="882" height="250"></p>
+<p class="style20"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14"> Avoid offering full table functionality with a portlet table. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> When a lighter weight table is needed outside the portal, just use the standard table and leave off the action bar. Only use the portal light weight table inside portals.</p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Restrict the width of the table to ensure that the portlet content and controls are always visible on the desktop. </p>
+<h3 class="style20"><a name="8.7.3" id="8.7.3"></a>8.7.3 Portlet Mini-Tab Group </h3>
+<p class="style20">The portlet mini-tab group is used within the content area of a portlet. The mini-tab group is a modified version of the Sun Common UI Component Library (in open source, the Project Woodstock components) tab component design. The portal tabs can only have one level of tabs, as opposed to the standard tab design which can have up to three levels. The portlet tab design offers a simple means of switching views between a few tabbed content panes. It is visually distinct from the standard Sun Common UI Component Library tab design because background shading behind the tabs is absent and a containment box encloses the tabbed pane. See the example below: </p>
+<p class="style20"> <br>
+<img src="complex_graphics/sun_tab-lite.png" alt="Portlet mini tab group" width="785" height="442"></p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Portlet tabs are restricted to one level. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Portlet tabs should not wrap to a second tab row or cause a scroll bar within the portlet. </p>
+<p class="style20"><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14"> Restrict the number of tabs to ensure that the portlet content and controls are always visible on the desktop. <br>
+</p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <a class="greybar_link" href="03-windows-pages.html">3&nbsp;Windows&nbsp;and&nbsp;Pages</a>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <span class="currentchapter">8&nbsp;Complex&nbsp;Elements</span>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

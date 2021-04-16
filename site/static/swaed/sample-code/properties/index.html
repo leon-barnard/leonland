@@ -1,0 +1,61 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Properties Page Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+    <td class="Mst2TtlTd" width="99%"><div class="Mst2TtlTxt"> Properties Page</div></td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is the example HTML for properties pages and corresponds to <a href="../../06-content.html">Chapter 6, Content Area Structure and Layout</a>. Many of the relevant details are spelled out in the chapter, so they won't be repeated here, but below is a summary of the general rules:</p>
+<ul>
+  <li>Jump links are added if the page &quot;... is long enough to require significant scrolling under typical usage conditions&quot;
+    <ul>
+      <li>If jump links are added, their name should be the same as the section name and should have a tooltip (set via title attribute) that says &quot;Jump Down to the &lt;section-name&gt; Section&quot;</li>
+      <li>If jump links are added, then &quot;Back to Top&quot; links should be added at the bottom of every section</li>
+    </ul>
+  </li>
+  <li>&quot;Indicates required field&quot; text should only be shown if there are required fields on the page
+    <ul>
+      <li>Required field glyphs should be added to the right of the required element's label text</li>
+    </ul>
+  </li>
+  <li>Fields with errors should be marked with a red error glyph to the left of the label and the text label should be red and bold</li>
+  <li>Buttons should be configurable and can range in number from 1 to 3 -- a likely default for properties pages would be &quot;OK&quot; and &quot;Cancel&quot;</li>
+  <li>Buttons should be repeated at the top and bottom of the page if the page is likely to require scrolling and only at the bottom if scrolling is not likely</li>
+</ul>
+<p>See the release notes below for more implementation-specific information.</p>
+<p>&nbsp;</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>Example [ <a href="http://webdev2.sun.com/example/faces/propertysheet/PropertySheet.jsp">HTML</a> ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>For section 508 compliance, the page sections are implemented using the fieldset and legend tags. These tags enable assistive technologies to associate groups of form elements as a related set. Unfortunately, Netscape 4 does not support this tag at all and Netscape 7 (as of July 2003) does not handle it particularly well (e.g., can't print &amp; doesn't properly handle horizontal scrolling), so browser-specific solutions are required. For all browsers except IE, a &lt;div class=&quot;ConFldSetDiv&quot;&gt; is used instead of the fieldset -- this sets the outer margins. Similarly, for all browsers except IE, a &lt;div class=&quot;ConFldSetLgdSpn&quot;&gt; is used instead of the legend tag. </p>
+<p>Another accessibility feature in these guidelines is the use of the label tag to associate text labels with their form elements. The various form element micro component tags already support this feature.</p>
+<p>One side effect of the fieldset tag is that when it is used it creates a border around all of the items contained within. However, this behavior is overridden in the IE style sheet. </p>
+<p>&nbsp;</p>
+</body>
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head><title>3&nbsp;Windows&nbsp;and&nbsp;Pages - Sun Web Application Guidelines - Version 4.1</title><!-- Standard Header and Footer for Guidelines - Chip Alexander, 9/07 -->
+
+<meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+<meta http-equiv="content-language" content="en">
+<meta name="keywords" content="Sun Web Application Guidelines">
+<meta name="collection" content="reference">
+<meta name="date" content="2007-12-7">
+<link href="browser-uispec.css" type="text/css" rel="stylesheet">
+
+<style type="text/css">
+.currentchapter {
+	font-size: 11px;
+	color: #333333;
+	font-weight: bold;}
+.style3 {color: #000000}
+.style4 {color: #FFFFFF}
+</style></head><body bgcolor="white">
+<script src="js/uispec_js.js" type="text/javascript"></script>
+<div class="security-text" align="right"><a href="03-windows-pages_Popup_Windows.html#skipnav" title="Skip Navigation Links"></a></div>
+
+  <table class="MstTblBot" title="" border="0" cellpadding="0" cellspacing="0" width="100%">
+
+    <tbody><tr valign="middle">
+      <td class="MstTdTtl" bgcolor="#5382a1"><div class="MstDivTtl">
+          <div class="Mst1TtlTxt">Sun Web Application Guidelines - Version 4.1</div>
+        </div>
+        <div class="Mst1SecDiv"> </div></td>
+
+      <td class="MstTdLogo" bgcolor="#5382a1" width="1%"><a href="http://java.sun.com/"><img src="Guidelines_Icons/javalogo.gif" alt="Java Logo" border="0" height="39" width="23"></a></td>
+    </tr>
+  </tbody></table>
+
+<table class="Mst2Tbl" border="0" cellpadding="5" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td bgcolor="#cbd9e3"><font color="#35556b">
+   <a href="search.html"><img src="Guidelines_Icons/search.png" border="0" height="16" width="16"></a> <a href="search.html" class="greybar_link"><font color="#35556b">Search Guidelines</font></a>&nbsp; &nbsp; | &nbsp;&nbsp;
+   <a href="feedback.html"><img src="Guidelines_Icons/mail.png" border="0" height="16" width="23"></a> <a href="feedback.html" class="greybar_link"><font color="#35556b">Send Feedback</font></a>&nbsp;&nbsp; | &nbsp;&nbsp;
+   <a href="http://developers.sun.com/"><img src="Guidelines_Icons/go-up.png" border="0" height="16" width="15"></a> <a href="http://developers.sun.com/" class="greybar_link"><font color="#35556b">Developers.sun.com</font></a>
+ </font></td>
+ </tr>
+</tbody></table>
+
+  <!-- End Document Title Block begin Navigation Bar Block -->
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+</tbody></table> 
+
+<p><strong><a href="01-introduction.html">How To Use These Guidelines - An Introduction</a></strong>
+
+<a name="skipnav"></a>
+<br>&nbsp;</p>
+
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.2 Pop-Up Windows</p>
+
+<h2><a name="3.2" id="3.2"></a>3.2 Pop-Up Windows</h2>
+
+<p class="style1">Pop-up windows contain only secondary content pages.
+Peripheral tasks, such as composing a new message or managing an
+address book, are done in new pop-up windows to keep the main window
+stable and available for use (never swapped out).</p>
+
+<h3>Required</h3>
+
+<ul class="Requirements">
+
+  <li><span class="style24"><a name="3.2R1" id="3.2R1"></a><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> </strong>R1</span> Use a new pop-up window:
+      <ul>
+        <li>To focus on a specific task subsequent to the purpose of the main browser window. </li>
+        <li>When
+the main browser window is a "home" or "touchstone" page, a base where
+the user stays most of the time. The page may be reloaded to reflect
+updated data, but is never replaced with a different page.</li>
+      </ul>
+      <blockquote>
+        <p>
+Example: In an e-mail application, the window that displays the Inbox
+and other mailboxes is the "touchstone" window for that application.
+Peripheral tasks, such as composing a new message or managing an
+address book, are done in new pop-up windows to keep the main window
+stable and available for use (never swapped out).</p>
+      </blockquote>
+  </li>
+  <li><strong><a name="3.2R2" id="3.2R2"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R2</strong> Pop-up windows should contain secondary content pages only.</li>
+  <br>
+  <li><strong><a name="3.2R3" id="3.2R3"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R3</strong> To indicate the supplementary purpose of the content, pop-up windows should be smaller than parent windows. </li>
+  <br>
+  <li><strong><a name="3.2R4" id="3.2R4"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R4</strong>
+Pop-up windows should be large enough so that scrollbars are not
+displayed when the window is opened in the standard font size. </li>
+  <br>
+  <li><strong><a name="3.2R5" id="3.2R5"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R5</strong> To make pop-up windows chromeless (see <a href="03-windows-pages.html#Chrome">definition</a> on the previous page), suppress the menu bar and toolbars.
+      <p>When
+possible, suppress the status bar unless the page takes more than two
+seconds to load over a LAN (a gauge on the status bar provides feedback
+that an action is in process). </p>
+  </li>
+</ul>
+
+<ul class="Requirements">
+
+  <li><strong><a name="3.2R6" id="3.2R6"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R6</strong>
+Pop-up windows should open in the "golden mean" position relative to
+the entire screen (not the parent window). Use these formulas to
+calculate the vertical and horizontal coordinates to specify top and
+left location values in the JavaScript code which launches the pop-up
+window: <blockquote>
+        <p> Vertical = (screen.height - (screen.height/1.618)) - (pop-up_height/2) </p>
+        <p>Horizontal = (screen.width - pop-up_width)/2</p>
+      </blockquote>
+  </li>
+</ul>
+
+<blockquote>
+  <p>A pop-up window centered on the golden mean is more
+visually pleasing than the same window centered on the display's exact
+center. </p>
+  <p>If necessary move the pop-up window from the golden
+mean to ensure that it is positioned to be entirely contained within
+the visible screen area. <br>
+      <br>
+      <b>Note: </b>Due to implementation limitations there is no provision for the parent window in these guidelines. </p>
+</blockquote>
+
+<ul class="Requirements">
+
+  <li><strong><a name="3.2R7" id="3.2R7"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R7 </strong>Give pop-up windows the pop-up window masthead, as shown in <a href="04-masthead.html">Chapter 4, Mastheads</a>.
+Since a pop-up window always contain<span style="color: rgb(102, 51, 255);">s</span> secondary content pages, its
+masthead supports a secondary purpose. It does not contain any links or
+buttons.</li>
+  <br>
+  <li><strong><a name="3.2R8" id="3.2R8"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R8</strong> If a wizard has left-pane help or a list of steps, it must be shown in a pop-up window, not in the main browser window. </li>
+  <br>
+  <li><strong><a name="3.2R9" id="3.2R9"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R9</strong> When a user performs a task that changes<span style="text-decoration: line-through;"></span> the content of a minimized window, restore that window and bring it to the front of the display. </li>
+  <br>
+  <blockquote>
+    <p>
+Example: When a pop-up window containing a dialog page is minimized,
+the user takes an action that displays new content in the dialog page.
+The implementation should force the minimized window to restore to its
+original size -- in front of other windows in the display. Without
+attention to proper coding, the windows might not behave in those ways.</p>
+  </blockquote>
+  <li><strong><a name="3.2R10" id="3.2R10"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R10 </strong>To
+prevent a window from being hijacked by a browser that is loading unrelated
+pages, name all windows (main and pop-up). The window name is not to be
+confused with its title; the name is invisible to the user and
+determined by the <i>target</i> attribute of a hyperlink (<i>a href</i>) tag or by the second argument of a Javascript <i>window.open()</i> method call<span style="text-decoration: line-through;"></span>. <br>
+      <br>
+  </li>
+  <li><span class="style24"><a name="3.2R11" id="3.2R11"></a><strong><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> </strong>R11</span>
+All pop-up windows should be coded so they will open even when the user
+has pop-up blocking enabled on their browser. They should also work
+without requiring the user to figure out that the application is trying
+to open pop-up windows which are being blocked, and adding the site to
+an exception list. </li>
+  <br>
+  <li><strong><a name="3.2R12" id="3.2R12"></a><img src="Guidelines_Icons/Requirement.jpg" width="14" height="14" alt="Required Guideline" title="Required Guideline"> R12 </strong>To
+prevent pop-up blocking issues, never open windows in the onload of a
+document (i.e., the onload attribute of the body tag). In most cases
+the best solution is to open the pop-up window when the user clicks a
+button, link, or jump menu item. In effect, opening the pop-up in the
+onload of a document could make the window look like an advertisement
+to the browser (which will then be blocked).</li>
+</ul>
+
+<h3>Advised</h3>
+
+<ul class="Recommendations">
+
+  <li><span class="style23"><strong><a name="3.2A1" id="3.2A1"></a><span class="style27"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A1</span></strong></span>
+Determine use cases for opening pop-up windows, and follow them through
+the product. Pop-up windows could open for certain types of content and
+not others. It is more important to be consistent across pages of the
+same type, than across all types within an application.</li>
+  <br>
+  <li><span class="style23"><strong><a name="3.2A2" id="3.2A2"></a><span class="style27"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A2</span></strong></span>
+When any part of a window's chrome is suppressed, replace any needed
+browser-supplied functions with guideline-compliant controls in the
+window's content area. </li>
+  <blockquote>
+    <p>Example: If the
+window's menu bar and toolbar are suppressed, users cannot print the
+window's contents by using the Print menu or by clicking on the Print
+button. If printing the contents of a window is deemed useful, print
+controls should be provided in the content area. </p>
+  </blockquote>
+  <li><span class="style23"><strong><a name="3.2A3" id="3.2A3"></a><span class="style27"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A3</span></strong></span> Do not reuse a pop-up window to display a different content page<span style="font-weight: bold;">.</span>
+Reuse the window only to display a new instance of the same content
+page. A "different" page could be the same dialog content page for a
+different target. For example: <blockquote>
+        <p><strong>Acceptable reuse</strong>:
+Clicking a Sort button followed by a Sort secondary content page opens
+into a pop-up window. The Sort page has an Apply button; the sorting
+criteria are applied to the main window and the Sort window remains
+open. If the user clicks the same Sort button in the main window again,
+the same Sort window should surface instead of another Sort window. </p>
+        <p>However,
+do not reuse a popup window when two Sort windows are open if they were
+spawned by different Sort buttons. If the Sort buttons are above
+different tables in the main window, the button targets and the targets
+of the resulting Sort dialog content pages would differ.</p>
+        <p><strong>Discouraged reuse</strong>: When the user clicks a New button in the main window and the Sort window's contents is replaced with the New dialog page.<br>
+        </p>
+      </blockquote>
+  </li>
+  <p><strong>Note:</strong>
+Online help reuses the same window for all help topics and for the
+Glossary window. </p>
+  <li><span class="style23"><strong><a name="3.2A4" id="3.2A4"></a><span class="style27"><img src="Guidelines_Icons/Recommendation.jpg" width="14" height="14" alt="Advised Guideline" title="Advised Guideline"> A4 </span></strong></span>Do not open a pop-up window from another pop-up window. Instead, do one of the following: </li>
+</ul>
+
+<ul>
+
+  <ul>
+    <li>Make the initial secondary content page appear in
+the main browser window. The next secondary content page would be the
+only one opened.</li>
+    <li>Redesign so that the additional secondary content page is unnecessary.</li>
+    <li>Use a wizard to contain all the steps.</li>
+  </ul>
+</ul>
+
+<p><strong><a href="03-windows-pages_Popup_Windows.html#3.2"><img src="windows-pages_graphics/BackToTop.gif" style="border: 0px solid ; width: 16px; height: 16px;" title="" alt="Back to Top">Back to top</a></strong></p>
+
+<p><a href="03-windows-pages.html"><strong>3 Windows and Content Pages</strong></a> <strong>&gt; </strong>3.2 Pop-Up Windows</p>
+
+<table class="NavTbl" border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>
+   <td><font color="#5382a1">[
+       <a class="greybar_link" href="index.html#toc">Table&nbsp;of&nbsp;Contents</a>&nbsp;|
+       <a class="greybar_link" href="00-revision.html">0&nbsp;Revision&nbsp;History</a>&nbsp;|
+	   <a class="greybar_link" href="01-introduction.html">1&nbsp;Introduction</a>&nbsp;|
+       <a class="greybar_link" href="02-visual.html">2&nbsp;Visual&nbsp;Design</a>&nbsp;|
+       <span class="currentchapter">3&nbsp;Windows&nbsp;and&nbsp;Pages</span>&nbsp;|
+       <a class="greybar_link" href="04-masthead.html">4&nbsp;Mastheads</a>&nbsp;|
+       <a class="greybar_link" href="05-navigation.html">5&nbsp;Top-Level&nbsp;Navigation</a>&nbsp;|
+       <a class="greybar_link" href="06-content.html">6&nbsp;Content&nbsp;Area</a>&nbsp;|
+       <a class="greybar_link" href="07-simple.html">7&nbsp;Simple&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="08-complex.html">8&nbsp;Complex&nbsp;Elements</a>&nbsp;|
+       <a class="greybar_link" href="09-tables.html">9&nbsp;Tables</a>&nbsp;|
+	   <a class="greybar_link" href="10-topology.html">10&nbsp;Topology</a>&nbsp;|
+       <a class="greybar_link" href="11-help.html">11&nbsp;Contextual&nbsp;Help</a>&nbsp;|
+       <a class="greybar_link" href="12-search.html">12&nbsp;Search</a>&nbsp;|
+       <a class="greybar_link" href="13-wizards.html">13&nbsp;Wizards</a>&nbsp;|
+       <a class="greybar_link" href="14-alerts.html">14&nbsp;Alerts&nbsp;and&nbsp;Messages</a>&nbsp;|
+       <a class="greybar_link" href="15-progress.html">15&nbsp;Progress&nbsp;Indicators</a>&nbsp;|
+	   <a class="greybar_link" href="16-alarms-status.html">16&nbsp;Alarms&nbsp;and&nbsp;Status&nbsp;Indicators</a>&nbsp;|
+       <a class="greybar_link" href="17-login.html">17&nbsp;Login&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="18-version.html">18&nbsp;Version&nbsp;Page</a>&nbsp;|
+       <a class="greybar_link" href="appendices.html">Appendices</a>&nbsp;]</font></td>
+ </tr>
+  </tbody></table>
+<div style="border-top:2px solid #5382A1; margin:0;">
+<table border="0" cellpadding="10" cellspacing="0" width="100%">
+ <tbody><tr>   
+ <td class="greybar_text">
+            <a class="greybar_link" href="http://www.sun.com/privacy/">Privacy Policy</a>  &nbsp;|&nbsp; 
+			<a class="greybar_link" href="http://www.sun.com/share/text/termsofuse.html">Terms of Use</a> &nbsp;|&nbsp;
+            <a class="greybar_link" href="http://www.sun.com/suntrademarks/">Trademarks</a> &nbsp;|&nbsp;
+            <font color="#000000">Copyright 2007 Sun Microsystems, Inc.</font></td>
+ </tr>
+</tbody></table>
+</div>
+
+</body></html>

@@ -1,0 +1,119 @@
+<!-- Sample HTML for 2.2 Guidelines -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>File/Folder Chooser Component Design - B. Examples and Specifications - Sun Web Application Guidelines</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="../../browser-uispec.css" type="text/css" rel="stylesheet">
+</head>
+<body bgcolor="#FFFFFF" text="#000000">
+<!-- <div align="right" class="security-text">Sun Proprietary/Confidential: Internal Use Only</div> -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="Mst2Tbl" title="">
+  <tr>
+          <td class="Mst2TtlTd" width="99%">
+            <div class="Mst2TtlTxt"> File/Folder Chooser Element</div>
+          </td>
+  </tr>
+</table>
+<div id="jumpLinks">
+	<ul>
+		<li><a href="index.html#overview"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Overview</a></li>
+		<li><a href="index.html#examples"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Examples</a></li>
+		<li><a href="index.html#notes"><img src="../sc_docs/to_anchor.gif" alt="" width="16" height="10" border="0" />Release Notes</a></li>
+	</ul>
+</div>
+<div style="margin:10px 0px;"><a href="../index.html#skipnav"
+ style="text-decoration:none;font-size:8pt;">&lt;&lt; </a><a href="../index.html#skipnav"
+ style="font-size:9pt;">Back to Appendix B - Examples and Specifications</a></div>
+
+<hr noshade="noshade" size="1" />
+<h3><a name="overview" id="overview"></a>Overview</h3>
+<p>This is sample HTML for the file and folder chooser tag specified in <a href="../../08-complex.html#8.5.2">8.5.2 File Chooser Element</a>.
+  There are two variations of this general design covered in the guidelines,
+  one that allows users to choose files and one that allows them to choose folders.
+In terms of appearance, the differences between the two are as follows:</p>
+<ul>
+  <li>the label on the main action button on the bottom will either be &quot;Choose
+    File&quot; or &quot;Choose Folder&quot;</li>
+  <li>the title tag for the button will either be &quot;Choose File and Exit
+    File Chooser&quot; or &quot;Choose Folder and Exit Folder Chooser&quot;</li>
+  <li>the validation and error messages will also vary somewhat (see release
+    notes below for details)</li>
+  <li>file names are disabled in the list box in the choose folder version (not
+    supported by IE)</li>
+</ul>
+<p>There are also variations based on the number of items the File/Folder Chooser 
+  is supposed to return. If a single item is to be returned, which would be the 
+  default behavior of the tag, the list box containing the file and folder names 
+  should only accept single selections (i.e., there is no &quot;multiple&quot; 
+  attribute in the select tag). If multiple items can be returned, the list box 
+  should be able to accept multiple selections via the addition of a &quot;multiple&quot; 
+  attribute to the select tag, and an embedded help text string is added beneath 
+  the box stating: &quot;<span class="HlpFldTxt">To select multiple items use 
+  Shift-click or Ctrl-click</span>.&quot;</p>
+<p>See the release notes below for more implementation details on the Choose
+  Folder  variation. See <a href="../../08-complex.html#8.5.2">8.5.2 File Chooser Element</a>
+  for additional information.</p>
+<hr noshade="noshade" size="1" />
+<h3><a name="examples" id="examples"></a>Examples</h3>
+<ul class="examples">
+	<li>File Chooser example: [ <a href="http://webdev2.sun.com/example/faces/chooseruploader/fileChooser.jsp">HTML</a>  ]</li>
+	<li>File Uploader examples: [ <a href="http://webdev2.sun.com/example/faces/chooseruploader/fileUploader.jsp">HTML</a>  ]</li>
+	<li>Folder Chooser example: [ <a href="http://webdev2.sun.com/example/faces/chooseruploader/folderChooser.jsp">HTML</a>  ]</li>
+	<li>File Chooser and Uploader example: [ <a href="http://webdev2.sun.com/example/faces/chooseruploader/fileUploaderPopup.jsp">HTML</a>  ]</li>
+</ul>
+<hr noshade="noshade" size="1" />
+<h3><a name="notes" id="notes"></a>Release Notes</h3>
+<p>The button tag now supports the ability to dynamically enable and disable buttons 
+  on Netscape 6/7/Mozilla and on Internet Explorer. The File/Folder Chooser should 
+  take advantage of this capability (although the javascript required for this 
+  behavior has not been included in the sample HTML provided):</p>
+<ul>
+  <li>Open Folder button - this button should be enabled only when a single folder 
+    has been selected in the list. <br />
+    <ul>
+      <li>If a file is selected, then the button should be disabled. On Netscape 
+        7, individual &lt;option&gt;'s containing file names can be declared as 
+        disabled and therefore are not selectable, so disabling the button will 
+      be redundant (see note below).</li>
+      <li>If more than one folder is selected in the multiple select condition, 
+            then the button should be disabled. 
+Choose File button - this button should be enabled only when there is a 
+    file selected in the list, or when the user has entered a value into the Selected 
+  File field, otherwise it should be disabled.
+</li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>Choose Folder button - this button should be enabled only when there is 
+      a folder (not a file) selected in the list, or when the user has entered a 
+      value into the Selected Folder field, otherwise it should be disabled. 
+<br />
+  </li>
+</ul>
+<p>Also, in the case of the Folder Chooser, because files are not valid objects
+   to be selected, the &lt;option&gt; tag for file items, in addition to having
+    the LstOptDis style, should specify a &quot;disabled&quot; attribute. Netscape
+     6/7/Mozilla supports disabling individual &lt;option&gt;s within a &lt;select&gt; 
+  and this will prevent users from being able to highlight files. Currently,
+  Internet  Explorer does not support this capability, though is likely to (it's
+  part of 
+  HTML 4),  so the client-side validation described
+   above will still have to be run when the user selects a file in the list in
+  
+  these latter browsers. The simplest strategy is to have a single HTML/javascript
+   code base for all browsers, including calls to client-side validation (e.g.,
+  
+  in the onClick events for the buttons) --because NS6+ and IE will ignore these
+   onClick events when the button is declared as disabled, users of these browsers
+  
+  won't have to see the javascript alerts. In this sense, the javascript alerts
+   are safety mechanisms for users of dated browsers.</p>
+<p>When the file/folder chooser appears in a secondary window, it should have 
+  a secondary masthead containing the particular application's name. </p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>
