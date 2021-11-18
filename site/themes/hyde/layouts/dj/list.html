@@ -4,13 +4,13 @@
   <link rel="shortcut icon" href="/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Leon Barnard - San Francisco Bay Area DJ">
+  <meta name="description" content="Leon Barnard - Los Angeles area DJ">
   <meta property="og:title" content="DJ Leonland">
   <meta property="og:url" content="https://dj.leonland.com/">
   <meta property="og:type" content="website">
-  <meta property="og:description" content="Leon Barnard - San Francisco Bay Area DJ">
+  <meta property="og:description" content="Leon Barnard - Los Angeles area DJ">
   <meta property="og:image" content="{{ .Site.BaseURL }}/img/djleonland-sm.png">
-  <title>Leon Barnard - San Francisco Bay Area DJ</title>
+  <title>Leon Barnard - Los Angeles area DJ</title>
   <link rel="stylesheet" type="text/css" title="Stylesheet" href="{{ .Site.BaseURL }}/css/djstyles.min.css">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic" rel="stylesheet">
 </head>
@@ -19,15 +19,17 @@
 <img src="{{ .Site.BaseURL }}/img/19broadway.jpg">
 <h1><span>DJ
 </span>Leon B</h1>
-<h2>House, Nu-Disco, Funk </h2>
+<!-- <h2>House, Nu-Disco, Funk </h2> -->
+<h3>Leon Barnard is a Los Angeles Area DJ specializing in classic and modern disco, groovy house, and old school R&B.</h3>
 </section>
 <section class="listen">
-  <p>Available for parties and events in the San Francisco Bay Area. Booking info below.</p>
+<p>His mellow, yet lively sound is especially well suited to cafes and other community gathering spots. Use the form below to <a href="#contact">contact me</a> for your next event.</p>
+  <!-- <p>Available for parties and events in the San Francisco Bay Area. Booking info below.</p> -->
   <a href="//mixcloud.com/leonbarnard/" title="Mixcloud"><img src="{{ .Site.BaseURL }}/img/mixcloud.svg" class="social" width="32" height="32" alt="Mixcloud"></a>
     <a href="//instagram.com/leonbarnard/" title="Instagram"><img src="{{ .Site.BaseURL }}/img/instagram.svg" class="social" width="32" height="32" alt="Instagram"></a>
     <a href="https://www.youtube.com/playlist?list=PLCG9THDHTfvayAjkN4i1LHnDX3jP_cEfO" title="YouTube"><img src="{{ .Site.BaseURL }}/img/youtube.svg" class="social" width="32" height="32" alt="YouTube"></a>
-<h2><span>Listen</span></h2>
-<h3>Monthly Mixtapes</h3>
+<!-- <h2><span>Listen</span></h2> -->
+<h3>Latest Shows</h3>
 <div class="widgets">
 {{ range first 3 (sort .Site.Data.dj.Monthly ".date" "desc") }}
 <iframe class="monthly"  height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
@@ -37,7 +39,7 @@
 {{ end }}
 </div>
 
-<h3>Experiments</h3>
+<!-- <h3>Experiments</h3>
 <div class="widgets">
 {{ range first 3 (sort .Site.Data.dj.Other ".date" "desc") }}
 <iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
@@ -45,7 +47,7 @@
 {{ range after 3 (sort .Site.Data.dj.Other ".date" "desc") }}
 <iframe height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&hide_artwork=1&feed=%2Fleonbarnard%2F{{.slug | htmlEscape}}%2F" frameborder="0" ></iframe>
 {{ end }}
-</div>
+</div> -->
 
 </section>
 <section class="contact" id="contact">
