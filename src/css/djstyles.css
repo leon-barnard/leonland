@@ -55,6 +55,9 @@ max-width: 100%;
   text-justify: inter-word;
 }
 
+a {
+  color: DeepPink;
+}
 
 section {
   margin-bottom: 5em;
