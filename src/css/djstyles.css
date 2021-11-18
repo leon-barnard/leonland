@@ -55,9 +55,9 @@ max-width: 100%;
   text-justify: inter-word;
 }
 
-a {
-  color: DeepPink;
-}
+a {color: DeepPink;}
+
+.bigger {font-size: larger}
 
 section {
   margin-bottom: 5em;
@@ -116,6 +116,7 @@ fieldset {
   max-width: 620px;
   margin: auto;
   border: none;
+  margin-top: -4em;
 }
 
 fieldset div {
@@ -166,8 +167,10 @@ footer {
 footer .social, .listen .social {
   padding-right: 5px;
 }
+
 .hidden {
   opacity: 0;
+  display: none;
 }
 
 div.return {
