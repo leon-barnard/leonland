@@ -5,10 +5,10 @@
 
 {{ .Content }}
 
-<p>Check out my <a href="#favorites" class="filter filter-favorite">favorites👍</a> or filter by: <a href="#docs" class="filter filter-docs">#documentation</a>, <a href="#ux" class="filter filter-ux">#UX</a>, <a href="#wireframing" class="filter filter-wireframing">#wireframing</a>, <a href="#remote" class="filter filter-remote">#remote work</a>, <a href="#career" class="filter filter-career">#career advice</a>, or <a href="#web" class="filter filter-web">#web technologies</a>. <strong><a href="#all" class="filter filter-all hidden">(show all)</a></strong></p>
+<p>Check out my <a href="#favorites" class="filter filter-favorite">favorites👍</a> or filter by: <a href="#docs" class="filter filter-docs">#documentation</a>, <a href="#docs" class="filter filter-marketing">#marketing</a>, <a href="#ux" class="filter filter-ux">#UX</a>, <a href="#wireframing" class="filter filter-wireframing">#wireframing</a>, <a href="#remote" class="filter filter-remote">#remote work</a>, <a href="#career" class="filter filter-career">#career advice</a>, or <a href="#web" class="filter filter-web">#web technologies</a>. <strong><a href="#all" class="filter filter-all hidden">(show all)</a></strong></p>
 
 <section id="writing">
-			<h2 class="filterable"><span class="favorite hidden">👍 </span>Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="career hidden">about <strong class="highlight">career advice</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h2>
+			<h2 class="filterable"><span class="favorite hidden">👍 </span>Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="marketing hidden">about <strong class="highlight">Marketing</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="career hidden">about <strong class="highlight">career advice</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h2>
 <ul class="filterable">
 {{ range sort .Site.Data.writing ".datetime" "desc"}}
 <li class="{{.tags}}">
@@ -21,7 +21,7 @@
 		</section>
 
 <section id="speaking">
-			<h2 class="filterable"><span class="favorite hidden">👍 </span>Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="career hidden">about <strong class="highlight">career advice</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h2>
+			<h2 class="filterable"><span class="favorite hidden">👍 </span>Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="marketing hidden">about <strong class="highlight">Marketing</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="career hidden">about <strong class="highlight">career advice</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h2>
 
 <ul class="filterable">
 {{ range sort .Site.Data.speaking ".datetime" "desc"}}
