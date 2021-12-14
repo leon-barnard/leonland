@@ -6,7 +6,7 @@ description: "My UX portfolio"
 
 # UX Portfolio
 
-I have worked as an Interaction Designer for desktop and web-based software in agile and traditional environments, in various product domains, including healthcare, business intelligence, and developer tools.
+I have been an Interaction Designer for desktop and web-based software in agile and traditional environments, in various product domains, including healthcare, business intelligence, and developer tools.
 
 Before that, I obtained a Master's degree in Human-Integrated Systems from Georgia Tech, specializing in Human-Computer Interaction. See my [LinkedIn](http://www.linkedin.com/in/leonbarnard/) profile to learn more.
 
