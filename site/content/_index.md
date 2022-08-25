@@ -4,7 +4,7 @@ title: "Leon Barnard has a website"
 
 I'm **Leon**, a dad, husband, mentor, and User Experience specialist. I work at [Balsamiq](http://balsamiq.com/), maker of the best little wireframing tool around. I help people and technology get along better.
 
-**New!** I'm writing a book about *Wireframing*, coming soon from [A Book Apart](https://abookapart.com). [Learn more and sign up to be notified when it's ready.](https://balsamiq.com/learn/wireframing-book/)
+**New!** I'm writing a book about *Wireframing*, coming soon from [A Book Apart](https://abookapart.com). **[Learn more](https://balsamiq.com/learn/wireframing-book/)**[ and sign up to be notified when it's ready.](https://balsamiq.com/learn/wireframing-book/)
 
 ---
 
