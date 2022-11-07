@@ -1,4 +1,12 @@
 {
+  "390": {
+    "tags": "ux wireframing web",
+    "url": "https://www.youtube.com/watch?v=fwjvlxn9QX4", 
+    "title": "Webinar: Design Tips for a More Effective Nonprofit Website",
+    "datetime": "2022-10-27",
+    "sourceurl": "https://www.youtube.com/c/balsamiq",
+    "sourcename": "Balsamiq YouTube Channel"
+  },
   "380": {
     "tags": "wireframing",
     "url": "https://appacademy.adalo.com/course/fundamentals-of-wireframing-with-balsamiq", 
@@ -12,7 +20,7 @@
     "url": "https://www.youtube.com/watch?v=b3-J8q6sCZE", 
     "title": "Webinar: Template-Based UI Design with Wireframes",
     "datetime": "2022-05-26",
-    "sourceurl": "https://www.youtube.com/channel/UCH8AguGGw7F6jNvShp7OIAg",
+    "sourceurl": "https://www.youtube.com/c/balsamiq",
     "sourcename": "Balsamiq YouTube Channel"
   },
   "370": {
@@ -28,7 +36,7 @@
     "url": "https://www.youtube.com/watch?v=BgGRjorRrE4", 
     "title": "Webinar: How to Use Wireframes With Agile User Stories",
     "datetime": "2022-01-27",
-    "sourceurl": "https://www.youtube.com/channel/UCH8AguGGw7F6jNvShp7OIAg",
+    "sourceurl": "https://www.youtube.com/c/balsamiq",
     "sourcename": "Balsamiq YouTube Channel"
   },
   "350": {
@@ -52,7 +60,7 @@
     "url": "https://www.youtube.com/watch?v=S5ti8Ye2tG4", 
     "title": "Webinar: User Experience as a Career",
     "datetime": "2021-07-15",
-    "sourceurl": "https://www.youtube.com/channel/UCH8AguGGw7F6jNvShp7OIAg",
+    "sourceurl": "https://www.youtube.com/c/balsamiq",
     "sourcename": "Balsamiq YouTube Channel"
   },
   "320": {
@@ -260,7 +268,7 @@
     "url": "https://www.youtube.com/watch?v=KnZrypOaVCg",
     "title": "Wireframing for Newbies",
     "datetime": "2016-12-22",
-    "sourceurl": "https://www.youtube.com/user/Balsamiq",
+    "sourceurl": "https://www.youtube.com/c/balsamiq",
     "sourcename": "Balsamiq YouTube Channel"
   },
   "60": {
