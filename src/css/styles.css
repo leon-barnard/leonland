@@ -30,7 +30,7 @@ div.sidebar .mepic {
 	width: 115px;
 }
 
-@media (min-width: 44em) {
+@media (min-width: 40em) {
   html {
     font-size: 19px;
   }
@@ -109,8 +109,12 @@ ul, ol {
   padding-left: 20px;
 }
 
+time {
+  font-size: 17px;
+}
+
 .container {
-  max-width: 44rem;
+  max-width: 40rem;
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left:  auto;
@@ -168,6 +172,7 @@ ul.sidebar-nav li a {
 
 a.source {
 	font-style: italic;
+  font-size: 17px;
 }
 
 a.filter.active {

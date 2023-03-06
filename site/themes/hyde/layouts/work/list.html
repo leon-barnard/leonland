@@ -12,7 +12,7 @@
 <ul class="filterable">
 {{ range sort .Site.Data.writing ".datetime" "desc"}}
 <li class="{{.tags}}">
-<a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
+<a href="{{.url}}">{{.title}}</a><br><time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
 {{if in .tags "favorite" }}👍{{else}}{{end}}</li>
 {{ end }}
 </ul>
@@ -26,7 +26,7 @@
 <ul class="filterable">
 {{ range sort .Site.Data.speaking ".datetime" "desc"}}
 <li class="{{.tags}}">
-<a href="{{.url}}">{{.title}}</a> - <time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
+<a href="{{.url}}">{{.title}}</a><br><time datetime="{{.datetime}}">{{ dateFormat "January 2, 2006" (.datetime) }}</time> - <a href="{{.sourceurl}}" class="source">{{.sourcename}}</a>
 {{if in .tags "favorite" }}👍{{else}}{{end}}
 </li>
 {{ end }}
