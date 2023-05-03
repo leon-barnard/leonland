@@ -22,8 +22,8 @@ html {
 }
 
 div.sidebar .mepic {
-	filter:saturate(.8);
-	opacity:.9;
+	/* filter:saturate(.8); */
+	/* opacity:.9; */
 	margin:10px auto;
 	display: none;
 	float: right;
