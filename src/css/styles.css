@@ -27,7 +27,7 @@ div.sidebar .mepic {
 	margin:10px auto;
 	display: none;
 	float: right;
-	width: 115px;
+	height: 115px;
 }
 
 @media (min-width: 40em) {
