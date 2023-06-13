@@ -10,7 +10,7 @@ weight: 8
 
 by Michael Angeles, Leon Barnard, and Billy Carlson
 
-**Coming June, 2023. [Pre-order now from A Book Apart](https://abookapart.com/products/wireframing-for-everyone)**
+**[Order now from A Book Apart](https://abookapart.com/products/wireframing-for-everyone)**
 
 *[Wireframing for Everyone](https://balsamiq.com/learn/wireframing-book/)* is product design book written for anyone wanting to learn how to turn an idea into reality.
 
