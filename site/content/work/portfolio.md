@@ -2,11 +2,16 @@
 title:  "portfolio"
 description: "My UX portfolio"
 ---
-
+<style>
+p > img {
+  box-shadow: 2px 2px 8px;
+  padding: 10px;
+}
+</style>
 
 # UX Portfolio
 
-I have been an Interaction Designer for desktop and web-based software in agile and traditional environments, in various product domains, including healthcare, business intelligence, and developer tools.
+I have worked as a User Experience Designer for desktop and web-based software in agile and traditional environments, in various product domains, including healthcare, business intelligence, and developer tools.
 
 Before that, I obtained a Master's degree in Human-Integrated Systems from Georgia Tech, specializing in Human-Computer Interaction. See my [LinkedIn](http://www.linkedin.com/in/leonbarnard/) profile to learn more.
 
