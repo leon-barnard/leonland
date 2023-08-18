@@ -17,15 +17,11 @@ Here are some of the projects I've worked on.
 
 ![](/img/portfolio/optimis/admintab12.png)
 
-<div class="imageGallery1">
-    <a href="/img/portfolio/optimis/admintab11.png" title="Caption for gallery item 1"><img src="/img/portfolio/optimis/admintab11.png" alt="Gallery image 1" /></a>
-    <a href="/img/portfolio/optimis/admintab10.png" title="Caption for gallery item 2"><img src="/img/portfolio/optimis/admintab10.png" alt="Gallery image 2" /></a>
-    <a href="/img/portfolio/optimis/admintab9.png" title="Caption for gallery item 3"><img src="/img/portfolio/optimis/admintab9.png" alt="Gallery image 3" /></a>
-</div>
+![](/img/portfolio/optimis/admintab9.png)
 
-<script>
-  new SimpleLightbox({elements: '.imageGallery1 a'});
-</script>
+![](/img/portfolio/optimis/admintab4.png)
+
+![](/img/portfolio/optimis/admintab1.png)
 
 Using HTML, CSS, and  Javascript, I created an interactive prototype containing over 30 different screens for a redesign of the setup and configuration section of a healthcare tool. I conducted several weeks of user research to determine the biggest pain points with the existing UI and redesigned it from the ground up to fit their workflow and mental models.
 
