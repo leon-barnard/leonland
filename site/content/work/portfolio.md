@@ -5,7 +5,9 @@ description: "My UX portfolio"
 <style>
 p > img {
   box-shadow: 2px 2px 8px;
-  padding: 10px;
+  padding: 8px;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
 }
 </style>
 
@@ -16,7 +18,6 @@ I have worked as a User Experience Designer for desktop and web-based software i
 Before that, I obtained a Master's degree in Human-Integrated Systems from Georgia Tech, specializing in Human-Computer Interaction. See my [LinkedIn](http://www.linkedin.com/in/leonbarnard/) profile to learn more.
 
 Here are some of the projects I've worked on.
-
 
 ## Setup and Configuration Redesign
 
@@ -38,13 +39,22 @@ Afterwards, I tested and validated it with users and stakeholders within the org
 
 ![](/img/portfolio/P1S/originals/custom_reports4.png)
 
+![](/img/portfolio/P1S/originals/custom_reports5.png)
+
+![](/img/portfolio/P1S/originals/custom_reports1.png)
+
+![](/img/portfolio/P1S/custom_lists4.png)
+
+
 Based on a series of stakeholder interviews and business requirements, I created an end-to-end design for a custom report builder and viewer. This design was used to get internal buy-in as well as for estimating development time and delivery dates.
 
 ---
 
 ## Positive Cultures List Enhancements
 
-![](/img/portfolio/P1S/CLL_full.png)
+![](/img/portfolio/P1S/CLL_full-2.png)
+
+![](/img/portfolio/P1S/NewCLL.png)
 
 I worked steadily over the course of over 8 months to improve the usability of this very powerful and useful grid through a series of incremental designs. I made it fit better on smaller screens, allowed filtering out the data you didn't want to see, and provided the ability to see more data at a glance without having to drill-down.
 
@@ -66,6 +76,12 @@ This gave the development team the detail they needed to do the work and provide
 
 ![](/img/portfolio/P1S/Export_list2.png)
 
+![](/img/portfolio/P1S/Export_list_after2.png)
+
+![](/img/portfolio/P1S/Export_list_after3.png)
+
+![](/img/portfolio/P1S/NHSN_export_after2.png)
+
 I designed a set of UI screens for exporting documents to a government website that was quick and easy, yet provided some safeguards to prevent uploading documents that were incomplete or invalid.
 
 I optimized the workflow for efficiency and clarity, continually providing feedback to the user along the way, and leveraged existing design patterns for consistency.
@@ -75,6 +91,8 @@ I optimized the workflow for efficiency and clarity, continually providing feedb
 ### Profile Configuration Improvements
 
 ![](/img/portfolio/ataccama/originals/createprofile2-lg.png)
+
+![](/img/portfolio/ataccama/originals/createprofile5-lg.png)
 
 I designed a configuration wizard that turned a commonly-performed, yet very opaque task into a mostly-automated process requiring just a few clicks to complete.
 
@@ -94,6 +112,8 @@ I overhauled the design of a tool that provided a lot of useful information that
 
 ![](/img/portfolio/ataccama/originals/Approval_Queue.gif)
 
+![](/img/portfolio/ataccama/originals/Browse.gif)
+
 This design was for a web-based application that would allow users to review and manage potential duplicate database records. I created a click-through design that was used to get buy-in from the executive team.
 
 ---
@@ -110,6 +130,8 @@ I did the research and design work to develop a series of detailed design specif
 
 ![](/img/portfolio/sun/originals/B2B1.png)
 
+![](/img/portfolio/sun/originals/B2B2.png)
+
 This high-fidelity static prototype demonstrated a vision for a new business-to-business message transaction dashboard. I designed the prototype and worked with the product team during development to oversee its completion.
 
 ---
@@ -117,5 +139,7 @@ This high-fidelity static prototype demonstrated a vision for a new business-to-
 ### Visual WSDL Editor Prototype
 
 ![](/img/portfolio/sun/WSDL2.png)
+
+![](/img/portfolio/sun/WSDL4.png)
 
 This detailed static prototype presented a conceptual design for a simplified version of a very complex tool. It showed many interaction details that allowed the development team to get an accurate estimate of the work required to build it.
