@@ -5,6 +5,7 @@ https://www.leonland.com/* https://www.leon.land/:splat 301!
 
 # Redirects for DJ site
 
+/workout  https://www.mixcloud.com/leonbarnard/one-hour-workout/ 301!
 /disco-trip  https://www.mixcloud.com/leonbarnard/disco-trip/	301!
 /xzbt-2  https://www.mixcloud.com/leonbarnard/live-xzbt-7212023/	301!
 /house-disco-2  https://www.mixcloud.com/leonbarnard/modern-sounds-in-house-and-disco-vol-2/ 301!
