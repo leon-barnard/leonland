@@ -21,7 +21,7 @@ Here are some of the projects I've worked on.
 
 ## DJ Playlist Preview
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVwpiO07O4KhpeQKtQ4XskT%2FDJ-Playlist-Preview---Wireframe%3Ftype%3Ddesign%26node-id%3D1-2%26t%3Dcd2xTQLjIguP7Cnp-1%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="630" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FVwpiO07O4KhpeQKtQ4XskT%2FDJ-Playlist-Preview---Wireframe%3Ftype%3Ddesign%26node-id%3D1-2%26t%3Dcd2xTQLjIguP7Cnp-1%26scaling%3Dcontain%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A2%26mode%3Ddesign" allowfullscreen></iframe>
 
 Some wireframes I made in Figma showing the login flow for a web app I helped create called [DJ Playlist Preview](https://djplaylistpreview.com/).
 
