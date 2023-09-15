@@ -5,6 +5,7 @@ https://www.leonland.com/* https://www.leon.land/:splat 301!
 
 # Redirects for DJ site
 
+/rewind https://www.mixcloud.com/leonbarnard/re-rewind-modern-throwbacks/ 301!
 /workout  https://www.mixcloud.com/leonbarnard/one-hour-workout/ 301!
 /disco-trip  https://www.mixcloud.com/leonbarnard/disco-trip/	301!
 /xzbt-2  https://www.mixcloud.com/leonbarnard/live-xzbt-7212023/	301!
