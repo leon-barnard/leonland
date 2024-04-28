@@ -2,7 +2,7 @@
 title: "Leon Barnard has a website"
 ---
 
-I'm **Leon**, a dad, husband, mentor, and User Experience specialist. I recently worked at [Balsamiq](http://balsamiq.com/), maker of the best little wireframing tool around. I enjoy bridging the gap between people and technology.
+I'm **Leon**, a Content and User Experience specialist. I recently worked at [Balsamiq](http://balsamiq.com/), maker of the best little wireframing tool around. I love bridging the gap between people and technology to help customers get the most out of your product.
 
 I co-wrote a book called [*Wireframing for Everyone*](https://balsamiq.com/learn/wireframing-book/) —
 **[Order it now!](https://abookapart.com/products/wireframing-for-everyone)**
