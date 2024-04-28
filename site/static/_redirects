@@ -6,6 +6,8 @@ https://www.leonland.com/* https://www.leon.land/:splat 301!
 # Redirects for DJ site
 
 /resume /LeonBarnardResume.pdf 301!
+/hireme /LeonBarnardResume.pdf 301!
+/hire-me  /LeonBarnardResume.pdf 301!
 /live https://www.mixcloud.com/leonbarnard/playlists/live-sets/ 301!
 /super70s https://www.mixcloud.com/leonbarnard/super-70s-yacht-rock-disco-and-soul/ 301!
 /imaginism  https://www.mixcloud.com/leonbarnard/live-xzbt-november-2023/ 301!
