@@ -1,6 +1,6 @@
 {
   "60": {
-    "url": "https://github.com/balsamiqLeon/leonland",
+    "url": "https://github.com/leon-barnard/leonland",
     "name": "Leonland",
     "description": "This site right here, which started as an exercise to help me learn HTML5 and CSS3 and has since led me to learn more about JavaScript and <a href=\"https://www.thenewdynamic.org\">static sites</a>.",
     "image": "TBD",
@@ -28,7 +28,7 @@
     "weight": "30"
   },
   "20": {
-    "url": "https://github.com/balsamiqLeon/all-things-markdown",
+    "url": "https://github.com/leon-barnard/all-things-markdown",
     "name": "All Things Markdown",
     "description": "A GitHub repo of resources and files I've used in my presentations about Markdown.",
     "image": "TBD",
