@@ -5,6 +5,7 @@ https://www.leonland.com/* https://www.leon.land/:splat 301!
 
 # Redirects for DJ site
 
+/paypal /PayPal-OptimisCaseStudy.pdf 301!
 /resume /LeonBarnardResume.pdf 301!
 /hireme /LeonBarnardResume.pdf 301!
 /hire-me  /LeonBarnardResume.pdf 301!
