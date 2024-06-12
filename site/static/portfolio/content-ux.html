@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.70.0" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <meta name="description" content="Leon Barnard's portfolio">
+  <title>Portfolio for Leon Barnard</title>  
+  <link rel="stylesheet" href="https://leon.land/css/print.css" media="print">
+  <link rel="stylesheet" href="https://leon.land/css/styles.min.css">
+  
+  <link rel="shortcut icon" href="/favicon.png">
+</head>
+<style>
+
+body {
+  max-width: 60rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  column-gap: 24px;
+  justify-content: space-between;
+}
+
+.one-col, h2, h3, hr {
+  /* grid-column: 1 / -1; */
+}
+
+h2 {
+  margin-top: 3em;
+}
+
+.no-top-margin {
+  margin-top: 0;
+}
+
+@media (max-width: 750px) {
+  .portfolio-content {
+    grid-template-columns: none;
+  }
+}
+
+.sample-desc {
+}
+
+.content hr {
+  margin: 2.5em 0;
+}
+
+.bigger {font-size: 125%;}
+
+p {
+  margin-bottom: 2em;
+}
+
+
+div > img {
+  box-shadow: 2px 2px 8px;
+  padding: 8px;
+  width: 100%;  
+  margin-bottom: 3em;
+  /* height: 100%; */
+}
+</style>
+  <body class="theme-base-08">
+  <div class="sidebar">
+  <div class="sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="/portfolio"><h1>Portfolio for Leon Barnard</h1></a>
+    </div>
+
+    <ul class="sidebar-nav">
+      <!-- <li><a href="/portfolio/writing" class="sidebar-nav-item">Writing Samples</a> </li> -->
+      <li><a href="/portfolio/content-ux/" class="sidebar-nav-item"> Content &amp; UX Design </a></li>
+      <li><a href="/portfolio/ux-ui/" class="sidebar-nav-item"> UX/UI Design </a></li>
+      <!-- <li><a href="/portfolio/talks-interviews" class="sidebar-nav-item"> Documentation </a></li> -->
+      <li><a href="/contact/" class="sidebar-nav-item"> contact </a></li>
+    </ul>
+<hr>
+  </div>
+</div>
+<div class="content">
+<h1 id="writing-samples">Content &amp; UX design case study: Admin tab redesign</h1>
+<!-- <p>I have worked as a User Experience Designer for desktop and web-based software in agile and traditional environments, in various product domains, including healthcare, business intelligence, and developer tools.</p>
+<p>Before that, I obtained a Master&rsquo;s degree in Human-Integrated Systems from Georgia Tech, specializing in Human-Computer Interaction. See my <a href="http://www.linkedin.com/in/leonbarnard/">LinkedIn</a> profile to learn more.</p>
+<p>Here are some of the projects I&rsquo;ve worked on.</p> -->
+<p>A redesign of the setup and configuration interface for a physical therapy product as a UX team of one.</p>
+<div><img src="before-and-after.png" alt=""></div>
+<hr>
+<div class="two-col">
+  <div><p><h3>Customer:</h3>A SaaS-based startup that owned and created software for physical therapy clinics.</p>
+<p><h3>Who I worked with:</h3>Director of Operations (SME), Software Trainer (SME), Product Manager, 3 Developers.</p>
+</div>
+<div><p><h3>Responsibilities:</h3>Qualitative Research, UX and UI Design, Content Design, Front-end Development, Project Management</p>
+</div>
+</div>
+<hr>
+
+<div class="two-col">
+<div>
+  <h2 class="no-top-margin">The problem</h2>
+  <ul>
+    <li>The company wanted to reach customers <strong>outside of the clinics they owned</strong>.</li>
+    <li>Trial users complained about the <strong>setup and configuration process</strong> (the screens within the Admin tab).</li>
+    <li>This area of the product was highlighted as a <strong>key barrier</strong> to new customer sales.</li>
+  </ul>
+</div>
+<div><img src="optimis-letter.jpg" alt=""></div>
+</div>
+
+<hr>
+<h2 class="no-top-margin">Timeline</h2>
+<p>The project went through <strong>4 distinct phases</strong> over the course of a few months.</p>
+<img src="timeline.png" alt="">
+<p><strong>Note:</strong> The PM left the company shortly after the problem was prioritized, leaving me in the role of product and project manager, in addition to being a UX team of one. Fortunately, I had access to 2 SMEs who knew the problem and product well.</p>
+
+<hr>
+<h2>Phase 1: Research and discovery</h2>
+<p>I spoke to both subject matter experts—the software trainer and the Director of Operations—via in-person meetings over several days to understand the users, their needs, and barriers to success.</p>
+
+<div class="two-col">
+<div>
+  <p>After these conversations <strong>3 categories of usability problems</strong> stood out:</p>
+  <ol><strong>
+    <li>Poor UX for frequent tasks</li>
+    <li>Confusing terminology</li>
+    <li>Complex billing rules and procedures</li></strong>
+  </ol>
+</div>
+<div><img src="OptimisPT_REV5_pdf-4.png" alt=""></div>
+</div>
+
+<h3>Research artifacts</h3>
+  <p>I started by creating artifacts to try to record and visualize what I’d learned and wrap my head around the problem.</p>
+  <p>One activity that helped was a reality map I made of the configuration and setup training process, which included pain points and possible solutions.</p>
+<div><img src="FO-Training-Reality-Map.png" alt=""></div>
+
+<hr>
+
+<h2>Early solution hypotheses</h2>
+<p>After a few weeks of research I came up with 4 areas to focus on to best address the problems as I understood them.</p>
+<div class="two-col">
+  <div>
+<p>1. <strong>Improving the Information Architecture and navigation</strong> would improve overall usability and reduce frustration.</p>
+<p>2. <strong>Applying basic content and UX design principles</strong> would improve overall usability and improve satisfaction.</p>
+</div>
+<div>
+  <p>3. <strong>Adding inline help and descriptive text</strong> would reduce time spent reading documentation and decrease support load.
+</p>
+  <p>4. <strong>Using a modern front-end web framework</strong> would increase consistency and usability of forms, and speed up implementation.</p>
+</div>
+</div>
+
+<hr>
+
+<h2>Phase 2: Low fidelity design</h2>
+<p>I explored possible solutions in low fidelity to test my hypotheses.</p>
+
+<h3>Hypothesis 1: <em style="font-weight:normal;">Improving the Information Architecture and navigation would improve overall usability and reduce frustration</em></h3>
+<div class="two-col">
+  <div>
+    <p>First I tried to think of alternate groupings of screens that would be more intuitive for the users. I went through several iterations of this.</p>
+    <p>Here is a card sort with new IA ideas next to the old navigation.</p>
+  </div>
+  <img src="nav-ia-comparison.png" alt="">
+</div>
+<p>I then began translating those IA ideas into UI navigation concepts. I feel that it’s important to explore as much as possible during the early phases.</p>
+<div class="two-col">
+  <img src="admin-nav.png" alt="">      
+  <img src="tree-nav-clinic-nav-only.png" alt="">
+</div>
+
+
+<h3>Hypothesis 2: <em style="font-weight:normal;">Applying basic content and UX design principles would improve overall usability and improve satisfaction</em></h3>
+<p>Once the the IA started coming together, I moved on to content and UX design within the screens.</p>
+<div class="two-col">
+  <img src="tree-nav-payers-with-tabs.png" alt="">      
+  <div>
+    <p>For starters, I cleaned up the tables and moved buttons to a more standard location. I changed the vague icons to descriptive text links.</p>
+    <p>I also added more information so users wouldn’t have to dig into records to get common info like phone number and status.</p>
+  </div>
+</div>
+<div class="two-col">
+<div>
+  <p>Then I moved on to the forms within many of the pages. Changes included improving alignment and applying better section breaks, hierarchy, and headings.</p>
+<p>I also added some notes to myself and questions to ask the subject matter experts</p>
+</div>
+<img src="tab-nav-users.png" alt="">      
+</div>
+
+<h3>Hypothesis 3: <em style="font-weight:normal;">Adding inline help and descriptive text would reduce time spent reading documentation and decrease support load</em></h3>
+<p>The most important thing I wanted the design to do here was to migrate as much of the critical knowledge that was in the documentation and trainers heads into the app.</p>
+<div class="two-col">
+  <div>
+    <p>The first step was to added description placeholder text to every page and optional placeholder text for sections and tables.</p>
+  </div>
+  <img src="resource-types.png" alt="">      
+</div>
+<div class="two-col">
+  <img src="tree-nav-insurance.png" alt="">      
+<div>
+  <p>Next, I added inline text placeholder text and the option to have links to more details.</p> 
+  <p>This was only for labels that I knew were confusing though. Name, for example, didn't need it.</p>
+</div>
+</div>
+
+<h3>Hypothesis 4: <em style="font-weight:normal;">Using a front-end web framework would increase consistency and usability of forms, and speed up implementation</em></h3>
+<p>The developers found the old front-end code limiting and were excited about the Bootstrap framework, so I learned it and tried making some test pages with it. I found it very easy to use.</p>
+<div><img src="pasted-movie.png" alt=""></div>
+<p>I used these test pages to show the SMEs and developers what it could look like and we decided to go ahead with it.</p>
+
+<h3>Design validation</h3>
+<div class="two-col">
+<div>
+<p>During this entire process I was iterating on all of the screens, getting frequent feedback from the subject matter experts.</p>
+<p>Before moving further, I put together an end-to-end low-fidelity prototype to validate the workflow and details of each screen with the internal stakeholders.</p> 
+</div>
+<img src="walkthrough-pdf.png" alt="">
+</div>
+<hr>
+
+<h2>Phase 3: Front-end design and development</h2>
+<p>Now that I had a validated design proposal I started building it in HTML and CSS using the Bootstrap framework. I ultimately built every screen of the new Admin area.</p>
+<p>I returned to the 4 hypotheses I had come up with earlier, feeling that they had all been sufficiently validated internally.</p>
+
+<h3>Improving the IA and navigation</h3>
+<p>Here’s an impression of how the IA and navigation changed. I made significant changes, including switching to a list + tabs layout to make the navigation simpler.</p>
+<div><img src="pasted-movie-2.png" alt=""></div>
+<p>I also moved pages around in the hierarchy. For example, there was an API key link was rarely used, so I buried it in an Advanced tab. In some cases I  merged some pages together to reduce the number of overall pages.</p>
+
+<h3>Applying basic content and UX design principles</h3>
+<p>I made a lot of simple changes to each page by following content and UX design principles, such as making form fields aligned and accessible, adding breadcrumbs, and using better spacing and section headings.</p>
+<div><img src="pasted-movie-3.png" alt=""></div>
+
+<h3>Adding inline help and descriptive text</h3>
+<p>Lastly, I found many places to add inline and descriptive text. I wrote a lot of it in the working prototype, but saved some for the implementation phase.</p>
+<div><img src="pasted-movie-4.png" alt=""></div>
+
+<hr>
+<h2>Phase 4: Handoff and implementation</h2>
+<p>Once all my front-end work was done I uploaded it to a staging server for the developers to tackle. And since we had no PM at this point, I wrote the user stories and managed the backlog. </p>
+<div class="two-col">
+<img src="pasted-movie-5.png" alt="">
+<div>
+<p>I worked very closely with the developers during implementation to provide specification details and answer questions.</p>
+<p>One thing I did to help them was add notes and show the various states within the staging site.</p> 
+</div>
+</div>
+
+<hr>
+<h2>Results and reflections</h2>
+<p>Unfortunately, I left not too longer after it was implemented, so I don’t have any hard numbers about new customers acquired or reductions in support calls. I only have qualitative feedback from the people I worked with.</p>
+<div class="two-col">
+  <div>
+<p>1. <strong>The Director of Operations was very pleased with it.</strong> I know that they applied this framework and design to the rest of the app after I left.</p>
+<p>2. <strong>Once the research and wireframes were done, implementation was FAST.</strong> Designing in real code and working side-by-side made it easy for the developers to deliver.</p>
+</div>
+<div>
+  <p>3. <strong>It was scrappy (too scrappy?)</strong> We didn’t do user testing or validation with real customers. I filled in for jobs that should have been done by specialists.</p>
+  <p>4. <strong>Access to SMEs was crucial.</strong> Without the deep knowledge they shared, I only would have been able to polish the old design.</p>
+</div>
+</div>
+
+<hr>
+<h2>Generalizable takeaways</h2>
+<p>Here are some things I learned from this project that have stayed with me since.</p>
+<div class="two-col">
+  <div>
+    <h3>Content and UX design:</h3>
+<ul>
+  <li>The <strong>right guidance at the right time</strong> reduces frustration and increases success rates.</li>
+  <li>Make <strong>commonly-performed tasks</strong> easy to find and do.</li>
+  <li>A few <strong>basic usability principles</strong> go a long way.</li>
+</ul>
+</div>
+<div>
+  <h3>Process and people:</h3>
+<ul>
+<li>Designing with <strong>implementation in mind</strong> can improve consistency and speed.</li>
+<li>It has to <strong>start with users</strong> and their goals.</li>
+<li>Don’t be afraid to <strong>try new things</strong> or do old things differently.</li>
+</ul>
+</div>
+</div>
+
+
+<!-- </div> two col -->
+    <div class="footer">
+  <hr>
+<div class="social-icons">
+    
+<a href="//twitter.com/leonbarnard/" title="Twitter"><img src="/img/twitter.svg" class="social" width="32" height="32" alt="Twitter"></a>
+<a href="//www.linkedin.com/in/leonbarnard" title="LinkedIn"><img src="/img/linkedin.svg" class="social" width="32" height="32" alt="LinkedIn"></a>
+<a href="mailto:leonbarnard+website@gmail.com" title="Email me"><img src="/img/Envelope_alt_font_awesome.svg" class="social" width="32" height="32" alt="Email"></a>
+<a href="//github.com/balsamiqLeon/" title="GitHub"><img src="/img/github.svg" class="social" width="32" height="32" alt="GitHub"></a>
+</div>
+
+<div class="copyright">
+<p><small>&copy; 2024. All rights reserved. </small></p>
+</div>
+</div>
+    <script type="text/javascript" src="/js/filter.min.js"></script>
+    
+    
+<script type="text/javascript">
+var sc_project=12878723; 
+var sc_invisible=1; 
+var sc_security="4a8645f0"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js" async></script>
+<noscript><div class="statcounter"><a title="Web Analytics Made Easy -
+Statcounter" href="https://statcounter.com/" target="_blank"><img
+class="statcounter" src="https://c.statcounter.com/12878723/0/4a8645f0/1/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+
+<script async data-id="101409146" src="//static.getclicky.com/js"></script>
+</div>
+  </body>
+</html>
